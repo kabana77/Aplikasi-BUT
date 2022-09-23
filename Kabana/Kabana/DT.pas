@@ -667,6 +667,10 @@ type
     DBText3: TDBText;
     qB3NO_BUKTI: TStringField;
     qB3NO_INV: TStringField;
+    qBDetailNO_BUKTI_KNTRK: TStringField;
+    qBDetailNO_BUKTI_SJ: TStringField;
+    qBMasterSJNO_BUKTI: TStringField;
+    qBDetailSJNO_BUKTI_SJ: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1365,23 +1369,13 @@ begin
             DMFrm.qJnsTransaksi.Open;
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
-               {DMFrm.qDateTime.Close;
-               DMFrm.qDateTime.Open;
-               qrBuktiY.Preview;}
                DMFrm.qDateTime.Close;
                DMFrm.qDateTime.Open;
-
-               {qBMasterSJ.Close;
-               qBMasterSJ.ParamByName('pno_reg_os').AsInteger:=qBMasterNO_REG_OS.AsInteger;
-               qBMasterSJ.Open; }
 
                qBDetailSJ.Close;
                qBDetailSJ.ParamByName('no_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
                qBDetailSJ.Open;
 
-               {ShowMessage('qBMasterNO_REG_OS : '+inttostr(qBMasterNO_REG_OS.AsInteger));
-               ShowMessage('qBDetailSJ : '+qBDetailSJ.SQL.Text);
-               ShowMessage('qBMasterSJ : '+qBMasterSJ.SQL.Text);}
                qrBukti.Preview;
             end
             else
@@ -1851,8 +1845,18 @@ begin
   QRLPPN.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vppn);
   QRLTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vtotal);
 
-  DMFrm.MyIDR.Nilai:=vtotal;
-  qrlTerbilang.Caption:='#'+DMFrm.MyIDR.HasilKonversi+'#';
+  if qBMasterMU.AsString = 'IDR' then
+  begin
+    DMFrm.MyIDR_en.Nilai:=vtotal;
+    qrlTerbilang.Caption:='#'+DMFrm.MyIDR_en.HasilKonversi+'#';
+  end;
+
+  if qBMasterMU.AsString = 'USD' then
+  begin
+    DMFrm.MyUSD.Nilai:=vtotal;
+    qrlTerbilang.Caption:='#'+DMFrm.MyUSD.HasilKonversi+'#';
+  end;
+
 end;
 
 procedure TDTFrm.TitleBand2BeforePrint(Sender: TQRCustomBand;

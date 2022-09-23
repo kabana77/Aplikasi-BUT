@@ -1,6 +1,6 @@
 object PembayaranARFrm: TPembayaranARFrm
-  Left = 255
-  Top = 216
+  Left = 274
+  Top = 186
   Width = 1191
   Height = 679
   Caption = 'Daftar Pembayaran AR'
@@ -5036,9 +5036,9 @@ object PembayaranARFrm: TPembayaranARFrm
                 ControlType.Strings = (
                   'ISHADIAH;CheckBox;1;0')
                 Selected.Strings = (
-                  'NO_REFF_EXT'#9'13'#9'NO. KONTRAK'#9'T'
-                  'NO_FAKTUR'#9'10'#9'NOMOR'#9'F'#9'SURAT JALAN'
-                  'TGL'#9'12'#9'TANGGAL'#9'T'#9'SURAT JALAN'
+                  'NO_BUKTI_KNTRK'#9'15'#9'KONTRAK'#9'F'#9'NOMOR BUKTI'
+                  'NO_BUKTI_SJ'#9'15'#9'SURAT JALAN'#9'F'#9'NOMOR BUKTI'
+                  'NO_BUKTI_SI'#9'15'#9'SLS INVOICE'#9'F'#9'NOMOR BUKTI'
                   'ID_OUTLET'#9'6'#9'KODE'#9'T'#9'C U S T O M E R'
                   'NAMA_OUTLET'#9'35'#9'NAMA'#9'T'#9'C U S T O M E R'
                   'TGL_JTH_TEMPO'#9'12'#9'JTH~TEMPO'#9'T'
@@ -5715,6 +5715,18 @@ object PembayaranARFrm: TPembayaranARFrm
     end
     object qBDetailNO_REFF_EXT: TStringField
       FieldName = 'NO_REFF_EXT'
+    end
+    object qBDetailNO_BUKTI_KNTRK: TStringField
+      FieldName = 'NO_BUKTI_KNTRK'
+      Size = 15
+    end
+    object qBDetailNO_BUKTI_SJ: TStringField
+      FieldName = 'NO_BUKTI_SJ'
+      Size = 15
+    end
+    object qBDetailNO_BUKTI_SI: TStringField
+      FieldName = 'NO_BUKTI_SI'
+      Size = 15
     end
   end
   object dsqBDetail: TwwDataSource

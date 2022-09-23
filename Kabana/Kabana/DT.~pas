@@ -667,6 +667,10 @@ type
     DBText3: TDBText;
     qB3NO_BUKTI: TStringField;
     qB3NO_INV: TStringField;
+    qBDetailNO_BUKTI_KNTRK: TStringField;
+    qBDetailNO_BUKTI_SJ: TStringField;
+    qBMasterSJNO_BUKTI: TStringField;
+    qBDetailSJNO_BUKTI_SJ: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1365,23 +1369,13 @@ begin
             DMFrm.qJnsTransaksi.Open;
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
-               {DMFrm.qDateTime.Close;
-               DMFrm.qDateTime.Open;
-               qrBuktiY.Preview;}
                DMFrm.qDateTime.Close;
                DMFrm.qDateTime.Open;
-
-               {qBMasterSJ.Close;
-               qBMasterSJ.ParamByName('pno_reg_os').AsInteger:=qBMasterNO_REG_OS.AsInteger;
-               qBMasterSJ.Open; }
 
                qBDetailSJ.Close;
                qBDetailSJ.ParamByName('no_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
                qBDetailSJ.Open;
 
-               {ShowMessage('qBMasterNO_REG_OS : '+inttostr(qBMasterNO_REG_OS.AsInteger));
-               ShowMessage('qBDetailSJ : '+qBDetailSJ.SQL.Text);
-               ShowMessage('qBMasterSJ : '+qBMasterSJ.SQL.Text);}
                qrBukti.Preview;
             end
             else
@@ -1646,7 +1640,10 @@ begin
   begin
 
       proc_ImpData.Close;
-      proc_ImpData.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+
+      //proc_ImpData.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+      proc_ImpData.ParamByName('pno_reg_os').AsString:=qBMasterNO_REG_OS.AsString;
+
       proc_ImpData.ParamByName('pawal').AsDateTime:=qBMasterTGL_AWAL.AsDateTime;
       proc_ImpData.ParamByName('pakhir').AsDateTime:=qBMasterTGL_AKHIR.AsDateTime;
       proc_ImpData.ParamByName('prute_penagihan').AsString:=qBMasterRUTE_PENAGIHAN.AsString;

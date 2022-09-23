@@ -306,6 +306,7 @@ type
     BOMNO_REFF2: TStringField;
     Fno_Bukti: TOraQuery;
     Fno_BuktiNO_BUKTI: TStringField;
+    MyIDR_en: TMyKonversi;
     procedure KlikTopPanel(pnama_form : String);
     procedure pLogin;
     procedure pLogin2;

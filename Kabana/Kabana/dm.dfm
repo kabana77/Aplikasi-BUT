@@ -1,7 +1,7 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 705
+  Left = 711
   Top = 189
   Height = 579
   Width = 759
@@ -10,7 +10,6 @@ object DMFrm: TDMFrm
     Username = 'but'
     Password = 'MOON2014'
     Server = '10.10.100.15:1521:orcl'
-    Connected = True
     ConnectDialog = OL
     AfterConnect = OSAfterConnect
     Schema = 'BUT'
@@ -181,7 +180,7 @@ object DMFrm: TDMFrm
         'distribusi, unpost1, unpost2, unpost3, unpost4, ftgl_bukti as vt' +
         'gl_bukti from daftar_transaksi'
       'where nama_form=:pnama_form')
-    Left = 353
+    Left = 409
     Top = 8
     ParamData = <
       item
@@ -335,11 +334,11 @@ object DMFrm: TDMFrm
     HasilKonversi = 'Nol Rupiah'
     Bahasa = Indonesia
     Satuan = 'Rupiah'
-    Left = 204
-    Top = 8
+    Left = 188
+    Top = 16
   end
   object ImageList1: TImageList
-    Left = 280
+    Left = 328
     Top = 8
     Bitmap = {
       494C010107000900040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
@@ -2344,5 +2343,13 @@ object DMFrm: TDMFrm
       FieldName = 'NO_BUKTI'
       Size = 4000
     end
+  end
+  object MyIDR_en: TMyKonversi
+    Nilai = 200.000000000000000000
+    HasilKonversi = 'Two Hundred Rupiah'
+    Bahasa = Inggris
+    Satuan = 'Rupiah'
+    Left = 236
+    Top = 16
   end
 end

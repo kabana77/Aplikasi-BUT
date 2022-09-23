@@ -8313,7 +8313,7 @@ object DTFrm: TDTFrm
                 object QRLabel106: TQRLabel
                   Left = 1
                   Top = 1
-                  Width = 22
+                  Width = 20
                   Height = 17
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8324,7 +8324,7 @@ object DTFrm: TDTFrm
                     44.979166666666670000
                     2.645833333333333000
                     2.645833333333333000
-                    58.208333333333330000)
+                    52.916666666666670000)
                   Alignment = taLeftJustify
                   AlignToBand = False
                   AutoSize = False
@@ -8342,9 +8342,9 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel107: TQRLabel
-                  Left = 27
+                  Left = 24
                   Top = 1
-                  Width = 79
+                  Width = 101
                   Height = 17
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8353,9 +8353,9 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    71.437500000000000000
+                    63.500000000000000000
                     2.645833333333333000
-                    209.020833333333300000)
+                    267.229166666666700000)
                   Alignment = taLeftJustify
                   AlignToBand = False
                   AutoSize = False
@@ -8373,7 +8373,7 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel108: TQRLabel
-                  Left = 109
+                  Left = 129
                   Top = 1
                   Width = 69
                   Height = 17
@@ -8384,7 +8384,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    288.395833333333300000
+                    341.312500000000000000
                     2.645833333333333000
                     182.562500000000000000)
                   Alignment = taLeftJustify
@@ -8404,7 +8404,7 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel109: TQRLabel
-                  Left = 181
+                  Left = 201
                   Top = 1
                   Width = 101
                   Height = 17
@@ -8415,7 +8415,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    478.895833333333300000
+                    531.812500000000000000
                     2.645833333333333000
                     267.229166666666700000)
                   Alignment = taLeftJustify
@@ -8435,7 +8435,7 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel110: TQRLabel
-                  Left = 284
+                  Left = 304
                   Top = 1
                   Width = 194
                   Height = 17
@@ -8446,7 +8446,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    751.416666666666700000
+                    804.333333333333300000
                     2.645833333333333000
                     513.291666666666700000)
                   Alignment = taLeftJustify
@@ -8466,7 +8466,7 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel111: TQRLabel
-                  Left = 479
+                  Left = 499
                   Top = 1
                   Width = 69
                   Height = 17
@@ -8477,10 +8477,10 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    1267.354166666667000000
+                    1320.270833333333000000
                     2.645833333333333000
                     182.562500000000000000)
-                  Alignment = taLeftJustify
+                  Alignment = taRightJustify
                   AlignToBand = False
                   AutoSize = False
                   AutoStretch = False
@@ -8497,9 +8497,9 @@ object DTFrm: TDTFrm
                   FontSize = 10
                 end
                 object QRLabel112: TQRLabel
-                  Left = 552
+                  Left = 570
                   Top = 1
-                  Width = 89
+                  Width = 71
                   Height = 17
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8508,10 +8508,10 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     44.979166666666670000
-                    1460.500000000000000000
+                    1508.125000000000000000
                     2.645833333333333000
-                    235.479166666666700000)
-                  Alignment = taLeftJustify
+                    187.854166666666700000)
+                  Alignment = taRightJustify
                   AlignToBand = False
                   AutoSize = False
                   AutoStretch = False
@@ -8542,7 +8542,7 @@ object DTFrm: TDTFrm
                     1703.916666666667000000
                     2.645833333333333000
                     267.229166666666700000)
-                  Alignment = taLeftJustify
+                  Alignment = taRightJustify
                   AlignToBand = False
                   AutoSize = False
                   AutoStretch = False
@@ -8585,7 +8585,7 @@ object DTFrm: TDTFrm
                   1979.083333333333000000)
                 BandType = rbDetail
                 object QRDBText62: TQRDBText
-                  Left = 181
+                  Left = 201
                   Top = 0
                   Width = 101
                   Height = 16
@@ -8596,7 +8596,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    478.895833333333300000
+                    531.812500000000000000
                     0.000000000000000000
                     267.229166666666700000)
                   Alignment = taLeftJustify
@@ -8617,7 +8617,7 @@ object DTFrm: TDTFrm
                   FontSize = 9
                 end
                 object QRDBText66: TQRDBText
-                  Left = 284
+                  Left = 304
                   Top = 0
                   Width = 194
                   Height = 16
@@ -8628,7 +8628,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    751.416666666666700000
+                    804.333333333333300000
                     0.000000000000000000
                     513.291666666666700000)
                   Alignment = taLeftJustify
@@ -8682,7 +8682,7 @@ object DTFrm: TDTFrm
                   FontSize = 9
                 end
                 object QRDBText76: TQRDBText
-                  Left = 479
+                  Left = 499
                   Top = 0
                   Width = 70
                   Height = 16
@@ -8693,7 +8693,7 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    1267.354166666667000000
+                    1320.270833333333000000
                     0.000000000000000000
                     185.208333333333300000)
                   Alignment = taRightJustify
@@ -8715,9 +8715,9 @@ object DTFrm: TDTFrm
                   FontSize = 9
                 end
                 object QRDBText77: TQRDBText
-                  Left = 551
+                  Left = 571
                   Top = 0
-                  Width = 90
+                  Width = 70
                   Height = 16
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8726,9 +8726,9 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    1457.854166666667000000
+                    1510.770833333333000000
                     0.000000000000000000
-                    238.125000000000000000)
+                    185.208333333333300000)
                   Alignment = taRightJustify
                   AlignToBand = False
                   AutoSize = False
@@ -8750,7 +8750,7 @@ object DTFrm: TDTFrm
                 object qrlNo: TQRLabel
                   Left = 1
                   Top = 0
-                  Width = 23
+                  Width = 19
                   Height = 16
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8761,7 +8761,7 @@ object DTFrm: TDTFrm
                     42.333333333333330000
                     2.645833333333333000
                     0.000000000000000000
-                    60.854166666666670000)
+                    50.270833333333330000)
                   Alignment = taCenter
                   AlignToBand = False
                   AutoSize = False
@@ -8779,9 +8779,9 @@ object DTFrm: TDTFrm
                   FontSize = 9
                 end
                 object QRDBText73: TQRDBText
-                  Left = 27
+                  Left = 24
                   Top = 0
-                  Width = 79
+                  Width = 101
                   Height = 16
                   Frame.Color = clBlack
                   Frame.DrawTop = False
@@ -8790,16 +8790,16 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    71.437500000000000000
+                    63.500000000000000000
                     0.000000000000000000
-                    209.020833333333300000)
+                    267.229166666666700000)
                   Alignment = taLeftJustify
                   AlignToBand = False
                   AutoSize = False
-                  AutoStretch = False
+                  AutoStretch = True
                   Color = clWhite
                   DataSet = qBDetailSJ
-                  DataField = 'NO_FAKTUR'
+                  DataField = 'NO_BUKTI_SJ'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clWindowText
                   Font.Height = -12
@@ -8811,7 +8811,7 @@ object DTFrm: TDTFrm
                   FontSize = 9
                 end
                 object QRDBText59: TQRDBText
-                  Left = 109
+                  Left = 129
                   Top = 0
                   Width = 69
                   Height = 16
@@ -8822,10 +8822,10 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     42.333333333333330000
-                    288.395833333333300000
+                    341.312500000000000000
                     0.000000000000000000
                     182.562500000000000000)
-                  Alignment = taLeftJustify
+                  Alignment = taCenter
                   AlignToBand = False
                   AutoSize = False
                   AutoStretch = False
@@ -8837,6 +8837,7 @@ object DTFrm: TDTFrm
                   Font.Height = -12
                   Font.Name = 'Arial'
                   Font.Style = []
+                  Mask = 'yyyy/mm/dd'
                   ParentFont = False
                   Transparent = False
                   WordWrap = True
@@ -10703,8 +10704,10 @@ object DTFrm: TDTFrm
                 'ISHADIAH;CheckBox;1;0'
                 'TGL_PEB;CustomEdit;vTglPEB;F')
               Selected.Strings = (
-                'NO_REFF_EXT'#9'17'#9'NO. KONTRAK'#9'T'
-                'NO_FAKTUR'#9'11'#9'NO. SJ'#9'T'#9'SURAT JALAN'
+                'NO_REFF_EXT'#9'9'#9'NO. REG'#9'T'#9'KONTRAK'
+                'NO_BUKTI_KNTRK'#9'15'#9'NO. KONTRAK'#9'T'#9'KONTRAK'
+                'NO_FAKTUR'#9'11'#9'NO. REG'#9'T'#9'SURAT JALAN'
+                'NO_BUKTI_SJ'#9'15'#9'NO. SJ'#9'T'#9'SURAT JALAN'
                 'TGL'#9'15'#9'TGL'#9'T'#9'SURAT JALAN'
                 'NILAI_TAGIHAN'#9'13'#9'NILAI~TAGIHAN'#9'T'
                 'BAYAR'#9'13'#9'SUDAH~DIBAYAR'#9'T'#9'INFORMASI'
@@ -11058,7 +11061,7 @@ object DTFrm: TDTFrm
     end
     object qBDetailTGL: TDateTimeField
       FieldName = 'TGL'
-      DisplayFormat = 'dd/mm'
+      DisplayFormat = 'dd/mm/yyyy'
     end
     object qBDetailNAMA_KARYAWAN: TStringField
       FieldName = 'NAMA_KARYAWAN'
@@ -11109,6 +11112,14 @@ object DTFrm: TDTFrm
     end
     object qBDetailTGL_PEB: TDateTimeField
       FieldName = 'TGL_PEB'
+    end
+    object qBDetailNO_BUKTI_KNTRK: TStringField
+      FieldName = 'NO_BUKTI_KNTRK'
+      Size = 15
+    end
+    object qBDetailNO_BUKTI_SJ: TStringField
+      FieldName = 'NO_BUKTI_SJ'
+      Size = 15
     end
   end
   object dsqBDetail: TwwDataSource
@@ -11379,7 +11390,7 @@ object DTFrm: TDTFrm
     Top = 267
     ParamData = <
       item
-        DataType = ftFloat
+        DataType = ftString
         Name = 'PNO_REG_OS'
         ParamType = ptInput
       end
@@ -11433,7 +11444,6 @@ object DTFrm: TDTFrm
         Name = 'PJNS_BUKTI'
         ParamType = ptInput
       end>
-    CommandStoredProcName = 'PROC_dt:0'
   end
   object qBDetailSJ: TSmartQuery
     Session = DMFrm.OS
@@ -11494,6 +11504,10 @@ object DTFrm: TDTFrm
     end
     object qBDetailSJSUB_TOTAL_GROSS: TFloatField
       FieldName = 'SUB_TOTAL_GROSS'
+    end
+    object qBDetailSJNO_BUKTI_SJ: TStringField
+      FieldName = 'NO_BUKTI_SJ'
+      Size = 15
     end
   end
   object dsqBDetailSJ: TwwDataSource
@@ -11907,6 +11921,10 @@ object DTFrm: TDTFrm
       FieldName = 'JNS_PPN'
       FixedChar = True
       Size = 3
+    end
+    object qBMasterSJNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
     end
   end
   object dsqBMasterSJ: TwwDataSource

@@ -379,6 +379,9 @@ type
     DBText13: TDBText;
     qBMasterNO_BUKTI2: TStringField;
     qB1NO_BUKTI2: TStringField;
+    qBDetailNO_BUKTI_KNTRK: TStringField;
+    qBDetailNO_BUKTI_SJ: TStringField;
+    qBDetailNO_BUKTI_SI: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1459,12 +1462,11 @@ begin
       end;
   end;
 
-  if ((vispost_old='0') {and (vispost_new='1')}) then
+  if ((vispost_old='0')) then
   begin
       if qBDetail.RecordCount=0 then
       begin
-          ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
-          Abort;
+          ShowMessage('Data DETAIL masih kosong, tidak perlu di-POSTING !');
       end
       else
       begin
