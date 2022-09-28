@@ -657,7 +657,7 @@ begin
   vsql_org1:=vsql_org;                             //Ganti
   vorder1:=vorder;                                 //Ganti
   FilterFrm.Memo1.Text:=vsql_org+vfilter+vorder;   
-  pTop1.Caption:=UpperCase(FormatDateTime('dd MMM yyyy',FilterFrm.VTglAwal.Date))+' s/d '+
+  pTop1.Caption:=' PERIODE : '+UpperCase(FormatDateTime('dd MMM yyyy',FilterFrm.VTglAwal.Date))+' s/d '+
     UpperCase(FormatDateTime('dd MMM yyyy',FilterFrm.VTglAkhir.Date));
   qUpdateTGLPeriode.Close;
   qUpdateTGLPeriode.ParamByName('pawal').AsDateTime:=FilterFrm.VTglAwal.Date;
@@ -916,7 +916,7 @@ var
 begin
   CheckBox1.Checked:=True;
   if not qB1.Active then
-    qB1.Open;
+    //qB1.Open;
   QFields.Items.Clear;
   QFields2.Items.Clear;
   QFields.Items.Add('SEMUA KOLOM');

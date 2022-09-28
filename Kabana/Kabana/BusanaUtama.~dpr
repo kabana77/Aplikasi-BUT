@@ -77,7 +77,8 @@ uses
   Neraca in 'Neraca.pas' {NeracaFrm},
   LaporanBC in 'LaporanBC.pas' {LaporanBCFrm},
   InfoMutasiStokRev in 'InfoMutasiStokRev.pas' {InfoMutasiStokRevFrm},
-  PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm};
+  PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm},
+  InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm};
 
 {$R *.res}
 
@@ -87,6 +88,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TPenyelesaianWasteFrm, PenyelesaianWasteFrm);
+  Application.CreateForm(TInfoMutasiStokBBFrm, InfoMutasiStokBBFrm);
   Application.Run;
 end.

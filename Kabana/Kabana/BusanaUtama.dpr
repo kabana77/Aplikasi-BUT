@@ -77,7 +77,8 @@ uses
   Neraca in 'Neraca.pas' {NeracaFrm},
   LaporanBC in 'LaporanBC.pas' {LaporanBCFrm},
   InfoMutasiStokRev in 'InfoMutasiStokRev.pas' {InfoMutasiStokRevFrm},
-  PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm};
+  PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm},
+  InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm};
 
 {$R *.res}
 

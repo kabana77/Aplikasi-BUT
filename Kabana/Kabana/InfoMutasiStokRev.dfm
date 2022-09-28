@@ -1,6 +1,6 @@
 object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
-  Left = 85
-  Top = 109
+  Left = 279
+  Top = 253
   Width = 1198
   Height = 600
   Caption = 'InfoMutasiStokRevFrm'
@@ -5992,9 +5992,9 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
           BevelOuter = bvLowered
           Color = 4194304
           Font.Charset = ANSI_CHARSET
-          Font.Color = clRed
+          Font.Color = clYellow
           Font.Height = -16
-          Font.Name = 'Arial Narrow'
+          Font.Name = 'Arial'
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
@@ -6120,7 +6120,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
           end
           object CheckBox3: TCheckBox
             Left = 700
-            Top = 15
+            Top = 23
             Width = 181
             Height = 17
             Caption = 'Yang ada stoknya saja'

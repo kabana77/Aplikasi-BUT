@@ -141,6 +141,7 @@ type
     PenyelesaianWaste1: TMenuItem;
     N20: TMenuItem;
     N22: TMenuItem;
+    InfoMutasiStokBB1: TMenuItem;
     procedure Proc_HapusMenu;
     procedure Proc_Aktifkan_Menu;
     procedure FormCreate(Sender: TObject);
@@ -219,6 +220,7 @@ type
     procedure LPBCMT1Click(Sender: TObject);
     procedure LaporanBeaCukai1Click(Sender: TObject);
     procedure PenyelesaianWaste1Click(Sender: TObject);
+    procedure InfoMutasiStokBB1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -246,7 +248,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   InventoryControl, SubKontrak, HasilProduksi, PemakaianBahan,
   SerahTerimaBJ, SerahTerimaWaste, SubKontrak2, KartuStokBahanKITE,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
-  PenyelesaianWaste;
+  PenyelesaianWaste, InfoMutasiStokBB;
 
 {$R *.dfm}
 
@@ -2102,6 +2104,32 @@ begin
      PenyelesaianWasteFrm.vCanUnPost:=False;
   end;
   PenyelesaianWasteFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiStokBB1Click(Sender: TObject);
+begin
+ if InfoMutasiStokBBFrm=nil then InfoMutasiStokBBFrm:=TInfoMutasiStokBBFrm.Create(Application);
+  InfoMutasiStokBBFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoMutasiStokBBFrm.pTop.Caption:=' '+UpperCase(InfoMutasiStokRevFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoMutasiStokBBFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoMutasiStokBBFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoMutasiStokBBFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoMutasiStokBBFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokBBFrm.vCanPrint2:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokBBFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoMutasiStokBBFrm.vCanAdd:=False;
+     InfoMutasiStokBBFrm.vCanEdit:=False;
+     InfoMutasiStokBBFrm.vCanDel:=False;
+     InfoMutasiStokBBFrm.vCanPrint:=False;
+     InfoMutasiStokBBFrm.vCanPrint2:=False;
+     InfoMutasiStokBBFrm.vCanExport:=False;
+  end;
+  InfoMutasiStokBBFrm.Show;
 end;
 
 end.
