@@ -374,7 +374,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 55.562500000000000000
-                42.333333333333340000
+                42.333333333333330000
                 21.166666666666670000
                 452.437500000000000000)
               Alignment = taLeftJustify
@@ -406,8 +406,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
-                76.729166666666680000
+                42.333333333333330000
+                76.729166666666670000
                 158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -432,7 +432,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 119.062500000000000000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -458,7 +458,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 161.395833333333300000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -550,7 +550,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
                 44.979166666666670000
                 1439.333333333333000000
                 105.833333333333300000
-                82.020833333333340000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -659,7 +659,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewPage = False
             ParentFont = False
             Size.Values = (
-              232.833333333333400000
+              232.833333333333300000
               1957.916666666667000000)
             BandType = rbTitle
             object qrlPeriode: TQRLabel
@@ -674,7 +674,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                788.458333333333400000
+                788.458333333333300000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -881,9 +881,9 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                637.645833333333400000
+                637.645833333333300000
                 0.000000000000000000
-                679.979166666666800000)
+                679.979166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1690,7 +1690,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              68.791666666666680000
+              68.791666666666670000
               1957.916666666667000000)
             BandType = rbDetail
             object QRSysData2: TQRSysData
@@ -2143,7 +2143,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
                 44.979166666666670000
                 1248.833333333333000000
                 2.645833333333333000
-                92.604166666666680000)
+                92.604166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2233,7 +2233,11 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             'KETERANGAN'#9'27'#9'NAMA BARANG/BAHAN'#9'F'#9'MATERIAL'
             'SAT_D'#9'6'#9'SAT'#9'F'#9'MATERIAL'
             'QTY_D'#9'6'#9'JUMLAH'#9'F'#9'MATERIAL'
-            'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F')
+            'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F'
+            'OPR_INSERT'#9'20'#9'INSERT'#9'F'#9'LOG USER'
+            'OPR_UPDATE'#9'20'#9'UPDATE'#9'F'#9'LOG USER'
+            'TGL_INSERT'#9'18'#9'INSERT'#9'F'#9'LOG TANGGAL'
+            'TGL_UPDATE'#9'18'#9'UPDATE'#9'F'#9'LOG TANGGAL')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2579,7 +2583,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               FontSize = 11
             end
             object QRLDivisi: TQRLabel
-              Left = -13
+              Left = 353
               Top = 21
               Width = 42
               Height = 20
@@ -2591,7 +2595,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                933.979166666666800000
+                933.979166666666700000
                 55.562500000000000000
                 111.125000000000000000)
               Alignment = taCenter
@@ -3230,7 +3234,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                66.145833333333340000
+                66.145833333333330000
                 746.125000000000000000
                 5.291666666666667000
                 484.187500000000000000)
@@ -4015,7 +4019,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewPage = False
             ParentFont = False
             Size.Values = (
-              343.958333333333400000
+              343.958333333333300000
               1979.083333333333000000)
             BandType = rbSummary
             object QRDBText331: TQRDBText
@@ -5181,7 +5185,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label19: TLabel
             Left = 0
             Top = 319
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5998,7 +6002,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -6030,7 +6034,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                788.458333333333400000
+                788.458333333333300000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -7077,7 +7081,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              74.083333333333340000
+              74.083333333333330000
               1957.916666666667000000)
             BandType = rbGroupFooter
             object QRExpr24: TQRExpr
@@ -7855,7 +7859,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -7876,7 +7880,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               FontSize = 14
             end
             object qrlPeriode3: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -7887,7 +7891,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -9423,7 +9427,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -9444,7 +9448,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               FontSize = 14
             end
             object qrlPeriode5: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -9455,7 +9459,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -10452,7 +10456,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              60.854166666666680000
+              60.854166666666670000
               1960.562500000000000000)
             BandType = rbGroupFooter
             object QRExpr51: TQRExpr
@@ -11131,7 +11135,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -11152,7 +11156,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               FontSize = 14
             end
             object qrlPeriode6: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -11163,7 +11167,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -12135,7 +12139,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              60.854166666666680000
+              60.854166666666670000
               1960.562500000000000000)
             BandType = rbGroupFooter
             object QRExpr68: TQRExpr
@@ -12538,6 +12542,20 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
       FieldName = 'TOT_QTY'
       Required = True
       DisplayFormat = '#,#;(#,#);-'
+    end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      Size = 50
+    end
+    object qB1OPR_UPDATE: TStringField
+      FieldName = 'OPR_UPDATE'
+      Size = 50
+    end
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+    end
+    object qB1TGL_UPDATE: TDateTimeField
+      FieldName = 'TGL_UPDATE'
     end
   end
   object dsqB1: TwwDataSource
@@ -13157,8 +13175,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
-    Left = 1155
-    Top = 96
+    Left = 1115
+    Top = 128
   end
   object qItem: TOraQuery
     Session = DMFrm.OS
@@ -13730,8 +13748,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   end
   object qB2X: TOraQuery
     Session = DMFrm.OS
-    Left = 1184
-    Top = 88
+    Left = 1240
+    Top = 64
     object qB2XNDATA: TFloatField
       FieldName = 'NDATA'
     end

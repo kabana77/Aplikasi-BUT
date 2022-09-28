@@ -1,6 +1,6 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 305
-  Top = 121
+  Left = 306
+  Top = 110
   Width = 1382
   Height = 827
   Caption = 'LaporanBCFrm'
@@ -1501,7 +1501,7 @@ object LaporanBCFrm: TLaporanBCFrm
       Top = 50
       Width = 1271
       Height = 709
-      ActivePage = TabSheet1
+      ActivePage = TabSheet6
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

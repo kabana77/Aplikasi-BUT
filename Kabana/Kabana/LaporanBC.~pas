@@ -987,7 +987,7 @@ begin
           end;
   end;
   if qB2.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
     else
       vorder:='';
   vfilter2:=vfilter;                               //Ganti
@@ -1090,7 +1090,7 @@ begin
           end;
   end;
   if qB4.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
     else
       vorder:='';
   vfilter3:=vfilter;                               //Ganti
@@ -1193,7 +1193,7 @@ begin
           end;
   end;
   if qB5.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
     else
       vorder:='';
   vfilter4:=vfilter;                               //Ganti
@@ -1307,7 +1307,7 @@ begin
         end;
   end;
   if qB6.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
   else
     vorder:='';
 
@@ -1422,7 +1422,7 @@ begin
         end;
   end;
   if qB7.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
   else
     vorder:='';
 
@@ -1525,7 +1525,7 @@ begin
           end;
   end;
   if qB8.Active then                               //Ganti
-    vorder:=' order by '+vFieldName[0]
+    vorder:=' order by '+vFieldName[1]
     else
       vorder:='';
   vfilter7:=vfilter;                               //Ganti

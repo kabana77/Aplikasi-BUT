@@ -920,6 +920,10 @@ type
     QRLabel27: TQRLabel;
     QRDBText32: TQRDBText;
     qrlNamaBJ: TQRLabel;
+    qB1OPR_INSERT: TStringField;
+    qB1OPR_UPDATE: TStringField;
+    qB1TGL_INSERT: TDateTimeField;
+    qB1TGL_UPDATE: TDateTimeField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
