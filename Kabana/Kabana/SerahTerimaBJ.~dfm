@@ -1,8 +1,8 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 204
-  Top = 127
-  Width = 1600
-  Height = 766
+  Left = 207
+  Top = 154
+  Width = 1159
+  Height = 494
   Caption = 'Serah Terima Barang Jadi'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 727
+    Height = 455
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1504
-    Height = 727
+    Width = 1063
+    Height = 455
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1504
+      Width = 1063
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 698
-      Width = 1504
+      Top = 426
+      Width = 1063
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 1035
+        Width = 594
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         end
       end
       object pRight2: TPanel
-        Left = 1457
+        Left = 1016
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1504
-      Height = 648
+      Width = 1063
+      Height = 376
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -374,7 +374,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 55.562500000000000000
-                42.333333333333340000
+                42.333333333333330000
                 21.166666666666670000
                 452.437500000000000000)
               Alignment = taLeftJustify
@@ -406,8 +406,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
-                76.729166666666680000
+                42.333333333333330000
+                76.729166666666670000
                 158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -432,7 +432,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 119.062500000000000000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -458,7 +458,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 161.395833333333300000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -550,7 +550,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 44.979166666666670000
                 1439.333333333333000000
                 105.833333333333300000
-                82.020833333333340000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -659,7 +659,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewPage = False
             ParentFont = False
             Size.Values = (
-              232.833333333333400000
+              232.833333333333300000
               1957.916666666667000000)
             BandType = rbTitle
             object qrlPeriode: TQRLabel
@@ -674,7 +674,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                788.458333333333400000
+                788.458333333333300000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -883,7 +883,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 63.500000000000000000
                 515.937500000000000000
                 0.000000000000000000
-                926.041666666666800000)
+                926.041666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1690,7 +1690,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              68.791666666666680000
+              68.791666666666670000
               1957.916666666667000000)
             BandType = rbDetail
             object QRSysData2: TQRSysData
@@ -2143,7 +2143,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 44.979166666666670000
                 1248.833333333333000000
                 2.645833333333333000
-                92.604166666666680000)
+                92.604166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2197,7 +2197,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1496
+          Width = 1055
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2216,26 +2216,26 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1496
-          Height = 587
+          Width = 1055
+          Height = 315
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
             'ISBATAL;CheckBox;1;0')
           Selected.Strings = (
-            'NO_REG_OS'#9'12'#9'NO_BUKTI'#9'F'
-            'TGL'#9'11'#9'TGL'#9'F'
-            'ISPOST'#9'5'#9'Posted'#9'F'
-            'NO_REFF'#9'7'#9'NO_BOM'#9'F'
-            'NAMA_LOKASI'#9'4'#9'Asal'#9'F'#9'LOKASI'
-            'NAMA_LOKASI2'#9'9'#9'Tujuan'#9'F'#9'LOKASI'
-            'SESI_PRODUKSI'#9'66'#9'SESI_PRODUKSI'#9'F'
-            'TOT_QTY'#9'5'#9'HASIL'#9'F'
-            'KD_ITEM'#9'9'#9'Kode'#9'F'#9'BAHAN BAKU'
-            'KETERANGAN'#9'27'#9'Nama Barang/ Bahan'#9'F'#9'BAHAN BAKU'
-            'SAT_D'#9'10'#9'Satuan'#9'F'#9'BAHAN BAKU'
-            'QTY_D'#9'6'#9'Jumlah'#9'F'#9'BAHAN BAKU'
-            'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F')
+            'NO_REG_OS'#9'10'#9'NO BUKTI'#9'F'
+            'TGL'#9'15'#9'TGL'#9'F'
+            'KETERANGAN'#9'40'#9'NAMA CUSTOMER'#9'F'
+            'ISPOST'#9'5'#9'POST'#9'F'
+            'JENIS'#9'6'#9'JENIS'#9'F'
+            'NO_REFF'#9'15'#9'NO. BOM'#9'F'
+            'COLOR'#9'20'#9'COLOR'#9'F'
+            'ITEM'#9'20'#9'ITEM'#9'F'
+            'STYLE'#9'30'#9'STYLE'#9'F'
+            'OPR_INSERT'#9'20'#9'INSERT'#9'F'#9'LOG USER'
+            'OPR_UPDATE'#9'20'#9'UPDATE'#9'F'#9'LOG USER'
+            'TGL_INSERT'#9'18'#9'INSERT'#9'F'#9'LOG TANGGAL'
+            'TGL_UPDATE'#9'18'#9'UPDATE'#9'F'#9'LOG TANGGAL')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2581,7 +2581,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FontSize = 11
             end
             object QRLDivisi: TQRLabel
-              Left = -13
+              Left = 353
               Top = 21
               Width = 42
               Height = 20
@@ -2593,7 +2593,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                933.979166666666800000
+                933.979166666666700000
                 55.562500000000000000
                 111.125000000000000000)
               Alignment = taCenter
@@ -3232,10 +3232,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                66.145833333333340000
+                66.145833333333330000
                 642.937500000000000000
                 5.291666666666667000
-                693.208333333333400000)
+                693.208333333333300000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -3917,7 +3917,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewPage = False
             ParentFont = False
             Size.Values = (
-              343.958333333333400000
+              343.958333333333300000
               1979.083333333333000000)
             BandType = rbSummary
             object QRDBText331: TQRDBText
@@ -4490,7 +4490,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FontSize = 10
             end
             object QRSysData11: TQRSysData
-              Left = -33
+              Left = 700
               Top = 0
               Width = 48
               Height = 20
@@ -4524,7 +4524,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1496
+          Width = 1055
           Height = 257
           Align = alTop
           BevelOuter = bvNone
@@ -4854,7 +4854,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Panel2: TPanel
             Left = 0
             Top = 160
-            Width = 1496
+            Width = 1055
             Height = 97
             Align = alBottom
             Caption = 'Panel2'
@@ -5073,10 +5073,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
         end
         object pMaster2: TPanel
-          Left = 1311
+          Left = 870
           Top = 257
           Width = 185
-          Height = 363
+          Height = 91
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5090,7 +5090,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Label19: TLabel
             Left = 0
             Top = 309
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5156,8 +5156,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 257
-          Width = 1311
-          Height = 363
+          Width = 870
+          Height = 91
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -5173,8 +5173,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1303
-              Height = 335
+              Width = 862
+              Height = 63
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5266,7 +5266,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 1303
+              Width = 862
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5375,8 +5375,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 1303
-              Height = 286
+              Width = 862
+              Height = 14
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5907,7 +5907,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -5939,7 +5939,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                788.458333333333400000
+                788.458333333333300000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -6986,7 +6986,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              74.083333333333340000
+              74.083333333333330000
               1957.916666666667000000)
             BandType = rbGroupFooter
             object QRExpr24: TQRExpr
@@ -7764,7 +7764,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -7785,7 +7785,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FontSize = 14
             end
             object qrlPeriode3: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -7796,7 +7796,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -9332,7 +9332,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -9353,7 +9353,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FontSize = 14
             end
             object qrlPeriode5: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -9364,7 +9364,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -10361,7 +10361,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              60.854166666666680000
+              60.854166666666670000
               1960.562500000000000000)
             BandType = rbGroupFooter
             object QRExpr51: TQRExpr
@@ -11040,7 +11040,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333400000
+                796.395833333333300000
                 2.645833333333333000
                 365.125000000000000000)
               Alignment = taCenter
@@ -11061,7 +11061,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FontSize = 14
             end
             object qrlPeriode6: TQRLabel
-              Left = -64
+              Left = 299
               Top = 24
               Width = 143
               Height = 17
@@ -11072,7 +11072,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                791.104166666666800000
+                791.104166666666700000
                 63.500000000000000000
                 378.354166666666700000)
               Alignment = taCenter
@@ -12044,7 +12044,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              60.854166666666680000
+              60.854166666666670000
               1960.562500000000000000)
             BandType = rbGroupFooter
             object QRExpr68: TQRExpr
@@ -12264,10 +12264,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
   end
   object pRight: TPanel
-    Left = 1544
+    Left = 1103
     Top = 0
     Width = 40
-    Height = 727
+    Height = 455
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -12276,13 +12276,22 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from vpindah_lokasi_1')
+      'select a.*, b.style, b.item, b.color'
+      'from pindah_lokasi a'
+      'left join bom_d b on a.no_reff = to_char(b.no_reg_d)'
+      'where a.kd_form = '#39'175'#39
+      '/*select * from vpindah_lokasi_1*/')
     ReadOnly = True
     Left = 1115
     Top = 16
     object qB1NO_REG_OS: TFloatField
       FieldName = 'NO_REG_OS'
       Required = True
+    end
+    object qB1KD_FORM: TStringField
+      FieldName = 'KD_FORM'
+      Required = True
+      Size = 10
     end
     object qB1TGL: TDateTimeField
       FieldName = 'TGL'
@@ -12322,6 +12331,19 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       Required = True
       Size = 50
     end
+    object qB1KD_DIV: TStringField
+      FieldName = 'KD_DIV'
+      Required = True
+      Size = 3
+    end
+    object qB1KETERANGAN: TStringField
+      FieldName = 'KETERANGAN'
+      Size = 255
+    end
+    object qB1CATATAN: TStringField
+      FieldName = 'CATATAN'
+      Size = 255
+    end
     object qB1ISPOST: TStringField
       FieldName = 'ISPOST'
       Required = True
@@ -12334,120 +12356,201 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       FixedChar = True
       Size = 1
     end
-    object qB1SESI_PRODUKSI: TStringField
-      FieldName = 'SESI_PRODUKSI'
-      Size = 255
-    end
-    object qB1NO_REG_D: TFloatField
-      FieldName = 'NO_REG_D'
+    object qB1MODE_INPUT: TStringField
+      FieldName = 'MODE_INPUT'
       Required = True
-    end
-    object qB1KD_ITEM: TStringField
-      FieldName = 'KD_ITEM'
-      Required = True
-      Size = 12
-    end
-    object qB1KETERANGAN: TStringField
-      FieldName = 'KETERANGAN'
-      Size = 255
-    end
-    object qB1KG_A: TFloatField
-      FieldName = 'KG_A'
-      Required = True
-    end
-    object qB1KG_T: TFloatField
-      FieldName = 'KG_T'
-      Required = True
-    end
-    object qB1KG_D: TFloatField
-      FieldName = 'KG_D'
-      Required = True
-    end
-    object qB1SAT_A: TStringField
-      FieldName = 'SAT_A'
-      Size = 12
-    end
-    object qB1SAT_T: TStringField
-      FieldName = 'SAT_T'
-      Size = 12
-    end
-    object qB1SAT_D: TStringField
-      FieldName = 'SAT_D'
-      Size = 12
-    end
-    object qB1RA: TFloatField
-      FieldName = 'RA'
-      Required = True
-    end
-    object qB1RT: TFloatField
-      FieldName = 'RT'
-      Required = True
-    end
-    object qB1RD: TFloatField
-      FieldName = 'RD'
-      Required = True
-    end
-    object qB1HRG_BELI_A: TFloatField
-      FieldName = 'HRG_BELI_A'
-      Required = True
-    end
-    object qB1HRG_BELI_T: TFloatField
-      FieldName = 'HRG_BELI_T'
-      Required = True
-    end
-    object qB1HRG_BELI_D: TFloatField
-      FieldName = 'HRG_BELI_D'
-      Required = True
-    end
-    object qB1HRG_A: TFloatField
-      FieldName = 'HRG_A'
-      Required = True
-    end
-    object qB1HRG_T: TFloatField
-      FieldName = 'HRG_T'
-      Required = True
-    end
-    object qB1HRG_D: TFloatField
-      FieldName = 'HRG_D'
-      Required = True
-    end
-    object qB1QTY_A: TFloatField
-      FieldName = 'QTY_A'
-      Required = True
-    end
-    object qB1QTY_T: TFloatField
-      FieldName = 'QTY_T'
-      Required = True
-    end
-    object qB1QTY_D: TFloatField
-      FieldName = 'QTY_D'
-      Required = True
-      DisplayFormat = '#,#;(#,#);-'
-    end
-    object qB1QTY_X: TFloatField
-      FieldName = 'QTY_X'
-      Required = True
-    end
-    object qB1QTY_Y: TFloatField
-      FieldName = 'QTY_Y'
-      Required = True
-    end
-    object qB1KG_TOT: TFloatField
-      FieldName = 'KG_TOT'
-      Required = True
+      Size = 6
     end
     object qB1SUB_TOTAL: TFloatField
       FieldName = 'SUB_TOTAL'
       Required = True
     end
-    object qB1KETERANGAN2: TStringField
-      FieldName = 'KETERANGAN2'
-      Size = 255
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+      Required = True
+    end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      Required = True
+      Size = 50
+    end
+    object qB1TGL_UPDATE: TDateTimeField
+      FieldName = 'TGL_UPDATE'
+    end
+    object qB1OPR_UPDATE: TStringField
+      FieldName = 'OPR_UPDATE'
+      Size = 50
+    end
+    object qB1NO_PO: TStringField
+      FieldName = 'NO_PO'
+    end
+    object qB1NO_BL: TStringField
+      FieldName = 'NO_BL'
+      Size = 50
+    end
+    object qB1NAMA_KAPAL: TStringField
+      FieldName = 'NAMA_KAPAL'
+      Size = 50
+    end
+    object qB1NO_CONTAINER: TStringField
+      FieldName = 'NO_CONTAINER'
+    end
+    object qB1NO_SEAL: TStringField
+      FieldName = 'NO_SEAL'
+    end
+    object qB1JENIS: TStringField
+      FieldName = 'JENIS'
+      Size = 50
+    end
+    object qB1XXS: TFloatField
+      FieldName = 'XXS'
+      Required = True
+    end
+    object qB1XS: TFloatField
+      FieldName = 'XS'
+      Required = True
+    end
+    object qB1S: TFloatField
+      FieldName = 'S'
+      Required = True
+    end
+    object qB1M: TFloatField
+      FieldName = 'M'
+      Required = True
+    end
+    object qB1L: TFloatField
+      FieldName = 'L'
+      Required = True
+    end
+    object qB1XL: TFloatField
+      FieldName = 'XL'
+      Required = True
+    end
+    object qB1X0: TFloatField
+      FieldName = 'X0'
+      Required = True
+    end
+    object qB1X1: TFloatField
+      FieldName = 'X1'
+      Required = True
+    end
+    object qB1X2: TFloatField
+      FieldName = 'X2'
+      Required = True
+    end
+    object qB1X3: TFloatField
+      FieldName = 'X3'
+      Required = True
     end
     object qB1TOT_QTY: TFloatField
       FieldName = 'TOT_QTY'
       Required = True
-      DisplayFormat = '#,#;(#,#);-'
+    end
+    object qB1NO_BOM: TFloatField
+      FieldName = 'NO_BOM'
+    end
+    object qB1NAMA_PRINSIPAL: TStringField
+      FieldName = 'NAMA_PRINSIPAL'
+      Size = 50
+    end
+    object qB1ALAMAT: TStringField
+      FieldName = 'ALAMAT'
+      Size = 255
+    end
+    object qB1KOTA: TStringField
+      FieldName = 'KOTA'
+      Size = 50
+    end
+    object qB1TELEPON: TStringField
+      FieldName = 'TELEPON'
+      Size = 50
+    end
+    object qB1NO_REFF_KONTRAK: TStringField
+      FieldName = 'NO_REFF_KONTRAK'
+      Size = 50
+    end
+    object qB1ID_PRINSIPAL: TStringField
+      FieldName = 'ID_PRINSIPAL'
+      Size = 6
+    end
+    object qB1CATATAN2: TStringField
+      FieldName = 'CATATAN2'
+      Size = 255
+    end
+    object qB1SIZE01: TFloatField
+      FieldName = 'SIZE01'
+      Required = True
+    end
+    object qB1SIZE02: TFloatField
+      FieldName = 'SIZE02'
+      Required = True
+    end
+    object qB1SIZE03: TFloatField
+      FieldName = 'SIZE03'
+      Required = True
+    end
+    object qB1SIZE04: TFloatField
+      FieldName = 'SIZE04'
+      Required = True
+    end
+    object qB1SIZE05: TFloatField
+      FieldName = 'SIZE05'
+      Required = True
+    end
+    object qB1SIZE06: TFloatField
+      FieldName = 'SIZE06'
+      Required = True
+    end
+    object qB1SIZE07: TFloatField
+      FieldName = 'SIZE07'
+      Required = True
+    end
+    object qB1SIZE08: TFloatField
+      FieldName = 'SIZE08'
+      Required = True
+    end
+    object qB1SIZE09: TFloatField
+      FieldName = 'SIZE09'
+      Required = True
+    end
+    object qB1SIZE10: TFloatField
+      FieldName = 'SIZE10'
+      Required = True
+    end
+    object qB1SIZE11: TFloatField
+      FieldName = 'SIZE11'
+      Required = True
+    end
+    object qB1SIZE12: TFloatField
+      FieldName = 'SIZE12'
+      Required = True
+    end
+    object qB1SIZE13: TFloatField
+      FieldName = 'SIZE13'
+      Required = True
+    end
+    object qB1SIZE14: TFloatField
+      FieldName = 'SIZE14'
+      Required = True
+    end
+    object qB1SIZE15: TFloatField
+      FieldName = 'SIZE15'
+      Required = True
+    end
+    object qB1STYLE: TStringField
+      FieldName = 'STYLE'
+      ReadOnly = True
+      Size = 128
+    end
+    object qB1ITEM: TStringField
+      FieldName = 'ITEM'
+      ReadOnly = True
+      Size = 50
+    end
+    object qB1COLOR: TStringField
+      FieldName = 'COLOR'
+      ReadOnly = True
+      Size = 50
     end
   end
   object dsqB1: TwwDataSource
