@@ -1845,8 +1845,18 @@ begin
   QRLPPN.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vppn);
   QRLTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vtotal);
 
-  DMFrm.MyIDR.Nilai:=vtotal;
-  qrlTerbilang.Caption:='#'+DMFrm.MyIDR.HasilKonversi+'#';
+  if qBMasterMU.AsString = 'IDR' then
+  begin
+    DMFrm.MyIDR_en.Nilai:=vtotal;
+    qrlTerbilang.Caption:='#'+DMFrm.MyIDR_en.HasilKonversi+'#';
+  end;
+
+  if qBMasterMU.AsString = 'USD' then
+  begin
+    DMFrm.MyUSD.Nilai:=vtotal;
+    qrlTerbilang.Caption:='#'+DMFrm.MyUSD.HasilKonversi+'#';
+  end;
+
 end;
 
 procedure TDTFrm.TitleBand2BeforePrint(Sender: TQRCustomBand;

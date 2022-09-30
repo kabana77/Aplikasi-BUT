@@ -7585,8 +7585,8 @@ object DTFrm: TDTFrm
             ParentFont = False
             OnShow = tsInputDShow
             object qrBukti: TQuickRep
-              Left = 64
-              Top = 7
+              Left = 72
+              Top = -57
               Width = 794
               Height = 529
               Frame.Color = clBlack

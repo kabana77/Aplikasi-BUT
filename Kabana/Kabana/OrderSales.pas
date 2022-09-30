@@ -1695,6 +1695,7 @@ type
     DBText15: TDBText;
     qBMasterNO_BUKTI: TStringField;
     qB1NO_BUKTI: TStringField;
+    QRDBText28: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
