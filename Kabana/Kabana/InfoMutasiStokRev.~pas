@@ -1038,8 +1038,8 @@ begin
   end;
   with pTop2 do
   begin
-    Color         := clpTop2;
-    Font.Color    := clTop2Font;
+    //Color         := clpTop2;
+    //Font.Color    := clTop2Font;
     Caption       :='';
   end;
 
@@ -1288,7 +1288,12 @@ end;
 procedure TInfoMutasiStokRevFrm.qB1FilterRecord(DataSet: TDataSet;
   var Accept: Boolean);
 begin
-  Accept:=(qB1QTY_X.AsFloat<>0);
+  Accept:=(
+     (qB1QTY_X.AsFloat<>0) or
+     (qB1AWAL_D.AsFloat<>0) or
+     (qB1LQTY_MASUK_ALL.AsFloat<>0) or
+     (qB1LQTY_KELUAR_ALL.AsFloat<>0)
+  );
 end;
 
 procedure TInfoMutasiStokRevFrm.CheckBox3Click(Sender: TObject);

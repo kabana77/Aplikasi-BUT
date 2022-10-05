@@ -12276,11 +12276,12 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select a.*, b.style, b.item, b.color'
+      'select * from vpindah_lokasi_1'
+      ''
+      '/*select a.*, b.style, b.item, b.color'
       'from pindah_lokasi a'
       'left join bom_d b on a.no_reff = to_char(b.no_reg_d)'
-      'where a.kd_form = '#39'175'#39
-      '/*select * from vpindah_lokasi_1*/')
+      'where a.kd_form = '#39'175'#39'*/')
     ReadOnly = True
     Left = 1115
     Top = 16

@@ -1,5 +1,5 @@
 object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
-  Left = 278
+  Left = 279
   Top = 253
   Width = 1198
   Height = 600
@@ -6012,6 +6012,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial Narrow'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object Label1: TLabel
             Left = 480
@@ -6025,6 +6026,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object DBText16: TDBText
             Left = 368
@@ -6041,6 +6043,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label11: TLabel
             Left = 312
@@ -6054,6 +6057,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object CheckBox1: TCheckBox
             Left = 596
@@ -6111,6 +6115,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             LookupTable = DMFrm.qLokasi
             LookupField = 'KD_LOKASI'
             Options = [loColLines, loRowLines, loTitles]
+            Enabled = False
             ParentFont = False
             TabOrder = 2
             AutoDropDown = False
@@ -6141,11 +6146,10 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
           Height = 377
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
-            'NAMA_PRINSIPAL'#9'29'#9'NAMA SUPLIER'#9'F'
+            'NAMA_PRINSIPAL'#9'20'#9'NAMA CUSTOMER'#9'F'
             'KD_ITEM'#9'7'#9'KODE'#9'F'#9'ITEM BARANG'
             'NAMA_ITEM'#9'41'#9'KETERANGAN'#9'F'#9'ITEM BARANG'
-            'BRAND'#9'17'#9'BRAND'#9'T'#9'K E L O M P O K'
-            'KELOMPOK'#9'25'#9'KELOMPOK'#9'T'#9'K E L O M P O K'
+            'BRAND'#9'17'#9'BRAND'#9'T'
             'SAT_D'#9'5'#9'SATUAN'#9'F'
             'HRG_BELI_D'#9'5'#9'HARGA BELI'#9'F'
             'AWAL_D'#9'10'#9'QTY'#9'F'#9'A W A L'
@@ -6278,6 +6282,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object Label6: TLabel
             Left = 112
@@ -6293,6 +6298,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object Label7: TLabel
             Left = 160
@@ -6308,6 +6314,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object Label8: TLabel
             Left = 224
@@ -6323,11 +6330,12 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = []
             ParentFont = False
+            Visible = False
           end
           object Label9: TLabel
             Left = 16
             Top = 88
-            Width = 64
+            Width = 74
             Height = 16
             Caption = 'Saldo Awal'
             Font.Charset = ANSI_CHARSET
@@ -6381,6 +6389,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText5: TDBText
             Left = 160
@@ -6396,13 +6405,15 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText6: TDBText
-            Left = 224
-            Top = 56
-            Width = 40
+            Left = 217
+            Top = 57
+            Width = 52
             Height = 17
             Alignment = taCenter
+            AutoSize = True
             DataField = 'SAT_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
@@ -6426,6 +6437,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText8: TDBText
             Left = 160
@@ -6441,13 +6453,15 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText9: TDBText
-            Left = 224
-            Top = 72
-            Width = 40
+            Left = 217
+            Top = 73
+            Width = 52
             Height = 17
             Alignment = taCenter
+            AutoSize = True
             DataField = 'RD'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
@@ -6456,6 +6470,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText10: TDBText
             Left = 112
@@ -6471,6 +6486,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText11: TDBText
             Left = 160
@@ -6486,13 +6502,15 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText12: TDBText
-            Left = 224
-            Top = 88
-            Width = 40
-            Height = 17
+            Left = 209
+            Top = 89
+            Width = 59
+            Height = 16
             Alignment = taCenter
+            AutoSize = True
             DataField = 'AWAL_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
@@ -6529,6 +6547,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText14: TDBText
             Left = 160
@@ -6544,13 +6563,15 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
+            Visible = False
           end
           object DBText15: TDBText
-            Left = 224
+            Left = 209
             Top = 104
-            Width = 40
+            Width = 59
             Height = 17
             Alignment = taCenter
+            AutoSize = True
             DataField = 'AKHIR_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
@@ -6578,11 +6599,8 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             'KD_FORM'#9'6'#9'Kode'#9'F'#9'JENIS BUKTI'
             'JNS_TRANSAKSI'#9'14'#9'Bukti'#9'F'#9'JENIS BUKTI'
             'KETERANGAN'#9'28'#9'KETERANGAN'#9'F'
-            'RD'#9'1'#9'RASIO'#9'F'
-            'QTY_D'#9'10'#9'QTY'#9'F'#9'MASUK'
-            'KG_TOT'#9'6'#9'Berat~Kg'#9'F'#9'MASUK'
-            'QTY2_D'#9'3'#9'QTY'#9'F'#9'KELUAR'
-            'KG_TOT2'#9'6'#9'Berat~Kg'#9'F'#9'KELUAR'
+            'QTY_D'#9'15'#9'MASUK'#9'F'
+            'QTY2_D'#9'15'#9'KELUAR'#9'F'
             'NAMA_LOKASI2'#9'8'#9'LOKASI'#9'F')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
