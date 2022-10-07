@@ -1,5 +1,5 @@
 object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
-  Left = 279
+  Left = 280
   Top = 253
   Width = 1198
   Height = 600

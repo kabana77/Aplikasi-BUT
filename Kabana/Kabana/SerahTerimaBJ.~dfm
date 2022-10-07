@@ -1,8 +1,8 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 207
+  Left = 209
   Top = 154
-  Width = 1159
-  Height = 494
+  Width = 1356
+  Height = 692
   Caption = 'Serah Terima Barang Jadi'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 455
+    Height = 653
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1063
-    Height = 455
+    Width = 1260
+    Height = 653
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1063
+      Width = 1260
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 426
-      Width = 1063
+      Top = 624
+      Width = 1260
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 594
+        Width = 791
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         end
       end
       object pRight2: TPanel
-        Left = 1016
+        Left = 1213
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1063
-      Height = 376
+      Width = 1260
+      Height = 574
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2197,7 +2197,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1055
+          Width = 1252
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2216,8 +2216,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1055
-          Height = 315
+          Width = 1252
+          Height = 513
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -2374,7 +2374,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Size.Values = (
                 63.500000000000000000
                 1375.833333333333000000
-                84.666666666666680000
+                84.666666666666670000
                 317.500000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -2501,7 +2501,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                431.270833333333400000
+                431.270833333333300000
                 55.562500000000000000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -3422,7 +3422,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Size.Values = (
                 44.979166666666670000
                 1608.666666666667000000
-                97.895833333333340000
+                97.895833333333330000
                 13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3884,7 +3884,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 47.625000000000000000
                 1251.479166666667000000
                 0.000000000000000000
-                84.666666666666680000)
+                84.666666666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -4524,7 +4524,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1055
+          Width = 1252
           Height = 257
           Align = alTop
           BevelOuter = bvNone
@@ -4854,7 +4854,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Panel2: TPanel
             Left = 0
             Top = 160
-            Width = 1055
+            Width = 1252
             Height = 97
             Align = alBottom
             Caption = 'Panel2'
@@ -4862,7 +4862,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object wwDBGrid1: TwwDBGrid
               Left = 1
               Top = 1
-              Width = 1494
+              Width = 1250
               Height = 73
               TabStop = False
               DittoAttributes.ShortCutDittoRecord = 16429
@@ -4937,7 +4937,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object wwDBGrid2: TwwDBGrid
               Left = 1
               Top = 74
-              Width = 1494
+              Width = 1250
               Height = 22
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -5073,10 +5073,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
         end
         object pMaster2: TPanel
-          Left = 870
+          Left = 1067
           Top = 257
           Width = 185
-          Height = 91
+          Height = 289
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5089,8 +5089,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 309
-            Width = 78
+            Top = 235
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5118,7 +5118,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 322
+            Top = 248
             Width = 185
             Height = 41
             TabStop = False
@@ -5156,11 +5156,75 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 257
-          Width = 870
-          Height = 91
-          ActivePage = tsInputD
+          Width = 1067
+          Height = 289
+          ActivePage = tsInputD3
           Align = alClient
           TabOrder = 2
+          object tsInputD3: TTabSheet
+            Caption = 'Bukti Pemakaian Bahan'
+            ImageIndex = 2
+            OnShow = tsInputD3Show
+            object wwDBGrid4: TwwDBGrid
+              Left = 0
+              Top = 0
+              Width = 1059
+              Height = 261
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'KD_ITEM;CustomEdit;lcdItem;F'
+                'ISHADIAH;CheckBox;1;0'
+                'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
+              Selected.Strings = (
+                'NO_REG_OS_REFF'#9'20'#9'NO BUKTI'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqBDetail3
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = False
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              OnEnter = wwDBGrid4Enter
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+              object wwIButton5: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
+            end
+          end
           object tsInputD: TTabSheet
             Caption = 'Detail Item Barang'
             Font.Charset = DEFAULT_CHARSET
@@ -5173,8 +5237,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 862
-              Height = 63
+              Width = 1059
+              Height = 261
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5238,26 +5302,6 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 OnClick = wwDBGrid1IButtonClick
               end
             end
-            object wwDBComboBox1: TwwDBComboBox
-              Left = 376
-              Top = 157
-              Width = 121
-              Height = 19
-              ShowButton = True
-              Style = csDropDown
-              MapList = True
-              AllowClearKey = False
-              DataField = 'NO_SERIAL'
-              DataSource = dsqBDetail
-              DropDownCount = 8
-              ItemHeight = 0
-              Items.Strings = (
-                'ASDAS'#9'XS'
-                'GFDFGD'#9'XXS')
-              Sorted = False
-              TabOrder = 1
-              UnboundDataType = wwDefault
-            end
           end
           object tsInputD2: TTabSheet
             Caption = 'Info Stok'
@@ -5266,7 +5310,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 862
+              Width = 1059
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5375,8 +5419,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 862
-              Height = 14
+              Width = 1059
+              Height = 212
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -7211,7 +7255,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop2: TPanel
           Left = 0
           Top = 0
-          Width = 1186
+          Width = 1252
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -7230,8 +7274,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid2: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1186
-          Height = 500
+          Width = 1252
+          Height = 513
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -12264,10 +12308,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
   end
   object pRight: TPanel
-    Left = 1103
+    Left = 1300
     Top = 0
     Width = 40
-    Height = 455
+    Height = 653
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -12769,8 +12813,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
-    Left = 1155
-    Top = 128
+    Left = 771
+    Top = 192
   end
   object qSlsman: TOraQuery
     Session = DMFrm.OS
@@ -14568,8 +14612,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1155
-    Top = 128
+    Left = 1091
+    Top = 120
   end
   object qBom: TOraQuery
     Session = DMFrm.OS
@@ -14836,7 +14880,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'where no_reg_bukti=:no_reg_os')
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     BeforeOpen = qBDetail2BeforeOpen
-    Left = 883
+    Left = 891
     Top = 192
     ParamData = <
       item
@@ -14874,5 +14918,51 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       FieldName = 'KD_LOKASI2'
       Size = 12
     end
+  end
+  object qBDetail3: TSmartQuery
+    KeyFields = 'NO_REG_D'
+    KeySequence = 'NO_REG_D'
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'select * from pindah_lokasi_d1'
+      'where no_reg_os=:no_reg_os')
+    MasterFields = 'NO_REG_OS'
+    DetailFields = 'NO_REG_OS'
+    MasterSource = dsqBMaster
+    RefreshOptions = [roAfterInsert, roAfterUpdate]
+    IndexFieldNames = 'NO_REG_D'
+    BeforeInsert = qBDetail3BeforeInsert
+    BeforeEdit = qBMasterBeforeEdit
+    BeforePost = qBDetail3BeforePost
+    BeforeDelete = qBMasterBeforeDelete
+    OnNewRecord = qBDetail3NewRecord
+    Left = 835
+    Top = 248
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'NO_REG_OS'
+        ParamType = ptInput
+      end>
+    object qBDetail3NO_REG_D: TFloatField
+      FieldName = 'NO_REG_D'
+      Required = True
+    end
+    object qBDetail3NO_REG_OS: TFloatField
+      FieldName = 'NO_REG_OS'
+    end
+    object qBDetail3NO_REG_OS_REFF: TStringField
+      FieldName = 'NO_REG_OS_REFF'
+      Size = 50
+    end
+    object qBDetail3NO_REFF: TStringField
+      FieldName = 'NO_REFF'
+      Size = 15
+    end
+  end
+  object dsqBDetail3: TwwDataSource
+    DataSet = qBDetail3
+    Left = 771
+    Top = 248
   end
 end

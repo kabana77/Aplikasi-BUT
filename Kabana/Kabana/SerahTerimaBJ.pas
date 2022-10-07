@@ -816,7 +816,6 @@ type
     wwDBGrid1: TwwDBGrid;
     Label3: TLabel;
     wwDBGrid2: TwwDBGrid;
-    wwDBComboBox1: TwwDBComboBox;
     qBDetail2: TSmartQuery;
     qBDetail2NO_REG_BUKTI: TFloatField;
     qBDetail2KD_ITEM: TStringField;
@@ -951,6 +950,15 @@ type
     qB1STYLE: TStringField;
     qB1ITEM: TStringField;
     qB1COLOR: TStringField;
+    tsInputD3: TTabSheet;
+    qBDetail3: TSmartQuery;
+    dsqBDetail3: TwwDataSource;
+    wwDBGrid4: TwwDBGrid;
+    wwIButton5: TwwIButton;
+    qBDetail3NO_REG_D: TFloatField;
+    qBDetail3NO_REG_OS: TFloatField;
+    qBDetail3NO_REG_OS_REFF: TStringField;
+    qBDetail3NO_REFF: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1090,6 +1098,11 @@ type
       var PrintBand: Boolean);
     procedure QRBand44BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
+    procedure wwDBGrid4Enter(Sender: TObject);
+    procedure qBDetail3NewRecord(DataSet: TDataSet);
+    procedure qBDetail3BeforePost(DataSet: TDataSet);
+    procedure qBDetail3BeforeInsert(DataSet: TDataSet);
+    procedure tsInputD3Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1781,6 +1794,8 @@ begin
          qBMaster.Open;
          qBDetail.Close;
          qBDetail.Open;
+         qBDetail3.Close;
+         qBDetail3.Open;
       end;
   2 : begin
          qB2.Close;
@@ -2426,6 +2441,7 @@ begin
   qBMaster.Close;
   qBMaster.Open;
   qBDetail.Close;
+  qBDetail3.Close;
   qBomD.Close;
   qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
   qBDetail9.Close;
@@ -2466,14 +2482,15 @@ begin
   qBomD.Open;
   wwDBGrid1.RedrawGrid;
   qBom.Close;
-//  qBom.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
+  //  qBom.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
   qBom.Open;
   qBDetail.Open;
+  qBDetail3.Open;
   qBMaster.EnableControls;
   qBDetail.EnableControls;
+  qBDetail3.EnableControls;
   qBomD.EnableControls;
   qBom.EnableControls;
-
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
 end;
@@ -2515,7 +2532,7 @@ begin
   else
   if (qBMasterISPOST.AsString='1') or (vispost_old='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
+      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS ! wkwkwk');
       Abort;
   end;
 end;
@@ -2531,7 +2548,7 @@ begin
   else
   if (qBMasterISPOST.AsString='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT !');
+      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT ! wkwkwk');
       Abort;
   end;
 end;
@@ -2569,6 +2586,8 @@ begin
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
+
+  {
   if ((vispost_old='0') and (vispost_new='1')) then
   begin
       if qBDetail.RecordCount=0 then
@@ -2577,6 +2596,8 @@ begin
           Abort;
       end;
   end;
+  }
+
 end;
 
 procedure TSerahTerimaBJFrm.qBDetailBeforeInsert(DataSet: TDataSet);
@@ -3563,6 +3584,7 @@ end;
 
 procedure TSerahTerimaBJFrm.qBDetailBeforeOpen(DataSet: TDataSet);
 begin
+  {
   wwDBComboBox1.Items.Clear;
   if qBomDLXXS.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLXXS.AsString+#9'XXS');
   if qBomDLXS.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLXS.AsString+#9'XS');
@@ -3589,6 +3611,7 @@ begin
   if qBomDLSIZE13.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLSIZE13.AsString+#9'SIZE13');
   if qBomDLSIZE14.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLSIZE14.AsString+#9'SIZE14');
   if qBomDLSIZE15.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLSIZE15.AsString+#9'SIZE15');
+  }
 end;
 
 procedure TSerahTerimaBJFrm.qBDetail2BeforeOpen(DataSet: TDataSet);
@@ -3634,6 +3657,44 @@ procedure TSerahTerimaBJFrm.QRBand44BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
   qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
+end;
+
+procedure TSerahTerimaBJFrm.wwDBGrid4Enter(Sender: TObject);
+begin
+  if qBMaster.State<>dsBrowse then
+    qBMaster.Post;
+end;
+
+procedure TSerahTerimaBJFrm.qBDetail3NewRecord(DataSet: TDataSet);
+begin
+  qBDetail3NO_REG_OS.AsFloat:=qBMasterNO_REG_OS.AsFloat;
+end;
+
+procedure TSerahTerimaBJFrm.qBDetail3BeforePost(DataSet: TDataSet);
+begin
+  vModeInput:=True;
+end;
+
+procedure TSerahTerimaBJFrm.qBDetail3BeforeInsert(DataSet: TDataSet);
+begin
+  if not vCanADD then
+  begin
+      ShowMessage('Maaf, anda tidak berhak TAMBAH data !');
+      Abort;
+  end
+  else
+  if (qBMasterISPOST.AsString='1') then
+  begin
+      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
+      Abort;
+  end
+  else
+      wwDBGrid4.SetActiveField('NO_REG_OS_REFF');
+end;
+
+procedure TSerahTerimaBJFrm.tsInputD3Show(Sender: TObject);
+begin
+  dbNavigator.DataSource:=dsqBMaster;
 end;
 
 end.
