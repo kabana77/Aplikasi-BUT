@@ -1,5 +1,5 @@
 object KontrakFrm: TKontrakFrm
-  Left = 216
+  Left = 217
   Top = 199
   Width = 1598
   Height = 649

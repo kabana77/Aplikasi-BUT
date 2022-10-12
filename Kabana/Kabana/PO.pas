@@ -1179,6 +1179,10 @@ type
     QRDBText20: TQRDBText;
     QRLabel26: TQRLabel;
     QRLabel27: TQRLabel;
+    DBText1: TDBText;
+    qBMasterNO_BUKTI: TStringField;
+    qB1NO_BUKTI: TStringField;
+    QRDBText21: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2946,6 +2950,17 @@ begin
       begin
           ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
           Abort;
+      end
+      else
+      begin
+        if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
+        begin
+          DMFrm.Fno_Bukti.Close;
+          DMFrm.Fno_Bukti.ParamByName('pkode_form').AsString:='105';
+          DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
+          DMFrm.Fno_Bukti.Open;
+          qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+        end;
       end;
   end;
 end;

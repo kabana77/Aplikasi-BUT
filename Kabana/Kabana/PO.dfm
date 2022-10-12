@@ -2412,6 +2412,7 @@ object POFrm: TPOFrm
             'ISTERKIRIM;CheckBox;1;0'
             'ISBATAL3;CheckBox;1;0')
           Selected.Strings = (
+            'NO_BUKTI'#9'15'#9'NO. PO'#9'F'
             'NO_REG_OS'#9'12'#9'NO. PO'#9'F'
             'TGL'#9'11'#9'TGL'#9'F'
             'STS_PO'#9'7'#9'STATUS~PO'#9'F'
@@ -4789,8 +4790,8 @@ object POFrm: TPOFrm
             BandType = rbPageHeader
             object QRDBText319: TQRDBText
               Left = 561
-              Top = 28
-              Width = 120
+              Top = 20
+              Width = 99
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -4800,15 +4801,15 @@ object POFrm: TPOFrm
               Size.Values = (
                 63.500000000000000000
                 1484.312500000000000000
-                74.083333333333330000
-                317.500000000000000000)
+                52.916666666666670000
+                261.937500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_REG_OS'
+              DataField = 'NO_BUKTI'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -19
@@ -4821,7 +4822,7 @@ object POFrm: TPOFrm
             end
             object QRLabel226: TQRLabel
               Left = 560
-              Top = 8
+              Top = 0
               Width = 89
               Height = 20
               Frame.Color = clBlack
@@ -4832,7 +4833,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 1481.666666666667000000
-                21.166666666666670000
+                0.000000000000000000
                 235.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -5464,6 +5465,38 @@ object POFrm: TPOFrm
                 D9}
               Stretch = True
             end
+            object QRDBText21: TQRDBText
+              Left = 561
+              Top = 43
+              Width = 64
+              Height = 24
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                63.500000000000000000
+                1484.312500000000000000
+                113.770833333333300000
+                169.333333333333300000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = True
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'NO_REG_OS'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 8
+            end
           end
         end
         object pMaster: TPanel
@@ -5529,11 +5562,11 @@ object POFrm: TPOFrm
           end
           object DBText19: TDBText
             Left = 776
-            Top = 10
+            Top = 2
             Width = 91
             Height = 24
             AutoSize = True
-            DataField = 'NO_REG_OS'
+            DataField = 'NO_BUKTI'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -5830,6 +5863,22 @@ object POFrm: TPOFrm
             Height = 13
             Caption = 'LTop'
             Visible = False
+          end
+          object DBText1: TDBText
+            Left = 776
+            Top = 23
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
           end
           object lcLokasi: TwwDBLookupCombo
             Left = 1016
@@ -19759,6 +19808,10 @@ object POFrm: TPOFrm
       Required = True
       DisplayFormat = 'dd mmm yyyy'
     end
+    object qB1NO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -20475,6 +20528,10 @@ object POFrm: TPOFrm
       Required = True
       OnChange = qBMasterPPNChange
       Size = 3
+    end
+    object qBMasterNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
     end
   end
   object dsqBMaster: TwwDataSource

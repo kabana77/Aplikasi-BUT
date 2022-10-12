@@ -1268,6 +1268,9 @@ type
     qB1TOTAL: TFloatField;
     qB1KURS: TFloatField;
     qB1TOTAL_IDR: TFloatField;
+    DBText8: TDBText;
+    qBMasterNO_BUKTI: TStringField;
+    qB1NO_BUKTI: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -3023,6 +3026,17 @@ begin
       begin
           ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
           Abort;
+      end
+      else
+      begin
+        if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
+        begin
+          DMFrm.Fno_Bukti.Close;
+          DMFrm.Fno_Bukti.ParamByName('pkode_form').AsString:='161';
+          DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
+          DMFrm.Fno_Bukti.Open;
+          qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+        end;
       end;
   end;
 end;

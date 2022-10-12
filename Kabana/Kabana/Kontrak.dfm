@@ -1,5 +1,5 @@
 object KontrakFrm: TKontrakFrm
-  Left = 217
+  Left = 218
   Top = 199
   Width = 1598
   Height = 649
@@ -9980,7 +9980,7 @@ object KontrakFrm: TKontrakFrm
           object Label19: TLabel
             Left = 0
             Top = 274
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

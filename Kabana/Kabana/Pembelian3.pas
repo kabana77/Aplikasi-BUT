@@ -1307,6 +1307,9 @@ type
     qB1NO_KONTRAK: TStringField;
     qB1NO_REFF2: TStringField;
     qB1NO_BOM: TStringField;
+    qBMasterNO_BUKTI: TStringField;
+    qB1NO_BUKTI: TStringField;
+    DBText5: TDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -3058,14 +3061,27 @@ begin
   vispost_new:=qBMasterISPOST.AsString;
   qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-
     qBMasterBAYAR.AsFloat;
+
   if ((vispost_old='0') and (vispost_new='1')) then
   begin
       if qBDetail.RecordCount=0 then
       begin
           ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
           Abort;
+      end
+      else
+      begin
+        if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
+        begin
+          DMFrm.Fno_Bukti.Close;
+          DMFrm.Fno_Bukti.ParamByName('pkode_form').AsString:='177';
+          DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
+          DMFrm.Fno_Bukti.Open;
+          qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+        end;
       end;
   end;
+
 end;
 
 procedure TPembelian3Frm.qBDetailBeforeInsert(DataSet: TDataSet);

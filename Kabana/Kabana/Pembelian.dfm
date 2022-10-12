@@ -2413,6 +2413,7 @@ object PembelianFrm: TPembelianFrm
             'ISBATAL3;CheckBox;1;0')
           Selected.Strings = (
             'NO_REG_OS'#9'12'#9'NOMOR'#9'F'#9'LPB'
+            'NO_BUKTI'#9'15'#9'NOMOR'#9'F'#9'LPB'
             'TGL'#9'18'#9'TGL'#9'F'#9'LPB'
             'NO_REG_OS_REFF'#9'10'#9'NO PO'#9'F'
             'ID_PRINSIPAL'#9'6'#9'ID'#9'F'#9'SUPLIER'
@@ -4042,8 +4043,8 @@ object PembelianFrm: TPembelianFrm
             BandType = rbPageHeader
             object QRDBText319: TQRDBText
               Left = 561
-              Top = 28
-              Width = 120
+              Top = 20
+              Width = 99
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -4053,15 +4054,15 @@ object PembelianFrm: TPembelianFrm
               Size.Values = (
                 63.500000000000000000
                 1484.312500000000000000
-                74.083333333333330000
-                317.500000000000000000)
+                52.916666666666670000
+                261.937500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_REG_OS'
+              DataField = 'NO_BUKTI'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -19
@@ -4074,7 +4075,7 @@ object PembelianFrm: TPembelianFrm
             end
             object QRLabel226: TQRLabel
               Left = 560
-              Top = 8
+              Top = 0
               Width = 89
               Height = 20
               Frame.Color = clBlack
@@ -4085,13 +4086,13 @@ object PembelianFrm: TPembelianFrm
               Size.Values = (
                 52.916666666666670000
                 1481.666666666667000000
-                21.166666666666670000
+                0.000000000000000000
                 235.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'Nomor P.O'
+              Caption = 'Nomor LPB'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -4716,6 +4717,38 @@ object PembelianFrm: TPembelianFrm
                 F6AD797FE052BCBF1102A8E40A5A28AF04FA70A28A2800A28A2800A28A2803FF
                 D9}
               Stretch = True
+            end
+            object QRDBText244: TQRDBText
+              Left = 561
+              Top = 44
+              Width = 64
+              Height = 24
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                63.500000000000000000
+                1484.312500000000000000
+                116.416666666666700000
+                169.333333333333300000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = True
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'NO_REG_OS'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 8
             end
           end
         end
@@ -7411,11 +7444,11 @@ object PembelianFrm: TPembelianFrm
           end
           object DBText19: TDBText
             Left = 592
-            Top = 10
+            Top = 2
             Width = 91
             Height = 24
             AutoSize = True
-            DataField = 'NO_REG_OS'
+            DataField = 'NO_BUKTI'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -7428,9 +7461,9 @@ object PembelianFrm: TPembelianFrm
           object Label16: TLabel
             Left = 536
             Top = 16
-            Width = 46
+            Width = 40
             Height = 13
-            Caption = 'No. Order'
+            Caption = 'No. LPB'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -7613,6 +7646,22 @@ object PembelianFrm: TPembelianFrm
             Font.Color = clBlue
             Font.Height = -16
             Font.Name = 'Arial Narrow'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
+          object DBText8: TDBText
+            Left = 592
+            Top = 22
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
@@ -21703,6 +21752,10 @@ object PembelianFrm: TPembelianFrm
     object qB1NO_REG_OS_REFF: TFloatField
       FieldName = 'NO_REG_OS_REFF'
     end
+    object qB1NO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -22466,6 +22519,10 @@ object PembelianFrm: TPembelianFrm
     object qBMasterKURS: TFloatField
       FieldName = 'KURS'
       DisplayFormat = '#,#;(#,#);-'
+    end
+    object qBMasterNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
     end
   end
   object dsqBMaster: TwwDataSource

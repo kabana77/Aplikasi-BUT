@@ -2408,7 +2408,7 @@ object Pembelian2Frm: TPembelian2Frm
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0')
           Selected.Strings = (
-            'NO_REG_OS'#9'10'#9'NOMOR'#9'F'#9'LPB'
+            'NO_BUKTI'#9'15'#9'NOMOR'#9'F'#9'LPB'
             'TGL'#9'14'#9'TGL'#9'F'#9'LPB'
             'NO_REFF'#9'15'#9'NO PIB'#9'F'
             'ID_PRINSIPAL'#9'6'#9'ID'#9'F'#9'SUPLIER'
@@ -2549,7 +2549,7 @@ object Pembelian2Frm: TPembelian2Frm
             object QRDBText23: TQRDBText
               Left = 616
               Top = 30
-              Width = 121
+              Width = 97
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2560,14 +2560,14 @@ object Pembelian2Frm: TPembelian2Frm
                 63.500000000000000000
                 1629.833333333333000000
                 79.375000000000000000
-                320.145833333333300000)
+                256.645833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_REG_OS'
+              DataField = 'NO_BUKTI'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
               Font.Height = -19
@@ -5092,7 +5092,7 @@ object Pembelian2Frm: TPembelian2Frm
             Width = 91
             Height = 24
             AutoSize = True
-            DataField = 'NO_REG_OS'
+            DataField = 'NO_BUKTI'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -5105,9 +5105,9 @@ object Pembelian2Frm: TPembelian2Frm
           object Label16: TLabel
             Left = 808
             Top = 16
-            Width = 46
+            Width = 40
             Height = 13
-            Caption = 'No. Order'
+            Caption = 'No. LPB'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5118,7 +5118,7 @@ object Pembelian2Frm: TPembelian2Frm
           end
           object Label17: TLabel
             Left = 808
-            Top = 38
+            Top = 48
             Width = 39
             Height = 13
             Caption = 'Tanggal'
@@ -5132,7 +5132,7 @@ object Pembelian2Frm: TPembelian2Frm
           end
           object DBText20: TDBText
             Left = 864
-            Top = 34
+            Top = 45
             Width = 74
             Height = 19
             AutoSize = True
@@ -5288,6 +5288,22 @@ object Pembelian2Frm: TPembelian2Frm
             Font.Color = clBlue
             Font.Height = -16
             Font.Name = 'Arial Narrow'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
+          object DBText8: TDBText
+            Left = 864
+            Top = 31
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
@@ -5559,7 +5575,7 @@ object Pembelian2Frm: TPembelian2Frm
           end
           object VTgl: TwwDBDateTimePicker
             Left = 864
-            Top = 39
+            Top = 47
             Width = 121
             Height = 19
             BorderStyle = bsNone
@@ -5757,7 +5773,7 @@ object Pembelian2Frm: TPembelian2Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -19405,6 +19421,10 @@ object Pembelian2Frm: TPembelian2Frm
     object qB1TOTAL_IDR: TFloatField
       FieldName = 'TOTAL_IDR'
     end
+    object qB1NO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -19413,8 +19433,8 @@ object Pembelian2Frm: TPembelian2Frm
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
-    Left = 752
-    Top = 336
+    Left = 744
+    Top = 376
     object qBXNDATA: TFloatField
       FieldName = 'NDATA'
     end
@@ -19716,7 +19736,7 @@ object Pembelian2Frm: TPembelian2Frm
       'order by nik')
     BeforeOpen = qSlsmanBeforeOpen
     Left = 784
-    Top = 328
+    Top = 368
     ParamData = <
       item
         DataType = ftString
@@ -19772,8 +19792,8 @@ object Pembelian2Frm: TPembelian2Frm
       
         'where id_prinsipal in (select id_prinsipal from po where no_reg_' +
         'os=:pno_reg_os)')
-    Left = 817
-    Top = 328
+    Left = 825
+    Top = 368
     ParamData = <
       item
         DataType = ftFloat
@@ -20170,6 +20190,10 @@ object Pembelian2Frm: TPembelian2Frm
       FieldName = 'JENIS'
       Size = 12
     end
+    object qBMasterNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -20182,8 +20206,8 @@ object Pembelian2Frm: TPembelian2Frm
       'select * from vdaftar_item_impor_sisa'
       'where no_pib=:pno_pib')
     BeforeOpen = qItemBeforeOpen
-    Left = 856
-    Top = 339
+    Left = 864
+    Top = 363
     ParamData = <
       item
         DataType = ftFloat

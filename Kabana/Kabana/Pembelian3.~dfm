@@ -1,5 +1,5 @@
 object Pembelian3Frm: TPembelian3Frm
-  Left = 211
+  Left = 212
   Top = 192
   Width = 1511
   Height = 679
@@ -2412,6 +2412,7 @@ object Pembelian3Frm: TPembelian3Frm
             'ISTERKIRIM;CheckBox;1;0'
             'ISBATAL3;CheckBox;1;0')
           Selected.Strings = (
+            'NO_BUKTI'#9'15'#9'NOMOR'#9'F'#9'LPB'
             'NO_REG_OS'#9'11'#9'NOMOR'#9'F'#9'LPB'
             'TGL'#9'12'#9'TGL'#9'F'#9'LPB'
             'NO_REFF'#9'15'#9'NO REFF'#9'F'
@@ -5102,11 +5103,11 @@ object Pembelian3Frm: TPembelian3Frm
           end
           object DBText19: TDBText
             Left = 776
-            Top = 10
+            Top = 2
             Width = 91
             Height = 24
             AutoSize = True
-            DataField = 'NO_REG_OS'
+            DataField = 'NO_BUKTI'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -5353,6 +5354,22 @@ object Pembelian3Frm: TPembelian3Frm
             Font.Height = -11
             Font.Name = 'MS Sans Serif'
             Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object DBText5: TDBText
+            Left = 776
+            Top = 22
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
           end
@@ -19499,6 +19516,10 @@ object Pembelian3Frm: TPembelian3Frm
       FieldName = 'NO_BOM'
       Size = 50
     end
+    object qB1NO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -20266,6 +20287,10 @@ object Pembelian3Frm: TPembelian3Frm
       FieldName = 'JENIS'
       Required = True
       Size = 12
+    end
+    object qBMasterNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
     end
   end
   object dsqBMaster: TwwDataSource
