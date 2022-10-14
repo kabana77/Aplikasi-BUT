@@ -4300,8 +4300,8 @@ end;
 
 procedure TPembelianFrm.BitBtn2Click(Sender: TObject);
 begin
-  if qBMaster.State<>dsBrowse then
-    qBMaster.Post;
+  if qBMaster.State<>dsBrowse then qBMaster.Post;
+
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   if (qBMaster.State=dsBrowse) and (qBMasterNO_REG_OS.AsFloat>0) and (qBMasterISPOST.AsString='0') then
   begin
@@ -4316,6 +4316,7 @@ begin
   end
   else
     ShowMessage('Maaf, data sudah di-POSTING !');
+
   DBMemo1.SetFocus;
 end;
 

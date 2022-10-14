@@ -7585,8 +7585,8 @@ object DTFrm: TDTFrm
             ParentFont = False
             OnShow = tsInputDShow
             object qrBukti: TQuickRep
-              Left = 72
-              Top = -57
+              Left = 48
+              Top = 39
               Width = 794
               Height = 529
               Frame.Color = clBlack
@@ -9989,8 +9989,8 @@ object DTFrm: TDTFrm
                   1979.083333333333000000)
                 BandType = rbPageHeader
                 object QRDBText319: TQRDBText
-                  Left = 561
-                  Top = 28
+                  Left = 560
+                  Top = 20
                   Width = 99
                   Height = 24
                   Frame.Color = clBlack
@@ -10000,8 +10000,8 @@ object DTFrm: TDTFrm
                   Frame.DrawRight = False
                   Size.Values = (
                     63.500000000000000000
-                    1484.312500000000000000
-                    74.083333333333330000
+                    1481.666666666667000000
+                    52.916666666666670000
                     261.937500000000000000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -10022,7 +10022,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel226: TQRLabel
                   Left = 560
-                  Top = 8
+                  Top = 0
                   Width = 89
                   Height = 20
                   Frame.Color = clBlack
@@ -10033,7 +10033,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     52.916666666666670000
                     1481.666666666667000000
-                    21.166666666666670000
+                    0.000000000000000000
                     235.479166666666700000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -10664,6 +10664,38 @@ object DTFrm: TDTFrm
                     F6AD797FE052BCBF1102A8E40A5A28AF04FA70A28A2800A28A2800A28A2803FF
                     D9}
                   Stretch = True
+                end
+                object QRDBText60: TQRDBText
+                  Left = 560
+                  Top = 41
+                  Width = 64
+                  Height = 15
+                  Frame.Color = clBlack
+                  Frame.DrawTop = False
+                  Frame.DrawBottom = False
+                  Frame.DrawLeft = False
+                  Frame.DrawRight = False
+                  Size.Values = (
+                    39.687500000000000000
+                    1481.666666666667000000
+                    108.479166666666700000
+                    169.333333333333300000)
+                  Alignment = taLeftJustify
+                  AlignToBand = False
+                  AutoSize = True
+                  AutoStretch = False
+                  Color = clWhite
+                  DataSet = qBMaster
+                  DataField = 'NO_REG_OS'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -11
+                  Font.Name = 'Arial'
+                  Font.Style = [fsBold]
+                  ParentFont = False
+                  Transparent = False
+                  WordWrap = True
+                  FontSize = 8
                 end
               end
             end
