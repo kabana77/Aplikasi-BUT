@@ -107,9 +107,9 @@ type
     dbGrid1: TwwDBGrid;
     wwDBGrid1IButton: TwwIButton;
     TabSheet2: TTabSheet;
-    wwDBGrid1: TwwDBGrid;
+    dbGrid2: TwwDBGrid;
     wwIButton1: TwwIButton;
-    Panel1: TPanel;
+    pTop2: TPanel;
     qB: TSmartQuery;
     StringField1: TStringField;
     FloatField1: TFloatField;
@@ -155,16 +155,16 @@ type
     vfield_awal, vfield_akhir, vdate : TDate;
     vsql_org, vfilter, vorder : String;
     vsql_org1, vfilter1, vorder1 : String;
-{
     vsql_org2, vfilter2, vorder2 : String;
+{
     vsql_org3, vfilter3, vorder3 : String;
     vsql_org4, vfilter4, vorder4 : String;
     vsql_org5, vfilter5, vorder5 : String;
     vsql_org6, vfilter6, vorder6 : String;
 }
     procedure Proc_Refresh1;
-{
     procedure Proc_Refresh2;
+{
     procedure Proc_Refresh3;
     procedure Proc_Refresh2;
     procedure Proc_Refresh3;
@@ -294,6 +294,110 @@ begin
   qB1.EnableControls;                              //Ganti
   dbGrid1UpdateFooter(Nil);                        //Ganti
   dbGrid1.SetFocus;                                //Ganti
+end;
+
+procedure TNeracaFrm.Proc_Refresh2;
+var
+  i           : word;
+  vpertama    : boolean;
+  vFieldName  : array[0..50] of String;
+  vNField     : Integer;
+  vTop        : String;
+begin
+  vtop:='';                                                     //GANTI
+  vNField:=dbGrid2.Selected.Count-1;                            //Ganti
+  vfilter:=vfilter2;                                            //Ganti
+  vsql_org:=vsql_org2;                                          //Ganti
+  vorder:=vorder2;                                              //Ganti
+  for i:=0 to vNField do
+    vFieldName[i]:=UpperCase(dbGrid2.Columns[i].FieldName);     //Ganti
+  if (vfield_cari<>'') then
+  begin
+        vpertama:=True;
+        if vfield_idx_tgl>0 then
+          begin
+            vfilter:=' where ('+vfield_tgl+'>=to_date('''+FormatDateTime('dd/mm/yyyy',vfield_awal)+
+              ''',''dd/mm/yyyy'') and '+vfield_tgl+'<=(to_date('''+
+              FormatDateTime('dd/mm/yyyy',vfield_akhir)+''',''dd/mm/yyyy'')+1-1/86400)) and (';
+            vTop:=' '+vfield_tgl+' = '+
+              UpperCase(FormatDateTime('dd MMM yyyy',vfield_awal))+' s/d '+
+              UpperCase(FormatDateTime('dd MMM yyyy',vfield_akhir));
+          end
+        else
+          begin
+            vfilter:=' where (';
+            vTop:='';
+          end;
+        if (qB.FieldCount>=1) then                                      //Ganti
+        begin
+          if vfield_idx=0 then
+          begin
+            for i:=0 to vNField do
+            begin
+              if (qB.FieldByName(vFieldName[i]).FieldKind=fkData) and   //Ganti
+                 (copy(vFieldName[i],1,3)<>'TGL') then
+              begin
+                if vpertama then
+                  begin
+                    if vfield_operand='LIKE' then
+                      vfilter:=vfilter+vFieldName[i]+' like ''%'+vfield_cari+'%'''
+                      else
+                         vfilter:=vfilter+vFieldName[i]+' = '''+vfield_cari+'''';
+                    vpertama:=False;
+                  end
+                  else
+                    if vfield_operand='LIKE' then
+                      vfilter:=vfilter+' or '+vFieldName[i]+' like ''%'+vfield_cari+'%'''
+                      else
+                        vfilter:=vfilter+' or '+vFieldName[i]+' = '''+vfield_cari+''''
+              end;
+            end;
+          end
+          else
+            if vfield_operand='LIKE' then
+               vfilter:=vfilter+vfield_col+' like ''%'+vfield_cari+'%'''
+               else
+                 vfilter:=vfilter+vfield_col+' = '''+vfield_cari+'''';
+          vfilter:=vfilter+')';
+        end;
+  end
+  else
+  begin
+        if vfield_idx_tgl>0 then
+        begin
+          vfilter:=' where ('+vfield_tgl+'>=to_date('''+
+            FormatDateTime('dd/mm/yyyy',vfield_awal)+
+            ''',''dd/mm/yyyy'')) and ('+vfield_tgl+'<=(to_date('''+
+            FormatDateTime('dd/mm/yyyy',vfield_akhir)+
+            ''',''dd/mm/yyyy'')+1-1/86400))';
+          vTop:=' '+vfield_tgl+' = '+
+              UpperCase(FormatDateTime('dd MMM yyyy',vfield_awal))+' s/d '+
+              UpperCase(FormatDateTime('dd MMM yyyy',vfield_akhir));
+        end
+        else
+          begin
+            vfilter:='';
+            vTop:='';
+          end;
+  end;
+  if qB.Active then                               //Ganti
+    //vorder:=' order by '+vFieldName[0]
+    vorder:=' order by NO_IDX'
+    else
+      vorder:='';
+  vfilter2:=vfilter;                               //Ganti
+  vsql_org2:=vsql_org;                             //Ganti
+  vorder2:=vorder;                                 //Ganti
+  FilterFrm.Memo1.Text:=vsql_org+vfilter+vorder;
+  pTop2.Caption:=vTop;                             //Ganti
+  qB.DisableControls;                             //Ganti
+  qB.Close;                                       //Ganti
+  qB.SQL.Text:=vsql_org+vfilter+vorder;           //Ganti
+  qB.Open;                                        //Ganti
+  dbGrid2.GroupFieldName:=vFieldName[0];           //Ganti
+  qB.EnableControls;                              //Ganti
+  //dbGrid2UpdateFooter(Nil);                        //Ganti
+  dbGrid2.SetFocus;                                //Ganti
 end;
 
 procedure TNeracaFrm.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -444,8 +548,9 @@ begin
   end;
 
   vsql_org1:=qB1.SQL.Text;
+  vsql_org2:=qB.SQL.Text;
+
 {
-  vsql_org2:=qB2.SQL.Text;
   vsql_org3:=qB3.SQL.Text;
   vsql_org4:=qB4.SQL.Text;
   vsql_org5:=qB5.SQL.Text;
@@ -489,7 +594,8 @@ begin
      vfield_col:=FilterFrm.dbcField.Items[vfield_idx];
      case PageControl1.TabIndex of
       0 : Proc_Refresh1;
-{     1 : Proc_Refresh2;
+      1 : Proc_Refresh2;
+{
       2 : Proc_Refresh3;
       3 : Proc_Refresh4;
       4 : Proc_Refresh5;
@@ -607,9 +713,25 @@ begin
 end;
 
 procedure TNeracaFrm.TabSheet2Show(Sender: TObject);
+var
+  i : integer;
 begin
-  qB.Close;
-  qB.Open;
+  if not qB.Active then
+    qB.Open;
+  QFields.Items.Clear;
+  QFields2.Items.Clear;
+  QFields.Items.Add('SEMUA KOLOM');
+  QFields2.Items.Add('NONE');
+  with dbGrid2 do
+  begin
+    for i:=0 to FieldCount -1 do
+      if copy(UpperCase(Columns[i].FieldName),1,3)<>'TGL' then
+        QFields.Items.Add(Columns[i].FieldName)
+        else
+          if QFields2.Items.Count<4 then
+             QFields2.Items.Add(Columns[i].FieldName);
+  end;
+  dbNavigator.DataSource:=dsqB;
 end;
 
 end.

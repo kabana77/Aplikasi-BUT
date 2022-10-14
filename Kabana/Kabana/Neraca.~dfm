@@ -1,5 +1,5 @@
 object NeracaFrm: TNeracaFrm
-  Left = 251
+  Left = 252
   Top = 189
   Width = 1200
   Height = 600
@@ -1507,7 +1507,7 @@ object NeracaFrm: TNeracaFrm
       Top = 50
       Width = 904
       Height = 482
-      ActivePage = TabSheet1
+      ActivePage = TabSheet2
       Align = alClient
       TabOrder = 5
       object TabSheet1: TTabSheet
@@ -1599,7 +1599,7 @@ object NeracaFrm: TNeracaFrm
         Caption = 'Neraca New'
         ImageIndex = 1
         OnShow = TabSheet2Show
-        object wwDBGrid1: TwwDBGrid
+        object dbGrid2: TwwDBGrid
           Left = 0
           Top = 41
           Width = 896
@@ -1649,7 +1649,6 @@ object NeracaFrm: TNeracaFrm
           LineColors.ShadowColor = clSilver
           OnCalcCellColors = dbGrid1CalcCellColors
           OnTitleButtonClick = dbGrid1TitleButtonClick
-          OnUpdateFooter = dbGrid1UpdateFooter
           FooterCellColor = clGradientInactiveCaption
           PaintOptions.ActiveRecordColor = clGrayText
           object wwIButton1: TwwIButton
@@ -1662,7 +1661,7 @@ object NeracaFrm: TNeracaFrm
             OnClick = wwDBGrid1IButtonClick
           end
         end
-        object Panel1: TPanel
+        object pTop2: TPanel
           Left = 0
           Top = 0
           Width = 896

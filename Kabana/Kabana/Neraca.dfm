@@ -1,5 +1,5 @@
 object NeracaFrm: TNeracaFrm
-  Left = 251
+  Left = 252
   Top = 189
   Width = 1200
   Height = 600
@@ -1599,7 +1599,7 @@ object NeracaFrm: TNeracaFrm
         Caption = 'Neraca New'
         ImageIndex = 1
         OnShow = TabSheet2Show
-        object wwDBGrid1: TwwDBGrid
+        object dbGrid2: TwwDBGrid
           Left = 0
           Top = 41
           Width = 896
@@ -1661,7 +1661,7 @@ object NeracaFrm: TNeracaFrm
             OnClick = wwDBGrid1IButtonClick
           end
         end
-        object Panel1: TPanel
+        object pTop2: TPanel
           Left = 0
           Top = 0
           Width = 896
