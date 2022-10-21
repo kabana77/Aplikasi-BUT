@@ -476,6 +476,30 @@ begin
                 ShowMessage('Tabel kosong !');
           end;
       end;
+   1 :  begin
+          with dbGrid2 do                                                //Ganti
+          begin
+              if DataSource.DataSet.RecordCount>0 then
+              begin
+                 DMFrm.SaveDialog1.DefaultExt:='XLK';
+                 DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet2.Caption,'&','',[rfReplaceAll]); //Ganti
+                 ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
+                   if DMFrm.SaveDialog1.Execute then
+                   begin
+                     try
+                     ExportOptions.FileName:=DMFrm.SaveDialog1.FileName;
+                     ExportOptions.Save;
+                     ShowMessage('Simpan Sukses !');
+                     except
+                       ShowMessage('Simpan Gagal !');
+                     end;
+                   end;
+              end
+              else
+                ShowMessage('Tabel kosong !');
+          end;
+      end;
    end;
 end;
 

@@ -2929,7 +2929,8 @@ begin
    case PageControl1.TabIndex of
    0 :  begin
           //with dbGrid1 do                                                //Ganti
-          with wwdbGrid2 do                                                //Ganti
+          //with wwdbGrid2 do                                                //Ganti
+          with dbGrid1 do
           begin
               if DataSource.DataSet.RecordCount>0 then
               begin

@@ -1,6 +1,6 @@
 object NeracaFrm: TNeracaFrm
-  Left = 252
-  Top = 189
+  Left = 255
+  Top = 190
   Width = 1200
   Height = 600
   Caption = 'NeracaFrm'

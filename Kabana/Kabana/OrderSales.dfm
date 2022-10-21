@@ -1,8 +1,8 @@
 object OrderSalesFrm: TOrderSalesFrm
   Left = 231
-  Top = 206
+  Top = 217
   Width = 1443
-  Height = 625
+  Height = 614
   Caption = 'OrderSalesFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object OrderSalesFrm: TOrderSalesFrm
     Left = 0
     Top = 0
     Width = 4
-    Height = 586
+    Height = 575
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -35,7 +35,7 @@ object OrderSalesFrm: TOrderSalesFrm
     Left = 4
     Top = 0
     Width = 1419
-    Height = 586
+    Height = 575
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -57,7 +57,7 @@ object OrderSalesFrm: TOrderSalesFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 543
+      Top = 532
       Width = 1419
       Height = 43
       Align = alBottom
@@ -316,7 +316,7 @@ object OrderSalesFrm: TOrderSalesFrm
       Left = 0
       Top = 50
       Width = 1419
-      Height = 493
+      Height = 482
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2615,7 +2615,7 @@ object OrderSalesFrm: TOrderSalesFrm
           Left = 0
           Top = 49
           Width = 1411
-          Height = 416
+          Height = 405
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -9319,7 +9319,7 @@ object OrderSalesFrm: TOrderSalesFrm
           Left = 1226
           Top = 185
           Width = 185
-          Height = 280
+          Height = 269
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -9334,7 +9334,7 @@ object OrderSalesFrm: TOrderSalesFrm
           object Label19: TLabel
             Left = 0
             Top = 226
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -9750,7 +9750,7 @@ object OrderSalesFrm: TOrderSalesFrm
           Left = 0
           Top = 185
           Width = 1226
-          Height = 280
+          Height = 269
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -9767,7 +9767,7 @@ object OrderSalesFrm: TOrderSalesFrm
               Left = 0
               Top = 0
               Width = 1218
-              Height = 252
+              Height = 241
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -10016,7 +10016,7 @@ object OrderSalesFrm: TOrderSalesFrm
               Left = 0
               Top = 49
               Width = 1218
-              Height = 203
+              Height = 192
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -25440,7 +25440,7 @@ object OrderSalesFrm: TOrderSalesFrm
     Left = 1423
     Top = 0
     Width = 4
-    Height = 586
+    Height = 575
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
