@@ -2979,7 +2979,9 @@ object DaftarPrinsipalFrm: TDaftarPrinsipalFrm
   object qBId_prinsipal: TOraQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select max(id_prinsipal)+1 as next_id from daftar_prinsipal')
+      
+        'select max(to_number(id_prinsipal))+1 as next_id from daftar_pri' +
+        'nsipal')
     Left = 1056
     Top = 10
     object qBId_prinsipalNEXT_ID: TFloatField

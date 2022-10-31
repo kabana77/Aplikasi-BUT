@@ -750,7 +750,7 @@ begin
   qBMaster.Close;
   qBMaster.Open;
   dbNavigator.DataSource:=dsqBMaster;
-  ShowMessage(Name);
+  //ShowMessage(Name);
 end;
 
 procedure TDaftarPrinsipalFrm.wwDBLookupCombo4Enter(Sender: TObject);
