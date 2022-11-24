@@ -1,6 +1,6 @@
 object BOMFrm: TBOMFrm
-  Left = 356
-  Top = 157
+  Left = 358
+  Top = 156
   Width = 1378
   Height = 780
   ActiveControl = dbGrid1

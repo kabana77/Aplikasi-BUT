@@ -1,5 +1,5 @@
 object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
-  Left = 352
+  Left = 355
   Top = 211
   Width = 1198
   Height = 600
