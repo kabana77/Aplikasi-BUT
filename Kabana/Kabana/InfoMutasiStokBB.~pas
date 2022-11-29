@@ -511,6 +511,7 @@ type
     qBXLNILAI_KELUAR: TFloatField;
     qBXLQTY_AWAL: TFloatField;
     qBXLQTY_AKHIR: TFloatField;
+    qB2NO_BOM: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

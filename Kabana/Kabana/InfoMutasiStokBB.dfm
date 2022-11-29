@@ -6241,7 +6241,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Nama Barang'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6254,7 +6254,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Kode'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6267,7 +6267,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Satuan'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6280,7 +6280,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Rasio'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6295,7 +6295,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             AutoSize = False
             Caption = 'Atas'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6310,7 +6310,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             AutoSize = False
             Caption = 'Tengah'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6325,7 +6325,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             AutoSize = False
             Caption = 'Dasar'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6338,7 +6338,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Saldo Awal'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6347,31 +6347,31 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
           object DBText2: TDBText
             Left = 112
             Top = 8
-            Width = 52
+            Width = 49
             Height = 16
             AutoSize = True
             DataField = 'NAMA_ITEM'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText3: TDBText
             Left = 112
             Top = 24
-            Width = 52
+            Width = 49
             Height = 16
             AutoSize = True
             DataField = 'KD_ITEM'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText4: TDBText
@@ -6383,10 +6383,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'SAT_A'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText5: TDBText
@@ -6398,10 +6398,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'SAT_T'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText6: TDBText
@@ -6413,10 +6413,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'SAT_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText7: TDBText
@@ -6428,10 +6428,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'RA'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText8: TDBText
@@ -6443,10 +6443,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'RT'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText9: TDBText
@@ -6458,10 +6458,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'RD'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText10: TDBText
@@ -6473,10 +6473,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AWAL_A'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText11: TDBText
@@ -6488,10 +6488,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AWAL_T'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText12: TDBText
@@ -6503,10 +6503,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AWAL_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object Label10: TLabel
@@ -6516,7 +6516,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             Height = 16
             Caption = 'Saldo Akhir'
             Font.Charset = ANSI_CHARSET
-            Font.Color = clSilver
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
             Font.Style = []
@@ -6531,10 +6531,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AKHIR_A'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText14: TDBText
@@ -6546,10 +6546,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AKHIR_T'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
           object DBText15: TDBText
@@ -6561,10 +6561,10 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             DataField = 'AKHIR_D'
             DataSource = dsqB1
             Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
+            Font.Color = clYellow
             Font.Height = -13
             Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Style = []
             ParentFont = False
           end
         end
@@ -6585,6 +6585,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
             'KD_FORM'#9'6'#9'Kode'#9'F'#9'JENIS BUKTI'
             'JNS_TRANSAKSI'#9'14'#9'Bukti'#9'F'#9'JENIS BUKTI'
             'KETERANGAN'#9'28'#9'KETERANGAN'#9'F'
+            'NO_BOM'#9'10'#9'NO BOM'#9'F'
             'RD'#9'1'#9'RASIO'#9'F'
             'QTY_D'#9'10'#9'QTY'#9'F'#9'MASUK'
             'KG_TOT'#9'6'#9'Berat~Kg'#9'F'#9'MASUK'
@@ -7361,6 +7362,11 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
     end
     object qB2NAMA_DEPO: TStringField
       FieldName = 'NAMA_DEPO'
+      ReadOnly = True
+      Size = 50
+    end
+    object qB2NO_BOM: TStringField
+      FieldName = 'NO_BOM'
       ReadOnly = True
       Size = 50
     end

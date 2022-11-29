@@ -9,7 +9,7 @@ object DMFrm: TDMFrm
     Options.Direct = True
     Username = 'but'
     Password = 'MOON2014'
-    Server = '0.tcp.ap.ngrok.io:14984:orcl'
+    Server = '0.tcp.ap.ngrok.io:13200'
     ConnectDialog = OL
     AfterConnect = OSAfterConnect
     Schema = 'BUT'

@@ -1,7 +1,7 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 408
+  Left = 410
   Top = 229
   Height = 579
   Width = 759
