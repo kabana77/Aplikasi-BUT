@@ -7196,10 +7196,8 @@ object InventoryControlFrm: TInventoryControlFrm
                 'QTY'#9'7'#9'Per Unit'#9'F'#9'KEBUTUHAN'
                 'TOT_QTY'#9'8'#9'Total'#9'T'#9'KEBUTUHAN'
                 'BELUM_TERPAKAI'#9'10'#9'GUDANG'#9'F'
-                'WIP'#9'8'#9'WIP'#9'F'
-                'SUB_KONTRAK'#9'9'#9'SUBKON'#9'F'
-                'WASTE'#9'10'#9'WASTE'#9'F'
-                'FINISHING_GOODS'#9'10'#9'FINISHED~GOODS'#9'F')
+                'PEMAKAIAN'#9'8'#9'WIP'#9'F'
+                'WASTE'#9'10'#9'WASTE'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'

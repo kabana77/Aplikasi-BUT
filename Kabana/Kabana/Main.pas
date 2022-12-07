@@ -303,8 +303,8 @@ begin
           StatusBar1.Panels[2].Text:='Aplikasi Tanggal : '+vtgl_aplikasi;
           if FileDateToDateTime(FileAge(Application.ExeName))<DMFrm.QPerusahaan.FieldByName('TGL_APLIKASI').AsDateTime then
           begin
-              ShowMessage('Aplikasi anda tgl :'+vtgl_aplikasi+#13+'Ada Aplikasi Baru tgl : '+vtgl_aplikasi_baru+
-                #13+'MOHON AMBIL di SERVER atau hubungi Tim IT !');
+              {ShowMessage('Aplikasi anda tgl :'+vtgl_aplikasi+#13+'Ada Aplikasi Baru tgl : '+vtgl_aplikasi_baru+#13+'MOHON AMBIL di SERVER atau hubungi Tim IT !');}
+              ShowMessage(DMFrm.qPerusahaanBANNER2_DEFAULT.AsString+#13+'-'+#13+'Aplikasi Anda tgl :'+vtgl_aplikasi+#13+'Aplikasi Baru tgl : '+vtgl_aplikasi_baru);
               ResetGrid1Click(Nil);
               Application.Terminate;
           end;
