@@ -9333,8 +9333,8 @@ object OrderSalesFrm: TOrderSalesFrm
           Visible = False
           object Label19: TLabel
             Left = 0
-            Top = 226
-            Width = 78
+            Top = 215
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -9517,7 +9517,7 @@ object OrderSalesFrm: TOrderSalesFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 239
+            Top = 228
             Width = 185
             Height = 41
             TabStop = False

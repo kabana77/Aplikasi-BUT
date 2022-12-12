@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 470
+  Left = 476
   Top = 230
   Width = 800
   Height = 366
@@ -151,6 +151,7 @@ object MainFrm: TMainFrm
       Height = 21
       AutoSize = True
       DataField = 'NAMA_PERUSAHAAN'
+      DataSource = DMFrm.dsqPerusahaan
       Font.Charset = ANSI_CHARSET
       Font.Color = clGray
       Font.Height = -16
@@ -173,6 +174,7 @@ object MainFrm: TMainFrm
       Height = 21
       AutoSize = True
       DataField = 'ALAMAT1'
+      DataSource = DMFrm.dsqPerusahaan
       Font.Charset = ANSI_CHARSET
       Font.Color = clGray
       Font.Height = -16

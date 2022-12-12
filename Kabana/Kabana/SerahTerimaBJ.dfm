@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 209
+  Left = 211
   Top = 154
   Width = 1356
   Height = 692

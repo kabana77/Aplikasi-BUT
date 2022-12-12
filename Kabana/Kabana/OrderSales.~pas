@@ -2929,7 +2929,8 @@ begin
    case PageControl1.TabIndex of
    0 :  begin
           //with dbGrid1 do                                                //Ganti
-          with wwdbGrid2 do                                                //Ganti
+          //with wwdbGrid2 do                                                //Ganti
+          with dbGrid1 do
           begin
               if DataSource.DataSet.RecordCount>0 then
               begin
@@ -3993,9 +3994,10 @@ begin
   begin
     qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ_40000000 where kd_parent='''+qKontrakNO_REG_OS.AsString+'''');
   end;  }
-  qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qKontrakNO_REG_OS.AsString+''' and kg_d<>0'); {JIKA SUDAH AMBIL DARI STOK}
+  {qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qKontrakNO_REG_OS.AsString+''' and kg_d<>0'); }
+  qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qBMasterNO_REFF.AsString+''' '); {JIKA SUDAH AMBIL DARI STOK}
 
-  //ShowMessage('SQL : '+qItem.SQL.Text);
+  ShowMessage('SQL : '+qItem.SQL.Text);
   qItem.Open;
 
 end;

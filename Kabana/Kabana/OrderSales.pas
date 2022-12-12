@@ -3994,7 +3994,8 @@ begin
   begin
     qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ_40000000 where kd_parent='''+qKontrakNO_REG_OS.AsString+'''');
   end;  }
-  qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qKontrakNO_REG_OS.AsString+''' and kg_d<>0'); {JIKA SUDAH AMBIL DARI STOK}
+  {qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qKontrakNO_REG_OS.AsString+''' and kg_d<>0'); }
+  qItem.SQL.Add('select * from VDAFTAR_ITEM_BJ where kd_parent='''+qBMasterNO_REFF.AsString+''' '); {JIKA SUDAH AMBIL DARI STOK}
 
   //ShowMessage('SQL : '+qItem.SQL.Text);
   qItem.Open;
