@@ -1,5 +1,5 @@
 object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
-  Left = 280
+  Left = 281
   Top = 253
   Width = 1198
   Height = 600
@@ -6335,7 +6335,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
           object Label9: TLabel
             Left = 16
             Top = 88
-            Width = 74
+            Width = 64
             Height = 16
             Caption = 'Saldo Awal'
             Font.Charset = ANSI_CHARSET
@@ -6411,7 +6411,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Left = 217
             Top = 57
             Width = 52
-            Height = 17
+            Height = 16
             Alignment = taCenter
             AutoSize = True
             DataField = 'SAT_D'
@@ -6459,7 +6459,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Left = 217
             Top = 73
             Width = 52
-            Height = 17
+            Height = 16
             Alignment = taCenter
             AutoSize = True
             DataField = 'RD'
@@ -6569,7 +6569,7 @@ object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
             Left = 209
             Top = 104
             Width = 59
-            Height = 17
+            Height = 16
             Alignment = taCenter
             AutoSize = True
             DataField = 'AKHIR_D'

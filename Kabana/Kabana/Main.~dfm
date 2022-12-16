@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 474
-  Top = 230
+  Left = 312
+  Top = 205
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -387,7 +387,7 @@ object MainFrm: TMainFrm
         OnClick = HasilProduksi1Click
       end
       object SerahTerimaBarangJadi1: TMenuItem
-        Caption = 'Serah Terima Barang Jadi'
+        Caption = 'Hasil Barang Jadi'
         Checked = True
         GroupIndex = 1
         OnClick = SerahTerimaBarangJadi1Click

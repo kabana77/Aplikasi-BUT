@@ -1,5 +1,5 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 196
+  Left = 204
   Top = 125
   Width = 1382
   Height = 784
@@ -12594,8 +12594,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1067
-    Top = 128
+    Left = 1051
+    Top = 136
     ParamData = <
       item
         DataType = ftFloat

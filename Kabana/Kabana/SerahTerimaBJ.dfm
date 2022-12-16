@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 211
+  Left = 219
   Top = 154
   Width = 1356
   Height = 692
@@ -297,7 +297,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
-        Caption = '&Daftar Serah Terima'
+        Caption = '&Daftar Hasil Barang Jadi'
         OnShow = TabSheet1Show
         object qrMaster: TQuickRep
           Left = 68
@@ -2288,7 +2288,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         end
       end
       object tsInput: TTabSheet
-        Caption = '&Serah Terima'
+        Caption = '&Barang Jadi'
         ImageIndex = 1
         OnShow = tsInputShow
         object qrBukti: TQuickRep
@@ -5176,7 +5176,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 'ISHADIAH;CheckBox;1;0'
                 'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
               Selected.Strings = (
-                'NO_REG_OS_REFF'#9'20'#9'NO BUKTI'#9'F')
+                'NO_REG_OS_REFF'#9'20'#9'Nomor Bukti~Pemakaian Bahan'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'
@@ -5249,10 +5249,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
                 'NO_SERIAL'#9'10'#9'SIZE'#9'F'
                 'SAT_D'#9'7'#9'SATUAN'#9'T'
-                'QTY_D_ORDER'#9'6'#9'ORDER'#9'T'
-                'QTY_D_INFO'#9'8'#9'STOK'#9'T'
-                'QTY_D'#9'8'#9'DIPINDAH/~PAKAI'#9'F'
-                'KG_TOT'#9'12'#9'BERAT~KG'#9'T'
+                'QTY_D'#9'8'#9'DIPAKAI'#9'F'
                 'KETERANGAN2'#9'77'#9'KETERANGAN'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
@@ -8826,7 +8823,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop3: TPanel
           Left = 0
           Top = 0
-          Width = 1186
+          Width = 1252
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -8845,8 +8842,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid3: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1186
-          Height = 500
+          Width = 1252
+          Height = 513
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'KD_ITEM'#9'14'#9'KODE'#9'F'
@@ -10533,7 +10530,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop5: TPanel
           Left = 0
           Top = 0
-          Width = 1186
+          Width = 1252
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -10552,8 +10549,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid5: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1186
-          Height = 500
+          Width = 1252
+          Height = 513
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'NAMA_LOKASI'#9'18'#9'NAMA_LOKASI'#9'F'
@@ -12216,7 +12213,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop6: TPanel
           Left = 0
           Top = 0
-          Width = 1186
+          Width = 1252
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -12235,8 +12232,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid6: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1186
-          Height = 500
+          Width = 1252
+          Height = 513
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F'
@@ -14278,8 +14275,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'select * from vkartu_stok_no_seri2'
       'where kd_item like :pkd_item and kd_lokasi=:pkd_lokasi')
     ReadOnly = True
-    Left = 763
-    Top = 408
+    Left = 843
+    Top = 456
     ParamData = <
       item
         DataType = ftString
@@ -14921,7 +14918,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object qBDetail3: TSmartQuery
     KeyFields = 'NO_REG_D'
-    KeySequence = 'NO_REG_D'
+    KeySequence = 'NO_REG_D1'
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from pindah_lokasi_d1'
@@ -14964,5 +14961,54 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     DataSet = qBDetail3
     Left = 771
     Top = 248
+  end
+  object proc_ImpData1: TOraStoredProc
+    StoredProcName = 'PROC_PINDAH_LOKASI_D1'
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'begin'
+      '  PROC_PINDAH_LOKASI_D1(:PNO_REG_OS, :PNO_REFF);'
+      'end;')
+    Left = 936
+    Top = 315
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'PNO_REG_OS'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PNO_REFF'
+        ParamType = ptInput
+      end>
+    CommandStoredProcName = 'PROC_PINDAH_LOKASI_D1:0'
+  end
+  object proc_ImpData2: TOraStoredProc
+    StoredProcName = 'PROC_AMBIL_PEMAKAIAN'
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'begin'
+      '  PROC_AMBIL_PEMAKAIAN(:PNO_REG_OS, :PNO_BOM, :PID_PRINSIPAL);'
+      'end;')
+    Left = 984
+    Top = 363
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'PNO_REG_OS'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PNO_BOM'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PID_PRINSIPAL'
+        ParamType = ptInput
+      end>
+    CommandStoredProcName = 'PROC_AMBIL_PEMAKAIAN:0'
   end
 end

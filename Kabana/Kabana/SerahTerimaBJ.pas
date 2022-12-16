@@ -959,6 +959,8 @@ type
     qBDetail3NO_REG_OS: TFloatField;
     qBDetail3NO_REG_OS_REFF: TStringField;
     qBDetail3NO_REFF: TStringField;
+    proc_ImpData1: TOraStoredProc;
+    proc_ImpData2: TOraStoredProc;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2105,6 +2107,12 @@ begin
   vfield_operand:='LIKE';
   vfield_awal:=DMFrm.qDateTimeVDATETIME.AsDateTime;
   vfield_akhir:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+
+  TabSheet2.TabVisible:=false;
+  TabSheet3.TabVisible:=false;
+  TabSheet5.TabVisible:=false;
+  TabSheet6.TabVisible:=false;
+  tsInputD2.TabVisible:=false;
 end;
 
 procedure TSerahTerimaBJFrm.tbFilterClick(Sender: TObject);
@@ -3508,14 +3516,31 @@ begin
     qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
     qBomD.Open;
     qBom.Close;
-//    qBom.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
+    //qBom.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
     qBom.Open;
-       proc_ImpData.Close;
-       proc_ImpData.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
-       proc_ImpData.ParamByName('pno_reg_os_po').AsFloat:=qBMasterNO_REFF.AsFloat;
-       proc_ImpData.ExecProc;
+
+    {proc_ImpData.Close;
+    proc_ImpData.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+    proc_ImpData.ParamByName('pno_reg_os_po').AsFloat:=qBMasterNO_REFF.AsFloat;
+    proc_ImpData.ExecProc;
+    qBDetail.Close;
+    qBDetail.Open;}
+
+    proc_ImpData2.Close;
+    proc_ImpData2.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+    proc_ImpData2.ParamByName('pno_bom').AsFloat:=qBMasterNO_REFF.AsFloat;
+    proc_ImpData2.ParamByName('pid_prinsipal').AsString:='00';
+    proc_ImpData2.ExecProc;
     qBDetail.Close;
     qBDetail.Open;
+
+    proc_ImpData1.Close;
+    proc_ImpData1.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+    proc_ImpData1.ParamByName('pno_reff').AsFloat:=qBMasterNO_REFF.AsFloat;
+    proc_ImpData1.ExecProc;
+    qBDetail3.Close;
+    qBDetail3.Open;
+
   end;
   wwDBGrid2.SetFocus;
   qItem.Close;
