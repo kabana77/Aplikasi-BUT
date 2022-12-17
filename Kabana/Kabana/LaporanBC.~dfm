@@ -1,5 +1,5 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 307
+  Left = 308
   Top = 110
   Width = 1382
   Height = 827
@@ -13370,7 +13370,7 @@ object LaporanBCFrm: TLaporanBCFrm
             'QTY_AWAL'#9'20'#9'Saldo Awal'#9'F'
             'QTY_IN'#9'20'#9'Pemasukan'#9'F'
             'QTY_OUT'#9'20'#9'Pengeluaran'#9'F'
-            'QTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
+            'CQTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
             'GUDANG'#9'40'#9'Gudang'#9'F')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
@@ -15155,7 +15155,7 @@ object LaporanBCFrm: TLaporanBCFrm
             'QTY_AWAL'#9'20'#9'Saldo Awal'#9'F'
             'QTY_IN'#9'20'#9'Pemasukan'#9'F'
             'QTY_OUT'#9'20'#9'Pengeluaran'#9'F'
-            'QTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
+            'CQTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
             'GUDANG'#9'40'#9'Gudang'#9'F')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
@@ -17308,6 +17308,12 @@ object LaporanBCFrm: TLaporanBCFrm
       FieldName = 'GUDANG'
       Size = 128
     end
+    object qB6CQTY_AKHIR: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'CQTY_AKHIR'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+      Calculated = True
+    end
   end
   object dsqB6: TwwDataSource
     DataSet = qB6
@@ -17423,6 +17429,12 @@ object LaporanBCFrm: TLaporanBCFrm
     object qB7GUDANG: TStringField
       FieldName = 'GUDANG'
       Size = 128
+    end
+    object qB7CQTY_AKHIR: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'CQTY_AKHIR'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+      Calculated = True
     end
   end
   object procB7: TOraStoredProc

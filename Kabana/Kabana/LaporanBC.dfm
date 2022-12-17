@@ -1,8 +1,8 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 307
-  Top = 110
-  Width = 1382
-  Height = 827
+  Left = 1
+  Top = 1
+  Width = 1364
+  Height = 726
   Caption = 'LaporanBCFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object LaporanBCFrm: TLaporanBCFrm
     Left = 0
     Top = 0
     Width = 49
-    Height = 788
+    Height = 687
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object LaporanBCFrm: TLaporanBCFrm
   object pCenter: TPanel
     Left = 49
     Top = 0
-    Width = 1271
-    Height = 788
+    Width = 1253
+    Height = 687
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -1267,7 +1267,7 @@ object LaporanBCFrm: TLaporanBCFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1271
+      Width = 1253
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -1286,8 +1286,8 @@ object LaporanBCFrm: TLaporanBCFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 759
-      Width = 1271
+      Top = 658
+      Width = 1253
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -1436,7 +1436,7 @@ object LaporanBCFrm: TLaporanBCFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 802
+        Width = 784
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -1486,7 +1486,7 @@ object LaporanBCFrm: TLaporanBCFrm
         end
       end
       object pRight2: TPanel
-        Left = 1224
+        Left = 1206
         Top = 1
         Width = 46
         Height = 27
@@ -1499,8 +1499,8 @@ object LaporanBCFrm: TLaporanBCFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1271
-      Height = 709
+      Width = 1253
+      Height = 608
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -3960,8 +3960,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISDETAIL;CheckBox;1;0'
@@ -4034,7 +4034,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -13370,7 +13370,7 @@ object LaporanBCFrm: TLaporanBCFrm
             'QTY_AWAL'#9'20'#9'Saldo Awal'#9'F'
             'QTY_IN'#9'20'#9'Pemasukan'#9'F'
             'QTY_OUT'#9'20'#9'Pengeluaran'#9'F'
-            'QTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
+            'CQTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
             'GUDANG'#9'40'#9'Gudang'#9'F')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
@@ -15155,7 +15155,7 @@ object LaporanBCFrm: TLaporanBCFrm
             'QTY_AWAL'#9'20'#9'Saldo Awal'#9'F'
             'QTY_IN'#9'20'#9'Pemasukan'#9'F'
             'QTY_OUT'#9'20'#9'Pengeluaran'#9'F'
-            'QTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
+            'CQTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
             'GUDANG'#9'40'#9'Gudang'#9'F')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
@@ -16882,10 +16882,10 @@ object LaporanBCFrm: TLaporanBCFrm
     end
   end
   object pRight: TPanel
-    Left = 1320
+    Left = 1302
     Top = 0
     Width = 46
-    Height = 788
+    Height = 687
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -17308,6 +17308,12 @@ object LaporanBCFrm: TLaporanBCFrm
       FieldName = 'GUDANG'
       Size = 128
     end
+    object qB6CQTY_AKHIR: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'CQTY_AKHIR'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+      Calculated = True
+    end
   end
   object dsqB6: TwwDataSource
     DataSet = qB6
@@ -17423,6 +17429,12 @@ object LaporanBCFrm: TLaporanBCFrm
     object qB7GUDANG: TStringField
       FieldName = 'GUDANG'
       Size = 128
+    end
+    object qB7CQTY_AKHIR: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'CQTY_AKHIR'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+      Calculated = True
     end
   end
   object procB7: TOraStoredProc

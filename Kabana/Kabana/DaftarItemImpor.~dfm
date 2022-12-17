@@ -76,28 +76,14 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         100.012500000000000000
         0.000000000000000000)
       PrinterSettings.Copies = 1
-      PrinterSettings.OutputBin = Auto
       PrinterSettings.Duplex = False
       PrinterSettings.FirstPage = 0
       PrinterSettings.LastPage = 0
-      PrinterSettings.UseStandardprinter = False
-      PrinterSettings.UseCustomBinCode = False
-      PrinterSettings.CustomBinCode = 0
-      PrinterSettings.ExtendedDuplex = 0
-      PrinterSettings.UseCustomPaperCode = False
-      PrinterSettings.CustomPaperCode = 0
-      PrinterSettings.PrintMetaFile = False
-      PrinterSettings.PrintQuality = 0
-      PrinterSettings.Collate = 0
-      PrinterSettings.ColorOption = 0
+      PrinterSettings.OutputBin = Auto
       PrintIfEmpty = True
       SnapToGrid = True
       Units = Pixels
       Zoom = 100
-      PrevFormStyle = fsNormal
-      PreviewInitialState = wsNormal
-      PrevInitialZoom = qrZoomToFit
-      PreviewDefaultSaveType = stQRP
       object PageHeaderBand1: TQRBand
         Left = 38
         Top = 38
@@ -110,19 +96,16 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         ForceNewColumn = False
         ForceNewPage = False
         Size.Values = (
           219.604166666666700000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbPageHeader
         object QRDBText38: TQRDBText
           Left = 16
           Top = 8
-          Width = 136
+          Width = 171
           Height = 21
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -133,7 +116,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             55.562500000000000000
             42.333333333333330000
             21.166666666666670000
-            359.833333333333300000)
+            452.437500000000000000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -149,13 +132,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 12
         end
         object QRDBText39: TQRDBText
           Left = 16
           Top = 29
-          Width = 50
+          Width = 60
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -166,7 +148,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             42.333333333333330000
             76.729166666666670000
-            132.291666666666700000)
+            158.750000000000000000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -176,13 +158,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           DataField = 'ALAMAT1'
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRDBText45: TQRDBText
           Left = 16
           Top = 45
-          Width = 50
+          Width = 60
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -193,7 +174,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             42.333333333333330000
             119.062500000000000000
-            132.291666666666700000)
+            158.750000000000000000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -203,13 +184,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           DataField = 'ALAMAT2'
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRDBText48: TQRDBText
           Left = 16
           Top = 61
-          Width = 50
+          Width = 60
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -220,7 +200,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             42.333333333333330000
             161.395833333333300000
-            132.291666666666700000)
+            158.750000000000000000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -230,13 +210,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           DataField = 'ALAMAT3'
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRDBText2: TQRDBText
           Left = 896
           Top = 32
-          Width = 54
+          Width = 64
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -247,7 +226,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             2370.666666666667000000
             84.666666666666670000
-            142.875000000000000000)
+            169.333333333333300000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -263,7 +242,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRDBText5: TQRDBText
@@ -296,13 +274,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRLabel4: TQRLabel
           Left = 840
           Top = 32
-          Width = 26
+          Width = 31
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -313,7 +290,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             2222.500000000000000000
             84.666666666666670000
-            68.791666666666670000)
+            82.020833333333330000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -322,13 +299,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRLabel5: TQRLabel
           Left = 840
           Top = 56
-          Width = 34
+          Width = 41
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -339,7 +315,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             2222.500000000000000000
             148.166666666666700000
-            89.958333333333330000)
+            108.479166666666700000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -348,13 +324,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRLabel6: TQRLabel
           Left = 880
           Top = 32
-          Width = 4
+          Width = 5
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -365,7 +340,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             2328.333333333333000000
             84.666666666666670000
-            10.583333333333330000)
+            13.229166666666670000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -374,13 +349,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRLabel7: TQRLabel
           Left = 880
           Top = 56
-          Width = 4
+          Width = 5
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -391,7 +365,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             2328.333333333333000000
             148.166666666666700000
-            10.583333333333330000)
+            13.229166666666670000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -400,7 +374,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
       end
@@ -416,7 +389,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -428,13 +400,11 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Size.Values = (
           105.833333333333300000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbTitle
         object QRDBText1: TQRDBText
-          Left = 421
+          Left = 406
           Top = 8
-          Width = 138
+          Width = 167
           Height = 24
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -443,9 +413,9 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Frame.DrawRight = False
           Size.Values = (
             63.500000000000000000
-            1113.895833333333000000
+            1074.208333333333000000
             21.166666666666670000
-            365.125000000000000000)
+            441.854166666666700000)
           Alignment = taCenter
           AlignToBand = True
           AutoSize = True
@@ -461,7 +431,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 14
         end
       end
@@ -477,7 +446,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -489,8 +457,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Size.Values = (
           92.604166666666670000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbColumnHeader
         object QRLabel1: TQRLabel
           Left = 40
@@ -515,7 +481,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel2: TQRLabel
@@ -541,7 +506,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel8: TQRLabel
@@ -567,7 +531,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel9: TQRLabel
@@ -593,7 +556,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel10: TQRLabel
@@ -619,7 +581,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel11: TQRLabel
@@ -645,7 +606,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel12: TQRLabel
@@ -671,7 +631,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRLabel13: TQRLabel
@@ -697,7 +656,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
       end
@@ -713,14 +671,11 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         ForceNewColumn = False
         ForceNewPage = False
         Size.Values = (
           42.333333333333330000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbDetail
         object QRDBText6: TQRDBText
           Left = 40
@@ -752,7 +707,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText7: TQRDBText
@@ -785,7 +739,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRSysData2: TQRSysData
@@ -815,7 +768,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Font.Style = []
           ParentFont = False
           Transparent = False
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText8: TQRDBText
@@ -848,7 +800,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText9: TQRDBText
@@ -881,7 +832,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText10: TQRDBText
@@ -914,7 +864,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText11: TQRDBText
@@ -947,7 +896,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText12: TQRDBText
@@ -980,7 +928,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText13: TQRDBText
@@ -1013,7 +960,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
         object QRDBText14: TQRDBText
@@ -1046,7 +992,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 8
         end
       end
@@ -1062,19 +1007,16 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         ForceNewColumn = False
         ForceNewPage = False
         Size.Values = (
           351.895833333333300000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbSummary
         object QRLabel3: TQRLabel
-          Left = 462
+          Left = 456
           Top = 8
-          Width = 56
+          Width = 68
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -1083,9 +1025,9 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Frame.DrawRight = False
           Size.Values = (
             44.979166666666670000
-            1222.375000000000000000
+            1206.500000000000000000
             21.166666666666670000
-            148.166666666666700000)
+            179.916666666666700000)
           Alignment = taCenter
           AlignToBand = True
           AutoSize = True
@@ -1094,7 +1036,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD11: TQRDBText
@@ -1127,7 +1068,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD12: TQRDBText
@@ -1160,7 +1100,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD13: TQRDBText
@@ -1193,7 +1132,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD21: TQRDBText
@@ -1226,7 +1164,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD22: TQRDBText
@@ -1259,7 +1196,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD23: TQRDBText
@@ -1292,7 +1228,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD31: TQRDBText
@@ -1325,7 +1260,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD32: TQRDBText
@@ -1358,7 +1292,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD33: TQRDBText
@@ -1391,7 +1324,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD41: TQRDBText
@@ -1424,7 +1356,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD42: TQRDBText
@@ -1457,7 +1388,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object qrdbTTD43: TQRDBText
@@ -1490,13 +1420,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           ParentFont = False
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRLabel45: TQRLabel
           Left = 40
           Top = 24
-          Width = 315
+          Width = 383
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -1507,7 +1436,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             105.833333333333300000
             63.500000000000000000
-            833.437500000000000000)
+            1013.354166666667000000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -1518,7 +1447,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Color = clWhite
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
       end
@@ -1534,19 +1462,16 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
         Frame.DrawRight = False
         AlignToBottom = False
         Color = clWhite
-        TransparentBand = False
         ForceNewColumn = False
         ForceNewPage = False
         Size.Values = (
           47.625000000000000000
           2592.916666666667000000)
-        PreCaluculateBandHeight = False
-        KeepOnOnePage = False
         BandType = rbPageFooter
         object QRDBText3: TQRDBText
           Left = 0
           Top = 0
-          Width = 41
+          Width = 47
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -1557,7 +1482,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
             44.979166666666670000
             0.000000000000000000
             0.000000000000000000
-            108.479166666666700000)
+            124.354166666666700000)
           Alignment = taLeftJustify
           AlignToBand = False
           AutoSize = True
@@ -1567,13 +1492,12 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           DataField = 'VPRINT'
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRDBText4: TQRDBText
-          Left = 853
+          Left = 844
           Top = 0
-          Width = 62
+          Width = 71
           Height = 17
           Frame.Color = clBlack
           Frame.DrawTop = False
@@ -1582,9 +1506,9 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Frame.DrawRight = False
           Size.Values = (
             44.979166666666670000
-            2256.895833333333000000
+            2233.083333333333000000
             0.000000000000000000
-            164.041666666666700000)
+            187.854166666666700000)
           Alignment = taRightJustify
           AlignToBand = False
           AutoSize = True
@@ -1594,7 +1518,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           DataField = 'DISTRIBUSI'
           Transparent = False
           WordWrap = True
-          ExportAs = exptText
           FontSize = 10
         end
         object QRSysData1: TQRSysData
@@ -1619,7 +1542,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Data = qrsPageNumber
           Text = 'Hal : '
           Transparent = False
-          ExportAs = exptText
           FontSize = 10
         end
       end
@@ -1952,6 +1874,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
           Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
           ParentFont = False
+          ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
           TitleAlignment = taLeftJustify

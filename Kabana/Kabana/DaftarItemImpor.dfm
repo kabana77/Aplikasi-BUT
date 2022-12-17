@@ -1639,6 +1639,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Spacing = 4
           Transparent = False
           Caption = 'dbNavigatorNext'
+          Enabled = False
           DisabledTextColors.ShadeColor = clGray
           DisabledTextColors.HighlightColor = clBtnHighlight
           Index = 1
@@ -1655,6 +1656,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Spacing = 4
           Transparent = False
           Caption = 'dbNavigatorInsert'
+          Enabled = False
           DisabledTextColors.ShadeColor = clGray
           DisabledTextColors.HighlightColor = clBtnHighlight
           Index = 2
@@ -1671,6 +1673,7 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
           Spacing = 4
           Transparent = False
           Caption = 'dbNavigatorEdit'
+          Enabled = False
           DisabledTextColors.ShadeColor = clGray
           DisabledTextColors.HighlightColor = clBtnHighlight
           Index = 3
@@ -2118,9 +2121,8 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from daftar_item where isimpor='#39'1'#39)
+      'select * from daftar_item where isimpor='#39'1'#39' and kd_kel <> '#39'40'#39)
     RefreshOptions = [roAfterInsert, roAfterUpdate]
-    Active = True
     BeforeInsert = qB1BeforeInsert
     BeforeEdit = qB1BeforeEdit
     BeforePost = qB1BeforePost
@@ -2370,7 +2372,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
     SQL.Strings = (
       'select id_prinsipal, nama_prinsipal from vdaftar_prinsipal'
       'where jenis='#39'PRINSIPAL'#39)
-    Active = True
     Left = 939
     Top = 136
     object sqDaftarPrinsipalID_PRINSIPAL: TStringField
@@ -2437,7 +2438,6 @@ object DaftarItemImporFrm: TDaftarItemImporFrm
       'kelompok, '
       'sub_kelompok'
       'from vdaftar_item_kelompok')
-    Active = True
     Left = 939
     Top = 216
     object sqDaftarItemKelompokKD_KEL: TStringField

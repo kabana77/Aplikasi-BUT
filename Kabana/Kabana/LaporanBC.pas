@@ -681,6 +681,8 @@ type
     QRShape91: TQRShape;
     QRShape145: TQRShape;
     qB2NO_URUT: TIntegerField;
+    qB6CQTY_AKHIR: TFloatField;
+    qB7CQTY_AKHIR: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2244,6 +2246,7 @@ begin
   qB6LNILAI_MASUK_ALL.AsFloat:=qB6NILAI_BELI.AsFloat+qB6NILAI_RETUR_JUAL.AsFloat+qB6NILAI_RMVL_IN.AsFloat+qB6NILAI_PINDAH_IN.AsFloat+qB6NILAI_KRS_IN.AsFloat;
   qB6LNILAI_KELUAR_ALL.AsFloat:=qB6NILAI_JUAL.AsFloat+qB6NILAI_RETUR_BELI.AsFloat+qB6NILAI_RMVL_OUT.AsFloat+qB6NILAI_PINDAH_OUT.AsFloat+qB6NILAI_KRS_OUT.AsFloat;}
   qB6NO_URUT.AsInteger:=qB6.RecNo;
+  qB6CQTY_AKHIR.AsFloat:=(qB6QTY_AWAL.AsFloat+qB6QTY_IN.AsFloat)-qB6QTY_OUT.AsFloat;
 end;
 
 procedure TLaporanBCFrm.qB6BeforeOpen(DataSet: TDataSet);
@@ -2504,6 +2507,7 @@ end;
 procedure TLaporanBCFrm.qB7CalcFields(DataSet: TDataSet);
 begin
   qB7NO_URUT.AsInteger:=qB7.RecNo;
+  qB7CQTY_AKHIR.AsFloat:=(qB7QTY_AWAL.AsFloat+qB7QTY_IN.AsFloat)-qB7QTY_OUT.AsFloat;
 end;
 
 procedure TLaporanBCFrm.qB8CalcFields(DataSet: TDataSet);
