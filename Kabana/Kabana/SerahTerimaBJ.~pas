@@ -961,6 +961,18 @@ type
     qBDetail3NO_REFF: TStringField;
     proc_ImpData1: TOraStoredProc;
     proc_ImpData2: TOraStoredProc;
+    qBDetail3JENIS: TStringField;
+    TabSheet4: TTabSheet;
+    wwDBGrid5: TwwDBGrid;
+    wwIButton8: TwwIButton;
+    dsqBDetail4: TwwDataSource;
+    qBDetail4: TSmartQuery;
+    qBDetail4NO_REG_OS: TFloatField;
+    qBDetail4KD_ITEM: TStringField;
+    qBDetail4KETERANGAN: TStringField;
+    qBDetail4SAT_D: TStringField;
+    qBDetail4QTY_D: TFloatField;
+    qBDetail4KG_D: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1105,6 +1117,7 @@ type
     procedure qBDetail3BeforePost(DataSet: TDataSet);
     procedure qBDetail3BeforeInsert(DataSet: TDataSet);
     procedure tsInputD3Show(Sender: TObject);
+    procedure TabSheet4Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -3720,6 +3733,13 @@ end;
 procedure TSerahTerimaBJFrm.tsInputD3Show(Sender: TObject);
 begin
   dbNavigator.DataSource:=dsqBMaster;
+end;
+
+procedure TSerahTerimaBJFrm.TabSheet4Show(Sender: TObject);
+begin
+  qBDetail4.Close;
+  qBDetail4.ParamByName('NO_REG_OS').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+  qBDetail4.Open;
 end;
 
 end.

@@ -2043,6 +2043,12 @@ begin
   vfield_operand:='LIKE';
   vfield_awal:=DMFrm.qDateTimeVDATETIME.AsDateTime;
   vfield_akhir:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+
+  TabSheet2.TabVisible:=false;
+  TabSheet3.TabVisible:=false;
+  TabSheet5.TabVisible:=false;
+  TabSheet6.TabVisible:=false;
+  tsInputD2.TabVisible:=false;
 end;
 
 procedure TSerahTerimaWasteFrm.tbFilterClick(Sender: TObject);
@@ -2388,6 +2394,7 @@ begin
                 wwDBGrid1.Selected.Add('COLOR'#9'6'#9'Color'#9'F'#9'PRODUK JADI');
                 wwDBGrid1.Selected.Add('SATUAN'#9'5'#9'Satuan'#9'F'#9'PRODUK JADI');
                 wwDBGrid1.Selected.Add('KELOMPOK'#9'10'#9'KELOMPOK'#9'F');
+                {
                 wwDBGrid1.Selected.Add('XXS'#9'6'#9+qBDetail9LXXS.AsString+#9'F'#9'SIZE');
                 wwDBGrid1.Selected.Add('XS'#9'6'#9+qBDetail9LXS.AsString+#9'F'#9'SIZE');
                 wwDBGrid1.Selected.Add('S'#9'6'#9+qBDetail9LS.AsString+#9'F'#9'SIZE');
@@ -2413,7 +2420,7 @@ begin
                 wwDBGrid1.Selected.Add('SIZE13'#9'10'#9+qBDetail9LSIZE13.AsString+#9'F'#9'SIZE EXTRA');
                 wwDBGrid1.Selected.Add('SIZE14'#9'10'#9+qBDetail9LSIZE14.AsString+#9'F'#9'SIZE EXTRA');
                 wwDBGrid1.Selected.Add('SIZE15'#9'10'#9+qBDetail9LSIZE15.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('TOT_QTY'#9'9'#9'TOTAL'#9'T');
+                wwDBGrid1.Selected.Add('TOT_QTY'#9'9'#9'TOTAL'#9'T');}
   qBomD.Open;
   wwDBGrid1.RedrawGrid;
   qBom.Close;

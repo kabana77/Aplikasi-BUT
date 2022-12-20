@@ -1,8 +1,8 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 429
-  Top = 229
+  Left = 327
+  Top = 149
   Height = 579
   Width = 759
   object OS: TOraSession

@@ -1,5 +1,5 @@
 object OrderSalesFrm: TOrderSalesFrm
-  Left = 231
+  Left = 232
   Top = 217
   Width = 1443
   Height = 614

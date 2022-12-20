@@ -1,5 +1,5 @@
 object InventoryControlFrm: TInventoryControlFrm
-  Left = 221
+  Left = 222
   Top = 112
   Width = 1531
   Height = 764
@@ -7197,7 +7197,8 @@ object InventoryControlFrm: TInventoryControlFrm
                 'TOT_QTY'#9'8'#9'Total'#9'T'#9'KEBUTUHAN'
                 'BELUM_TERPAKAI'#9'10'#9'GUDANG'#9'F'
                 'PEMAKAIAN'#9'8'#9'WIP'#9'F'
-                'WASTE'#9'10'#9'WASTE'#9'F')
+                'WASTE'#9'10'#9'WASTE'#9'F'
+                'FINISHING_GOODS'#9'10'#9'FINISH GOOD'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'

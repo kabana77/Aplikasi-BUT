@@ -1,5 +1,5 @@
 object InventoryControlFrm: TInventoryControlFrm
-  Left = 217
+  Left = 221
   Top = 112
   Width = 1531
   Height = 764

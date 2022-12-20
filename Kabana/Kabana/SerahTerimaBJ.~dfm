@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 218
+  Left = 220
   Top = 154
   Width = 1356
   Height = 692
@@ -5176,7 +5176,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
                 'ISHADIAH;CheckBox;1;0'
                 'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
               Selected.Strings = (
-                'NO_REG_OS_REFF'#9'20'#9'Nomor Bukti~Pemakaian Bahan'#9'F')
+                'NO_REG_OS_REFF'#9'20'#9'Nomor Bukti'#9'F'
+                'JENIS'#9'20'#9'Keterangan'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'
@@ -5226,7 +5227,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             end
           end
           object tsInputD: TTabSheet
-            Caption = 'Detail Item Barang'
+            Caption = 'Detail Item Terpakai'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -5474,6 +5475,72 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FooterCellColor = clGradientInactiveCaption
               PaintOptions.ActiveRecordColor = clGrayText
               object wwIButton2: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
+            end
+          end
+          object TabSheet4: TTabSheet
+            Caption = 'Detail Item Waste'
+            ImageIndex = 3
+            OnShow = TabSheet4Show
+            object wwDBGrid5: TwwDBGrid
+              Left = 0
+              Top = 0
+              Width = 1059
+              Height = 261
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'KD_ITEM;CustomEdit;lcdItem;F'
+                'ISHADIAH;CheckBox;1;0'
+                'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
+              Selected.Strings = (
+                'KD_ITEM'#9'12'#9'KODE'#9'F'
+                'KETERANGAN'#9'30'#9'NAMA BARANG/BAHAN'#9'F'
+                'SAT_D'#9'12'#9'SATUAN'#9'F'
+                'QTY_D'#9'10'#9'QTY~WASTE'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqBDetail4
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = False
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+              object wwIButton8: TwwIButton
                 Left = 0
                 Top = 0
                 Width = 17
@@ -14956,6 +15023,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       FieldName = 'NO_REFF'
       Size = 15
     end
+    object qBDetail3JENIS: TStringField
+      FieldName = 'JENIS'
+      Size = 50
+    end
   end
   object dsqBDetail3: TwwDataSource
     DataSet = qBDetail3
@@ -15010,5 +15081,54 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         ParamType = ptInput
       end>
     CommandStoredProcName = 'PROC_AMBIL_PEMAKAIAN:0'
+  end
+  object dsqBDetail4: TwwDataSource
+    DataSet = qBDetail4
+    Left = 763
+    Top = 288
+  end
+  object qBDetail4: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      
+        'select no_reg_os, kd_item, keterangan, sat_d, sum(qty_d) as qty_' +
+        'd, sum(kg_d) as kg_d'
+      'from VBON_WASTE_REKAP'
+      'where no_reg_os=:no_reg_os'
+      'group by no_reg_os, kd_item, keterangan, sat_d')
+    DetailFields = 'NO_REG_OS'
+    RefreshOptions = [roAfterInsert, roAfterUpdate]
+    Left = 835
+    Top = 288
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'NO_REG_OS'
+        ParamType = ptInput
+      end>
+    object qBDetail4NO_REG_OS: TFloatField
+      FieldName = 'NO_REG_OS'
+    end
+    object qBDetail4KD_ITEM: TStringField
+      FieldName = 'KD_ITEM'
+      Size = 12
+    end
+    object qBDetail4KETERANGAN: TStringField
+      FieldName = 'KETERANGAN'
+      Size = 255
+    end
+    object qBDetail4SAT_D: TStringField
+      FieldName = 'SAT_D'
+      Size = 12
+    end
+    object qBDetail4QTY_D: TFloatField
+      FieldName = 'QTY_D'
+      DisplayFormat = '#,#.00;(#,#.00);-'
+    end
+    object qBDetail4KG_D: TFloatField
+      FieldName = 'KG_D'
+      ReadOnly = True
+      DisplayFormat = '#,#.00;(#,#.00);-'
+    end
   end
 end
