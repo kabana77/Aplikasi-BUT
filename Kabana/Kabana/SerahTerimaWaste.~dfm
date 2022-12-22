@@ -1,5 +1,5 @@
 object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
-  Left = 187
+  Left = 189
   Top = 144
   Width = 1524
   Height = 762
@@ -4719,7 +4719,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           object Label19: TLabel
             Left = 0
             Top = 311
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -4833,9 +4833,10 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
               Selected.Strings = (
                 'KD_ITEM'#9'11'#9'KODE'#9'F'
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
-                'SAT_D'#9'7'#9'SATUAN'#9'T'
-                'QTY_D'#9'8'#9'QTY~WASTE'#9'F'
-                'KG_TOT'#9'12'#9'BERAT~KG'#9'T'
+                'KG_D'#9'12'#9'KG'#9'F'#9'WASTE (KG)'
+                'RD'#9'10'#9'RASIO'#9'F'#9'WASTE (KG)'
+                'QTY_D'#9'8'#9'QTY'#9'F'#9'WASTE'
+                'SAT_D'#9'7'#9'SATUAN'#9'T'#9'WASTE'
                 'KETERANGAN2'#9'20'#9'KETERANGAN'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
@@ -11936,8 +11937,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     SQL.Strings = (
       'select * from vpindah_lokasi_7')
     ReadOnly = True
-    Left = 1123
-    Top = 16
+    Left = 1131
     object qB1NO_REG_OS: TFloatField
       FieldName = 'NO_REG_OS'
       Required = True
@@ -12108,8 +12108,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
-    Left = 1123
-    Top = 56
+    Left = 1115
+    Top = 40
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
@@ -12142,7 +12142,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1123
+    Left = 1091
     Top = 128
     ParamData = <
       item
@@ -12179,6 +12179,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBDetailKG_D: TFloatField
       FieldName = 'KG_D'
+      OnChange = qBDetailKG_DChange
       DisplayFormat = '#,#.00;(#,#.00);-'
     end
     object qBDetailSAT_A: TStringField
@@ -12203,6 +12204,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBDetailRD: TFloatField
       FieldName = 'RD'
+      OnChange = qBDetailRDChange
       DisplayFormat = '#,#;-'
     end
     object qBDetailHRG_A: TFloatField
@@ -12499,8 +12501,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1108
-    Top = 96
+    Left = 1092
+    Top = 88
     ParamData = <
       item
         DataType = ftFloat
@@ -12652,8 +12654,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
-    Left = 1155
-    Top = 96
+    Left = 1131
+    Top = 88
   end
   object qItem: TOraQuery
     Session = DMFrm.OS
@@ -12816,7 +12818,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       'from pindah_lokasi_d'
       'where no_reg_os=:pno_reg_os')
     BeforeOpen = qBDetailXBeforeOpen
-    Left = 1128
+    Left = 1168
     Top = 168
     ParamData = <
       item
@@ -12851,8 +12853,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       'begin'
       '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM, :PCATATAN);'
       'end;')
-    Left = 760
-    Top = 371
+    Left = 784
+    Top = 411
     ParamData = <
       item
         DataType = ftFloat
@@ -13031,7 +13033,6 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     ReadOnly = True
     OnCalcFields = qB2CalcFields
     Left = 1171
-    Top = 16
     object qB2NO_REG_OS: TFloatField
       FieldName = 'NO_REG_OS'
       Required = True
@@ -13220,8 +13221,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqB2: TwwDataSource
     DataSet = qB2
-    Left = 1171
-    Top = 56
+    Left = 1155
+    Top = 40
   end
   object qB2X: TOraQuery
     Session = DMFrm.OS
@@ -14044,7 +14045,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     MasterSource = dsqBomD
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
-    Left = 1152
+    Left = 1208
     Top = 171
     ParamData = <
       item

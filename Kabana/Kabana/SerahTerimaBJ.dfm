@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 221
+  Left = 222
   Top = 154
   Width = 1356
   Height = 692
@@ -5090,7 +5090,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Label19: TLabel
             Left = 0
             Top = 235
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

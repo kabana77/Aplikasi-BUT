@@ -1043,6 +1043,8 @@ type
     procedure wwDBGrid1ColWidthChanged(Sender: TObject; Column: Integer);
     procedure qBDetail9BeforeOpen(DataSet: TDataSet);
     procedure qBDetailBeforeOpen(DataSet: TDataSet);
+    procedure qBDetailKG_DChange(Sender: TField);
+    procedure qBDetailRDChange(Sender: TField);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -3550,6 +3552,16 @@ begin
   if qBomDLSIZE14.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLSIZE14.AsString+#9'SIZE14');
   if qBomDLSIZE15.AsString<>'' then wwDBComboBox1.Items.Add(qBomDLSIZE15.AsString+#9'SIZE15');
 
+end;
+
+procedure TSerahTerimaWasteFrm.qBDetailKG_DChange(Sender: TField);
+begin
+  if qBDetailRD.AsFloat > 0 then qBDetailQTY_D.AsFloat:=qBDetailKG_D.AsFloat*qBDetailRD.AsFloat;
+end;
+
+procedure TSerahTerimaWasteFrm.qBDetailRDChange(Sender: TField);
+begin
+  if qBDetailKG_D.AsFloat > 0 then qBDetailQTY_D.AsFloat:=qBDetailKG_D.AsFloat*qBDetailRD.AsFloat;
 end;
 
 end.

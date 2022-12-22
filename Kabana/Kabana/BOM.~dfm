@@ -1,5 +1,5 @@
 object BOMFrm: TBOMFrm
-  Left = 357
+  Left = 358
   Top = 156
   Width = 1378
   Height = 780
@@ -8652,6 +8652,8 @@ object BOMFrm: TBOMFrm
   object qItem: TOraQuery
     Session = DMFrm.OS
     SQL.Strings = (
+      'SELECT A.*, B.NO_PENGAJUAN FROM'
+      '('
       
         'select a.*, b.nama_prinsipal from daftar_item a, daftar_prinsipa' +
         'l b'
@@ -8659,6 +8661,17 @@ object BOMFrm: TBOMFrm
       '(a.kd_kel like '#39'2%'#39') or (a.kd_kel like '#39'1%'#39') and'
       'a.id_prinsipal=b.id_prinsipal'
       'order by b.nama_prinsipal, a.nama_item'
+      ') A'
+      'LEFT JOIN PIB B ON A.NO_PIB=B.NO_REG_OS'
+      'WHERE substr(a.kd_item, 1,2) in ('#39'12'#39', '#39'17'#39', '#39'18'#39')'
+      ''
+      
+        '/*select a.*, b.nama_prinsipal from daftar_item a, daftar_prinsi' +
+        'pal b'
+      'where'
+      '(a.kd_kel like '#39'2%'#39') or (a.kd_kel like '#39'1%'#39') and'
+      'a.id_prinsipal=b.id_prinsipal'
+      'order by b.nama_prinsipal, a.nama_item*/'
       ''
       
         '/*select * from daftar_item where (kd_kel like '#39'2%'#39') or (kd_kel ' +
@@ -8703,6 +8716,10 @@ object BOMFrm: TBOMFrm
     object qItemKD_EXT: TStringField
       DisplayWidth = 10
       FieldName = 'KD_EXT'
+    end
+    object qItemNO_PENGAJUAN: TStringField
+      FieldName = 'NO_PENGAJUAN'
+      Size = 50
     end
   end
   object qBDetail2X: TOraQuery

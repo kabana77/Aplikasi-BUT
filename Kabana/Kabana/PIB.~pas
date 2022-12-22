@@ -3182,12 +3182,12 @@ begin
   qBMasterKD_FORM.AsString:=vkd_transaksi;
   qBMasterTGL.AsDateTime:=vtgl_bukti;
   qBMasterPEMILIK_BARANG_IDENTITAS.AsString:=DMFrm.qPerusahaanNPWP.AsString;
-  qBMasterPEMILIK_BARANG_NAMA.AsString:='PT. PISMA PUTRA TEXTILE';
-  qBMasterPEMILIK_BARANG_ALAMAT.AsString:='Jl. Raya Pait KM 10, Pait Siwalan - Pekalongan';
+  qBMasterPEMILIK_BARANG_NAMA.AsString:=DMFrm.qPerusahaanNAMA_PERUSAHAAN.AsString;
+  qBMasterPEMILIK_BARANG_ALAMAT.AsString:=DMFrm.qPerusahaanALAMAT1.AsString;
   qBMasterPEMILIK_BARANG_NEGARA.AsString:='Indonesia';
   qBMasterIMPORTIR_IDENTITAS.AsString:=DMFrm.qPerusahaanNPWP.AsString;
-  qBMasterIMPORTIR_NAMA.AsString:='PT. PISMA PUTRA TEXTILE';
-  qBMasterIMPORTIR_ALAMAT.AsString:='Jl. Raya Pait KM 10, Pait Siwalan - Pekalongan';
+  qBMasterIMPORTIR_NAMA.AsString:=DMFrm.qPerusahaanNAMA_PERUSAHAAN.AsString;
+  qBMasterIMPORTIR_ALAMAT.AsString:=DMFrm.qPerusahaanALAMAT1.AsString;
   qBMasterIMPORTIR_NEGARA.AsString:='Indonesia';
   qBMasterCARA_PENGANGKUTAN.AsString:='LAUT';
   qBMasterPELABUHAN_TUJUAN.AsString:='IDTES-Tanjung Emas';

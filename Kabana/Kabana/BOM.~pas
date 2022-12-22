@@ -533,6 +533,7 @@ type
     qBDetailSTYLE: TStringField;
     qB1STYLE: TStringField;
     qB1KD_PRODUKSI: TStringField;
+    qItemNO_PENGAJUAN: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1399,6 +1400,7 @@ begin
       qBDetail2NAMA_ITEM.AsString:=qItemNAMA_ITEM.AsString;
       qBDetail2COLOR.AsString:=qItemCOLOR.AsString;
       qBDetail2SATUAN.AsString:=qItemSAT_D.AsString;
+      qBDetail2KETERANGAN.AsString:='No Pengajuan PIB : '+qItemNO_PENGAJUAN.AsString;
   end;
 end;
 
