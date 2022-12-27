@@ -1,8 +1,8 @@
 object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
-  Left = 189
-  Top = 144
-  Width = 1524
-  Height = 762
+  Left = 198
+  Top = 93
+  Width = 1134
+  Height = 723
   Caption = 'SerahTerimaWasteFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 723
+    Height = 684
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1428
-    Height = 723
+    Width = 1038
+    Height = 684
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1428
+      Width = 1038
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 694
-      Width = 1428
+      Top = 655
+      Width = 1038
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 959
+        Width = 569
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         end
       end
       object pRight2: TPanel
-        Left = 1381
+        Left = 991
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1428
-      Height = 644
+      Width = 1038
+      Height = 605
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2197,7 +2197,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1420
+          Width = 1030
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2216,8 +2216,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1420
-          Height = 583
+          Width = 1030
+          Height = 544
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'NO_REG_OS'#9'12'#9'NO_BUKTI'#9'F'
@@ -4247,7 +4247,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1420
+          Width = 1030
           Height = 251
           Align = alTop
           BevelOuter = bvNone
@@ -4260,8 +4260,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           ParentFont = False
           TabOrder = 0
           object Label14: TLabel
-            Left = 120
-            Top = 58
+            Left = 104
+            Top = 2
             Width = 55
             Height = 13
             Caption = 'Keterangan'
@@ -4407,17 +4407,9 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             ParentFont = False
             Transparent = True
           end
-          object Label3: TLabel
-            Left = 255
-            Top = 232
-            Width = 48
-            Height = 13
-            Caption = 'Hasil -->'
-            Visible = False
-          end
           object DBMemo1: TDBMemo
-            Left = 120
-            Top = 75
+            Left = 104
+            Top = 19
             Width = 712
             Height = 41
             DataField = 'KETERANGAN'
@@ -4575,137 +4567,232 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             OnCloseUp = lcdBOMCloseUp
             OnEnter = lcdBOMEnter
           end
-          object wwDBGrid1: TwwDBGrid
+          object Panel2: TPanel
             Left = 0
-            Top = 152
-            Width = 633
-            Height = 73
-            TabStop = False
-            DittoAttributes.ShortCutDittoRecord = 16429
-            ControlType.Strings = (
-              'ISHADIAH;CheckBox;1;0')
-            Selected.Strings = (
-              'STYLE'#9'10'#9'Style'#9'T'#9'PRODUK JADI'
-              'ITEM'#9'23'#9'Nama Item'#9'T'#9'PRODUK JADI'
-              'COLOR'#9'8'#9'Color'#9'T'#9'PRODUK JADI'
-              'SATUAN'#9'5'#9'Satuan'#9'T'#9'PRODUK JADI'
-              'KELOMPOK'#9'10'#9'KELOMPOK'#9'T')
-            IniAttributes.FileName = 'KUWUNG'
-            IniAttributes.Delimiter = ';;'
-            IniAttributes.CheckNewFields = True
-            ExportOptions.ExportType = wwgetSYLK
-            TitleColor = clBtnFace
-            FixedCols = 0
-            ShowHorzScrollBar = False
-            ShowVertScrollBar = False
-            EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-            Color = clWhite
-            DataSource = dsqBomD
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial Narrow'
-            Font.Style = []
-            KeyOptions = [dgEnterToTab]
-            Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-            ParentFont = False
-            ReadOnly = True
-            RowHeightPercent = 112
+            Top = 154
+            Width = 1030
+            Height = 97
+            Align = alBottom
+            Caption = 'Panel2'
             TabOrder = 7
-            TitleAlignment = taLeftJustify
-            TitleFont.Charset = ANSI_CHARSET
-            TitleFont.Color = clWindowText
-            TitleFont.Height = -11
-            TitleFont.Name = 'Arial Narrow'
-            TitleFont.Style = []
-            TitleLines = 3
-            TitleButtons = False
-            UseTFields = False
-            LineColors.ShadowColor = clSilver
-            OnCalcCellColors = dbGrid1CalcCellColors
-            OnColWidthChanged = wwDBGrid1ColWidthChanged
-            OnUpdateFooter = dbGridDUpdateFooter
-            FooterCellColor = clGradientInactiveCaption
-            PaintOptions.ActiveRecordColor = 16777175
+            object wwDBGrid1: TwwDBGrid
+              Left = 1
+              Top = 1
+              Width = 1028
+              Height = 73
+              TabStop = False
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'XXS'#9'6'#9'XXS'#9'T'#9'SIZE'
+                'XS'#9'6'#9'XS'#9'T'#9'SIZE'
+                'S'#9'6'#9'S'#9'T'#9'SIZE'
+                'M'#9'6'#9'M'#9'T'#9'SIZE'
+                'L'#9'6'#9'L'#9'T'#9'SIZE'
+                'XL'#9'6'#9'XL'#9'T'#9'SIZE'
+                'X0'#9'6'#9'X0'#9'T'#9'SIZE'
+                'X1'#9'6'#9'X1'#9'T'#9'SIZE'
+                'X2'#9'6'#9'X2'#9'T'#9'SIZE'
+                'X3'#9'6'#9'X3'#9'T'#9'SIZE'
+                'SIZE01'#9'6'#9'SIZE01'#9'F'
+                'SIZE02'#9'6'#9'SIZE02'#9'F'
+                'SIZE03'#9'6'#9'SIZE03'#9'F'
+                'SIZE04'#9'6'#9'SIZE04'#9'F'
+                'SIZE05'#9'6'#9'SIZE05'#9'F'
+                'SIZE06'#9'6'#9'SIZE06'#9'F'
+                'SIZE07'#9'6'#9'SIZE07'#9'F'
+                'SIZE08'#9'6'#9'SIZE08'#9'F'
+                'SIZE09'#9'6'#9'SIZE09'#9'F'
+                'SIZE10'#9'6'#9'SIZE10'#9'F'
+                'SIZE11'#9'6'#9'SIZE11'#9'F'
+                'SIZE12'#9'6'#9'SIZE12'#9'F'
+                'SIZE13'#9'6'#9'SIZE13'#9'F'
+                'SIZE14'#9'6'#9'SIZE14'#9'F'
+                'SIZE15'#9'6'#9'SIZE15'#9'F'
+                'TOT_QTY'#9'9'#9'TOT_QTY'#9'F')
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = False
+              ShowVertScrollBar = False
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alTop
+              Color = clWhite
+              DataSource = dsqBomD
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab]
+              Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              ReadOnly = True
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = False
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              OnColWidthChanged = wwDBGrid1ColWidthChanged
+              OnUpdateFooter = dbGridDUpdateFooter
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+            end
+            object wwDBGrid2: TwwDBGrid
+              Left = 1
+              Top = 74
+              Width = 1028
+              Height = 22
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'XXS'#9'6'#9'XXS'#9'F'
+                'XS'#9'6'#9'XS'#9'F'
+                'S'#9'6'#9'S'#9'F'
+                'M'#9'6'#9'M'#9'F'
+                'L'#9'6'#9'L'#9'F'
+                'XL'#9'6'#9'XL'#9'F'
+                'X0'#9'6'#9'X0'#9'F'
+                'X1'#9'6'#9'X1'#9'F'
+                'X2'#9'6'#9'X2'#9'F'
+                'X3'#9'6'#9'X3'#9'F'
+                'SIZE01'#9'6'#9'SIZE01'#9'F'
+                'SIZE02'#9'6'#9'SIZE02'#9'F'
+                'SIZE03'#9'6'#9'SIZE03'#9'F'
+                'SIZE04'#9'6'#9'SIZE04'#9'F'
+                'SIZE05'#9'6'#9'SIZE05'#9'F'
+                'SIZE06'#9'6'#9'SIZE06'#9'F'
+                'SIZE07'#9'6'#9'SIZE07'#9'F'
+                'SIZE08'#9'6'#9'SIZE08'#9'F'
+                'SIZE09'#9'6'#9'SIZE09'#9'F'
+                'SIZE10'#9'6'#9'SIZE10'#9'F'
+                'SIZE11'#9'6'#9'SIZE11'#9'F'
+                'SIZE12'#9'6'#9'SIZE12'#9'F'
+                'SIZE13'#9'6'#9'SIZE13'#9'F'
+                'SIZE14'#9'6'#9'SIZE14'#9'F'
+                'SIZE15'#9'6'#9'SIZE15'#9'F'
+                'TOT_QTY'#9'9'#9'TOT_QTY'#9'T')
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = False
+              ShowVertScrollBar = False
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqBMaster
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab]
+              Options = [dgEditing, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgTabExitsOnLastCol, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 1
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = False
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              OnUpdateFooter = dbGridDUpdateFooter
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+            end
           end
-          object wwDBGrid2: TwwDBGrid
-            Left = 309
-            Top = 226
-            Width = 916
-            Height = 23
-            DittoAttributes.ShortCutDittoRecord = 16429
-            ControlType.Strings = (
-              'ISHADIAH;CheckBox;1;0')
-            Selected.Strings = (
-              'XXS'#9'6'#9'XXS'#9'F'
-              'XS'#9'6'#9'XS'#9'F'
-              'S'#9'6'#9'S'#9'F'
-              'M'#9'6'#9'M'#9'F'
-              'L'#9'6'#9'L'#9'F'
-              'XL'#9'6'#9'XL'#9'F'
-              'X0'#9'6'#9'X0'#9'F'
-              'X1'#9'6'#9'X1'#9'F'
-              'X2'#9'6'#9'X2'#9'F'
-              'X3'#9'6'#9'X3'#9'F'
-              'SIZE01'#9'6'#9'SIZE01'#9'F'
-              'SIZE02'#9'6'#9'SIZE02'#9'F'
-              'SIZE03'#9'6'#9'SIZE03'#9'F'
-              'SIZE04'#9'6'#9'SIZE04'#9'F'
-              'SIZE05'#9'6'#9'SIZE05'#9'F'
-              'SIZE06'#9'6'#9'SIZE06'#9'F'
-              'SIZE07'#9'6'#9'SIZE07'#9'F'
-              'SIZE08'#9'6'#9'SIZE08'#9'F'
-              'SIZE09'#9'6'#9'SIZE09'#9'F'
-              'SIZE10'#9'6'#9'SIZE10'#9'F'
-              'SIZE11'#9'6'#9'SIZE11'#9'F'
-              'SIZE12'#9'6'#9'SIZE12'#9'F'
-              'SIZE13'#9'6'#9'SIZE13'#9'F'
-              'SIZE14'#9'6'#9'SIZE14'#9'F'
-              'SIZE15'#9'6'#9'SIZE15'#9'F'
-              'TOT_QTY'#9'7'#9'TOT_QTY'#9'T')
-            IniAttributes.FileName = 'KUWUNG'
-            IniAttributes.Delimiter = ';;'
-            IniAttributes.CheckNewFields = True
-            ExportOptions.ExportType = wwgetSYLK
-            TitleColor = clBtnFace
-            FixedCols = 0
-            ShowHorzScrollBar = False
-            ShowVertScrollBar = False
-            EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-            Color = clWhite
-            DataSource = dsqBMaster
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial Narrow'
-            Font.Style = []
-            KeyOptions = [dgEnterToTab]
-            Options = [dgEditing, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgTabExitsOnLastCol, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-            ParentFont = False
-            RowHeightPercent = 112
+          object GroupBox1: TGroupBox
+            Left = 104
+            Top = 63
+            Width = 689
+            Height = 89
+            Caption = ' Finished goods '
             TabOrder = 8
-            TitleAlignment = taLeftJustify
-            TitleFont.Charset = ANSI_CHARSET
-            TitleFont.Color = clWindowText
-            TitleFont.Height = -11
-            TitleFont.Name = 'Arial Narrow'
-            TitleFont.Style = []
-            TitleLines = 3
-            TitleButtons = False
-            UseTFields = False
-            Visible = False
-            LineColors.ShadowColor = clSilver
-            OnCalcCellColors = dbGrid1CalcCellColors
-            OnUpdateFooter = dbGridDUpdateFooter
-            FooterCellColor = clGradientInactiveCaption
-            PaintOptions.ActiveRecordColor = 16777175
+            object wwDBGrid3: TwwDBGrid
+              Left = 1
+              Top = 14
+              Width = 687
+              Height = 73
+              TabStop = False
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'NO_REG_D'#9'10'#9'BOM'#9'F'
+                'STYLE'#9'12'#9'STYLE'#9'F'
+                'ITEM'#9'25'#9'ITEM'#9'F'
+                'COLOR'#9'12'#9'COLOR'#9'F'
+                'KELOMPOK'#9'15'#9'KELOMPOK'#9'F'
+                'SATUAN'#9'4'#9'SAT'#9'F'
+                'KETERANGAN'#9'20'#9'KET'#9'F')
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = False
+              ShowVertScrollBar = False
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alTop
+              Color = clWhite
+              DataSource = dsqBomD
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab]
+              Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              ReadOnly = True
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = False
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              OnColWidthChanged = wwDBGrid1ColWidthChanged
+              OnUpdateFooter = dbGridDUpdateFooter
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+            end
           end
         end
         object pMaster2: TPanel
-          Left = 1235
+          Left = 845
           Top = 251
           Width = 185
-          Height = 365
+          Height = 326
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -4718,7 +4805,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 311
+            Top = 272
             Width = 185
             Height = 13
             Align = alBottom
@@ -4747,7 +4834,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 324
+            Top = 285
             Width = 185
             Height = 41
             TabStop = False
@@ -4785,8 +4872,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 251
-          Width = 1235
-          Height = 365
+          Width = 845
+          Height = 326
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -4823,8 +4910,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1227
-              Height = 337
+              Width = 837
+              Height = 298
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -4925,7 +5012,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 1227
+              Width = 837
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5034,8 +5121,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 1227
-              Height = 288
+              Width = 837
+              Height = 249
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5092,6 +5179,72 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
               FooterCellColor = clGradientInactiveCaption
               PaintOptions.ActiveRecordColor = clGrayText
               object wwIButton2: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
+            end
+          end
+          object TabSheet4: TTabSheet
+            Caption = 'tsJurnal'
+            ImageIndex = 2
+            OnShow = TabSheet4Show
+            object dbGridJurnal: TwwDBGrid
+              Left = 0
+              Top = 0
+              Width = 837
+              Height = 298
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISPOST;CheckBox;1;0'
+                'ISBATAL;CheckBox;1;0'
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'KD_PERK'#9'15'#9'KD_PERK'#9'F'
+                'NAMA_PERKIRAAN'#9'79'#9'NAMA_PERKIRAAN'#9'F'
+                'DEBET'#9'15'#9'DEBET'#9'F'
+                'KREDIT'#9'15'#9'KREDIT'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqJurnal
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 4
+              TitleButtons = True
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+              object wwIButton8: TwwIButton
                 Left = 0
                 Top = 0
                 Width = 17
@@ -11923,10 +12076,10 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
   end
   object pRight: TPanel
-    Left = 1468
+    Left = 1078
     Top = 0
     Width = 40
-    Height = 723
+    Height = 684
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -12088,6 +12241,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object qB1QTY_X: TFloatField
       FieldName = 'QTY_X'
       Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qB1QTY_Y: TFloatField
       FieldName = 'QTY_Y'
@@ -12113,7 +12267,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
-    Left = 752
+    Left = 728
     Top = 336
     object qBXNDATA: TFloatField
       FieldName = 'NDATA'
@@ -12142,7 +12296,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1091
+    Left = 1059
     Top = 128
     ParamData = <
       item
@@ -12171,16 +12325,16 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBDetailKG_A: TFloatField
       FieldName = 'KG_A'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_T: TFloatField
       FieldName = 'KG_T'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_D: TFloatField
       FieldName = 'KG_D'
       OnChange = qBDetailKG_DChange
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSAT_A: TStringField
       FieldName = 'SAT_A'
@@ -12196,54 +12350,56 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBDetailRA: TFloatField
       FieldName = 'RA'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRT: TFloatField
       FieldName = 'RT'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRD: TFloatField
       FieldName = 'RD'
       OnChange = qBDetailRDChange
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_A: TFloatField
       FieldName = 'HRG_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_T: TFloatField
       FieldName = 'HRG_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_D: TFloatField
       FieldName = 'HRG_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_A: TFloatField
       FieldName = 'QTY_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T: TFloatField
       FieldName = 'QTY_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_X: TFloatField
       FieldName = 'QTY_X'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_Y: TFloatField
       FieldName = 'QTY_Y'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSUB_TOTAL: TFloatField
       FieldName = 'SUB_TOTAL'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_TOT: TFloatField
       FieldName = 'KG_TOT'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailTGL: TDateTimeField
       FieldName = 'TGL'
@@ -12617,39 +12773,126 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBMasterXXS: TFloatField
       FieldName = 'XXS'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterXS: TFloatField
       FieldName = 'XS'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterS: TFloatField
       FieldName = 'S'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterM: TFloatField
       FieldName = 'M'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterL: TFloatField
       FieldName = 'L'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterXL: TFloatField
       FieldName = 'XL'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterX0: TFloatField
       FieldName = 'X0'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterX1: TFloatField
       FieldName = 'X1'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterX2: TFloatField
       FieldName = 'X2'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterX3: TFloatField
       FieldName = 'X3'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterTOT_QTY: TFloatField
       FieldName = 'TOT_QTY'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBMasterNO_BOM: TFloatField
       FieldName = 'NO_BOM'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE01: TFloatField
+      FieldName = 'SIZE01'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE02: TFloatField
+      FieldName = 'SIZE02'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE03: TFloatField
+      FieldName = 'SIZE03'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE04: TFloatField
+      FieldName = 'SIZE04'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE05: TFloatField
+      FieldName = 'SIZE05'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE06: TFloatField
+      FieldName = 'SIZE06'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE07: TFloatField
+      FieldName = 'SIZE07'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE08: TFloatField
+      FieldName = 'SIZE08'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE09: TFloatField
+      FieldName = 'SIZE09'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE10: TFloatField
+      FieldName = 'SIZE10'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE11: TFloatField
+      FieldName = 'SIZE11'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE12: TFloatField
+      FieldName = 'SIZE12'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE13: TFloatField
+      FieldName = 'SIZE13'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE14: TFloatField
+      FieldName = 'SIZE14'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBMasterSIZE15: TFloatField
+      FieldName = 'SIZE15'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
   end
   object dsqBMaster: TwwDataSource
@@ -13387,8 +13630,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqB3: TwwDataSource
     DataSet = qB3
-    Left = 1035
-    Top = 264
+    Left = 1043
+    Top = 280
   end
   object qB5: TSmartQuery
     Session = DMFrm.OS
@@ -13548,7 +13791,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   object dsqB5: TwwDataSource
     DataSet = qB5
     Left = 1115
-    Top = 264
+    Top = 288
   end
   object qB6: TSmartQuery
     Session = DMFrm.OS
@@ -13593,8 +13836,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     ReadOnly = True
     BeforeOpen = qB6BeforeOpen
     OnCalcFields = qB6CalcFields
-    Left = 1176
-    Top = 232
+    Left = 1168
+    Top = 224
     ParamData = <
       item
         DataType = ftDateTime
@@ -13889,48 +14132,63 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
     object qBomDSIZE01: TFloatField
       FieldName = 'SIZE01'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE02: TFloatField
       FieldName = 'SIZE02'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE03: TFloatField
       FieldName = 'SIZE03'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE04: TFloatField
       FieldName = 'SIZE04'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE05: TFloatField
       FieldName = 'SIZE05'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE06: TFloatField
       FieldName = 'SIZE06'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE07: TFloatField
       FieldName = 'SIZE07'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE08: TFloatField
       FieldName = 'SIZE08'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE09: TFloatField
       FieldName = 'SIZE09'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE10: TFloatField
       FieldName = 'SIZE10'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE11: TFloatField
       FieldName = 'SIZE11'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE12: TFloatField
       FieldName = 'SIZE12'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE13: TFloatField
       FieldName = 'SIZE13'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE14: TFloatField
       FieldName = 'SIZE14'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE15: TFloatField
       FieldName = 'SIZE15'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDLXXS: TStringField
       FieldName = 'LXXS'
@@ -14295,6 +14553,50 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object qBDetail9LSIZE15: TStringField
       FieldName = 'LSIZE15'
       Size = 50
+    end
+  end
+  object dsqJurnal: TwwDataSource
+    DataSet = qJurnal
+    Left = 851
+    Top = 496
+  end
+  object qJurnal: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      
+        'select kd_perk, nama_perkiraan, sum(debet) as debet, sum(kredit)' +
+        ' as kredit from jurnal'
+      'where no_reg_os=:pno_reg_os'
+      'group by kd_perk, nama_perkiraan'
+      'order by kredit, kd_perk')
+    ReadOnly = True
+    Left = 883
+    Top = 464
+    ParamData = <
+      item
+        Name = 'pno_reg_os'
+        ParamType = ptInput
+        Value = Null
+        ExtDataType = 107
+      end>
+    object qJurnalKD_PERK: TStringField
+      FieldName = 'KD_PERK'
+      Required = True
+    end
+    object qJurnalNAMA_PERKIRAAN: TStringField
+      FieldName = 'NAMA_PERKIRAAN'
+      Required = True
+      Size = 100
+    end
+    object qJurnalDEBET: TFloatField
+      FieldName = 'DEBET'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
+    end
+    object qJurnalKREDIT: TFloatField
+      FieldName = 'KREDIT'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
     end
   end
 end

@@ -1,6 +1,6 @@
 object FilterFrm: TFilterFrm
-  Left = 592
-  Top = 278
+  Left = 284
+  Top = 241
   BorderStyle = bsDialog
   Caption = 'FilterFrm'
   ClientHeight = 60

@@ -1,6 +1,6 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 1
-  Top = 1
+  Left = 198
+  Top = 150
   Width = 1364
   Height = 726
   Caption = 'LaporanBCFrm'

@@ -1090,7 +1090,7 @@ begin
       begin
         qSeq.Close;
         qSeq.Open;
-        qBMasterKD_ITEM.AsString:=qBMasterKD_KEL.AsString+qSeqSEQ.AsString;
+        qBMasterKD_ITEM.AsString:=copy(qBMasterKD_KEL.AsString,1,2)+qSeqSEQ.AsString;
       end
       else
       begin

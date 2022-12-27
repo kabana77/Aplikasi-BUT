@@ -1,6 +1,6 @@
 object InfoMutasiStokRevFrm: TInfoMutasiStokRevFrm
-  Left = 282
-  Top = 253
+  Left = 210
+  Top = 114
   Width = 1198
   Height = 600
   Caption = 'InfoMutasiStokRevFrm'

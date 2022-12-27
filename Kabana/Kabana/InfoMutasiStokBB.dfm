@@ -1,5 +1,5 @@
 object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
-  Left = 355
+  Left = 356
   Top = 211
   Width = 1198
   Height = 600
@@ -6736,7 +6736,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
     OnCalcFields = qB1CalcFields
     OnFilterRecord = qB1FilterRecord
     Left = 939
-    Top = 24
+    Top = 16
     ParamData = <
       item
         DataType = ftString
@@ -7082,7 +7082,7 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
   object dsqB1: TwwDataSource
     DataSet = qB1
     Left = 939
-    Top = 64
+    Top = 80
   end
   object sqDaftarPrinsipal: TSmartQuery
     Session = DMFrm.OS

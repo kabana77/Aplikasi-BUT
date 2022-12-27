@@ -874,9 +874,6 @@ type
     qBomDLSIZE13: TStringField;
     qBomDLSIZE14: TStringField;
     qBomDLSIZE15: TStringField;
-    wwDBGrid1: TwwDBGrid;
-    Label3: TLabel;
-    wwDBGrid2: TwwDBGrid;
     wwDBComboBox1: TwwDBComboBox;
     qB1NO_REG_OS: TFloatField;
     qB1TGL: TDateTimeField;
@@ -917,6 +914,35 @@ type
     qB1KG_TOT: TFloatField;
     qB1SUB_TOTAL: TFloatField;
     qB1KETERANGAN2: TStringField;
+    qBMasterSIZE01: TFloatField;
+    qBMasterSIZE02: TFloatField;
+    qBMasterSIZE03: TFloatField;
+    qBMasterSIZE04: TFloatField;
+    qBMasterSIZE05: TFloatField;
+    qBMasterSIZE06: TFloatField;
+    qBMasterSIZE07: TFloatField;
+    qBMasterSIZE08: TFloatField;
+    qBMasterSIZE09: TFloatField;
+    qBMasterSIZE10: TFloatField;
+    qBMasterSIZE11: TFloatField;
+    qBMasterSIZE12: TFloatField;
+    qBMasterSIZE13: TFloatField;
+    qBMasterSIZE14: TFloatField;
+    qBMasterSIZE15: TFloatField;
+    Panel2: TPanel;
+    wwDBGrid1: TwwDBGrid;
+    wwDBGrid2: TwwDBGrid;
+    GroupBox1: TGroupBox;
+    wwDBGrid3: TwwDBGrid;
+    TabSheet4: TTabSheet;
+    dbGridJurnal: TwwDBGrid;
+    wwIButton8: TwwIButton;
+    dsqJurnal: TwwDataSource;
+    qJurnal: TSmartQuery;
+    qJurnalKD_PERK: TStringField;
+    qJurnalNAMA_PERKIRAAN: TStringField;
+    qJurnalDEBET: TFloatField;
+    qJurnalKREDIT: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1045,6 +1071,7 @@ type
     procedure qBDetailBeforeOpen(DataSet: TDataSet);
     procedure qBDetailKG_DChange(Sender: TField);
     procedure qBDetailRDChange(Sender: TField);
+    procedure TabSheet4Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -2389,40 +2416,33 @@ begin
   qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
   qBDetail9.Close;
   qBDetail9.Open;
-                wwDBGrid1.Selected.Clear;
-                wwDBGrid1.Selected.Add('NO_REG_D'#9'10'#9'KODE'#9'T');
-                wwDBGrid1.Selected.Add('STYLE'#9'10'#9'Style'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('ITEM'#9'29'#9'Nama Item'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('COLOR'#9'6'#9'Color'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('SATUAN'#9'5'#9'Satuan'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('KELOMPOK'#9'10'#9'KELOMPOK'#9'F');
-                {
-                wwDBGrid1.Selected.Add('XXS'#9'6'#9+qBDetail9LXXS.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('XS'#9'6'#9+qBDetail9LXS.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('S'#9'6'#9+qBDetail9LS.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('M'#9'6'#9+qBDetail9LM.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('L'#9'6'#9+qBDetail9LL.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('XL'#9'6'#9+qBDetail9LXL.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('X0'#9'6'#9+qBDetail9LX0.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('X1'#9'6'#9+qBDetail9LX1.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('X2'#9'6'#9+qBDetail9LX2.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('X3'#9'6'#9+qBDetail9LX3.AsString+#9'F'#9'SIZE');
-                wwDBGrid1.Selected.Add('SIZE01'#9'10'#9+qBDetail9LSIZE01.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE02'#9'10'#9+qBDetail9LSIZE02.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE03'#9'10'#9+qBDetail9LSIZE03.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE04'#9'10'#9+qBDetail9LSIZE04.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE05'#9'10'#9+qBDetail9LSIZE05.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE06'#9'10'#9+qBDetail9LSIZE06.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE07'#9'10'#9+qBDetail9LSIZE07.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE08'#9'10'#9+qBDetail9LSIZE08.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE09'#9'10'#9+qBDetail9LSIZE09.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE10'#9'10'#9+qBDetail9LSIZE10.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE11'#9'10'#9+qBDetail9LSIZE11.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE12'#9'10'#9+qBDetail9LSIZE12.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE13'#9'10'#9+qBDetail9LSIZE13.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE14'#9'10'#9+qBDetail9LSIZE14.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('SIZE15'#9'10'#9+qBDetail9LSIZE15.AsString+#9'F'#9'SIZE EXTRA');
-                wwDBGrid1.Selected.Add('TOT_QTY'#9'9'#9'TOTAL'#9'T');}
+                                wwDBGrid1.Selected.Clear;
+                wwDBGrid1.Selected.Add('XXS'#9'6'#9+qBDetail9LXXS.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('XS'#9'6'#9+qBDetail9LXS.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('S'#9'6'#9+qBDetail9LS.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('M'#9'6'#9+qBDetail9LM.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('L'#9'6'#9+qBDetail9LL.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('XL'#9'6'#9+qBDetail9LXL.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('X0'#9'6'#9+qBDetail9LX0.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('X1'#9'6'#9+qBDetail9LX1.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('X2'#9'6'#9+qBDetail9LX2.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('X3'#9'6'#9+qBDetail9LX3.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE01'#9'6'#9+qBDetail9LSIZE01.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE02'#9'6'#9+qBDetail9LSIZE02.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE03'#9'6'#9+qBDetail9LSIZE03.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE04'#9'6'#9+qBDetail9LSIZE04.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE05'#9'6'#9+qBDetail9LSIZE05.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE06'#9'6'#9+qBDetail9LSIZE06.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE07'#9'6'#9+qBDetail9LSIZE07.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE08'#9'6'#9+qBDetail9LSIZE08.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE09'#9'6'#9+qBDetail9LSIZE09.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE10'#9'6'#9+qBDetail9LSIZE10.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE11'#9'6'#9+qBDetail9LSIZE11.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE12'#9'6'#9+qBDetail9LSIZE12.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE13'#9'6'#9+qBDetail9LSIZE13.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE14'#9'6'#9+qBDetail9LSIZE14.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('SIZE15'#9'6'#9+qBDetail9LSIZE15.AsString+#9'F'#9'SIZE TABLE');
+                wwDBGrid1.Selected.Add('TOT_QTY'#9'9'#9'TOTAL'#9'T');
   qBomD.Open;
   wwDBGrid1.RedrawGrid;
   qBom.Close;
@@ -3556,12 +3576,31 @@ end;
 
 procedure TSerahTerimaWasteFrm.qBDetailKG_DChange(Sender: TField);
 begin
-  if qBDetailRD.AsFloat > 0 then qBDetailQTY_D.AsFloat:=qBDetailKG_D.AsFloat*qBDetailRD.AsFloat;
+  if (qBDetailRD.AsFloat > 0) then qBDetailQTY_D.AsFloat:=qBDetailKG_D.AsFloat/qBDetailRD.AsFloat;
 end;
 
 procedure TSerahTerimaWasteFrm.qBDetailRDChange(Sender: TField);
 begin
-  if qBDetailKG_D.AsFloat > 0 then qBDetailQTY_D.AsFloat:=qBDetailKG_D.AsFloat*qBDetailRD.AsFloat;
+  if qBDetailKG_D.AsFloat > 0 then qBDetailQTY_D.AsFloat:=qBDetailRD.AsFloat/qBDetailKG_D.AsFloat;
+end;
+
+procedure TSerahTerimaWasteFrm.TabSheet4Show(Sender: TObject);
+var
+  vdebet, vkredit : real;
+begin
+  qJurnal.Close;
+  qJurnal.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+  qJurnal.Open;
+  vdebet:=0;
+  vkredit:=0;
+  while not qJurnal.Eof do
+  begin
+      vdebet:=vdebet+qJurnalDEBET.AsFloat;
+      vkredit:=vkredit+qJurnalKREDIT.AsFloat;
+      qJurnal.Next;
+  end;
+  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
+  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
 end;
 
 end.

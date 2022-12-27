@@ -1,8 +1,8 @@
 object OrderSalesFrm: TOrderSalesFrm
-  Left = 233
-  Top = 217
-  Width = 1443
-  Height = 614
+  Left = 432
+  Top = 214
+  Width = 948
+  Height = 583
   Caption = 'OrderSalesFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object OrderSalesFrm: TOrderSalesFrm
     Left = 0
     Top = 0
     Width = 4
-    Height = 575
+    Height = 544
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object OrderSalesFrm: TOrderSalesFrm
   object pCenter: TPanel
     Left = 4
     Top = 0
-    Width = 1419
-    Height = 575
+    Width = 924
+    Height = 544
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -57,8 +57,8 @@ object OrderSalesFrm: TOrderSalesFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 532
-      Width = 1419
+      Top = 501
+      Width = 924
       Height = 43
       Align = alBottom
       BevelInner = bvLowered
@@ -207,7 +207,7 @@ object OrderSalesFrm: TOrderSalesFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 950
+        Width = 455
         Height = 41
         Align = alClient
         ButtonHeight = 36
@@ -259,16 +259,17 @@ object OrderSalesFrm: TOrderSalesFrm
           OnClick = tbExportClick
         end
         object ToolButton5: TToolButton
-          Left = 308
+          Left = 0
           Top = 2
           Width = 8
           Caption = 'ToolButton5'
           ImageIndex = 9
+          Wrap = True
           Style = tbsSeparator
         end
         object tbPrint11: TToolButton
-          Left = 316
-          Top = 2
+          Left = 0
+          Top = 43
           Caption = 'Order'
           Grouped = True
           ImageIndex = 0
@@ -276,24 +277,24 @@ object OrderSalesFrm: TOrderSalesFrm
           OnClick = tbPrint11Click
         end
         object tbPrint12: TToolButton
-          Left = 376
-          Top = 2
+          Left = 60
+          Top = 43
           Caption = 'Surat Jalan'
           Grouped = True
           ImageIndex = 0
           OnClick = tbPrint12Click
         end
         object tbPrint13: TToolButton
-          Left = 436
-          Top = 2
+          Left = 120
+          Top = 43
           Caption = 'Faktur'
           Grouped = True
           ImageIndex = 0
           OnClick = tbPrint13Click
         end
         object tbPrint14: TToolButton
-          Left = 496
-          Top = 2
+          Left = 180
+          Top = 43
           Caption = 'Pack List'
           Grouped = True
           ImageIndex = 0
@@ -302,7 +303,7 @@ object OrderSalesFrm: TOrderSalesFrm
         end
       end
       object pRight2: TPanel
-        Left = 1372
+        Left = 877
         Top = 1
         Width = 46
         Height = 41
@@ -315,8 +316,8 @@ object OrderSalesFrm: TOrderSalesFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1419
-      Height = 482
+      Width = 924
+      Height = 451
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2579,7 +2580,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1411
+          Width = 916
           Height = 49
           Align = alTop
           Alignment = taLeftJustify
@@ -2614,8 +2615,8 @@ object OrderSalesFrm: TOrderSalesFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 49
-          Width = 1411
-          Height = 405
+          Width = 916
+          Height = 374
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -8353,7 +8354,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1411
+          Width = 916
           Height = 185
           Align = alTop
           BevelOuter = bvNone
@@ -9316,10 +9317,10 @@ object OrderSalesFrm: TOrderSalesFrm
           end
         end
         object pMaster2: TPanel
-          Left = 1226
+          Left = 731
           Top = 185
           Width = 185
-          Height = 269
+          Height = 238
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -9333,7 +9334,7 @@ object OrderSalesFrm: TOrderSalesFrm
           Visible = False
           object Label19: TLabel
             Left = 0
-            Top = 215
+            Top = 184
             Width = 185
             Height = 13
             Align = alBottom
@@ -9517,7 +9518,7 @@ object OrderSalesFrm: TOrderSalesFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 228
+            Top = 197
             Width = 185
             Height = 41
             TabStop = False
@@ -9749,8 +9750,8 @@ object OrderSalesFrm: TOrderSalesFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 185
-          Width = 1226
-          Height = 269
+          Width = 731
+          Height = 238
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -9766,8 +9767,8 @@ object OrderSalesFrm: TOrderSalesFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1218
-              Height = 241
+              Width = 723
+              Height = 210
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -9852,7 +9853,9 @@ object OrderSalesFrm: TOrderSalesFrm
                 'QTY_ORDER'#9'10'#9'ORDER'#9'F'
                 'KG_D'#9'10'#9'STOK'#9'F'
                 'HRG_JUAL_D'#9'10'#9'HARGA'#9'F'
-                'PPN'#9'3'#9'PPN'#9'F')
+                'PPN'#9'3'#9'PPN'#9'F'
+                'MU'#9'3'#9'MU'#9'F'
+                'KURS'#9'10'#9'KURS'#9'F')
               DataField = 'KD_ITEM'
               DataSource = dsqBDetail
               LookupTable = qItem
@@ -9906,7 +9909,7 @@ object OrderSalesFrm: TOrderSalesFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 1218
+              Width = 723
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -10015,8 +10018,8 @@ object OrderSalesFrm: TOrderSalesFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 1218
-              Height = 192
+              Width = 723
+              Height = 161
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -10084,8 +10087,8 @@ object OrderSalesFrm: TOrderSalesFrm
             object dbGridJurnal: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1073
-              Height = 330
+              Width = 1153
+              Height = 241
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISPOST;CheckBox;1;0'
@@ -25418,7 +25421,7 @@ object OrderSalesFrm: TOrderSalesFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1419
+      Width = 924
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -25437,10 +25440,10 @@ object OrderSalesFrm: TOrderSalesFrm
     end
   end
   object pRight: TPanel
-    Left = 1423
+    Left = 928
     Top = 0
     Width = 4
-    Height = 575
+    Height = 544
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -25987,6 +25990,15 @@ object OrderSalesFrm: TOrderSalesFrm
       FieldName = 'COLOR'
       Required = True
       Size = 50
+    end
+    object qBDetailMU: TStringField
+      FieldName = 'MU'
+      Required = True
+      Size = 3
+    end
+    object qBDetailKURS: TFloatField
+      FieldName = 'KURS'
+      Required = True
     end
   end
   object dsqBDetail: TwwDataSource
@@ -26607,6 +26619,15 @@ object OrderSalesFrm: TOrderSalesFrm
       FieldName = 'PPN'
       Required = True
       Size = 3
+    end
+    object qItemMU: TStringField
+      DisplayWidth = 3
+      FieldName = 'MU'
+      Size = 3
+    end
+    object qItemKURS: TFloatField
+      DisplayWidth = 10
+      FieldName = 'KURS'
     end
     object qItemRD: TFloatField
       DisplayLabel = 'RASIO'
@@ -28659,8 +28680,8 @@ object OrderSalesFrm: TOrderSalesFrm
     DetailFields = 'NO_REG_OS'
     MasterSource = dsqBMaster
     RefreshOptions = [roAfterInsert, roAfterUpdate]
-    Left = 995
-    Top = 400
+    Left = 1011
+    Top = 480
     ParamData = <
       item
         DataType = ftFloat
@@ -28881,8 +28902,8 @@ object OrderSalesFrm: TOrderSalesFrm
       ')')
     ReadOnly = True
     BeforeOpen = qStokSalesXBeforeOpen
-    Left = 928
-    Top = 411
+    Left = 824
+    Top = 435
     ParamData = <
       item
         DataType = ftString
@@ -29475,7 +29496,7 @@ object OrderSalesFrm: TOrderSalesFrm
     Session = DMFrm.OS
     ReadOnly = True
     BeforeOpen = qB8XBeforeOpen
-    Left = 835
+    Left = 819
     Top = 160
     object qB8XQTY_A: TFloatField
       FieldName = 'QTY_A'

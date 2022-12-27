@@ -973,6 +973,15 @@ type
     qBDetail4SAT_D: TStringField;
     qBDetail4QTY_D: TFloatField;
     qBDetail4KG_D: TFloatField;
+    TabSheet7: TTabSheet;
+    dbGridJurnal: TwwDBGrid;
+    wwIButton9: TwwIButton;
+    dsqJurnal: TwwDataSource;
+    qJurnal: TSmartQuery;
+    qJurnalKD_PERK: TStringField;
+    qJurnalNAMA_PERKIRAAN: TStringField;
+    qJurnalDEBET: TFloatField;
+    qJurnalKREDIT: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1118,6 +1127,7 @@ type
     procedure qBDetail3BeforeInsert(DataSet: TDataSet);
     procedure tsInputD3Show(Sender: TObject);
     procedure TabSheet4Show(Sender: TObject);
+    procedure TabSheet7Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -2468,12 +2478,6 @@ begin
   qBDetail9.Close;
   qBDetail9.Open;
                 wwDBGrid1.Selected.Clear;
-                {wwDBGrid1.Selected.Add('NO_REG_D'#9'10'#9'KODE'#9'T');
-                wwDBGrid1.Selected.Add('STYLE'#9'10'#9'Style'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('ITEM'#9'29'#9'Nama Item'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('COLOR'#9'6'#9'Color'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('SATUAN'#9'5'#9'Satuan'#9'F'#9'PRODUK JADI');
-                wwDBGrid1.Selected.Add('KELOMPOK'#9'10'#9'KELOMPOK'#9'F');}
                 wwDBGrid1.Selected.Add('XXS'#9'6'#9+qBDetail9LXXS.AsString+#9'F'#9'SIZE TABLE');
                 wwDBGrid1.Selected.Add('XS'#9'6'#9+qBDetail9LXS.AsString+#9'F'#9'SIZE TABLE');
                 wwDBGrid1.Selected.Add('S'#9'6'#9+qBDetail9LS.AsString+#9'F'#9'SIZE TABLE');
@@ -3740,6 +3744,25 @@ begin
   qBDetail4.Close;
   qBDetail4.ParamByName('NO_REG_OS').AsFloat:=qBMasterNO_REG_OS.AsFloat;
   qBDetail4.Open;
+end;
+
+procedure TSerahTerimaBJFrm.TabSheet7Show(Sender: TObject);
+var
+  vdebet, vkredit : real;
+begin
+  qJurnal.Close;
+  qJurnal.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+  qJurnal.Open;
+  vdebet:=0;
+  vkredit:=0;
+  while not qJurnal.Eof do
+  begin
+      vdebet:=vdebet+qJurnalDEBET.AsFloat;
+      vkredit:=vkredit+qJurnalKREDIT.AsFloat;
+      qJurnal.Next;
+  end;
+  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
+  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
 end;
 
 end.

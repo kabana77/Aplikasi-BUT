@@ -1,5 +1,5 @@
 object DaftarItemFrm: TDaftarItemFrm
-  Left = 194
+  Left = 195
   Top = 125
   Width = 1599
   Height = 775

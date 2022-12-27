@@ -1,8 +1,8 @@
 object BOMFrm: TBOMFrm
-  Left = 358
-  Top = 156
-  Width = 1378
-  Height = 780
+  Left = 66
+  Top = 0
+  Width = 1111
+  Height = 728
   ActiveControl = dbGrid1
   Caption = 'Build Of Material (BOM)'
   Color = clWindow
@@ -26,7 +26,7 @@ object BOMFrm: TBOMFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 741
+    Height = 689
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -35,8 +35,8 @@ object BOMFrm: TBOMFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1282
-    Height = 741
+    Width = 1015
+    Height = 689
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -59,7 +59,7 @@ object BOMFrm: TBOMFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1282
+      Width = 1015
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -78,8 +78,8 @@ object BOMFrm: TBOMFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 712
-      Width = 1282
+      Top = 660
+      Width = 1015
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -228,7 +228,7 @@ object BOMFrm: TBOMFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 813
+        Width = 546
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -279,7 +279,7 @@ object BOMFrm: TBOMFrm
         end
       end
       object pRight2: TPanel
-        Left = 1235
+        Left = 968
         Top = 1
         Width = 46
         Height = 27
@@ -292,8 +292,8 @@ object BOMFrm: TBOMFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1282
-      Height = 662
+      Width = 1015
+      Height = 610
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -1958,7 +1958,7 @@ object BOMFrm: TBOMFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1274
+          Width = 1007
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -1977,8 +1977,8 @@ object BOMFrm: TBOMFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1274
-          Height = 601
+          Width = 1007
+          Height = 549
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -7129,7 +7129,7 @@ object BOMFrm: TBOMFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1274
+          Width = 1007
           Height = 100
           Align = alTop
           BevelOuter = bvNone
@@ -7472,10 +7472,10 @@ object BOMFrm: TBOMFrm
           end
         end
         object pMaster2: TPanel
-          Left = 866
+          Left = 599
           Top = 100
           Width = 408
-          Height = 534
+          Height = 482
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -7491,7 +7491,7 @@ object BOMFrm: TBOMFrm
             Left = 0
             Top = 41
             Width = 408
-            Height = 493
+            Height = 441
             DittoAttributes.ShortCutDittoRecord = 16429
             ControlType.Strings = (
               'ISHADIAH;CheckBox;1;0')
@@ -7568,8 +7568,8 @@ object BOMFrm: TBOMFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 100
-          Width = 866
-          Height = 534
+          Width = 599
+          Height = 482
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -7613,7 +7613,7 @@ object BOMFrm: TBOMFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 858
+              Width = 591
               Height = 137
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -7705,7 +7705,7 @@ object BOMFrm: TBOMFrm
             object Panel2: TPanel
               Left = 0
               Top = 137
-              Width = 858
+              Width = 591
               Height = 41
               Align = alTop
               TabOrder = 4
@@ -7729,8 +7729,8 @@ object BOMFrm: TBOMFrm
             object wwDBGrid1: TwwDBGrid
               Left = 0
               Top = 178
-              Width = 858
-              Height = 328
+              Width = 591
+              Height = 276
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISHADIAH;CheckBox;1;0'
@@ -7874,10 +7874,10 @@ object BOMFrm: TBOMFrm
     end
   end
   object pRight: TPanel
-    Left = 1322
+    Left = 1055
     Top = 0
     Width = 40
-    Height = 741
+    Height = 689
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -8663,7 +8663,7 @@ object BOMFrm: TBOMFrm
       'order by b.nama_prinsipal, a.nama_item'
       ') A'
       'LEFT JOIN PIB B ON A.NO_PIB=B.NO_REG_OS'
-      'WHERE substr(a.kd_item, 1,2) in ('#39'12'#39', '#39'17'#39', '#39'18'#39')'
+      'WHERE substr(a.kd_item, 1,2) in ('#39'12'#39', '#39'17'#39', '#39'18'#39', '#39'14'#39')'
       ''
       
         '/*select a.*, b.nama_prinsipal from daftar_item a, daftar_prinsi' +

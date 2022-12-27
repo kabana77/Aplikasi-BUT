@@ -1,7 +1,7 @@
 object InventoryControlFrm: TInventoryControlFrm
-  Left = 222
-  Top = 112
-  Width = 1531
+  Left = 157
+  Top = 102
+  Width = 1378
   Height = 764
   Caption = 'Inventory Control'
   Color = clWindow
@@ -34,7 +34,7 @@ object InventoryControlFrm: TInventoryControlFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1435
+    Width = 1282
     Height = 725
     Align = alClient
     BevelOuter = bvNone
@@ -58,7 +58,7 @@ object InventoryControlFrm: TInventoryControlFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1435
+      Width = 1282
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -78,7 +78,7 @@ object InventoryControlFrm: TInventoryControlFrm
     object pBottom: TPanel
       Left = 0
       Top = 696
-      Width = 1435
+      Width = 1282
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object InventoryControlFrm: TInventoryControlFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 966
+        Width = 813
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object InventoryControlFrm: TInventoryControlFrm
         end
       end
       object pRight2: TPanel
-        Left = 1388
+        Left = 1235
         Top = 1
         Width = 46
         Height = 27
@@ -291,7 +291,7 @@ object InventoryControlFrm: TInventoryControlFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1435
+      Width = 1282
       Height = 646
       ActivePage = TabSheet1
       Align = alClient
@@ -1957,7 +1957,7 @@ object InventoryControlFrm: TInventoryControlFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1427
+          Width = 1274
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -1976,7 +1976,7 @@ object InventoryControlFrm: TInventoryControlFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1427
+          Width = 1274
           Height = 585
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
@@ -6876,7 +6876,7 @@ object InventoryControlFrm: TInventoryControlFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1427
+          Width = 1274
           Height = 100
           Align = alTop
           BevelOuter = bvNone
@@ -7108,7 +7108,7 @@ object InventoryControlFrm: TInventoryControlFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 100
-          Width = 1427
+          Width = 1274
           Height = 518
           ActivePage = tsInputD
           Align = alClient
@@ -7163,8 +7163,8 @@ object InventoryControlFrm: TInventoryControlFrm
             end
             object Panel2: TPanel
               Left = 0
-              Top = 179
-              Width = 1419
+              Top = 161
+              Width = 1266
               Height = 41
               Align = alTop
               TabOrder = 2
@@ -7178,9 +7178,9 @@ object InventoryControlFrm: TInventoryControlFrm
             end
             object wwDBGrid1: TwwDBGrid
               Left = 0
-              Top = 220
-              Width = 1419
-              Height = 270
+              Top = 202
+              Width = 1266
+              Height = 288
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISHADIAH;CheckBox;1;0'
@@ -7250,7 +7250,7 @@ object InventoryControlFrm: TInventoryControlFrm
             object wwDBGrid3: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1419
+              Width = 1266
               Height = 92
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -7321,13 +7321,13 @@ object InventoryControlFrm: TInventoryControlFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 92
-              Width = 1419
-              Height = 87
+              Width = 1266
+              Height = 69
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISHADIAH;CheckBox;1;0')
               Selected.Strings = (
-                'NAMA_LOKASI'#9'80'#9'NAMA_LOKASI'#9'F'
+                'NAMA_LOKASI'#9'78'#9'NAMA_LOKASI'#9'F'
                 'XXS'#9'6'#9'XXS'#9'F'#9'SIZE'
                 'XS'#9'6'#9'XS'#9'F'#9'SIZE'
                 'S'#9'6'#9'S'#9'F'#9'SIZE'
@@ -7338,6 +7338,21 @@ object InventoryControlFrm: TInventoryControlFrm
                 'X1'#9'6'#9'X1'#9'F'#9'SIZE'
                 'X2'#9'6'#9'X2'#9'F'#9'SIZE'
                 'X3'#9'6'#9'X3'#9'F'#9'SIZE'
+                'SIZE01'#9'6'#9'SIZE01'#9'F'
+                'SIZE02'#9'6'#9'SIZE02'#9'F'
+                'SIZE03'#9'6'#9'SIZE03'#9'F'
+                'SIZE04'#9'6'#9'SIZE04'#9'F'
+                'SIZE05'#9'6'#9'SIZE05'#9'F'
+                'SIZE06'#9'6'#9'SIZE06'#9'F'
+                'SIZE07'#9'6'#9'SIZE07'#9'F'
+                'SIZE08'#9'6'#9'SIZE08'#9'F'
+                'SIZE09'#9'6'#9'SIZE09'#9'F'
+                'SIZE10'#9'6'#9'SIZE10'#9'F'
+                'SIZE11'#9'6'#9'SIZE11'#9'F'
+                'SIZE12'#9'6'#9'SIZE12'#9'F'
+                'SIZE13'#9'6'#9'SIZE13'#9'F'
+                'SIZE14'#9'6'#9'SIZE14'#9'F'
+                'SIZE15'#9'6'#9'SIZE15'#9'F'
                 'TOT_QTY'#9'9'#9'TOTAL'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
@@ -7371,7 +7386,6 @@ object InventoryControlFrm: TInventoryControlFrm
               TitleLines = 3
               TitleButtons = False
               UseTFields = False
-              Visible = False
               LineColors.ShadowColor = clSilver
               OnCalcCellColors = dbGrid1CalcCellColors
               OnEnter = dbGridDEnter
@@ -7473,7 +7487,7 @@ object InventoryControlFrm: TInventoryControlFrm
     end
   end
   object pRight: TPanel
-    Left = 1475
+    Left = 1322
     Top = 0
     Width = 40
     Height = 725
@@ -7627,8 +7641,8 @@ object InventoryControlFrm: TInventoryControlFrm
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
-    Left = 736
-    Top = 368
+    Left = 656
+    Top = 320
     object qBXNDATA: TFloatField
       FieldName = 'NDATA'
     end
@@ -8146,58 +8160,58 @@ object InventoryControlFrm: TInventoryControlFrm
     object qBDetail2QTY: TFloatField
       FieldName = 'QTY'
       Required = True
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2TOT_QTY: TFloatField
       FieldName = 'TOT_QTY'
       Required = True
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2WASTE_PSN: TFloatField
       FieldName = 'WASTE_PSN'
       Required = True
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2QTY_WASTE: TFloatField
       FieldName = 'QTY_WASTE'
       Required = True
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2PO: TFloatField
       FieldName = 'PO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2TERIMA: TFloatField
       FieldName = 'TERIMA'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2PEMAKAIAN: TFloatField
       FieldName = 'PEMAKAIAN'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2WIP: TFloatField
       FieldName = 'WIP'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2SUB_KONTRAK: TFloatField
       FieldName = 'SUB_KONTRAK'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2FINISHING: TFloatField
       FieldName = 'FINISHING'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2WASTE: TFloatField
       FieldName = 'WASTE'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2BELUM_TERPAKAI: TFloatField
       FieldName = 'BELUM_TERPAKAI'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail2FINISHING_GOODS: TFloatField
       FieldName = 'FINISHING_GOODS'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
   end
   object dsqBDetail2: TwwDataSource
@@ -8491,8 +8505,8 @@ object InventoryControlFrm: TInventoryControlFrm
       'begin'
       '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM);'
       'end;')
-    Left = 760
-    Top = 371
+    Left = 800
+    Top = 379
     ParamData = <
       item
         DataType = ftFloat
@@ -8509,7 +8523,8 @@ object InventoryControlFrm: TInventoryControlFrm
   object qBDetailWIP: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from vbom_d_realisasi_resume')
+      'select * from vbom_d_realisasi_resume'
+      'where nama_lokasi IN ('#39'WIP --> GUDANG JADI'#39', '#39'WIP --> GD WASTE'#39')')
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
     MasterSource = dsqBDetail
@@ -8536,81 +8551,107 @@ object InventoryControlFrm: TInventoryControlFrm
     end
     object qBDetailWIPXXS: TFloatField
       FieldName = 'XXS'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPXS: TFloatField
       FieldName = 'XS'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPS: TFloatField
       FieldName = 'S'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPM: TFloatField
       FieldName = 'M'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPL: TFloatField
       FieldName = 'L'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPXL: TFloatField
       FieldName = 'XL'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPX0: TFloatField
       FieldName = 'X0'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPX1: TFloatField
       FieldName = 'X1'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPX2: TFloatField
       FieldName = 'X2'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPX3: TFloatField
       FieldName = 'X3'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE01: TFloatField
       FieldName = 'SIZE01'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE02: TFloatField
       FieldName = 'SIZE02'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE03: TFloatField
       FieldName = 'SIZE03'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE04: TFloatField
       FieldName = 'SIZE04'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE05: TFloatField
       FieldName = 'SIZE05'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE06: TFloatField
       FieldName = 'SIZE06'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE07: TFloatField
       FieldName = 'SIZE07'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE08: TFloatField
       FieldName = 'SIZE08'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE09: TFloatField
       FieldName = 'SIZE09'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE10: TFloatField
       FieldName = 'SIZE10'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE11: TFloatField
       FieldName = 'SIZE11'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE12: TFloatField
       FieldName = 'SIZE12'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE13: TFloatField
       FieldName = 'SIZE13'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE14: TFloatField
       FieldName = 'SIZE14'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPSIZE15: TFloatField
       FieldName = 'SIZE15'
+      DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailWIPTOT_QTY: TFloatField
       FieldName = 'TOT_QTY'
+      DisplayFormat = '#,#;(#,#);-'
     end
   end
   object dsqBDetailWIP: TwwDataSource

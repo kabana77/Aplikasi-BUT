@@ -1696,6 +1696,10 @@ type
     qBMasterNO_BUKTI: TStringField;
     qB1NO_BUKTI: TStringField;
     QRDBText28: TQRDBText;
+    qItemMU: TStringField;
+    qItemKURS: TFloatField;
+    qBDetailMU: TStringField;
+    qBDetailKURS: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -4070,6 +4074,8 @@ begin
      qBDetailQTY_D_ORDER.AsFloat:=qItemQTY_ORDER.AsFloat;
      qBDetailQTY_D_INFO.AsFloat:=qItemKG_D.AsFloat;
      qBDetailCOLOR.AsString:=qItemCOLOR.AsString;
+     qBDetailMU.AsString:=qItemMU.AsString;
+     qBDetailKURS.AsFloat:=qItemKURS.AsFloat;
 
      {end skrip baru}
   end;

@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 221
+  Left = 223
   Top = 154
   Width = 1356
   Height = 692
@@ -12727,15 +12727,15 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailKG_A: TFloatField
       FieldName = 'KG_A'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_T: TFloatField
       FieldName = 'KG_T'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_D: TFloatField
       FieldName = 'KG_D'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSAT_A: TStringField
       FieldName = 'SAT_A'
@@ -12751,53 +12751,55 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailRA: TFloatField
       FieldName = 'RA'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRT: TFloatField
       FieldName = 'RT'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRD: TFloatField
       FieldName = 'RD'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_A: TFloatField
       FieldName = 'HRG_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_T: TFloatField
       FieldName = 'HRG_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_D: TFloatField
       FieldName = 'HRG_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_A: TFloatField
       FieldName = 'QTY_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T: TFloatField
       FieldName = 'QTY_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_X: TFloatField
       FieldName = 'QTY_X'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_Y: TFloatField
       FieldName = 'QTY_Y'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSUB_TOTAL: TFloatField
       FieldName = 'SUB_TOTAL'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_TOT: TFloatField
       FieldName = 'KG_TOT'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailTGL: TDateTimeField
       FieldName = 'TGL'
@@ -12828,12 +12830,15 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailHRG_BELI_A: TFloatField
       FieldName = 'HRG_BELI_A'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_BELI_T: TFloatField
       FieldName = 'HRG_BELI_T'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_BELI_D: TFloatField
       FieldName = 'HRG_BELI_D'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKD_LOKASI2: TStringField
       FieldName = 'KD_LOKASI2'
@@ -12848,27 +12853,27 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailQTY_A_INFO: TFloatField
       FieldName = 'QTY_A_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T_INFO: TFloatField
       FieldName = 'QTY_T_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D_INFO: TFloatField
       FieldName = 'QTY_D_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_A_ORDER: TFloatField
       FieldName = 'QTY_A_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T_ORDER: TFloatField
       FieldName = 'QTY_T_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D_ORDER: TFloatField
       FieldName = 'QTY_D_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKETERANGAN2: TStringField
       FieldName = 'KETERANGAN2'
@@ -13905,8 +13910,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     ReadOnly = True
     BeforeOpen = qB3BeforeOpen
     OnCalcFields = qB3CalcFields
-    Left = 1035
-    Top = 232
+    Left = 1027
+    Top = 224
     ParamData = <
       item
         DataType = ftDateTime
@@ -15123,12 +15128,12 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetail4QTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail4KG_D: TFloatField
       FieldName = 'KG_D'
       ReadOnly = True
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
   end
 end

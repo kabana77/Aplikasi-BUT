@@ -924,6 +924,15 @@ type
     qB1OPR_UPDATE: TStringField;
     qB1TGL_INSERT: TDateTimeField;
     qB1TGL_UPDATE: TDateTimeField;
+    TabSheet4: TTabSheet;
+    dbGridJurnal: TwwDBGrid;
+    wwIButton8: TwwIButton;
+    qJurnal: TSmartQuery;
+    qJurnalKD_PERK: TStringField;
+    qJurnalNAMA_PERKIRAAN: TStringField;
+    qJurnalDEBET: TFloatField;
+    qJurnalKREDIT: TFloatField;
+    dsqJurnal: TwwDataSource;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1055,6 +1064,8 @@ type
       var PrintBand: Boolean);
     procedure QRBand44BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
+    procedure qBDetailQTY_DChange(Sender: TField);
+    procedure TabSheet4Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -3588,6 +3599,30 @@ procedure TPemakaianBahanFrm.QRBand44BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
   qrlNoZ.Caption:=IntToStr(StrToInt(qrlNoZ.Caption)+1);
+end;
+
+procedure TPemakaianBahanFrm.qBDetailQTY_DChange(Sender: TField);
+begin
+  qBDetailHRG_D.AsFloat:=qBDetailHRG_BELI_D.AsFloat;
+end;
+
+procedure TPemakaianBahanFrm.TabSheet4Show(Sender: TObject);
+var
+  vdebet, vkredit : real;
+begin
+  qJurnal.Close;
+  qJurnal.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+  qJurnal.Open;
+  vdebet:=0;
+  vkredit:=0;
+  while not qJurnal.Eof do
+  begin
+      vdebet:=vdebet+qJurnalDEBET.AsFloat;
+      vkredit:=vkredit+qJurnalKREDIT.AsFloat;
+      qJurnal.Next;
+  end;
+  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
+  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
 end;
 
 end.

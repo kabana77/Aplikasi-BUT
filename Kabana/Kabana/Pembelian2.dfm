@@ -1,5 +1,5 @@
 object Pembelian2Frm: TPembelian2Frm
-  Left = 225
+  Left = 226
   Top = 242
   Width = 1290
   Height = 679

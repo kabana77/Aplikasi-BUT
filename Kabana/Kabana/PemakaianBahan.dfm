@@ -1,5 +1,5 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 204
+  Left = 206
   Top = 125
   Width = 1382
   Height = 784
@@ -5528,6 +5528,72 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               FooterCellColor = clGradientInactiveCaption
               PaintOptions.ActiveRecordColor = clGrayText
               object wwIButton2: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
+            end
+          end
+          object TabSheet4: TTabSheet
+            Caption = 'tsJurnal'
+            ImageIndex = 2
+            OnShow = TabSheet4Show
+            object dbGridJurnal: TwwDBGrid
+              Left = 0
+              Top = 0
+              Width = 1085
+              Height = 345
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISPOST;CheckBox;1;0'
+                'ISBATAL;CheckBox;1;0'
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'KD_PERK'#9'15'#9'KD_PERK'#9'F'
+                'NAMA_PERKIRAAN'#9'79'#9'NAMA_PERKIRAAN'#9'F'
+                'DEBET'#9'15'#9'DEBET'#9'F'
+                'KREDIT'#9'15'#9'KREDIT'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqJurnal
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 4
+              TitleButtons = True
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+              object wwIButton8: TwwIButton
                 Left = 0
                 Top = 0
                 Width = 17
@@ -12679,6 +12745,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     end
     object qBDetailQTY_D: TFloatField
       FieldName = 'QTY_D'
+      OnChange = qBDetailQTY_DChange
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailQTY_X: TFloatField
@@ -13910,7 +13977,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   object dsqB3: TwwDataSource
     DataSet = qB3
     Left = 1035
-    Top = 264
+    Top = 288
   end
   object qB5: TSmartQuery
     Session = DMFrm.OS
@@ -14833,5 +14900,49 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
       FieldName = 'LSIZE15'
       Size = 50
     end
+  end
+  object qJurnal: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      
+        'select kd_perk, nama_perkiraan, sum(debet) as debet, sum(kredit)' +
+        ' as kredit from jurnal'
+      'where no_reg_os=:pno_reg_os'
+      'group by kd_perk, nama_perkiraan'
+      'order by kredit, kd_perk')
+    ReadOnly = True
+    Left = 883
+    Top = 464
+    ParamData = <
+      item
+        Name = 'pno_reg_os'
+        ParamType = ptInput
+        Value = Null
+        ExtDataType = 107
+      end>
+    object qJurnalKD_PERK: TStringField
+      FieldName = 'KD_PERK'
+      Required = True
+    end
+    object qJurnalNAMA_PERKIRAAN: TStringField
+      FieldName = 'NAMA_PERKIRAAN'
+      Required = True
+      Size = 100
+    end
+    object qJurnalDEBET: TFloatField
+      FieldName = 'DEBET'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
+    end
+    object qJurnalKREDIT: TFloatField
+      FieldName = 'KREDIT'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
+    end
+  end
+  object dsqJurnal: TwwDataSource
+    DataSet = qJurnal
+    Left = 851
+    Top = 496
   end
 end

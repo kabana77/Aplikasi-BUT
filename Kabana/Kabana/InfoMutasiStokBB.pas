@@ -3,7 +3,7 @@ unit InfoMutasiStokBB;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,                                 
   Dialogs, ExtCtrls, ComCtrls, StdCtrls, wwSpeedButton, wwDBNavigator,
   wwclearpanel, DB, MemDS, DBAccess, Ora, OraSmart, Grids, Wwdbigrd,
   Wwdbgrid, Wwdatsrc, ToolWin, Buttons, wwdblook, DBCtrls, QRCtrls,
@@ -573,6 +573,12 @@ var
   vFieldName  : array[0..65] of String;
   vNField     : Integer;
   vTop        : String;
+
+  {#### UPDATE FOOTER VARIABLE ####}
+  t1, t2, t3, t4, t5, t6, t7, t8 : real;
+  x : Integer;
+  {#### END UPDATE FOOTER VARIABLE ####}
+
 begin
   vtop:='';                                                     //GANTI
   vNField:=dbGrid1.Selected.Count-1;                            //Ganti
@@ -672,6 +678,33 @@ begin
   qB1.EnableControls;                              //Ganti
   dbGrid1UpdateFooter(Nil);                        //Ganti
   dbGrid1.SetFocus;                                //Ganti
+
+  {##### UPDATE FOOTER SCRIPT ######}
+  t1:=0; t2:=0; t3:=0; t4:=0; t5:=0; t6:=0; t7:=0; t8:=0;
+  x:=0;
+    while not qB1.Eof do
+    begin
+      inc(x);
+      t1:=t1+qB1AWAL_D.AsFloat;
+      t2:=t2+qB1NILAI_AWAL.AsFloat;
+      t3:=t3+qB1LQTY_MASUK_ALL.AsFloat;
+      t4:=t4+qB1LNILAI_MASUK_ALL.AsFloat;
+      t5:=t5+qB1LQTY_KELUAR_ALL.AsFloat;
+      t6:=t6+qB1LNILAI_MASUK_ALL.AsFloat;
+      t7:=t7+qB1AKHIR_D.AsFloat;
+      t8:=t8+qB1NILAI_AKHIR.AsFloat;
+      qB1.Next;
+    end;
+  dbGrid1.ColumnByName('AWAL_D').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
+  dbGrid1.ColumnByName('NILAI_AWAL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
+  dbGrid1.ColumnByName('LQTY_MASUK_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t3);
+  dbGrid1.ColumnByName('LNILAI_MASUK_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t4);
+  dbGrid1.ColumnByName('LQTY_KELUAR_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t5);
+  dbGrid1.ColumnByName('LNILAI_KELUAR_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t6);
+  dbGrid1.ColumnByName('AKHIR_D').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t7);
+  dbGrid1.ColumnByName('NILAI_AKHIR').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t8);
+  {##### END UPDATE FOOTER SCRIPT  ######}
+  
 end;
 
 procedure TInfoMutasiStokBBFrm.Proc_Refresh2;
@@ -800,7 +833,10 @@ begin
   0 : begin
         qB1.SQL.Clear;
         qB1.SQL.Add('select * from (select * from vkartu_stok_mutasi_bb_nilai');
-        qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal)');
+
+        //qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal)');
+        qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal and substr(kd_item, 1, 2) in (''10'', ''11'', ''12'', ''13'', ''14'', ''15'', ''16'', ''17'', ''18'') )');
+
       end;
   1 : begin
          qB2.Close;
@@ -859,6 +895,11 @@ end;
 procedure TInfoMutasiStokBBFrm.TabSheet1Show(Sender: TObject);
 var
   i : integer;
+
+  {#### UPDATE FOOTER VARIABLE ####}
+  t1, t2, t3, t4, t5, t6, t7, t8 : real;
+  x : Integer;
+  {#### END UPDATE FOOTER VARIABLE ####}
 begin
   CheckBox1.Checked:=True;
   if not qB1.Active then
@@ -877,6 +918,32 @@ begin
              QFields2.Items.Add(Columns[i].FieldName);
   end;
   dbNavigator.DataSource:=dsqB1;
+
+  {##### UPDATE FOOTER SCRIPT ######}
+  t1:=0; t2:=0; t3:=0; t4:=0; t5:=0; t6:=0; t7:=0; t8:=0;
+  x:=0;
+    while not qB1.Eof do
+    begin
+      inc(x);
+      t1:=t1+qB1AWAL_D.AsFloat;
+      t2:=t2+qB1NILAI_AWAL.AsFloat;
+      t3:=t3+qB1LQTY_MASUK_ALL.AsFloat;
+      t4:=t4+qB1LNILAI_MASUK_ALL.AsFloat;
+      t5:=t5+qB1LQTY_KELUAR_ALL.AsFloat;
+      t6:=t6+qB1LNILAI_MASUK_ALL.AsFloat;
+      t7:=t7+qB1AKHIR_D.AsFloat;
+      t8:=t8+qB1NILAI_AKHIR.AsFloat;
+      qB1.Next;
+    end;
+  dbGrid1.ColumnByName('AWAL_D').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
+  dbGrid1.ColumnByName('NILAI_AWAL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
+  dbGrid1.ColumnByName('LQTY_MASUK_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t3);
+  dbGrid1.ColumnByName('LNILAI_MASUK_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t4);
+  dbGrid1.ColumnByName('LQTY_KELUAR_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t5);
+  dbGrid1.ColumnByName('LNILAI_KELUAR_ALL').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t6);
+  dbGrid1.ColumnByName('AKHIR_D').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t7);
+  dbGrid1.ColumnByName('NILAI_AKHIR').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t8);
+  {##### END UPDATE FOOTER SCRIPT  ######}
 end;
 
 procedure TInfoMutasiStokBBFrm.wwDBGrid1IButtonClick(Sender: TObject);
@@ -890,6 +957,7 @@ end;
 
 procedure TInfoMutasiStokBBFrm.dbGrid1UpdateFooter(Sender: TObject);
 begin
+  {
   if vsql_org1<>'' then
   begin
     qBX.Close;
@@ -949,6 +1017,7 @@ begin
   end
   else
     pLeft2.Caption:='';
+  }
 end;
 
 procedure TInfoMutasiStokBBFrm.FormCreate(Sender: TObject);
@@ -1222,12 +1291,40 @@ end;
 procedure TInfoMutasiStokBBFrm.qB1FilterRecord(DataSet: TDataSet;
   var Accept: Boolean);
 begin
-  //Accept:=(qB1QTY_X.AsFloat<>0);
-  Accept:=(
+  {Accept:=(
      (qB1QTY_X.AsFloat<>0) or
      (qB1AWAL_D.AsFloat<>0) or
      (qB1LQTY_MASUK_ALL.AsFloat<>0) or
      (qB1LQTY_KELUAR_ALL.AsFloat<>0)
+  );}
+
+  Accept:=(
+     (qB1QTY_X.AsFloat<>0) or
+     (qB1AWAL_D.AsFloat<>0) or
+     (qB1AWAL_D.AsFloat<>0) or
+     (qB1NILAI_AWAL.AsFloat<>0) or
+     (qB1BELI_D.AsFloat<>0) or
+     (qB1NILAI_BELI.AsFloat<>0) or
+     (qB1RETUR_JUAL_D.AsFloat<>0) or
+     (qB1NILAI_RETUR_JUAL.AsFloat<>0) or
+     (qB1RMVL_IN_D.AsFloat<>0) or
+     (qB1NILAI_RMVL_IN.AsFloat<>0) or
+     (qB1PINDAH_IN_D.AsFloat<>0) or
+     (qB1NILAI_PINDAH_IN.AsFloat<>0) or
+     (qB1KOREKSI_IN_D.AsFloat<>0) or
+     (qB1NILAI_KRS_IN.AsFloat<>0) or
+     (qB1JUAL_D.AsFloat<>0) or
+     (qB1NILAI_JUAL.AsFloat<>0) or
+     (qB1RETUR_BELI_D.AsFloat<>0) or
+     (qB1NILAI_RETUR_BELI.AsFloat<>0) or
+     (qB1RMVL_OUT_D.AsFloat<>0) or
+     (qB1NILAI_RMVL_OUT.AsFloat<>0) or
+     (qB1PINDAH_OUT_D.AsFloat<>0) or
+     (qB1NILAI_PINDAH_OUT.AsFloat<>0) or
+     (qB1KOREKSI_OUT_D.AsFloat<>0) or
+     (qB1NILAI_KRS_OUT.AsFloat<>0) or
+     (qB1AKHIR_D.AsFloat<>0) or
+     (qB1NILAI_AKHIR.AsFloat<>0)
   );
 end;
 

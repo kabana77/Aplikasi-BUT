@@ -1,5 +1,5 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 222
+  Left = 223
   Top = 154
   Width = 1356
   Height = 692
@@ -5090,7 +5090,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Label19: TLabel
             Left = 0
             Top = 235
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5541,6 +5541,72 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               FooterCellColor = clGradientInactiveCaption
               PaintOptions.ActiveRecordColor = 16777175
               object wwIButton8: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
+            end
+          end
+          object TabSheet7: TTabSheet
+            Caption = 'tsJurnal'
+            ImageIndex = 4
+            OnShow = TabSheet7Show
+            object dbGridJurnal: TwwDBGrid
+              Left = 0
+              Top = 0
+              Width = 1059
+              Height = 261
+              DittoAttributes.ShortCutDittoRecord = 16429
+              ControlType.Strings = (
+                'ISPOST;CheckBox;1;0'
+                'ISBATAL;CheckBox;1;0'
+                'ISHADIAH;CheckBox;1;0')
+              Selected.Strings = (
+                'KD_PERK'#9'15'#9'KD_PERK'#9'F'
+                'NAMA_PERKIRAAN'#9'79'#9'NAMA_PERKIRAAN'#9'F'
+                'DEBET'#9'15'#9'DEBET'#9'F'
+                'KREDIT'#9'15'#9'KREDIT'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqJurnal
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial Narrow'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 0
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = ANSI_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'Arial Narrow'
+              TitleFont.Style = []
+              TitleLines = 4
+              TitleButtons = True
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 16777175
+              object wwIButton9: TwwIButton
                 Left = 0
                 Top = 0
                 Width = 17
@@ -12727,15 +12793,15 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailKG_A: TFloatField
       FieldName = 'KG_A'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_T: TFloatField
       FieldName = 'KG_T'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_D: TFloatField
       FieldName = 'KG_D'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSAT_A: TStringField
       FieldName = 'SAT_A'
@@ -12751,53 +12817,55 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailRA: TFloatField
       FieldName = 'RA'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRT: TFloatField
       FieldName = 'RT'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRD: TFloatField
       FieldName = 'RD'
-      DisplayFormat = '#,#;-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_A: TFloatField
       FieldName = 'HRG_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_T: TFloatField
       FieldName = 'HRG_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_D: TFloatField
       FieldName = 'HRG_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_A: TFloatField
       FieldName = 'QTY_A'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T: TFloatField
       FieldName = 'QTY_T'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_X: TFloatField
       FieldName = 'QTY_X'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_Y: TFloatField
       FieldName = 'QTY_Y'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailSUB_TOTAL: TFloatField
       FieldName = 'SUB_TOTAL'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKG_TOT: TFloatField
       FieldName = 'KG_TOT'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailTGL: TDateTimeField
       FieldName = 'TGL'
@@ -12828,12 +12896,15 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailHRG_BELI_A: TFloatField
       FieldName = 'HRG_BELI_A'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_BELI_T: TFloatField
       FieldName = 'HRG_BELI_T'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailHRG_BELI_D: TFloatField
       FieldName = 'HRG_BELI_D'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKD_LOKASI2: TStringField
       FieldName = 'KD_LOKASI2'
@@ -12848,27 +12919,27 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetailQTY_A_INFO: TFloatField
       FieldName = 'QTY_A_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T_INFO: TFloatField
       FieldName = 'QTY_T_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D_INFO: TFloatField
       FieldName = 'QTY_D_INFO'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_A_ORDER: TFloatField
       FieldName = 'QTY_A_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_T_ORDER: TFloatField
       FieldName = 'QTY_T_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D_ORDER: TFloatField
       FieldName = 'QTY_D_ORDER'
-      DisplayFormat = '#,#;(#,#);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailKETERANGAN2: TStringField
       FieldName = 'KETERANGAN2'
@@ -13905,8 +13976,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     ReadOnly = True
     BeforeOpen = qB3BeforeOpen
     OnCalcFields = qB3CalcFields
-    Left = 1035
-    Top = 232
+    Left = 1027
+    Top = 224
     ParamData = <
       item
         DataType = ftDateTime
@@ -15123,12 +15194,56 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object qBDetail4QTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetail4KG_D: TFloatField
       FieldName = 'KG_D'
       ReadOnly = True
-      DisplayFormat = '#,#.00;(#,#.00);-'
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+  end
+  object dsqJurnal: TwwDataSource
+    DataSet = qJurnal
+    Left = 851
+    Top = 496
+  end
+  object qJurnal: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      
+        'select kd_perk, nama_perkiraan, sum(debet) as debet, sum(kredit)' +
+        ' as kredit from jurnal'
+      'where no_reg_os=:pno_reg_os'
+      'group by kd_perk, nama_perkiraan'
+      'order by kredit, kd_perk')
+    ReadOnly = True
+    Left = 883
+    Top = 464
+    ParamData = <
+      item
+        Name = 'pno_reg_os'
+        ParamType = ptInput
+        Value = Null
+        ExtDataType = 107
+      end>
+    object qJurnalKD_PERK: TStringField
+      FieldName = 'KD_PERK'
+      Required = True
+    end
+    object qJurnalNAMA_PERKIRAAN: TStringField
+      FieldName = 'NAMA_PERKIRAAN'
+      Required = True
+      Size = 100
+    end
+    object qJurnalDEBET: TFloatField
+      FieldName = 'DEBET'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
+    end
+    object qJurnalKREDIT: TFloatField
+      FieldName = 'KREDIT'
+      ReadOnly = True
+      DisplayFormat = '#,#;(#,#);-'
     end
   end
 end
