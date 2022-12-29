@@ -2250,7 +2250,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText23: TQRDBText
               Left = 648
               Top = 24
-              Width = 97
+              Width = 121
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2261,7 +2261,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 63.500000000000000000
                 1714.500000000000000000
                 63.500000000000000000
-                256.645833333333300000)
+                320.145833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2359,7 +2359,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel23: TQRLabel
               Left = 640
               Top = 24
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2370,7 +2370,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 63.500000000000000000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2384,7 +2384,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel24: TQRLabel
               Left = 640
               Top = 48
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2395,7 +2395,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 127.000000000000000000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2409,7 +2409,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText25: TQRDBText
               Left = 8
               Top = 1
-              Width = 136
+              Width = 171
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2420,7 +2420,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 55.562500000000000000
                 21.166666666666670000
                 2.645833333333333000
-                359.833333333333300000)
+                452.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2441,7 +2441,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText26: TQRDBText
               Left = 8
               Top = 21
-              Width = 45
+              Width = 64
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2452,7 +2452,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 21.166666666666670000
                 55.562500000000000000
-                119.062500000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2467,7 +2467,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText27: TQRDBText
               Left = 8
               Top = 37
-              Width = 45
+              Width = 64
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2478,7 +2478,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 21.166666666666670000
                 97.895833333333330000
-                119.062500000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2493,7 +2493,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText28: TQRDBText
               Left = 8
               Top = 53
-              Width = 45
+              Width = 64
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2504,7 +2504,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 21.166666666666670000
                 140.229166666666700000
-                119.062500000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2517,9 +2517,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               FontSize = 11
             end
             object QRDBText29: TQRDBText
-              Left = 312
+              Left = 298
               Top = 40
-              Width = 138
+              Width = 167
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2528,9 +2528,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                825.500000000000000000
+                788.458333333333300000
                 105.833333333333300000
-                365.125000000000000000)
+                441.854166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -2549,9 +2549,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               FontSize = 14
             end
             object QRDBText62: TQRDBText
-              Left = 704
+              Left = 679
               Top = 1
-              Width = 44
+              Width = 69
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2560,9 +2560,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                1862.666666666667000000
+                1796.520833333333000000
                 2.645833333333333000
-                116.416666666666700000)
+                182.562500000000000000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True
@@ -2603,7 +2603,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText42: TQRDBText
               Left = 136
               Top = 32
-              Width = 62
+              Width = 96
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2614,7 +2614,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 359.833333333333300000
                 84.666666666666670000
-                164.041666666666700000)
+                254.000000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2629,7 +2629,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText43: TQRDBText
               Left = 136
               Top = 80
-              Width = 62
+              Width = 100
               Height = 19
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2640,7 +2640,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 50.270833333333330000
                 359.833333333333300000
                 211.666666666666700000
-                164.041666666666700000)
+                264.583333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2655,7 +2655,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText49: TQRDBText
               Left = 648
               Top = 80
-              Width = 66
+              Width = 117
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2666,7 +2666,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1714.500000000000000000
                 211.666666666666700000
-                174.625000000000000000)
+                309.562500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2681,7 +2681,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText5: TQRDBText
               Left = 648
               Top = 56
-              Width = 63
+              Width = 97
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2692,7 +2692,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1714.500000000000000000
                 148.166666666666700000
-                166.687500000000000000)
+                256.645833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2707,7 +2707,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object qrldbJthTempo: TQRDBText
               Left = 648
               Top = 104
-              Width = 73
+              Width = 123
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2718,7 +2718,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1714.500000000000000000
                 275.166666666666700000
-                193.145833333333300000)
+                325.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2733,7 +2733,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText59: TQRDBText
               Left = 136
               Top = 56
-              Width = 32
+              Width = 50
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2744,7 +2744,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 63.500000000000000000
                 359.833333333333300000
                 148.166666666666700000
-                84.666666666666670000)
+                132.291666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2816,7 +2816,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel32: TQRLabel
               Left = 640
               Top = 0
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2827,7 +2827,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 0.000000000000000000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2866,7 +2866,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel30: TQRLabel
               Left = 640
               Top = 32
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2877,7 +2877,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 84.666666666666670000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2916,7 +2916,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel6: TQRLabel
               Left = 640
               Top = 56
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2927,7 +2927,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2966,7 +2966,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel25: TQRLabel
               Left = 640
               Top = 80
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2977,7 +2977,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 211.666666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3016,7 +3016,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object qrltd: TQRLabel
               Left = 640
               Top = 104
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3027,7 +3027,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 1693.333333333333000000
                 275.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3141,7 +3141,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel35: TQRLabel
               Left = 120
               Top = 32
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3152,7 +3152,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 317.500000000000000000
                 84.666666666666670000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3166,7 +3166,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel36: TQRLabel
               Left = 120
               Top = 56
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3177,7 +3177,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 317.500000000000000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3191,7 +3191,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel37: TQRLabel
               Left = 120
               Top = 80
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3202,7 +3202,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 317.500000000000000000
                 211.666666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3216,7 +3216,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRLabel38: TQRLabel
               Left = 120
               Top = 104
-              Width = 4
+              Width = 5
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3227,7 +3227,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 317.500000000000000000
                 275.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3239,9 +3239,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               FontSize = 11
             end
             object QRDBText33: TQRDBText
-              Left = 355
+              Left = 339
               Top = 0
-              Width = 53
+              Width = 84
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3250,9 +3250,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                939.270833333333300000
+                896.937500000000000000
                 0.000000000000000000
-                140.229166666666700000)
+                222.250000000000000000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -3267,7 +3267,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object qrlTerbilang: TQRLabel
               Left = 136
               Top = 104
-              Width = 39
+              Width = 61
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3278,7 +3278,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 359.833333333333300000
                 275.166666666666700000
-                103.187500000000000000)
+                161.395833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3292,7 +3292,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText2: TQRDBText
               Left = 648
               Top = 32
-              Width = 85
+              Width = 140
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3303,7 +3303,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 55.562500000000000000
                 1714.500000000000000000
                 84.666666666666670000
-                224.895833333333300000)
+                370.416666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3680,7 +3680,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             object QRDBText60: TQRDBText
               Left = 8
               Top = 0
-              Width = 33
+              Width = 53
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3691,7 +3691,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 52.916666666666670000
                 21.166666666666670000
                 0.000000000000000000
-                87.312500000000000000)
+                140.229166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -3704,9 +3704,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               FontSize = 11
             end
             object QRDBText61: TQRDBText
-              Left = 657
+              Left = 626
               Top = 0
-              Width = 50
+              Width = 81
               Height = 20
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3715,9 +3715,9 @@ object BuktiBayarFrm: TBuktiBayarFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                1738.312500000000000000
+                1656.291666666667000000
                 0.000000000000000000
-                132.291666666666700000)
+                214.312500000000000000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True

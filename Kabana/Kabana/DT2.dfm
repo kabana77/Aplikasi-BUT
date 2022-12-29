@@ -1,6 +1,6 @@
 object DT2Frm: TDT2Frm
-  Left = 2
-  Top = 2
+  Left = 634
+  Top = 180
   Width = 1084
   Height = 364
   Caption = 'Daftar Tagihan'

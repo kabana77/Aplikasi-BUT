@@ -534,6 +534,9 @@ type
     qB1STYLE: TStringField;
     qB1KD_PRODUKSI: TStringField;
     qItemNO_PENGAJUAN: TStringField;
+    qOutletKURS: TFloatField;
+    qBMasterTEMP_KURS: TFloatField;
+    qBDetailKURS: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1164,6 +1167,7 @@ begin
   qBDetail2.Close;
   qBDetail2.Open;                                                          //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
  end;
 
 procedure TBOMFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -1377,6 +1381,7 @@ begin
     qBMasterNEGARA.AsString:=qOutletAREA.AsString;
     qBMasterNO_REFF.AsString:=qOutletNO_REG_OS.AsString;
     qBMasterJNS_ORDER.AsString:=qOutletJENIS.AsString;
+    qBMasterTEMP_KURS.AsFloat:=qOutletKURS.AsFloat;
   end;
 end;
 
@@ -1430,6 +1435,7 @@ end;
 procedure TBOMFrm.qBDetailBeforePost(DataSet: TDataSet);
 begin
   vModeInput:=True;
+  qBDetailKURS.AsFloat:=qBMasterTEMP_KURS.AsFloat;
 end;
 
 procedure TBOMFrm.wwDBGrid1UpdateFooter(Sender: TObject);

@@ -11295,7 +11295,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
     Session = DMFrm.OS
     SQL.Strings = (
       'begin'
-      '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM);'
+      '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM, :PCATATAN);'
       'end;')
     Left = 808
     Top = 371
@@ -11308,6 +11308,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
       item
         DataType = ftString
         Name = 'PKD_FORM'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PCATATAN'
         ParamType = ptInput
       end>
     CommandStoredProcName = 'PROC_UNPOST_OS:0'

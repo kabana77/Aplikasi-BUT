@@ -1,6 +1,6 @@
 object PindahLokasiFrm: TPindahLokasiFrm
-  Left = 53
-  Top = 314
+  Left = 264
+  Top = 307
   Width = 1290
   Height = 679
   Caption = 'PindahLokasiFrm'
@@ -336,28 +336,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand1: TQRBand
             Left = 38
             Top = 38
@@ -370,19 +356,16 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText38: TQRDBText
               Left = 16
               Top = 8
-              Width = 136
+              Width = 171
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -393,7 +376,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 55.562500000000000000
                 42.333333333333330000
                 21.166666666666670000
-                359.833333333333300000)
+                452.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -409,13 +392,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText39: TQRDBText
               Left = 16
               Top = 29
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -426,7 +408,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 42.333333333333330000
                 76.729166666666670000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -436,13 +418,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText45: TQRDBText
               Left = 16
               Top = 45
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -453,7 +434,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 42.333333333333330000
                 119.062500000000000000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -463,13 +444,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText48: TQRDBText
               Left = 16
               Top = 61
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -480,7 +460,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 42.333333333333330000
                 161.395833333333300000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -490,13 +470,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText12: TQRDBText
               Left = 624
               Top = 40
-              Width = 54
+              Width = 64
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -507,7 +486,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1651.000000000000000000
                 105.833333333333300000
-                142.875000000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -523,7 +502,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText13: TQRDBText
@@ -556,13 +534,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel13: TQRLabel
               Left = 544
               Top = 40
-              Width = 26
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -573,7 +550,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1439.333333333333000000
                 105.833333333333300000
-                68.791666666666670000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -582,13 +559,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel14: TQRLabel
               Left = 544
               Top = 56
-              Width = 34
+              Width = 41
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -599,7 +575,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1439.333333333333000000
                 148.166666666666700000
-                89.958333333333330000)
+                108.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -608,13 +584,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel15: TQRLabel
               Left = 608
               Top = 40
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -625,7 +600,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1608.666666666667000000
                 105.833333333333300000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -634,13 +609,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel16: TQRLabel
               Left = 608
               Top = 56
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -651,7 +625,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1608.666666666667000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -660,13 +634,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel149: TQRLabel
               Left = 544
               Top = 16
-              Width = 27
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -677,7 +650,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1439.333333333333000000
                 42.333333333333330000
-                71.437500000000000000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -686,13 +659,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel165: TQRLabel
               Left = 608
               Top = 16
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -703,7 +675,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 1608.666666666667000000
                 42.333333333333330000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -712,7 +684,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText237: TQRDBText
@@ -745,7 +716,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -762,7 +732,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -774,13 +743,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               113.770833333333300000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText1: TQRDBText
-              Left = 301
+              Left = 286
               Top = 1
-              Width = 138
+              Width = 167
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -789,9 +756,9 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333300000
+                756.708333333333300000
                 2.645833333333333000
-                365.125000000000000000)
+                441.854166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -807,7 +774,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode: TQRLabel
@@ -839,7 +805,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -855,7 +820,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -867,8 +831,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel1: TQRLabel
               Left = 96
@@ -893,7 +855,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel2: TQRLabel
@@ -919,7 +880,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel9: TQRLabel
@@ -945,7 +905,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel11: TQRLabel
@@ -971,7 +930,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel12: TQRLabel
@@ -997,7 +955,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel8: TQRLabel
@@ -1023,7 +980,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel17: TQRLabel
@@ -1049,7 +1005,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1065,7 +1020,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1077,8 +1031,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               42.333333333333330000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText6: TQRDBText
               Left = 96
@@ -1104,7 +1056,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NO_REG_OS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText7: TQRDBText
@@ -1131,7 +1082,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'KD_LOKASI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRSysData2: TQRSysData
@@ -1155,7 +1105,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Data = qrsDetailNo
               Transparent = False
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText9: TQRDBText
@@ -1183,7 +1132,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Mask = 'DD/MM/YYYY'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText10: TQRDBText
@@ -1210,7 +1158,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText8: TQRDBText
@@ -1237,7 +1184,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NAMA_LOKASI2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText11: TQRDBText
@@ -1264,7 +1210,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1280,19 +1225,16 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel3: TQRLabel
-              Left = 342
+              Left = 336
               Top = 24
-              Width = 56
+              Width = 68
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1301,9 +1243,9 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                904.875000000000000000
+                889.000000000000000000
                 63.500000000000000000
-                148.166666666666700000)
+                179.916666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1312,7 +1254,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD11: TQRDBText
@@ -1345,7 +1286,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD12: TQRDBText
@@ -1378,7 +1318,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD13: TQRDBText
@@ -1411,7 +1350,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD21: TQRDBText
@@ -1444,7 +1382,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD22: TQRDBText
@@ -1477,7 +1414,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD23: TQRDBText
@@ -1510,7 +1446,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD31: TQRDBText
@@ -1543,7 +1478,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD32: TQRDBText
@@ -1576,7 +1510,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD33: TQRDBText
@@ -1609,7 +1542,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD41: TQRDBText
@@ -1642,7 +1574,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD42: TQRDBText
@@ -1675,7 +1606,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD43: TQRDBText
@@ -1708,7 +1638,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr1: TQRExpr
@@ -1743,7 +1672,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB1.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel10: TQRLabel
@@ -1775,7 +1703,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1791,19 +1718,16 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText3: TQRDBText
               Left = 0
               Top = 0
-              Width = 41
+              Width = 47
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1814,7 +1738,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
                 44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
-                108.479166666666700000)
+                124.354166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1824,13 +1748,12 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText4: TQRDBText
-              Left = 613
+              Left = 604
               Top = 0
-              Width = 62
+              Width = 71
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1839,9 +1762,9 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1621.895833333333000000
+                1598.083333333333000000
                 0.000000000000000000
-                164.041666666666700000)
+                187.854166666666700000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True
@@ -1851,7 +1774,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData1: TQRSysData
@@ -1876,7 +1798,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -2022,28 +1943,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             100.000000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand2: TQRBand
             Left = 38
             Top = 30
@@ -2058,7 +1965,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = PageHeaderBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2070,8 +1976,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               198.437500000000000000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText23: TQRDBText
               Left = 616
@@ -2103,7 +2007,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText24: TQRDBText
@@ -2131,7 +2034,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel21: TQRLabel
@@ -2157,7 +2059,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel22: TQRLabel
@@ -2183,7 +2084,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel23: TQRLabel
@@ -2209,7 +2109,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel24: TQRLabel
@@ -2235,7 +2134,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText25: TQRDBText
@@ -2268,7 +2166,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText26: TQRDBText
@@ -2295,7 +2192,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText27: TQRDBText
@@ -2322,7 +2218,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText28: TQRDBText
@@ -2349,7 +2244,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText62: TQRDBText
@@ -2376,7 +2270,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'BANNER1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLTitle: TQRLabel
@@ -2408,7 +2301,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
           end
@@ -2425,7 +2317,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = TitleBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2437,8 +2328,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               211.666666666666700000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText30: TQRDBText
               Left = 616
@@ -2464,7 +2353,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NO_REFF'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel27: TQRLabel
@@ -2490,7 +2378,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel28: TQRLabel
@@ -2516,7 +2403,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText32: TQRDBText
@@ -2543,7 +2429,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel31: TQRLabel
@@ -2569,7 +2454,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel32: TQRLabel
@@ -2595,7 +2479,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel5: TQRLabel
@@ -2621,7 +2504,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel6: TQRLabel
@@ -2647,7 +2529,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText5: TQRDBText
@@ -2674,7 +2555,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NO_PO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel7: TQRLabel
@@ -2700,7 +2580,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel18: TQRLabel
@@ -2726,7 +2605,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText14: TQRDBText
@@ -2753,7 +2631,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NAMA_KAPAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel19: TQRLabel
@@ -2779,7 +2656,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel20: TQRLabel
@@ -2805,7 +2681,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText15: TQRDBText
@@ -2832,7 +2707,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NO_CONTAINER'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel25: TQRLabel
@@ -2858,7 +2732,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel26: TQRLabel
@@ -2884,7 +2757,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText16: TQRDBText
@@ -2911,7 +2783,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'NO_BL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRImage1: TQRImage
@@ -2953,7 +2824,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText33: TQRDBText
@@ -2987,7 +2857,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText2: TQRDBText
@@ -3021,7 +2890,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRLabel4: TQRLabel
@@ -3047,7 +2915,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3063,7 +2930,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3075,8 +2941,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel45: TQRLabel
               Left = 32
@@ -3101,7 +2965,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel46: TQRLabel
@@ -3127,7 +2990,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel48: TQRLabel
@@ -3153,7 +3015,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel53: TQRLabel
@@ -3179,7 +3040,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel51: TQRLabel
@@ -3205,7 +3065,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel54: TQRLabel
@@ -3231,7 +3090,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3248,7 +3106,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = DetailBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3260,8 +3117,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               44.979166666666670000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText42: TQRDBText
               Left = 32
@@ -3287,7 +3142,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'KD_ITEM'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText43: TQRDBText
@@ -3314,7 +3168,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText49: TQRDBText
@@ -3341,7 +3194,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'KG_TOT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText51: TQRDBText
@@ -3368,7 +3220,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText52: TQRDBText
@@ -3395,7 +3246,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlNo: TQRLabel
@@ -3421,7 +3271,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3438,7 +3287,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = SummaryBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3450,8 +3298,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               243.416666666666700000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel55: TQRLabel
               Left = 408
@@ -3476,7 +3322,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr11: TQRExpr
@@ -3505,7 +3350,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.KG_TOT)'
               Mask = '#,#.00;(#,#.00);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText59: TQRDBText
@@ -3532,7 +3376,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel68: TQRLabel
@@ -3558,7 +3401,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlTerbilang: TQRLabel
@@ -3584,7 +3426,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3600,7 +3441,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3612,8 +3452,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               52.916666666666670000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText60: TQRDBText
               Left = 0
@@ -3639,7 +3477,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText61: TQRDBText
@@ -3666,7 +3503,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRSysData3: TQRSysData
@@ -3691,7 +3527,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3816,8 +3651,8 @@ object PindahLokasiFrm: TPindahLokasiFrm
           object DBText2: TDBText
             Left = 16
             Top = 37
-            Width = 50
-            Height = 20
+            Width = 65
+            Height = 19
             AutoSize = True
             DataField = 'NAMA_LOKASI'
             DataSource = dsqBMaster
@@ -3846,8 +3681,8 @@ object PindahLokasiFrm: TPindahLokasiFrm
           object DBText1: TDBText
             Left = 16
             Top = 101
-            Width = 50
-            Height = 20
+            Width = 65
+            Height = 19
             AutoSize = True
             DataField = 'NAMA_LOKASI2'
             DataSource = dsqBMaster
@@ -3862,7 +3697,7 @@ object PindahLokasiFrm: TPindahLokasiFrm
           object DBText3: TDBText
             Left = 16
             Top = 130
-            Width = 80
+            Width = 94
             Height = 29
             AutoSize = True
             DataField = 'JENIS'
@@ -4447,8 +4282,8 @@ object PindahLokasiFrm: TPindahLokasiFrm
               object DBText22: TDBText
                 Left = 304
                 Top = 16
-                Width = 57
-                Height = 20
+                Width = 74
+                Height = 19
                 AutoSize = True
                 DataField = 'NAMA_LOKASI'
                 DataSource = DMFrm.dsqLokasi
@@ -4636,28 +4471,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand1: TQRBand
             Left = 38
             Top = 38
@@ -4670,14 +4491,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText63: TQRDBText
               Left = 16
@@ -4709,7 +4527,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText64: TQRDBText
@@ -4736,7 +4553,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText65: TQRDBText
@@ -4763,7 +4579,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText66: TQRDBText
@@ -4790,7 +4605,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText67: TQRDBText
@@ -4823,7 +4637,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText68: TQRDBText
@@ -4856,7 +4669,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel69: TQRLabel
@@ -4882,7 +4694,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel70: TQRLabel
@@ -4908,7 +4719,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel71: TQRLabel
@@ -4934,7 +4744,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel72: TQRLabel
@@ -4960,7 +4769,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel166: TQRLabel
@@ -4986,7 +4794,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel167: TQRLabel
@@ -5012,7 +4819,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText238: TQRDBText
@@ -5045,7 +4851,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -5062,7 +4867,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -5074,8 +4878,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               113.770833333333300000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText69: TQRDBText
               Left = 301
@@ -5107,7 +4909,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode2: TQRLabel
@@ -5139,7 +4940,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -5155,7 +4955,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -5167,8 +4966,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel74: TQRLabel
               Left = 96
@@ -5193,7 +4990,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel75: TQRLabel
@@ -5219,7 +5015,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel76: TQRLabel
@@ -5245,7 +5040,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel77: TQRLabel
@@ -5271,7 +5065,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel78: TQRLabel
@@ -5297,7 +5090,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel79: TQRLabel
@@ -5323,7 +5115,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel73: TQRLabel
@@ -5349,7 +5140,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel91: TQRLabel
@@ -5375,7 +5165,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -5392,7 +5181,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand4BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -5404,8 +5192,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText74: TQRDBText
               Left = 656
@@ -5431,7 +5217,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText81: TQRDBText
@@ -5464,7 +5249,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText97: TQRDBText
@@ -5497,7 +5281,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText99: TQRDBText
@@ -5524,7 +5307,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText98: TQRDBText
@@ -5551,7 +5333,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2D: TQRLabel
@@ -5583,7 +5364,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -5599,14 +5379,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel88: TQRLabel
               Left = 342
@@ -5631,7 +5408,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText83: TQRDBText
@@ -5664,7 +5440,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText84: TQRDBText
@@ -5697,7 +5472,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText85: TQRDBText
@@ -5730,7 +5504,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText86: TQRDBText
@@ -5763,7 +5536,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText87: TQRDBText
@@ -5796,7 +5568,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText88: TQRDBText
@@ -5829,7 +5600,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText89: TQRDBText
@@ -5862,7 +5632,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText90: TQRDBText
@@ -5895,7 +5664,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText91: TQRDBText
@@ -5928,7 +5696,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText92: TQRDBText
@@ -5961,7 +5728,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText93: TQRDBText
@@ -5994,7 +5760,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText94: TQRDBText
@@ -6027,7 +5792,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr14: TQRExpr
@@ -6062,7 +5826,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel89: TQRLabel
@@ -6094,7 +5857,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6110,14 +5872,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText95: TQRDBText
               Left = 0
@@ -6143,7 +5902,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText96: TQRDBText
@@ -6170,7 +5928,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData5: TQRSysData
@@ -6195,7 +5952,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -6211,14 +5967,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               74.083333333333330000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr24: TQRExpr
               Left = 656
@@ -6252,7 +6005,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6269,14 +6021,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRGroup1BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB2.NO_REG_OS'
             FooterBand = QRBand7
             Master = qrMaster2
@@ -6312,7 +6061,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText70: TQRDBText
@@ -6345,7 +6093,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText72: TQRDBText
@@ -6378,7 +6125,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText71: TQRDBText
@@ -6411,7 +6157,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2: TQRLabel
@@ -6443,7 +6188,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6591,28 +6335,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand29: TQRBand
             Left = 37
             Top = 37
@@ -6625,14 +6355,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText204: TQRDBText
               Left = 16
@@ -6664,7 +6391,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText205: TQRDBText
@@ -6691,7 +6417,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText206: TQRDBText
@@ -6718,7 +6443,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText207: TQRDBText
@@ -6745,7 +6469,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText208: TQRDBText
@@ -6778,7 +6501,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText209: TQRDBText
@@ -6811,7 +6533,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel131: TQRLabel
@@ -6837,7 +6558,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel144: TQRLabel
@@ -6863,7 +6583,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel147: TQRLabel
@@ -6889,7 +6608,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel148: TQRLabel
@@ -6915,7 +6633,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel168: TQRLabel
@@ -6941,7 +6658,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel169: TQRLabel
@@ -6967,7 +6683,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText239: TQRDBText
@@ -7000,7 +6715,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7017,7 +6731,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand30BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -7029,8 +6742,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               113.770833333333300000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText210: TQRDBText
               Left = 301
@@ -7062,7 +6773,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode3: TQRLabel
@@ -7094,7 +6804,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7110,7 +6819,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7122,8 +6830,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel150: TQRLabel
               Left = 32
@@ -7148,7 +6854,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel151: TQRLabel
@@ -7174,7 +6879,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel158: TQRLabel
@@ -7200,7 +6904,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel159: TQRLabel
@@ -7226,7 +6929,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel160: TQRLabel
@@ -7252,7 +6954,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel162: TQRLabel
@@ -7278,7 +6979,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -7295,7 +6995,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand32BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7307,8 +7006,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText217: TQRDBText
               Left = 304
@@ -7340,7 +7037,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText218: TQRDBText
@@ -7373,7 +7069,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText219: TQRDBText
@@ -7400,7 +7095,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText220: TQRDBText
@@ -7427,7 +7121,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo3: TQRLabel
@@ -7459,7 +7152,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText221: TQRDBText
@@ -7486,7 +7178,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -7502,14 +7193,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel163: TQRLabel
               Left = 342
@@ -7534,7 +7222,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText223: TQRDBText
@@ -7567,7 +7254,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText224: TQRDBText
@@ -7600,7 +7286,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText225: TQRDBText
@@ -7633,7 +7318,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText226: TQRDBText
@@ -7666,7 +7350,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText227: TQRDBText
@@ -7699,7 +7382,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText228: TQRDBText
@@ -7732,7 +7414,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText229: TQRDBText
@@ -7765,7 +7446,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText230: TQRDBText
@@ -7798,7 +7478,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText231: TQRDBText
@@ -7831,7 +7510,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText232: TQRDBText
@@ -7864,7 +7542,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText233: TQRDBText
@@ -7897,7 +7574,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText234: TQRDBText
@@ -7930,7 +7606,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr76: TQRExpr
@@ -7965,7 +7640,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB3.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel164: TQRLabel
@@ -7997,7 +7671,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8013,14 +7686,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText235: TQRDBText
               Left = 0
@@ -8046,7 +7716,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText236: TQRDBText
@@ -8073,7 +7742,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData8: TQRSysData
@@ -8098,7 +7766,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -8236,28 +7903,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand15: TQRBand
             Left = 37
             Top = 37
@@ -8270,14 +7923,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText115: TQRDBText
               Left = 16
@@ -8309,7 +7959,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText121: TQRDBText
@@ -8336,7 +7985,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText137: TQRDBText
@@ -8363,7 +8011,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText138: TQRDBText
@@ -8390,7 +8037,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText139: TQRDBText
@@ -8423,7 +8069,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText140: TQRDBText
@@ -8456,7 +8101,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel97: TQRLabel
@@ -8482,7 +8126,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel98: TQRLabel
@@ -8508,7 +8151,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel100: TQRLabel
@@ -8534,7 +8176,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel101: TQRLabel
@@ -8560,7 +8201,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel172: TQRLabel
@@ -8586,7 +8226,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel173: TQRLabel
@@ -8612,7 +8251,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText241: TQRDBText
@@ -8645,7 +8283,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -8662,7 +8299,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand16BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -8674,8 +8310,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               113.770833333333300000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText142: TQRDBText
               Left = 301
@@ -8707,7 +8341,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode5: TQRLabel
@@ -8739,7 +8372,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -8755,7 +8387,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -8767,8 +8398,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel109: TQRLabel
               Left = 32
@@ -8793,7 +8422,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel111: TQRLabel
@@ -8819,7 +8447,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel122: TQRLabel
@@ -8845,7 +8472,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel123: TQRLabel
@@ -8871,7 +8497,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel124: TQRLabel
@@ -8897,7 +8522,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel43: TQRLabel
@@ -8923,7 +8547,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8940,7 +8563,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand18BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -8952,8 +8574,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText149: TQRDBText
               Left = 64
@@ -8985,7 +8605,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText150: TQRDBText
@@ -9018,7 +8637,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText151: TQRDBText
@@ -9045,7 +8663,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText152: TQRDBText
@@ -9072,7 +8689,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5D: TQRLabel
@@ -9104,7 +8720,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText153: TQRDBText
@@ -9131,7 +8746,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9147,14 +8761,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel126: TQRLabel
               Left = 342
@@ -9179,7 +8790,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText154: TQRDBText
@@ -9212,7 +8822,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText155: TQRDBText
@@ -9245,7 +8854,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText156: TQRDBText
@@ -9278,7 +8886,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText157: TQRDBText
@@ -9311,7 +8918,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText158: TQRDBText
@@ -9344,7 +8950,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText159: TQRDBText
@@ -9377,7 +8982,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText160: TQRDBText
@@ -9410,7 +9014,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText161: TQRDBText
@@ -9443,7 +9046,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText162: TQRDBText
@@ -9476,7 +9078,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText163: TQRDBText
@@ -9509,7 +9110,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText164: TQRDBText
@@ -9542,7 +9142,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText165: TQRDBText
@@ -9575,7 +9174,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr35: TQRExpr
@@ -9610,7 +9208,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel127: TQRLabel
@@ -9642,7 +9239,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9658,14 +9254,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText166: TQRDBText
               Left = 0
@@ -9691,7 +9284,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText167: TQRDBText
@@ -9718,7 +9310,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData6: TQRSysData
@@ -9743,7 +9334,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -9759,14 +9349,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr51: TQRExpr
               Left = 640
@@ -9800,7 +9387,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9817,14 +9403,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRGroup5BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB5.NAMA_PRINSIPAL2'
             FooterBand = QRBand21
             Master = qrMaster5
@@ -9859,7 +9442,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5: TQRLabel
@@ -9891,7 +9473,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10030,28 +9611,14 @@ object PindahLokasiFrm: TPindahLokasiFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand22: TQRBand
             Left = 37
             Top = 37
@@ -10064,14 +9631,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText170: TQRDBText
               Left = 16
@@ -10103,7 +9667,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText171: TQRDBText
@@ -10130,7 +9693,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText172: TQRDBText
@@ -10157,7 +9719,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText173: TQRDBText
@@ -10184,7 +9745,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText174: TQRDBText
@@ -10217,7 +9777,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText175: TQRDBText
@@ -10250,7 +9809,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel125: TQRLabel
@@ -10276,7 +9834,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel128: TQRLabel
@@ -10302,7 +9859,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel129: TQRLabel
@@ -10328,7 +9884,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel130: TQRLabel
@@ -10354,7 +9909,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel174: TQRLabel
@@ -10380,7 +9934,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel175: TQRLabel
@@ -10406,7 +9959,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText242: TQRDBText
@@ -10439,7 +9991,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -10456,7 +10007,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand23BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -10468,8 +10018,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               113.770833333333300000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText176: TQRDBText
               Left = 301
@@ -10501,7 +10049,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode6: TQRLabel
@@ -10533,7 +10080,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -10549,7 +10095,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -10561,8 +10106,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               71.437500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel132: TQRLabel
               Left = 32
@@ -10587,7 +10130,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel133: TQRLabel
@@ -10613,7 +10155,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel140: TQRLabel
@@ -10639,7 +10180,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel141: TQRLabel
@@ -10665,7 +10205,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel142: TQRLabel
@@ -10691,7 +10230,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10708,7 +10246,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRBand25BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -10720,8 +10257,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText183: TQRDBText
               Left = 64
@@ -10753,7 +10288,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText184: TQRDBText
@@ -10786,7 +10320,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText185: TQRDBText
@@ -10813,7 +10346,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText186: TQRDBText
@@ -10840,7 +10372,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo6D: TQRLabel
@@ -10872,7 +10403,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText187: TQRDBText
@@ -10899,7 +10429,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10915,14 +10444,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel145: TQRLabel
               Left = 342
@@ -10947,7 +10473,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText189: TQRDBText
@@ -10980,7 +10505,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText190: TQRDBText
@@ -11013,7 +10537,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText191: TQRDBText
@@ -11046,7 +10569,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText192: TQRDBText
@@ -11079,7 +10601,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText193: TQRDBText
@@ -11112,7 +10633,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText194: TQRDBText
@@ -11145,7 +10665,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText195: TQRDBText
@@ -11178,7 +10697,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText196: TQRDBText
@@ -11211,7 +10729,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText197: TQRDBText
@@ -11244,7 +10761,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText198: TQRDBText
@@ -11277,7 +10793,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText199: TQRDBText
@@ -11310,7 +10825,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText200: TQRDBText
@@ -11343,7 +10857,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr60: TQRExpr
@@ -11378,7 +10891,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB6.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel146: TQRLabel
@@ -11410,7 +10922,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -11426,14 +10937,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText201: TQRDBText
               Left = 0
@@ -11459,7 +10967,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText202: TQRDBText
@@ -11486,7 +10993,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData7: TQRSysData
@@ -11511,7 +11017,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -11527,14 +11032,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr68: TQRExpr
               Left = 648
@@ -11568,7 +11070,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               WordWrap = True
               Expression = 'SUM(qB6.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -11585,14 +11086,11 @@ object PindahLokasiFrm: TPindahLokasiFrm
             AlignToBottom = False
             BeforePrint = QRGroup2BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB6.NAMA_LOKASI'
             FooterBand = QRBand28
             Master = qrMaster6
@@ -11627,7 +11125,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo6: TQRLabel
@@ -11659,7 +11156,6 @@ object PindahLokasiFrm: TPindahLokasiFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end

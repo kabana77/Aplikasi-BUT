@@ -343,28 +343,14 @@ object CekBGCairFrm: TCekBGCairFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand1: TQRBand
             Left = 38
             Top = 38
@@ -377,19 +363,16 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText38: TQRDBText
               Left = 16
               Top = 8
-              Width = 136
+              Width = 171
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -400,7 +383,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 55.562500000000000000
                 42.333333333333330000
                 21.166666666666670000
-                359.833333333333300000)
+                452.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -416,13 +399,12 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText39: TQRDBText
               Left = 16
               Top = 29
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -433,7 +415,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 42.333333333333330000
                 76.729166666666670000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -443,13 +425,12 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText45: TQRDBText
               Left = 16
               Top = 45
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -460,7 +441,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 42.333333333333330000
                 119.062500000000000000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -470,13 +451,12 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText48: TQRDBText
               Left = 16
               Top = 61
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -487,7 +467,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 42.333333333333330000
                 161.395833333333300000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -497,13 +477,12 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText12: TQRDBText
               Left = 624
               Top = 40
-              Width = 54
+              Width = 64
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -514,7 +493,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1651.000000000000000000
                 105.833333333333300000
-                142.875000000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -530,7 +509,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText13: TQRDBText
@@ -563,13 +541,12 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel13: TQRLabel
               Left = 544
               Top = 40
-              Width = 26
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -580,7 +557,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1439.333333333333000000
                 105.833333333333300000
-                68.791666666666670000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -589,13 +566,12 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel14: TQRLabel
               Left = 544
               Top = 56
-              Width = 34
+              Width = 41
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -606,7 +582,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1439.333333333333000000
                 148.166666666666700000
-                89.958333333333330000)
+                108.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -615,13 +591,12 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel15: TQRLabel
               Left = 608
               Top = 40
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -632,7 +607,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1608.666666666667000000
                 105.833333333333300000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -641,13 +616,12 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel16: TQRLabel
               Left = 608
               Top = 56
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -658,7 +632,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1608.666666666667000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -667,13 +641,12 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel149: TQRLabel
               Left = 544
               Top = 16
-              Width = 27
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -684,7 +657,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1439.333333333333000000
                 42.333333333333330000
-                71.437500000000000000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -693,13 +666,12 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel165: TQRLabel
               Left = 608
               Top = 16
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -710,7 +682,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 1608.666666666667000000
                 42.333333333333330000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -719,7 +691,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText237: TQRDBText
@@ -752,7 +723,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -768,7 +738,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -780,13 +749,11 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               113.770833333333300000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText1: TQRDBText
-              Left = 301
+              Left = 286
               Top = 1
-              Width = 138
+              Width = 167
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -795,9 +762,9 @@ object CekBGCairFrm: TCekBGCairFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333300000
+                756.708333333333300000
                 2.645833333333333000
-                365.125000000000000000)
+                441.854166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -813,7 +780,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode: TQRLabel
@@ -845,7 +811,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -861,7 +826,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -873,8 +837,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               71.437500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel1: TQRLabel
               Left = 96
@@ -899,7 +861,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel2: TQRLabel
@@ -925,7 +886,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel9: TQRLabel
@@ -951,7 +911,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel11: TQRLabel
@@ -977,7 +936,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel12: TQRLabel
@@ -1003,7 +961,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel8: TQRLabel
@@ -1029,7 +986,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel17: TQRLabel
@@ -1055,7 +1011,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel18: TQRLabel
@@ -1081,7 +1036,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel19: TQRLabel
@@ -1107,7 +1061,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel20: TQRLabel
@@ -1133,7 +1086,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1149,7 +1101,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1161,8 +1112,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText6: TQRDBText
               Left = 96
@@ -1188,7 +1137,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NO_BUKTI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText7: TQRDBText
@@ -1215,7 +1163,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NO_CEK_BG_TT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRSysData2: TQRSysData
@@ -1239,7 +1186,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Data = qrsDetailNo
               Transparent = False
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText9: TQRDBText
@@ -1267,7 +1213,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Mask = 'dd/mm/yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText10: TQRDBText
@@ -1294,7 +1239,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NILAI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText8: TQRDBText
@@ -1321,7 +1265,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TGL_JTH_TEMPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText11: TQRDBText
@@ -1348,7 +1291,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'KD_PERK2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText35: TQRDBText
@@ -1375,7 +1317,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'JNS_CAIR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText36: TQRDBText
@@ -1403,7 +1344,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Mask = 'dd/mm/yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText37: TQRDBText
@@ -1430,7 +1370,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1446,19 +1385,16 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel3: TQRLabel
-              Left = 342
+              Left = 336
               Top = 24
-              Width = 56
+              Width = 68
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1467,9 +1403,9 @@ object CekBGCairFrm: TCekBGCairFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                904.875000000000000000
+                889.000000000000000000
                 63.500000000000000000
-                148.166666666666700000)
+                179.916666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1478,7 +1414,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD11: TQRDBText
@@ -1511,7 +1446,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD12: TQRDBText
@@ -1544,7 +1478,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD13: TQRDBText
@@ -1577,7 +1510,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD21: TQRDBText
@@ -1610,7 +1542,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD22: TQRDBText
@@ -1643,7 +1574,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD23: TQRDBText
@@ -1676,7 +1606,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD31: TQRDBText
@@ -1709,7 +1638,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD32: TQRDBText
@@ -1742,7 +1670,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD33: TQRDBText
@@ -1775,7 +1702,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD41: TQRDBText
@@ -1808,7 +1734,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD42: TQRDBText
@@ -1841,7 +1766,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD43: TQRDBText
@@ -1874,7 +1798,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr1: TQRExpr
@@ -1909,7 +1832,6 @@ object CekBGCairFrm: TCekBGCairFrm
               WordWrap = True
               Expression = 'SUM(qB1.NILAI)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel10: TQRLabel
@@ -1941,7 +1863,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1957,19 +1878,16 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText3: TQRDBText
               Left = 0
               Top = 0
-              Width = 41
+              Width = 47
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1980,7 +1898,7 @@ object CekBGCairFrm: TCekBGCairFrm
                 44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
-                108.479166666666700000)
+                124.354166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1990,13 +1908,12 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText4: TQRDBText
-              Left = 613
+              Left = 604
               Top = 0
-              Width = 62
+              Width = 71
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2005,9 +1922,9 @@ object CekBGCairFrm: TCekBGCairFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1621.895833333333000000
+                1598.083333333333000000
                 0.000000000000000000
-                164.041666666666700000)
+                187.854166666666700000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True
@@ -2017,7 +1934,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData1: TQRSysData
@@ -2042,7 +1958,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -2178,28 +2093,14 @@ object CekBGCairFrm: TCekBGCairFrm
             70.000000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand2: TQRBand
             Left = 26
             Top = 30
@@ -2213,7 +2114,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.Style = psDot
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2225,8 +2125,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               198.437500000000000000
               2018.770833333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText23: TQRDBText
               Left = 648
@@ -2258,7 +2156,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object QRDBText24: TQRDBText
@@ -2286,7 +2183,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel21: TQRLabel
@@ -2312,7 +2208,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel22: TQRLabel
@@ -2338,7 +2233,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel23: TQRLabel
@@ -2364,7 +2258,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel24: TQRLabel
@@ -2390,7 +2283,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText25: TQRDBText
@@ -2423,7 +2315,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText26: TQRDBText
@@ -2450,7 +2341,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText27: TQRDBText
@@ -2477,7 +2367,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText28: TQRDBText
@@ -2504,7 +2393,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText29: TQRDBText
@@ -2537,7 +2425,6 @@ object CekBGCairFrm: TCekBGCairFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object QRDBText62: TQRDBText
@@ -2564,7 +2451,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'BANNER1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -2580,7 +2466,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2592,8 +2477,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               338.666666666666700000
               2018.770833333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText42: TQRDBText
               Left = 136
@@ -2619,7 +2502,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TERIMA_DARI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText43: TQRDBText
@@ -2646,7 +2528,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText49: TQRDBText
@@ -2673,7 +2554,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NO_CEK_BG_TT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText5: TQRDBText
@@ -2700,7 +2580,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'CARA_BAYAR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrldbJthTempo: TQRDBText
@@ -2727,7 +2606,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TGL_JTH_TEMPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText59: TQRDBText
@@ -2754,7 +2632,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NILAI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText32: TQRDBText
@@ -2781,7 +2658,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel31: TQRLabel
@@ -2807,7 +2683,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel32: TQRLabel
@@ -2833,7 +2708,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText2: TQRDBText
@@ -2860,7 +2734,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'NAMA_COLLECTOR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel4: TQRLabel
@@ -2886,7 +2759,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel30: TQRLabel
@@ -2912,7 +2784,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel5: TQRLabel
@@ -2938,7 +2809,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel6: TQRLabel
@@ -2964,7 +2834,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlNoREFF: TQRLabel
@@ -2990,7 +2859,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel25: TQRLabel
@@ -3016,7 +2884,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlJthTempo: TQRLabel
@@ -3042,7 +2909,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrltd: TQRLabel
@@ -3068,7 +2934,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel28: TQRLabel
@@ -3094,7 +2959,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel29: TQRLabel
@@ -3120,7 +2984,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel33: TQRLabel
@@ -3146,7 +3009,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel34: TQRLabel
@@ -3172,7 +3034,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel35: TQRLabel
@@ -3198,7 +3059,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel36: TQRLabel
@@ -3224,7 +3084,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel37: TQRLabel
@@ -3250,7 +3109,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel38: TQRLabel
@@ -3276,7 +3134,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText33: TQRDBText
@@ -3303,7 +3160,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'JNS_BAYAR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlTerbilang: TQRLabel
@@ -3329,7 +3185,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3345,7 +3200,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3357,8 +3211,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               254.000000000000000000
               2018.770833333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRDBText14: TQRDBText
               Left = 40
@@ -3384,7 +3236,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD11'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText15: TQRDBText
@@ -3411,7 +3262,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD12'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText16: TQRDBText
@@ -3438,7 +3288,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD13'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText17: TQRDBText
@@ -3465,7 +3314,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD21'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText18: TQRDBText
@@ -3492,7 +3340,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD22'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText19: TQRDBText
@@ -3519,7 +3366,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD23'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText20: TQRDBText
@@ -3546,7 +3392,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD31'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText21: TQRDBText
@@ -3573,7 +3418,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD32'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText22: TQRDBText
@@ -3600,7 +3444,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD33'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText30: TQRDBText
@@ -3627,7 +3470,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD41'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText31: TQRDBText
@@ -3654,7 +3496,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD42'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText34: TQRDBText
@@ -3681,7 +3522,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'TTD43'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3697,7 +3537,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3709,8 +3548,6 @@ object CekBGCairFrm: TCekBGCairFrm
             Size.Values = (
               52.916666666666670000
               2018.770833333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText60: TQRDBText
               Left = 8
@@ -3736,7 +3573,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText61: TQRDBText
@@ -3763,7 +3599,6 @@ object CekBGCairFrm: TCekBGCairFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRSysData3: TQRSysData
@@ -3788,7 +3623,6 @@ object CekBGCairFrm: TCekBGCairFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3869,8 +3703,8 @@ object CekBGCairFrm: TCekBGCairFrm
           object DBText20: TDBText
             Left = 648
             Top = 40
-            Width = 57
-            Height = 20
+            Width = 74
+            Height = 19
             AutoSize = True
             DataField = 'TGL'
             DataSource = dsqBMaster

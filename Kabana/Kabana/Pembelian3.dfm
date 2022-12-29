@@ -5858,7 +5858,7 @@ object Pembelian3Frm: TPembelian3Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

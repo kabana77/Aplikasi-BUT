@@ -1,5 +1,5 @@
 object Pembelian2Frm: TPembelian2Frm
-  Left = 225
+  Left = 226
   Top = 242
   Width = 1290
   Height = 679
@@ -293,7 +293,7 @@ object Pembelian2Frm: TPembelian2Frm
       Top = 50
       Width = 1194
       Height = 561
-      ActivePage = TabSheet1
+      ActivePage = tsInput
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

@@ -1,5 +1,5 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 205
+  Left = 206
   Top = 125
   Width = 1382
   Height = 784

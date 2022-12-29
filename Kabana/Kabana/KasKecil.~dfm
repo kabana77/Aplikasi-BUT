@@ -293,7 +293,7 @@ object KasKecilFrm: TKasKecilFrm
       Top = 50
       Width = 1197
       Height = 561
-      ActivePage = TabSheet1
+      ActivePage = tsInput
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

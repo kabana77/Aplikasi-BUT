@@ -1,8 +1,8 @@
 object DT2Frm: TDT2Frm
-  Left = 231
-  Top = 196
-  Width = 1291
-  Height = 679
+  Left = 2
+  Top = 2
+  Width = 1084
+  Height = 364
   Caption = 'Daftar Tagihan'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object DT2Frm: TDT2Frm
     Left = 0
     Top = 0
     Width = 40
-    Height = 640
+    Height = 325
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object DT2Frm: TDT2Frm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1195
-    Height = 640
+    Width = 988
+    Height = 325
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object DT2Frm: TDT2Frm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1195
+      Width = 988
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object DT2Frm: TDT2Frm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 611
-      Width = 1195
+      Top = 296
+      Width = 988
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object DT2Frm: TDT2Frm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 726
+        Width = 519
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object DT2Frm: TDT2Frm
         end
       end
       object pRight2: TPanel
-        Left = 1148
+        Left = 941
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object DT2Frm: TDT2Frm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1195
-      Height = 561
+      Width = 988
+      Height = 246
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -1957,7 +1957,7 @@ object DT2Frm: TDT2Frm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1187
+          Width = 980
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -1976,8 +1976,8 @@ object DT2Frm: TDT2Frm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1187
-          Height = 500
+          Width = 980
+          Height = 185
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -6886,7 +6886,7 @@ object DT2Frm: TDT2Frm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1187
+          Width = 980
           Height = 145
           Align = alTop
           BevelOuter = bvNone
@@ -7411,10 +7411,10 @@ object DT2Frm: TDT2Frm
           end
         end
         object pMaster2: TPanel
-          Left = 1002
+          Left = 795
           Top = 145
           Width = 185
-          Height = 388
+          Height = 73
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -7463,8 +7463,8 @@ object DT2Frm: TDT2Frm
         object PageControl2: TPageControl
           Left = 0
           Top = 145
-          Width = 1002
-          Height = 388
+          Width = 795
+          Height = 73
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -7480,8 +7480,8 @@ object DT2Frm: TDT2Frm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 994
-              Height = 360
+              Width = 787
+              Height = 45
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISHADIAH;CheckBox;1;0')
@@ -7554,7 +7554,7 @@ object DT2Frm: TDT2Frm
         object pTop2: TPanel
           Left = 0
           Top = 0
-          Width = 1187
+          Width = 980
           Height = 58
           Align = alTop
           Alignment = taLeftJustify
@@ -7609,8 +7609,8 @@ object DT2Frm: TDT2Frm
         object dbGrid2: TwwDBGrid
           Left = 0
           Top = 58
-          Width = 1187
-          Height = 475
+          Width = 980
+          Height = 160
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -7686,10 +7686,10 @@ object DT2Frm: TDT2Frm
     end
   end
   object pRight: TPanel
-    Left = 1235
+    Left = 1028
     Top = 0
     Width = 40
-    Height = 640
+    Height = 325
     Align = alRight
     BevelOuter = bvNone
     Color = 23296

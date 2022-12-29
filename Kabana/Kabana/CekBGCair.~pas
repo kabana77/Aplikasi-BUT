@@ -873,13 +873,18 @@ procedure TCekBGCairFrm.Label34Click(Sender: TObject);
 begin
   if vCanUnPost then
   begin
+    DMFrm.vcatatan:='';
+    if InputQuery('Catatan','Alasan Unpost : ',DMFrm.vcatatan) then
+    begin
      vno_reg:=qBMasterNO_REG_OS.AsFloat;
      procUnpost.Close;
      procUnpost.ParamByName('pno_reg').AsFloat:=qBMasterNO_REG_OS.AsFloat;
      procUnpost.ParamByName('pkd_form').AsString:=Name;
+     procUnpost.ParamByName('pcatatan').AsString:=DMFrm.vcatatan;
      procUnpost.ExecProc;
      qBMaster.Close;
      qBMaster.Open;
+    end;
   end
   else
     ShowMessage('Maaf, anda tidak punya hak UNPOST bukti ini !');

@@ -2193,6 +2193,7 @@ begin
   qBDetail.Close;
   qBDetail.Open;                                                            //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TPenyelesaianWasteFrm.qBMasterNewRecord(DataSet: TDataSet);

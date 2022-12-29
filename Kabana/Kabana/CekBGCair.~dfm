@@ -1,6 +1,6 @@
 object CekBGCairFrm: TCekBGCairFrm
-  Left = 255
-  Top = 378
+  Left = 115
+  Top = 235
   Width = 1291
   Height = 679
   Caption = 'Cek BG Cair'
@@ -4428,7 +4428,7 @@ object CekBGCairFrm: TCekBGCairFrm
     Session = DMFrm.OS
     SQL.Strings = (
       'begin'
-      '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM);'
+      '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM, :PCATATAN);'
       'end;')
     Left = 1152
     Top = 203
@@ -4441,6 +4441,11 @@ object CekBGCairFrm: TCekBGCairFrm
       item
         DataType = ftString
         Name = 'PKD_FORM'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PCATATAN'
         ParamType = ptInput
       end>
     CommandStoredProcName = 'PROC_UNPOST_OS:0'

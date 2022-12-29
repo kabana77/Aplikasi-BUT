@@ -832,6 +832,7 @@ begin
   qBDetailX.Open;
   pLeft2.Caption:=FormatFloat('#,#;0',qBDetailXNDATA.AsInteger);
   dbGridD.ColumnByName('JUMLAH').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXJUMLAH.AsFloat);
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TKasKecilFrm.qBMasterNewRecord(DataSet: TDataSet);

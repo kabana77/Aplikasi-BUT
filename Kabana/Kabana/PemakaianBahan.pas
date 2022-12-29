@@ -2449,6 +2449,7 @@ begin
 
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TPemakaianBahanFrm.qBMasterNewRecord(DataSet: TDataSet);

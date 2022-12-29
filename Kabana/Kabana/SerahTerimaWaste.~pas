@@ -2457,6 +2457,9 @@ begin
 
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+
 end;
 
 procedure TSerahTerimaWasteFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2673,8 +2676,6 @@ begin
           qBMaster.Post;
       end;
   end;
-//  if lcdBOM.Visible then
-//    lcdBOM.SetFocus;
 end;
 
 procedure TSerahTerimaWasteFrm.qBDetailAfterScroll(DataSet: TDataSet);

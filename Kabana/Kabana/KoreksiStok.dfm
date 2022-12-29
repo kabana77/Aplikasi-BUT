@@ -336,28 +336,14 @@ object KoreksiStokFrm: TKoreksiStokFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand1: TQRBand
             Left = 38
             Top = 38
@@ -370,19 +356,16 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText38: TQRDBText
               Left = 16
               Top = 8
-              Width = 136
+              Width = 171
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -393,7 +376,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 55.562500000000000000
                 42.333333333333330000
                 21.166666666666670000
-                359.833333333333300000)
+                452.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -409,13 +392,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText39: TQRDBText
               Left = 16
               Top = 29
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -426,7 +408,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 42.333333333333330000
                 76.729166666666670000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -436,13 +418,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText45: TQRDBText
               Left = 16
               Top = 45
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -453,7 +434,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 42.333333333333330000
                 119.062500000000000000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -463,13 +444,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText48: TQRDBText
               Left = 16
               Top = 61
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -480,7 +460,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 42.333333333333330000
                 161.395833333333300000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -490,13 +470,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText12: TQRDBText
               Left = 624
               Top = 40
-              Width = 54
+              Width = 64
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -507,7 +486,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1651.000000000000000000
                 105.833333333333300000
-                142.875000000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -523,7 +502,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText13: TQRDBText
@@ -556,13 +534,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel13: TQRLabel
               Left = 544
               Top = 40
-              Width = 26
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -573,7 +550,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1439.333333333333000000
                 105.833333333333300000
-                68.791666666666670000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -582,13 +559,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel14: TQRLabel
               Left = 544
               Top = 56
-              Width = 34
+              Width = 41
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -599,7 +575,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1439.333333333333000000
                 148.166666666666700000
-                89.958333333333330000)
+                108.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -608,13 +584,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel15: TQRLabel
               Left = 608
               Top = 40
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -625,7 +600,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1608.666666666667000000
                 105.833333333333300000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -634,13 +609,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel16: TQRLabel
               Left = 608
               Top = 56
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -651,7 +625,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1608.666666666667000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -660,13 +634,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel149: TQRLabel
               Left = 544
               Top = 16
-              Width = 27
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -677,7 +650,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1439.333333333333000000
                 42.333333333333330000
-                71.437500000000000000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -686,13 +659,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel165: TQRLabel
               Left = 608
               Top = 16
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -703,7 +675,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 1608.666666666667000000
                 42.333333333333330000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -712,7 +684,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText237: TQRDBText
@@ -745,7 +716,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -762,7 +732,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -774,13 +743,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               113.770833333333300000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText1: TQRDBText
-              Left = 301
+              Left = 286
               Top = 1
-              Width = 138
+              Width = 167
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -789,9 +756,9 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                796.395833333333300000
+                756.708333333333300000
                 2.645833333333333000
-                365.125000000000000000)
+                441.854166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -807,7 +774,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode: TQRLabel
@@ -839,7 +805,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -855,7 +820,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -867,8 +831,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               71.437500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel1: TQRLabel
               Left = 96
@@ -893,7 +855,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel2: TQRLabel
@@ -919,7 +880,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel9: TQRLabel
@@ -945,7 +905,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel11: TQRLabel
@@ -971,7 +930,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel12: TQRLabel
@@ -997,7 +955,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel17: TQRLabel
@@ -1023,7 +980,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel5: TQRLabel
@@ -1049,7 +1005,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1065,7 +1020,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1077,8 +1031,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               42.333333333333330000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText6: TQRDBText
               Left = 96
@@ -1104,7 +1056,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'NO_REG_OS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText7: TQRDBText
@@ -1131,7 +1082,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'KD_LOKASI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRSysData2: TQRSysData
@@ -1155,7 +1105,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Data = qrsDetailNo
               Transparent = False
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText9: TQRDBText
@@ -1183,7 +1132,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Mask = 'DD/MM/YYYY'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText10: TQRDBText
@@ -1210,7 +1158,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText11: TQRDBText
@@ -1237,7 +1184,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText5: TQRDBText
@@ -1264,7 +1210,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1280,19 +1225,16 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel3: TQRLabel
-              Left = 342
+              Left = 336
               Top = 24
-              Width = 56
+              Width = 68
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1301,9 +1243,9 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                904.875000000000000000
+                889.000000000000000000
                 63.500000000000000000
-                148.166666666666700000)
+                179.916666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1312,7 +1254,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD11: TQRDBText
@@ -1345,7 +1286,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD12: TQRDBText
@@ -1378,7 +1318,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD13: TQRDBText
@@ -1411,7 +1350,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD21: TQRDBText
@@ -1444,7 +1382,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD22: TQRDBText
@@ -1477,7 +1414,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD23: TQRDBText
@@ -1510,7 +1446,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD31: TQRDBText
@@ -1543,7 +1478,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD32: TQRDBText
@@ -1576,7 +1510,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD33: TQRDBText
@@ -1609,7 +1542,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD41: TQRDBText
@@ -1642,7 +1574,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD42: TQRDBText
@@ -1675,7 +1606,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD43: TQRDBText
@@ -1708,7 +1638,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr1: TQRExpr
@@ -1743,7 +1672,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB1.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel10: TQRLabel
@@ -1775,7 +1703,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1791,19 +1718,16 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText3: TQRDBText
               Left = 0
               Top = 0
-              Width = 41
+              Width = 47
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1814,7 +1738,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
                 44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
-                108.479166666666700000)
+                124.354166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1824,13 +1748,12 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText4: TQRDBText
-              Left = 613
+              Left = 604
               Top = 0
-              Width = 62
+              Width = 71
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1839,9 +1762,9 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1621.895833333333000000
+                1598.083333333333000000
                 0.000000000000000000
-                164.041666666666700000)
+                187.854166666666700000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True
@@ -1851,7 +1774,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData1: TQRSysData
@@ -1876,7 +1798,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -2015,28 +1936,14 @@ object KoreksiStokFrm: TKoreksiStokFrm
             100.000000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand2: TQRBand
             Left = 38
             Top = 30
@@ -2051,7 +1958,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = PageHeaderBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2063,8 +1969,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               198.437500000000000000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText23: TQRDBText
               Left = 928
@@ -2096,7 +2000,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText24: TQRDBText
@@ -2124,7 +2027,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel21: TQRLabel
@@ -2150,7 +2052,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel22: TQRLabel
@@ -2176,7 +2077,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel23: TQRLabel
@@ -2202,7 +2102,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel24: TQRLabel
@@ -2228,7 +2127,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText25: TQRDBText
@@ -2261,7 +2159,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText26: TQRDBText
@@ -2288,7 +2185,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText27: TQRDBText
@@ -2315,7 +2211,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText28: TQRDBText
@@ -2342,7 +2237,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText29: TQRDBText
@@ -2375,7 +2269,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object QRDBText62: TQRDBText
@@ -2402,7 +2295,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'BANNER1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -2419,7 +2311,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = TitleBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2431,8 +2322,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               169.333333333333300000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText30: TQRDBText
               Left = 928
@@ -2458,7 +2347,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'NO_REFF'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel27: TQRLabel
@@ -2484,7 +2372,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel28: TQRLabel
@@ -2510,7 +2397,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText32: TQRDBText
@@ -2537,7 +2423,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText33: TQRDBText
@@ -2571,7 +2456,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRLabel30: TQRLabel
@@ -2597,7 +2481,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel31: TQRLabel
@@ -2623,7 +2506,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel32: TQRLabel
@@ -2649,7 +2531,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -2665,7 +2546,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2677,8 +2557,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               124.354166666666700000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel45: TQRLabel
               Left = 32
@@ -2703,7 +2581,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel46: TQRLabel
@@ -2729,7 +2606,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel48: TQRLabel
@@ -2755,7 +2631,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel53: TQRLabel
@@ -2781,7 +2656,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel51: TQRLabel
@@ -2807,7 +2681,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel54: TQRLabel
@@ -2833,7 +2706,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel4: TQRLabel
@@ -2859,7 +2731,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel6: TQRLabel
@@ -2885,7 +2756,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel7: TQRLabel
@@ -2911,7 +2781,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel8: TQRLabel
@@ -2937,7 +2806,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel18: TQRLabel
@@ -2963,7 +2831,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel19: TQRLabel
@@ -2989,7 +2856,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel20: TQRLabel
@@ -3015,7 +2881,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel25: TQRLabel
@@ -3041,7 +2906,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel26: TQRLabel
@@ -3067,7 +2931,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel29: TQRLabel
@@ -3093,7 +2956,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel33: TQRLabel
@@ -3119,7 +2981,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel34: TQRLabel
@@ -3145,7 +3006,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel35: TQRLabel
@@ -3171,7 +3031,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel37: TQRLabel
@@ -3197,7 +3056,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel39: TQRLabel
@@ -3223,7 +3081,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3240,7 +3097,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = DetailBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3252,8 +3108,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               55.562500000000000000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText42: TQRDBText
               Left = 32
@@ -3279,7 +3133,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'KD_ITEM'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText43: TQRDBText
@@ -3306,7 +3159,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText49: TQRDBText
@@ -3333,7 +3185,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText51: TQRDBText
@@ -3360,7 +3211,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_D'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText52: TQRDBText
@@ -3387,7 +3237,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlNo: TQRLabel
@@ -3413,7 +3262,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText2: TQRDBText
@@ -3440,7 +3288,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'PPN_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText8: TQRDBText
@@ -3467,7 +3314,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL_NET'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText16: TQRDBText
@@ -3494,7 +3340,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_T'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText17: TQRDBText
@@ -3521,7 +3366,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_A'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText14: TQRDBText
@@ -3548,7 +3392,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_D_HASIL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText15: TQRDBText
@@ -3575,7 +3418,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_T_HASIL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText18: TQRDBText
@@ -3602,7 +3444,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_A_HASIL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText19: TQRDBText
@@ -3629,7 +3470,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_D_INFO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText20: TQRDBText
@@ -3656,7 +3496,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_T_INFO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText21: TQRDBText
@@ -3683,7 +3522,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'QTY_A_INFO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText22: TQRDBText
@@ -3710,7 +3548,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SAT_A'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText31: TQRDBText
@@ -3737,7 +3574,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'RA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3754,7 +3590,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = SummaryBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3766,8 +3601,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               243.416666666666700000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel55: TQRLabel
               Left = 736
@@ -3792,7 +3625,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr11: TQRExpr
@@ -3821,7 +3653,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText59: TQRDBText
@@ -3848,7 +3679,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel68: TQRLabel
@@ -3874,7 +3704,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlTerbilang: TQRLabel
@@ -3900,7 +3729,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr2: TQRExpr
@@ -3929,7 +3757,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.SUB_TOTAL_NET)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr3: TQRExpr
@@ -3958,7 +3785,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.PPN_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText47: TQRDBText
@@ -3991,7 +3817,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText243: TQRDBText
@@ -4024,7 +3849,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText244: TQRDBText
@@ -4057,7 +3881,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText245: TQRDBText
@@ -4090,7 +3913,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText246: TQRDBText
@@ -4123,7 +3945,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText247: TQRDBText
@@ -4156,7 +3977,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText248: TQRDBText
@@ -4189,7 +4009,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText249: TQRDBText
@@ -4222,7 +4041,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText250: TQRDBText
@@ -4255,7 +4073,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText251: TQRDBText
@@ -4288,7 +4105,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText252: TQRDBText
@@ -4321,7 +4137,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText253: TQRDBText
@@ -4354,7 +4169,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -4370,7 +4184,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -4382,8 +4195,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               52.916666666666670000
               2770.187500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText60: TQRDBText
               Left = 0
@@ -4409,7 +4220,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText61: TQRDBText
@@ -4436,7 +4246,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRSysData3: TQRSysData
@@ -4461,7 +4270,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -4586,8 +4394,8 @@ object KoreksiStokFrm: TKoreksiStokFrm
           object DBText2: TDBText
             Left = 8
             Top = 48
-            Width = 50
-            Height = 20
+            Width = 65
+            Height = 19
             AutoSize = True
             DataField = 'NAMA_LOKASI'
             DataSource = dsqBMaster
@@ -5017,8 +4825,8 @@ object KoreksiStokFrm: TKoreksiStokFrm
               object DBText22: TDBText
                 Left = 304
                 Top = 16
-                Width = 57
-                Height = 20
+                Width = 74
+                Height = 19
                 AutoSize = True
                 DataField = 'NAMA_LOKASI'
                 DataSource = DMFrm.dsqLokasi
@@ -5206,28 +5014,14 @@ object KoreksiStokFrm: TKoreksiStokFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand1: TQRBand
             Left = 38
             Top = 38
@@ -5240,14 +5034,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText63: TQRDBText
               Left = 16
@@ -5279,7 +5070,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText64: TQRDBText
@@ -5306,7 +5096,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText65: TQRDBText
@@ -5333,7 +5122,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText66: TQRDBText
@@ -5360,7 +5148,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText67: TQRDBText
@@ -5393,7 +5180,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText68: TQRDBText
@@ -5426,7 +5212,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel69: TQRLabel
@@ -5452,7 +5237,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel70: TQRLabel
@@ -5478,7 +5262,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel71: TQRLabel
@@ -5504,7 +5287,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel72: TQRLabel
@@ -5530,7 +5312,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel166: TQRLabel
@@ -5556,7 +5337,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel167: TQRLabel
@@ -5582,7 +5362,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText238: TQRDBText
@@ -5615,7 +5394,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -5632,7 +5410,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -5644,8 +5421,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               113.770833333333300000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText69: TQRDBText
               Left = 301
@@ -5677,7 +5452,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode2: TQRLabel
@@ -5709,7 +5483,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -5725,7 +5498,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -5737,8 +5509,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               71.437500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel74: TQRLabel
               Left = 96
@@ -5763,7 +5533,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel75: TQRLabel
@@ -5789,7 +5558,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel77: TQRLabel
@@ -5815,7 +5583,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel78: TQRLabel
@@ -5841,7 +5608,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel79: TQRLabel
@@ -5867,7 +5633,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel73: TQRLabel
@@ -5893,7 +5658,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel91: TQRLabel
@@ -5919,7 +5683,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -5936,7 +5699,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRBand4BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -5948,8 +5710,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText74: TQRDBText
               Left = 656
@@ -5975,7 +5735,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText81: TQRDBText
@@ -6008,7 +5767,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText97: TQRDBText
@@ -6041,7 +5799,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText99: TQRDBText
@@ -6068,7 +5825,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText98: TQRDBText
@@ -6095,7 +5851,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2D: TQRLabel
@@ -6127,7 +5882,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6143,14 +5897,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel88: TQRLabel
               Left = 342
@@ -6175,7 +5926,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText83: TQRDBText
@@ -6208,7 +5958,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText84: TQRDBText
@@ -6241,7 +5990,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText85: TQRDBText
@@ -6274,7 +6022,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText86: TQRDBText
@@ -6307,7 +6054,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText87: TQRDBText
@@ -6340,7 +6086,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText88: TQRDBText
@@ -6373,7 +6118,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText89: TQRDBText
@@ -6406,7 +6150,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText90: TQRDBText
@@ -6439,7 +6182,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText91: TQRDBText
@@ -6472,7 +6214,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText92: TQRDBText
@@ -6505,7 +6246,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText93: TQRDBText
@@ -6538,7 +6278,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText94: TQRDBText
@@ -6571,7 +6310,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr14: TQRExpr
@@ -6606,7 +6344,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel89: TQRLabel
@@ -6638,7 +6375,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6654,14 +6390,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText95: TQRDBText
               Left = 0
@@ -6687,7 +6420,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText96: TQRDBText
@@ -6714,7 +6446,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData5: TQRSysData
@@ -6739,7 +6470,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -6755,14 +6485,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               74.083333333333330000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr24: TQRExpr
               Left = 656
@@ -6796,7 +6523,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -6813,14 +6539,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRGroup1BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               1957.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB2.NO_REG_OS'
             FooterBand = QRBand7
             Master = qrMaster2
@@ -6856,7 +6579,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText70: TQRDBText
@@ -6889,7 +6611,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText71: TQRDBText
@@ -6922,7 +6643,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2: TQRLabel
@@ -6954,7 +6674,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -7101,28 +6820,14 @@ object KoreksiStokFrm: TKoreksiStokFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand29: TQRBand
             Left = 37
             Top = 37
@@ -7135,14 +6840,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText204: TQRDBText
               Left = 16
@@ -7174,7 +6876,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText205: TQRDBText
@@ -7201,7 +6902,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText206: TQRDBText
@@ -7228,7 +6928,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText207: TQRDBText
@@ -7255,7 +6954,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText208: TQRDBText
@@ -7288,7 +6986,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText209: TQRDBText
@@ -7321,7 +7018,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel131: TQRLabel
@@ -7347,7 +7043,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel144: TQRLabel
@@ -7373,7 +7068,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel147: TQRLabel
@@ -7399,7 +7093,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel148: TQRLabel
@@ -7425,7 +7118,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel168: TQRLabel
@@ -7451,7 +7143,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel169: TQRLabel
@@ -7477,7 +7168,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText239: TQRDBText
@@ -7510,7 +7200,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7527,7 +7216,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRBand30BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -7539,8 +7227,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               113.770833333333300000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText210: TQRDBText
               Left = 301
@@ -7572,7 +7258,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode3: TQRLabel
@@ -7604,7 +7289,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7620,7 +7304,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7632,8 +7315,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               71.437500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel150: TQRLabel
               Left = 32
@@ -7658,7 +7339,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel151: TQRLabel
@@ -7684,7 +7364,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel158: TQRLabel
@@ -7710,7 +7389,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel159: TQRLabel
@@ -7736,7 +7414,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel160: TQRLabel
@@ -7762,7 +7439,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel162: TQRLabel
@@ -7788,7 +7464,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -7805,7 +7480,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRBand32BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7817,8 +7491,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText217: TQRDBText
               Left = 304
@@ -7850,7 +7522,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText218: TQRDBText
@@ -7883,7 +7554,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText219: TQRDBText
@@ -7910,7 +7580,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText220: TQRDBText
@@ -7937,7 +7606,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo3: TQRLabel
@@ -7969,7 +7637,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText221: TQRDBText
@@ -7996,7 +7663,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8012,14 +7678,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel163: TQRLabel
               Left = 342
@@ -8044,7 +7707,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText223: TQRDBText
@@ -8077,7 +7739,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText224: TQRDBText
@@ -8110,7 +7771,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText225: TQRDBText
@@ -8143,7 +7803,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText226: TQRDBText
@@ -8176,7 +7835,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText227: TQRDBText
@@ -8209,7 +7867,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText228: TQRDBText
@@ -8242,7 +7899,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText229: TQRDBText
@@ -8275,7 +7931,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText230: TQRDBText
@@ -8308,7 +7963,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText231: TQRDBText
@@ -8341,7 +7995,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText232: TQRDBText
@@ -8374,7 +8027,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText233: TQRDBText
@@ -8407,7 +8059,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText234: TQRDBText
@@ -8440,7 +8091,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr76: TQRExpr
@@ -8475,7 +8125,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB3.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel164: TQRLabel
@@ -8507,7 +8156,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8523,14 +8171,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText235: TQRDBText
               Left = 0
@@ -8556,7 +8201,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText236: TQRDBText
@@ -8583,7 +8227,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData8: TQRSysData
@@ -8608,7 +8251,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -8746,28 +8388,14 @@ object KoreksiStokFrm: TKoreksiStokFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand15: TQRBand
             Left = 37
             Top = 37
@@ -8780,14 +8408,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText115: TQRDBText
               Left = 16
@@ -8819,7 +8444,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText121: TQRDBText
@@ -8846,7 +8470,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText137: TQRDBText
@@ -8873,7 +8496,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText138: TQRDBText
@@ -8900,7 +8522,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText139: TQRDBText
@@ -8933,7 +8554,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText140: TQRDBText
@@ -8966,7 +8586,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel97: TQRLabel
@@ -8992,7 +8611,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel98: TQRLabel
@@ -9018,7 +8636,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel100: TQRLabel
@@ -9044,7 +8661,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel101: TQRLabel
@@ -9070,7 +8686,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel172: TQRLabel
@@ -9096,7 +8711,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel173: TQRLabel
@@ -9122,7 +8736,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText241: TQRDBText
@@ -9155,7 +8768,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -9172,7 +8784,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRBand16BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -9184,8 +8795,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               113.770833333333300000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText142: TQRDBText
               Left = 301
@@ -9217,7 +8826,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode5: TQRLabel
@@ -9249,7 +8857,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -9265,7 +8872,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -9277,8 +8883,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               71.437500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel109: TQRLabel
               Left = 32
@@ -9303,7 +8907,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel111: TQRLabel
@@ -9329,7 +8932,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel122: TQRLabel
@@ -9355,7 +8957,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel123: TQRLabel
@@ -9381,7 +8982,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel124: TQRLabel
@@ -9407,7 +9007,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel43: TQRLabel
@@ -9433,7 +9032,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9450,7 +9048,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRBand18BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -9462,8 +9059,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText149: TQRDBText
               Left = 64
@@ -9495,7 +9090,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText150: TQRDBText
@@ -9528,7 +9122,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText151: TQRDBText
@@ -9555,7 +9148,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText152: TQRDBText
@@ -9582,7 +9174,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5D: TQRLabel
@@ -9614,7 +9205,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText153: TQRDBText
@@ -9641,7 +9231,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9657,14 +9246,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel126: TQRLabel
               Left = 342
@@ -9689,7 +9275,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText154: TQRDBText
@@ -9722,7 +9307,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText155: TQRDBText
@@ -9755,7 +9339,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText156: TQRDBText
@@ -9788,7 +9371,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText157: TQRDBText
@@ -9821,7 +9403,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText158: TQRDBText
@@ -9854,7 +9435,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText159: TQRDBText
@@ -9887,7 +9467,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText160: TQRDBText
@@ -9920,7 +9499,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText161: TQRDBText
@@ -9953,7 +9531,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText162: TQRDBText
@@ -9986,7 +9563,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText163: TQRDBText
@@ -10019,7 +9595,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText164: TQRDBText
@@ -10052,7 +9627,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText165: TQRDBText
@@ -10085,7 +9659,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr35: TQRExpr
@@ -10120,7 +9693,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel127: TQRLabel
@@ -10152,7 +9724,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10168,14 +9739,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText166: TQRDBText
               Left = 0
@@ -10201,7 +9769,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText167: TQRDBText
@@ -10228,7 +9795,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData6: TQRSysData
@@ -10253,7 +9819,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -10269,14 +9834,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr51: TQRExpr
               Left = 640
@@ -10310,7 +9872,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10327,14 +9888,11 @@ object KoreksiStokFrm: TKoreksiStokFrm
             AlignToBottom = False
             BeforePrint = QRGroup5BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               1960.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB5.NAMA_PRINSIPAL2'
             FooterBand = QRBand21
             Master = qrMaster5
@@ -10369,7 +9927,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5: TQRLabel
@@ -10401,7 +9958,6 @@ object KoreksiStokFrm: TKoreksiStokFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end

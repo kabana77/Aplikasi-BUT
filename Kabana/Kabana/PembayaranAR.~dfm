@@ -1,5 +1,5 @@
 object PembayaranARFrm: TPembayaranARFrm
-  Left = 274
+  Left = 275
   Top = 186
   Width = 1191
   Height = 679

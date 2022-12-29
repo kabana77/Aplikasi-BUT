@@ -1,6 +1,6 @@
 object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
-  Left = 199
-  Top = 93
+  Left = 223
+  Top = 140
   Width = 1134
   Height = 723
   Caption = 'SerahTerimaWasteFrm'

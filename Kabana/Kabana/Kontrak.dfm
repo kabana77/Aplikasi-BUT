@@ -9980,7 +9980,7 @@ object KontrakFrm: TKontrakFrm
           object Label19: TLabel
             Left = 0
             Top = 274
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

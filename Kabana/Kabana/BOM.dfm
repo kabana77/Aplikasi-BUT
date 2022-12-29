@@ -1,7 +1,7 @@
 object BOMFrm: TBOMFrm
-  Left = 66
-  Top = 0
-  Width = 1111
+  Left = 264
+  Top = 167
+  Width = 1325
   Height = 728
   ActiveControl = dbGrid1
   Caption = 'Build Of Material (BOM)'
@@ -35,7 +35,7 @@ object BOMFrm: TBOMFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1015
+    Width = 1229
     Height = 689
     Align = alClient
     BevelOuter = bvNone
@@ -59,7 +59,7 @@ object BOMFrm: TBOMFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1015
+      Width = 1229
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -79,7 +79,7 @@ object BOMFrm: TBOMFrm
     object pBottom: TPanel
       Left = 0
       Top = 660
-      Width = 1015
+      Width = 1229
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -228,7 +228,7 @@ object BOMFrm: TBOMFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 546
+        Width = 760
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -279,7 +279,7 @@ object BOMFrm: TBOMFrm
         end
       end
       object pRight2: TPanel
-        Left = 968
+        Left = 1182
         Top = 1
         Width = 46
         Height = 27
@@ -292,7 +292,7 @@ object BOMFrm: TBOMFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1015
+      Width = 1229
       Height = 610
       ActivePage = TabSheet1
       Align = alClient
@@ -1958,7 +1958,7 @@ object BOMFrm: TBOMFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1007
+          Width = 1221
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -1977,7 +1977,7 @@ object BOMFrm: TBOMFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1007
+          Width = 1221
           Height = 549
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
@@ -7129,7 +7129,7 @@ object BOMFrm: TBOMFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1007
+          Width = 1221
           Height = 100
           Align = alTop
           BevelOuter = bvNone
@@ -7472,7 +7472,7 @@ object BOMFrm: TBOMFrm
           end
         end
         object pMaster2: TPanel
-          Left = 599
+          Left = 813
           Top = 100
           Width = 408
           Height = 482
@@ -7568,7 +7568,7 @@ object BOMFrm: TBOMFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 100
-          Width = 599
+          Width = 813
           Height = 482
           ActivePage = tsInputD
           Align = alClient
@@ -7613,7 +7613,7 @@ object BOMFrm: TBOMFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 591
+              Width = 805
               Height = 137
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -7705,7 +7705,7 @@ object BOMFrm: TBOMFrm
             object Panel2: TPanel
               Left = 0
               Top = 137
-              Width = 591
+              Width = 805
               Height = 41
               Align = alTop
               TabOrder = 4
@@ -7729,7 +7729,7 @@ object BOMFrm: TBOMFrm
             object wwDBGrid1: TwwDBGrid
               Left = 0
               Top = 178
-              Width = 591
+              Width = 805
               Height = 276
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -7874,7 +7874,7 @@ object BOMFrm: TBOMFrm
     end
   end
   object pRight: TPanel
-    Left = 1055
+    Left = 1269
     Top = 0
     Width = 40
     Height = 689
@@ -8333,6 +8333,10 @@ object BOMFrm: TBOMFrm
       FieldName = 'LSIZE15'
       Size = 50
     end
+    object qBDetailKURS: TFloatField
+      FieldName = 'KURS'
+      Required = True
+    end
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
@@ -8426,6 +8430,10 @@ object BOMFrm: TBOMFrm
     object qBMasterKD_PRODUKSI: TStringField
       FieldName = 'KD_PRODUKSI'
       Size = 128
+    end
+    object qBMasterTEMP_KURS: TFloatField
+      FieldName = 'TEMP_KURS'
+      Required = True
     end
   end
   object dsqBMaster: TwwDataSource
@@ -8647,6 +8655,10 @@ object BOMFrm: TBOMFrm
       FieldName = 'JENIS'
       Required = True
       Size = 12
+    end
+    object qOutletKURS: TFloatField
+      FieldName = 'KURS'
+      Required = True
     end
   end
   object qItem: TOraQuery

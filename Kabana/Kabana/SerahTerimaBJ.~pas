@@ -973,6 +973,15 @@ type
     qBDetail4SAT_D: TStringField;
     qBDetail4QTY_D: TFloatField;
     qBDetail4KG_D: TFloatField;
+    TabSheet7: TTabSheet;
+    dbGridJurnal: TwwDBGrid;
+    wwIButton9: TwwIButton;
+    dsqJurnal: TwwDataSource;
+    qJurnal: TSmartQuery;
+    qJurnalKD_PERK: TStringField;
+    qJurnalNAMA_PERKIRAAN: TStringField;
+    qJurnalDEBET: TFloatField;
+    qJurnalKREDIT: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1118,6 +1127,7 @@ type
     procedure qBDetail3BeforeInsert(DataSet: TDataSet);
     procedure tsInputD3Show(Sender: TObject);
     procedure TabSheet4Show(Sender: TObject);
+    procedure TabSheet7Show(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -2508,6 +2518,7 @@ begin
   qBom.EnableControls;
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TSerahTerimaBJFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -3734,6 +3745,25 @@ begin
   qBDetail4.Close;
   qBDetail4.ParamByName('NO_REG_OS').AsFloat:=qBMasterNO_REG_OS.AsFloat;
   qBDetail4.Open;
+end;
+
+procedure TSerahTerimaBJFrm.TabSheet7Show(Sender: TObject);
+var
+  vdebet, vkredit : real;
+begin
+  qJurnal.Close;
+  qJurnal.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+  qJurnal.Open;
+  vdebet:=0;
+  vkredit:=0;
+  while not qJurnal.Eof do
+  begin
+      vdebet:=vdebet+qJurnalDEBET.AsFloat;
+      vkredit:=vkredit+qJurnalKREDIT.AsFloat;
+      qJurnal.Next;
+  end;
+  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
+  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
 end;
 
 end.

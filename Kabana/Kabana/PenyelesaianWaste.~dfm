@@ -293,7 +293,7 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
       Top = 50
       Width = 1194
       Height = 561
-      ActivePage = TabSheet1
+      ActivePage = tsInput
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

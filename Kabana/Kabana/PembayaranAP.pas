@@ -954,6 +954,7 @@ begin
       dbGridD.ColumnByName('BAYAR_TT').ReadOnly:=True;
       dbGridD.ColumnByName('BAYAR_PENDING').ReadOnly:=False;
     end;
+    if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TPembayaranAPFrm.lcLokasiEnter(Sender: TObject);

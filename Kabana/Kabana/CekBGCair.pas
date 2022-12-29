@@ -801,6 +801,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if PageControl2.ActivePage=tsInputDJurnal then
     tsInputDJurnalShow(Nil);
+    if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TCekBGCairFrm.qBMasterNewRecord(DataSet: TDataSet);
