@@ -1997,10 +1997,8 @@ object DTFrm: TDTFrm
             'BAYAR'#9'10'#9'BAYAR'#9'F'
             'SISA_TAGIHAN'#9'15'#9'SISA'#9'F'
             'KETERANGAN'#9'35'#9'KETERANGAN'#9'F'
-            'OPR_INSERT'#9'12'#9'INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'12'#9'UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'15'#9'INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'15'#9'UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2025,7 +2023,7 @@ object DTFrm: TDTFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -11345,6 +11343,13 @@ object DTFrm: TDTFrm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

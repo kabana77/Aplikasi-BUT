@@ -2431,10 +2431,10 @@ object POFrm: TPOFrm
             'NILAI_FAKTUR'#9'12'#9'Nilai'#9'F'#9'T O T A L'
             'BAYAR'#9'12'#9'CD/ DN'#9'F'#9'T O T A L'
             'NILAI_TAGIHAN'#9'12'#9'Tagihan'#9'F'#9'T O T A L'
-            'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
-            'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2459,7 +2459,7 @@ object POFrm: TPOFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -19812,6 +19812,13 @@ object POFrm: TPOFrm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -20532,6 +20539,13 @@ object POFrm: TPOFrm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

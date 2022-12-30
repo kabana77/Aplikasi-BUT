@@ -293,7 +293,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       Top = 50
       Width = 1260
       Height = 574
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
@@ -2232,10 +2232,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             'COLOR'#9'20'#9'COLOR'#9'F'
             'ITEM'#9'20'#9'ITEM'#9'F'
             'STYLE'#9'30'#9'STYLE'#9'F'
-            'OPR_INSERT'#9'20'#9'INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'20'#9'UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'18'#9'INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'18'#9'UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'20'#9'OPR INSERT'#9'F'#9'LOG USER'
+            'TGL_INSERT'#9'18'#9'TGL INSERT'#9'F'#9'LOG USER')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2260,7 +2258,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5090,7 +5088,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Label19: TLabel
             Left = 0
             Top = 235
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -13346,6 +13344,13 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object qBMasterSIZE15: TFloatField
       FieldName = 'SIZE15'
       DisplayFormat = '#,#;(#,#);-'
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

@@ -293,7 +293,7 @@ object Pembelian3Frm: TPembelian3Frm
       Top = 50
       Width = 1415
       Height = 561
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
@@ -5858,7 +5858,7 @@ object Pembelian3Frm: TPembelian3Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -20007,8 +20007,8 @@ object Pembelian3Frm: TPembelian3Frm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1116
-    Top = 96
+    Left = 1044
+    Top = 56
     ParamData = <
       item
         DataType = ftFloat
@@ -20291,6 +20291,13 @@ object Pembelian3Frm: TPembelian3Frm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

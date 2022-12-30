@@ -1,6 +1,6 @@
 object BOMFrm: TBOMFrm
-  Left = 264
-  Top = 167
+  Left = 284
+  Top = 238
   Width = 1325
   Height = 728
   ActiveControl = dbGrid1
@@ -1990,7 +1990,7 @@ object BOMFrm: TBOMFrm
             'NO_REFF'#9'7'#9'NOMOR'#9'F'#9'KONTRAK'
             'NO_REFF2'#9'20'#9'NO. REFF'#9'F'#9'KONTRAK'
             'KD_PRODUKSI'#9'15'#9'KD PROD'#9'F'#9'KONTRAK'
-            'ID_BUYER'#9'9'#9'No. Id'#9'F'#9'CUSTOMER'
+            'ID_BUYER'#9'9'#9'No. ID'#9'F'#9'CUSTOMER'
             'NAMA_BUYER'#9'33'#9'Nama'#9'F'#9'CUSTOMER'
             'NEGARA'#9'10'#9'Negara'#9'F'#9'CUSTOMER'
             'NO_BOM'#9'7'#9'BOM'#9'F'#9'BARANG JADI'
@@ -2003,10 +2003,8 @@ object BOMFrm: TBOMFrm
             'HRG'#9'10'#9'HARGA'#9'F'
             'MU'#9'3'#9'$$'#9'F'
             'KETERANGAN'#9'25'#9'KETERANGAN'#9'F'
-            'OPR_INSERT'#9'15'#9'OPR_INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'15'#9'OPR_UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'15'#9'TGL_INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'15'#9'TGL_UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'15'#9'OPR INSERT'#9'F'#9'LOG USER'
+            'TGL_INSERT'#9'15'#9'TGL INSERT'#9'F'#9'LOG USER')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2031,7 +2029,7 @@ object BOMFrm: TBOMFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -8333,6 +8331,10 @@ object BOMFrm: TBOMFrm
       FieldName = 'LSIZE15'
       Size = 50
     end
+    object qBDetailKURS: TFloatField
+      FieldName = 'KURS'
+      Required = True
+    end
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
@@ -8430,6 +8432,13 @@ object BOMFrm: TBOMFrm
     object qBMasterTEMP_KURS: TFloatField
       FieldName = 'TEMP_KURS'
       Required = True
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

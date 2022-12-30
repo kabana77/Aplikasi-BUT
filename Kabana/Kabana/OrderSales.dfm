@@ -1,7 +1,7 @@
 object OrderSalesFrm: TOrderSalesFrm
-  Left = 432
-  Top = 214
-  Width = 948
+  Left = 291
+  Top = 180
+  Width = 1375
   Height = 583
   Caption = 'OrderSalesFrm'
   Color = clWindow
@@ -34,7 +34,7 @@ object OrderSalesFrm: TOrderSalesFrm
   object pCenter: TPanel
     Left = 4
     Top = 0
-    Width = 924
+    Width = 1351
     Height = 544
     Align = alClient
     BevelOuter = bvNone
@@ -58,7 +58,7 @@ object OrderSalesFrm: TOrderSalesFrm
     object pBottom: TPanel
       Left = 0
       Top = 501
-      Width = 924
+      Width = 1351
       Height = 43
       Align = alBottom
       BevelInner = bvLowered
@@ -207,7 +207,7 @@ object OrderSalesFrm: TOrderSalesFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 455
+        Width = 882
         Height = 41
         Align = alClient
         ButtonHeight = 36
@@ -259,17 +259,16 @@ object OrderSalesFrm: TOrderSalesFrm
           OnClick = tbExportClick
         end
         object ToolButton5: TToolButton
-          Left = 0
+          Left = 308
           Top = 2
           Width = 8
           Caption = 'ToolButton5'
           ImageIndex = 9
-          Wrap = True
           Style = tbsSeparator
         end
         object tbPrint11: TToolButton
-          Left = 0
-          Top = 43
+          Left = 316
+          Top = 2
           Caption = 'Order'
           Grouped = True
           ImageIndex = 0
@@ -277,24 +276,24 @@ object OrderSalesFrm: TOrderSalesFrm
           OnClick = tbPrint11Click
         end
         object tbPrint12: TToolButton
-          Left = 60
-          Top = 43
+          Left = 376
+          Top = 2
           Caption = 'Surat Jalan'
           Grouped = True
           ImageIndex = 0
           OnClick = tbPrint12Click
         end
         object tbPrint13: TToolButton
-          Left = 120
-          Top = 43
+          Left = 436
+          Top = 2
           Caption = 'Faktur'
           Grouped = True
           ImageIndex = 0
           OnClick = tbPrint13Click
         end
         object tbPrint14: TToolButton
-          Left = 180
-          Top = 43
+          Left = 496
+          Top = 2
           Caption = 'Pack List'
           Grouped = True
           ImageIndex = 0
@@ -303,7 +302,7 @@ object OrderSalesFrm: TOrderSalesFrm
         end
       end
       object pRight2: TPanel
-        Left = 877
+        Left = 1304
         Top = 1
         Width = 46
         Height = 41
@@ -316,7 +315,7 @@ object OrderSalesFrm: TOrderSalesFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 924
+      Width = 1351
       Height = 451
       ActivePage = TabSheet1
       Align = alClient
@@ -2580,7 +2579,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 916
+          Width = 1343
           Height = 49
           Align = alTop
           Alignment = taLeftJustify
@@ -2615,7 +2614,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 49
-          Width = 916
+          Width = 1343
           Height = 374
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
@@ -2643,10 +2642,10 @@ object OrderSalesFrm: TOrderSalesFrm
             'NIK'#9'20'#9'NO REFF'#9'F'#9'DATA KONTRAK'
             'NO_REFF'#9'15'#9'NO KONTRAK'#9'F'#9'DATA KONTRAK'
             'JENIS'#9'12'#9'JENIS'#9'F'#9'DATA KONTRAK'
-            'OPR_INSERT'#9'12'#9'INSERT BY'#9'T'#9'LOG USER'
-            'TGL_INSERT'#9'15'#9'TGL INSERT'#9'T'#9'LOG USER'
-            'OPR_UPDATE'#9'12'#9'UPDATE BY'#9'T'#9'LOG USER'
-            'TGL_UPDATE'#9'15'#9'TGL UPDATE'#9'T'#9'LOG USER')
+            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2671,7 +2670,7 @@ object OrderSalesFrm: TOrderSalesFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -8354,7 +8353,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 916
+          Width = 1343
           Height = 185
           Align = alTop
           BevelOuter = bvNone
@@ -9317,7 +9316,7 @@ object OrderSalesFrm: TOrderSalesFrm
           end
         end
         object pMaster2: TPanel
-          Left = 731
+          Left = 1158
           Top = 185
           Width = 185
           Height = 238
@@ -9335,7 +9334,7 @@ object OrderSalesFrm: TOrderSalesFrm
           object Label19: TLabel
             Left = 0
             Top = 184
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -9750,7 +9749,7 @@ object OrderSalesFrm: TOrderSalesFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 185
-          Width = 731
+          Width = 1158
           Height = 238
           ActivePage = tsInputD
           Align = alClient
@@ -9767,7 +9766,7 @@ object OrderSalesFrm: TOrderSalesFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 723
+              Width = 1150
               Height = 210
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -9804,12 +9803,12 @@ object OrderSalesFrm: TOrderSalesFrm
               ParentFont = False
               RowHeightPercent = 112
               TabOrder = 0
-              TitleAlignment = taLeftJustify
+              TitleAlignment = taCenter
               TitleFont.Charset = ANSI_CHARSET
               TitleFont.Color = clWindowText
               TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
+              TitleFont.Name = 'Arial'
+              TitleFont.Style = [fsBold]
               TitleLines = 3
               TitleButtons = False
               UseTFields = False
@@ -9909,7 +9908,7 @@ object OrderSalesFrm: TOrderSalesFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 723
+              Width = 1150
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -10018,7 +10017,7 @@ object OrderSalesFrm: TOrderSalesFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 723
+              Width = 1150
               Height = 161
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
@@ -25421,7 +25420,7 @@ object OrderSalesFrm: TOrderSalesFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 924
+      Width = 1351
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -25440,7 +25439,7 @@ object OrderSalesFrm: TOrderSalesFrm
     end
   end
   object pRight: TPanel
-    Left = 928
+    Left = 1355
     Top = 0
     Width = 4
     Height = 544
@@ -25455,8 +25454,8 @@ object OrderSalesFrm: TOrderSalesFrm
       'select * from vorder_sales_new'
       '/*select * from vorder_sales*/')
     ReadOnly = True
-    Left = 1379
-    Top = 8
+    Left = 1299
+    Top = 176
     object qB1NO_REG_OS: TFloatField
       DisplayLabel = 'NO SJ'
       DisplayWidth = 10
@@ -25578,6 +25577,13 @@ object OrderSalesFrm: TOrderSalesFrm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -25586,8 +25592,8 @@ object OrderSalesFrm: TOrderSalesFrm
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
-    Left = 760
-    Top = 288
+    Left = 744
+    Top = 208
     object qBXNDATA: TFloatField
       FieldName = 'NDATA'
     end
@@ -26052,8 +26058,8 @@ object OrderSalesFrm: TOrderSalesFrm
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from vdaftar_outlet_look')
-    Left = 817
-    Top = 304
+    Left = 833
+    Top = 280
     object qOutletID_OUTLET: TStringField
       DisplayLabel = 'ID CUSTOMER'
       DisplayWidth = 6
@@ -26545,6 +26551,13 @@ object OrderSalesFrm: TOrderSalesFrm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -26561,8 +26574,8 @@ object OrderSalesFrm: TOrderSalesFrm
       'where kd_parent=:pkd_parent'
       ''
       '/*select * from vdaftar_item_bj*/')
-    Left = 864
-    Top = 331
+    Left = 776
+    Top = 347
     ParamData = <
       item
         DataType = ftUnknown
@@ -29422,8 +29435,8 @@ object OrderSalesFrm: TOrderSalesFrm
   end
   object dsqB8: TwwDataSource
     DataSet = qB8
-    Left = 1091
-    Top = 152
+    Left = 1107
+    Top = 160
   end
   object qLookNoSeri: TSmartQuery
     Session = DMFrm.OS

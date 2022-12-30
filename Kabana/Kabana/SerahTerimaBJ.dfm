@@ -2,7 +2,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   Left = 223
   Top = 154
   Width = 1356
-  Height = 692
+  Height = 689
   Caption = 'Serah Terima Barang Jadi'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 653
+    Height = 650
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -35,7 +35,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 40
     Top = 0
     Width = 1260
-    Height = 653
+    Height = 650
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -77,7 +77,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 624
+      Top = 621
       Width = 1260
       Height = 29
       Align = alBottom
@@ -292,7 +292,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       Left = 0
       Top = 50
       Width = 1260
-      Height = 574
+      Height = 571
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2217,7 +2217,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Left = 0
           Top = 33
           Width = 1252
-          Height = 513
+          Height = 510
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -2232,10 +2232,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             'COLOR'#9'20'#9'COLOR'#9'F'
             'ITEM'#9'20'#9'ITEM'#9'F'
             'STYLE'#9'30'#9'STYLE'#9'F'
-            'OPR_INSERT'#9'20'#9'INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'20'#9'UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'18'#9'INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'18'#9'UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'20'#9'OPR INSERT'#9'F'#9'LOG USER'
+            'TGL_INSERT'#9'18'#9'TGL INSERT'#9'F'#9'LOG USER')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2260,7 +2258,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5076,7 +5074,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Left = 1067
           Top = 257
           Width = 185
-          Height = 289
+          Height = 286
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5090,7 +5088,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           object Label19: TLabel
             Left = 0
             Top = 235
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5157,7 +5155,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Left = 0
           Top = 257
           Width = 1067
-          Height = 289
+          Height = 286
           ActivePage = tsInputD3
           Align = alClient
           TabOrder = 2
@@ -5418,7 +5416,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Left = 0
               Top = 49
               Width = 1059
-              Height = 212
+              Height = 209
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -12441,7 +12439,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 1300
     Top = 0
     Width = 40
-    Height = 653
+    Height = 650
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -13346,6 +13344,13 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object qBMasterSIZE15: TFloatField
       FieldName = 'SIZE15'
       DisplayFormat = '#,#;(#,#);-'
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

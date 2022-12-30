@@ -2419,7 +2419,11 @@ object Pembelian2Frm: TPembelian2Frm
             'QTY_D'#9'10'#9'QTY'#9'F'#9'ITEM'
             'SAT_D'#9'12'#9'SATUAN'#9'F'#9'ITEM'
             'KD_LOKASI'#9'4'#9'KODE'#9'F'#9'LOKASI GUDANG'
-            'NAMA_LOKASI'#9'15'#9'NAMA'#9'F'#9'LOKASI GUDANG')
+            'NAMA_LOKASI'#9'15'#9'NAMA'#9'F'#9'LOKASI GUDANG'
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2444,7 +2448,7 @@ object Pembelian2Frm: TPembelian2Frm
           ReadOnly = True
           RowHeightPercent = 193
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5773,7 +5777,7 @@ object Pembelian2Frm: TPembelian2Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -19425,6 +19429,22 @@ object Pembelian2Frm: TPembelian2Frm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+      Required = True
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      Required = True
+      Size = 50
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -19910,8 +19930,8 @@ object Pembelian2Frm: TPembelian2Frm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1116
-    Top = 96
+    Left = 1044
+    Top = 64
     ParamData = <
       item
         DataType = ftFloat
@@ -20193,6 +20213,13 @@ object Pembelian2Frm: TPembelian2Frm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

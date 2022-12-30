@@ -1841,9 +1841,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
             'ISBATAL'#9'4'#9'Batal'#9'F'#9'STATUS'
             'SUB_TOTAL'#9'10'#9'SUB_TOTAL'#9'F'
             'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
-            'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_INSERT'#9'18'#9'Operator'#9'T'#9'EDITING')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -1868,7 +1866,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -4560,7 +4558,7 @@ object KoreksiStokFrm: TKoreksiStokFrm
           object Label19: TLabel
             Left = 0
             Top = 390
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -10554,8 +10552,8 @@ object KoreksiStokFrm: TKoreksiStokFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1108
-    Top = 96
+    Left = 1068
+    Top = 64
     ParamData = <
       item
         DataType = ftFloat

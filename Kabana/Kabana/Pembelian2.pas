@@ -1271,6 +1271,12 @@ type
     DBText8: TDBText;
     qBMasterNO_BUKTI: TStringField;
     qB1NO_BUKTI: TStringField;
+    qBMasterTGL_APPROVE: TDateTimeField;
+    qBMasterOPR_APPROVE: TStringField;
+    qB1TGL_INSERT: TDateTimeField;
+    qB1TGL_APPROVE: TDateTimeField;
+    qB1OPR_INSERT: TStringField;
+    qB1OPR_APPROVE: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -3037,6 +3043,8 @@ begin
           DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
           DMFrm.Fno_Bukti.Open;
           qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+          qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
         end;
       end;
   end;

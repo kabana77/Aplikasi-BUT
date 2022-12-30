@@ -293,7 +293,7 @@ object PembelianFrm: TPembelianFrm
       Top = 50
       Width = 1194
       Height = 561
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
@@ -8132,7 +8132,7 @@ object PembelianFrm: TPembelianFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 47
             Height = 13
             Align = alBottom
             Caption = 'Kelompok'
@@ -22523,6 +22523,13 @@ object PembelianFrm: TPembelianFrm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

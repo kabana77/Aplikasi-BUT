@@ -2019,10 +2019,8 @@ object PembayaranARFrm: TPembayaranARFrm
             'DIBUKUKAN'#9'10'#9'DIBUKUKAN'#9'F'
             'ADJ'#9'12'#9'ADJUSTMENT'#9'F'
             'SISA'#9'10'#9'SISA'#9'F'
-            'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
-            'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'LOG INPUT')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2047,7 +2045,7 @@ object PembayaranARFrm: TPembayaranARFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5073,7 +5071,7 @@ object PembayaranARFrm: TPembayaranARFrm
                 ParentFont = False
                 RowHeightPercent = 112
                 TabOrder = 0
-                TitleAlignment = taLeftJustify
+                TitleAlignment = taCenter
                 TitleFont.Charset = ANSI_CHARSET
                 TitleFont.Color = clWindowText
                 TitleFont.Height = -11

@@ -1,6 +1,6 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 206
-  Top = 125
+  Left = 379
+  Top = 224
   Width = 1382
   Height = 784
   Caption = 'PemakaianBahanFrm'
@@ -2234,10 +2234,10 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             'SAT_D'#9'6'#9'SAT'#9'F'#9'MATERIAL'
             'QTY_D'#9'6'#9'JUMLAH'#9'F'#9'MATERIAL'
             'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F'
-            'OPR_INSERT'#9'20'#9'INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'20'#9'UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'18'#9'INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'18'#9'UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2262,7 +2262,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5185,7 +5185,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label19: TLabel
             Left = 0
             Top = 319
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -12623,6 +12623,13 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     object qB1TGL_UPDATE: TDateTimeField
       FieldName = 'TGL_UPDATE'
     end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -13238,6 +13245,13 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     object qBMasterSIZE15: TFloatField
       FieldName = 'SIZE15'
       DisplayFormat = '#,#;(#,#);-'
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

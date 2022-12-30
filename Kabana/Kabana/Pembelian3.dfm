@@ -2429,10 +2429,10 @@ object Pembelian3Frm: TPembelian3Frm
             'KETERANGAN2'#9'25'#9'KETERANGAN'#9'F'
             'KD_LOKASI'#9'12'#9'KODE'#9'F'#9'LOKASI GUDANG'
             'NAMA_LOKASI'#9'15'#9'NAMA'#9'F'#9'LOKASI GUDANG'
-            'OPR_INSERT'#9'15'#9'OPR_INSERT'#9'F'#9'LOG USER'
-            'OPR_UPDATE'#9'15'#9'OPR_UPDATE'#9'F'#9'LOG USER'
-            'TGL_INSERT'#9'11'#9'TGL_INSERT'#9'F'#9'LOG TANGGAL'
-            'TGL_UPDATE'#9'11'#9'TGL_UPDATE'#9'F'#9'LOG TANGGAL')
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2457,7 +2457,7 @@ object Pembelian3Frm: TPembelian3Frm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -5858,7 +5858,7 @@ object Pembelian3Frm: TPembelian3Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -19520,6 +19520,13 @@ object Pembelian3Frm: TPembelian3Frm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -20007,8 +20014,8 @@ object Pembelian3Frm: TPembelian3Frm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1116
-    Top = 96
+    Left = 1044
+    Top = 56
     ParamData = <
       item
         DataType = ftFloat
@@ -20291,6 +20298,13 @@ object Pembelian3Frm: TPembelian3Frm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

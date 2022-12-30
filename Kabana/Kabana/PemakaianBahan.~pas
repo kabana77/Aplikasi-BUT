@@ -933,6 +933,8 @@ type
     qJurnalDEBET: TFloatField;
     qJurnalKREDIT: TFloatField;
     dsqJurnal: TwwDataSource;
+    qBMasterTGL_APPROVE: TDateTimeField;
+    qBMasterOPR_APPROVE: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2449,6 +2451,7 @@ begin
 
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TPemakaianBahanFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2548,6 +2551,11 @@ begin
       begin
           ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
           Abort;
+      end
+      else
+      begin
+          qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
       end;
   end;
 end;

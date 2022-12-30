@@ -1,8 +1,8 @@
 object DT2Frm: TDT2Frm
-  Left = 634
+  Left = 583
   Top = 180
-  Width = 1084
-  Height = 364
+  Width = 1135
+  Height = 472
   Caption = 'Daftar Tagihan'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object DT2Frm: TDT2Frm
     Left = 0
     Top = 0
     Width = 40
-    Height = 325
+    Height = 433
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object DT2Frm: TDT2Frm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 988
-    Height = 325
+    Width = 1039
+    Height = 433
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object DT2Frm: TDT2Frm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 988
+      Width = 1039
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object DT2Frm: TDT2Frm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 296
-      Width = 988
+      Top = 404
+      Width = 1039
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object DT2Frm: TDT2Frm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 519
+        Width = 570
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object DT2Frm: TDT2Frm
         end
       end
       object pRight2: TPanel
-        Left = 941
+        Left = 992
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object DT2Frm: TDT2Frm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 988
-      Height = 246
+      Width = 1039
+      Height = 354
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -1957,7 +1957,7 @@ object DT2Frm: TDT2Frm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 980
+          Width = 1031
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -1976,8 +1976,8 @@ object DT2Frm: TDT2Frm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 980
-          Height = 185
+          Width = 1031
+          Height = 293
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -1997,10 +1997,10 @@ object DT2Frm: TDT2Frm
             'RETUR'#9'10'#9'RETUR'#9'F'
             'BAYAR'#9'10'#9'BAYAR'#9'F'
             'SISA_TAGIHAN'#9'13'#9'SISA TAGIHAN'#9'F'
-            'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
-            'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2025,7 +2025,7 @@ object DT2Frm: TDT2Frm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -6886,7 +6886,7 @@ object DT2Frm: TDT2Frm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 980
+          Width = 1031
           Height = 145
           Align = alTop
           BevelOuter = bvNone
@@ -7411,10 +7411,10 @@ object DT2Frm: TDT2Frm
           end
         end
         object pMaster2: TPanel
-          Left = 795
+          Left = 846
           Top = 145
           Width = 185
-          Height = 73
+          Height = 181
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -7463,8 +7463,8 @@ object DT2Frm: TDT2Frm
         object PageControl2: TPageControl
           Left = 0
           Top = 145
-          Width = 795
-          Height = 73
+          Width = 846
+          Height = 181
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -7554,7 +7554,7 @@ object DT2Frm: TDT2Frm
         object pTop2: TPanel
           Left = 0
           Top = 0
-          Width = 980
+          Width = 1031
           Height = 58
           Align = alTop
           Alignment = taLeftJustify
@@ -7609,8 +7609,8 @@ object DT2Frm: TDT2Frm
         object dbGrid2: TwwDBGrid
           Left = 0
           Top = 58
-          Width = 980
-          Height = 160
+          Width = 1031
+          Height = 268
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -7686,10 +7686,10 @@ object DT2Frm: TDT2Frm
     end
   end
   object pRight: TPanel
-    Left = 1028
+    Left = 1079
     Top = 0
     Width = 40
-    Height = 325
+    Height = 433
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -7813,6 +7813,13 @@ object DT2Frm: TDT2Frm
       FieldName = 'JNS_DT'
       Required = True
       Size = 8
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqB1: TwwDataSource
@@ -8098,6 +8105,13 @@ object DT2Frm: TDT2Frm
       FieldName = 'MU'
       Required = True
       Size = 3
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

@@ -537,6 +537,10 @@ type
     qOutletKURS: TFloatField;
     qBMasterTEMP_KURS: TFloatField;
     qBDetailKURS: TFloatField;
+    qBMasterTGL_APPROVE: TDateTimeField;
+    qBMasterOPR_APPROVE: TStringField;
+    qB1OPR_APPROVE: TStringField;
+    qB1TGL_APPROVE: TDateTimeField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1237,6 +1241,11 @@ begin
       begin
           ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
           Abort;
+      end
+      else
+      begin
+          qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
       end;
   end;
 end;

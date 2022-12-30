@@ -293,7 +293,7 @@ object HasilProduksiFrm: THasilProduksiFrm
       Top = 50
       Width = 1194
       Height = 561
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
@@ -4722,7 +4722,7 @@ object HasilProduksiFrm: THasilProduksiFrm
           object Label19: TLabel
             Left = 0
             Top = 310
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -12518,8 +12518,8 @@ object HasilProduksiFrm: THasilProduksiFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1108
-    Top = 96
+    Left = 1060
+    Top = 56
     ParamData = <
       item
         DataType = ftFloat
@@ -12667,6 +12667,13 @@ object HasilProduksiFrm: THasilProduksiFrm
     end
     object qBMasterNO_BOM: TFloatField
       FieldName = 'NO_BOM'
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

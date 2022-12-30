@@ -11346,6 +11346,13 @@ object DTFrm: TDTFrm
       FieldName = 'NO_BUKTI'
       Size = 15
     end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster

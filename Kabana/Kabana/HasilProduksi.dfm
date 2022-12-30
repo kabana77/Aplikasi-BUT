@@ -2235,7 +2235,11 @@ object HasilProduksiFrm: THasilProduksiFrm
             'KETERANGAN'#9'27'#9'Nama Barang/ Bahan'#9'F'#9'BAHAN BAKU'
             'SAT_D'#9'10'#9'Satuan'#9'F'#9'BAHAN BAKU'
             'QTY_D'#9'6'#9'Jumlah'#9'F'#9'BAHAN BAKU'
-            'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F')
+            'KETERANGAN2'#9'60'#9'KETERANGAN'#9'F'
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2260,7 +2264,7 @@ object HasilProduksiFrm: THasilProduksiFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -4722,7 +4726,7 @@ object HasilProduksiFrm: THasilProduksiFrm
           object Label19: TLabel
             Left = 0
             Top = 310
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -12125,6 +12129,22 @@ object HasilProduksiFrm: THasilProduksiFrm
       Required = True
       DisplayFormat = '#,#;(#,#);-'
     end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      Required = True
+      Size = 50
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+      Required = True
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -12518,8 +12538,8 @@ object HasilProduksiFrm: THasilProduksiFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1108
-    Top = 96
+    Left = 1060
+    Top = 56
     ParamData = <
       item
         DataType = ftFloat
@@ -12667,6 +12687,13 @@ object HasilProduksiFrm: THasilProduksiFrm
     end
     object qBMasterNO_BOM: TFloatField
       FieldName = 'NO_BOM'
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

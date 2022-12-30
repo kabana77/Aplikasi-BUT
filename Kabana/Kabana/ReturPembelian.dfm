@@ -336,28 +336,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand1: TQRBand
             Left = 38
             Top = 38
@@ -370,19 +356,16 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText38: TQRDBText
               Left = 16
               Top = 8
-              Width = 136
+              Width = 171
               Height = 21
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -393,7 +376,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 55.562500000000000000
                 42.333333333333330000
                 21.166666666666670000
-                359.833333333333300000)
+                452.437500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -409,13 +392,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText39: TQRDBText
               Left = 16
               Top = 29
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -426,7 +408,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 42.333333333333330000
                 76.729166666666670000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -436,13 +418,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText45: TQRDBText
               Left = 16
               Top = 45
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -453,7 +434,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 42.333333333333330000
                 119.062500000000000000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -463,13 +444,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText48: TQRDBText
               Left = 16
               Top = 61
-              Width = 50
+              Width = 60
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -480,7 +460,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 42.333333333333330000
                 161.395833333333300000
-                132.291666666666700000)
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -490,13 +470,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText12: TQRDBText
               Left = 872
               Top = 40
-              Width = 54
+              Width = 64
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -507,7 +486,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2307.166666666667000000
                 105.833333333333300000
-                142.875000000000000000)
+                169.333333333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -523,7 +502,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText13: TQRDBText
@@ -556,13 +534,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel13: TQRLabel
               Left = 816
               Top = 40
-              Width = 26
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -573,7 +550,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2159.000000000000000000
                 105.833333333333300000
-                68.791666666666670000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -582,13 +559,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel14: TQRLabel
               Left = 816
               Top = 56
-              Width = 34
+              Width = 41
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -599,7 +575,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2159.000000000000000000
                 148.166666666666700000
-                89.958333333333330000)
+                108.479166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -608,13 +584,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel15: TQRLabel
               Left = 856
               Top = 40
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -625,7 +600,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2264.833333333333000000
                 105.833333333333300000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -634,13 +609,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel16: TQRLabel
               Left = 856
               Top = 56
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -651,7 +625,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2264.833333333333000000
                 148.166666666666700000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -660,13 +634,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel149: TQRLabel
               Left = 816
               Top = 16
-              Width = 27
+              Width = 31
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -677,7 +650,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2159.000000000000000000
                 42.333333333333330000
-                71.437500000000000000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -686,13 +659,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel165: TQRLabel
               Left = 856
               Top = 16
-              Width = 4
+              Width = 5
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -703,7 +675,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 2264.833333333333000000
                 42.333333333333330000
-                10.583333333333330000)
+                13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -712,7 +684,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText237: TQRDBText
@@ -745,7 +716,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -762,7 +732,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -774,13 +743,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText1: TQRDBText
-              Left = 421
+              Left = 406
               Top = 1
-              Width = 138
+              Width = 167
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -789,9 +756,9 @@ object ReturPembelianFrm: TReturPembelianFrm
               Frame.DrawRight = False
               Size.Values = (
                 63.500000000000000000
-                1113.895833333333000000
+                1074.208333333333000000
                 2.645833333333333000
-                365.125000000000000000)
+                441.854166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -807,7 +774,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode: TQRLabel
@@ -839,7 +805,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -855,7 +820,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -867,8 +831,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel1: TQRLabel
               Left = 96
@@ -893,7 +855,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel2: TQRLabel
@@ -919,7 +880,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel9: TQRLabel
@@ -945,7 +905,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel11: TQRLabel
@@ -971,7 +930,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel12: TQRLabel
@@ -997,7 +955,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel4: TQRLabel
@@ -1023,7 +980,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel5: TQRLabel
@@ -1049,7 +1005,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel6: TQRLabel
@@ -1075,7 +1030,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel7: TQRLabel
@@ -1101,7 +1055,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel17: TQRLabel
@@ -1127,7 +1080,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel18: TQRLabel
@@ -1153,7 +1105,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel19: TQRLabel
@@ -1179,7 +1130,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel20: TQRLabel
@@ -1205,7 +1155,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1221,7 +1170,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -1233,8 +1181,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText6: TQRDBText
               Left = 96
@@ -1260,7 +1206,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NO_REG_OS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText7: TQRDBText
@@ -1287,7 +1232,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NAMA_PRINSIPAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRSysData2: TQRSysData
@@ -1311,7 +1255,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Data = qrsDetailNo
               Transparent = False
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText9: TQRDBText
@@ -1339,7 +1282,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Mask = 'DD/MM/YYYY'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText10: TQRDBText
@@ -1366,7 +1308,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText11: TQRDBText
@@ -1393,7 +1334,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText2: TQRDBText
@@ -1420,7 +1360,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText5: TQRDBText
@@ -1447,7 +1386,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText14: TQRDBText
@@ -1474,7 +1412,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText15: TQRDBText
@@ -1501,7 +1438,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_CASH_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText16: TQRDBText
@@ -1528,7 +1464,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText17: TQRDBText
@@ -1555,7 +1490,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'BAYAR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText18: TQRDBText
@@ -1582,7 +1516,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NILAI_TAGIHAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -1598,19 +1531,16 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel3: TQRLabel
-              Left = 462
+              Left = 456
               Top = 24
-              Width = 56
+              Width = 68
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -1619,9 +1549,9 @@ object ReturPembelianFrm: TReturPembelianFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1222.375000000000000000
+                1206.500000000000000000
                 63.500000000000000000
-                148.166666666666700000)
+                179.916666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1630,7 +1560,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD11: TQRDBText
@@ -1663,7 +1592,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD12: TQRDBText
@@ -1696,7 +1624,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD13: TQRDBText
@@ -1729,7 +1656,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD21: TQRDBText
@@ -1762,7 +1688,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD22: TQRDBText
@@ -1795,7 +1720,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD23: TQRDBText
@@ -1828,7 +1752,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD31: TQRDBText
@@ -1861,7 +1784,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD32: TQRDBText
@@ -1894,7 +1816,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD33: TQRDBText
@@ -1927,7 +1848,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD41: TQRDBText
@@ -1960,7 +1880,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD42: TQRDBText
@@ -1993,7 +1912,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object qrdbTTD43: TQRDBText
@@ -2026,7 +1944,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr1: TQRExpr
@@ -2061,7 +1978,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr2: TQRExpr
@@ -2096,7 +2012,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr3: TQRExpr
@@ -2131,7 +2046,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr4: TQRExpr
@@ -2166,7 +2080,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr5: TQRExpr
@@ -2201,7 +2114,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr6: TQRExpr
@@ -2236,7 +2148,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.DISC_CASH_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr7: TQRExpr
@@ -2271,7 +2182,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr8: TQRExpr
@@ -2306,7 +2216,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.BAYAR)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr9: TQRExpr
@@ -2341,7 +2250,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB1.NILAI_TAGIHAN)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel10: TQRLabel
@@ -2373,7 +2281,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -2389,19 +2296,16 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               2592.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText3: TQRDBText
               Left = 0
               Top = 0
-              Width = 41
+              Width = 47
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2412,7 +2316,7 @@ object ReturPembelianFrm: TReturPembelianFrm
                 44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
-                108.479166666666700000)
+                124.354166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -2422,13 +2326,12 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText4: TQRDBText
-              Left = 853
+              Left = 844
               Top = 0
-              Width = 62
+              Width = 71
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2437,9 +2340,9 @@ object ReturPembelianFrm: TReturPembelianFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                2256.895833333333000000
+                2233.083333333333000000
                 0.000000000000000000
-                164.041666666666700000)
+                187.854166666666700000)
               Alignment = taRightJustify
               AlignToBand = False
               AutoSize = True
@@ -2449,7 +2352,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData1: TQRSysData
@@ -2474,7 +2376,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -2639,28 +2540,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             100.000000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object PageHeaderBand2: TQRBand
             Left = 38
             Top = 30
@@ -2675,7 +2562,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = PageHeaderBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -2687,8 +2573,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               198.437500000000000000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText23: TQRDBText
               Left = 616
@@ -2720,7 +2604,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object QRDBText24: TQRDBText
@@ -2748,7 +2631,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel21: TQRLabel
@@ -2774,7 +2656,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel22: TQRLabel
@@ -2800,7 +2681,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel23: TQRLabel
@@ -2826,7 +2706,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel24: TQRLabel
@@ -2852,7 +2731,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText25: TQRDBText
@@ -2885,7 +2763,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText26: TQRDBText
@@ -2912,7 +2789,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText27: TQRDBText
@@ -2939,7 +2815,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText28: TQRDBText
@@ -2966,7 +2841,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText29: TQRDBText
@@ -2999,7 +2873,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object QRDBText62: TQRDBText
@@ -3026,7 +2899,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'BANNER1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3043,7 +2915,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = TitleBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -3055,8 +2926,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               238.125000000000000000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRLabel25: TQRLabel
               Left = 8
@@ -3081,7 +2950,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText19: TQRDBText
@@ -3114,7 +2982,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText20: TQRDBText
@@ -3141,7 +3008,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText21: TQRDBText
@@ -3168,7 +3034,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KOTA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText22: TQRDBText
@@ -3195,7 +3060,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TELEPON'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText30: TQRDBText
@@ -3222,7 +3086,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NO_REFF'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel27: TQRLabel
@@ -3248,7 +3111,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel28: TQRLabel
@@ -3274,7 +3136,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText36: TQRDBText
@@ -3301,7 +3162,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'OSTD_KREDIT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText37: TQRDBText
@@ -3328,7 +3188,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel36: TQRLabel
@@ -3354,7 +3213,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel37: TQRLabel
@@ -3380,7 +3238,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel38: TQRLabel
@@ -3406,7 +3263,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel39: TQRLabel
@@ -3432,7 +3288,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText40: TQRDBText
@@ -3459,7 +3314,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TGL_JTH_TEMPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel40: TQRLabel
@@ -3485,7 +3339,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel41: TQRLabel
@@ -3511,7 +3364,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel42: TQRLabel
@@ -3537,7 +3389,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText31: TQRDBText
@@ -3565,7 +3416,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel26: TQRLabel
@@ -3591,7 +3441,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel29: TQRLabel
@@ -3617,7 +3466,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText32: TQRDBText
@@ -3644,7 +3492,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NAMA_DEPO'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText33: TQRDBText
@@ -3672,7 +3519,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel30: TQRLabel
@@ -3698,7 +3544,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel31: TQRLabel
@@ -3724,7 +3569,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel32: TQRLabel
@@ -3750,7 +3594,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel33: TQRLabel
@@ -3776,7 +3619,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText34: TQRDBText
@@ -3804,7 +3646,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Mask = 'dd mmm yyyy'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel34: TQRLabel
@@ -3830,7 +3671,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel35: TQRLabel
@@ -3856,7 +3696,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -3872,7 +3711,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -3884,8 +3722,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel45: TQRLabel
               Left = 32
@@ -3910,7 +3746,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel46: TQRLabel
@@ -3936,7 +3771,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel48: TQRLabel
@@ -3962,7 +3796,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel49: TQRLabel
@@ -3988,7 +3821,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel50: TQRLabel
@@ -4014,7 +3846,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel53: TQRLabel
@@ -4040,7 +3871,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel51: TQRLabel
@@ -4066,7 +3896,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel52: TQRLabel
@@ -4092,7 +3921,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel54: TQRLabel
@@ -4118,7 +3946,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel47: TQRLabel
@@ -4144,7 +3971,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -4161,7 +3987,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = DetailBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -4173,8 +3998,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               42.333333333333330000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText42: TQRDBText
               Left = 32
@@ -4200,7 +4023,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KD_ITEM'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText43: TQRDBText
@@ -4227,7 +4049,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText44: TQRDBText
@@ -4254,7 +4075,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL_GROSS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText46: TQRDBText
@@ -4281,7 +4101,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText47: TQRDBText
@@ -4308,7 +4127,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText49: TQRDBText
@@ -4335,7 +4153,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText50: TQRDBText
@@ -4362,7 +4179,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText51: TQRDBText
@@ -4389,7 +4205,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText52: TQRDBText
@@ -4416,7 +4231,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlNo: TQRLabel
@@ -4442,7 +4256,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -4459,7 +4272,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = SummaryBand2BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -4471,8 +4283,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               243.416666666666700000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRExpr10: TQRExpr
               Left = 464
@@ -4500,7 +4310,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel55: TQRLabel
@@ -4526,7 +4335,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr11: TQRExpr
@@ -4555,7 +4363,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr12: TQRExpr
@@ -4584,7 +4391,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRExpr13: TQRExpr
@@ -4613,7 +4419,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qBDetail.DISC_REG_RP+qBDetail.DISC_X_RP+qBDetail.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel56: TQRLabel
@@ -4639,7 +4444,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel57: TQRLabel
@@ -4665,7 +4469,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText53: TQRDBText
@@ -4692,7 +4495,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_CASH_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel58: TQRLabel
@@ -4718,7 +4520,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel59: TQRLabel
@@ -4744,7 +4545,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText54: TQRDBText
@@ -4771,7 +4571,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel60: TQRLabel
@@ -4797,7 +4596,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel61: TQRLabel
@@ -4823,7 +4621,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText55: TQRDBText
@@ -4850,7 +4647,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NILAI_FAKTUR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel62: TQRLabel
@@ -4876,7 +4672,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel63: TQRLabel
@@ -4902,7 +4697,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText56: TQRDBText
@@ -4929,7 +4723,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel64: TQRLabel
@@ -4955,7 +4748,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel65: TQRLabel
@@ -4981,7 +4773,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText57: TQRDBText
@@ -5008,7 +4799,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'NILAI_TAGIHAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel66: TQRLabel
@@ -5034,7 +4824,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel67: TQRLabel
@@ -5060,7 +4849,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText58: TQRDBText
@@ -5087,7 +4875,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'BAYAR'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText59: TQRDBText
@@ -5114,7 +4901,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KETERANGAN'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRLabel68: TQRLabel
@@ -5140,7 +4926,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object qrlTerbilang: TQRLabel
@@ -5166,7 +4951,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -5182,7 +4966,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
             Font.Height = -15
@@ -5194,8 +4977,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               52.916666666666670000
               1899.708333333333000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText60: TQRDBText
               Left = 0
@@ -5221,7 +5002,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRDBText61: TQRDBText
@@ -5248,7 +5028,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 11
             end
             object QRSysData3: TQRSysData
@@ -5273,7 +5052,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 11
             end
           end
@@ -5296,8 +5074,8 @@ object ReturPembelianFrm: TReturPembelianFrm
           object DBText7: TDBText
             Left = 560
             Top = 25
-            Width = 50
-            Height = 20
+            Width = 65
+            Height = 19
             AutoSize = True
             DataField = 'NAMA_LOKASI'
             DataSource = dsqBMaster
@@ -5384,8 +5162,8 @@ object ReturPembelianFrm: TReturPembelianFrm
           object DBText20: TDBText
             Left = 864
             Top = 34
-            Width = 57
-            Height = 20
+            Width = 74
+            Height = 19
             AutoSize = True
             DataField = 'TGL'
             DataSource = dsqBMaster
@@ -5444,8 +5222,8 @@ object ReturPembelianFrm: TReturPembelianFrm
           object DBText6: TDBText
             Left = 400
             Top = 25
-            Width = 50
-            Height = 20
+            Width = 65
+            Height = 19
             AutoSize = True
             DataField = 'NAMA_EKSPEDISI'
             DataSource = dsqBMaster
@@ -5718,8 +5496,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             object DBText2: TDBText
               Left = 8
               Top = 36
-              Width = 50
-              Height = 20
+              Width = 65
+              Height = 19
               AutoSize = True
               DataField = 'NAMA_PRINSIPAL'
               DataSource = dsqBMaster
@@ -5975,7 +5753,7 @@ object ReturPembelianFrm: TReturPembelianFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -6620,8 +6398,8 @@ object ReturPembelianFrm: TReturPembelianFrm
               object DBText22: TDBText
                 Left = 304
                 Top = 16
-                Width = 57
-                Height = 20
+                Width = 74
+                Height = 19
                 AutoSize = True
                 DataField = 'NAMA_LOKASI'
                 DataSource = DMFrm.dsqLokasi
@@ -6809,28 +6587,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             100.012500000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = Pixels
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand1: TQRBand
             Left = 38
             Top = 38
@@ -6843,14 +6607,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText63: TQRDBText
               Left = 16
@@ -6882,7 +6643,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText64: TQRDBText
@@ -6909,7 +6669,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText65: TQRDBText
@@ -6936,7 +6695,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText66: TQRDBText
@@ -6963,7 +6721,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText67: TQRDBText
@@ -6996,7 +6753,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText68: TQRDBText
@@ -7029,7 +6785,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel69: TQRLabel
@@ -7055,7 +6810,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel70: TQRLabel
@@ -7081,7 +6835,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel71: TQRLabel
@@ -7107,7 +6860,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel72: TQRLabel
@@ -7133,7 +6885,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel166: TQRLabel
@@ -7159,7 +6910,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel167: TQRLabel
@@ -7185,7 +6935,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText238: TQRDBText
@@ -7218,7 +6967,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7235,7 +6983,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = TitleBand1BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -7247,8 +6994,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText69: TQRDBText
               Left = 517
@@ -7280,7 +7025,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode2: TQRLabel
@@ -7312,7 +7056,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -7328,7 +7071,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7340,8 +7082,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel74: TQRLabel
               Left = 96
@@ -7366,7 +7106,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel75: TQRLabel
@@ -7392,7 +7131,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel76: TQRLabel
@@ -7418,7 +7156,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel77: TQRLabel
@@ -7444,7 +7181,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel78: TQRLabel
@@ -7470,7 +7206,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel79: TQRLabel
@@ -7496,7 +7231,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel80: TQRLabel
@@ -7522,7 +7256,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel81: TQRLabel
@@ -7548,7 +7281,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel82: TQRLabel
@@ -7574,7 +7306,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel83: TQRLabel
@@ -7600,7 +7331,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel84: TQRLabel
@@ -7626,7 +7356,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel85: TQRLabel
@@ -7652,7 +7381,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel86: TQRLabel
@@ -7678,7 +7406,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel87: TQRLabel
@@ -7704,7 +7431,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel90: TQRLabel
@@ -7730,7 +7456,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel73: TQRLabel
@@ -7756,7 +7481,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel91: TQRLabel
@@ -7782,7 +7506,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -7799,7 +7522,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand4BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -7811,8 +7533,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText74: TQRDBText
               Left = 560
@@ -7838,7 +7558,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText75: TQRDBText
@@ -7865,7 +7584,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText76: TQRDBText
@@ -7892,7 +7610,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText77: TQRDBText
@@ -7919,7 +7636,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText78: TQRDBText
@@ -7946,7 +7662,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText79: TQRDBText
@@ -7973,7 +7688,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_CASH_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText80: TQRDBText
@@ -8000,7 +7714,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText82: TQRDBText
@@ -8027,7 +7740,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText81: TQRDBText
@@ -8060,7 +7772,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText97: TQRDBText
@@ -8093,7 +7804,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText99: TQRDBText
@@ -8120,7 +7830,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText100: TQRDBText
@@ -8153,7 +7862,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText98: TQRDBText
@@ -8180,7 +7888,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2D: TQRLabel
@@ -8212,7 +7919,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8228,14 +7934,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel88: TQRLabel
               Left = 558
@@ -8260,7 +7963,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText83: TQRDBText
@@ -8293,7 +7995,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText84: TQRDBText
@@ -8326,7 +8027,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText85: TQRDBText
@@ -8359,7 +8059,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText86: TQRDBText
@@ -8392,7 +8091,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText87: TQRDBText
@@ -8425,7 +8123,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText88: TQRDBText
@@ -8458,7 +8155,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText89: TQRDBText
@@ -8491,7 +8187,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText90: TQRDBText
@@ -8524,7 +8219,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText91: TQRDBText
@@ -8557,7 +8251,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText92: TQRDBText
@@ -8590,7 +8283,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText93: TQRDBText
@@ -8623,7 +8315,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText94: TQRDBText
@@ -8656,7 +8347,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr14: TQRExpr
@@ -8691,7 +8381,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr15: TQRExpr
@@ -8726,7 +8415,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr16: TQRExpr
@@ -8761,7 +8449,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr17: TQRExpr
@@ -8796,7 +8483,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr18: TQRExpr
@@ -8831,7 +8517,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr19: TQRExpr
@@ -8866,7 +8551,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_CASH_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr20: TQRExpr
@@ -8901,7 +8585,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel89: TQRLabel
@@ -8933,7 +8616,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr23: TQRExpr
@@ -8968,7 +8650,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -8984,14 +8665,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText95: TQRDBText
               Left = 0
@@ -9017,7 +8695,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText96: TQRDBText
@@ -9044,7 +8721,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData5: TQRSysData
@@ -9069,7 +8745,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -9085,14 +8760,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               74.083333333333330000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr24: TQRExpr
               Left = 560
@@ -9126,7 +8798,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.SUB_TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr25: TQRExpr
@@ -9161,7 +8832,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr26: TQRExpr
@@ -9196,7 +8866,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr27: TQRExpr
@@ -9231,7 +8900,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr28: TQRExpr
@@ -9266,7 +8934,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr29: TQRExpr
@@ -9301,7 +8968,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.DISC_CASH_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr30: TQRExpr
@@ -9336,7 +9002,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr31: TQRExpr
@@ -9371,7 +9036,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB2.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText101: TQRDBText
@@ -9404,7 +9068,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText102: TQRDBText
@@ -9437,7 +9100,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9454,14 +9116,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRGroup1BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               3100.916666666667000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB2.NO_REG_OS'
             FooterBand = QRBand7
             Master = qrMaster2
@@ -9497,7 +9156,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText70: TQRDBText
@@ -9530,7 +9188,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText72: TQRDBText
@@ -9563,7 +9220,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText71: TQRDBText
@@ -9596,7 +9252,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo2: TQRLabel
@@ -9628,7 +9283,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -9794,28 +9448,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand29: TQRBand
             Left = 37
             Top = 37
@@ -9828,14 +9468,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText204: TQRDBText
               Left = 16
@@ -9867,7 +9504,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText205: TQRDBText
@@ -9894,7 +9530,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText206: TQRDBText
@@ -9921,7 +9556,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText207: TQRDBText
@@ -9948,7 +9582,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText208: TQRDBText
@@ -9981,7 +9614,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText209: TQRDBText
@@ -10014,7 +9646,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel131: TQRLabel
@@ -10040,7 +9671,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel144: TQRLabel
@@ -10066,7 +9696,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel147: TQRLabel
@@ -10092,7 +9721,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel148: TQRLabel
@@ -10118,7 +9746,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel168: TQRLabel
@@ -10144,7 +9771,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel169: TQRLabel
@@ -10170,7 +9796,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText239: TQRDBText
@@ -10203,7 +9828,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -10220,7 +9844,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand30BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -10232,8 +9855,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText210: TQRDBText
               Left = 421
@@ -10265,7 +9886,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode3: TQRLabel
@@ -10297,7 +9917,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -10313,7 +9932,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -10325,8 +9943,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel150: TQRLabel
               Left = 32
@@ -10351,7 +9967,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel151: TQRLabel
@@ -10377,7 +9992,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel152: TQRLabel
@@ -10403,7 +10017,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel153: TQRLabel
@@ -10429,7 +10042,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel154: TQRLabel
@@ -10455,7 +10067,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel155: TQRLabel
@@ -10481,7 +10092,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel156: TQRLabel
@@ -10507,7 +10117,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel157: TQRLabel
@@ -10533,7 +10142,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel158: TQRLabel
@@ -10559,7 +10167,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel159: TQRLabel
@@ -10585,7 +10192,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel160: TQRLabel
@@ -10611,7 +10217,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel161: TQRLabel
@@ -10637,7 +10242,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel162: TQRLabel
@@ -10663,7 +10267,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -10680,7 +10283,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand32BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -10692,8 +10294,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText211: TQRDBText
               Left = 568
@@ -10719,7 +10319,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText212: TQRDBText
@@ -10746,7 +10345,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText213: TQRDBText
@@ -10773,7 +10371,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText214: TQRDBText
@@ -10800,7 +10397,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText215: TQRDBText
@@ -10827,7 +10423,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText216: TQRDBText
@@ -10854,7 +10449,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText217: TQRDBText
@@ -10887,7 +10481,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText218: TQRDBText
@@ -10920,7 +10513,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText219: TQRDBText
@@ -10947,7 +10539,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText220: TQRDBText
@@ -10974,7 +10565,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo3: TQRLabel
@@ -11006,7 +10596,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText221: TQRDBText
@@ -11033,7 +10622,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL_GROSS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText222: TQRDBText
@@ -11060,7 +10648,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KG_TOT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -11076,14 +10663,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel163: TQRLabel
               Left = 462
@@ -11108,7 +10692,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText223: TQRDBText
@@ -11141,7 +10724,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText224: TQRDBText
@@ -11174,7 +10756,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText225: TQRDBText
@@ -11207,7 +10788,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText226: TQRDBText
@@ -11240,7 +10820,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText227: TQRDBText
@@ -11273,7 +10852,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText228: TQRDBText
@@ -11306,7 +10884,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText229: TQRDBText
@@ -11339,7 +10916,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText230: TQRDBText
@@ -11372,7 +10948,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText231: TQRDBText
@@ -11405,7 +10980,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText232: TQRDBText
@@ -11438,7 +11012,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText233: TQRDBText
@@ -11471,7 +11044,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText234: TQRDBText
@@ -11504,7 +11076,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr76: TQRExpr
@@ -11539,7 +11110,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr77: TQRExpr
@@ -11574,7 +11144,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr78: TQRExpr
@@ -11609,7 +11178,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr79: TQRExpr
@@ -11644,7 +11212,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr80: TQRExpr
@@ -11679,7 +11246,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr81: TQRExpr
@@ -11714,7 +11280,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel164: TQRLabel
@@ -11746,7 +11311,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr82: TQRExpr
@@ -11781,7 +11345,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr83: TQRExpr
@@ -11816,7 +11379,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB3.KG_TOT)'
               Mask = '0.0,0;(0.0,0);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -11832,14 +11394,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText235: TQRDBText
               Left = 0
@@ -11865,7 +11424,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText236: TQRDBText
@@ -11892,7 +11450,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData8: TQRSysData
@@ -11917,7 +11474,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -12063,28 +11619,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand8: TQRBand
             Left = 37
             Top = 37
@@ -12097,14 +11639,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText103: TQRDBText
               Left = 16
@@ -12136,7 +11675,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText104: TQRDBText
@@ -12163,7 +11701,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText105: TQRDBText
@@ -12190,7 +11727,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText106: TQRDBText
@@ -12217,7 +11753,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText107: TQRDBText
@@ -12250,7 +11785,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText108: TQRDBText
@@ -12283,7 +11817,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel92: TQRLabel
@@ -12309,7 +11842,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel93: TQRLabel
@@ -12335,7 +11867,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel94: TQRLabel
@@ -12361,7 +11892,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel95: TQRLabel
@@ -12387,7 +11917,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel170: TQRLabel
@@ -12413,7 +11942,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel171: TQRLabel
@@ -12439,7 +11967,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText240: TQRDBText
@@ -12472,7 +11999,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -12489,7 +12015,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand9BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -12501,8 +12026,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText109: TQRDBText
               Left = 421
@@ -12534,7 +12057,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode4: TQRLabel
@@ -12566,7 +12088,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -12582,7 +12103,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -12594,8 +12114,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel99: TQRLabel
               Left = 32
@@ -12620,7 +12138,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel102: TQRLabel
@@ -12646,7 +12163,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel103: TQRLabel
@@ -12672,7 +12188,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel104: TQRLabel
@@ -12698,7 +12213,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel105: TQRLabel
@@ -12724,7 +12238,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel106: TQRLabel
@@ -12750,7 +12263,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel108: TQRLabel
@@ -12776,7 +12288,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel110: TQRLabel
@@ -12802,7 +12313,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel112: TQRLabel
@@ -12828,7 +12338,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel113: TQRLabel
@@ -12854,7 +12363,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel96: TQRLabel
@@ -12880,7 +12388,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -12897,7 +12404,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand11BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -12909,8 +12415,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText111: TQRDBText
               Left = 568
@@ -12936,7 +12440,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText112: TQRDBText
@@ -12963,7 +12466,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText113: TQRDBText
@@ -12990,7 +12492,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText114: TQRDBText
@@ -13017,7 +12518,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText116: TQRDBText
@@ -13044,7 +12544,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText117: TQRDBText
@@ -13071,7 +12570,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText118: TQRDBText
@@ -13104,7 +12602,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText119: TQRDBText
@@ -13137,7 +12634,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText120: TQRDBText
@@ -13164,7 +12660,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText122: TQRDBText
@@ -13191,7 +12686,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo4D: TQRLabel
@@ -13223,7 +12717,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText110: TQRDBText
@@ -13250,7 +12743,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL_GROSS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -13266,14 +12758,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel115: TQRLabel
               Left = 462
@@ -13298,7 +12787,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText123: TQRDBText
@@ -13331,7 +12819,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText124: TQRDBText
@@ -13364,7 +12851,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText125: TQRDBText
@@ -13397,7 +12883,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText126: TQRDBText
@@ -13430,7 +12915,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText127: TQRDBText
@@ -13463,7 +12947,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText128: TQRDBText
@@ -13496,7 +12979,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText129: TQRDBText
@@ -13529,7 +13011,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText130: TQRDBText
@@ -13562,7 +13043,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText131: TQRDBText
@@ -13595,7 +13075,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText132: TQRDBText
@@ -13628,7 +13107,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText133: TQRDBText
@@ -13661,7 +13139,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText134: TQRDBText
@@ -13694,7 +13171,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr21: TQRExpr
@@ -13729,7 +13205,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr22: TQRExpr
@@ -13764,7 +13239,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr32: TQRExpr
@@ -13799,7 +13273,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr33: TQRExpr
@@ -13834,7 +13307,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr34: TQRExpr
@@ -13869,7 +13341,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr36: TQRExpr
@@ -13904,7 +13375,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel116: TQRLabel
@@ -13936,7 +13406,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr37: TQRExpr
@@ -13971,7 +13440,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -13987,14 +13455,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText135: TQRDBText
               Left = 0
@@ -14020,7 +13485,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText136: TQRDBText
@@ -14047,7 +13511,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData4: TQRSysData
@@ -14072,7 +13535,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -14088,14 +13550,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr38: TQRExpr
               Left = 496
@@ -14129,7 +13588,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr39: TQRExpr
@@ -14164,7 +13622,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr40: TQRExpr
@@ -14199,7 +13656,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr41: TQRExpr
@@ -14234,7 +13690,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr42: TQRExpr
@@ -14269,7 +13724,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr44: TQRExpr
@@ -14304,7 +13758,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr45: TQRExpr
@@ -14339,7 +13792,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB4.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -14356,14 +13808,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRGroup4BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB4.NAMA_DEPO'
             FooterBand = QRBand14
             Master = qrMaster4
@@ -14398,7 +13847,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo4: TQRLabel
@@ -14430,7 +13878,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -14577,28 +14024,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand15: TQRBand
             Left = 37
             Top = 37
@@ -14611,14 +14044,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText115: TQRDBText
               Left = 16
@@ -14650,7 +14080,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText121: TQRDBText
@@ -14677,7 +14106,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText137: TQRDBText
@@ -14704,7 +14132,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText138: TQRDBText
@@ -14731,7 +14158,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText139: TQRDBText
@@ -14764,7 +14190,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText140: TQRDBText
@@ -14797,7 +14222,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel97: TQRLabel
@@ -14823,7 +14247,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel98: TQRLabel
@@ -14849,7 +14272,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel100: TQRLabel
@@ -14875,7 +14297,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel101: TQRLabel
@@ -14901,7 +14322,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel172: TQRLabel
@@ -14927,7 +14347,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel173: TQRLabel
@@ -14953,7 +14372,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText241: TQRDBText
@@ -14986,7 +14404,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -15003,7 +14420,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand16BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -15015,8 +14431,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText142: TQRDBText
               Left = 421
@@ -15048,7 +14462,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode5: TQRLabel
@@ -15080,7 +14493,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -15096,7 +14508,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -15108,8 +14519,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel109: TQRLabel
               Left = 32
@@ -15134,7 +14543,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel111: TQRLabel
@@ -15160,7 +14568,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel114: TQRLabel
@@ -15186,7 +14593,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel117: TQRLabel
@@ -15212,7 +14618,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel118: TQRLabel
@@ -15238,7 +14643,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel119: TQRLabel
@@ -15264,7 +14668,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel120: TQRLabel
@@ -15290,7 +14693,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel121: TQRLabel
@@ -15316,7 +14718,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel122: TQRLabel
@@ -15342,7 +14743,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel123: TQRLabel
@@ -15368,7 +14768,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel124: TQRLabel
@@ -15394,7 +14793,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel107: TQRLabel
@@ -15420,7 +14818,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -15437,7 +14834,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand18BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -15449,8 +14845,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText143: TQRDBText
               Left = 568
@@ -15476,7 +14870,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText144: TQRDBText
@@ -15503,7 +14896,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText145: TQRDBText
@@ -15530,7 +14922,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText146: TQRDBText
@@ -15557,7 +14948,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText147: TQRDBText
@@ -15584,7 +14974,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText148: TQRDBText
@@ -15611,7 +15000,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText149: TQRDBText
@@ -15644,7 +15032,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText150: TQRDBText
@@ -15677,7 +15064,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText151: TQRDBText
@@ -15704,7 +15090,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText152: TQRDBText
@@ -15731,7 +15116,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5D: TQRLabel
@@ -15763,7 +15147,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText153: TQRDBText
@@ -15790,7 +15173,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL_GROSS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText169: TQRDBText
@@ -15817,7 +15199,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KG_TOT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -15833,14 +15214,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel126: TQRLabel
               Left = 462
@@ -15865,7 +15243,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText154: TQRDBText
@@ -15898,7 +15275,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText155: TQRDBText
@@ -15931,7 +15307,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText156: TQRDBText
@@ -15964,7 +15339,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText157: TQRDBText
@@ -15997,7 +15371,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText158: TQRDBText
@@ -16030,7 +15403,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText159: TQRDBText
@@ -16063,7 +15435,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText160: TQRDBText
@@ -16096,7 +15467,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText161: TQRDBText
@@ -16129,7 +15499,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText162: TQRDBText
@@ -16162,7 +15531,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText163: TQRDBText
@@ -16195,7 +15563,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText164: TQRDBText
@@ -16228,7 +15595,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText165: TQRDBText
@@ -16261,7 +15627,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr35: TQRExpr
@@ -16296,7 +15661,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr43: TQRExpr
@@ -16331,7 +15695,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr46: TQRExpr
@@ -16366,7 +15729,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr47: TQRExpr
@@ -16401,7 +15763,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr48: TQRExpr
@@ -16436,7 +15797,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr49: TQRExpr
@@ -16471,7 +15831,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel127: TQRLabel
@@ -16503,7 +15862,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr50: TQRExpr
@@ -16538,7 +15896,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr59: TQRExpr
@@ -16573,7 +15930,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.KG_TOT)'
               Mask = '0.0,0;(0.0,0);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -16589,14 +15945,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText166: TQRDBText
               Left = 0
@@ -16622,7 +15975,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText167: TQRDBText
@@ -16649,7 +16001,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData6: TQRSysData
@@ -16674,7 +16025,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -16690,14 +16040,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr51: TQRExpr
               Left = 496
@@ -16731,7 +16078,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr52: TQRExpr
@@ -16766,7 +16112,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr53: TQRExpr
@@ -16801,7 +16146,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr54: TQRExpr
@@ -16836,7 +16180,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr55: TQRExpr
@@ -16871,7 +16214,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr56: TQRExpr
@@ -16906,7 +16248,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr57: TQRExpr
@@ -16941,7 +16282,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr58: TQRExpr
@@ -16976,7 +16316,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB5.KG_TOT)'
               Mask = '0.0,0;(0.0,0);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -16993,14 +16332,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRGroup5BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB5.NAMA_PRINSIPAL2'
             FooterBand = QRBand21
             Master = qrMaster5
@@ -17035,7 +16371,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo5: TQRLabel
@@ -17067,7 +16402,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -17214,28 +16548,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             99.100000000000000000
             0.000000000000000000)
           PrinterSettings.Copies = 1
-          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.UseStandardprinter = False
-          PrinterSettings.UseCustomBinCode = False
-          PrinterSettings.CustomBinCode = 0
-          PrinterSettings.ExtendedDuplex = 0
-          PrinterSettings.UseCustomPaperCode = False
-          PrinterSettings.CustomPaperCode = 0
-          PrinterSettings.PrintMetaFile = False
-          PrinterSettings.PrintQuality = 0
-          PrinterSettings.Collate = 0
-          PrinterSettings.ColorOption = 0
+          PrinterSettings.OutputBin = Auto
           PrintIfEmpty = True
           SnapToGrid = True
           Units = MM
           Zoom = 100
-          PrevFormStyle = fsNormal
-          PreviewInitialState = wsNormal
-          PrevInitialZoom = qrZoomToFit
-          PreviewDefaultSaveType = stQRP
           object QRBand22: TQRBand
             Left = 37
             Top = 37
@@ -17248,14 +16568,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               219.604166666666700000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageHeader
             object QRDBText170: TQRDBText
               Left = 16
@@ -17287,7 +16604,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 12
             end
             object QRDBText171: TQRDBText
@@ -17314,7 +16630,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT1'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText172: TQRDBText
@@ -17341,7 +16656,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT2'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText173: TQRDBText
@@ -17368,7 +16682,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'ALAMAT3'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText174: TQRDBText
@@ -17401,7 +16714,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText175: TQRDBText
@@ -17434,7 +16746,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel125: TQRLabel
@@ -17460,7 +16771,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel128: TQRLabel
@@ -17486,7 +16796,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel129: TQRLabel
@@ -17512,7 +16821,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel130: TQRLabel
@@ -17538,7 +16846,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel174: TQRLabel
@@ -17564,7 +16871,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRLabel175: TQRLabel
@@ -17590,7 +16896,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText242: TQRDBText
@@ -17623,7 +16928,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -17640,7 +16944,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand23BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -13
@@ -17652,8 +16955,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               113.770833333333300000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbTitle
             object QRDBText176: TQRDBText
               Left = 421
@@ -17685,7 +16986,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 14
             end
             object qrlPeriode6: TQRLabel
@@ -17717,7 +17017,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -17733,7 +17032,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -17745,8 +17043,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               71.437500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbColumnHeader
             object QRLabel132: TQRLabel
               Left = 32
@@ -17771,7 +17067,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel133: TQRLabel
@@ -17797,7 +17092,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel134: TQRLabel
@@ -17823,7 +17117,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel135: TQRLabel
@@ -17849,7 +17142,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel136: TQRLabel
@@ -17875,7 +17167,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel137: TQRLabel
@@ -17901,7 +17192,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel138: TQRLabel
@@ -17927,7 +17217,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel139: TQRLabel
@@ -17953,7 +17242,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel140: TQRLabel
@@ -17979,7 +17267,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel141: TQRLabel
@@ -18005,7 +17292,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel142: TQRLabel
@@ -18031,7 +17317,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel143: TQRLabel
@@ -18057,7 +17342,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -18074,7 +17358,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRBand25BeforePrint
             Color = clWhite
-            TransparentBand = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -11
@@ -18086,8 +17369,6 @@ object ReturPembelianFrm: TReturPembelianFrm
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbDetail
             object QRDBText177: TQRDBText
               Left = 568
@@ -18113,7 +17394,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_TPR_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText178: TQRDBText
@@ -18140,7 +17420,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_REG_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText179: TQRDBText
@@ -18167,7 +17446,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_X_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText180: TQRDBText
@@ -18194,7 +17472,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISC_VAL_RP'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText181: TQRDBText
@@ -18221,7 +17498,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'PPN10'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText182: TQRDBText
@@ -18248,7 +17524,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'TOTAL'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText183: TQRDBText
@@ -18281,7 +17556,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText184: TQRDBText
@@ -18314,7 +17588,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText185: TQRDBText
@@ -18341,7 +17614,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_JUMLAH'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText186: TQRDBText
@@ -18368,7 +17640,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'LABEL_HARGA'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo6D: TQRLabel
@@ -18400,7 +17671,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText187: TQRDBText
@@ -18427,7 +17697,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'SUB_TOTAL_GROSS'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRDBText188: TQRDBText
@@ -18454,7 +17723,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'KG_TOT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -18470,14 +17738,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               381.000000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbSummary
             object QRLabel145: TQRLabel
               Left = 462
@@ -18502,7 +17767,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Color = clWhite
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText189: TQRDBText
@@ -18535,7 +17799,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText190: TQRDBText
@@ -18568,7 +17831,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText191: TQRDBText
@@ -18601,7 +17863,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText192: TQRDBText
@@ -18634,7 +17895,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText193: TQRDBText
@@ -18667,7 +17927,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText194: TQRDBText
@@ -18700,7 +17959,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText195: TQRDBText
@@ -18733,7 +17991,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText196: TQRDBText
@@ -18766,7 +18023,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText197: TQRDBText
@@ -18799,7 +18055,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText198: TQRDBText
@@ -18832,7 +18087,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText199: TQRDBText
@@ -18865,7 +18119,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText200: TQRDBText
@@ -18898,7 +18151,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRExpr60: TQRExpr
@@ -18933,7 +18185,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr61: TQRExpr
@@ -18968,7 +18219,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr62: TQRExpr
@@ -19003,7 +18253,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr63: TQRExpr
@@ -19038,7 +18287,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr64: TQRExpr
@@ -19073,7 +18321,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr65: TQRExpr
@@ -19108,7 +18355,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRLabel146: TQRLabel
@@ -19140,7 +18386,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr66: TQRExpr
@@ -19175,7 +18420,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr67: TQRExpr
@@ -19210,7 +18454,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.KG_TOT)'
               Mask = '0.0,0;(0.0,0);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -19226,14 +18469,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               47.625000000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbPageFooter
             object QRDBText201: TQRDBText
               Left = 0
@@ -19259,7 +18499,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'VPRINT'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRDBText202: TQRDBText
@@ -19286,7 +18525,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               DataField = 'DISTRIBUSI'
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 10
             end
             object QRSysData7: TQRSysData
@@ -19311,7 +18549,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               Data = qrsPageNumber
               Text = 'Hal : '
               Transparent = False
-              ExportAs = exptText
               FontSize = 10
             end
           end
@@ -19327,14 +18564,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               60.854166666666670000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             BandType = rbGroupFooter
             object QRExpr68: TQRExpr
               Left = 496
@@ -19368,7 +18602,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.SUB_TOTAL_GROSS)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr69: TQRExpr
@@ -19403,7 +18636,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_TPR_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr70: TQRExpr
@@ -19438,7 +18670,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_REG_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr71: TQRExpr
@@ -19473,7 +18704,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_X_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr72: TQRExpr
@@ -19508,7 +18738,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.DISC_VAL_RP)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr73: TQRExpr
@@ -19543,7 +18772,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.PPN10)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr74: TQRExpr
@@ -19578,7 +18806,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.TOTAL)'
               Mask = '#,#;(#,#);-'
-              ExportAs = exptText
               FontSize = 8
             end
             object QRExpr75: TQRExpr
@@ -19613,7 +18840,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               WordWrap = True
               Expression = 'SUM(qB6.KG_TOT)'
               Mask = '0.0,0;(0.0,0);-'
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -19630,14 +18856,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             AlignToBottom = False
             BeforePrint = QRGroup2BeforePrint
             Color = clWhite
-            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
               55.562500000000000000
               2595.562500000000000000)
-            PreCaluculateBandHeight = False
-            KeepOnOnePage = False
             Expression = 'qB6.NAMA_LOKASI'
             FooterBand = QRBand28
             Master = qrMaster6
@@ -19672,7 +18895,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
             object qrlNo6: TQRLabel
@@ -19704,7 +18926,6 @@ object ReturPembelianFrm: TReturPembelianFrm
               ParentFont = False
               Transparent = False
               WordWrap = True
-              ExportAs = exptText
               FontSize = 8
             end
           end
@@ -20523,8 +19744,8 @@ object ReturPembelianFrm: TReturPembelianFrm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1116
-    Top = 96
+    Left = 1068
+    Top = 48
     ParamData = <
       item
         DataType = ftFloat

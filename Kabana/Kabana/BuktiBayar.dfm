@@ -2121,9 +2121,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
             'DEBET'#9'10'#9'DEBET'#9'F'
             'KREDIT'#9'10'#9'KREDIT'#9'F'
             'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
-            'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_INSERT'#9'18'#9'Operator'#9'T'#9'EDITING')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2148,7 +2146,7 @@ object BuktiBayarFrm: TBuktiBayarFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -4526,12 +4524,12 @@ object BuktiBayarFrm: TBuktiBayarFrm
                 ParentFont = False
                 RowHeightPercent = 112
                 TabOrder = 0
-                TitleAlignment = taLeftJustify
+                TitleAlignment = taCenter
                 TitleFont.Charset = ANSI_CHARSET
                 TitleFont.Color = clWindowText
                 TitleFont.Height = -11
-                TitleFont.Name = 'Arial Narrow'
-                TitleFont.Style = []
+                TitleFont.Name = 'Arial'
+                TitleFont.Style = [fsBold]
                 TitleLines = 3
                 TitleButtons = False
                 UseTFields = False
@@ -5465,6 +5463,13 @@ object BuktiBayarFrm: TBuktiBayarFrm
     object qBMasterNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 15
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

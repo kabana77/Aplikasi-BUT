@@ -672,6 +672,8 @@ type
     qBMasterSJNO_BUKTI: TStringField;
     qBDetailSJNO_BUKTI_SJ: TStringField;
     QRDBText60: TQRDBText;
+    qBMasterTGL_APPROVE: TDateTimeField;
+    qBMasterOPR_APPROVE: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1409,6 +1411,7 @@ begin
   qBDetailSJ.Open;
 
   dbNavigator.DataSource:=dsqBMaster;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 end;
 
 procedure TDTFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -1501,6 +1504,8 @@ begin
           DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
           DMFrm.Fno_Bukti.Open;
           qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+          qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
         end;
       end;
   end;

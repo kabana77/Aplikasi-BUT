@@ -1840,8 +1840,8 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
             'SUB_TOTAL'#9'10'#9'SUB TOTAL'#9'F'
             'TGL_INSERT'#9'18'#9'Input'#9'T'#9'EDITING'
             'OPR_INSERT'#9'6'#9'Operator'#9'T'#9'EDITING'
-            'TGL_UPDATE'#9'18'#9'Update'#9'T'#9'EDITING'
-            'OPR_UPDATE'#9'6'#9'Operator'#9'T'#9'EDITING')
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -1866,7 +1866,7 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
           ReadOnly = True
           RowHeightPercent = 112
           TabOrder = 1
-          TitleAlignment = taLeftJustify
+          TitleAlignment = taCenter
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
           TitleFont.Height = -11
@@ -4013,7 +4013,7 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -11363,6 +11363,13 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
       FieldName = 'JENIS'
       Size = 50
     end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -11864,6 +11871,13 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
     end
     object qBMasterJENIS: TStringField
       FieldName = 'JENIS'
+      Size = 50
+    end
+    object qBMasterTGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qBMasterOPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
       Size = 50
     end
   end

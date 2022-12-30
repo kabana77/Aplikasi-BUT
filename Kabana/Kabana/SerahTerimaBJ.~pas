@@ -982,6 +982,8 @@ type
     qJurnalNAMA_PERKIRAAN: TStringField;
     qJurnalDEBET: TFloatField;
     qJurnalKREDIT: TFloatField;
+    qBMasterTGL_APPROVE: TDateTimeField;
+    qBMasterOPR_APPROVE: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2604,11 +2606,16 @@ end;
 
 procedure TSerahTerimaBJFrm.qBMasterBeforePost(DataSet: TDataSet);
 begin
-  if qBMasterKD_LOKASI.AsString=qBMasterKD_LOKASI2.AsString then
-  begin
-          ShowMessage('LOKASI tidak boleh sama !');
-          Abort;
-  end;
+    if qBMasterKD_LOKASI.AsString=qBMasterKD_LOKASI2.AsString then
+    begin
+      ShowMessage('LOKASI tidak boleh sama !');
+      Abort;
+    end
+    else
+    begin
+        qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+        qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
+    end;
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
