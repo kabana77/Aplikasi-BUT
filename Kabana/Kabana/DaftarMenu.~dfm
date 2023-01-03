@@ -267,14 +267,18 @@ object DaftarMenuFrm: TDaftarMenuFrm
             'ISDEL;CheckBox;+;-'
             'ISUNPOST;CheckBox;+;-'
             'ISPRINT;CheckBox;+;-'
-            'ISEXPORT;CheckBox;+;-')
+            'ISEXPORT;CheckBox;+;-'
+            'ISUNPOST2;CheckBox;+;-'
+            'ISUNPOST3;CheckBox;+;-')
           Selected.Strings = (
             'DAFTAR_MENU'#9'65'#9'DAFTAR_MENU'#9'T'
             'ISVIS'#9'5'#9'Visible'#9'F'#9'HAK MENU'
             'ISADD'#9'3'#9'Add'#9'F'#9'HAK MENU'
             'ISEDIT'#9'3'#9'Edit'#9'F'#9'HAK MENU'
             'ISDEL'#9'2'#9'Del'#9'F'#9'HAK MENU'
-            'ISUNPOST'#9'5'#9'Unpost'#9'F'#9'HAK MENU'
+            'ISUNPOST'#9'3'#9'Aprv'#9'F'#9'HAK MENU'
+            'ISUNPOST2'#9'1'#9'Aprv2'#9'F'#9'HAK MENU'
+            'ISUNPOST3'#9'1'#9'Aprv3'#9'F'#9'HAK MENU'
             'ISPRINT'#9'3'#9'Print'#9'F'#9'HAK MENU'
             'ISEXPORT'#9'5'#9'Export'#9'F'#9'HAK MENU'
             'ISREAD'#9'4'#9'Back~Date'#9'F'#9'HAK MENU')
@@ -527,7 +531,7 @@ object DaftarMenuFrm: TDaftarMenuFrm
         'select nama_menu, lpad('#39' '#39',4*(lvl),'#39' '#39')||a.caption as daftar_men' +
         'u, a.isbukti from daftar_menu a'
       'order by a.no_urut')
-    Left = 828
+    Left = 820
     Top = 49
   end
   object QBuatMenu: TOraQuery
@@ -605,7 +609,10 @@ object DaftarMenuFrm: TDaftarMenuFrm
       'a.isexport,'
       'a.tipe_menu,'
       'a.no_urut,'
-      'a.no_urut_d from daftar_tipe_menu_detail a'
+      'a.no_urut_d,'
+      'a.isunpost2,'
+      'a.isunpost3'
+      'from daftar_tipe_menu_detail a'
       'where tipe_menu=:tipe_menu'
       'order by a.no_urut')
     MasterFields = 'TIPE_MENU'
@@ -694,6 +701,16 @@ object DaftarMenuFrm: TDaftarMenuFrm
       FieldName = 'NO_URUT_D'
       Required = True
     end
+    object QDaftarTipeMenuDetailISUNPOST2: TStringField
+      FieldName = 'ISUNPOST2'
+      Required = True
+      Size = 1
+    end
+    object QDaftarTipeMenuDetailISUNPOST3: TStringField
+      FieldName = 'ISUNPOST3'
+      Required = True
+      Size = 1
+    end
   end
   object dsQDaftarTipeMenuDetail: TwwDataSource
     DataSet = QDaftarTipeMenuDetail
@@ -748,7 +765,10 @@ object DaftarMenuFrm: TDaftarMenuFrm
       'a.isexport,'
       'a.tipe_menu,'
       'a.no_urut,'
-      'a.no_urut_d from daftar_tipe_menu_detail a'
+      'a.no_urut_d,'
+      'a.isunpost2,'
+      'a.isunpost3  '
+      'from daftar_tipe_menu_detail a'
       'where tipe_menu=:tipe_menu'
       'order by a.no_urut')
     MasterFields = 'TIPE_MENU'
@@ -836,6 +856,16 @@ object DaftarMenuFrm: TDaftarMenuFrm
     object IntegerField1: TFloatField
       FieldName = 'NO_URUT_D'
       Required = True
+    end
+    object qDaftarTipeMenuDetail2ISUNPOST2: TStringField
+      FieldName = 'ISUNPOST2'
+      Required = True
+      Size = 1
+    end
+    object qDaftarTipeMenuDetail2ISUNPOST3: TStringField
+      FieldName = 'ISUNPOST3'
+      Required = True
+      Size = 1
     end
   end
   object dsqDaftarTipeMenuDetail2: TwwDataSource

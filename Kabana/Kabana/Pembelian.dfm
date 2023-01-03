@@ -8136,7 +8136,7 @@ object PembelianFrm: TPembelianFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 47
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = 'Kelompok'
@@ -8616,7 +8616,7 @@ object PembelianFrm: TPembelianFrm
                 'NO_SERIAL'#9'16'#9'NO_BOM'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'XCLOUD'
+              IniAttributes.FileName = 'KUWUNG'
               IniAttributes.Delimiter = ';;'
               IniAttributes.CheckNewFields = True
               ExportOptions.ExportType = wwgetSYLK

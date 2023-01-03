@@ -142,6 +142,7 @@ type
     N20: TMenuItem;
     N22: TMenuItem;
     InfoMutasiStokBB1: TMenuItem;
+    InfoMutasiStokNonBahanBaku1: TMenuItem;
     procedure Proc_HapusMenu;
     procedure Proc_Aktifkan_Menu;
     procedure FormCreate(Sender: TObject);
@@ -221,6 +222,7 @@ type
     procedure LaporanBeaCukai1Click(Sender: TObject);
     procedure PenyelesaianWaste1Click(Sender: TObject);
     procedure InfoMutasiStokBB1Click(Sender: TObject);
+    procedure InfoMutasiStokNonBahanBaku1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -248,7 +250,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   InventoryControl, SubKontrak, HasilProduksi, PemakaianBahan,
   SerahTerimaBJ, SerahTerimaWaste, SubKontrak2, KartuStokBahanKITE,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
-  PenyelesaianWaste, InfoMutasiStokBB;
+  PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB;
 
 {$R *.dfm}
 
@@ -1084,6 +1086,8 @@ begin
      POFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
      POFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
      POFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+     POFrm.vCanUnPost2:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+     POFrm.vCanUnPost3:=(DMFrm.qMenuUserISUNPOST.AsString='+');
      POFrm.vCanCancel:=(DMFrm.qMenuUserISREAD.AsString='+');
   end
   else
@@ -1094,6 +1098,8 @@ begin
      POFrm.vCanPrint:=False;
      POFrm.vCanExport:=False;
      POFrm.vCanUnPost:=False;
+     POFrm.vCanUnPost2:=False;
+     POFrm.vCanUnPost3:=False;
      POFrm.vCanCancel:=False;
   end;
   POFrm.Show;
@@ -2110,7 +2116,7 @@ procedure TMainFrm.InfoMutasiStokBB1Click(Sender: TObject);
 begin
  if InfoMutasiStokBBFrm=nil then InfoMutasiStokBBFrm:=TInfoMutasiStokBBFrm.Create(Application);
   InfoMutasiStokBBFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
-  InfoMutasiStokBBFrm.pTop.Caption:=' '+UpperCase(InfoMutasiStokRevFrm.Caption);
+  InfoMutasiStokBBFrm.pTop.Caption:=' '+UpperCase(InfoMutasiStokBBFrm.Caption);
   if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
   begin
      InfoMutasiStokBBFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
@@ -2130,6 +2136,32 @@ begin
      InfoMutasiStokBBFrm.vCanExport:=False;
   end;
   InfoMutasiStokBBFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiStokNonBahanBaku1Click(Sender: TObject);
+begin
+ if InfoMutasiStokNBBFrm=nil then InfoMutasiStokNBBFrm:=TInfoMutasiStokNBBFrm.Create(Application);
+  InfoMutasiStokNBBFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoMutasiStokNBBFrm.pTop.Caption:=' '+UpperCase(InfoMutasiStokNBBFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoMutasiStokNBBFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoMutasiStokNBBFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoMutasiStokNBBFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoMutasiStokNBBFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokNBBFrm.vCanPrint2:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokNBBFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoMutasiStokNBBFrm.vCanAdd:=False;
+     InfoMutasiStokNBBFrm.vCanEdit:=False;
+     InfoMutasiStokNBBFrm.vCanDel:=False;
+     InfoMutasiStokNBBFrm.vCanPrint:=False;
+     InfoMutasiStokNBBFrm.vCanPrint2:=False;
+     InfoMutasiStokNBBFrm.vCanExport:=False;
+  end;
+  InfoMutasiStokNBBFrm.Show;
 end;
 
 end.

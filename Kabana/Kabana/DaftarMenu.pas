@@ -78,6 +78,10 @@ type
     Panel2: TPanel;
     BitBtn1: TBitBtn;
     Panel5: TPanel;
+    qDaftarTipeMenuDetail2ISUNPOST2: TStringField;
+    qDaftarTipeMenuDetail2ISUNPOST3: TStringField;
+    QDaftarTipeMenuDetailISUNPOST2: TStringField;
+    QDaftarTipeMenuDetailISUNPOST3: TStringField;
     procedure BitBtn100Click(Sender: TObject);
     procedure wwDBGrid1CalcCellColors(Sender: TObject; Field: TField;
       State: TGridDrawState; Highlight: Boolean; AFont: TFont;

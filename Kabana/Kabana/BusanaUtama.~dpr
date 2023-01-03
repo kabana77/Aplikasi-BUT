@@ -88,6 +88,5 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TInfoMutasiStokBBFrm, InfoMutasiStokBBFrm);
   Application.Run;
 end.

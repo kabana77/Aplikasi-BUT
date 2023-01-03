@@ -1321,6 +1321,10 @@ type
     QRDBText244: TQRDBText;
     qBMasterTGL_APPROVE: TDateTimeField;
     qBMasterOPR_APPROVE: TStringField;
+    qB1OPR_INSERT: TStringField;
+    qB1OPR_APPROVE: TStringField;
+    qB1TGL_INSERT: TDateTimeField;
+    qB1TGL_APPROVE: TDateTimeField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

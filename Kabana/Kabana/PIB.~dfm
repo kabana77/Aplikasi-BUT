@@ -293,7 +293,7 @@ object PIBFrm: TPIBFrm
       Top = 50
       Width = 1267
       Height = 647
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

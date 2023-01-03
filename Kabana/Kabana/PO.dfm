@@ -1,6 +1,6 @@
 object POFrm: TPOFrm
-  Left = 292
-  Top = 164
+  Left = 250
+  Top = 158
   Width = 1290
   Height = 679
   Caption = 'POFrm'
@@ -3747,7 +3747,7 @@ object POFrm: TPOFrm
             end
             object QRDBText260: TQRDBText
               Left = 1
-              Top = 160
+              Top = 192
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -3758,7 +3758,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 2.645833333333333000
-                423.333333333333300000
+                508.000000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -3779,7 +3779,7 @@ object POFrm: TPOFrm
             end
             object QRDBText261: TQRDBText
               Left = 1
-              Top = 178
+              Top = 210
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -3790,7 +3790,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 2.645833333333333000
-                470.958333333333300000
+                555.625000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -3843,7 +3843,7 @@ object POFrm: TPOFrm
             end
             object QRDBText263: TQRDBText
               Left = 155
-              Top = 160
+              Top = 192
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -3854,7 +3854,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 410.104166666666700000
-                423.333333333333300000
+                508.000000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -3875,7 +3875,7 @@ object POFrm: TPOFrm
             end
             object QRDBText264: TQRDBText
               Left = 155
-              Top = 178
+              Top = 210
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -3886,7 +3886,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 410.104166666666700000
-                470.958333333333300000
+                555.625000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -4228,7 +4228,7 @@ object POFrm: TPOFrm
             end
             object QRDBText273: TQRDBText
               Left = 311
-              Top = 160
+              Top = 192
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -4239,7 +4239,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 822.854166666666700000
-                423.333333333333300000
+                508.000000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -4260,7 +4260,7 @@ object POFrm: TPOFrm
             end
             object QRDBText274: TQRDBText
               Left = 311
-              Top = 178
+              Top = 210
               Width = 128
               Height = 20
               Frame.Color = clBlack
@@ -4271,7 +4271,7 @@ object POFrm: TPOFrm
               Size.Values = (
                 52.916666666666670000
                 822.854166666666700000
-                470.958333333333300000
+                555.625000000000000000
                 338.666666666666700000)
               Alignment = taCenter
               AlignToBand = False
@@ -4633,6 +4633,102 @@ object POFrm: TPOFrm
               AutoStretch = False
               Caption = ':'
               Color = clWhite
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText22: TQRDBText
+              Left = 1
+              Top = 173
+              Width = 128
+              Height = 20
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                52.916666666666670000
+                2.645833333333333000
+                457.729166666666700000
+                338.666666666666700000)
+              Alignment = taCenter
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'OPR_INSERT'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText23: TQRDBText
+              Left = 155
+              Top = 173
+              Width = 128
+              Height = 20
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                52.916666666666670000
+                410.104166666666700000
+                457.729166666666700000
+                338.666666666666700000)
+              Alignment = taCenter
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'OPR_APPROVE2'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText24: TQRDBText
+              Left = 311
+              Top = 173
+              Width = 128
+              Height = 20
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                52.916666666666670000
+                822.854166666666700000
+                457.729166666666700000
+                338.666666666666700000)
+              Alignment = taCenter
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'OPR_APPROVE'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -5635,12 +5731,12 @@ object POFrm: TPOFrm
             Transparent = True
           end
           object Label34: TLabel
-            Left = 578
+            Left = 401
             Top = 3
-            Width = 43
+            Width = 88
             Height = 13
             Cursor = crHandPoint
-            Caption = 'UnPOST'
+            Caption = 'Approve Canceled'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5684,7 +5780,7 @@ object POFrm: TPOFrm
           end
           object Label1: TLabel
             Left = 400
-            Top = 62
+            Top = 83
             Width = 72
             Height = 13
             Caption = 'Tgl. Minta Kirim'
@@ -5773,7 +5869,7 @@ object POFrm: TPOFrm
           end
           object Label15: TLabel
             Left = 400
-            Top = 108
+            Top = 124
             Width = 61
             Height = 13
             Caption = 'Expired Date'
@@ -5816,7 +5912,7 @@ object POFrm: TPOFrm
           end
           object Label2: TLabel
             Left = 400
-            Top = 12
+            Top = 40
             Width = 47
             Height = 13
             Caption = 'Kelompok'
@@ -5879,6 +5975,22 @@ object POFrm: TPOFrm
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
+          end
+          object Label9: TLabel
+            Left = 505
+            Top = 3
+            Width = 84
+            Height = 13
+            Cursor = crHandPoint
+            Caption = 'Review Canceled'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsUnderline]
+            ParentFont = False
+            Transparent = True
+            OnClick = Label9Click
           end
           object lcLokasi: TwwDBLookupCombo
             Left = 1016
@@ -6033,7 +6145,7 @@ object POFrm: TPOFrm
             WordWrap = False
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 560
+            Left = 400
             Top = 16
             Width = 81
             Height = 17
@@ -6044,7 +6156,7 @@ object POFrm: TPOFrm
             DisplayValueChecked = '1'
             DisplayValueUnchecked = '0'
             NullAndBlankState = cbUnchecked
-            Caption = 'Posted'
+            Caption = 'Approved'
             DataField = 'ISPOST'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
@@ -6057,8 +6169,8 @@ object POFrm: TPOFrm
             OnClick = wwCheckBox1Click
           end
           object wwCheckBox5: TwwCheckBox
-            Left = 640
-            Top = 16
+            Left = 954
+            Top = 24
             Width = 57
             Height = 17
             TabStop = False
@@ -6072,6 +6184,7 @@ object POFrm: TPOFrm
             Caption = 'Batal'
             DataField = 'ISBATAL'
             DataSource = dsqBMaster
+            Enabled = False
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clGray
             Font.Height = -11
@@ -6079,6 +6192,7 @@ object POFrm: TPOFrm
             Font.Style = [fsBold]
             ParentFont = False
             TabOrder = 14
+            Visible = False
             ReadOnly = True
           end
           object lcdEkspedisi: TwwDBLookupComboDlg
@@ -6114,7 +6228,7 @@ object POFrm: TPOFrm
           end
           object vfAwal: TwwDBDateTimePicker
             Left = 400
-            Top = 78
+            Top = 99
             Width = 89
             Height = 19
             AutoSize = False
@@ -6141,7 +6255,7 @@ object POFrm: TPOFrm
           end
           object wwDBDateTimePicker1: TwwDBDateTimePicker
             Left = 400
-            Top = 123
+            Top = 139
             Width = 89
             Height = 19
             AutoSize = False
@@ -6216,7 +6330,7 @@ object POFrm: TPOFrm
           end
           object wwDBComboBox1: TwwDBComboBox
             Left = 400
-            Top = 28
+            Top = 56
             Width = 129
             Height = 19
             ShowButton = True
@@ -6293,6 +6407,30 @@ object POFrm: TPOFrm
             DataSource = dsqBMaster
             TabOrder = 2
             UnboundDataType = wwDefault
+          end
+          object wwCheckBox2: TwwCheckBox
+            Left = 504
+            Top = 16
+            Width = 81
+            Height = 17
+            DisableThemes = False
+            AlwaysTransparent = False
+            ValueChecked = '1'
+            ValueUnchecked = '0'
+            DisplayValueChecked = '1'
+            DisplayValueUnchecked = '0'
+            NullAndBlankState = cbUnchecked
+            Caption = 'Reviewed'
+            DataField = 'ISPOST2'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 15
+            OnClick = wwCheckBox2Click
           end
         end
         object pMaster2: TPanel
@@ -20547,6 +20685,18 @@ object POFrm: TPOFrm
       FieldName = 'OPR_APPROVE'
       Size = 50
     end
+    object qBMasterTGL_APPROVE2: TDateTimeField
+      FieldName = 'TGL_APPROVE2'
+    end
+    object qBMasterOPR_APPROVE2: TStringField
+      FieldName = 'OPR_APPROVE2'
+      Size = 50
+    end
+    object qBMasterISPOST2: TStringField
+      FieldName = 'ISPOST2'
+      Required = True
+      Size = 1
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -20750,8 +20900,8 @@ object POFrm: TPOFrm
       'begin'
       '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM, :PCATATAN);'
       'end;')
-    Left = 784
-    Top = 187
+    Left = 808
+    Top = 275
     ParamData = <
       item
         DataType = ftFloat
@@ -22054,5 +22204,32 @@ object POFrm: TPOFrm
     DataSet = qB6
     Left = 1211
     Top = 208
+  end
+  object procUnpost2: TOraStoredProc
+    StoredProcName = 'PROC_UNPOST_OS2'
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'begin'
+      '  PROC_UNPOST_OS2(:PNO_REG, :PKD_FORM, :PCATATAN);'
+      'end;')
+    Left = 824
+    Top = 331
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'PNO_REG'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PKD_FORM'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PCATATAN'
+        ParamType = ptInput
+      end>
+    CommandStoredProcName = 'PROC_UNPOST_OS2:0'
   end
 end

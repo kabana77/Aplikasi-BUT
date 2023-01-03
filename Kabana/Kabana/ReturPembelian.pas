@@ -2533,6 +2533,12 @@ begin
   vfield_operand:='LIKE';
   vfield_awal:=DMFrm.qDateTimeVDATETIME.AsDateTime;
   vfield_akhir:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+
+  TabSheet2.TabVisible:=False;
+  TabSheet3.TabVisible:=False;
+  TabSheet4.TabVisible:=False;
+  TabSheet5.TabVisible:=False;
+  TabSheet6.TabVisible:=False;
 end;
 
 procedure TReturPembelianFrm.tbFilterClick(Sender: TObject);

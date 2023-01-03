@@ -5072,8 +5072,8 @@ object ReturPembelianFrm: TReturPembelianFrm
           ParentFont = False
           TabOrder = 0
           object DBText7: TDBText
-            Left = 560
-            Top = 25
+            Left = 936
+            Top = 33
             Width = 65
             Height = 19
             AutoSize = True
@@ -5086,10 +5086,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label4: TLabel
-            Left = 520
-            Top = 8
+            Left = 896
+            Top = 16
             Width = 31
             Height = 13
             Caption = 'Lokasi'
@@ -5100,9 +5101,10 @@ object ReturPembelianFrm: TReturPembelianFrm
             Font.Style = []
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label14: TLabel
-            Left = 648
+            Left = 408
             Top = 95
             Width = 55
             Height = 13
@@ -5116,27 +5118,27 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object DBText19: TDBText
-            Left = 864
-            Top = 10
-            Width = 91
-            Height = 24
+            Left = 624
+            Top = 16
+            Width = 57
+            Height = 13
             AutoSize = True
             DataField = 'NO_REG_OS'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
-            Font.Height = -19
+            Font.Height = -11
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
           end
           object Label16: TLabel
-            Left = 808
+            Left = 560
             Top = 16
-            Width = 46
+            Width = 44
             Height = 13
-            Caption = 'No. Order'
+            Caption = 'No. Bukti'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5146,8 +5148,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object Label17: TLabel
-            Left = 808
-            Top = 38
+            Left = 560
+            Top = 44
             Width = 39
             Height = 13
             Caption = 'Tanggal'
@@ -5160,8 +5162,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object DBText20: TDBText
-            Left = 864
-            Top = 34
+            Left = 628
+            Top = 38
             Width = 74
             Height = 19
             AutoSize = True
@@ -5176,7 +5178,7 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object Label18: TLabel
-            Left = 808
+            Left = 560
             Top = 67
             Width = 40
             Height = 13
@@ -5190,8 +5192,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object Label34: TLabel
-            Left = 666
-            Top = 3
+            Left = 426
+            Top = 19
             Width = 43
             Height = 13
             Cursor = crHandPoint
@@ -5206,8 +5208,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             OnClick = Label34Click
           end
           object Label3: TLabel
-            Left = 344
-            Top = 8
+            Left = 760
+            Top = 16
             Width = 45
             Height = 13
             Caption = 'Ekspedisi'
@@ -5218,10 +5220,11 @@ object ReturPembelianFrm: TReturPembelianFrm
             Font.Style = []
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object DBText6: TDBText
-            Left = 400
-            Top = 25
+            Left = 816
+            Top = 33
             Width = 65
             Height = 19
             AutoSize = True
@@ -5234,13 +5237,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label37: TLabel
-            Left = 808
+            Left = 560
             Top = 91
-            Width = 50
+            Width = 55
             Height = 13
-            Caption = 'No. Faktur'
+            Caption = 'No. Invoice'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5250,8 +5254,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             Transparent = True
           end
           object lcLokasi: TwwDBLookupCombo
-            Left = 560
-            Top = 5
+            Left = 936
+            Top = 13
             Width = 57
             Height = 19
             DropDownAlignment = taLeftJustify
@@ -5264,6 +5268,7 @@ object ReturPembelianFrm: TReturPembelianFrm
             LookupField = 'KD_LOKASI'
             Options = [loColLines, loRowLines, loTitles]
             TabOrder = 2
+            Visible = False
             AutoDropDown = False
             ShowButton = True
             PreciseEditRegion = False
@@ -5271,11 +5276,12 @@ object ReturPembelianFrm: TReturPembelianFrm
             OnEnter = lcLokasiEnter
           end
           object GroupBox1: TGroupBox
-            Left = 392
-            Top = 48
+            Left = 1000
+            Top = 8
             Width = 233
             Height = 105
             TabOrder = 6
+            Visible = False
             object DBText9: TDBText
               Left = 168
               Top = 27
@@ -5488,9 +5494,9 @@ object ReturPembelianFrm: TReturPembelianFrm
           end
           object GroupBox2: TGroupBox
             Left = 8
-            Top = 48
+            Top = 8
             Width = 377
-            Height = 105
+            Height = 145
             Caption = 'Prinsipal'
             TabOrder = 0
             object DBText2: TDBText
@@ -5590,7 +5596,7 @@ object ReturPembelianFrm: TReturPembelianFrm
             end
           end
           object DBMemo1: TDBMemo
-            Left = 648
+            Left = 408
             Top = 112
             Width = 337
             Height = 41
@@ -5605,7 +5611,7 @@ object ReturPembelianFrm: TReturPembelianFrm
             TabOrder = 4
           end
           object dbeReff: TwwDBEdit
-            Left = 864
+            Left = 624
             Top = 64
             Width = 121
             Height = 19
@@ -5617,8 +5623,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             WordWrap = False
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 648
-            Top = 16
+            Left = 408
+            Top = 32
             Width = 81
             Height = 17
             DisableThemes = False
@@ -5641,8 +5647,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             OnClick = wwCheckBox1Click
           end
           object wwCheckBox5: TwwCheckBox
-            Left = 736
-            Top = 16
+            Left = 496
+            Top = 32
             Width = 57
             Height = 17
             TabStop = False
@@ -5666,8 +5672,8 @@ object ReturPembelianFrm: TReturPembelianFrm
             ReadOnly = True
           end
           object lcdEkspedisi: TwwDBLookupComboDlg
-            Left = 400
-            Top = 5
+            Left = 816
+            Top = 13
             Width = 73
             Height = 19
             GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
@@ -5690,13 +5696,14 @@ object ReturPembelianFrm: TReturPembelianFrm
             LookupTable = DMFrm.qEkspedisi
             LookupField = 'ID_EKSPEDISI'
             TabOrder = 1
+            Visible = False
             AutoDropDown = False
             ShowButton = True
             AllowClearKey = False
             OnEnter = lcdEkspedisiEnter
           end
           object wwDBEdit1: TwwDBEdit
-            Left = 864
+            Left = 624
             Top = 88
             Width = 121
             Height = 19
@@ -5708,7 +5715,7 @@ object ReturPembelianFrm: TReturPembelianFrm
             WordWrap = False
           end
           object VTgl: TwwDBDateTimePicker
-            Left = 864
+            Left = 624
             Top = 35
             Width = 121
             Height = 25
@@ -5753,7 +5760,7 @@ object ReturPembelianFrm: TReturPembelianFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -6222,28 +6229,11 @@ object ReturPembelianFrm: TReturPembelianFrm
                 'KD_ITEM'#9'9'#9'KODE'#9'F'
                 'KETERANGAN'#9'41'#9'KETERANGAN'#9'T'
                 'NO_SERIAL'#9'16'#9'NO_SERIAL'#9'F'
-                'TGL_EXP'#9'8'#9'TGL_EXP'#9'F'
                 'PPN'#9'3'#9'PPN'#9'T'
-                'ISHADIAH'#9'6'#9'HADIAH'#9'F'
-                'RA'#9'3'#9'A'#9'T'#9'RASIO'
-                'RT'#9'2'#9'T'#9'T'#9'RASIO'
-                'RD'#9'1'#9'D'#9'T'#9'RASIO'
-                'QTY_A'#9'4'#9'A'#9'F'#9'DIRETUR'
-                'QTY_T'#9'3'#9'T'#9'F'#9'DIRETUR'
-                'QTY_D'#9'4'#9'D'#9'F'#9'DIRETUR'
-                'HRG_A'#9'9'#9'A'#9'T'#9'H A R G A'
-                'HRG_T'#9'7'#9'T'#9'T'#9'H A R G A'
-                'HRG_D'#9'5'#9'D'#9'T'#9'H A R G A'
+                'QTY_D'#9'4'#9'QTY RETUR'#9'F'
+                'HRG_D'#9'5'#9'HARGA'#9'T'
                 'SUB_TOTAL_GROSS'#9'9'#9'TOTAL~GROSS'#9'T'
-                'DISC_TPR_PSN'#9'5'#9'%'#9'T'#9'DISC TPR'
-                'DISC_TPR_RP'#9'7'#9'Rp'#9'T'#9'DISC TPR'
-                'DISC_REG_PSN'#9'5'#9'%'#9'T'#9'DISC REG'
-                'DISC_REG_RP'#9'7'#9'Rp'#9'T'#9'DISC REG'
-                'DISC_X_PSN'#9'5'#9'%'#9'F'#9'DISC LAINNYA'
-                'DISC_X_RP'#9'7'#9'Rp'#9'F'#9'DISC LAINNYA'
-                'SUB_TOTAL'#9'9'#9'TOTAL~NET'#9'T'
-                'KG_TOT'#9'6'#9'BERAT~KG'#9'T'
-                'M3_TOT'#9'6'#9'VOL~M3'#9'T')
+                'SUB_TOTAL'#9'9'#9'TOTAL~NET'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'
@@ -19047,7 +19037,7 @@ object ReturPembelianFrm: TReturPembelianFrm
       'select * from vretur_pembelian')
     ReadOnly = True
     Left = 1123
-    Top = 24
+    Top = 8
     object qB1NO_REG_OS: TFloatField
       FieldName = 'NO_REG_OS'
       Required = True
@@ -19342,8 +19332,8 @@ object ReturPembelianFrm: TReturPembelianFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1123
-    Top = 128
+    Left = 1091
+    Top = 120
     ParamData = <
       item
         DataType = ftFloat
@@ -20532,7 +20522,7 @@ object ReturPembelianFrm: TReturPembelianFrm
     ReadOnly = True
     OnCalcFields = qB2CalcFields
     Left = 1171
-    Top = 24
+    Top = 8
     object qB2NO_REG_OS: TFloatField
       FieldName = 'NO_REG_OS'
       Required = True

@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 365
-  Top = 186
+  Left = 407
+  Top = 192
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -499,6 +499,11 @@ object MainFrm: TMainFrm
         Caption = 'Info Mutasi Stok Bahan Baku'
         GroupIndex = 1
         OnClick = InfoMutasiStokBB1Click
+      end
+      object InfoMutasiStokNonBahanBaku1: TMenuItem
+        Caption = 'Info Mutasi Stok Non Bahan Baku'
+        GroupIndex = 1
+        OnClick = InfoMutasiStokNonBahanBaku1Click
       end
     end
     object Penjualan1: TMenuItem

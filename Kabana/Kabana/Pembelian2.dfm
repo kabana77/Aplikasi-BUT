@@ -5047,7 +5047,7 @@ object Pembelian2Frm: TPembelian2Frm
           ParentFont = False
           TabOrder = 0
           object DBText7: TDBText
-            Left = 560
+            Left = 488
             Top = 23
             Width = 65
             Height = 19
@@ -5063,7 +5063,7 @@ object Pembelian2Frm: TPembelian2Frm
             Transparent = True
           end
           object Label4: TLabel
-            Left = 520
+            Left = 448
             Top = 6
             Width = 31
             Height = 13
@@ -5153,9 +5153,9 @@ object Pembelian2Frm: TPembelian2Frm
           object Label18: TLabel
             Left = 808
             Top = 75
-            Width = 40
+            Width = 37
             Height = 13
-            Caption = 'No. Reff'
+            Caption = 'No. PIB'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5165,7 +5165,7 @@ object Pembelian2Frm: TPembelian2Frm
             Transparent = True
           end
           object Label34: TLabel
-            Left = 1018
+            Left = 642
             Top = 3
             Width = 43
             Height = 13
@@ -5183,9 +5183,9 @@ object Pembelian2Frm: TPembelian2Frm
           object Label1: TLabel
             Left = 8
             Top = 1
-            Width = 75
+            Width = 59
             Height = 13
-            Caption = 'No. PIB Internal'
+            Caption = 'No. Register'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -5207,6 +5207,7 @@ object Pembelian2Frm: TPembelian2Frm
             Font.Style = []
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label8: TLabel
             Left = 264
@@ -5221,6 +5222,7 @@ object Pembelian2Frm: TPembelian2Frm
             Font.Style = []
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label12: TLabel
             Left = 648
@@ -5237,7 +5239,7 @@ object Pembelian2Frm: TPembelian2Frm
             Transparent = True
           end
           object Label3: TLabel
-            Left = 349
+            Left = 317
             Top = 1
             Width = 45
             Height = 13
@@ -5249,9 +5251,10 @@ object Pembelian2Frm: TPembelian2Frm
             Font.Style = []
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object DBText6: TDBText
-            Left = 400
+            Left = 368
             Top = 23
             Width = 65
             Height = 19
@@ -5265,6 +5268,7 @@ object Pembelian2Frm: TPembelian2Frm
             Font.Style = [fsBold]
             ParentFont = False
             Transparent = True
+            Visible = False
           end
           object Label20: TLabel
             Left = 648
@@ -5313,7 +5317,7 @@ object Pembelian2Frm: TPembelian2Frm
             Transparent = True
           end
           object lcLokasi: TwwDBLookupCombo
-            Left = 560
+            Left = 488
             Top = 3
             Width = 57
             Height = 19
@@ -5449,7 +5453,7 @@ object Pembelian2Frm: TPembelian2Frm
             WordWrap = False
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 1000
+            Left = 624
             Top = 16
             Width = 81
             Height = 17
@@ -5475,7 +5479,7 @@ object Pembelian2Frm: TPembelian2Frm
             OnClick = wwCheckBox1Click
           end
           object wwCheckBox5: TwwCheckBox
-            Left = 736
+            Left = 704
             Top = 16
             Width = 57
             Height = 17
@@ -5520,6 +5524,7 @@ object Pembelian2Frm: TPembelian2Frm
             DataSource = dsqBMaster
             TabOrder = 3
             UnboundDataType = wwDefault
+            Visible = False
             WantReturns = False
             WordWrap = False
           end
@@ -5532,6 +5537,7 @@ object Pembelian2Frm: TPembelian2Frm
             DataSource = dsqBMaster
             TabOrder = 4
             UnboundDataType = wwDefault
+            Visible = False
             WantReturns = False
             WordWrap = False
           end
@@ -5548,7 +5554,7 @@ object Pembelian2Frm: TPembelian2Frm
             WordWrap = False
           end
           object lcdEkspedisi: TwwDBLookupComboDlg
-            Left = 400
+            Left = 368
             Top = 3
             Width = 73
             Height = 19
@@ -5572,6 +5578,7 @@ object Pembelian2Frm: TPembelian2Frm
             LookupTable = DMFrm.qEkspedisi
             LookupField = 'ID_EKSPEDISI'
             TabOrder = 5
+            Visible = False
             AutoDropDown = False
             ShowButton = True
             AllowClearKey = False
@@ -5777,7 +5784,7 @@ object Pembelian2Frm: TPembelian2Frm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -19930,8 +19937,8 @@ object Pembelian2Frm: TPembelian2Frm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1044
-    Top = 64
+    Left = 1076
+    Top = 48
     ParamData = <
       item
         DataType = ftFloat

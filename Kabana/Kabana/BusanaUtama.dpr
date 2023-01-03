@@ -78,7 +78,8 @@ uses
   LaporanBC in 'LaporanBC.pas' {LaporanBCFrm},
   InfoMutasiStokRev in 'InfoMutasiStokRev.pas' {InfoMutasiStokRevFrm},
   PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm},
-  InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm};
+  InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm},
+  InfoMutasiStokNBB in 'InfoMutasiStokNBB.pas' {InfoMutasiStokNBBFrm};
 
 {$R *.res}
 

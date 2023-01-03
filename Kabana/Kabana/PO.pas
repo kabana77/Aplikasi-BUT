@@ -1187,6 +1187,15 @@ type
     qBMasterOPR_APPROVE: TStringField;
     qB1TGL_APPROVE: TDateTimeField;
     qB1OPR_APPROVE: TStringField;
+    QRDBText22: TQRDBText;
+    QRDBText23: TQRDBText;
+    QRDBText24: TQRDBText;
+    qBMasterTGL_APPROVE2: TDateTimeField;
+    qBMasterOPR_APPROVE2: TStringField;
+    Label9: TLabel;
+    wwCheckBox2: TwwCheckBox;
+    qBMasterISPOST2: TStringField;
+    procUnpost2: TOraStoredProc;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1325,6 +1334,8 @@ type
     procedure dbcCaraBayarChange(Sender: TObject);
     procedure qBMasterPPNChange(Sender: TField);
     procedure qrBuktiAfterPreview(Sender: TObject);
+    procedure Label9Click(Sender: TObject);
+    procedure wwCheckBox2Click(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1352,7 +1363,7 @@ type
     procedure Proc_Refresh6;
   public
     { Public declarations }
-    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanCancel : Boolean;
+    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanUnPost2, vCanUnPost3, vCanCancel : Boolean;
   end;
 
 var
@@ -2847,6 +2858,7 @@ begin
   qBDetail.Open;                                                            //GANTI
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+  if vCanUnPost2 then wwCheckBox2.Enabled:=True else wwCheckBox2.Enabled:=False;
 end;
 
 procedure TPOFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -4228,6 +4240,41 @@ end;
 procedure TPOFrm.qrBuktiAfterPreview(Sender: TObject);
 begin
   qrlNoUrut.Caption:='0';
+end;
+
+procedure TPOFrm.Label9Click(Sender: TObject);
+begin
+  if vCanUnPost2 then
+  begin
+    DMFrm.vcatatan:='';
+    if InputQuery('Catatan','Alasan Unpost : ',DMFrm.vcatatan) then
+    begin
+     //vno_reg:=qBMasterNO_REG_OS.AsFloat;
+     procUnpost2.Close;
+     procUnpost2.ParamByName('pno_reg').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+     procUnpost2.ParamByName('pkd_form').AsString:=Name;
+     procUnpost2.ParamByName('pcatatan').AsString:=DMFrm.vcatatan;
+     procUnpost2.ExecProc;
+     qBMaster.Close;
+     qBMaster.Open;
+    end;
+  end
+  else
+    ShowMessage('Maaf, anda tidak punya hak UNPOST bukti ini !');
+end;
+
+procedure TPOFrm.wwCheckBox2Click(Sender: TObject);
+begin
+  if (qBMaster.State=dsEdit) and (qBMasterISPOST2.AsString='0') then
+  begin
+      if wwCheckBox2.Checked then
+      begin
+          qBMasterISPOST2.AsString:='1';
+          qBMaster.Post;
+      end;
+  end;
+  if dbeReff.Visible then
+    dbeReff.SetFocus;
 end;
 
 end.
