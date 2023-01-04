@@ -1704,6 +1704,10 @@ type
     qBMasterOPR_APPROVE: TStringField;
     qB1OPR_APPROVE: TStringField;
     qB1TGL_APPROVE: TDateTimeField;
+    qItemKD_PRODUKSI: TStringField;
+    qBDetailKD_PRODUKSI: TStringField;
+    QRDBText32: TQRDBText;
+    QRLabel45: TQRLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -4083,6 +4087,7 @@ begin
      qBDetailCOLOR.AsString:=qItemCOLOR.AsString;
      qBDetailMU.AsString:=qItemMU.AsString;
      qBDetailKURS.AsFloat:=qItemKURS.AsFloat;
+     qBDetailKD_PRODUKSI.AsString:=qItemKD_PRODUKSI.AsString;
 
      {end skrip baru}
   end;
