@@ -1196,6 +1196,8 @@ type
     wwCheckBox2: TwwCheckBox;
     qBMasterISPOST2: TStringField;
     procUnpost2: TOraStoredProc;
+    qB1TGL_APPROVE2: TDateTimeField;
+    qB1OPR_APPROVE2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1336,13 +1338,14 @@ type
     procedure qrBuktiAfterPreview(Sender: TObject);
     procedure Label9Click(Sender: TObject);
     procedure wwCheckBox2Click(Sender: TObject);
+    procedure qBDetailBeforeEdit(DataSet: TDataSet);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
     vfield_cari, vfield_operand, vfield_col, vfield_tgl : String;
     vfield_awal, vfield_akhir, vdate, vtgl_bukti : TDate;
     vno_reg : real;
-    vkd_transaksi, vispost_old, vispost_new, vkeyword, vkeyfield : String;
+    vkd_transaksi, vispost_old, vispost_new, vispost2_old, vispost2_new, vkeyword, vkeyfield : String;
     vModeInput : boolean;
     vhal : Integer;
     vsql_org, vfilter, vorder, vsql_item : String;
@@ -2902,7 +2905,7 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') or (vispost_old='1') then
+  if (qBMasterISPOST.AsString='1') or (vispost_old='1') or (vispost2_old='1') then
   begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
       Abort;
@@ -2912,6 +2915,7 @@ end;
 procedure TPOFrm.qBMasterBeforeEdit(DataSet: TDataSet);
 begin
   vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
   if not vCanEdit then
   begin
       ShowMessage('Maaf, anda tidak berhak EDIT data !');
@@ -2921,7 +2925,7 @@ begin
   begin
     if (qBMasterISPOST.AsString='1') then
     begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT !');
+      ShowMessage('Maaf, data sudah di-APPROVE, tidak bisa di-EDIT !');
       Abort;
     end;
   end;
@@ -2959,9 +2963,9 @@ begin
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
-  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-
-    qBMasterBAYAR.AsFloat;
-  if ((vispost_old='0') and (vispost_new='1')) then
+  vispost2_new:=qBMasterISPOST2.AsString;
+  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-qBMasterBAYAR.AsFloat;
+  if ((vispost_old='0') and (vispost_new='1')) or (((vispost2_old='0') and (vispost2_new='1'))) then
   begin
       if qBDetail.RecordCount=0 then
       begin
@@ -2979,7 +2983,7 @@ begin
           qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
           qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
           qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
-        end
+        end;
       end;
   end;
 end;
@@ -2992,9 +2996,9 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') then
+  if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-TAMBAH !');
       Abort;
   end
   else
@@ -3141,6 +3145,13 @@ begin
       if wwCheckBox1.Checked then
       begin
           qBMasterISPOST.AsString:='1';
+          qBMaster.Post;
+      end;
+      if (wwCheckBox1.Checked=False) then
+      begin
+          qBMasterOPR_APPROVE.AsString:='';
+          qBMasterTGL_APPROVE.AsDateTime:=null;
+          qBMasterISPOST.AsString:='0';
           qBMaster.Post;
       end;
   end;
@@ -4270,11 +4281,32 @@ begin
       if wwCheckBox2.Checked then
       begin
           qBMasterISPOST2.AsString:='1';
+          qBMasterTGL_APPROVE2.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE2.AsString:=DMFrm.qDateTimeVUSER.AsString;
           qBMaster.Post;
       end;
   end;
   if dbeReff.Visible then
     dbeReff.SetFocus;
+end;
+
+procedure TPOFrm.qBDetailBeforeEdit(DataSet: TDataSet);
+begin
+  vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
+  if not vCanEdit then
+  begin
+      ShowMessage('Maaf, anda tidak berhak EDIT data !');
+      Abort;
+  end
+  else
+  begin
+    if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1') then
+    begin
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-EDIT !');
+      Abort;
+    end;
+  end;
 end;
 
 end.

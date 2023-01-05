@@ -27004,7 +27004,7 @@ object OrderSalesFrm: TOrderSalesFrm
       '  PROC_UNPOST_OS(:PNO_REG, :PKD_FORM, :PCATATAN);'
       'end;')
     Left = 720
-    Top = 267
+    Top = 219
     ParamData = <
       item
         DataType = ftFloat

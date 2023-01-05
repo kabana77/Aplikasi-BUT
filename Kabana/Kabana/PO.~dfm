@@ -1,5 +1,5 @@
 object POFrm: TPOFrm
-  Left = 249
+  Left = 252
   Top = 158
   Width = 1290
   Height = 679
@@ -2431,10 +2431,12 @@ object POFrm: TPOFrm
             'NILAI_FAKTUR'#9'12'#9'Nilai'#9'F'#9'T O T A L'
             'BAYAR'#9'12'#9'CD/ DN'#9'F'#9'T O T A L'
             'NILAI_TAGIHAN'#9'12'#9'Tagihan'#9'F'#9'T O T A L'
-            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'LOG INPUT'
-            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'LOG INPUT'
-            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
-            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
+            'OPR_INSERT'#9'18'#9'OPR'#9'T'#9'PREPARE BY'
+            'TGL_INSERT'#9'18'#9'TGL'#9'T'#9'PREPARE BY'
+            'OPR_APPROVE2'#9'18'#9'OPR'#9'F'#9'REVIEW BY'
+            'TGL_APPROVE2'#9'18'#9'TGL'#9'F'#9'REVIEW BY'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'APPROVE BY'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'APPROVE BY')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -19957,6 +19959,13 @@ object POFrm: TPOFrm
       FieldName = 'OPR_APPROVE'
       Size = 50
     end
+    object qB1TGL_APPROVE2: TDateTimeField
+      FieldName = 'TGL_APPROVE2'
+    end
+    object qB1OPR_APPROVE2: TStringField
+      FieldName = 'OPR_APPROVE2'
+      Size = 50
+    end
   end
   object dsqB1: TwwDataSource
     DataSet = qB1
@@ -20023,7 +20032,7 @@ object POFrm: TPOFrm
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     IndexFieldNames = 'NO_REG_D'
     BeforeInsert = qBDetailBeforeInsert
-    BeforeEdit = qBMasterBeforeEdit
+    BeforeEdit = qBDetailBeforeEdit
     BeforePost = qBDetailBeforePost
     BeforeDelete = qBMasterBeforeDelete
     AfterScroll = qBDetailAfterScroll
