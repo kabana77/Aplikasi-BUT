@@ -1,6 +1,6 @@
 object POFrm: TPOFrm
-  Left = 252
-  Top = 158
+  Left = 347
+  Top = 198
   Width = 1290
   Height = 679
   Caption = 'POFrm'

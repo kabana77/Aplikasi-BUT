@@ -2874,6 +2874,7 @@ begin
   qBMasterTOP.AsInteger:=0;
   {qBMasterCATATAN.AsString:='MAKLON EKSPOR';}
   wwDBComboBox2.Enabled:=True;
+  qBMasterISPOST2.AsString:='0';
 end;
 
 procedure TPOFrm.lcdOutletEnter(Sender: TObject);
@@ -2905,11 +2906,11 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') or (vispost_old='1') or (vispost2_old='1') then
-  begin
+    if (qBMasterISPOST.AsString='1') or (vispost_old='1') or (vispost2_old='1') then
+    begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
       Abort;
-  end;
+    end;
 end;
 
 procedure TPOFrm.qBMasterBeforeEdit(DataSet: TDataSet);
@@ -2922,13 +2923,11 @@ begin
       Abort;
   end
   else
-  begin
     if (qBMasterISPOST.AsString='1') then
     begin
       ShowMessage('Maaf, data sudah di-APPROVE, tidak bisa di-EDIT !');
       Abort;
     end;
-  end;
 end;
 
 procedure TPOFrm.qBMasterBeforeInsert(DataSet: TDataSet);
@@ -2965,7 +2964,7 @@ begin
   vispost_new:=qBMasterISPOST.AsString;
   vispost2_new:=qBMasterISPOST2.AsString;
   qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-qBMasterBAYAR.AsFloat;
-  if ((vispost_old='0') and (vispost_new='1')) or (((vispost2_old='0') and (vispost2_new='1'))) then
+  if ((vispost_old='0') and (vispost_new='1')) or ((vispost2_old='0') and (vispost2_new='1')) then
   begin
       if qBDetail.RecordCount=0 then
       begin

@@ -1,6 +1,6 @@
 object PembelianFrm: TPembelianFrm
-  Left = 262
-  Top = 148
+  Left = 404
+  Top = 159
   Width = 1290
   Height = 679
   Caption = 'PembelianFrm'
@@ -7447,7 +7447,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object DBText19: TDBText
-            Left = 592
+            Left = 664
             Top = 2
             Width = 91
             Height = 24
@@ -7463,7 +7463,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object Label16: TLabel
-            Left = 536
+            Left = 608
             Top = 16
             Width = 40
             Height = 13
@@ -7477,7 +7477,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object Label17: TLabel
-            Left = 536
+            Left = 608
             Top = 46
             Width = 39
             Height = 13
@@ -7491,7 +7491,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object DBText20: TDBText
-            Left = 592
+            Left = 664
             Top = 42
             Width = 74
             Height = 19
@@ -7507,7 +7507,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object Label18: TLabel
-            Left = 536
+            Left = 608
             Top = 75
             Width = 40
             Height = 13
@@ -7523,10 +7523,10 @@ object PembelianFrm: TPembelianFrm
           object Label34: TLabel
             Left = 394
             Top = 3
-            Width = 43
+            Width = 88
             Height = 13
             Cursor = crHandPoint
-            Caption = 'UnPOST'
+            Caption = 'Approve Canceled'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -7655,7 +7655,7 @@ object PembelianFrm: TPembelianFrm
             Transparent = True
           end
           object DBText8: TDBText
-            Left = 592
+            Left = 664
             Top = 22
             Width = 50
             Height = 13
@@ -7667,6 +7667,21 @@ object PembelianFrm: TPembelianFrm
             Font.Height = -11
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
+          object Label10: TLabel
+            Left = 506
+            Top = 2
+            Width = 84
+            Height = 13
+            Cursor = crHandPoint
+            Caption = 'Review Canceled'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsUnderline]
             ParentFont = False
             Transparent = True
           end
@@ -7796,7 +7811,7 @@ object PembelianFrm: TPembelianFrm
             TabOrder = 9
           end
           object dbeReff: TwwDBEdit
-            Left = 592
+            Left = 664
             Top = 72
             Width = 121
             Height = 19
@@ -7819,7 +7834,7 @@ object PembelianFrm: TPembelianFrm
             DisplayValueChecked = '1'
             DisplayValueUnchecked = '0'
             NullAndBlankState = cbUnchecked
-            Caption = 'Posted'
+            Caption = 'Approved'
             DataField = 'ISPOST'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
@@ -7832,8 +7847,8 @@ object PembelianFrm: TPembelianFrm
             OnClick = wwCheckBox1Click
           end
           object wwCheckBox5: TwwCheckBox
-            Left = 464
-            Top = 16
+            Left = 864
+            Top = 24
             Width = 57
             Height = 17
             TabStop = False
@@ -7854,6 +7869,7 @@ object PembelianFrm: TPembelianFrm
             Font.Style = [fsBold]
             ParentFont = False
             TabOrder = 11
+            Visible = False
             ReadOnly = True
           end
           object wwDBEdit1: TwwDBEdit
@@ -7936,7 +7952,7 @@ object PembelianFrm: TPembelianFrm
             OnEnter = lcdEkspedisiEnter
           end
           object VTgl: TwwDBDateTimePicker
-            Left = 592
+            Left = 664
             Top = 39
             Width = 121
             Height = 25
@@ -7972,7 +7988,7 @@ object PembelianFrm: TPembelianFrm
             OnClick = BitBtn2Click
           end
           object cbNoSeri: TCheckBox
-            Left = 592
+            Left = 664
             Top = 93
             Width = 122
             Height = 17
@@ -8115,6 +8131,30 @@ object PembelianFrm: TPembelianFrm
             PreciseEditRegion = False
             AllowClearKey = False
             OnEnter = lcLokasiEnter
+          end
+          object wwCheckBox2: TwwCheckBox
+            Left = 492
+            Top = 16
+            Width = 81
+            Height = 17
+            DisableThemes = False
+            AlwaysTransparent = False
+            ValueChecked = '1'
+            ValueUnchecked = '0'
+            DisplayValueChecked = '1'
+            DisplayValueUnchecked = '0'
+            NullAndBlankState = cbUnchecked
+            Caption = 'Reviewed'
+            DataField = 'ISPOST2'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 16
+            OnClick = wwCheckBox2Click
           end
         end
         object pMaster2: TPanel
@@ -21842,14 +21882,14 @@ object PembelianFrm: TPembelianFrm
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     IndexFieldNames = 'NO_REG_D'
     BeforeInsert = qBDetailBeforeInsert
-    BeforeEdit = qBMasterBeforeEdit
+    BeforeEdit = qBDetailBeforeEdit
     BeforePost = qBDetailBeforePost
     BeforeDelete = qBMasterBeforeDelete
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1123
-    Top = 128
+    Left = 1115
+    Top = 152
     ParamData = <
       item
         DataType = ftFloat
@@ -22551,6 +22591,18 @@ object PembelianFrm: TPembelianFrm
       FieldName = 'OPR_APPROVE'
       Size = 50
     end
+    object qBMasterTGL_APPROVE2: TDateTimeField
+      FieldName = 'TGL_APPROVE2'
+    end
+    object qBMasterOPR_APPROVE2: TStringField
+      FieldName = 'OPR_APPROVE2'
+      Size = 50
+    end
+    object qBMasterISPOST2: TStringField
+      FieldName = 'ISPOST2'
+      Required = True
+      Size = 1
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -22734,8 +22786,8 @@ object PembelianFrm: TPembelianFrm
       'from pembelian_d'
       'where no_reg_os=:pno_reg_os')
     BeforeOpen = qBDetailXBeforeOpen
-    Left = 1128
-    Top = 168
+    Left = 1144
+    Top = 192
     ParamData = <
       item
         DataType = ftFloat

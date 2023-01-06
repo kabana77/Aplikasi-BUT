@@ -1325,6 +1325,11 @@ type
     qB1OPR_APPROVE: TStringField;
     qB1TGL_INSERT: TDateTimeField;
     qB1TGL_APPROVE: TDateTimeField;
+    wwCheckBox2: TwwCheckBox;
+    Label10: TLabel;
+    qBMasterTGL_APPROVE2: TDateTimeField;
+    qBMasterOPR_APPROVE2: TStringField;
+    qBMasterISPOST2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1459,13 +1464,15 @@ type
     procedure lcdBOMEnter(Sender: TObject);
     procedure DetailBand3BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
+    procedure wwCheckBox2Click(Sender: TObject);
+    procedure qBDetailBeforeEdit(DataSet: TDataSet);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
     vfield_cari, vfield_operand, vfield_col, vfield_tgl : String;
     vfield_awal, vfield_akhir, vdate, vtgl_bukti : TDate;
     vno_reg : real;
-    vkd_transaksi, vispost_old, vispost_new, vkeyword, vkeyfield : String;
+    vkd_transaksi, vispost_old, vispost_new, vispost2_old, vispost2_new, vkeyword, vkeyfield : String;
     vModeInput : boolean;
     vhal : Integer;
     vsql_org, vfilter, vorder, vsql_item : String;
@@ -1486,7 +1493,7 @@ type
     procedure Proc_Refresh6;
   public
     { Public declarations }
-    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanCancel : Boolean;
+    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanUnPost2, vCanUnPost3, vCanCancel : Boolean;
   end;
 
 var
@@ -2988,6 +2995,7 @@ begin
   if PageControl2.ActivePage=tsInputDJurnal then
     tsInputDJurnalShow(Nil);
     if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+    if vCanUnPost2 then wwCheckBox2.Enabled:=True else wwCheckBox2.Enabled:=False;
 end;
 
 procedure TPembelianFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -3023,27 +3031,28 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') or (vispost_old='1') then
-  begin
+    if (qBMasterISPOST.AsString='1') or (vispost_old='1') or (vispost2_old='1') then
+    begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
       Abort;
-  end;
+    end;
 end;
 
 procedure TPembelianFrm.qBMasterBeforeEdit(DataSet: TDataSet);
 begin
   vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
   if not vCanEdit then
   begin
       ShowMessage('Maaf, anda tidak berhak EDIT data !');
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') then
-  begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT !');
+    if (qBMasterISPOST.AsString='1') then
+    begin
+      ShowMessage('Maaf, data sudah di-APPROVE, tidak bisa di-EDIT !');
       Abort;
-  end;
+    end;
 end;
 
 procedure TPembelianFrm.qBMasterBeforeInsert(DataSet: TDataSet);
@@ -3075,9 +3084,9 @@ begin
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
-  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-
-    qBMasterBAYAR.AsFloat;
-  if ((vispost_old='0') and (vispost_new='1')) then
+  vispost2_new:=qBMasterISPOST2.AsString;
+  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-qBMasterBAYAR.AsFloat;
+  if ((vispost_old='0') and (vispost_new='1')) or ((vispost2_old='0') and (vispost2_new='1')) then
   begin
       if qBDetail.RecordCount=0 then
       begin
@@ -3108,9 +3117,9 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') then
+  if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-TAMBAH !');
       Abort;
   end
   else
@@ -3278,6 +3287,13 @@ begin
       if wwCheckBox1.Checked then
       begin
           qBMasterISPOST.AsString:='1';
+          qBMaster.Post;
+      end;
+      if (wwCheckBox1.Checked=False) then
+      begin
+          qBMasterOPR_APPROVE.AsString:='';
+          qBMasterTGL_APPROVE.AsDateTime:=null;
+          qBMasterISPOST.AsString:='0';
           qBMaster.Post;
       end;
   end;
@@ -4410,6 +4426,41 @@ procedure TPembelianFrm.DetailBand3BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
 qrlNoUrut.Caption:=IntToStr(StrToInt(qrlNoUrut.Caption)+1);
+end;
+
+procedure TPembelianFrm.wwCheckBox2Click(Sender: TObject);
+begin
+  if (qBMaster.State=dsEdit) and (qBMasterISPOST2.AsString='0') then
+  begin
+      if wwCheckBox2.Checked then
+      begin
+          qBMasterISPOST2.AsString:='1';
+          qBMasterTGL_APPROVE2.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE2.AsString:=DMFrm.qDateTimeVUSER.AsString;
+          qBMaster.Post;
+      end;
+  end;
+  if dbeReff.Visible then
+    dbeReff.SetFocus;
+end;
+
+procedure TPembelianFrm.qBDetailBeforeEdit(DataSet: TDataSet);
+begin
+  vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
+  if not vCanEdit then
+  begin
+      ShowMessage('Maaf, anda tidak berhak EDIT data !');
+      Abort;
+  end
+  else
+  begin
+    if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1') then
+    begin
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-EDIT !');
+      Abort;
+    end;
+  end;
 end;
 
 end.

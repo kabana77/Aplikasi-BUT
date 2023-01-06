@@ -802,6 +802,8 @@ begin
      PembelianFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
      PembelianFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
      PembelianFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+     PembelianFrm.vCanUnPost2:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+     PembelianFrm.vCanUnPost3:=(DMFrm.qMenuUserISUNPOST.AsString='+');
      PembelianFrm.vCanCancel:=(DMFrm.qMenuUserISREAD.AsString='+');
   end
   else
@@ -812,6 +814,8 @@ begin
      PembelianFrm.vCanPrint:=False;
      PembelianFrm.vCanExport:=False;
      PembelianFrm.vCanUnPost:=False;
+     PembelianFrm.vCanUnPost2:=False;
+     PembelianFrm.vCanUnPost3:=False;
      PembelianFrm.vCanCancel:=False;
   end;
   PembelianFrm.Show;
