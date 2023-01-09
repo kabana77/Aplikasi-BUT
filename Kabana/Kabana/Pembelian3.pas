@@ -7,7 +7,7 @@ uses
   Dialogs, ExtCtrls, ComCtrls, StdCtrls, wwSpeedButton, wwDBNavigator,
   wwclearpanel, DB, MemDS, DBAccess, Ora, OraSmart, Grids, Wwdbigrd,
   Wwdbgrid, Wwdatsrc, ToolWin, Buttons, wwdblook, DBCtrls, QRCtrls,
-  QuickRpt, Wwdbdlg, Mask, wwdbedit, wwcheckbox, wwdbdatetimepicker;
+  QuickRpt, Wwdbdlg, Mask, wwdbedit, wwcheckbox, wwdbdatetimepicker, jpeg;
 
 type
   TPembelian3Frm = class(TForm)
@@ -999,104 +999,6 @@ type
     wwDBEdit2: TwwDBEdit;
     Label8: TLabel;
     wwDBEdit3: TwwDBEdit;
-    qrBukti: TQuickRep;
-    PageHeaderBand2: TQRBand;
-    QRDBText23: TQRDBText;
-    QRDBText24: TQRDBText;
-    QRLabel21: TQRLabel;
-    QRLabel22: TQRLabel;
-    QRLabel23: TQRLabel;
-    QRLabel24: TQRLabel;
-    QRDBText25: TQRDBText;
-    QRDBText26: TQRDBText;
-    QRDBText27: TQRDBText;
-    QRDBText28: TQRDBText;
-    QRDBText29: TQRDBText;
-    QRDBText62: TQRDBText;
-    TitleBand2: TQRBand;
-    QRLabel25: TQRLabel;
-    QRDBText19: TQRDBText;
-    QRDBText20: TQRDBText;
-    QRDBText21: TQRDBText;
-    QRDBText22: TQRDBText;
-    QRDBText30: TQRDBText;
-    QRLabel27: TQRLabel;
-    QRLabel28: TQRLabel;
-    QRDBText36: TQRDBText;
-    QRDBText37: TQRDBText;
-    QRLabel36: TQRLabel;
-    QRLabel37: TQRLabel;
-    QRLabel38: TQRLabel;
-    QRLabel39: TQRLabel;
-    QRDBText40: TQRDBText;
-    QRLabel40: TQRLabel;
-    QRLabel41: TQRLabel;
-    QRLabel42: TQRLabel;
-    ColumnHeaderBand2: TQRBand;
-    QRLabel45: TQRLabel;
-    QRLabel46: TQRLabel;
-    QRLabel48: TQRLabel;
-    QRLabel49: TQRLabel;
-    QRLabel50: TQRLabel;
-    QRLabel53: TQRLabel;
-    QRLabel51: TQRLabel;
-    QRLabel52: TQRLabel;
-    QRLabel54: TQRLabel;
-    QRLabel47: TQRLabel;
-    DetailBand2: TQRBand;
-    QRDBText42: TQRDBText;
-    QRDBText43: TQRDBText;
-    QRDBText44: TQRDBText;
-    QRDBText46: TQRDBText;
-    QRDBText47: TQRDBText;
-    QRDBText49: TQRDBText;
-    QRDBText50: TQRDBText;
-    QRDBText51: TQRDBText;
-    QRDBText52: TQRDBText;
-    qrlNo: TQRLabel;
-    SummaryBand2: TQRBand;
-    QRExpr10: TQRExpr;
-    QRLabel55: TQRLabel;
-    QRExpr11: TQRExpr;
-    QRExpr12: TQRExpr;
-    QRExpr13: TQRExpr;
-    QRLabel56: TQRLabel;
-    QRLabel57: TQRLabel;
-    QRDBText53: TQRDBText;
-    QRLabel58: TQRLabel;
-    QRLabel59: TQRLabel;
-    QRDBText54: TQRDBText;
-    QRLabel60: TQRLabel;
-    QRLabel61: TQRLabel;
-    QRDBText55: TQRDBText;
-    QRLabel62: TQRLabel;
-    QRLabel63: TQRLabel;
-    QRDBText56: TQRDBText;
-    QRLabel64: TQRLabel;
-    QRLabel65: TQRLabel;
-    QRDBText57: TQRDBText;
-    QRLabel66: TQRLabel;
-    QRLabel67: TQRLabel;
-    QRDBText58: TQRDBText;
-    QRDBText59: TQRDBText;
-    QRLabel68: TQRLabel;
-    qrlTerbilang: TQRLabel;
-    PageFooterBand2: TQRBand;
-    QRDBText60: TQRDBText;
-    QRDBText61: TQRDBText;
-    QRSysData3: TQRSysData;
-    QRDBText31: TQRDBText;
-    QRLabel26: TQRLabel;
-    QRLabel29: TQRLabel;
-    QRDBText32: TQRDBText;
-    QRDBText33: TQRDBText;
-    QRLabel30: TQRLabel;
-    QRLabel31: TQRLabel;
-    QRLabel32: TQRLabel;
-    QRLabel33: TQRLabel;
-    QRDBText34: TQRDBText;
-    QRLabel34: TQRLabel;
-    QRLabel35: TQRLabel;
     qPrinsipalALAMAT_LINE1: TStringField;
     qPrinsipalALAMAT_LINE2: TStringField;
     qPrinsipalALAMAT_LINE3: TStringField;
@@ -1314,6 +1216,73 @@ type
     qBMasterOPR_APPROVE: TStringField;
     qB1OPR_APPROVE: TStringField;
     qB1TGL_APPROVE: TDateTimeField;
+    qBMasterTGL_APPROVE2: TDateTimeField;
+    qBMasterOPR_APPROVE2: TStringField;
+    qBMasterISPOST2: TStringField;
+    wwCheckBox2: TwwCheckBox;
+    qrBukti: TQuickRep;
+    QRBand35: TQRBand;
+    QRLabel44: TQRLabel;
+    QRDBText35: TQRDBText;
+    QRDBText41: TQRDBText;
+    QRDBText246: TQRDBText;
+    QRLabel27000: TQRLabel;
+    QRLabel177: TQRLabel;
+    QRDBText247: TQRDBText;
+    QRLabel179: TQRLabel;
+    QRLabel180: TQRLabel;
+    QRDBText248: TQRDBText;
+    QRDBText267: TQRDBText;
+    QRLabel176: TQRLabel;
+    QRDBText243: TQRDBText;
+    QRLabel178: TQRLabel;
+    QRLabel181: TQRLabel;
+    QRBand36: TQRBand;
+    QRLabel183: TQRLabel;
+    QRLabel184: TQRLabel;
+    QRLabel185: TQRLabel;
+    QRLabel186: TQRLabel;
+    QRLabel187: TQRLabel;
+    QRLabel188: TQRLabel;
+    QRLabel189: TQRLabel;
+    QRLabel190: TQRLabel;
+    DetailBand3: TQRBand;
+    QRDBText253: TQRDBText;
+    QRDBText255: TQRDBText;
+    QRDBText256: TQRDBText;
+    qrlNoUrut: TQRLabel;
+    QRDBText257: TQRDBText;
+    QRDBText252: TQRDBText;
+    QRDBText271: TQRDBText;
+    QRLabel182: TQRLabel;
+    QRBand38: TQRBand;
+    QRDBText259: TQRDBText;
+    QRDBText260: TQRDBText;
+    QRDBText261: TQRDBText;
+    QRDBText262: TQRDBText;
+    QRDBText263: TQRDBText;
+    QRDBText264: TQRDBText;
+    QRDBText272: TQRDBText;
+    QRDBText273: TQRDBText;
+    QRDBText274: TQRDBText;
+    QRDBText245: TQRDBText;
+    QRDBText249: TQRDBText;
+    QRDBText250: TQRDBText;
+    QRBand39: TQRBand;
+    QRDBText265: TQRDBText;
+    QRDBText266: TQRDBText;
+    QRSysData9: TQRSysData;
+    QRBand47: TQRBand;
+    QRDBText319: TQRDBText;
+    QRLabel226: TQRLabel;
+    QRDBText320: TQRDBText;
+    QRDBText321: TQRDBText;
+    QRDBText323: TQRDBText;
+    QRDBText324: TQRDBText;
+    QRDBText325: TQRDBText;
+    QRLabel235: TQRLabel;
+    QRImage4: TQRImage;
+    QRDBText244: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1366,8 +1335,6 @@ type
     procedure DetailBand2BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
     procedure TitleBand2BeforePrint(Sender: TQRCustomBand;
-      var PrintBand: Boolean);
-    procedure SummaryBand2BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
     procedure qrBuktiBeforePrint(Sender: TCustomQuickRep;
       var PrintReport: Boolean);
@@ -1449,13 +1416,15 @@ type
     procedure wwDBLookupComboDlg1Click(Sender: TObject);
     procedure wwDBLookupComboDlg1CloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
+    procedure wwCheckBox2Click(Sender: TObject);
+    procedure qBDetailBeforeEdit(DataSet: TDataSet);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
     vfield_cari, vfield_operand, vfield_col, vfield_tgl : String;
     vfield_awal, vfield_akhir, vdate, vtgl_bukti : TDate;
     vno_reg : real;
-    vkd_transaksi, vispost_old, vispost_new, vkeyword, vkeyfield : String;
+    vkd_transaksi, vispost_old, vispost2_old, vispost_new, vispost2_new, vkeyword, vkeyfield : String;
     vModeInput : boolean;
     vhal : Integer;
     vsql_org, vfilter, vorder, vsql_item : String;
@@ -1476,7 +1445,7 @@ type
     procedure Proc_Refresh6;
   public
     { Public declarations }
-    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanCancel : Boolean;
+    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanUnPost2, vCanUnPost3, vCanCancel : Boolean;
   end;
 
 var
@@ -2976,6 +2945,7 @@ begin
   if PageControl2.ActivePage=tsInputDJurnal then
     tsInputDJurnalShow(Nil);
     if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+    if vCanUnPost2 then wwCheckBox2.Enabled:=True else wwCheckBox2.Enabled:=False;
 end;
 
 procedure TPembelian3Frm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2986,6 +2956,7 @@ begin
   qBMasterNAMA_DEPO.AsString:=DMFrm.qDepoDefaultNAMA_DEPO.AsString;
   qBMasterKD_LOKASI.AsString:='5';
   qBMasterJENIS.AsString:='LOKAL3';
+  qBMasterISPOST2.AsString:='0';
 end;
 
 procedure TPembelian3Frm.lcLokasiEnter(Sender: TObject);
@@ -3012,27 +2983,28 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') or (vispost_old='1') then
-  begin
+    if (qBMasterISPOST.AsString='1') or (vispost_old='1') or (vispost2_old='1') then
+    begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
       Abort;
-  end;
+    end;
 end;
 
 procedure TPembelian3Frm.qBMasterBeforeEdit(DataSet: TDataSet);
 begin
   vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
   if not vCanEdit then
   begin
       ShowMessage('Maaf, anda tidak berhak EDIT data !');
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') then
-  begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT !');
+    if (qBMasterISPOST.AsString='1') then
+    begin
+      ShowMessage('Maaf, data sudah di-APPROVE, tidak bisa di-EDIT !');
       Abort;
-  end;
+    end;
 end;
 
 procedure TPembelian3Frm.qBMasterBeforeInsert(DataSet: TDataSet);
@@ -3064,10 +3036,9 @@ begin
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
-  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-
-    qBMasterBAYAR.AsFloat;
-
-  if ((vispost_old='0') and (vispost_new='1')) then
+  vispost2_new:=qBMasterISPOST2.AsString;
+  qBMasterNILAI_TAGIHAN.AsFloat:=qBMasterNILAI_FAKTUR.AsFloat-qBMasterBAYAR.AsFloat;
+  if ((vispost_old='0') and (vispost_new='1')) or ((vispost2_old='0') and (vispost2_new='1')) then
   begin
       if qBDetail.RecordCount=0 then
       begin
@@ -3099,9 +3070,9 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') then
+  if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1')  then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-TAMBAH !');
       Abort;
   end
   else
@@ -3435,24 +3406,17 @@ end;
 procedure TPembelian3Frm.DetailBand2BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
-  qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
+  {qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
   if (vhal=1) and (StrToInt(qrlNo.Caption)>10) and (qBDetail.RecordCount>=11) then
     DetailBand2.ForceNewPage:=True
     else
-    DetailBand2.ForceNewPage:=False;
+    DetailBand2.ForceNewPage:=False;}
 end;
 
 procedure TPembelian3Frm.TitleBand2BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
-  qrlNo.Caption:='0';
-end;
-
-procedure TPembelian3Frm.SummaryBand2BeforePrint(Sender: TQRCustomBand;
-  var PrintBand: Boolean);
-begin
-  DMFrm.MyIDR.Nilai:=qBMasterNILAI_TAGIHAN.AsFloat;
-  qrlTerbilang.Caption:='#'+DMFrm.MyIDR.HasilKonversi+'#';
+  {qrlNo.Caption:='0';}
 end;
 
 procedure TPembelian3Frm.qrBuktiBeforePrint(Sender: TCustomQuickRep;
@@ -4450,6 +4414,41 @@ begin
   qBMasterALAMAT.AsString:=DMFrm.qOutletALAMAT.AsString;
   qBMasterKOTA.AsString:=DMFrm.qOutletTELEPON.AsString;
   qBMasterTELEPON.AsString:=DMFrm.qOutletTELEPON.AsString;
+end;
+
+procedure TPembelian3Frm.wwCheckBox2Click(Sender: TObject);
+begin
+  if (qBMaster.State=dsEdit) and (qBMasterISPOST2.AsString='0') then
+  begin
+      if wwCheckBox2.Checked then
+      begin
+          qBMasterISPOST2.AsString:='1';
+          qBMasterTGL_APPROVE2.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE2.AsString:=DMFrm.qDateTimeVUSER.AsString;
+          qBMaster.Post;
+      end;
+  end;
+  if dbeReff.Visible then
+    dbeReff.SetFocus;
+end;
+
+procedure TPembelian3Frm.qBDetailBeforeEdit(DataSet: TDataSet);
+begin
+  vispost_old:=qBMasterISPOST.AsString;
+  vispost2_old:=qBMasterISPOST2.AsString;
+  if not vCanEdit then
+  begin
+      ShowMessage('Maaf, anda tidak berhak EDIT data !');
+      Abort;
+  end
+  else
+  begin
+    if (qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1') then
+    begin
+      ShowMessage('Maaf, data sudah dikunci, tidak bisa di-EDIT !');
+      Abort;
+    end;
+  end;
 end;
 
 end.

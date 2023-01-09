@@ -365,77 +365,6 @@ type
     qB2X: TOraQuery;
     qB2XTOTAL: TFloatField;
     qB2TOTAL: TFloatField;
-    qrMaster: TQuickRep;
-    PageHeaderBand1: TQRBand;
-    QRDBText38: TQRDBText;
-    QRDBText39: TQRDBText;
-    QRDBText45: TQRDBText;
-    QRDBText48: TQRDBText;
-    QRDBText12: TQRDBText;
-    QRDBText13: TQRDBText;
-    QRLabel13: TQRLabel;
-    QRLabel14: TQRLabel;
-    QRLabel15: TQRLabel;
-    QRLabel16: TQRLabel;
-    TitleBand1: TQRBand;
-    QRDBText1: TQRDBText;
-    qrlPeriode: TQRLabel;
-    ColumnHeaderBand1: TQRBand;
-    QRLabel1: TQRLabel;
-    QRLabel2: TQRLabel;
-    QRLabel9: TQRLabel;
-    QRLabel11: TQRLabel;
-    QRLabel12: TQRLabel;
-    QRLabel4: TQRLabel;
-    QRLabel5: TQRLabel;
-    QRLabel6: TQRLabel;
-    QRLabel7: TQRLabel;
-    QRLabel17: TQRLabel;
-    QRLabel18: TQRLabel;
-    QRLabel19: TQRLabel;
-    QRLabel20: TQRLabel;
-    DetailBand1: TQRBand;
-    QRDBText6: TQRDBText;
-    QRDBText7: TQRDBText;
-    QRSysData2: TQRSysData;
-    QRDBText9: TQRDBText;
-    QRDBText10: TQRDBText;
-    QRDBText11: TQRDBText;
-    QRDBText2: TQRDBText;
-    QRDBText5: TQRDBText;
-    QRDBText14: TQRDBText;
-    QRDBText15: TQRDBText;
-    QRDBText16: TQRDBText;
-    QRDBText17: TQRDBText;
-    QRDBText18: TQRDBText;
-    SummaryBand1: TQRBand;
-    QRLabel3: TQRLabel;
-    qrdbTTD11: TQRDBText;
-    qrdbTTD12: TQRDBText;
-    qrdbTTD13: TQRDBText;
-    qrdbTTD21: TQRDBText;
-    qrdbTTD22: TQRDBText;
-    qrdbTTD23: TQRDBText;
-    qrdbTTD31: TQRDBText;
-    qrdbTTD32: TQRDBText;
-    qrdbTTD33: TQRDBText;
-    qrdbTTD41: TQRDBText;
-    qrdbTTD42: TQRDBText;
-    qrdbTTD43: TQRDBText;
-    QRExpr1: TQRExpr;
-    QRExpr2: TQRExpr;
-    QRExpr3: TQRExpr;
-    QRExpr4: TQRExpr;
-    QRExpr5: TQRExpr;
-    QRExpr6: TQRExpr;
-    QRExpr7: TQRExpr;
-    QRExpr8: TQRExpr;
-    QRExpr9: TQRExpr;
-    QRLabel10: TQRLabel;
-    PageFooterBand1: TQRBand;
-    QRDBText3: TQRDBText;
-    QRDBText4: TQRDBText;
-    QRSysData1: TQRSysData;
     qrMaster2: TQuickRep;
     QRBand1: TQRBand;
     QRDBText63: TQRDBText;
@@ -979,9 +908,6 @@ type
     QRDBText236: TQRDBText;
     QRSysData8: TQRSysData;
     QRLabel162: TQRLabel;
-    QRLabel149: TQRLabel;
-    QRLabel165: TQRLabel;
-    QRDBText237: TQRDBText;
     QRLabel166: TQRLabel;
     QRLabel167: TQRLabel;
     QRDBText238: TQRDBText;
@@ -1022,104 +948,6 @@ type
     wwDBEdit2: TwwDBEdit;
     Label8: TLabel;
     wwDBEdit3: TwwDBEdit;
-    qrBukti: TQuickRep;
-    PageHeaderBand2: TQRBand;
-    QRDBText23: TQRDBText;
-    QRDBText24: TQRDBText;
-    QRLabel21: TQRLabel;
-    QRLabel22: TQRLabel;
-    QRLabel23: TQRLabel;
-    QRLabel24: TQRLabel;
-    QRDBText25: TQRDBText;
-    QRDBText26: TQRDBText;
-    QRDBText27: TQRDBText;
-    QRDBText28: TQRDBText;
-    QRDBText29: TQRDBText;
-    QRDBText62: TQRDBText;
-    TitleBand2: TQRBand;
-    QRLabel25: TQRLabel;
-    QRDBText19: TQRDBText;
-    QRDBText20: TQRDBText;
-    QRDBText21: TQRDBText;
-    QRDBText22: TQRDBText;
-    QRDBText30: TQRDBText;
-    QRLabel27: TQRLabel;
-    QRLabel28: TQRLabel;
-    QRDBText36: TQRDBText;
-    QRDBText37: TQRDBText;
-    QRLabel36: TQRLabel;
-    QRLabel37: TQRLabel;
-    QRLabel38: TQRLabel;
-    QRLabel39: TQRLabel;
-    QRDBText40: TQRDBText;
-    QRLabel40: TQRLabel;
-    QRLabel41: TQRLabel;
-    QRLabel42: TQRLabel;
-    ColumnHeaderBand2: TQRBand;
-    QRLabel45: TQRLabel;
-    QRLabel46: TQRLabel;
-    QRLabel48: TQRLabel;
-    QRLabel49: TQRLabel;
-    QRLabel50: TQRLabel;
-    QRLabel53: TQRLabel;
-    QRLabel51: TQRLabel;
-    QRLabel52: TQRLabel;
-    QRLabel54: TQRLabel;
-    QRLabel47: TQRLabel;
-    DetailBand2: TQRBand;
-    QRDBText42: TQRDBText;
-    QRDBText43: TQRDBText;
-    QRDBText44: TQRDBText;
-    QRDBText46: TQRDBText;
-    QRDBText47: TQRDBText;
-    QRDBText49: TQRDBText;
-    QRDBText50: TQRDBText;
-    QRDBText51: TQRDBText;
-    QRDBText52: TQRDBText;
-    qrlNo: TQRLabel;
-    SummaryBand2: TQRBand;
-    QRExpr10: TQRExpr;
-    QRLabel55: TQRLabel;
-    QRExpr11: TQRExpr;
-    QRExpr12: TQRExpr;
-    QRExpr13: TQRExpr;
-    QRLabel56: TQRLabel;
-    QRLabel57: TQRLabel;
-    QRDBText53: TQRDBText;
-    QRLabel58: TQRLabel;
-    QRLabel59: TQRLabel;
-    QRDBText54: TQRDBText;
-    QRLabel60: TQRLabel;
-    QRLabel61: TQRLabel;
-    QRDBText55: TQRDBText;
-    QRLabel62: TQRLabel;
-    QRLabel63: TQRLabel;
-    QRDBText56: TQRDBText;
-    QRLabel64: TQRLabel;
-    QRLabel65: TQRLabel;
-    QRDBText57: TQRDBText;
-    QRLabel66: TQRLabel;
-    QRLabel67: TQRLabel;
-    QRDBText58: TQRDBText;
-    QRDBText59: TQRDBText;
-    QRLabel68: TQRLabel;
-    qrlTerbilang: TQRLabel;
-    PageFooterBand2: TQRBand;
-    QRDBText60: TQRDBText;
-    QRDBText61: TQRDBText;
-    QRSysData3: TQRSysData;
-    QRDBText31: TQRDBText;
-    QRLabel26: TQRLabel;
-    QRLabel29: TQRLabel;
-    QRDBText32: TQRDBText;
-    QRDBText33: TQRDBText;
-    QRLabel30: TQRLabel;
-    QRLabel31: TQRLabel;
-    QRLabel32: TQRLabel;
-    QRLabel33: TQRLabel;
-    QRDBText34: TQRDBText;
-    QRLabel34: TQRLabel;
-    QRLabel35: TQRLabel;
     qPrinsipalALAMAT_LINE1: TStringField;
     qPrinsipalALAMAT_LINE2: TStringField;
     qPrinsipalALAMAT_LINE3: TStringField;
@@ -1182,9 +1010,6 @@ type
     DBText16: TDBText;
     proc_ImpData: TOraStoredProc;
     lcdBOM: TwwDBLookupComboDlg;
-    QRLabel8: TQRLabel;
-    QRLabel43: TQRLabel;
-    QRDBText8: TQRDBText;
     qB1NO_REG_OS: TFloatField;
     qB1TGL: TDateTimeField;
     qB1NO_REFF: TStringField;
@@ -1256,7 +1081,7 @@ type
     qB1TOTAL: TFloatField;
     qB1KURS: TFloatField;
     qB1NO_REG_OS_REFF: TFloatField;
-    qrBukti2: TQuickRep;
+    qrBukti: TQuickRep;
     QRBand35: TQRBand;
     QRLabel44: TQRLabel;
     QRDBText35: TQRDBText;
@@ -1330,6 +1155,14 @@ type
     qBMasterTGL_APPROVE2: TDateTimeField;
     qBMasterOPR_APPROVE2: TStringField;
     qBMasterISPOST2: TStringField;
+    QRDBText245: TQRDBText;
+    QRDBText249: TQRDBText;
+    QRDBText250: TQRDBText;
+    qbvPO: TSmartQuery;
+    dsqBVpo: TwwDataSource;
+    qbvPONO_PO2: TStringField;
+    qbvPONO_PIB: TFloatField;
+    qbvPONO_BUKTI: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1379,11 +1212,7 @@ type
     procedure TitleBand1BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
     procedure qBDetailCalcFields(DataSet: TDataSet);
-    procedure DetailBand2BeforePrint(Sender: TQRCustomBand;
-      var PrintBand: Boolean);
     procedure TitleBand2BeforePrint(Sender: TQRCustomBand;
-      var PrintBand: Boolean);
-    procedure SummaryBand2BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
     procedure qrBuktiBeforePrint(Sender: TCustomQuickRep;
       var PrintReport: Boolean);
@@ -2835,7 +2664,7 @@ begin
             begin
                DMFrm.qDateTime.Close;
                DMFrm.qDateTime.Open;
-               qrMaster.Preview;
+               //qrMaster.Preview;
             end
             else
               begin
@@ -2851,8 +2680,7 @@ begin
             begin
                DMFrm.qDateTime.Close;
                DMFrm.qDateTime.Open;
-               //qrBukti.Preview;
-               qrBukti2.Preview;
+               qrBukti.Preview;
             end
             else
               begin
@@ -3005,6 +2833,7 @@ begin
   qBMasterKD_DEPO.AsString:=DMFrm.qDepoDefaultKD_DEPO.AsString;
   qBMasterNAMA_DEPO.AsString:=DMFrm.qDepoDefaultNAMA_DEPO.AsString;
   qBMasterKD_LOKASI.AsString:='5';
+  qBMasterISPOST2.AsString:='0';
 end;
 
 procedure TPembelianFrm.lcLokasiEnter(Sender: TObject);
@@ -3439,27 +3268,14 @@ begin
    qBDetailLABEL_JUMLAH.AsString:=vjumlah;
 end;
 
-procedure TPembelianFrm.DetailBand2BeforePrint(Sender: TQRCustomBand;
-  var PrintBand: Boolean);
-begin
-  qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
-  if (vhal=1) and (StrToInt(qrlNo.Caption)>10) and (qBDetail.RecordCount>=11) then
-    DetailBand2.ForceNewPage:=True
-    else
-    DetailBand2.ForceNewPage:=False;
-end;
-
 procedure TPembelianFrm.TitleBand2BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
   qrlNoUrut.Caption:='0';
-end;
 
-procedure TPembelianFrm.SummaryBand2BeforePrint(Sender: TQRCustomBand;
-  var PrintBand: Boolean);
-begin
-  DMFrm.MyIDR.Nilai:=qBMasterNILAI_TAGIHAN.AsFloat;
-  qrlTerbilang.Caption:='#'+DMFrm.MyIDR.HasilKonversi+'#';
+  qbvPO.Close;
+  qbvPO.ParamByName('pno_po').AsString:=qBMasterNO_PO.AsString;
+  qbvPO.Open;
 end;
 
 procedure TPembelianFrm.qrBuktiBeforePrint(Sender: TCustomQuickRep;
@@ -4425,7 +4241,7 @@ end;
 procedure TPembelianFrm.DetailBand3BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
-qrlNoUrut.Caption:=IntToStr(StrToInt(qrlNoUrut.Caption)+1);
+  qrlNoUrut.Caption:=IntToStr(StrToInt(qrlNoUrut.Caption)+1);
 end;
 
 procedure TPembelianFrm.wwCheckBox2Click(Sender: TObject);

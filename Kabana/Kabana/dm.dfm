@@ -1,7 +1,7 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 334
+  Left = 336
   Top = 175
   Height = 579
   Width = 759
@@ -840,6 +840,8 @@ object DMFrm: TDMFrm
       'a.isedit, '
       'a.isdel, '
       'a.isunpost, '
+      'a.isunpost2, '
+      'a.isunpost3, '
       'a.isprint,'
       'a.isexport,'
       'a.tipe_menu,'
@@ -905,6 +907,16 @@ object DMFrm: TDMFrm
     object qMenuUserTIPE_MENU: TStringField
       FieldName = 'TIPE_MENU'
       Size = 50
+    end
+    object qMenuUserISUNPOST2: TStringField
+      FieldName = 'ISUNPOST2'
+      Required = True
+      Size = 1
+    end
+    object qMenuUserISUNPOST3: TStringField
+      FieldName = 'ISUNPOST3'
+      Required = True
+      Size = 1
     end
   end
   object wwIntl1: TwwIntl

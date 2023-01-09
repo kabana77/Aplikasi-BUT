@@ -307,6 +307,8 @@ type
     Fno_Bukti: TOraQuery;
     Fno_BuktiNO_BUKTI: TStringField;
     MyIDR_en: TMyKonversi;
+    qMenuUserISUNPOST2: TStringField;
+    qMenuUserISUNPOST3: TStringField;
     procedure KlikTopPanel(pnama_form : String);
     procedure pLogin;
     procedure pLogin2;
