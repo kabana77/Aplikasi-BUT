@@ -1,6 +1,6 @@
 object BOMFrm: TBOMFrm
-  Left = 284
-  Top = 238
+  Left = 270
+  Top = 192
   Width = 1325
   Height = 728
   ActiveControl = dbGrid1
@@ -3968,8 +3968,8 @@ object BOMFrm: TBOMFrm
               AutoSize = False
               AutoStretch = False
               Color = clWhite
-              DataSet = DMFrm.qJnsTransaksi
-              DataField = 'TTD12'
+              DataSet = qBMaster
+              DataField = 'OPR_INSERT'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -4064,8 +4064,8 @@ object BOMFrm: TBOMFrm
               AutoSize = False
               AutoStretch = False
               Color = clWhite
-              DataSet = DMFrm.qJnsTransaksi
-              DataField = 'TTD22'
+              DataSet = qBMaster
+              DataField = 'OPR_APPROVE'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -7216,12 +7216,12 @@ object BOMFrm: TBOMFrm
             Transparent = True
           end
           object Label34: TLabel
-            Left = 530
-            Top = 7
-            Width = 43
+            Left = 483
+            Top = 3
+            Width = 88
             Height = 13
             Cursor = crHandPoint
-            Caption = 'UnPOST'
+            Caption = 'Approve Canceled'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -7368,8 +7368,8 @@ object BOMFrm: TBOMFrm
             TabOrder = 4
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 512
-            Top = 20
+            Left = 465
+            Top = 16
             Width = 81
             Height = 17
             DisableThemes = False
@@ -7379,7 +7379,7 @@ object BOMFrm: TBOMFrm
             DisplayValueChecked = '1'
             DisplayValueUnchecked = '0'
             NullAndBlankState = cbUnchecked
-            Caption = 'Posted'
+            Caption = 'Approved'
             DataField = 'ISPOST'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET

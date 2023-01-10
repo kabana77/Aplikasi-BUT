@@ -1,5 +1,5 @@
 object POFrm: TPOFrm
-  Left = 347
+  Left = 348
   Top = 198
   Width = 1290
   Height = 679
