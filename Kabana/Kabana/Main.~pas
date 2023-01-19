@@ -127,9 +127,6 @@ type
     ItemBarangJadi1: TMenuItem;
     N19: TMenuItem;
     InventoryControl1: TMenuItem;
-    SubKontrak1: TMenuItem;
-    SuratJalanKeluar1: TMenuItem;
-    erimaHasil1: TMenuItem;
     SerahTerimaBarangJadi1: TMenuItem;
     SisaWaste1: TMenuItem;
     HasilProduksi1: TMenuItem;
@@ -139,10 +136,54 @@ type
     LPBCMT1: TMenuItem;
     LaporanBeaCukai1: TMenuItem;
     PenyelesaianWaste1: TMenuItem;
-    N20: TMenuItem;
     N22: TMenuItem;
     InfoMutasiStokBB1: TMenuItem;
     InfoMutasiStokNonBahanBaku1: TMenuItem;
+    GudangBahanBaku1: TMenuItem;
+    Gudang1: TMenuItem;
+    GudangBarangJadi1: TMenuItem;
+    Produksi1: TMenuItem;
+    Cutting1: TMenuItem;
+    Sewing1: TMenuItem;
+    Finishing1: TMenuItem;
+    erimaBahanBaku1: TMenuItem;
+    InfoWIPCutting11: TMenuItem;
+    HasilCuttingin1: TMenuItem;
+    Subkon11: TMenuItem;
+    LoadingHasilCutting1: TMenuItem;
+    InfoWIP21: TMenuItem;
+    PengirimanOUT1: TMenuItem;
+    Penerimaan1: TMenuItem;
+    InfoMutasiSubkonCutting1: TMenuItem;
+    erimaHasilCuttingIN1: TMenuItem;
+    InfoWIPSewing11: TMenuItem;
+    Hasil1: TMenuItem;
+    LoadingHasilSewingOUT1: TMenuItem;
+    InfoWIPSewing21: TMenuItem;
+    erimaHasilSewingIN1: TMenuItem;
+    SubkonFinishing1INOUT1: TMenuItem;
+    InfoMutasiFinishing11: TMenuItem;
+    PengirimanIN1: TMenuItem;
+    PenerimaanIN1: TMenuItem;
+    InfoMutasiFinishing12: TMenuItem;
+    erimaHasilFinishing11: TMenuItem;
+    LoadingBarangJadiOUT1: TMenuItem;
+    InfoFinishing21: TMenuItem;
+    WasteCutting1: TMenuItem;
+    WasteSewing1: TMenuItem;
+    WasteFinishingOUT1: TMenuItem;
+    WasteProduksi1: TMenuItem;
+    PemasukanWaste1: TMenuItem;
+    PenyelesaianWasteOUT1: TMenuItem;
+    InfoMutasiWaste1: TMenuItem;
+    N20: TMenuItem;
+    N23: TMenuItem;
+    ItemProduksiCutting1: TMenuItem;
+    N29: TMenuItem;
+    ItemHasilSewing1: TMenuItem;
+    N24: TMenuItem;
+    N25: TMenuItem;
+    N26: TMenuItem;
     procedure Proc_HapusMenu;
     procedure Proc_Aktifkan_Menu;
     procedure FormCreate(Sender: TObject);
@@ -223,6 +264,9 @@ type
     procedure PenyelesaianWaste1Click(Sender: TObject);
     procedure InfoMutasiStokBB1Click(Sender: TObject);
     procedure InfoMutasiStokNonBahanBaku1Click(Sender: TObject);
+    procedure erimaBahanBaku1Click(Sender: TObject);
+    procedure ItemProduksiCutting1Click(Sender: TObject);
+    procedure HasilCuttingin1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -250,7 +294,8 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   InventoryControl, SubKontrak, HasilProduksi, PemakaianBahan,
   SerahTerimaBJ, SerahTerimaWaste, SubKontrak2, KartuStokBahanKITE,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
-  PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB;
+  PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB, TerimaBB, DaftarItemWIP1,
+  HasilCutting;
 
 {$R *.dfm}
 
@@ -2174,6 +2219,84 @@ begin
      InfoMutasiStokNBBFrm.vCanExport:=False;
   end;
   InfoMutasiStokNBBFrm.Show;
+end;
+
+procedure TMainFrm.erimaBahanBaku1Click(Sender: TObject);
+begin
+  if TerimaBBFrm=nil then TerimaBBFrm:=TTerimaBBFrm.Create(Application);
+  TerimaBBFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  TerimaBBFrm.pTop.Caption:=' '+UpperCase(TerimaBBFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     TerimaBBFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     TerimaBBFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     TerimaBBFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     TerimaBBFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     TerimaBBFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     TerimaBBFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     TerimaBBFrm.vCanAdd:=False;
+     TerimaBBFrm.vCanEdit:=False;
+     TerimaBBFrm.vCanDel:=False;
+     TerimaBBFrm.vCanPrint:=False;
+     TerimaBBFrm.vCanExport:=False;
+     TerimaBBFrm.vCanUnPost:=False;
+  end;
+  TerimaBBFrm.Show;
+end;
+
+procedure TMainFrm.ItemProduksiCutting1Click(Sender: TObject);
+begin
+  if DaftarItemWIP1Frm=nil then DaftarItemWIP1Frm:=TDaftarItemWIP1Frm.Create(Application);
+  DaftarItemWIP1Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  DaftarItemWIP1Frm.pTop.Caption:=' '+UpperCase(DaftarItemWIP1Frm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     DaftarItemWIP1Frm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     DaftarItemWIP1Frm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     DaftarItemWIP1Frm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     DaftarItemWIP1Frm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     DaftarItemWIP1Frm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     DaftarItemWIP1Frm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     DaftarItemWIP1Frm.vCanAdd:=False;
+     DaftarItemWIP1Frm.vCanEdit:=False;
+     DaftarItemWIP1Frm.vCanDel:=False;
+     DaftarItemWIP1Frm.vCanPrint:=False;
+     DaftarItemWIP1Frm.vCanExport:=False;
+     DaftarItemWIP1Frm.vCanUnPost:=False;
+  end;
+  DaftarItemWIP1Frm.Show;
+end;
+
+procedure TMainFrm.HasilCuttingin1Click(Sender: TObject);
+begin
+  if HasilCuttingFrm=nil then HasilCuttingFrm:=THasilCuttingFrm.Create(Application);
+  HasilCuttingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  HasilCuttingFrm.pTop.Caption:=' '+UpperCase(HasilCuttingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     HasilCuttingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     HasilCuttingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     HasilCuttingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     HasilCuttingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     HasilCuttingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     HasilCuttingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     HasilCuttingFrm.vCanAdd:=False;
+     HasilCuttingFrm.vCanEdit:=False;
+     HasilCuttingFrm.vCanDel:=False;
+     HasilCuttingFrm.vCanPrint:=False;
+     HasilCuttingFrm.vCanExport:=False;
+     HasilCuttingFrm.vCanUnPost:=False;
+  end;
+  HasilCuttingFrm.Show;
 end;
 
 end.

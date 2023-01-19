@@ -1,6 +1,6 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 379
-  Top = 224
+  Left = 179
+  Top = 153
   Width = 1382
   Height = 784
   Caption = 'PemakaianBahanFrm'
@@ -2376,7 +2376,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 63.500000000000000000
                 1354.666666666667000000
-                84.666666666666680000
+                84.666666666666670000
                 317.500000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -2503,7 +2503,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                431.270833333333400000
+                431.270833333333300000
                 55.562500000000000000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -3205,7 +3205,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 44.979166666666670000
                 1587.500000000000000000
-                97.895833333333320000
+                97.895833333333330000
                 13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -4002,7 +4002,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             Left = 23
             Top = 210
             Width = 748
-            Height = 130
+            Height = 143
             Frame.Color = clBlack
             Frame.DrawTop = False
             Frame.DrawBottom = False
@@ -4019,7 +4019,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ForceNewPage = False
             ParentFont = False
             Size.Values = (
-              343.958333333333300000
+              378.354166666666700000
               1979.083333333333000000)
             BandType = rbSummary
             object QRDBText331: TQRDBText
@@ -4056,7 +4056,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText332: TQRDBText
               Left = 25
-              Top = 86
+              Top = 102
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4066,8 +4066,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                66.145833333333320000
-                227.541666666666700000
+                66.145833333333330000
+                269.875000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4088,7 +4088,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText333: TQRDBText
               Left = 25
-              Top = 104
+              Top = 120
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4098,8 +4098,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Frame.DrawRight = False
               Size.Values = (
                 52.916666666666670000
-                66.145833333333320000
-                275.166666666666700000
+                66.145833333333330000
+                317.500000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4152,7 +4152,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText335: TQRDBText
               Left = 167
-              Top = 86
+              Top = 102
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4163,7 +4163,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 441.854166666666700000
-                227.541666666666700000
+                269.875000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4184,7 +4184,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText336: TQRDBText
               Left = 167
-              Top = 104
+              Top = 120
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4195,7 +4195,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 441.854166666666700000
-                275.166666666666700000
+                317.500000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4248,7 +4248,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText338: TQRDBText
               Left = 309
-              Top = 86
+              Top = 102
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4259,7 +4259,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 817.562500000000000000
-                227.541666666666700000
+                269.875000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4280,7 +4280,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText339: TQRDBText
               Left = 309
-              Top = 104
+              Top = 120
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4291,7 +4291,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 817.562500000000000000
-                275.166666666666700000
+                317.500000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4344,7 +4344,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText341: TQRDBText
               Left = 458
-              Top = 86
+              Top = 102
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4355,7 +4355,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 1211.791666666667000000
-                227.541666666666700000
+                269.875000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4376,7 +4376,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText342: TQRDBText
               Left = 458
-              Top = 104
+              Top = 120
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4387,7 +4387,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 1211.791666666667000000
-                275.166666666666700000
+                317.500000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4440,7 +4440,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText311: TQRDBText
               Left = 602
-              Top = 86
+              Top = 102
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4451,7 +4451,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 1592.791666666667000000
-                227.541666666666700000
+                269.875000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4472,7 +4472,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRDBText317: TQRDBText
               Left = 602
-              Top = 104
+              Top = 120
               Width = 100
               Height = 20
               Frame.Color = clBlack
@@ -4483,7 +4483,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 1592.791666666667000000
-                275.166666666666700000
+                317.500000000000000000
                 264.583333333333300000)
               Alignment = taCenter
               AlignToBand = False
@@ -4502,10 +4502,74 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               WordWrap = True
               FontSize = 10
             end
+            object QRDBText1: TQRDBText
+              Left = 25
+              Top = 86
+              Width = 100
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                66.145833333333330000
+                227.541666666666700000
+                264.583333333333300000)
+              Alignment = taCenter
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'OPR_INSERT'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText2: TQRDBText
+              Left = 167
+              Top = 86
+              Width = 100
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                441.854166666666700000
+                227.541666666666700000
+                264.583333333333300000)
+              Alignment = taCenter
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'OPR_APPROVE'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
           end
           object QRBand46: TQRBand
             Left = 23
-            Top = 340
+            Top = 353
             Width = 748
             Height = 21
             Frame.Color = clBlack
@@ -4654,11 +4718,11 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object DBText19: TDBText
             Left = 968
-            Top = 42
+            Top = 57
             Width = 91
             Height = 24
             AutoSize = True
-            DataField = 'NO_REG_OS'
+            DataField = 'NO_BUKTI'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -4670,10 +4734,10 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object Label16: TLabel
             Left = 912
-            Top = 48
-            Width = 31
+            Top = 65
+            Width = 44
             Height = 13
-            Caption = 'Nomor'
+            Caption = 'No. Bukti'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -4684,7 +4748,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object Label17: TLabel
             Left = 912
-            Top = 70
+            Top = 107
             Width = 39
             Height = 13
             Caption = 'Tanggal'
@@ -4698,7 +4762,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object Label18: TLabel
             Left = 912
-            Top = 102
+            Top = 133
             Width = 44
             Height = 13
             Caption = 'No. BOM'
@@ -4713,10 +4777,10 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label34x: TLabel
             Left = 930
             Top = 3
-            Width = 43
+            Width = 88
             Height = 13
             Cursor = crHandPoint
-            Caption = 'UnPOST'
+            Caption = 'Approve Canceled'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -4786,6 +4850,22 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             ParentFont = False
             Transparent = True
           end
+          object DBText3: TDBText
+            Left = 967
+            Top = 81
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
           object DBMemo1: TDBMemo
             Left = 200
             Top = 16
@@ -4813,7 +4893,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             DisplayValueChecked = '1'
             DisplayValueUnchecked = '0'
             NullAndBlankState = cbUnchecked
-            Caption = 'Posted'
+            Caption = 'Approved'
             DataField = 'ISPOST'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
@@ -4861,7 +4941,6 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             LookupTable = DMFrm.qLokasi
             LookupField = 'KD_LOKASI'
             Options = [loColLines, loRowLines, loTitles]
-            Enabled = False
             TabOrder = 4
             AutoDropDown = False
             ShowButton = True
@@ -4871,7 +4950,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object VTgl: TwwDBDateTimePicker
             Left = 968
-            Top = 71
+            Top = 101
             Width = 121
             Height = 25
             BorderStyle = bsNone
@@ -4897,8 +4976,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             DisplayFormat = 'dd mmm yyyy'
           end
           object BitBtn2: TBitBtn
-            Left = 968
-            Top = 120
+            Left = 1104
+            Top = 127
             Width = 57
             Height = 22
             Caption = '&Add'
@@ -4907,7 +4986,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           end
           object lcdBOM: TwwDBLookupComboDlg
             Left = 968
-            Top = 99
+            Top = 130
             Width = 121
             Height = 19
             GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
@@ -5185,7 +5264,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label19: TLabel
             Left = 0
             Top = 319
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -12437,7 +12516,14 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from vpindah_lokasi_61')
+      'SELECT * FROM'
+      '('
+      'select * from vpindah_lokasi_61'
+      'UNION ALL'
+      'select * from vpindah_lokasi_62'
+      'UNION ALL'
+      'select * from vpindah_lokasi_63'
+      ')')
     ReadOnly = True
     Left = 1123
     object qB1NO_REG_OS: TFloatField
@@ -12667,8 +12753,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1051
-    Top = 136
+    Left = 1147
+    Top = 152
     ParamData = <
       item
         DataType = ftFloat
@@ -12847,8 +12933,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
-    Left = 1155
-    Top = 128
+    Left = 1251
+    Top = 144
   end
   object qSlsman: TOraQuery
     Session = DMFrm.OS
@@ -13025,8 +13111,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 1076
-    Top = 80
+    Left = 1172
+    Top = 96
     ParamData = <
       item
         DataType = ftFloat
@@ -13253,11 +13339,19 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
       FieldName = 'OPR_APPROVE'
       Size = 50
     end
+    object qBMasterNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
+    object qBMasterSTATUS: TStringField
+      FieldName = 'STATUS'
+      Size = 10
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
-    Left = 1115
-    Top = 128
+    Left = 1211
+    Top = 144
   end
   object qItem: TOraQuery
     Session = DMFrm.OS
@@ -13420,8 +13514,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
       'from pindah_lokasi_d'
       'where no_reg_os=:pno_reg_os')
     BeforeOpen = qBDetailXBeforeOpen
-    Left = 1112
-    Top = 176
+    Left = 1208
+    Top = 192
     ParamData = <
       item
         DataType = ftFloat
@@ -14407,8 +14501,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
       'order by no_reg_os')
     DetailFields = 'NO_REG_OS'
     RefreshOptions = [roAfterInsert, roAfterUpdate]
-    Left = 1043
-    Top = 192
+    Left = 1139
+    Top = 208
     ParamData = <
       item
         DataType = ftFloat
@@ -14653,8 +14747,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1171
-    Top = 128
+    Left = 1267
+    Top = 144
   end
   object qBom: TOraQuery
     Session = DMFrm.OS
@@ -14663,8 +14757,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     MasterSource = dsqBomD
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
-    Left = 1176
-    Top = 187
+    Left = 1272
+    Top = 203
     ParamData = <
       item
         DataType = ftUnknown

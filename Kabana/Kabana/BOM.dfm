@@ -1,5 +1,5 @@
 object BOMFrm: TBOMFrm
-  Left = 270
+  Left = 273
   Top = 192
   Width = 1325
   Height = 728

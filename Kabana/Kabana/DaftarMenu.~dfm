@@ -1,5 +1,5 @@
 object DaftarMenuFrm: TDaftarMenuFrm
-  Left = 318
+  Left = 319
   Top = 203
   Width = 1071
   Height = 601
@@ -271,6 +271,7 @@ object DaftarMenuFrm: TDaftarMenuFrm
             'ISUNPOST2;CheckBox;+;-'
             'ISUNPOST3;CheckBox;+;-')
           Selected.Strings = (
+            'NO_URUT_D'#9'5'#9'Key'#9'F'
             'DAFTAR_MENU'#9'65'#9'DAFTAR_MENU'#9'T'
             'ISVIS'#9'5'#9'Visible'#9'F'#9'HAK MENU'
             'ISADD'#9'3'#9'Add'#9'F'#9'HAK MENU'

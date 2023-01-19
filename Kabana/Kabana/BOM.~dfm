@@ -1,9 +1,9 @@
 object BOMFrm: TBOMFrm
-  Left = 270
+  Left = 272
   Top = 192
   Width = 1325
   Height = 728
-  ActiveControl = wwCheckBox1
+  ActiveControl = dbGrid1
   Caption = 'Build Of Material (BOM)'
   Color = clWindow
   Ctl3D = False
@@ -294,7 +294,7 @@ object BOMFrm: TBOMFrm
       Top = 50
       Width = 1229
       Height = 610
-      ActivePage = tsInput
+      ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet

@@ -309,6 +309,8 @@ type
     MyIDR_en: TMyKonversi;
     qMenuUserISUNPOST2: TStringField;
     qMenuUserISUNPOST3: TStringField;
+    FKD_Item_WIP: TOraQuery;
+    FKD_Item_WIPNO_BUKTI: TStringField;
     procedure KlikTopPanel(pnama_form : String);
     procedure pLogin;
     procedure pLogin2;

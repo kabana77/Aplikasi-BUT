@@ -70,7 +70,7 @@ object DaftarMenuFrm: TDaftarMenuFrm
     Top = 49
     Width = 1055
     Height = 472
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -281,7 +281,8 @@ object DaftarMenuFrm: TDaftarMenuFrm
             'ISUNPOST3'#9'1'#9'Aprv3'#9'F'#9'HAK MENU'
             'ISPRINT'#9'3'#9'Print'#9'F'#9'HAK MENU'
             'ISEXPORT'#9'5'#9'Export'#9'F'#9'HAK MENU'
-            'ISREAD'#9'4'#9'Back~Date'#9'F'#9'HAK MENU')
+            'ISREAD'#9'4'#9'Back~Date'#9'F'#9'HAK MENU'
+            'NO_URUT_D'#9'5'#9'Key'#9'F')
           IniAttributes.Delimiter = ';;'
           ExportOptions.ExportType = wwgetSYLK
           TitleColor = 16384

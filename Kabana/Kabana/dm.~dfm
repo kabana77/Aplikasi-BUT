@@ -1,8 +1,8 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 336
-  Top = 175
+  Left = 474
+  Top = 231
   Height = 579
   Width = 759
   object OS: TOraSession
@@ -10,6 +10,7 @@ object DMFrm: TDMFrm
     Username = 'but'
     Password = 'MOON2014'
     Server = '0.tcp.ap.ngrok.io:18467'
+    Connected = True
     ConnectDialog = OL
     AfterConnect = OSAfterConnect
     Schema = 'BUT'
@@ -1356,8 +1357,8 @@ object DMFrm: TDMFrm
     SQL.Strings = (
       'select count(*) as ndata from daftar_transaksi'
       'where nama_form=:pnama_form')
-    Left = 352
-    Top = 104
+    Left = 360
+    Top = 120
     ParamData = <
       item
         DataType = ftString
@@ -1454,8 +1455,8 @@ object DMFrm: TDMFrm
   end
   object dsqLokasi: TwwDataSource
     DataSet = qLokasi
-    Left = 240
-    Top = 280
+    Left = 280
+    Top = 288
   end
   object qItemAll: TOraQuery
     Session = OS
@@ -1986,7 +1987,7 @@ object DMFrm: TDMFrm
     DetailFields = 'NO_REG_OS'
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     Left = 115
-    Top = 448
+    Top = 424
     object FloatField1: TFloatField
       DisplayLabel = 'NO_BOM'
       DisplayWidth = 7
@@ -2340,8 +2341,8 @@ object DMFrm: TDMFrm
   object Fno_Bukti: TOraQuery
     SQL.Strings = (
       'select but.fno_bukti(:pkode_form, :ptgl) as no_bukti from dual')
-    Left = 59
-    Top = 472
+    Left = 19
+    Top = 488
     ParamData = <
       item
         DataType = ftUnknown
@@ -2363,5 +2364,26 @@ object DMFrm: TDMFrm
     Satuan = 'Rupiah'
     Left = 236
     Top = 16
+  end
+  object FKD_Item_WIP: TOraQuery
+    SQL.Strings = (
+      
+        'select but.fkd_item_wip(:pkode_form, :ptgl) as no_bukti from dua' +
+        'l')
+    Left = 107
+    Top = 480
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'pkode_form'
+      end
+      item
+        DataType = ftUnknown
+        Name = 'ptgl'
+      end>
+    object FKD_Item_WIPNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 4000
+    end
   end
 end

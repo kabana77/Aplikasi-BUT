@@ -2968,7 +2968,7 @@ begin
   begin
       if qBDetail.RecordCount=0 then
       begin
-          ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
+          ShowMessage('Data DETAIL ITEM BARANG kosong, tidak dapat di-APPROVE !');
           Abort;
       end
       else

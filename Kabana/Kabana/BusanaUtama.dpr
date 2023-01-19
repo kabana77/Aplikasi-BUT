@@ -79,7 +79,10 @@ uses
   InfoMutasiStokRev in 'InfoMutasiStokRev.pas' {InfoMutasiStokRevFrm},
   PenyelesaianWaste in 'PenyelesaianWaste.pas' {PenyelesaianWasteFrm},
   InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm},
-  InfoMutasiStokNBB in 'InfoMutasiStokNBB.pas' {InfoMutasiStokNBBFrm};
+  InfoMutasiStokNBB in 'InfoMutasiStokNBB.pas' {InfoMutasiStokNBBFrm},
+  TerimaBB in 'TerimaBB.pas' {TerimaBBFrm},
+  DaftarItemWIP1 in 'DaftarItemWIP1.pas' {DaftarItemWIP1Frm},
+  HasilCutting in 'HasilCutting.pas' {HasilCuttingFrm};
 
 {$R *.res}
 

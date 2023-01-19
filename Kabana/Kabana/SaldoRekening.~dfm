@@ -1,6 +1,6 @@
 object SaldoRekeningFrm: TSaldoRekeningFrm
-  Left = 272
-  Top = 266
+  Left = 274
+  Top = 267
   Width = 1199
   Height = 600
   Caption = 'SaldoRekeningFrm'
@@ -374,7 +374,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 55.562500000000000000
-                42.333333333333340000
+                42.333333333333330000
                 21.166666666666670000
                 452.437500000000000000)
               Alignment = taLeftJustify
@@ -406,8 +406,8 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
-                76.729166666666680000
+                42.333333333333330000
+                76.729166666666670000
                 158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -432,7 +432,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 119.062500000000000000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -458,7 +458,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                42.333333333333340000
+                42.333333333333330000
                 161.395833333333300000
                 158.750000000000000000)
               Alignment = taLeftJustify
@@ -550,7 +550,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
                 44.979166666666670000
                 1545.166666666667000000
                 105.833333333333300000
-                82.020833333333340000)
+                82.020833333333330000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -705,8 +705,8 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                915.458333333333200000
-                84.666666666666680000
+                915.458333333333300000
+                84.666666666666670000
                 119.062500000000000000)
               Alignment = taCenter
               AlignToBand = True
@@ -1151,7 +1151,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              343.958333333333400000
+              343.958333333333300000
               1949.979166666667000000)
             BandType = rbSummary
             object QRLabel3: TQRLabel
@@ -1575,7 +1575,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                84.666666666666680000
+                84.666666666666670000
                 63.500000000000000000
                 1013.354166666667000000)
               Alignment = taLeftJustify
@@ -2260,7 +2260,7 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               2000.250000000000000000)
             BandType = rbTitle
             object QRDBText18: TQRDBText
-              Left = -61
+              Left = 309
               Top = 8
               Width = 138
               Height = 24
@@ -2303,8 +2303,8 @@ object SaldoRekeningFrm: TSaldoRekeningFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                949.854166666666800000
-                84.666666666666680000
+                949.854166666666700000
+                84.666666666666670000
                 100.541666666666700000)
               Alignment = taCenter
               AlignToBand = True

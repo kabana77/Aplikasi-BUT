@@ -935,6 +935,13 @@ type
     dsqJurnal: TwwDataSource;
     qBMasterTGL_APPROVE: TDateTimeField;
     qBMasterOPR_APPROVE: TStringField;
+    qB1OPR_APPROVE: TStringField;
+    qB1TGL_APPROVE: TDateTimeField;
+    qBMasterNO_BUKTI: TStringField;
+    DBText3: TDBText;
+    QRDBText1: TQRDBText;
+    QRDBText2: TQRDBText;
+    qBMasterSTATUS: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2277,11 +2284,17 @@ begin
        end; //end index
   1 : begin
             DMFrm.qJnsTransaksi.Close;
-            DMFrm.qJnsTransaksi.ParamByName('pnama_form').AsString:=Name+'/ '+UpperCase(StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll]));
+            //DMFrm.qJnsTransaksi.ParamByName('pnama_form').AsString:=Name+'/ '+UpperCase(StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll]));
+            DMFrm.qJnsTransaksi.ParamByName('pnama_form').AsString:='PemakaianBahanFrm/ PEMAKAIAN BAHAN';
             DMFrm.qJnsTransaksi.Open;
             qBom.Close;
-//            qBom.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
             qBom.Open;
+
+            {DMFrm.qDateTime.Close;
+            DMFrm.qDateTime.Open;
+            qrBukti.Preview;  }
+
+
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
                DMFrm.qDateTime.Close;
@@ -2291,8 +2304,10 @@ begin
             else
               begin
                   ShowMessage('FORM belum terdaftar !');
+                  ShowMessage(DMFrm.qJnsTransaksi.SQL.Text);
               end;
-       end; //end index
+            
+       end;
   2 : begin
         vfield_order:='NO_REG_OS';
             qB2.DisableControls;
@@ -2452,6 +2467,11 @@ begin
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+
+  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+
+  tsInputD2.TabVisible:=false;
+  TabSheet4.TabVisible:=false;
 end;
 
 procedure TPemakaianBahanFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2461,7 +2481,9 @@ begin
   qBMasterKD_DEPO.AsString:=DMFrm.qDepoDefaultKD_DEPO.AsString;
   qBMasterNAMA_DEPO.AsString:=DMFrm.qDepoDefaultNAMA_DEPO.AsString;
   qBMasterKD_LOKASI.AsString:='5';
-  qBMasterKD_LOKASI2.AsString:='61';
+  //qBMasterKD_LOKASI2.AsString:='61';
+  qBMasterNO_BUKTI.AsString:='#';
+  qBMasterSTATUS.AsString:='CREATE';
   qBomD.Close;
 end;
 
@@ -2542,21 +2564,31 @@ begin
           ShowMessage('LOKASI tidak boleh sama !');
           Abort;
   end;
+  
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   qBMasterMODE_INPUT.AsString:='GUI';
   vispost_new:=qBMasterISPOST.AsString;
   if ((vispost_old='0') and (vispost_new='1')) then
   begin
-      if qBDetail.RecordCount=0 then
+    if qBDetail.RecordCount=0 then
+    begin
+      ShowMessage('Data DETAIL ITEM BARANG kosong, tidak dapat di-APPROVE !');
+      Abort;
+    end
+    else
+    begin
+      if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
       begin
-          ShowMessage('Data DETAIL ITEM BARANG kosong, tidak perlu di-POSTING !');
-          Abort;
-      end
-      else
-      begin
-          qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
-          qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
+        DMFrm.Fno_Bukti.Close;
+        DMFrm.Fno_Bukti.ParamByName('pkode_form').AsString:='160';
+        DMFrm.Fno_Bukti.ParamByName('ptgl').AsDateTime:=qBMasterTGL.AsDateTime;
+        DMFrm.Fno_Bukti.Open;
+        qBMasterNO_BUKTI.AsString:=DMFrm.Fno_BuktiNO_BUKTI.AsString;
+        qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+        qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
+        qBMasterSTATUS.AsString:='OPEN';
       end;
+    end;
   end;
 end;
 

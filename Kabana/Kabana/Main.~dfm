@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 414
+  Left = 425
   Top = 192
   Width = 800
   Height = 366
@@ -341,29 +341,6 @@ object MainFrm: TMainFrm
         Caption = '-'
         GroupIndex = 1
       end
-      object PemakaianBahan1: TMenuItem
-        Caption = 'Pemakaian Bahan'
-        Checked = True
-        GroupIndex = 1
-        OnClick = PemakaianBahan1Click
-      end
-      object SubKontrak1: TMenuItem
-        Caption = 'Sub Kontrak'
-        Checked = True
-        GroupIndex = 1
-        object SuratJalanKeluar1: TMenuItem
-          Caption = 'Surat Jalan (Keluar)'
-          OnClick = SuratJalanKeluar1Click
-        end
-        object erimaHasil1: TMenuItem
-          Caption = 'Terima Hasil (Masuk)'
-          OnClick = erimaHasil1Click
-        end
-      end
-      object N20: TMenuItem
-        Caption = '-'
-        GroupIndex = 1
-      end
       object SisaWaste1: TMenuItem
         Caption = 'Waste Produksi'
         Checked = True
@@ -490,20 +467,183 @@ object MainFrm: TMainFrm
         Caption = '-'
         GroupIndex = 1
       end
-      object InfoMutasiStok1: TMenuItem
-        Caption = 'Info Mutasi Stok Barang Jadi'
-        GroupIndex = 1
-        OnClick = InfoMutasiStok1Click
-      end
-      object InfoMutasiStokBB1: TMenuItem
-        Caption = 'Info Mutasi Stok Bahan Baku'
-        GroupIndex = 1
-        OnClick = InfoMutasiStokBB1Click
-      end
       object InfoMutasiStokNonBahanBaku1: TMenuItem
         Caption = 'Info Mutasi Stok Non Bahan Baku'
         GroupIndex = 1
         OnClick = InfoMutasiStokNonBahanBaku1Click
+      end
+    end
+    object Gudang1: TMenuItem
+      Caption = 'Gudang'
+      object GudangBahanBaku1: TMenuItem
+        Caption = 'Gudang Bahan Baku'
+        GroupIndex = 1
+        object PemakaianBahan1: TMenuItem
+          Caption = 'Pemakaian Bahan'
+          Checked = True
+          GroupIndex = 1
+          OnClick = PemakaianBahan1Click
+        end
+        object InfoMutasiStokBB1: TMenuItem
+          Caption = 'Info Mutasi Stok Bahan Baku'
+          GroupIndex = 1
+          OnClick = InfoMutasiStokBB1Click
+        end
+      end
+      object GudangBarangJadi1: TMenuItem
+        Caption = 'Gudang Barang Jadi'
+        GroupIndex = 1
+        object InfoMutasiStok1: TMenuItem
+          Caption = 'Info Mutasi Stok Barang Jadi'
+          GroupIndex = 1
+          OnClick = InfoMutasiStok1Click
+        end
+      end
+    end
+    object Produksi1: TMenuItem
+      Caption = 'Produksi'
+      object Cutting1: TMenuItem
+        Caption = 'Cutting'
+        GroupIndex = 1
+        object erimaBahanBaku1: TMenuItem
+          Caption = 'Terima Bahan Baku'
+          GroupIndex = 2
+          OnClick = erimaBahanBaku1Click
+        end
+        object ItemProduksiCutting1: TMenuItem
+          Caption = 'Item Produksi Cutting'
+          GroupIndex = 2
+          OnClick = ItemProduksiCutting1Click
+        end
+        object HasilCuttingin1: TMenuItem
+          Caption = 'Hasil Cutting'
+          GroupIndex = 2
+          OnClick = HasilCuttingin1Click
+        end
+        object Subkon11: TMenuItem
+          Caption = 'Subkon Cutting'
+          GroupIndex = 2
+          object PengirimanOUT1: TMenuItem
+            Caption = 'Pengiriman [OUT]'
+            GroupIndex = 3
+          end
+          object Penerimaan1: TMenuItem
+            Caption = 'Penerimaan [IN]'
+            GroupIndex = 3
+          end
+          object N23: TMenuItem
+            Caption = '-'
+            GroupIndex = 3
+          end
+          object InfoMutasiSubkonCutting1: TMenuItem
+            Caption = 'Info Mutasi Subkon Cutting'
+            GroupIndex = 3
+          end
+        end
+        object WasteCutting1: TMenuItem
+          Caption = 'Waste Cutting'
+          GroupIndex = 2
+        end
+        object LoadingHasilCutting1: TMenuItem
+          Caption = 'Loading Hasil Cutting'
+          GroupIndex = 2
+        end
+        object N20: TMenuItem
+          Caption = '-'
+          GroupIndex = 2
+        end
+        object InfoWIPCutting11: TMenuItem
+          Caption = 'Info WIP Cutting 1'
+          GroupIndex = 2
+        end
+        object InfoWIP21: TMenuItem
+          Caption = 'Info WIP Cutting 2'
+          GroupIndex = 2
+        end
+      end
+      object Sewing1: TMenuItem
+        Caption = 'Sewing'
+        GroupIndex = 1
+        object erimaHasilCuttingIN1: TMenuItem
+          Caption = 'Terima Hasil Cutting'
+        end
+        object ItemHasilSewing1: TMenuItem
+          Caption = 'Item Hasil Sewing'
+        end
+        object Hasil1: TMenuItem
+          Caption = 'Hasil Sewing'
+        end
+        object WasteSewing1: TMenuItem
+          Caption = 'Waste Sewing'
+        end
+        object LoadingHasilSewingOUT1: TMenuItem
+          Caption = 'Loading Hasil Sewing'
+        end
+        object N29: TMenuItem
+          Caption = '-'
+        end
+        object InfoWIPSewing11: TMenuItem
+          Caption = 'Info WIP Sewing 1'
+        end
+        object InfoWIPSewing21: TMenuItem
+          Caption = 'Info WIP Sewing 2'
+        end
+      end
+      object Finishing1: TMenuItem
+        Caption = 'Finishing'
+        GroupIndex = 1
+        object erimaHasilSewingIN1: TMenuItem
+          Caption = 'Terima Hasil Sewing'
+        end
+        object SubkonFinishing1INOUT1: TMenuItem
+          Caption = 'Subkon Finishing'
+          object PengirimanIN1: TMenuItem
+            Caption = 'Pengiriman [OUT]'
+          end
+          object PenerimaanIN1: TMenuItem
+            Caption = 'Penerimaan [IN]'
+          end
+          object N25: TMenuItem
+            Caption = '-'
+          end
+          object InfoMutasiFinishing12: TMenuItem
+            Caption = 'Info Mutasi Subkon Finishing'
+          end
+        end
+        object WasteFinishingOUT1: TMenuItem
+          Caption = 'Waste Finishing'
+        end
+        object erimaHasilFinishing11: TMenuItem
+          Caption = 'Hasil Finishing [Barang Jadi]'
+        end
+        object LoadingBarangJadiOUT1: TMenuItem
+          Caption = 'Loading Barang Jadi'
+        end
+        object N24: TMenuItem
+          Caption = '-'
+        end
+        object InfoMutasiFinishing11: TMenuItem
+          Caption = 'Info Finishing 1'
+        end
+        object InfoFinishing21: TMenuItem
+          Caption = 'Info Finishing 2'
+        end
+      end
+      object WasteProduksi1: TMenuItem
+        Caption = 'Waste Produksi'
+        GroupIndex = 1
+        object PemasukanWaste1: TMenuItem
+          Caption = 'Pemasukan Waste [IN]'
+        end
+        object PenyelesaianWasteOUT1: TMenuItem
+          Caption = 'Penyelesaian Waste [OUT]'
+        end
+        object N26: TMenuItem
+          Caption = '-'
+        end
+        object InfoMutasiWaste1: TMenuItem
+          Caption = 'Info Mutasi Waste'
+        end
       end
     end
     object Penjualan1: TMenuItem
