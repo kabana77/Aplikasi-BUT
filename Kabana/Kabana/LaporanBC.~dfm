@@ -1,6 +1,6 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 1
-  Top = 1
+  Left = 198
+  Top = 150
   Width = 1364
   Height = 726
   Caption = 'LaporanBCFrm'
@@ -5786,8 +5786,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISDETAIL;CheckBox;1;0'
@@ -5853,7 +5853,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop2: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -7494,7 +7494,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object Panel2: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -7513,8 +7513,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid2: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISDETAIL;CheckBox;1;0'
@@ -9380,7 +9380,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop3: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -9399,8 +9399,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid3: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISDETAIL;CheckBox;1;0'
@@ -11632,7 +11632,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop4: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -11651,8 +11651,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid4: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISDETAIL;CheckBox;1;0'
@@ -13359,8 +13359,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid5: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'NO_URUT'#9'4'#9'No.'#9'F'
@@ -13423,7 +13423,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop5: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -13439,7 +13439,7 @@ object LaporanBCFrm: TLaporanBCFrm
           ParentFont = False
           TabOrder = 1
           object Panel1: TPanel
-            Left = 1019
+            Left = 1001
             Top = 2
             Width = 242
             Height = 29
@@ -15102,7 +15102,7 @@ object LaporanBCFrm: TLaporanBCFrm
         object pTop6: TPanel
           Left = 0
           Top = 0
-          Width = 1263
+          Width = 1245
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -15118,7 +15118,7 @@ object LaporanBCFrm: TLaporanBCFrm
           ParentFont = False
           TabOrder = 0
           object Panel4: TPanel
-            Left = 1019
+            Left = 1001
             Top = 2
             Width = 242
             Height = 29
@@ -15144,8 +15144,8 @@ object LaporanBCFrm: TLaporanBCFrm
         object wwDBGrid6: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1263
-          Height = 648
+          Width = 1245
+          Height = 547
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
             'NO_URUT'#9'4'#9'No.'#9'F'

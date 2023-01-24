@@ -1,7 +1,7 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 475
+  Left = 478
   Top = 231
   Height = 579
   Width = 759
@@ -9,7 +9,7 @@ object DMFrm: TDMFrm
     Options.Direct = True
     Username = 'but'
     Password = 'MOON2014'
-    Server = '0.tcp.ap.ngrok.io:18467'
+    Server = '0.tcp.ap.ngrok.io:19696'
     Connected = True
     ConnectDialog = OL
     AfterConnect = OSAfterConnect

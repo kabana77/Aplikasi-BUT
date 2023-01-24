@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 426
+  Left = 429
   Top = 192
   Width = 800
   Height = 366
@@ -521,23 +521,26 @@ object MainFrm: TMainFrm
           OnClick = HasilCuttingin1Click
         end
         object Subkon11: TMenuItem
-          Caption = 'Subkon Cutting'
+          Caption = 'Jasa Bordir'
           GroupIndex = 2
           object PengirimanOUT1: TMenuItem
             Caption = 'Pengiriman [OUT]'
             GroupIndex = 3
+            OnClick = PengirimanOUT1Click
           end
           object Penerimaan1: TMenuItem
             Caption = 'Penerimaan [IN]'
             GroupIndex = 3
+            OnClick = Penerimaan1Click
           end
           object N23: TMenuItem
             Caption = '-'
             GroupIndex = 3
           end
           object InfoMutasiSubkonCutting1: TMenuItem
-            Caption = 'Info Mutasi Subkon Cutting'
+            Caption = 'Info Mutasi Jasa Bordir'
             GroupIndex = 3
+            OnClick = InfoMutasiSubkonCutting1Click
           end
         end
         object WasteCutting1: TMenuItem
@@ -547,6 +550,7 @@ object MainFrm: TMainFrm
         object LoadingHasilCutting1: TMenuItem
           Caption = 'Loading Hasil Cutting'
           GroupIndex = 2
+          OnClick = LoadingHasilCutting1Click
         end
         object N20: TMenuItem
           Caption = '-'
@@ -555,10 +559,12 @@ object MainFrm: TMainFrm
         object InfoWIPCutting11: TMenuItem
           Caption = 'Info WIP Cutting 1'
           GroupIndex = 2
+          OnClick = InfoWIPCutting11Click
         end
         object InfoWIP21: TMenuItem
           Caption = 'Info WIP Cutting 2'
           GroupIndex = 2
+          OnClick = InfoWIP21Click
         end
       end
       object Sewing1: TMenuItem

@@ -4940,7 +4940,7 @@ object HasilCuttingFrm: THasilCuttingFrm
           object Label19: TLabel
             Left = 0
             Top = 471
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5463,7 +5463,7 @@ object HasilCuttingFrm: THasilCuttingFrm
   end
   object qBDetail: TSmartQuery
     KeyFields = 'NO_REG_D'
-    KeySequence = 'NO_REG_D'
+    KeySequence = 'SEQ_WIP_CUTTING'
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from wip_cutting_d'

@@ -81,7 +81,14 @@ uses
   InfoMutasiStokBB in 'InfoMutasiStokBB.pas' {InfoMutasiStokBBFrm},
   InfoMutasiStokNBB in 'InfoMutasiStokNBB.pas' {InfoMutasiStokNBBFrm},
   TerimaBB in 'TerimaBB.pas' {TerimaBBFrm},
-  DaftarItemWIP1 in 'DaftarItemWIP1.pas' {DaftarItemWIP1Frm};
+  DaftarItemWIP1 in 'DaftarItemWIP1.pas' {DaftarItemWIP1Frm},
+  HasilCutting in 'HasilCutting.pas' {HasilCuttingFrm},
+  InfoWIPCutting1 in 'InfoWIPCutting1.pas' {InfoWIPCutting1Frm},
+  LoadingCutting in 'LoadingCutting.pas' {LoadingCuttingFrm},
+  InfoWIPCutting2 in 'InfoWIPCutting2.pas' {InfoWIPCutting2Frm},
+  JasaBordir in 'JasaBordir.pas' {JasaBordirFrm},
+  TerimaJasaBordir in 'TerimaJasaBordir.pas' {TerimaJasaBordirFrm},
+  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm};
 
 {$R *.res}
 
@@ -91,5 +98,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
+  Application.CreateForm(TInfoWIPCuttingSubkonFrm, InfoWIPCuttingSubkonFrm);
   Application.Run;
 end.

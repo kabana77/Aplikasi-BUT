@@ -82,7 +82,13 @@ uses
   InfoMutasiStokNBB in 'InfoMutasiStokNBB.pas' {InfoMutasiStokNBBFrm},
   TerimaBB in 'TerimaBB.pas' {TerimaBBFrm},
   DaftarItemWIP1 in 'DaftarItemWIP1.pas' {DaftarItemWIP1Frm},
-  HasilCutting in 'HasilCutting.pas' {HasilCuttingFrm};
+  HasilCutting in 'HasilCutting.pas' {HasilCuttingFrm},
+  InfoWIPCutting1 in 'InfoWIPCutting1.pas' {InfoWIPCutting1Frm},
+  LoadingCutting in 'LoadingCutting.pas' {LoadingCuttingFrm},
+  InfoWIPCutting2 in 'InfoWIPCutting2.pas' {InfoWIPCutting2Frm},
+  JasaBordir in 'JasaBordir.pas' {JasaBordirFrm},
+  TerimaJasaBordir in 'TerimaJasaBordir.pas' {TerimaJasaBordirFrm},
+  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm};
 
 {$R *.res}
 

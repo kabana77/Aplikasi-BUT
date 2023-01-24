@@ -1,6 +1,6 @@
 object TerimaBBFrm: TTerimaBBFrm
   Left = 185
-  Top = 153
+  Top = 152
   Width = 1382
   Height = 784
   Caption = 'TerimaBBFrm'
@@ -4682,7 +4682,7 @@ object TerimaBBFrm: TTerimaBBFrm
           Left = 0
           Top = 0
           Width = 1278
-          Height = 185
+          Height = 121
           Align = alTop
           BevelOuter = bvNone
           Color = 14671871
@@ -4694,8 +4694,8 @@ object TerimaBBFrm: TTerimaBBFrm
           ParentFont = False
           TabOrder = 0
           object Label14: TLabel
-            Left = 16
-            Top = 123
+            Left = 104
+            Top = 45
             Width = 55
             Height = 13
             Caption = 'Keterangan'
@@ -4826,8 +4826,8 @@ object TerimaBBFrm: TTerimaBBFrm
             Transparent = True
           end
           object Label3: TLabel
-            Left = 106
-            Top = 55
+            Left = 434
+            Top = 63
             Width = 44
             Height = 13
             Caption = 'No. BOM'
@@ -4840,8 +4840,8 @@ object TerimaBBFrm: TTerimaBBFrm
             Transparent = True
           end
           object DBText4: TDBText
-            Left = 106
-            Top = 69
+            Left = 434
+            Top = 77
             Width = 65
             Height = 19
             AutoSize = True
@@ -4856,9 +4856,9 @@ object TerimaBBFrm: TTerimaBBFrm
             Transparent = True
           end
           object DBMemo1: TDBMemo
-            Left = 16
-            Top = 137
-            Width = 697
+            Left = 104
+            Top = 59
+            Width = 313
             Height = 41
             DataField = 'KETERANGAN'
             DataSource = dsqBMaster
@@ -4989,9 +4989,9 @@ object TerimaBBFrm: TTerimaBBFrm
         end
         object pMaster2: TPanel
           Left = 1093
-          Top = 185
+          Top = 121
           Width = 185
-          Height = 453
+          Height = 517
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5004,7 +5004,7 @@ object TerimaBBFrm: TTerimaBBFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 399
+            Top = 463
             Width = 185
             Height = 13
             Align = alBottom
@@ -5033,7 +5033,7 @@ object TerimaBBFrm: TTerimaBBFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 412
+            Top = 476
             Width = 185
             Height = 41
             TabStop = False
@@ -5070,9 +5070,9 @@ object TerimaBBFrm: TTerimaBBFrm
         end
         object PageControl2: TPageControl
           Left = 0
-          Top = 185
+          Top = 121
           Width = 1093
-          Height = 453
+          Height = 517
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -5089,7 +5089,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Left = 0
               Top = 0
               Width = 1085
-              Height = 425
+              Height = 489
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5267,7 +5267,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Left = 0
               Top = 49
               Width = 1085
-              Height = 376
+              Height = 440
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5417,7 +5417,7 @@ object TerimaBBFrm: TTerimaBBFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from wip_cutting')
+      'select * from (select * from wip_cutting where kd_form='#39'197'#39')')
     ReadOnly = True
     Left = 1083
     object qB1KD_FORM: TStringField

@@ -267,6 +267,12 @@ type
     procedure erimaBahanBaku1Click(Sender: TObject);
     procedure ItemProduksiCutting1Click(Sender: TObject);
     procedure HasilCuttingin1Click(Sender: TObject);
+    procedure InfoWIPCutting11Click(Sender: TObject);
+    procedure LoadingHasilCutting1Click(Sender: TObject);
+    procedure InfoWIP21Click(Sender: TObject);
+    procedure PengirimanOUT1Click(Sender: TObject);
+    procedure Penerimaan1Click(Sender: TObject);
+    procedure InfoMutasiSubkonCutting1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -295,7 +301,8 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   SerahTerimaBJ, SerahTerimaWaste, SubKontrak2, KartuStokBahanKITE,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
   PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB, TerimaBB, DaftarItemWIP1,
-  HasilCutting;
+  HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
+  JasaBordir, TerimaJasaBordir;
 
 {$R *.dfm}
 
@@ -2297,6 +2304,156 @@ begin
      HasilCuttingFrm.vCanUnPost:=False;
   end;
   HasilCuttingFrm.Show;
+end;
+
+procedure TMainFrm.InfoWIPCutting11Click(Sender: TObject);
+begin
+  if InfoWIPCutting1Frm=nil then InfoWIPCutting1Frm:=TInfoWIPCutting1Frm.Create(Application);
+  InfoWIPCutting1Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPCutting1Frm.pTop.Caption:='     '+StringReplace(InfoWIPCutting1Frm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPCutting1Frm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPCutting1Frm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPCutting1Frm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPCutting1Frm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPCutting1Frm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPCutting1Frm.vCanAdd:=False;
+     InfoWIPCutting1Frm.vCanEdit:=False;
+     InfoWIPCutting1Frm.vCanDel:=False;
+     InfoWIPCutting1Frm.vCanPrint:=False;
+     InfoWIPCutting1Frm.vCanExport:=False;
+  end;
+  InfoWIPCutting1Frm.Show;
+end;
+
+procedure TMainFrm.LoadingHasilCutting1Click(Sender: TObject);
+begin
+  if LoadingCuttingFrm=nil then LoadingCuttingFrm:=TLoadingCuttingFrm.Create(Application);
+  LoadingCuttingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  LoadingCuttingFrm.pTop.Caption:=' '+UpperCase(LoadingCuttingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     LoadingCuttingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     LoadingCuttingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     LoadingCuttingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     LoadingCuttingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     LoadingCuttingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     LoadingCuttingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     LoadingCuttingFrm.vCanAdd:=False;
+     LoadingCuttingFrm.vCanEdit:=False;
+     LoadingCuttingFrm.vCanDel:=False;
+     LoadingCuttingFrm.vCanPrint:=False;
+     LoadingCuttingFrm.vCanExport:=False;
+     LoadingCuttingFrm.vCanUnPost:=False;
+  end;
+  LoadingCuttingFrm.Show;
+end;
+
+procedure TMainFrm.InfoWIP21Click(Sender: TObject);
+begin
+  if InfoWIPCutting2Frm=nil then InfoWIPCutting2Frm:=TInfoWIPCutting2Frm.Create(Application);
+  InfoWIPCutting2Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPCutting2Frm.pTop.Caption:='     '+StringReplace(InfoWIPCutting2Frm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPCutting2Frm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPCutting2Frm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPCutting2Frm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPCutting2Frm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPCutting2Frm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPCutting2Frm.vCanAdd:=False;
+     InfoWIPCutting2Frm.vCanEdit:=False;
+     InfoWIPCutting2Frm.vCanDel:=False;
+     InfoWIPCutting2Frm.vCanPrint:=False;
+     InfoWIPCutting2Frm.vCanExport:=False;
+  end;
+  InfoWIPCutting2Frm.Show;
+end;
+
+procedure TMainFrm.PengirimanOUT1Click(Sender: TObject);
+begin
+  if JasaBordirFrm=nil then JasaBordirFrm:=TJasaBordirFrm.Create(Application);
+  JasaBordirFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  JasaBordirFrm.pTop.Caption:=' '+UpperCase(JasaBordirFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     JasaBordirFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     JasaBordirFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     JasaBordirFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     JasaBordirFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     JasaBordirFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     JasaBordirFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     JasaBordirFrm.vCanAdd:=False;
+     JasaBordirFrm.vCanEdit:=False;
+     JasaBordirFrm.vCanDel:=False;
+     JasaBordirFrm.vCanPrint:=False;
+     JasaBordirFrm.vCanExport:=False;
+     JasaBordirFrm.vCanUnPost:=False;
+  end;
+  JasaBordirFrm.Show;
+end;
+
+procedure TMainFrm.Penerimaan1Click(Sender: TObject);
+begin
+  if TerimaJasaBordirFrm=nil then TerimaJasaBordirFrm:=TTerimaJasaBordirFrm.Create(Application);
+  TerimaJasaBordirFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  TerimaJasaBordirFrm.pTop.Caption:=' '+UpperCase(TerimaBBFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     TerimaJasaBordirFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     TerimaJasaBordirFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     TerimaJasaBordirFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     TerimaJasaBordirFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     TerimaJasaBordirFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     TerimaJasaBordirFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     TerimaJasaBordirFrm.vCanAdd:=False;
+     TerimaJasaBordirFrm.vCanEdit:=False;
+     TerimaJasaBordirFrm.vCanDel:=False;
+     TerimaJasaBordirFrm.vCanPrint:=False;
+     TerimaJasaBordirFrm.vCanExport:=False;
+     TerimaJasaBordirFrm.vCanUnPost:=False;
+  end;
+  TerimaJasaBordirFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiSubkonCutting1Click(Sender: TObject);
+begin
+  if InfoWIPCuttingSubkonFrm=nil then InfoWIPCuttingSubkonFrm:=TInfoWIPCuttingSubkonFrm.Create(Application);
+  InfoWIPCuttingSubkonFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPCuttingSubkonFrm.pTop.Caption:='     '+StringReplace(InfoWIPCuttingSubkonFrm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPCuttingSubkonFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPCuttingSubkonFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPCuttingSubkonFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPCuttingSubkonFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPCuttingSubkonFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPCuttingSubkonFrm.vCanAdd:=False;
+     InfoWIPCuttingSubkonFrm.vCanEdit:=False;
+     InfoWIPCuttingSubkonFrm.vCanDel:=False;
+     InfoWIPCuttingSubkonFrm.vCanPrint:=False;
+     InfoWIPCuttingSubkonFrm.vCanExport:=False;
+  end;
+  InfoWIPCuttingSubkonFrm.Show;
 end;
 
 end.

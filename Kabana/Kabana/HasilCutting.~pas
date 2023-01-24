@@ -1290,6 +1290,7 @@ end;
 procedure THasilCuttingFrm.qBDetailBeforePost(DataSet: TDataSet);
 begin
   vModeInput:=True;
+  qBDetailQTY_X.AsFloat:=qBDetailQTY_D.AsFloat*qBDetailRD.AsFloat;
 end;
 
 procedure THasilCuttingFrm.wwCheckBox1Click(Sender: TObject);
