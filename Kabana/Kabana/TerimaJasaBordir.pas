@@ -481,6 +481,10 @@ type
     qBDetailQTY_SDH_DITERIMA: TFloatField;
     qBDetailQTY_SISA: TFloatField;
     qBMasterSTATUS: TStringField;
+    qBMasterID_PRINSIPAL: TStringField;
+    qBMasterNAMA_PRINSIPAL: TStringField;
+    Label4: TLabel;
+    DBText1: TDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

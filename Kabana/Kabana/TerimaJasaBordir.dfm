@@ -4682,7 +4682,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
           Left = 0
           Top = 0
           Width = 1278
-          Height = 121
+          Height = 175
           Align = alTop
           BevelOuter = bvNone
           Color = 14671871
@@ -4694,8 +4694,8 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
           ParentFont = False
           TabOrder = 0
           object Label14: TLabel
-            Left = 104
-            Top = 45
+            Left = 16
+            Top = 109
             Width = 55
             Height = 13
             Caption = 'Keterangan'
@@ -4826,8 +4826,8 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             Transparent = True
           end
           object Label3: TLabel
-            Left = 434
-            Top = 63
+            Left = 338
+            Top = 127
             Width = 44
             Height = 13
             Caption = 'No. BOM'
@@ -4840,8 +4840,8 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             Transparent = True
           end
           object DBText4: TDBText
-            Left = 434
-            Top = 77
+            Left = 338
+            Top = 141
             Width = 65
             Height = 19
             AutoSize = True
@@ -4855,9 +4855,39 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             ParentFont = False
             Transparent = True
           end
+          object Label4: TLabel
+            Left = 105
+            Top = 64
+            Width = 44
+            Height = 13
+            Caption = 'Rekanan'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object DBText1: TDBText
+            Left = 105
+            Top = 81
+            Width = 65
+            Height = 19
+            AutoSize = True
+            DataField = 'NAMA_PRINSIPAL'
+            DataSource = dsqBMaster
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clBlue
+            Font.Height = -16
+            Font.Name = 'Arial Narrow'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
           object DBMemo1: TDBMemo
-            Left = 104
-            Top = 59
+            Left = 16
+            Top = 123
             Width = 313
             Height = 41
             DataField = 'KETERANGAN'
@@ -4989,9 +5019,9 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
         end
         object pMaster2: TPanel
           Left = 1093
-          Top = 121
+          Top = 175
           Width = 185
-          Height = 517
+          Height = 463
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5004,7 +5034,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 463
+            Top = 409
             Width = 185
             Height = 13
             Align = alBottom
@@ -5033,7 +5063,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 476
+            Top = 422
             Width = 185
             Height = 41
             TabStop = False
@@ -5070,9 +5100,9 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
         end
         object PageControl2: TPageControl
           Left = 0
-          Top = 121
+          Top = 175
           Width = 1093
-          Height = 517
+          Height = 463
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -5089,7 +5119,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               Left = 0
               Top = 0
               Width = 1085
-              Height = 489
+              Height = 435
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5270,7 +5300,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               Left = 0
               Top = 49
               Width = 1085
-              Height = 440
+              Height = 386
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5875,6 +5905,14 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
     object qBMasterSTATUS: TStringField
       FieldName = 'STATUS'
       Size = 10
+    end
+    object qBMasterID_PRINSIPAL: TStringField
+      FieldName = 'ID_PRINSIPAL'
+      Size = 6
+    end
+    object qBMasterNAMA_PRINSIPAL: TStringField
+      FieldName = 'NAMA_PRINSIPAL'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource

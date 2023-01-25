@@ -1,8 +1,8 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 477
-  Top = 231
+  Left = 468
+  Top = 232
   Height = 579
   Width = 759
   object OS: TOraSession
@@ -10,6 +10,7 @@ object DMFrm: TDMFrm
     Username = 'but'
     Password = 'MOON2014'
     Server = '0.tcp.ap.ngrok.io:19696'
+    Connected = True
     ConnectDialog = OL
     AfterConnect = OSAfterConnect
     Schema = 'BUT'
@@ -2383,6 +2384,182 @@ object DMFrm: TDMFrm
     object FKD_Item_WIPNO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       Size = 4000
+    end
+  end
+  object qRekananSubkon: TOraQuery
+    Session = OS
+    SQL.Strings = (
+      'select * from daftar_prinsipal'
+      'where jenis = '#39'JASA SUBKON'#39
+      'order by id_prinsipal')
+    Left = 657
+    Top = 152
+    object qRekananSubkonID_PRINSIPAL: TStringField
+      DisplayLabel = 'KODE'
+      DisplayWidth = 6
+      FieldName = 'ID_PRINSIPAL'
+      Required = True
+      Size = 6
+    end
+    object qRekananSubkonNAMA_PRINSIPAL: TStringField
+      DisplayLabel = 'NAMA'
+      DisplayWidth = 30
+      FieldName = 'NAMA_PRINSIPAL'
+      Required = True
+      Size = 50
+    end
+    object qRekananSubkonALAMAT: TStringField
+      DisplayWidth = 20
+      FieldName = 'ALAMAT'
+      Required = True
+      Size = 255
+    end
+    object qRekananSubkonKOTA: TStringField
+      DisplayWidth = 200
+      FieldName = 'KOTA'
+      Required = True
+      Size = 50
+    end
+    object qRekananSubkonPROPINSI: TStringField
+      DisplayWidth = 50
+      FieldName = 'PROPINSI'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonKODEPOS: TStringField
+      DisplayWidth = 6
+      FieldName = 'KODEPOS'
+      Required = True
+      Visible = False
+      Size = 6
+    end
+    object qRekananSubkonTELEPON: TStringField
+      DisplayWidth = 50
+      FieldName = 'TELEPON'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonFAX: TStringField
+      DisplayWidth = 50
+      FieldName = 'FAX'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonEMAIL: TStringField
+      DisplayWidth = 50
+      FieldName = 'EMAIL'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonCP: TStringField
+      DisplayWidth = 50
+      FieldName = 'CP'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonHP: TStringField
+      DisplayWidth = 50
+      FieldName = 'HP'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonKREDIT_LIMIT: TFloatField
+      DisplayWidth = 10
+      FieldName = 'KREDIT_LIMIT'
+      Required = True
+      Visible = False
+    end
+    object qRekananSubkonTOP: TFloatField
+      DisplayWidth = 10
+      FieldName = 'TOP'
+      Required = True
+      Visible = False
+    end
+    object qRekananSubkonMAX_FAKTUR: TFloatField
+      DisplayWidth = 10
+      FieldName = 'MAX_FAKTUR'
+      Required = True
+      Visible = False
+    end
+    object qRekananSubkonPKP: TStringField
+      DisplayWidth = 5
+      FieldName = 'PKP'
+      Required = True
+      Visible = False
+      Size = 5
+    end
+    object qRekananSubkonNPWP: TStringField
+      DisplayWidth = 50
+      FieldName = 'NPWP'
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonNAMA_WP: TStringField
+      DisplayWidth = 50
+      FieldName = 'NAMA_WP'
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonALAMAT_WP: TStringField
+      DisplayWidth = 255
+      FieldName = 'ALAMAT_WP'
+      Visible = False
+      Size = 255
+    end
+    object qRekananSubkonTGL_INSERT: TDateTimeField
+      DisplayWidth = 18
+      FieldName = 'TGL_INSERT'
+      Required = True
+      Visible = False
+    end
+    object qRekananSubkonOPR_INSERT: TStringField
+      DisplayWidth = 50
+      FieldName = 'OPR_INSERT'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonTGL_UPDATE: TDateTimeField
+      DisplayWidth = 18
+      FieldName = 'TGL_UPDATE'
+      Visible = False
+    end
+    object qRekananSubkonOPR_UPDATE: TStringField
+      DisplayWidth = 50
+      FieldName = 'OPR_UPDATE'
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonTGL_CLOSE_PO: TDateTimeField
+      DisplayWidth = 18
+      FieldName = 'TGL_CLOSE_PO'
+      Visible = False
+    end
+    object qRekananSubkonJENIS: TStringField
+      DisplayWidth = 50
+      FieldName = 'JENIS'
+      Required = True
+      Visible = False
+      Size = 50
+    end
+    object qRekananSubkonKD_AREA: TStringField
+      DisplayWidth = 8
+      FieldName = 'KD_AREA'
+      Visible = False
+      Size = 8
+    end
+    object qRekananSubkonISPOST: TStringField
+      DisplayWidth = 1
+      FieldName = 'ISPOST'
+      Visible = False
+      FixedChar = True
+      Size = 1
     end
   end
 end

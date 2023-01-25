@@ -481,6 +481,10 @@ type
     qBDetailQTY_SDH_DITERIMA: TFloatField;
     qBDetailQTY_SISA: TFloatField;
     qBMasterSTATUS: TStringField;
+    qBMasterID_PRINSIPAL: TStringField;
+    qBMasterNAMA_PRINSIPAL: TStringField;
+    Label4: TLabel;
+    DBText1: TDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1150,8 +1154,8 @@ procedure TTerimaJasaBordirFrm.qBMasterNewRecord(DataSet: TDataSet);
 begin
   qBMasterKD_FORM.AsString:=vkd_transaksi;
   qBMasterTGL.AsDateTime:=vtgl_bukti;
-  qBMasterKD_LOKASI.AsString:='611';
-  qBMasterKD_LOKASI2.AsString:='61';
+  qBMasterKD_LOKASI.AsString:='612';
+  qBMasterKD_LOKASI2.AsString:='611';
   qBMasterNO_BUKTI.AsString:='0';
   qBMasterNO_BOM.AsFloat:=1;
   qBMasterKETERANGAN.AsString:='-';

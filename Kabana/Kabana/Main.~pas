@@ -302,7 +302,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
   PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB, TerimaBB, DaftarItemWIP1,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
-  JasaBordir, TerimaJasaBordir;
+  JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon;
 
 {$R *.dfm}
 

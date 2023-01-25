@@ -461,6 +461,11 @@ type
     qItemTGL_UPDATE: TDateTimeField;
     qItemNO_BOM: TStringField;
     qItemKD_FORM: TStringField;
+    wwDBLookupComboDlg1: TwwDBLookupComboDlg;
+    Label3: TLabel;
+    qBMasterID_PRINSIPAL: TStringField;
+    qBMasterNAMA_PRINSIPAL: TStringField;
+    DBText1: TDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -548,6 +553,9 @@ type
       var PrintBand: Boolean);
     procedure TabSheet4Show(Sender: TObject);
     procedure lcdItemCloseUp(Sender: TObject; LookupTable,
+      FillTable: TDataSet; modified: Boolean);
+    procedure wwDBLookupComboDlg1Enter(Sender: TObject);
+    procedure wwDBLookupComboDlg1CloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
   private
     { Private declarations }
@@ -1129,8 +1137,8 @@ procedure TJasaBordirFrm.qBMasterNewRecord(DataSet: TDataSet);
 begin
   qBMasterKD_FORM.AsString:=vkd_transaksi;
   qBMasterTGL.AsDateTime:=vtgl_bukti;
-  qBMasterKD_LOKASI.AsString:='61';
-  qBMasterKD_LOKASI2.AsString:='611';
+  qBMasterKD_LOKASI.AsString:='611';
+  qBMasterKD_LOKASI2.AsString:='612';
   qBMasterNO_BUKTI.AsString:='0';
   qBMasterNO_BOM.AsFloat:=0;
   qBMasterKETERANGAN.AsString:='-';
@@ -1216,7 +1224,14 @@ begin
       ShowMessage('Data DETAIL ITEM BARANG kosong, tidak dapat di-APPROVE !');
       Abort;
     end
+
+    else if (qBMasterID_PRINSIPAL.AsString='') then
+    begin
+      ShowMessage('Rekanan harus diisi!');
+      Abort;
+    end
     else
+
     begin
       if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
       begin
@@ -1370,7 +1385,7 @@ end;
 procedure TJasaBordirFrm.dbGridDEnter(Sender: TObject);
 begin
   if qBMaster.State<>dsBrowse then
-    qBMaster.Post;
+      qBMaster.Post;
 end;
 
 procedure TJasaBordirFrm.qStokSalesBeforeOpen(DataSet: TDataSet);
@@ -1845,6 +1860,17 @@ begin
   qBDetailKETERANGAN.AsString:=qItemNAMA_ITEM.AsString;
   qBDetailRD.AsFloat:=1;
   qBDetailSAT_D.AsString:=qItemSATUAN.AsString;
+end;
+
+procedure TJasaBordirFrm.wwDBLookupComboDlg1Enter(Sender: TObject);
+begin
+  DMFrm.qRekananSubkon.Open;
+end;
+
+procedure TJasaBordirFrm.wwDBLookupComboDlg1CloseUp(Sender: TObject;
+  LookupTable, FillTable: TDataSet; modified: Boolean);
+begin
+  qBMasterNAMA_PRINSIPAL.AsString:=DMfrm.qRekananSubkonNAMA_PRINSIPAL.AsString;
 end;
 
 end.

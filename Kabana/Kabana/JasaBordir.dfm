@@ -4695,7 +4695,7 @@ object JasaBordirFrm: TJasaBordirFrm
           TabOrder = 0
           object Label14: TLabel
             Left = 96
-            Top = 40
+            Top = 44
             Width = 55
             Height = 13
             Caption = 'Keterangan'
@@ -4708,7 +4708,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object DBText19: TDBText
-            Left = 512
+            Left = 616
             Top = 0
             Width = 91
             Height = 24
@@ -4724,7 +4724,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object Label16: TLabel
-            Left = 456
+            Left = 560
             Top = 8
             Width = 44
             Height = 13
@@ -4738,7 +4738,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object Label17: TLabel
-            Left = 456
+            Left = 560
             Top = 50
             Width = 39
             Height = 13
@@ -4752,7 +4752,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object Label34x: TLabel
-            Left = 307
+            Left = 457
             Top = 3
             Width = 88
             Height = 13
@@ -4796,7 +4796,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object DBText3: TDBText
-            Left = 512
+            Left = 616
             Top = 24
             Width = 50
             Height = 13
@@ -4811,9 +4811,39 @@ object JasaBordirFrm: TJasaBordirFrm
             ParentFont = False
             Transparent = True
           end
+          object Label3: TLabel
+            Left = 96
+            Top = 0
+            Width = 44
+            Height = 13
+            Caption = 'Rekanan'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object DBText1: TDBText
+            Left = 160
+            Top = 13
+            Width = 80
+            Height = 24
+            AutoSize = True
+            DataField = 'NAMA_PRINSIPAL'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -19
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
           object DBMemo1: TDBMemo
             Left = 96
-            Top = 58
+            Top = 61
             Width = 345
             Height = 41
             DataField = 'KETERANGAN'
@@ -4827,7 +4857,7 @@ object JasaBordirFrm: TJasaBordirFrm
             TabOrder = 1
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 304
+            Left = 456
             Top = 16
             Width = 81
             Height = 17
@@ -4895,7 +4925,7 @@ object JasaBordirFrm: TJasaBordirFrm
             OnEnter = lcLokasiEnter
           end
           object VTgl: TwwDBDateTimePicker
-            Left = 512
+            Left = 616
             Top = 44
             Width = 121
             Height = 25
@@ -4920,6 +4950,35 @@ object JasaBordirFrm: TJasaBordirFrm
             ShowButton = True
             TabOrder = 4
             DisplayFormat = 'dd mmm yyyy'
+          end
+          object wwDBLookupComboDlg1: TwwDBLookupComboDlg
+            Left = 96
+            Top = 15
+            Width = 55
+            Height = 19
+            GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
+            GridColor = clWhite
+            GridTitleAlignment = taLeftJustify
+            Caption = 'Lookup'
+            MaxWidth = 0
+            MaxHeight = 209
+            UserButton1Caption = '&Refresh'
+            UserButton2Caption = '&Filter'
+            Selected.Strings = (
+              'ID_PRINSIPAL'#9'6'#9'KODE'#9'F'
+              'NAMA_PRINSIPAL'#9'30'#9'NAMA'#9'F'
+              'ALAMAT'#9'20'#9'ALAMAT'#9'F'
+              'KOTA'#9'20'#9'KOTA'#9'F')
+            DataField = 'ID_PRINSIPAL'
+            DataSource = dsqBMaster
+            LookupTable = DMFrm.qRekananSubkon
+            LookupField = 'ID_PRINSIPAL'
+            TabOrder = 5
+            AutoDropDown = False
+            ShowButton = True
+            AllowClearKey = False
+            OnCloseUp = wwDBLookupComboDlg1CloseUp
+            OnEnter = wwDBLookupComboDlg1Enter
           end
         end
         object pMaster2: TPanel
@@ -5823,6 +5882,14 @@ object JasaBordirFrm: TJasaBordirFrm
       FieldName = 'KD_LOKASI2'
       Required = True
       Size = 12
+    end
+    object qBMasterID_PRINSIPAL: TStringField
+      FieldName = 'ID_PRINSIPAL'
+      Size = 6
+    end
+    object qBMasterNAMA_PRINSIPAL: TStringField
+      FieldName = 'NAMA_PRINSIPAL'
+      Size = 50
     end
   end
   object dsqBMaster: TwwDataSource
