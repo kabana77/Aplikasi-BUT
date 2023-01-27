@@ -151,6 +151,23 @@ type
     qB6CQTY_AKHIR: TFloatField;
     dsqB6: TwwDataSource;
     qB6GUDANG: TStringField;
+    pData: TPanel;
+    pDetail: TPanel;
+    pItem: TPanel;
+    CheckBox1: TCheckBox;
+    qBdetail: TSmartQuery;
+    qBdetailNO_REG_BUKTI: TFloatField;
+    qBdetailTGL: TDateTimeField;
+    qBdetailNO_BUKTI: TStringField;
+    qBdetailNO_BOM: TStringField;
+    qBdetailKD_ITEM: TStringField;
+    qBdetailQTY_IN: TFloatField;
+    qBdetailQTY_OUT: TFloatField;
+    qBdetailKETERANGAN2: TStringField;
+    dsqBdetail: TwwDataSource;
+    wwDBGrid1: TwwDBGrid;
+    wwIButton1: TwwIButton;
+    qBdetailJUDUL_LAPORAN: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -191,6 +208,9 @@ type
     procedure QRBand22BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
     procedure TabSheet6Show(Sender: TObject);
+    procedure wwDBGrid5RowChanged(Sender: TObject);
+    procedure qB6AfterOpen(DataSet: TDataSet);
+    procedure qBdetailBeforeOpen(DataSet: TDataSet);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -637,8 +657,37 @@ begin
 end;
 
 procedure TInfoWIPCutting2Frm.CheckBox3Click(Sender: TObject);
+var
+  t1, t2 : Real;
+  i : Integer;
 begin
-  qB6.Filtered:=CheckBox3.Checked;  //qB6.Filtered:=CheckBox3.Checked;
+  if CheckBox1.Checked then
+  begin
+    qBdetail.Close;
+    qBdetail.Open;
+    pDetail.Visible:=True;
+    wwDBGrid1.Refresh;
+    pItem.Caption:=qB6KD_ITEM.AsString+' - '+qB6NAMA_ITEM.AsString;
+
+    t1:=0;
+    t2:=0;
+    i:=0;
+    while not qBdetail.Eof do
+    begin
+      inc(i);
+      t1:=t1+qBdetailQTY_IN.AsFloat;
+      t2:=t2+qBdetailQTY_OUT.AsFloat;
+      qBdetail.Next;
+
+      wwDBGrid1.BringToFront;
+    end;
+    wwDBGrid1.ColumnByName('QTY_IN').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
+    wwDBGrid1.ColumnByName('QTY_OUT').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
+  end
+  else
+  begin
+    pDetail.Visible:=False;
+  end;
 end;
 
 procedure TInfoWIPCutting2Frm.qB6FilterRecord(DataSet: TDataSet;
@@ -839,6 +888,52 @@ begin
   end;
   dbNavigator.DataSource:=dsqB6;                 //Ganti
   pTop.Caption:='     '+TabSheet6.Caption;       //Ganti
+end;
+
+procedure TInfoWIPCutting2Frm.wwDBGrid5RowChanged(Sender: TObject);
+var
+  t1, t2 : Real;
+  i : Integer;
+begin
+  if CheckBox1.Checked then
+  begin
+    qBdetail.Close;
+    qBdetail.Open;
+    pDetail.Visible:=True;
+    wwDBGrid1.Refresh;
+    pItem.Caption:=qB6KD_ITEM.AsString+' - '+qB6NAMA_ITEM.AsString;
+
+    t1:=0;
+    t2:=0;
+    i:=0;
+    while not qBdetail.Eof do
+    begin
+      inc(i);
+      t1:=t1+qBdetailQTY_IN.AsFloat;
+      t2:=t2+qBdetailQTY_OUT.AsFloat;
+      qBdetail.Next;
+
+      wwDBGrid1.BringToFront;
+    end;
+    wwDBGrid1.ColumnByName('QTY_IN').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
+    wwDBGrid1.ColumnByName('QTY_OUT').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
+  end
+  else
+  begin
+    pDetail.Visible:=False;
+  end;
+end;
+
+procedure TInfoWIPCutting2Frm.qB6AfterOpen(DataSet: TDataSet);
+begin
+  CheckBox1.Checked:=False;
+end;
+
+procedure TInfoWIPCutting2Frm.qBdetailBeforeOpen(DataSet: TDataSet);
+begin
+  qBdetail.ParamByName('pkd_item').AsString:=qB6KD_ITEM.AsString;
+  qBdetail.ParamByName('pawal').AsDate:=vfield_awal;
+  qBdetail.ParamByName('pakhir').AsDate:=vfield_akhir;
 end;
 
 end.

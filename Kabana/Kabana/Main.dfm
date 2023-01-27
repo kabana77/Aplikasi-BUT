@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 371
-  Top = 161
+  Left = 460
+  Top = 232
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -546,6 +546,7 @@ object MainFrm: TMainFrm
         object WasteCutting1: TMenuItem
           Caption = 'Waste Cutting'
           GroupIndex = 2
+          OnClick = WasteCutting1Click
         end
         object LoadingHasilCutting1: TMenuItem
           Caption = 'Loading Hasil Cutting'

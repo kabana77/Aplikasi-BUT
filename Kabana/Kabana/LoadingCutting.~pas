@@ -412,12 +412,8 @@ type
     qBDetailSAT_A: TStringField;
     qBDetailSAT_T: TStringField;
     qBDetailSAT_D: TStringField;
-    qB1KD_FORM: TStringField;
     qB1NO_REG_OS: TFloatField;
     qB1TGL: TDateTimeField;
-    qB1NO_BOM: TFloatField;
-    qB1NO_REFF: TStringField;
-    qB1NO_REFF2: TStringField;
     qB1NO_BUKTI: TStringField;
     qB1KETERANGAN: TStringField;
     qB1ISPOST: TStringField;
@@ -425,9 +421,6 @@ type
     qB1TGL_INSERT: TDateTimeField;
     qB1OPR_APPROVE: TStringField;
     qB1TGL_APPROVE: TDateTimeField;
-    qB1CATATAN: TStringField;
-    qB1KD_LOKASI: TStringField;
-    qB1KD_LOKASI2: TStringField;
     qBMasterKD_FORM: TStringField;
     qBMasterNO_REG_OS: TFloatField;
     qBMasterTGL: TDateTimeField;
@@ -462,6 +455,10 @@ type
     qItemNO_BOM: TStringField;
     qItemKD_FORM: TStringField;
     qBMasterSTATUS: TStringField;
+    qB1KD_ITEM: TStringField;
+    qB1SAT_D: TStringField;
+    qB1QTY_D: TFloatField;
+    qB1KETERANGAN2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

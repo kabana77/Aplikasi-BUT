@@ -273,6 +273,7 @@ type
     procedure PengirimanOUT1Click(Sender: TObject);
     procedure Penerimaan1Click(Sender: TObject);
     procedure InfoMutasiSubkonCutting1Click(Sender: TObject);
+    procedure WasteCutting1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -302,7 +303,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
   PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB, TerimaBB, DaftarItemWIP1,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
-  JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon;
+  JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting;
 
 {$R *.dfm}
 
@@ -1596,8 +1597,8 @@ end;
 procedure TMainFrm.InfoKartuHutang1Click(Sender: TObject);
 begin
   if InfoKartuHutangFrm=nil then InfoKartuHutangFrm:=TInfoKartuHutangFrm.Create(Application);
-  InfoKartuHutangFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
-  InfoKartuHutangFrm.pTop.Caption:=' '+UpperCase(InfoKartuHutangFrm.Caption);
+     InfoKartuHutangFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+     InfoKartuHutangFrm.pTop.Caption:=' '+UpperCase(InfoKartuHutangFrm.Caption);
   if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
   begin
      InfoKartuHutangFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
@@ -2454,6 +2455,32 @@ begin
      InfoWIPCuttingSubkonFrm.vCanExport:=False;
   end;
   InfoWIPCuttingSubkonFrm.Show;
+end;
+
+procedure TMainFrm.WasteCutting1Click(Sender: TObject);
+begin
+  if WasteCuttingFrm=nil then WasteCuttingFrm:=TWasteCuttingFrm.Create(Application);
+  WasteCuttingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  WasteCuttingFrm.pTop.Caption:=' '+UpperCase(WasteCuttingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     WasteCuttingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     WasteCuttingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     WasteCuttingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     WasteCuttingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     WasteCuttingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     WasteCuttingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     WasteCuttingFrm.vCanAdd:=False;
+     WasteCuttingFrm.vCanEdit:=False;
+     WasteCuttingFrm.vCanDel:=False;
+     WasteCuttingFrm.vCanPrint:=False;
+     WasteCuttingFrm.vCanExport:=False;
+     WasteCuttingFrm.vCanUnPost:=False;
+  end;
+  WasteCuttingFrm.Show;
 end;
 
 end.

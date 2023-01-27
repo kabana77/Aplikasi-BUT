@@ -540,6 +540,8 @@ type
     procedure wwCheckBox1Click(Sender: TObject);
     procedure lcdItemCloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
+    procedure qBDetailQTY_TChange(Sender: TField);
+    procedure qBDetailRDChange(Sender: TField);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1321,7 +1323,7 @@ procedure TDaftarItemWIP1Frm.qBDetailCalcFields(DataSet: TDataSet);
 var
   vjumlah : String;
 begin
-  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
+
 end;
 
 procedure TDaftarItemWIP1Frm.DetailBand2BeforePrint(Sender: TQRCustomBand;
@@ -1772,6 +1774,16 @@ begin
   qBDetailNAMA_ITEM.AsString:=qItemNAMA_ITEM.AsString;
   qBDetailRD.AsFloat:=1;
   qBDetailSAT_D.AsString:=qItemSAT_D.AsString;
+end;
+
+procedure TDaftarItemWIP1Frm.qBDetailQTY_TChange(Sender: TField);
+begin
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
+end;
+
+procedure TDaftarItemWIP1Frm.qBDetailRDChange(Sender: TField);
+begin
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
 end;
 
 end.

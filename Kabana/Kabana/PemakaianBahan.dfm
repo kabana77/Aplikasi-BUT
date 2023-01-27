@@ -1,5 +1,5 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 179
+  Left = 180
   Top = 153
   Width = 1382
   Height = 784
@@ -5264,7 +5264,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label19: TLabel
             Left = 0
             Top = 319
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

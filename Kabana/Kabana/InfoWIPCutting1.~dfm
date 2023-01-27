@@ -1,5 +1,5 @@
 object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
-  Left = 259
+  Left = 261
   Top = 139
   Width = 1364
   Height = 726
@@ -3134,70 +3134,6 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
             end
           end
         end
-        object wwDBGrid5: TwwDBGrid
-          Left = 0
-          Top = 33
-          Width = 1245
-          Height = 547
-          DittoAttributes.ShortCutDittoRecord = 16429
-          Selected.Strings = (
-            'NO_URUT'#9'4'#9'No.'#9'F'
-            'KD_ITEM'#9'20'#9'Kode Barang'#9'F'
-            'NAMA_ITEM'#9'50'#9'Nama Barang'#9'F'
-            'SAT'#9'15'#9'Satuan'#9'F'
-            'QTY_AWAL'#9'20'#9'Saldo Awal'#9'F'
-            'QTY_IN'#9'20'#9'Pemasukan'#9'F'
-            'QTY_OUT'#9'20'#9'Pengeluaran'#9'F'
-            'CQTY_AKHIR'#9'20'#9'Saldo Akhir'#9'F'
-            'GUDANG'#9'40'#9'Gudang'#9'F')
-          IniAttributes.Enabled = True
-          IniAttributes.SaveToRegistry = True
-          IniAttributes.FileName = 'KUWUNG'
-          IniAttributes.Delimiter = ';;'
-          IniAttributes.CheckNewFields = True
-          ExportOptions.ExportType = wwgetSYLK
-          TitleColor = clBtnFace
-          FixedCols = 0
-          ShowHorzScrollBar = True
-          EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-          Align = alClient
-          Color = clWhite
-          DataSource = dsqB6
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'MS Sans Serif'
-          Font.Style = []
-          KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-          Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-          ParentFont = False
-          RowHeightPercent = 112
-          TabOrder = 0
-          TitleAlignment = taLeftJustify
-          TitleFont.Charset = DEFAULT_CHARSET
-          TitleFont.Color = clWindowText
-          TitleFont.Height = -11
-          TitleFont.Name = 'MS Sans Serif'
-          TitleFont.Style = []
-          TitleLines = 3
-          TitleButtons = True
-          UseTFields = False
-          LineColors.ShadowColor = clSilver
-          OnCalcCellColors = dbGrid1CalcCellColors
-          OnTitleButtonClick = wwDBGrid5TitleButtonClick
-          OnUpdateFooter = wwDBGrid5UpdateFooter
-          FooterCellColor = clGradientInactiveCaption
-          PaintOptions.ActiveRecordColor = 15719625
-          object wwIButton5: TwwIButton
-            Left = 0
-            Top = 0
-            Width = 17
-            Height = 41
-            AllowAllUp = True
-            Caption = '@'
-            OnClick = wwDBGrid1IButtonClick
-          end
-        end
         object pTop5: TPanel
           Left = 0
           Top = 0
@@ -3215,18 +3151,18 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
           Font.Name = 'Arial Narrow'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 0
           object Panel1: TPanel
-            Left = 1001
+            Left = 648
             Top = 2
-            Width = 242
+            Width = 595
             Height = 29
             Align = alRight
             TabOrder = 0
             object CheckBox3: TCheckBox
               Left = 13
               Top = 5
-              Width = 181
+              Width = 172
               Height = 17
               Caption = 'Yang ada saldonya saja'
               Font.Charset = ANSI_CHARSET
@@ -3237,6 +3173,180 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
               ParentFont = False
               TabOrder = 0
               OnClick = CheckBox3Click
+            end
+            object CheckBox1: TCheckBox
+              Left = 197
+              Top = 6
+              Width = 172
+              Height = 17
+              Caption = 'Tampilkan Detail'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clTeal
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 1
+              OnClick = CheckBox1Click
+            end
+          end
+        end
+        object pData: TPanel
+          Left = 0
+          Top = 33
+          Width = 1245
+          Height = 547
+          Align = alClient
+          TabOrder = 2
+          object wwDBGrid5: TwwDBGrid
+            Left = 1
+            Top = 1
+            Width = 567
+            Height = 545
+            DittoAttributes.ShortCutDittoRecord = 16429
+            Selected.Strings = (
+              'NO_URUT'#9'4'#9'NO.'#9'F'
+              'KD_ITEM'#9'10'#9'KODE'#9'F'
+              'NAMA_ITEM'#9'30'#9'NAMA BARANG'#9'F'
+              'SAT'#9'10'#9'SATUAN'#9'F'
+              'QTY_AWAL'#9'10'#9'SALDO~AWAL'#9'F'
+              'QTY_IN'#9'10'#9'MASUK'#9'F'
+              'QTY_OUT'#9'10'#9'KELUAR'#9'F'
+              'CQTY_AKHIR'#9'10'#9'SALDO~AKHIR'#9'F')
+            IniAttributes.Enabled = True
+            IniAttributes.SaveToRegistry = True
+            IniAttributes.FileName = 'KUWUNG'
+            IniAttributes.Delimiter = ';;'
+            IniAttributes.CheckNewFields = True
+            ExportOptions.ExportType = wwgetSYLK
+            TitleColor = clBtnFace
+            OnRowChanged = wwDBGrid5RowChanged
+            FixedCols = 0
+            ShowHorzScrollBar = True
+            EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+            Align = alClient
+            Color = clWhite
+            DataSource = dsqB6
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+            Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+            ParentFont = False
+            RowHeightPercent = 112
+            TabOrder = 0
+            TitleAlignment = taLeftJustify
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'MS Sans Serif'
+            TitleFont.Style = []
+            TitleLines = 3
+            TitleButtons = True
+            UseTFields = False
+            LineColors.ShadowColor = clSilver
+            OnCalcCellColors = dbGrid1CalcCellColors
+            OnTitleButtonClick = wwDBGrid5TitleButtonClick
+            OnUpdateFooter = wwDBGrid5UpdateFooter
+            FooterCellColor = clGradientInactiveCaption
+            PaintOptions.ActiveRecordColor = 15719625
+            object wwIButton5: TwwIButton
+              Left = 0
+              Top = 0
+              Width = 17
+              Height = 41
+              AllowAllUp = True
+              Caption = '@'
+              OnClick = wwDBGrid1IButtonClick
+            end
+          end
+          object pDetail: TPanel
+            Left = 568
+            Top = 1
+            Width = 676
+            Height = 545
+            Align = alRight
+            Caption = 'pDetail'
+            TabOrder = 1
+            Visible = False
+            object pItem: TPanel
+              Left = 1
+              Top = 1
+              Width = 674
+              Height = 48
+              Align = alTop
+              Caption = 'pItem'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'MS Sans Serif'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+            end
+            object wwDBGrid1: TwwDBGrid
+              Left = 1
+              Top = 49
+              Width = 674
+              Height = 495
+              DittoAttributes.ShortCutDittoRecord = 16429
+              Selected.Strings = (
+                'TGL'#9'12'#9'TGL'#9'F'
+                'JUDUL_LAPORAN'#9'15'#9'JENIS'#9'F'#9'BUKTI'
+                'NO_BUKTI'#9'15'#9'NOMOR'#9'F'#9'BUKTI'
+                'QTY_IN'#9'10'#9'MASUK'#9'F'
+                'QTY_OUT'#9'10'#9'KELUAR'#9'F'
+                'NO_BOM'#9'10'#9'NO_BOM'#9'F'
+                'KETERANGAN2'#9'20'#9'KETERANGAN'#9'F')
+              IniAttributes.Enabled = True
+              IniAttributes.SaveToRegistry = True
+              IniAttributes.FileName = 'KUWUNG'
+              IniAttributes.Delimiter = ';;'
+              IniAttributes.CheckNewFields = True
+              ExportOptions.ExportType = wwgetSYLK
+              TitleColor = clBtnFace
+              FixedCols = 0
+              ShowHorzScrollBar = True
+              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+              Align = alClient
+              Color = clWhite
+              DataSource = dsqBdetail
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
+              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              ParentFont = False
+              RowHeightPercent = 112
+              TabOrder = 1
+              TitleAlignment = taLeftJustify
+              TitleFont.Charset = DEFAULT_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -11
+              TitleFont.Name = 'MS Sans Serif'
+              TitleFont.Style = []
+              TitleLines = 3
+              TitleButtons = True
+              UseTFields = False
+              LineColors.ShadowColor = clSilver
+              OnCalcCellColors = dbGrid1CalcCellColors
+              OnTitleButtonClick = wwDBGrid5TitleButtonClick
+              OnUpdateFooter = wwDBGrid5UpdateFooter
+              FooterCellColor = clGradientInactiveCaption
+              PaintOptions.ActiveRecordColor = 15719625
+              object wwIButton1: TwwIButton
+                Left = 0
+                Top = 0
+                Width = 17
+                Height = 41
+                AllowAllUp = True
+                Caption = '@'
+                OnClick = wwDBGrid1IButtonClick
+              end
             end
           end
         end
@@ -3276,10 +3386,11 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
       'where nama_prinsipal like :pnama_prinsipal)*/')
     ReadOnly = True
     BeforeOpen = qB6BeforeOpen
+    AfterOpen = qB6AfterOpen
     OnCalcFields = qB6CalcFields
     OnFilterRecord = qB6FilterRecord
-    Left = 695
-    Top = 184
+    Left = 359
+    Top = 288
     object qB6NO_URUT: TIntegerField
       FieldKind = fkCalculated
       FieldName = 'NO_URUT'
@@ -3356,8 +3467,8 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
       'begin'
       '  PROC_WIP_MUTASI_CUTTING1(:PAWAL, :PAKHIR);'
       'end;')
-    Left = 728
-    Top = 179
+    Left = 392
+    Top = 291
     ParamData = <
       item
         DataType = ftDateTime
@@ -3373,7 +3484,74 @@ object InfoWIPCutting1Frm: TInfoWIPCutting1Frm
   end
   object dsqB6: TwwDataSource
     DataSet = qB6
-    Left = 723
-    Top = 248
+    Left = 387
+    Top = 352
+  end
+  object qBdetail: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'select * from vwip_detail_mutasi_cutting1'
+      'where kd_item=:pkd_item and tgl>=:pawal and tgl<=:pakhir')
+    ReadOnly = True
+    BeforeOpen = qBdetailBeforeOpen
+    OnCalcFields = qB6CalcFields
+    OnFilterRecord = qB6FilterRecord
+    Left = 503
+    Top = 304
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'pkd_item'
+      end
+      item
+        DataType = ftUnknown
+        Name = 'pawal'
+      end
+      item
+        DataType = ftUnknown
+        Name = 'pakhir'
+      end>
+    object qBdetailNO_REG_BUKTI: TFloatField
+      FieldName = 'NO_REG_BUKTI'
+      Required = True
+    end
+    object qBdetailTGL: TDateTimeField
+      FieldName = 'TGL'
+    end
+    object qBdetailNO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      Size = 15
+    end
+    object qBdetailNO_BOM: TStringField
+      FieldName = 'NO_BOM'
+      Size = 50
+    end
+    object qBdetailKD_ITEM: TStringField
+      FieldName = 'KD_ITEM'
+      Size = 12
+    end
+    object qBdetailQTY_IN: TFloatField
+      FieldName = 'QTY_IN'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBdetailQTY_OUT: TFloatField
+      FieldName = 'QTY_OUT'
+      Required = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qBdetailKETERANGAN2: TStringField
+      FieldName = 'KETERANGAN2'
+      Size = 255
+    end
+    object qBdetailJUDUL_LAPORAN: TStringField
+      FieldName = 'JUDUL_LAPORAN'
+      Size = 50
+    end
+  end
+  object dsqBdetail: TwwDataSource
+    DataSet = qBdetail
+    Left = 491
+    Top = 376
   end
 end

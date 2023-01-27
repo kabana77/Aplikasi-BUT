@@ -1,6 +1,6 @@
 object InfoKartuPiutangFrm: TInfoKartuPiutangFrm
-  Left = 308
-  Top = 266
+  Left = 263
+  Top = 286
   Width = 1200
   Height = 600
   Caption = 'InfoKartuPiutangFrm'

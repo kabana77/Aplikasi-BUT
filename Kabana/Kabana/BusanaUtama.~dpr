@@ -98,6 +98,5 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TInfoWIPCuttingSubkonFrm, InfoWIPCuttingSubkonFrm);
   Application.Run;
 end.

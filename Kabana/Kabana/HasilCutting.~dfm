@@ -1,6 +1,6 @@
 object HasilCuttingFrm: THasilCuttingFrm
-  Left = 187
-  Top = 153
+  Left = 244
+  Top = 346
   Width = 1382
   Height = 784
   Caption = 'HasilCuttingFrm'
@@ -2222,15 +2222,18 @@ object HasilCuttingFrm: THasilCuttingFrm
             'ISPOST;CheckBox;1;0'
             'ISBATAL;CheckBox;1;0')
           Selected.Strings = (
-            'NO_REG_OS'#9'12'#9'NO. BUKTI'#9'F'
+            'NO_BUKTI'#9'20'#9'NO. BUKTI'#9'F'
             'TGL'#9'11'#9'TGL'#9'F'
             'ISPOST'#9'5'#9'POST'#9'F'
-            'NO_REFF'#9'7'#9'NO. BOM'#9'F'
-            'KETERANGAN'#9'27'#9'NAMA BARANG/BAHAN'#9'F'#9'MATERIAL'
-            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
-            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
-            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
-            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
+            'KD_ITEM'#9'12'#9'KODE BARANG'#9'F'#9'MATERIAL'
+            'KETERANGAN'#9'30'#9'NAMA BARANG/BAHAN'#9'F'#9'MATERIAL'
+            'SAT_D'#9'12'#9'SATUAN'#9'F'#9'MATERIAL'
+            'QTY_D'#9'10'#9'JUMLAH'#9'F'#9'MATERIAL'
+            'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F'#9'MATERIAL'
+            'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'PREPARE BY'
+            'TGL_INSERT'#9'20'#9'TGL'#9'F'#9'PREPARE BY'
+            'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'APPROVE BY'
+            'TGL_APPROVE'#9'20'#9'TGL'#9'F'#9'APPROVE BY')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -4940,7 +4943,7 @@ object HasilCuttingFrm: THasilCuttingFrm
           object Label19: TLabel
             Left = 0
             Top = 471
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5380,28 +5383,30 @@ object HasilCuttingFrm: THasilCuttingFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from'
-      '(select * from wip_cutting where kd_form='#39'202'#39')')
+      'select'
+      'a.no_reg_os,'
+      'a.no_bukti,'
+      'a.no_reff2,'
+      'a.tgl,'
+      'a.ispost,'
+      'a.opr_insert,'
+      'a.tgl_insert,'
+      'a.opr_approve,'
+      'a.tgl_approve,'
+      'b.kd_item,'
+      'b.keterangan,'
+      'b.sat_d,'
+      'b.qty_d,'
+      'b.keterangan2'
+      'from'
+      '(select * from wip_cutting where kd_form='#39'202'#39') a'
+      'left join wip_cutting_d b'
+      'on a.no_reg_os = b.no_reg_os')
     ReadOnly = True
     Left = 1083
-    object qB1KD_FORM: TStringField
-      FieldName = 'KD_FORM'
-      Required = True
-    end
-    object qB1NO_REG_OS: TFloatField
-      FieldName = 'NO_REG_OS'
-      Required = True
-    end
     object qB1TGL: TDateTimeField
       FieldName = 'TGL'
       Required = True
-    end
-    object qB1NO_BOM: TFloatField
-      FieldName = 'NO_BOM'
-      Required = True
-    end
-    object qB1NO_REFF: TStringField
-      FieldName = 'NO_REFF'
     end
     object qB1NO_REFF2: TStringField
       FieldName = 'NO_REFF2'
@@ -5417,6 +5422,11 @@ object HasilCuttingFrm: THasilCuttingFrm
       FieldName = 'KETERANGAN'
       Required = True
       Size = 128
+    end
+    object qB1KETERANGAN2: TStringField
+      FieldName = 'KETERANGAN2'
+      ReadOnly = True
+      Size = 225
     end
     object qB1ISPOST: TStringField
       FieldName = 'ISPOST'
@@ -5440,20 +5450,25 @@ object HasilCuttingFrm: THasilCuttingFrm
     object qB1TGL_APPROVE: TDateTimeField
       FieldName = 'TGL_APPROVE'
     end
-    object qB1CATATAN: TStringField
-      FieldName = 'CATATAN'
+    object qB1NO_REG_OS: TFloatField
+      FieldName = 'NO_REG_OS'
+      ReadOnly = True
       Required = True
-      Size = 128
     end
-    object qB1KD_LOKASI: TStringField
-      FieldName = 'KD_LOKASI'
-      Required = True
+    object qB1KD_ITEM: TStringField
+      FieldName = 'KD_ITEM'
+      ReadOnly = True
       Size = 12
     end
-    object qB1KD_LOKASI2: TStringField
-      FieldName = 'KD_LOKASI2'
-      Required = True
+    object qB1SAT_D: TStringField
+      FieldName = 'SAT_D'
+      ReadOnly = True
       Size = 12
+    end
+    object qB1QTY_D: TFloatField
+      FieldName = 'QTY_D'
+      ReadOnly = True
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
   end
   object dsqB1: TwwDataSource
@@ -5463,7 +5478,7 @@ object HasilCuttingFrm: THasilCuttingFrm
   end
   object qBDetail: TSmartQuery
     KeyFields = 'NO_REG_D'
-    KeySequence = 'NO_REG_D'
+    KeySequence = 'SEQ_WIP_CUTTING'
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from wip_cutting_d'

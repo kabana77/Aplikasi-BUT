@@ -88,7 +88,8 @@ uses
   InfoWIPCutting2 in 'InfoWIPCutting2.pas' {InfoWIPCutting2Frm},
   JasaBordir in 'JasaBordir.pas' {JasaBordirFrm},
   TerimaJasaBordir in 'TerimaJasaBordir.pas' {TerimaJasaBordirFrm},
-  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm};
+  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm},
+  WasteCutting in 'WasteCutting.pas' {WasteCuttingFrm};
 
 {$R *.res}
 

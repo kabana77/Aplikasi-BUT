@@ -4939,11 +4939,11 @@ object DaftarItemWIP1Frm: TDaftarItemWIP1Frm
               Selected.Strings = (
                 'KD_ITEM'#9'11'#9'KODE'#9'T'
                 'NAMA_ITEM'#9'30'#9'NAMA ITEM'#9'T'
-                'SAT_T'#9'10'#9'SATUAN~PEMAKAIAN'#9'F'
-                'QTY_T'#9'12'#9'JUMLAH~PEMAKAIAN'#9'F'
-                'RD'#9'10'#9'RASIO'#9'F'
-                'QTY_D'#9'12'#9'JUMLAH'#9'T'#9'SATUAN DASAR'
-                'SAT_D'#9'10'#9'SATUAN'#9'T'#9'SATUAN DASAR')
+                'SAT_D'#9'10'#9'SATUAN~DASAR'#9'T'
+                'QTY_T'#9'12'#9'JUMLAH'#9'F'#9'PEMAKAIAN'
+                'SAT_T'#9'10'#9'SATUAN~PAKAI'#9'F'#9'PEMAKAIAN'
+                'RD'#9'10'#9'RASIO~TERHADAP~SATUAN DASAR'#9'F'
+                'QTY_D'#9'12'#9'KONVERSI KE~SATUAN DASAR'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'
@@ -5389,7 +5389,6 @@ object DaftarItemWIP1Frm: TDaftarItemWIP1Frm
     end
     object qBDetailQTY_D: TFloatField
       FieldName = 'QTY_D'
-      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailRA: TFloatField
       FieldName = 'RA'

@@ -3201,8 +3201,8 @@ object InfoKartuPiutangFrm: TInfoKartuPiutangFrm
         'bayar_pending) as kredit, a.mu'
       ' from bukti_bayar a, pembayaran_d b'
       
-        ' where a.no_reg_os=b.no_reg_os and a.ispost='#39'1'#39' and a.tgl >= :pa' +
-        'wal and a.tgl <= :pakhir and a.mu=:pmu'
+        ' where a.no_reg_os=b.no_reg_os and a.ispost2='#39'1'#39' and a.tgl >= :p' +
+        'awal and a.tgl <= :pakhir and a.mu=:pmu'
       ' group by b.id_outlet, a.mu'
       ') d on a.id_outlet=d.id_outlet'
       ''
@@ -3239,8 +3239,8 @@ object InfoKartuPiutangFrm: TInfoKartuPiutangFrm
         'bayar_pending) as kredit'
       ' from bukti_bayar a, pembayaran_d b'
       
-        ' where a.no_reg_os=b.no_reg_os and a.ispost='#39'1'#39' and a.tgl >= :pa' +
-        'wal and a.tgl <= :pakhir'
+        ' where a.no_reg_os=b.no_reg_os and a.ispost2='#39'1'#39' and a.tgl >= :p' +
+        'awal and a.tgl <= :pakhir'
       ' group by b.id_outlet'
       ') d on a.id_outlet=d.id_outlet'
       ''

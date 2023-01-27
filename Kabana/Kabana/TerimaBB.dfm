@@ -1,6 +1,6 @@
 object TerimaBBFrm: TTerimaBBFrm
-  Left = 185
-  Top = 152
+  Left = 232
+  Top = 159
   Width = 1382
   Height = 784
   Caption = 'TerimaBBFrm'
@@ -2230,11 +2230,11 @@ object TerimaBBFrm: TTerimaBBFrm
             'KETERANGAN'#9'30'#9'NAMA BARANG/BAHAN'#9'F'#9'MATERIAL'
             'SAT_D'#9'12'#9'SATUAN'#9'F'#9'MATERIAL'
             'QTY_D'#9'10'#9'JUMLAH'#9'F'#9'MATERIAL'
+            'KETERANGAN2'#9'75'#9'KETERANGAN'#9'F'#9'MATERIAL'
             'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'PREPARE BY'
             'TGL_INSERT'#9'20'#9'TGL'#9'F'#9'PREPARE BY'
             'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'APPROVE BY'
-            'TGL_APPROVE'#9'20'#9'TGL'#9'F'#9'APPROVE BY'
-            'KETERANGAN2'#9'75'#9'KETERANGAN'#9'F')
+            'TGL_APPROVE'#9'20'#9'TGL'#9'F'#9'APPROVE BY')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'

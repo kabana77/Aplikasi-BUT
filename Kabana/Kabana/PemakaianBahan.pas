@@ -2468,7 +2468,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
-  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
 end;
 
 procedure TPemakaianBahanFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2478,7 +2478,7 @@ begin
   qBMasterKD_DEPO.AsString:=DMFrm.qDepoDefaultKD_DEPO.AsString;
   qBMasterNAMA_DEPO.AsString:=DMFrm.qDepoDefaultNAMA_DEPO.AsString;
   qBMasterKD_LOKASI.AsString:='5';
-  //qBMasterKD_LOKASI2.AsString:='61';
+  qBMasterKD_LOKASI2.AsString:='61';
   qBMasterNO_BUKTI.AsString:='#';
   qBMasterSTATUS.AsString:='CREATE';
   qBomD.Close;
