@@ -1774,6 +1774,7 @@ begin
   qBDetailNAMA_ITEM.AsString:=qItemNAMA_ITEM.AsString;
   qBDetailRD.AsFloat:=1;
   qBDetailSAT_D.AsString:=qItemSAT_D.AsString;
+  qBDetailQTY_D.AsFloat:=1;
 end;
 
 procedure TDaftarItemWIP1Frm.qBDetailQTY_TChange(Sender: TField);

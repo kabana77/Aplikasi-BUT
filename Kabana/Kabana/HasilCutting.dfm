@@ -1,6 +1,6 @@
 object HasilCuttingFrm: THasilCuttingFrm
-  Left = 244
-  Top = 346
+  Left = 313
+  Top = 128
   Width = 1382
   Height = 784
   Caption = 'HasilCuttingFrm'
@@ -5036,8 +5036,8 @@ object HasilCuttingFrm: THasilCuttingFrm
               Selected.Strings = (
                 'KD_ITEM'#9'11'#9'KODE'#9'T'
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
-                'SAT_D'#9'8'#9'SATUAN'#9'T'
-                'QTY_D'#9'12'#9'JUMLAH'#9'F'
+                'QTY_D'#9'12'#9'QTY PCS'#9'F'
+                'QTY_T'#9'12'#9'QTY YARD'#9'F'
                 'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
@@ -5088,8 +5088,8 @@ object HasilCuttingFrm: THasilCuttingFrm
               end
             end
             object lcdItem: TwwDBLookupComboDlg
-              Left = 344
-              Top = 96
+              Left = 72
+              Top = 64
               Width = 121
               Height = 19
               GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]

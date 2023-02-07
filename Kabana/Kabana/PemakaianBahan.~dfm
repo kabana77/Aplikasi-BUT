@@ -1,6 +1,6 @@
 object PemakaianBahanFrm: TPemakaianBahanFrm
-  Left = 179
-  Top = 153
+  Left = 201
+  Top = 129
   Width = 1382
   Height = 784
   Caption = 'PemakaianBahanFrm'
@@ -2365,8 +2365,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             BandType = rbPageHeader
             object QRDBText272: TQRDBText
               Left = 512
-              Top = 32
-              Width = 120
+              Top = 22
+              Width = 99
               Height = 24
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -2376,15 +2376,15 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 63.500000000000000000
                 1354.666666666667000000
-                84.666666666666670000
-                317.500000000000000000)
+                58.208333333333330000
+                261.937500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_REG_OS'
+              DataField = 'NO_BUKTI'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -19
@@ -2397,7 +2397,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             end
             object QRLabel180: TQRLabel
               Left = 512
-              Top = 12
+              Top = 2
               Width = 74
               Height = 20
               Frame.Color = clBlack
@@ -2408,7 +2408,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
               Size.Values = (
                 52.916666666666670000
                 1354.666666666667000000
-                31.750000000000000000
+                5.291666666666667000
                 195.791666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3039,6 +3039,38 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
                 F6AD797FE052BCBF1102A8E40A5A28AF04FA70A28A2800A28A2800A28A2803FF
                 D9}
               Stretch = True
+            end
+            object QRDBText5: TQRDBText
+              Left = 512
+              Top = 46
+              Width = 64
+              Height = 15
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                39.687500000000000000
+                1354.666666666667000000
+                121.708333333333300000
+                169.333333333333300000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = True
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'NO_REG_OS'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'Arial'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 8
             end
           end
           object QRBand42: TQRBand
@@ -14404,8 +14436,8 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
   end
   object dsqB6: TwwDataSource
     DataSet = qB6
-    Left = 1171
-    Top = 264
+    Left = 1147
+    Top = 272
   end
   object qLookNoSeri: TSmartQuery
     Session = DMFrm.OS

@@ -1,8 +1,8 @@
 object LoadingCuttingFrm: TLoadingCuttingFrm
-  Left = 240
-  Top = 317
-  Width = 1382
-  Height = 784
+  Left = 432
+  Top = 191
+  Width = 1196
+  Height = 495
   Caption = 'LoadingCuttingFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 745
+    Height = 456
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1286
-    Height = 745
+    Width = 1100
+    Height = 456
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1286
+      Width = 1100
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 716
-      Width = 1286
+      Top = 427
+      Width = 1100
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 817
+        Width = 631
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         end
       end
       object pRight2: TPanel
-        Left = 1239
+        Left = 1053
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1286
-      Height = 666
+      Width = 1100
+      Height = 377
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2196,7 +2196,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1278
+          Width = 1092
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2215,8 +2215,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1278
-          Height = 605
+          Width = 1092
+          Height = 316
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -2230,10 +2230,10 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             'SAT_D'#9'12'#9'SATUAN'#9'F'#9'MATERIAL'
             'QTY_D'#9'10'#9'JUMLAH'#9'F'#9'MATERIAL'
             'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F'#9'MATERIAL'
-            'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'LOG INPUT'
-            'TGL_INSERT'#9'20'#9'TGL'#9'F'#9'LOG INPUT'
-            'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'LOG APPROVE'
-            'TGL_APPROVE'#9'20'#9'TGL'#9'F'#9'LOG APPROVE')
+            'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'PREPARE BY'
+            'TGL_INSERT'#9'20'#9'TGL'#9'F'#9'PREPARE BY'
+            'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'APPROVE BY'
+            'TGL_APPROVE'#9'20'#9'TGL'#9'F'#9'APPROVE BY')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -2290,7 +2290,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         ImageIndex = 1
         OnShow = tsInputShow
         object qrBukti: TQuickRep
-          Left = 62
+          Left = 174
           Top = 33
           Width = 794
           Height = 529
@@ -3065,7 +3065,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object QRLabel213: TQRLabel
               Left = 0
               Top = 33
-              Width = 52
+              Width = 67
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3076,12 +3076,12 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
                 44.979166666666670000
                 0.000000000000000000
                 87.312500000000000000
-                137.583333333333300000)
+                177.270833333333300000)
               Alignment = taLeftJustify
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'No. BoM'
+              Caption = 'Keterangan'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3094,9 +3094,9 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               FontSize = 10
             end
             object QRDBText301: TQRDBText
-              Left = 81
-              Top = 33
-              Width = 216
+              Left = 1
+              Top = 52
+              Width = 424
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3105,16 +3105,16 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                214.312500000000000000
-                87.312500000000000000
-                571.500000000000000000)
+                2.645833333333333000
+                137.583333333333300000
+                1121.833333333333000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
-              AutoStretch = False
+              AutoStretch = True
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_BOM'
+              DataField = 'KETERANGAN'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -3157,9 +3157,9 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               FontSize = 10
             end
             object QRLabel212: TQRLabel
-              Left = 249
+              Left = 266
               Top = 2
-              Width = 250
+              Width = 216
               Height = 25
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3168,14 +3168,14 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               Frame.DrawRight = False
               Size.Values = (
                 66.145833333333330000
-                658.812500000000000000
+                703.791666666666700000
                 5.291666666666667000
-                661.458333333333300000)
+                571.500000000000000000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'Penerimaan Bahan Baku'
+              Caption = 'Loading Hasil Cutting'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3313,68 +3313,6 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel19: TQRLabel
-              Left = 0
-              Top = 51
-              Width = 69
-              Height = 17
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                44.979166666666670000
-                0.000000000000000000
-                134.937500000000000000
-                182.562500000000000000)
-              Alignment = taLeftJustify
-              AlignToBand = True
-              AutoSize = True
-              AutoStretch = False
-              Caption = 'Barang Jadi'
-              Color = clWhite
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
-            object QRLabel20: TQRLabel
-              Left = 72
-              Top = 51
-              Width = 5
-              Height = 17
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                44.979166666666670000
-                190.500000000000000000
-                134.937500000000000000
-                13.229166666666670000)
-              Alignment = taLeftJustify
-              AlignToBand = False
-              AutoSize = True
-              AutoStretch = False
-              Caption = ':'
-              Color = clWhite
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
             object QRLabel32: TQRLabel
               Left = 600
               Top = 19
@@ -3395,37 +3333,6 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               AutoSize = True
               AutoStretch = False
               Caption = ':'
-              Color = clWhite
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
-            object qrlNamaBJ: TQRLabel
-              Left = 80
-              Top = 51
-              Width = 217
-              Height = 38
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                100.541666666666700000
-                211.666666666666700000
-                134.937500000000000000
-                574.145833333333300000)
-              Alignment = taLeftJustify
-              AlignToBand = False
-              AutoSize = False
-              AutoStretch = False
-              Caption = 'nama barang'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3502,7 +3409,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object QRLabel4: TQRLabel
               Left = 608
               Top = 19
-              Width = 129
+              Width = 97
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3513,12 +3420,12 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
                 44.979166666666670000
                 1608.666666666667000000
                 50.270833333333330000
-                341.312500000000000000)
+                256.645833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'GD MATERIAL'
+              Caption = 'WIP - CUTTING'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3549,7 +3456,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'WIP - CUTTING'
+              Caption = 'WIP - SEWING'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -4684,7 +4591,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1278
+          Width = 1092
           Height = 113
           Align = alTop
           BevelOuter = bvNone
@@ -4926,10 +4833,10 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           end
         end
         object pMaster2: TPanel
-          Left = 1093
+          Left = 907
           Top = 113
           Width = 185
-          Height = 525
+          Height = 236
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -4942,7 +4849,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 471
+            Top = 182
             Width = 185
             Height = 13
             Align = alBottom
@@ -4971,7 +4878,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 484
+            Top = 195
             Width = 185
             Height = 41
             TabStop = False
@@ -5009,8 +4916,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 113
-          Width = 1093
-          Height = 525
+          Width = 907
+          Height = 236
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -5026,8 +4933,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1085
-              Height = 497
+              Width = 899
+              Height = 208
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5123,7 +5030,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 1085
+              Width = 899
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5232,8 +5139,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 1085
-              Height = 448
+              Width = 899
+              Height = 159
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5371,10 +5278,10 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     end
   end
   object pRight: TPanel
-    Left = 1326
+    Left = 1140
     Top = 0
     Width = 40
-    Height = 745
+    Height = 456
     Align = alRight
     BevelOuter = bvNone
     Color = 23296

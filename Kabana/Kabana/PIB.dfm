@@ -1,6 +1,6 @@
 object PIBFrm: TPIBFrm
-  Left = 240
-  Top = 183
+  Left = 241
+  Top = 172
   Width = 1343
   Height = 765
   Caption = 'PIBFrm'

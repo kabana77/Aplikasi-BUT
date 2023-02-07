@@ -1,6 +1,6 @@
 object Pembelian2Frm: TPembelian2Frm
-  Left = 312
-  Top = 329
+  Left = 313
+  Top = 258
   Width = 1290
   Height = 679
   Caption = 'Pembelian2Frm'

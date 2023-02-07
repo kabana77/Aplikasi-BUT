@@ -405,7 +405,6 @@ type
     QRSysData11: TQRSysData;
     QRLabel27: TQRLabel;
     QRDBText32: TQRDBText;
-    qrlNamaBJ: TQRLabel;
     TabSheet4: TTabSheet;
     dbGridJurnal: TwwDBGrid;
     wwIButton8: TwwIButton;
@@ -468,8 +467,6 @@ type
     qBMasterKD_LOKASI2: TStringField;
     QRLabel31: TQRLabel;
     QRLabel215: TQRLabel;
-    QRLabel4: TQRLabel;
-    QRLabel7: TQRLabel;
     qBDetailQTY_ORDER: TFloatField;
     qBDetailQTY_SDH_DITERIMA: TFloatField;
     qBDetailQTY_SISA: TFloatField;
@@ -484,6 +481,11 @@ type
     qB1KETERANGAN2: TStringField;
     qB1NAMA_PRINSIPAL: TStringField;
     qB1NO_REFF2: TStringField;
+    QRDBText5: TQRDBText;
+    QRDBText14: TQRDBText;
+    QRDBText16: TQRDBText;
+    qBMasterJENIS_JASA: TStringField;
+    QRDBText17: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1084,10 +1086,9 @@ begin
             qBom.Close;
             qBom.Open;
 
-            {DMFrm.qDateTime.Close;
-            DMFrm.qDateTime.Open;
-            qrBukti.Preview;  }
-
+            qPrinsipal.Close;
+            qPrinsipal.SQL.Text:='select * from vdaftar_prinsipal where id_prinsipal='''+qBMasterID_PRINSIPAL.AsString+'''';
+            qPrinsipal.Open;
 
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
@@ -1156,7 +1157,7 @@ begin
   qBMasterKD_LOKASI.AsString:='612';
   qBMasterKD_LOKASI2.AsString:='611';
   qBMasterNO_BUKTI.AsString:='0';
-  qBMasterNO_BOM.AsFloat:=1;
+  qBMasterNO_BOM.AsFloat:=0;
   qBMasterKETERANGAN.AsString:='-';
   qBMasterISPOST.AsString:='0';
   qBMasterSTATUS.AsString:='OPEN';
@@ -1881,7 +1882,7 @@ procedure TTerimaJasaBordirFrm.QRBand42BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
   qrlNoZ.Caption:='0';
-  qrlNamaBJ.Caption:=qBomSTYLE.AsString+' - '+qBomITEM.AsString+' - '+qBomKELOMPOK.AsString;
+
 end;
 
 procedure TTerimaJasaBordirFrm.QRBand44BeforePrint(Sender: TQRCustomBand;

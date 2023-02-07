@@ -336,7 +336,6 @@ type
     QRBand42: TQRBand;
     QRLabel213: TQRLabel;
     QRDBText301: TQRDBText;
-    QRLabel216: TQRLabel;
     QRLabel212: TQRLabel;
     QRLabel5: TQRLabel;
     QRLabel205: TQRLabel;
@@ -379,7 +378,6 @@ type
     QRSysData11: TQRSysData;
     QRLabel27: TQRLabel;
     QRDBText32: TQRDBText;
-    qrlNamaBJ: TQRLabel;
     TabSheet4: TTabSheet;
     dbGridJurnal: TwwDBGrid;
     wwIButton8: TwwIButton;
@@ -439,9 +437,6 @@ type
     qBMasterKD_LOKASI: TStringField;
     qBMasterKD_LOKASI2: TStringField;
     QRLabel31: TQRLabel;
-    QRLabel215: TQRLabel;
-    QRLabel4: TQRLabel;
-    QRLabel7: TQRLabel;
     lcdItem: TwwDBLookupComboDlg;
     qItemNO_REG: TFloatField;
     qItemKD_ITEM: TStringField;
@@ -465,6 +460,13 @@ type
     qB1QTY_D: TFloatField;
     qB1KETERANGAN2: TStringField;
     qB1NAMA_PRINSIPAL: TStringField;
+    Label4: TLabel;
+    wwDBComboBoxX: TwwDBComboBox;
+    qBMasterJENIS_JASA: TStringField;
+    QRDBText5: TQRDBText;
+    QRDBText14: TQRDBText;
+    QRDBText16: TQRDBText;
+    QRDBText17: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1062,15 +1064,14 @@ begin
        end; //end index
   1 : begin
             DMFrm.qJnsTransaksi.Close;
-            DMFrm.qJnsTransaksi.ParamByName('pnama_form').AsString:=Name+'/ '+UpperCase(StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll]));
+            DMFrm.qJnsTransaksi.ParamByName('pnama_form').AsString:=Name+'/ '+UpperCase(StringReplace(tsInput.Caption,'&','',[rfReplaceAll]));
             DMFrm.qJnsTransaksi.Open;
             qBom.Close;
             qBom.Open;
 
-            {DMFrm.qDateTime.Close;
-            DMFrm.qDateTime.Open;
-            qrBukti.Preview;  }
-
+            qPrinsipal.Close;
+            qPrinsipal.SQL.Text:='select * from vdaftar_prinsipal where id_prinsipal='''+qBMasterID_PRINSIPAL.AsString+'''';
+            qPrinsipal.Open;
 
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
@@ -1126,7 +1127,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
-  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
 
   tsInputD2.TabVisible:=false;
   TabSheet4.TabVisible:=false;
@@ -1230,7 +1231,6 @@ begin
       Abort;
     end
     else
-
     begin
       if (qBMasterNO_BUKTI.AsString='') or (FormatDateTime('YYMM',qBMasterTGL.AsDateTime)<>copy(qBMasterNO_BUKTI.AsString,5,4)) then
       begin
@@ -1825,7 +1825,6 @@ procedure TJasaBordirFrm.QRBand42BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
   qrlNoZ.Caption:='0';
-  qrlNamaBJ.Caption:=qBomSTYLE.AsString+' - '+qBomITEM.AsString+' - '+qBomKELOMPOK.AsString;
 end;
 
 procedure TJasaBordirFrm.QRBand44BeforePrint(Sender: TQRCustomBand;

@@ -1,5 +1,5 @@
 object WasteCuttingFrm: TWasteCuttingFrm
-  Left = 234
+  Left = 235
   Top = 153
   Width = 1382
   Height = 784
@@ -5063,11 +5063,11 @@ object WasteCuttingFrm: TWasteCuttingFrm
               Selected.Strings = (
                 'KD_ITEM'#9'11'#9'KODE'#9'T'
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
-                'SAT_D'#9'8'#9'SATUAN'#9'F'#9'WASTE'
+                'SAT_T'#9'12'#9'SATUAN~DASAR'#9'T'
                 'QTY_D'#9'12'#9'JUMLAH'#9'F'#9'WASTE'
-                'SAT_T'#9'12'#9'SATUAN'#9'T'#9'KONVERSI'
-                'RD'#9'10'#9'RASIO'#9'F'#9'KONVERSI'
-                'QTY_X'#9'10'#9'JUMLAH'#9'T'#9'KONVERSI'
+                'SAT_D'#9'8'#9'SATUAN'#9'F'#9'WASTE'
+                'RD'#9'10'#9'RASIO~TERHADAP~SAT DASAR'#9'F'
+                'QTY_X'#9'10'#9'KONVERSI KE~SAT DASAR'#9'T'
                 'KETERANGAN2'#9'20'#9'KETERANGAN'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True

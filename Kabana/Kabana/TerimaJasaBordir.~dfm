@@ -1,6 +1,6 @@
 object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
-  Left = 359
-  Top = 159
+  Left = 362
+  Top = 152
   Width = 1382
   Height = 784
   Caption = 'TerimaJasaBordirFrm'
@@ -2232,10 +2232,10 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             'SAT_D'#9'12'#9'SATUAN'#9'F'#9'MATERIAL'
             'QTY_D'#9'10'#9'JUMLAH'#9'F'#9'MATERIAL'
             'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F'#9'MATERIAL'
-            'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'LOG INPUT'
-            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
-            'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'LOG APPROVE'
-            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
+            'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'PREPARE BY'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'PREPARE BY'
+            'OPR_APPROVE'#9'12'#9'OPR'#9'F'#9'APPROVE BY'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'APPROVE BY')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -3083,7 +3083,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'No. BoM'
+              Caption = 'Rekanan'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3098,7 +3098,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             object QRDBText301: TQRDBText
               Left = 81
               Top = 33
-              Width = 216
+              Width = 424
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3109,14 +3109,14 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
                 44.979166666666670000
                 214.312500000000000000
                 87.312500000000000000
-                571.500000000000000000)
+                1121.833333333333000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_BOM'
+              DataField = 'ID_PRINSIPAL'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -3159,9 +3159,9 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               FontSize = 10
             end
             object QRLabel212: TQRLabel
-              Left = 249
+              Left = 257
               Top = 2
-              Width = 250
+              Width = 233
               Height = 25
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3170,14 +3170,14 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               Frame.DrawRight = False
               Size.Values = (
                 66.145833333333330000
-                658.812500000000000000
+                679.979166666666700000
                 5.291666666666667000
-                661.458333333333300000)
+                616.479166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'Penerimaan Bahan Baku'
+              Caption = 'Bukti Penerimaan Jasa'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3254,7 +3254,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             object QRDBText291: TQRDBText
               Left = 608
               Top = 1
-              Width = 215
+              Width = 134
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3265,7 +3265,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
                 44.979166666666670000
                 1608.666666666667000000
                 2.645833333333333000
-                568.854166666666700000)
+                354.541666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -3318,7 +3318,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
             object QRLabel19: TQRLabel
               Left = 0
               Top = 51
-              Width = 69
+              Width = 42
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3329,12 +3329,12 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
                 44.979166666666670000
                 0.000000000000000000
                 134.937500000000000000
-                182.562500000000000000)
+                111.125000000000000000)
               Alignment = taLeftJustify
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'Barang Jadi'
+              Caption = 'Alamat'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3408,37 +3408,6 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
-            object qrlNamaBJ: TQRLabel
-              Left = 80
-              Top = 51
-              Width = 217
-              Height = 38
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                100.541666666666700000
-                211.666666666666700000
-                134.937500000000000000
-                574.145833333333300000)
-              Alignment = taLeftJustify
-              AlignToBand = False
-              AutoSize = False
-              AutoStretch = False
-              Caption = 'nama barang'
-              Color = clWhite
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
             object QRLabel31: TQRLabel
               Left = 512
               Top = 19
@@ -3458,7 +3427,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'Lokasi Asal'
+              Caption = 'Jasa'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3489,7 +3458,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'Lokasi Tujuan'
+              Caption = 'Nomor Kirim'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3501,10 +3470,74 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel4: TQRLabel
+            object QRDBText5: TQRDBText
+              Left = 81
+              Top = 51
+              Width = 424
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                214.312500000000000000
+                134.937500000000000000
+                1121.833333333333000000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qPrinsipal
+              DataField = 'ALAMAT'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText14: TQRDBText
+              Left = 81
+              Top = 70
+              Width = 424
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                214.312500000000000000
+                185.208333333333300000
+                1121.833333333333000000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qPrinsipal
+              DataField = 'KOTA'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText16: TQRDBText
               Left = 608
               Top = 19
-              Width = 129
+              Width = 134
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3515,27 +3548,29 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
                 44.979166666666670000
                 1608.666666666667000000
                 50.270833333333330000
-                341.312500000000000000)
+                354.541666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'GD MATERIAL'
               Color = clWhite
+              DataSet = qBMaster
+              DataField = 'JENIS_JASA'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
               Font.Name = 'Arial'
               Font.Style = []
+              Mask = 'dd mmm yyyy'
               ParentFont = False
               Transparent = False
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel7: TQRLabel
+            object QRDBText17: TQRDBText
               Left = 608
               Top = 37
-              Width = 105
+              Width = 134
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3546,18 +3581,20 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
                 44.979166666666670000
                 1608.666666666667000000
                 97.895833333333330000
-                277.812500000000000000)
+                354.541666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'WIP - CUTTING'
               Color = clWhite
+              DataSet = qBMaster
+              DataField = 'NO_REFF2'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
               Font.Name = 'Arial'
               Font.Style = []
+              Mask = 'dd mmm yyyy'
               ParentFont = False
               Transparent = False
               WordWrap = True
@@ -5661,12 +5698,15 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
     end
     object qBDetailQTY_ORDER: TFloatField
       FieldName = 'QTY_ORDER'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_SDH_DITERIMA: TFloatField
       FieldName = 'QTY_SDH_DITERIMA'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_SISA: TFloatField
       FieldName = 'QTY_SISA'
+      DisplayFormat = '0.0,0;(0.0,0);-'
     end
   end
   object dsqBDetail: TwwDataSource
@@ -5935,6 +5975,9 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
     object qBMasterNAMA_PRINSIPAL: TStringField
       FieldName = 'NAMA_PRINSIPAL'
       Size = 50
+    end
+    object qBMasterJENIS_JASA: TStringField
+      FieldName = 'JENIS_JASA'
     end
   end
   object dsqBMaster: TwwDataSource

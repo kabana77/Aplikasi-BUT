@@ -475,6 +475,9 @@ type
     qB1KD_ITEM: TStringField;
     qB1SAT_D: TStringField;
     qB1QTY_D: TFloatField;
+    QRDBText5: TQRDBText;
+    QRLabel18: TQRLabel;
+    QRLabel21: TQRLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1074,12 +1077,6 @@ begin
             DMFrm.qJnsTransaksi.Open;
             qBom.Close;
             qBom.Open;
-
-            {DMFrm.qDateTime.Close;
-            DMFrm.qDateTime.Open;
-            qrBukti.Preview;  }
-
-
             if DMFrm.qJnsTransaksi.RecordCount>0 then
             begin
                DMFrm.qDateTime.Close;

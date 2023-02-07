@@ -942,6 +942,7 @@ type
     QRDBText1: TQRDBText;
     QRDBText2: TQRDBText;
     qBMasterSTATUS: TStringField;
+    QRDBText5: TQRDBText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -2469,6 +2470,7 @@ begin
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
   //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  
 end;
 
 procedure TPemakaianBahanFrm.qBMasterNewRecord(DataSet: TDataSet);

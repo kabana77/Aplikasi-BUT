@@ -1,6 +1,6 @@
 object TerimaBBFrm: TTerimaBBFrm
-  Left = 232
-  Top = 159
+  Left = 238
+  Top = 133
   Width = 1382
   Height = 784
   Caption = 'TerimaBBFrm'
@@ -2362,7 +2362,7 @@ object TerimaBBFrm: TTerimaBBFrm
             BandType = rbPageHeader
             object QRDBText272: TQRDBText
               Left = 512
-              Top = 32
+              Top = 23
               Width = 99
               Height = 24
               Frame.Color = clBlack
@@ -2373,7 +2373,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 63.500000000000000000
                 1354.666666666667000000
-                84.666666666666670000
+                60.854166666666670000
                 261.937500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -2394,7 +2394,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel180: TQRLabel
               Left = 512
-              Top = 12
+              Top = 3
               Width = 74
               Height = 20
               Frame.Color = clBlack
@@ -2405,7 +2405,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 52.916666666666670000
                 1354.666666666667000000
-                31.750000000000000000
+                7.937500000000000000
                 195.791666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3128,7 +3128,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel216: TQRLabel
               Left = 600
-              Top = 37
+              Top = 54
               Width = 5
               Height = 17
               Frame.Color = clBlack
@@ -3139,7 +3139,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1587.500000000000000000
-                97.895833333333330000
+                142.875000000000000000
                 13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3378,7 +3378,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel32: TQRLabel
               Left = 600
-              Top = 19
+              Top = 36
               Width = 5
               Height = 17
               Frame.Color = clBlack
@@ -3389,7 +3389,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1587.500000000000000000
-                50.270833333333330000
+                95.250000000000000000
                 13.229166666666670000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3440,7 +3440,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel31: TQRLabel
               Left = 512
-              Top = 19
+              Top = 36
               Width = 81
               Height = 17
               Frame.Color = clBlack
@@ -3451,7 +3451,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1354.666666666667000000
-                50.270833333333330000
+                95.250000000000000000
                 214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3471,7 +3471,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel215: TQRLabel
               Left = 512
-              Top = 37
+              Top = 54
               Width = 81
               Height = 17
               Frame.Color = clBlack
@@ -3482,7 +3482,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1354.666666666667000000
-                97.895833333333320000
+                142.875000000000000000
                 214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3502,7 +3502,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel4: TQRLabel
               Left = 608
-              Top = 19
+              Top = 36
               Width = 129
               Height = 17
               Frame.Color = clBlack
@@ -3513,7 +3513,7 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1608.666666666667000000
-                50.270833333333330000
+                95.250000000000000000
                 341.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -3533,7 +3533,7 @@ object TerimaBBFrm: TTerimaBBFrm
             end
             object QRLabel7: TQRLabel
               Left = 608
-              Top = 37
+              Top = 54
               Width = 105
               Height = 17
               Frame.Color = clBlack
@@ -3544,13 +3544,108 @@ object TerimaBBFrm: TTerimaBBFrm
               Size.Values = (
                 44.979166666666670000
                 1608.666666666667000000
-                97.895833333333330000
+                142.875000000000000000
                 277.812500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
               Caption = 'WIP - CUTTING'
+              Color = clWhite
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRDBText5: TQRDBText
+              Left = 608
+              Top = 19
+              Width = 215
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                1608.666666666667000000
+                50.270833333333330000
+                568.854166666666700000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'NO_REFF2'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              Mask = 'dd mmm yyyy'
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRLabel18: TQRLabel
+              Left = 600
+              Top = 19
+              Width = 5
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                1587.500000000000000000
+                50.270833333333330000
+                13.229166666666670000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = True
+              AutoStretch = False
+              Caption = ':'
+              Color = clWhite
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
+            object QRLabel21: TQRLabel
+              Left = 512
+              Top = 19
+              Width = 81
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                1354.666666666667000000
+                50.270833333333330000
+                214.312500000000000000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = False
+              Caption = 'No. Referensi'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText

@@ -342,8 +342,6 @@ type
     QRLabel205: TQRLabel;
     QRDBText291: TQRDBText;
     QRLabel6: TQRLabel;
-    QRLabel19: TQRLabel;
-    QRLabel20: TQRLabel;
     QRLabel32: TQRLabel;
     QRBand43: TQRBand;
     QRLabel38: TQRLabel;
@@ -379,7 +377,6 @@ type
     QRSysData11: TQRSysData;
     QRLabel27: TQRLabel;
     QRDBText32: TQRDBText;
-    qrlNamaBJ: TQRLabel;
     TabSheet4: TTabSheet;
     dbGridJurnal: TwwDBGrid;
     wwIButton8: TwwIButton;
@@ -1070,10 +1067,10 @@ begin
                qrBukti.Preview;
             end
             else
-              begin
+            begin
                   ShowMessage('FORM belum terdaftar !');
-                  ShowMessage(DMFrm.qJnsTransaksi.SQL.Text);
-              end;
+                  ShowMessage(Name+'/ '+UpperCase(StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll])));
+            end;
 
        end;
   end;

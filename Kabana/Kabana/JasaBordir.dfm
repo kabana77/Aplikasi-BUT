@@ -1,7 +1,7 @@
 object JasaBordirFrm: TJasaBordirFrm
-  Left = 188
-  Top = 183
-  Width = 1382
+  Left = 234
+  Top = 152
+  Width = 1340
   Height = 784
   Caption = 'JasaBordirFrm'
   Color = clWindow
@@ -34,7 +34,7 @@ object JasaBordirFrm: TJasaBordirFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1286
+    Width = 1244
     Height = 745
     Align = alClient
     BevelOuter = bvNone
@@ -58,7 +58,7 @@ object JasaBordirFrm: TJasaBordirFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1286
+      Width = 1244
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -78,7 +78,7 @@ object JasaBordirFrm: TJasaBordirFrm
     object pBottom: TPanel
       Left = 0
       Top = 716
-      Width = 1286
+      Width = 1244
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object JasaBordirFrm: TJasaBordirFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 817
+        Width = 775
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object JasaBordirFrm: TJasaBordirFrm
         end
       end
       object pRight2: TPanel
-        Left = 1239
+        Left = 1197
         Top = 1
         Width = 46
         Height = 27
@@ -291,7 +291,7 @@ object JasaBordirFrm: TJasaBordirFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1286
+      Width = 1244
       Height = 666
       ActivePage = TabSheet1
       Align = alClient
@@ -2196,7 +2196,7 @@ object JasaBordirFrm: TJasaBordirFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1278
+          Width = 1236
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2215,7 +2215,7 @@ object JasaBordirFrm: TJasaBordirFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1278
+          Width = 1236
           Height = 605
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
@@ -2291,8 +2291,8 @@ object JasaBordirFrm: TJasaBordirFrm
         ImageIndex = 1
         OnShow = tsInputShow
         object qrBukti: TQuickRep
-          Left = 62
-          Top = 33
+          Left = 150
+          Top = 41
           Width = 794
           Height = 529
           Frame.Color = clBlack
@@ -3082,7 +3082,7 @@ object JasaBordirFrm: TJasaBordirFrm
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'No. BoM'
+              Caption = 'Rekanan'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3097,7 +3097,7 @@ object JasaBordirFrm: TJasaBordirFrm
             object QRDBText301: TQRDBText
               Left = 81
               Top = 33
-              Width = 216
+              Width = 417
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3108,45 +3108,14 @@ object JasaBordirFrm: TJasaBordirFrm
                 44.979166666666670000
                 214.312500000000000000
                 87.312500000000000000
-                571.500000000000000000)
+                1103.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'NO_BOM'
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
-            object QRLabel216: TQRLabel
-              Left = 600
-              Top = 37
-              Width = 5
-              Height = 17
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                44.979166666666670000
-                1587.500000000000000000
-                97.895833333333330000
-                13.229166666666670000)
-              Alignment = taLeftJustify
-              AlignToBand = False
-              AutoSize = True
-              AutoStretch = False
-              Caption = ':'
-              Color = clWhite
+              DataField = 'NAMA_PRINSIPAL'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -3158,9 +3127,9 @@ object JasaBordirFrm: TJasaBordirFrm
               FontSize = 10
             end
             object QRLabel212: TQRLabel
-              Left = 249
+              Left = 260
               Top = 2
-              Width = 250
+              Width = 227
               Height = 25
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3169,14 +3138,14 @@ object JasaBordirFrm: TJasaBordirFrm
               Frame.DrawRight = False
               Size.Values = (
                 66.145833333333330000
-                658.812500000000000000
+                687.916666666666700000
                 5.291666666666667000
-                661.458333333333300000)
+                600.604166666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'Penerimaan Bahan Baku'
+              Caption = 'Bukti Pengiriman Jasa'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3253,7 +3222,7 @@ object JasaBordirFrm: TJasaBordirFrm
             object QRDBText291: TQRDBText
               Left = 608
               Top = 1
-              Width = 215
+              Width = 134
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3264,7 +3233,7 @@ object JasaBordirFrm: TJasaBordirFrm
                 44.979166666666670000
                 1608.666666666667000000
                 2.645833333333333000
-                568.854166666666700000)
+                354.541666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -3317,7 +3286,7 @@ object JasaBordirFrm: TJasaBordirFrm
             object QRLabel19: TQRLabel
               Left = 0
               Top = 51
-              Width = 69
+              Width = 42
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3328,12 +3297,12 @@ object JasaBordirFrm: TJasaBordirFrm
                 44.979166666666670000
                 0.000000000000000000
                 134.937500000000000000
-                182.562500000000000000)
+                111.125000000000000000)
               Alignment = taLeftJustify
               AlignToBand = True
               AutoSize = True
               AutoStretch = False
-              Caption = 'Barang Jadi'
+              Caption = 'Alamat'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3407,37 +3376,6 @@ object JasaBordirFrm: TJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
-            object qrlNamaBJ: TQRLabel
-              Left = 80
-              Top = 51
-              Width = 217
-              Height = 38
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                100.541666666666700000
-                211.666666666666700000
-                134.937500000000000000
-                574.145833333333300000)
-              Alignment = taLeftJustify
-              AlignToBand = False
-              AutoSize = False
-              AutoStretch = False
-              Caption = 'nama barang'
-              Color = clWhite
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-              Transparent = False
-              WordWrap = True
-              FontSize = 10
-            end
             object QRLabel31: TQRLabel
               Left = 512
               Top = 19
@@ -3457,7 +3395,7 @@ object JasaBordirFrm: TJasaBordirFrm
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'Lokasi Asal'
+              Caption = 'Jasa'
               Color = clWhite
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -3469,10 +3407,10 @@ object JasaBordirFrm: TJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel215: TQRLabel
-              Left = 512
-              Top = 37
-              Width = 81
+            object QRDBText5: TQRDBText
+              Left = 81
+              Top = 53
+              Width = 416
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3481,15 +3419,16 @@ object JasaBordirFrm: TJasaBordirFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1354.666666666667000000
-                97.895833333333320000
-                214.312500000000000000)
+                214.312500000000000000
+                140.229166666666700000
+                1100.666666666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'Lokasi Tujuan'
               Color = clWhite
+              DataSet = qPrinsipal
+              DataField = 'ALAMAT'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -3500,10 +3439,10 @@ object JasaBordirFrm: TJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel4: TQRLabel
+            object QRDBText14: TQRDBText
               Left = 608
               Top = 19
-              Width = 129
+              Width = 132
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3514,27 +3453,29 @@ object JasaBordirFrm: TJasaBordirFrm
                 44.979166666666670000
                 1608.666666666667000000
                 50.270833333333330000
-                341.312500000000000000)
+                349.250000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'GD MATERIAL'
               Color = clWhite
+              DataSet = qBMaster
+              DataField = 'JENIS_JASA'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
               Font.Name = 'Arial'
               Font.Style = []
+              Mask = 'dd mmm yyyy'
               ParentFont = False
               Transparent = False
               WordWrap = True
               FontSize = 10
             end
-            object QRLabel7: TQRLabel
-              Left = 608
-              Top = 37
-              Width = 105
+            object QRDBText16: TQRDBText
+              Left = 81
+              Top = 72
+              Width = 416
               Height = 17
               Frame.Color = clBlack
               Frame.DrawTop = False
@@ -3543,15 +3484,16 @@ object JasaBordirFrm: TJasaBordirFrm
               Frame.DrawRight = False
               Size.Values = (
                 44.979166666666670000
-                1608.666666666667000000
-                97.895833333333330000
-                277.812500000000000000)
+                214.312500000000000000
+                190.500000000000000000
+                1100.666666666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
               AutoStretch = False
-              Caption = 'WIP - CUTTING'
               Color = clWhite
+              DataSet = qPrinsipal
+              DataField = 'KOTA'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13
@@ -4561,6 +4503,38 @@ object JasaBordirFrm: TJasaBordirFrm
               WordWrap = True
               FontSize = 10
             end
+            object QRDBText17: TQRDBText
+              Left = 321
+              Top = 40
+              Width = 416
+              Height = 17
+              Frame.Color = clBlack
+              Frame.DrawTop = False
+              Frame.DrawBottom = False
+              Frame.DrawLeft = False
+              Frame.DrawRight = False
+              Size.Values = (
+                44.979166666666670000
+                849.312500000000000000
+                105.833333333333300000
+                1100.666666666667000000)
+              Alignment = taLeftJustify
+              AlignToBand = False
+              AutoSize = False
+              AutoStretch = True
+              Color = clWhite
+              DataSet = qBMaster
+              DataField = 'KETERANGAN'
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -13
+              Font.Name = 'Arial'
+              Font.Style = []
+              ParentFont = False
+              Transparent = False
+              WordWrap = True
+              FontSize = 10
+            end
           end
           object QRBand46: TQRBand
             Left = 23
@@ -4685,8 +4659,8 @@ object JasaBordirFrm: TJasaBordirFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1278
-          Height = 113
+          Width = 1236
+          Height = 105
           Align = alTop
           BevelOuter = bvNone
           Color = 14671871
@@ -4712,7 +4686,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object DBText19: TDBText
-            Left = 616
+            Left = 624
             Top = 0
             Width = 91
             Height = 24
@@ -4800,7 +4774,7 @@ object JasaBordirFrm: TJasaBordirFrm
             Transparent = True
           end
           object DBText3: TDBText
-            Left = 616
+            Left = 624
             Top = 24
             Width = 50
             Height = 13
@@ -4842,6 +4816,20 @@ object JasaBordirFrm: TJasaBordirFrm
             Font.Height = -19
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
+          object Label4: TLabel
+            Left = 560
+            Top = 74
+            Width = 49
+            Height = 13
+            Caption = 'Jenis Jasa'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
             ParentFont = False
             Transparent = True
           end
@@ -4929,7 +4917,7 @@ object JasaBordirFrm: TJasaBordirFrm
             OnEnter = lcLokasiEnter
           end
           object VTgl: TwwDBDateTimePicker
-            Left = 616
+            Left = 624
             Top = 44
             Width = 121
             Height = 25
@@ -4984,12 +4972,32 @@ object JasaBordirFrm: TJasaBordirFrm
             OnCloseUp = wwDBLookupComboDlg1CloseUp
             OnEnter = wwDBLookupComboDlg1Enter
           end
+          object wwDBComboBoxX: TwwDBComboBox
+            Left = 624
+            Top = 73
+            Width = 121
+            Height = 19
+            ShowButton = True
+            Style = csDropDown
+            MapList = True
+            AllowClearKey = False
+            DataField = 'JENIS_JASA'
+            DataSource = dsqBMaster
+            DropDownCount = 8
+            ItemHeight = 0
+            Items.Strings = (
+              'BORDIR'#9'BORDIR'
+              'PRINTING'#9'PRINTING')
+            Sorted = False
+            TabOrder = 6
+            UnboundDataType = wwDefault
+          end
         end
         object pMaster2: TPanel
-          Left = 1093
-          Top = 113
+          Left = 1051
+          Top = 105
           Width = 185
-          Height = 525
+          Height = 533
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5002,7 +5010,7 @@ object JasaBordirFrm: TJasaBordirFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 471
+            Top = 479
             Width = 78
             Height = 13
             Align = alBottom
@@ -5031,7 +5039,7 @@ object JasaBordirFrm: TJasaBordirFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 484
+            Top = 492
             Width = 185
             Height = 41
             TabStop = False
@@ -5068,9 +5076,9 @@ object JasaBordirFrm: TJasaBordirFrm
         end
         object PageControl2: TPageControl
           Left = 0
-          Top = 113
-          Width = 1093
-          Height = 525
+          Top = 105
+          Width = 1051
+          Height = 533
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -5086,8 +5094,8 @@ object JasaBordirFrm: TJasaBordirFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1085
-              Height = 497
+              Width = 1043
+              Height = 505
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5183,7 +5191,7 @@ object JasaBordirFrm: TJasaBordirFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 1085
+              Width = 1043
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5292,8 +5300,8 @@ object JasaBordirFrm: TJasaBordirFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 1085
-              Height = 448
+              Width = 1043
+              Height = 456
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5367,8 +5375,8 @@ object JasaBordirFrm: TJasaBordirFrm
             object dbGridJurnal: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 1085
-              Height = 425
+              Width = 1043
+              Height = 505
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISPOST;CheckBox;1;0'
@@ -5431,7 +5439,7 @@ object JasaBordirFrm: TJasaBordirFrm
     end
   end
   object pRight: TPanel
-    Left = 1326
+    Left = 1284
     Top = 0
     Width = 40
     Height = 745
@@ -5910,6 +5918,9 @@ object JasaBordirFrm: TJasaBordirFrm
     object qBMasterNAMA_PRINSIPAL: TStringField
       FieldName = 'NAMA_PRINSIPAL'
       Size = 50
+    end
+    object qBMasterJENIS_JASA: TStringField
+      FieldName = 'JENIS_JASA'
     end
   end
   object dsqBMaster: TwwDataSource
