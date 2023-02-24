@@ -4360,7 +4360,7 @@ object Pembelian3Frm: TPembelian3Frm
               FontSize = 11
             end
             object QRLabel235: TQRLabel
-              Left = -13
+              Left = 353
               Top = 21
               Width = 42
               Height = 20
@@ -19869,9 +19869,6 @@ object Pembelian3Frm: TPembelian3Frm
       FieldName = 'TGL'
       DisplayFormat = 'dd mmm yyyy'
     end
-    object qBMasterNO_REFF: TStringField
-      FieldName = 'NO_REFF'
-    end
     object qBMasterALAMAT: TStringField
       FieldName = 'ALAMAT'
       Size = 255
@@ -20152,6 +20149,10 @@ object Pembelian3Frm: TPembelian3Frm
       FieldName = 'ISPOST2'
       Required = True
       Size = 1
+    end
+    object qBMasterNO_REFF: TStringField
+      FieldName = 'NO_REFF'
+      Size = 128
     end
   end
   object dsqBMaster: TwwDataSource

@@ -88,7 +88,11 @@ uses
   InfoWIPCutting2 in 'InfoWIPCutting2.pas' {InfoWIPCutting2Frm},
   JasaBordir in 'JasaBordir.pas' {JasaBordirFrm},
   TerimaJasaBordir in 'TerimaJasaBordir.pas' {TerimaJasaBordirFrm},
-  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm};
+  InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm},
+  WasteCutting in 'WasteCutting.pas' {WasteCuttingFrm},
+  TerimaHslCutting in 'TerimaHslCutting.pas' {TerimaHslCuttingFrm},
+  HasilSewing in 'HasilSewing.pas' {HasilSewingFrm},
+  InfoWIPSewing1 in 'InfoWIPSewing1.pas' {InfoWIPSewing1Frm};
 
 {$R *.res}
 
@@ -98,5 +102,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
+  Application.CreateForm(TInfoWIPSewing1Frm, InfoWIPSewing1Frm);
   Application.Run;
 end.

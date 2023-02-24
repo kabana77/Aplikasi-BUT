@@ -1,5 +1,5 @@
 object BuktiBayarFrm: TBuktiBayarFrm
-  Left = 261
+  Left = 262
   Top = 229
   Width = 1291
   Height = 679

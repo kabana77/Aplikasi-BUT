@@ -1,8 +1,9 @@
 object LoadingCuttingFrm: TLoadingCuttingFrm
   Left = 432
   Top = 191
-  Width = 1196
-  Height = 495
+  Width = 1330
+  Height = 656
+  ActiveControl = dbGrid1
   Caption = 'LoadingCuttingFrm'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +26,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 456
+    Height = 617
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +35,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1100
-    Height = 456
+    Width = 1234
+    Height = 617
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +59,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1100
+      Width = 1234
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +78,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 427
-      Width = 1100
+      Top = 588
+      Width = 1234
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +228,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 631
+        Width = 765
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +279,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         end
       end
       object pRight2: TPanel
-        Left = 1053
+        Left = 1187
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +292,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1100
-      Height = 377
+      Width = 1234
+      Height = 538
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2196,7 +2197,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1092
+          Width = 1226
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2215,8 +2216,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1092
-          Height = 316
+          Width = 1226
+          Height = 477
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -4591,7 +4592,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1092
+          Width = 1226
           Height = 113
           Align = alTop
           BevelOuter = bvNone
@@ -4833,10 +4834,10 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           end
         end
         object pMaster2: TPanel
-          Left = 907
+          Left = 1041
           Top = 113
           Width = 185
-          Height = 236
+          Height = 397
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -4849,7 +4850,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 182
+            Top = 343
             Width = 185
             Height = 13
             Align = alBottom
@@ -4878,7 +4879,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 195
+            Top = 356
             Width = 185
             Height = 41
             TabStop = False
@@ -4916,8 +4917,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 113
-          Width = 907
-          Height = 236
+          Width = 1041
+          Height = 397
           ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
@@ -4933,8 +4934,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 899
-              Height = 208
+              Width = 1033
+              Height = 369
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -4945,7 +4946,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
                 'SAT_D'#9'8'#9'SATUAN'#9'T'
                 'QTY_D'#9'12'#9'JUMLAH'#9'F'
-                'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F')
+                'KETERANGAN2'#9'50'#9'KETERANGAN'#9'F'
+                'NO_BOM'#9'10'#9'BOM'#9'T')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
               IniAttributes.FileName = 'KUWUNG'
@@ -5010,7 +5012,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
               Selected.Strings = (
                 'KD_ITEM'#9'12'#9'KODE'#9'F'
                 'NAMA_ITEM'#9'30'#9'NAMA ITEM'#9'F'
-                'SAT_D'#9'12'#9'SATUAN'#9'F')
+                'NO_BOM'#9'10'#9'BOM'#9'F')
               DataField = 'KD_ITEM'
               DataSource = dsqBDetail
               LookupTable = qItem
@@ -5030,7 +5032,7 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 899
+              Width = 1033
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5139,8 +5141,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 899
-              Height = 159
+              Width = 1033
+              Height = 320
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -5278,10 +5280,10 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     end
   end
   object pRight: TPanel
-    Left = 1140
+    Left = 1274
     Top = 0
     Width = 40
-    Height = 456
+    Height = 617
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -5395,8 +5397,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 1211
-    Top = 128
+    Left = 971
+    Top = 112
     ParamData = <
       item
         DataType = ftFloat
@@ -5482,11 +5484,14 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
       FieldName = 'SAT_D'
       Size = 12
     end
+    object qBDetailNO_BOM: TStringField
+      FieldName = 'NO_BOM'
+    end
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
-    Left = 1251
-    Top = 144
+    Left = 1011
+    Top = 120
   end
   object qSlsman: TOraQuery
     Session = DMFrm.OS
@@ -5751,53 +5756,31 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
   object qItem: TOraQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from daftar_item_wip'
-      'where jenis_wip='#39'CUTTING'#39' and ispost='#39'1'#39)
+      
+        'select distinct to_char(no_bom) as kd_item, keterangan as nama_i' +
+        'tem, no_bom from wip_cutting'
+      'where kd_form='#39'202'#39' and ispost='#39'1'#39
+      ''
+      '/*select * from daftar_item_wip'
+      'where jenis_wip='#39'CUTTING'#39' and ispost='#39'1'#39'*/')
     Left = 832
     Top = 291
-    object qItemNO_REG: TFloatField
-      FieldName = 'NO_REG'
-      Required = True
-    end
     object qItemKD_ITEM: TStringField
+      DisplayLabel = 'KODE'
+      DisplayWidth = 12
       FieldName = 'KD_ITEM'
-      Size = 12
+      Size = 40
     end
     object qItemNAMA_ITEM: TStringField
+      DisplayLabel = 'NAMA ITEM'
+      DisplayWidth = 30
       FieldName = 'NAMA_ITEM'
       Size = 128
     end
-    object qItemSATUAN: TStringField
-      FieldName = 'SATUAN'
-    end
-    object qItemJENIS_WIP: TStringField
-      FieldName = 'JENIS_WIP'
-    end
-    object qItemISPOST: TStringField
-      FieldName = 'ISPOST'
-      FixedChar = True
-      Size = 1
-    end
-    object qItemOPR_INSERT: TStringField
-      FieldName = 'OPR_INSERT'
-      Size = 50
-    end
-    object qItemOPR_UPDATE: TStringField
-      FieldName = 'OPR_UPDATE'
-      Size = 50
-    end
-    object qItemTGL_INSERT: TDateTimeField
-      FieldName = 'TGL_INSERT'
-    end
-    object qItemTGL_UPDATE: TDateTimeField
-      FieldName = 'TGL_UPDATE'
-    end
-    object qItemNO_BOM: TStringField
+    object qItemNO_BOM: TFloatField
+      DisplayLabel = 'BOM'
+      DisplayWidth = 10
       FieldName = 'NO_BOM'
-    end
-    object qItemKD_FORM: TStringField
-      FieldName = 'KD_FORM'
-      Size = 10
     end
   end
   object procUnpost: TOraStoredProc
@@ -6330,8 +6313,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
     MasterSource = dsqBomD
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
-    Left = 1272
-    Top = 203
+    Left = 1032
+    Top = 179
     ParamData = <
       item
         DataType = ftUnknown
@@ -6466,8 +6449,8 @@ object LoadingCuttingFrm: TLoadingCuttingFrm
       'order by no_reg_os')
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     BeforeOpen = qBDetail9BeforeOpen
-    Left = 1267
-    Top = 56
+    Left = 1027
+    Top = 32
     ParamData = <
       item
         DataType = ftFloat

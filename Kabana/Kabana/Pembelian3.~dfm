@@ -4360,7 +4360,7 @@ object Pembelian3Frm: TPembelian3Frm
               FontSize = 11
             end
             object QRLabel235: TQRLabel
-              Left = -13
+              Left = 353
               Top = 21
               Width = 42
               Height = 20

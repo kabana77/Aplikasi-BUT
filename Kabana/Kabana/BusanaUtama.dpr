@@ -89,7 +89,10 @@ uses
   JasaBordir in 'JasaBordir.pas' {JasaBordirFrm},
   TerimaJasaBordir in 'TerimaJasaBordir.pas' {TerimaJasaBordirFrm},
   InfoWIPCuttingSubkon in 'InfoWIPCuttingSubkon.pas' {InfoWIPCuttingSubkonFrm},
-  WasteCutting in 'WasteCutting.pas' {WasteCuttingFrm};
+  WasteCutting in 'WasteCutting.pas' {WasteCuttingFrm},
+  TerimaHslCutting in 'TerimaHslCutting.pas' {TerimaHslCuttingFrm},
+  HasilSewing in 'HasilSewing.pas' {HasilSewingFrm},
+  InfoWIPSewing1 in 'InfoWIPSewing1.pas' {InfoWIPSewing1Frm};
 
 {$R *.res}
 

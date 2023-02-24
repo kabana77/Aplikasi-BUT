@@ -1,5 +1,5 @@
 object HasilCuttingFrm: THasilCuttingFrm
-  Left = 313
+  Left = 314
   Top = 128
   Width = 1382
   Height = 784
@@ -4698,7 +4698,7 @@ object HasilCuttingFrm: THasilCuttingFrm
           TabOrder = 0
           object Label14: TLabel
             Left = 96
-            Top = 40
+            Top = 42
             Width = 55
             Height = 13
             Caption = 'Keterangan'
@@ -4755,7 +4755,7 @@ object HasilCuttingFrm: THasilCuttingFrm
             Transparent = True
           end
           object Label34x: TLabel
-            Left = 307
+            Left = 355
             Top = 3
             Width = 88
             Height = 13
@@ -4814,9 +4814,39 @@ object HasilCuttingFrm: THasilCuttingFrm
             ParentFont = False
             Transparent = True
           end
+          object Label3: TLabel
+            Left = 95
+            Top = 2
+            Width = 24
+            Height = 13
+            Caption = 'BOM'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Label4: TLabel
+            Left = 202
+            Top = 2
+            Width = 26
+            Height = 13
+            Caption = 'QTY'
+            Color = clNavy
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = True
+          end
           object DBMemo1: TDBMemo
             Left = 96
-            Top = 58
+            Top = 60
             Width = 345
             Height = 41
             DataField = 'KETERANGAN'
@@ -4830,7 +4860,7 @@ object HasilCuttingFrm: THasilCuttingFrm
             TabOrder = 1
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 304
+            Left = 352
             Top = 16
             Width = 81
             Height = 17
@@ -4923,6 +4953,48 @@ object HasilCuttingFrm: THasilCuttingFrm
             ShowButton = True
             TabOrder = 4
             DisplayFormat = 'dd mmm yyyy'
+          end
+          object wwDBLookupComboDlg1: TwwDBLookupComboDlg
+            Left = 96
+            Top = 16
+            Width = 81
+            Height = 19
+            GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
+            GridColor = clWhite
+            GridTitleAlignment = taLeftJustify
+            Caption = 'Lookup'
+            MaxWidth = 0
+            MaxHeight = 209
+            UserButton1Caption = '&Refresh'
+            UserButton2Caption = '&Filter'
+            Selected.Strings = (
+              'NO_REG_D'#9'10'#9'BOM'#9'F'
+              'KD_PRODUKSI'#9'10'#9'PO'#9'F'
+              'ITEM'#9'20'#9'ITEM'#9'F'
+              'STYLE'#9'20'#9'STYLE'#9'F')
+            DataField = 'NO_BOM'
+            DataSource = dsqBMaster
+            LookupTable = qBomD
+            LookupField = 'NO_REG_D'
+            TabOrder = 5
+            AutoDropDown = False
+            ShowButton = True
+            AllowClearKey = False
+            OnCloseUp = wwDBLookupComboDlg1CloseUp
+            OnEnter = wwDBLookupComboDlg1Enter
+          end
+          object wwDBEdit3: TwwDBEdit
+            Left = 202
+            Top = 17
+            Width = 95
+            Height = 19
+            Color = clYellow
+            DataField = 'QTY'
+            DataSource = dsqBMaster
+            TabOrder = 6
+            UnboundDataType = wwDefault
+            WantReturns = False
+            WordWrap = False
           end
         end
         object pMaster2: TPanel
@@ -5839,6 +5911,10 @@ object HasilCuttingFrm: THasilCuttingFrm
       Required = True
       Size = 12
     end
+    object qBMasterQTY: TFloatField
+      FieldName = 'QTY'
+      Required = True
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -6166,259 +6242,323 @@ object HasilCuttingFrm: THasilCuttingFrm
   object qBomD: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from bom_d'
-      'where no_reg_d=:no_reg_d'
-      'order by no_reg_os')
+      'select a.*, b.kd_produksi from bom_d a, bom b'
+      'where'
+      '/*a.no_reg_d=:no_reg_d and*/ a.no_reg_os=b.no_reg_os and'
+      
+        'a.no_reg_d in (select distinct no_bom from wip_cutting where kd_' +
+        'form='#39'197'#39' and ispost='#39'1'#39')'
+      'order by a.no_reg_os')
     DetailFields = 'NO_REG_OS'
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     Left = 1139
     Top = 208
-    ParamData = <
-      item
-        DataType = ftFloat
-        Name = 'no_reg_d'
-        ParamType = ptInput
-        Value = 2100002.000000000000000000
-      end>
     object FloatField1: TFloatField
+      DisplayLabel = 'BOM'
+      DisplayWidth = 10
       FieldName = 'NO_REG_D'
+    end
+    object qBomDKD_PRODUKSI: TStringField
+      DisplayLabel = 'PO'
+      DisplayWidth = 10
+      FieldName = 'KD_PRODUKSI'
+      ReadOnly = True
+      Size = 128
+    end
+    object qBDetailITEM: TStringField
+      DisplayWidth = 20
+      FieldName = 'ITEM'
+      Size = 50
+    end
+    object qBDetailSTYLE: TStringField
+      DisplayWidth = 20
+      FieldName = 'STYLE'
+      Size = 12
     end
     object FloatField2: TFloatField
       FieldName = 'NO_REG_OS'
+      Visible = False
     end
     object qBDetailCOLOR: TStringField
       FieldName = 'COLOR'
+      Visible = False
       Size = 50
     end
     object qBDetailSATUAN: TStringField
       FieldName = 'SATUAN'
+      Visible = False
       Size = 12
     end
     object qBDetailXXS: TFloatField
       FieldName = 'XXS'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailXS: TFloatField
       FieldName = 'XS'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailS: TFloatField
       FieldName = 'S'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailM: TFloatField
       FieldName = 'M'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailL: TFloatField
       FieldName = 'L'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailXL: TFloatField
       FieldName = 'XL'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailX0: TFloatField
       FieldName = 'X0'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailX1: TFloatField
       FieldName = 'X1'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailX2: TFloatField
       FieldName = 'X2'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailX3: TFloatField
       FieldName = 'X3'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBDetailTOT_QTY: TFloatField
       FieldName = 'TOT_QTY'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
-    end
-    object qBDetailSTYLE: TStringField
-      FieldName = 'STYLE'
-      Size = 12
-    end
-    object qBDetailITEM: TStringField
-      FieldName = 'ITEM'
-      Size = 50
     end
     object qBDetailKELOMPOK: TStringField
       FieldName = 'KELOMPOK'
+      Visible = False
       Size = 50
     end
     object StringField1: TStringField
       FieldName = 'KETERANGAN'
+      Visible = False
       Size = 255
     end
     object qBomDSIZE01: TFloatField
       FieldName = 'SIZE01'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE02: TFloatField
       FieldName = 'SIZE02'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE03: TFloatField
       FieldName = 'SIZE03'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE04: TFloatField
       FieldName = 'SIZE04'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE05: TFloatField
       FieldName = 'SIZE05'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE06: TFloatField
       FieldName = 'SIZE06'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE07: TFloatField
       FieldName = 'SIZE07'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE08: TFloatField
       FieldName = 'SIZE08'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE09: TFloatField
       FieldName = 'SIZE09'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE10: TFloatField
       FieldName = 'SIZE10'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE11: TFloatField
       FieldName = 'SIZE11'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE12: TFloatField
       FieldName = 'SIZE12'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE13: TFloatField
       FieldName = 'SIZE13'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE14: TFloatField
       FieldName = 'SIZE14'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDSIZE15: TFloatField
       FieldName = 'SIZE15'
+      Visible = False
       DisplayFormat = '#,#;(#,#);-'
     end
     object qBomDLXXS: TStringField
       FieldName = 'LXXS'
+      Visible = False
       Size = 50
     end
     object qBomDLXS: TStringField
       FieldName = 'LXS'
+      Visible = False
       Size = 50
     end
     object qBomDLS: TStringField
       FieldName = 'LS'
+      Visible = False
       Size = 50
     end
     object qBomDLM: TStringField
       FieldName = 'LM'
+      Visible = False
       Size = 50
     end
     object qBomDLL: TStringField
       FieldName = 'LL'
+      Visible = False
       Size = 50
     end
     object qBomDLXL: TStringField
       FieldName = 'LXL'
+      Visible = False
       Size = 50
     end
     object qBomDLX0: TStringField
       FieldName = 'LX0'
+      Visible = False
       Size = 50
     end
     object qBomDLX1: TStringField
       FieldName = 'LX1'
+      Visible = False
       Size = 50
     end
     object qBomDLX2: TStringField
       FieldName = 'LX2'
+      Visible = False
       Size = 50
     end
     object qBomDLX3: TStringField
       FieldName = 'LX3'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE01: TStringField
       FieldName = 'LSIZE01'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE02: TStringField
       FieldName = 'LSIZE02'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE03: TStringField
       FieldName = 'LSIZE03'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE04: TStringField
       FieldName = 'LSIZE04'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE05: TStringField
       FieldName = 'LSIZE05'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE06: TStringField
       FieldName = 'LSIZE06'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE07: TStringField
       FieldName = 'LSIZE07'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE08: TStringField
       FieldName = 'LSIZE08'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE09: TStringField
       FieldName = 'LSIZE09'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE10: TStringField
       FieldName = 'LSIZE10'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE11: TStringField
       FieldName = 'LSIZE11'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE12: TStringField
       FieldName = 'LSIZE12'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE13: TStringField
       FieldName = 'LSIZE13'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE14: TStringField
       FieldName = 'LSIZE14'
+      Visible = False
       Size = 50
     end
     object qBomDLSIZE15: TStringField
       FieldName = 'LSIZE15'
+      Visible = False
       Size = 50
     end
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1163
-    Top = 232
+    Left = 1195
+    Top = 248
   end
   object qBom: TOraQuery
     Session = DMFrm.OS

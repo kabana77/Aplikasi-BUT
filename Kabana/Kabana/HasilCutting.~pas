@@ -459,6 +459,12 @@ type
     qB1SAT_D: TStringField;
     qB1QTY_D: TFloatField;
     qB1KETERANGAN2: TStringField;
+    Label3: TLabel;
+    wwDBLookupComboDlg1: TwwDBLookupComboDlg;
+    qBomDKD_PRODUKSI: TStringField;
+    wwDBEdit3: TwwDBEdit;
+    Label4: TLabel;
+    qBMasterQTY: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -546,6 +552,9 @@ type
       var PrintBand: Boolean);
     procedure TabSheet4Show(Sender: TObject);
     procedure lcdItemCloseUp(Sender: TObject; LookupTable,
+      FillTable: TDataSet; modified: Boolean);
+    procedure wwDBLookupComboDlg1Enter(Sender: TObject);
+    procedure wwDBLookupComboDlg1CloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
   private
     { Private declarations }
@@ -1098,7 +1107,7 @@ begin
   qBMaster.Open;
   qBDetail.Close;
   qBomD.Close;
-  qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
+  //qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
   qBDetail9.Close;
   qBDetail9.Open;
 
@@ -1843,6 +1852,18 @@ begin
   qBDetailKETERANGAN.AsString:=qItemNAMA_ITEM.AsString;
   qBDetailRD.AsFloat:=1;
   qBDetailSAT_D.AsString:=qItemSATUAN.AsString;
+end;
+
+procedure THasilCuttingFrm.wwDBLookupComboDlg1Enter(Sender: TObject);
+begin
+  qBomD.Close;
+  qBomD.Open;
+end;
+
+procedure THasilCuttingFrm.wwDBLookupComboDlg1CloseUp(Sender: TObject;
+  LookupTable, FillTable: TDataSet; modified: Boolean);
+begin
+  qBMasterKETERANGAN.AsString:=qBomDKD_PRODUKSI.AsString;
 end;
 
 end.

@@ -1628,14 +1628,8 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-
-                 //DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll]); //Ganti
-                 DMFrm.SaveDialog1.FileName:=TabSheet1.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir);
-
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet1.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
-                 //dbGrid1.ExportOptions.TitleName:='<font size=4>'+TabSheet1.Caption+'</font><br><font size=1>'+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir)+'</font>';
-
-
                    if DMFrm.SaveDialog1.Execute then
                    begin
                      try
@@ -1659,7 +1653,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet2.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet2.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1684,7 +1678,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet3.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet3.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1709,7 +1703,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet4.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet4.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1734,7 +1728,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet5.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet5.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1759,7 +1753,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet6.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet6.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1784,7 +1778,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet7.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet7.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin
@@ -1808,7 +1802,7 @@ begin
               begin
                  DMFrm.SaveDialog1.DefaultExt:='XLK';
                  DMFrm.SaveDialog1.Filter:='Excel files (*.XLK)|*.XLK';
-                 DMFrm.SaveDialog1.FileName:=TabSheet8.Caption+' Periode '+FormatDateTime('dd/mm/yyyy',vfield_awal)+' sd '+FormatDateTime('dd/mm/yyyy',vfield_akhir); //Ganti
+                 DMFrm.SaveDialog1.FileName:=StringReplace(TabSheet8.Caption,'&','',[rfReplaceAll]); //Ganti
                  ExportOptions.TitleName:=DMFrm.SaveDialog1.FileName;
                    if DMFrm.SaveDialog1.Execute then
                    begin

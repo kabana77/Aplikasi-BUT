@@ -1,5 +1,5 @@
 object SaldoRekeningFrm: TSaldoRekeningFrm
-  Left = 275
+  Left = 276
   Top = 267
   Width = 1199
   Height = 600

@@ -1,5 +1,5 @@
 object LaporanBCFrm: TLaporanBCFrm
-  Left = 198
+  Left = 199
   Top = 150
   Width = 1364
   Height = 726

@@ -180,7 +180,6 @@ type
     N23: TMenuItem;
     ItemProduksiCutting1: TMenuItem;
     N29: TMenuItem;
-    ItemHasilSewing1: TMenuItem;
     N24: TMenuItem;
     N25: TMenuItem;
     N26: TMenuItem;
@@ -274,6 +273,9 @@ type
     procedure Penerimaan1Click(Sender: TObject);
     procedure InfoMutasiSubkonCutting1Click(Sender: TObject);
     procedure WasteCutting1Click(Sender: TObject);
+    procedure erimaHasilCuttingIN1Click(Sender: TObject);
+    procedure Hasil1Click(Sender: TObject);
+    procedure InfoWIPSewing11Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -303,7 +305,8 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   LogAktifitas, Pembelian3, Kontrak, Neraca, LaporanBC, InfoMutasiStokRev,
   PenyelesaianWaste, InfoMutasiStokBB, InfoMutasiStokNBB, TerimaBB, DaftarItemWIP1,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
-  JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting;
+  JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting,
+  TerimaHslCutting, HasilSewing, InfoWIPSewing1;
 
 {$R *.dfm}
 
@@ -2481,6 +2484,82 @@ begin
      WasteCuttingFrm.vCanUnPost:=False;
   end;
   WasteCuttingFrm.Show;
+end;
+
+procedure TMainFrm.erimaHasilCuttingIN1Click(Sender: TObject);
+begin
+  if TerimaHslCuttingFrm=nil then TerimaHslCuttingFrm:=TTerimaHslCuttingFrm.Create(Application);
+     TerimaHslCuttingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+     TerimaHslCuttingFrm.pTop.Caption:=' '+UpperCase(TerimaHslCuttingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     TerimaHslCuttingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     TerimaHslCuttingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     TerimaHslCuttingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     TerimaHslCuttingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     TerimaHslCuttingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     TerimaHslCuttingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     TerimaHslCuttingFrm.vCanAdd:=False;
+     TerimaHslCuttingFrm.vCanEdit:=False;
+     TerimaHslCuttingFrm.vCanDel:=False;
+     TerimaHslCuttingFrm.vCanPrint:=False;
+     TerimaHslCuttingFrm.vCanExport:=False;
+     TerimaHslCuttingFrm.vCanUnPost:=False;
+  end;
+  TerimaHslCuttingFrm.Show;
+end;
+
+procedure TMainFrm.Hasil1Click(Sender: TObject);
+begin
+  if HasilSewingFrm=nil then HasilSewingFrm:=THasilSewingFrm.Create(Application);
+  HasilSewingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  HasilSewingFrm.pTop.Caption:=' '+UpperCase(HasilSewingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     HasilSewingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     HasilSewingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     HasilSewingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     HasilSewingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     HasilSewingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     HasilSewingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     HasilSewingFrm.vCanAdd:=False;
+     HasilSewingFrm.vCanEdit:=False;
+     HasilSewingFrm.vCanDel:=False;
+     HasilSewingFrm.vCanPrint:=False;
+     HasilSewingFrm.vCanExport:=False;
+     HasilSewingFrm.vCanUnPost:=False;
+  end;
+  HasilSewingFrm.Show;
+end;
+
+procedure TMainFrm.InfoWIPSewing11Click(Sender: TObject);
+begin
+  if InfoWIPSewing1Frm=nil then InfoWIPSewing1Frm:=TInfoWIPSewing1Frm.Create(Application);
+  InfoWIPSewing1Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPSewing1Frm.pTop.Caption:='     '+StringReplace(InfoWIPSewing1Frm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPSewing1Frm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPSewing1Frm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPSewing1Frm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPSewing1Frm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPSewing1Frm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPSewing1Frm.vCanAdd:=False;
+     InfoWIPSewing1Frm.vCanEdit:=False;
+     InfoWIPSewing1Frm.vCanDel:=False;
+     InfoWIPSewing1Frm.vCanPrint:=False;
+     InfoWIPSewing1Frm.vCanExport:=False;
+  end;
+  InfoWIPSewing1Frm.Show;
 end;
 
 end.

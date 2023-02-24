@@ -1,5 +1,5 @@
 object InfoWIPCutting2Frm: TInfoWIPCutting2Frm
-  Left = 260
+  Left = 261
   Top = 139
   Width = 1364
   Height = 726

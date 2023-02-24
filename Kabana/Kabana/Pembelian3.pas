@@ -161,7 +161,6 @@ type
     qBMasterNO_REG_OS: TFloatField;
     qBMasterKD_FORM: TStringField;
     qBMasterTGL: TDateTimeField;
-    qBMasterNO_REFF: TStringField;
     qBMasterALAMAT: TStringField;
     qBMasterKOTA: TStringField;
     qBMasterTELEPON: TStringField;
@@ -1283,6 +1282,7 @@ type
     QRLabel235: TQRLabel;
     QRImage4: TQRImage;
     QRDBText244: TQRDBText;
+    qBMasterNO_REFF: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

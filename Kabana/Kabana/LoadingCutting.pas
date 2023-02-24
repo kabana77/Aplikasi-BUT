@@ -439,23 +439,15 @@ type
     QRLabel4: TQRLabel;
     QRLabel7: TQRLabel;
     lcdItem: TwwDBLookupComboDlg;
-    qItemNO_REG: TFloatField;
-    qItemKD_ITEM: TStringField;
-    qItemNAMA_ITEM: TStringField;
-    qItemSATUAN: TStringField;
-    qItemJENIS_WIP: TStringField;
-    qItemISPOST: TStringField;
-    qItemOPR_INSERT: TStringField;
-    qItemOPR_UPDATE: TStringField;
-    qItemTGL_INSERT: TDateTimeField;
-    qItemTGL_UPDATE: TDateTimeField;
-    qItemNO_BOM: TStringField;
-    qItemKD_FORM: TStringField;
     qBMasterSTATUS: TStringField;
     qB1KD_ITEM: TStringField;
     qB1SAT_D: TStringField;
     qB1QTY_D: TFloatField;
     qB1KETERANGAN2: TStringField;
+    qBDetailNO_BOM: TStringField;
+    qItemKD_ITEM: TStringField;
+    qItemNAMA_ITEM: TStringField;
+    qItemNO_BOM: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1262,7 +1254,7 @@ begin
   if qItem.Locate('KD_ITEM',qBDetailKD_ITEM.AsString,[loPartialKey]) then
   begin
      qBDetailKETERANGAN.AsString:=qItemNAMA_ITEM.AsString;
-     qBDetailSAT_D.AsString:=qItemSATUAN.AsString;
+     qBDetailSAT_D.AsString:='PCS';
   end;
 end;
 
@@ -1840,7 +1832,8 @@ procedure TLoadingCuttingFrm.lcdItemCloseUp(Sender: TObject; LookupTable,
 begin
   qBDetailKETERANGAN.AsString:=qItemNAMA_ITEM.AsString;
   qBDetailRD.AsFloat:=1;
-  qBDetailSAT_D.AsString:=qItemSATUAN.AsString;
+  qBDetailSAT_D.AsString:='PCS';
+  qBDetailNO_BOM.AsString:=qItemNO_BOM.AsString;
 end;
 
 end.

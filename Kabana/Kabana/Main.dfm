@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 468
-  Top = 232
+  Left = 328
+  Top = 225
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -573,27 +573,34 @@ object MainFrm: TMainFrm
         GroupIndex = 1
         object erimaHasilCuttingIN1: TMenuItem
           Caption = 'Terima Hasil Cutting'
-        end
-        object ItemHasilSewing1: TMenuItem
-          Caption = 'Item Hasil Sewing'
+          GroupIndex = 2
+          OnClick = erimaHasilCuttingIN1Click
         end
         object Hasil1: TMenuItem
           Caption = 'Hasil Sewing'
+          GroupIndex = 2
+          OnClick = Hasil1Click
         end
         object WasteSewing1: TMenuItem
           Caption = 'Waste Sewing'
+          GroupIndex = 2
         end
         object LoadingHasilSewingOUT1: TMenuItem
           Caption = 'Loading Hasil Sewing'
+          GroupIndex = 2
         end
         object N29: TMenuItem
           Caption = '-'
+          GroupIndex = 2
         end
         object InfoWIPSewing11: TMenuItem
           Caption = 'Info WIP Sewing 1'
+          GroupIndex = 2
+          OnClick = InfoWIPSewing11Click
         end
         object InfoWIPSewing21: TMenuItem
           Caption = 'Info WIP Sewing 2'
+          GroupIndex = 2
         end
       end
       object Finishing1: TMenuItem
@@ -601,39 +608,51 @@ object MainFrm: TMainFrm
         GroupIndex = 1
         object erimaHasilSewingIN1: TMenuItem
           Caption = 'Terima Hasil Sewing'
+          GroupIndex = 2
         end
         object SubkonFinishing1INOUT1: TMenuItem
           Caption = 'Subkon Finishing'
+          GroupIndex = 2
           object PengirimanIN1: TMenuItem
             Caption = 'Pengiriman [OUT]'
+            GroupIndex = 3
           end
           object PenerimaanIN1: TMenuItem
             Caption = 'Penerimaan [IN]'
+            GroupIndex = 3
           end
           object N25: TMenuItem
             Caption = '-'
+            GroupIndex = 3
           end
           object InfoMutasiFinishing12: TMenuItem
             Caption = 'Info Mutasi Subkon Finishing'
+            GroupIndex = 3
           end
         end
         object WasteFinishingOUT1: TMenuItem
           Caption = 'Waste Finishing'
+          GroupIndex = 2
         end
         object erimaHasilFinishing11: TMenuItem
           Caption = 'Hasil Finishing [Barang Jadi]'
+          GroupIndex = 2
         end
         object LoadingBarangJadiOUT1: TMenuItem
           Caption = 'Loading Barang Jadi'
+          GroupIndex = 2
         end
         object N24: TMenuItem
           Caption = '-'
+          GroupIndex = 2
         end
         object InfoMutasiFinishing11: TMenuItem
           Caption = 'Info Finishing 1'
+          GroupIndex = 2
         end
         object InfoFinishing21: TMenuItem
           Caption = 'Info Finishing 2'
+          GroupIndex = 2
         end
       end
       object WasteProduksi1: TMenuItem
@@ -641,15 +660,19 @@ object MainFrm: TMainFrm
         GroupIndex = 1
         object PemasukanWaste1: TMenuItem
           Caption = 'Pemasukan Waste [IN]'
+          GroupIndex = 2
         end
         object PenyelesaianWasteOUT1: TMenuItem
           Caption = 'Penyelesaian Waste [OUT]'
+          GroupIndex = 2
         end
         object N26: TMenuItem
           Caption = '-'
+          GroupIndex = 2
         end
         object InfoMutasiWaste1: TMenuItem
           Caption = 'Info Mutasi Waste'
+          GroupIndex = 2
         end
       end
     end

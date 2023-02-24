@@ -1336,8 +1336,6 @@ type
       var PrintBand: Boolean);
     procedure TitleBand2BeforePrint(Sender: TQRCustomBand;
       var PrintBand: Boolean);
-    procedure SummaryBand2BeforePrint(Sender: TQRCustomBand;
-      var PrintBand: Boolean);
     procedure qrBuktiBeforePrint(Sender: TCustomQuickRep;
       var PrintReport: Boolean);
     procedure PageHeaderBand2BeforePrint(Sender: TQRCustomBand;
@@ -3408,24 +3406,17 @@ end;
 procedure TPembelian3Frm.DetailBand2BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
-  qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
+  {qrlNo.Caption:=IntToStr(StrToInt(qrlNo.Caption)+1);
   if (vhal=1) and (StrToInt(qrlNo.Caption)>10) and (qBDetail.RecordCount>=11) then
     DetailBand2.ForceNewPage:=True
     else
-    DetailBand2.ForceNewPage:=False;
+    DetailBand2.ForceNewPage:=False;}
 end;
 
 procedure TPembelian3Frm.TitleBand2BeforePrint(Sender: TQRCustomBand;
   var PrintBand: Boolean);
 begin
-  qrlNo.Caption:='0';
-end;
-
-procedure TPembelian3Frm.SummaryBand2BeforePrint(Sender: TQRCustomBand;
-  var PrintBand: Boolean);
-begin
-  DMFrm.MyIDR.Nilai:=qBMasterNILAI_TAGIHAN.AsFloat;
-  qrlTerbilang.Caption:='#'+DMFrm.MyIDR.HasilKonversi+'#';
+  {qrlNo.Caption:='0';}
 end;
 
 procedure TPembelian3Frm.qrBuktiBeforePrint(Sender: TCustomQuickRep;
