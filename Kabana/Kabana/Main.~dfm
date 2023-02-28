@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 326
+  Left = 332
   Top = 225
   Width = 800
   Height = 366
@@ -586,8 +586,9 @@ object MainFrm: TMainFrm
           GroupIndex = 2
         end
         object LoadingHasilSewingOUT1: TMenuItem
-          Caption = 'Loading Hasil Sewing'
+          Caption = 'Transfer Hasil Sewing'
           GroupIndex = 2
+          OnClick = LoadingHasilSewingOUT1Click
         end
         object N29: TMenuItem
           Caption = '-'
@@ -601,6 +602,7 @@ object MainFrm: TMainFrm
         object InfoWIPSewing21: TMenuItem
           Caption = 'Info WIP Sewing 2'
           GroupIndex = 2
+          OnClick = InfoWIPSewing21Click
         end
       end
       object Finishing1: TMenuItem
@@ -609,6 +611,7 @@ object MainFrm: TMainFrm
         object erimaHasilSewingIN1: TMenuItem
           Caption = 'Terima Hasil Sewing'
           GroupIndex = 2
+          OnClick = erimaHasilSewingIN1Click
         end
         object SubkonFinishing1INOUT1: TMenuItem
           Caption = 'Subkon Finishing'

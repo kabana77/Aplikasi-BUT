@@ -92,7 +92,10 @@ uses
   WasteCutting in 'WasteCutting.pas' {WasteCuttingFrm},
   TerimaHslCutting in 'TerimaHslCutting.pas' {TerimaHslCuttingFrm},
   HasilSewing in 'HasilSewing.pas' {HasilSewingFrm},
-  InfoWIPSewing1 in 'InfoWIPSewing1.pas' {InfoWIPSewing1Frm};
+  InfoWIPSewing1 in 'InfoWIPSewing1.pas' {InfoWIPSewing1Frm},
+  TFSewing in 'TFSewing.pas' {TFSewingFrm},
+  TerimaHslSewing in 'TerimaHslSewing.pas' {TerimaHslSewingFrm},
+  InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm};
 
 {$R *.res}
 

@@ -3187,7 +3187,7 @@ object InfoWIPCutting2Frm: TInfoWIPCutting2Frm
               Font.Style = []
               ParentFont = False
               TabOrder = 1
-              OnClick = CheckBox3Click
+              OnClick = CheckBox1Click
             end
           end
         end

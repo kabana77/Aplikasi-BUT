@@ -211,6 +211,7 @@ type
     procedure wwDBGrid5RowChanged(Sender: TObject);
     procedure qB6AfterOpen(DataSet: TDataSet);
     procedure qBdetailBeforeOpen(DataSet: TDataSet);
+    procedure CheckBox1Click(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -657,37 +658,8 @@ begin
 end;
 
 procedure TInfoWIPCutting2Frm.CheckBox3Click(Sender: TObject);
-var
-  t1, t2 : Real;
-  i : Integer;
 begin
-  if CheckBox1.Checked then
-  begin
-    qBdetail.Close;
-    qBdetail.Open;
-    pDetail.Visible:=True;
-    wwDBGrid1.Refresh;
-    pItem.Caption:=qB6KD_ITEM.AsString+' - '+qB6NAMA_ITEM.AsString;
-
-    t1:=0;
-    t2:=0;
-    i:=0;
-    while not qBdetail.Eof do
-    begin
-      inc(i);
-      t1:=t1+qBdetailQTY_IN.AsFloat;
-      t2:=t2+qBdetailQTY_OUT.AsFloat;
-      qBdetail.Next;
-
-      wwDBGrid1.BringToFront;
-    end;
-    wwDBGrid1.ColumnByName('QTY_IN').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
-    wwDBGrid1.ColumnByName('QTY_OUT').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
-  end
-  else
-  begin
-    pDetail.Visible:=False;
-  end;
+  qB6.Filtered:=CheckBox3.Checked;  //qB6.Filtered:=CheckBox3.Checked;
 end;
 
 procedure TInfoWIPCutting2Frm.qB6FilterRecord(DataSet: TDataSet;
@@ -934,6 +906,40 @@ begin
   qBdetail.ParamByName('pkd_item').AsString:=qB6KD_ITEM.AsString;
   qBdetail.ParamByName('pawal').AsDate:=vfield_awal;
   qBdetail.ParamByName('pakhir').AsDate:=vfield_akhir;
+end;
+
+procedure TInfoWIPCutting2Frm.CheckBox1Click(Sender: TObject);
+var
+  t1, t2 : Real;
+  i : Integer;
+begin
+  if CheckBox1.Checked then
+  begin
+    qBdetail.Close;
+    qBdetail.Open;
+    pDetail.Visible:=True;
+    wwDBGrid1.Refresh;
+    pItem.Caption:=qB6KD_ITEM.AsString+' - '+qB6NAMA_ITEM.AsString;
+
+    t1:=0;
+    t2:=0;
+    i:=0;
+    while not qBdetail.Eof do
+    begin
+      inc(i);
+      t1:=t1+qBdetailQTY_IN.AsFloat;
+      t2:=t2+qBdetailQTY_OUT.AsFloat;
+      qBdetail.Next;
+
+      wwDBGrid1.BringToFront;
+    end;
+    wwDBGrid1.ColumnByName('QTY_IN').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t1);
+    wwDBGrid1.ColumnByName('QTY_OUT').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',t2);
+  end
+  else
+  begin
+    pDetail.Visible:=False;
+  end;
 end;
 
 end.
