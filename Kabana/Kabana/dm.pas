@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, Variants, DAScript, OraScript, DB, Wwdatsrc, Ora, ImgList,
   Controls, MyKonversi, ExtDlgs, MemDS, DBAccess, Dialogs, OdacVcl, Graphics, Forms,
   Wwintl, OraSmart, IdBaseComponent, IdComponent, IdTCPConnection,
-  IdTCPClient, IdHTTP, UseMD5;
+  IdTCPClient, IdHTTP, UseMD5, Sockets;
 
 type
   TDMFrm = class(TDataModule)

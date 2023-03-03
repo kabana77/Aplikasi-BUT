@@ -1,6 +1,6 @@
 object MyWebFrm: TMyWebFrm
-  Left = 326
-  Top = 146
+  Left = 482
+  Top = 340
   Width = 928
   Height = 480
   Caption = 'MyWebFrm'

@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 332
+  Left = 334
   Top = 225
   Width = 800
   Height = 366
@@ -614,11 +614,12 @@ object MainFrm: TMainFrm
           OnClick = erimaHasilSewingIN1Click
         end
         object SubkonFinishing1INOUT1: TMenuItem
-          Caption = 'Subkon Finishing'
+          Caption = 'Jasa Washing'
           GroupIndex = 2
           object PengirimanIN1: TMenuItem
             Caption = 'Pengiriman [OUT]'
             GroupIndex = 3
+            OnClick = PengirimanIN1Click
           end
           object PenerimaanIN1: TMenuItem
             Caption = 'Penerimaan [IN]'
@@ -629,16 +630,16 @@ object MainFrm: TMainFrm
             GroupIndex = 3
           end
           object InfoMutasiFinishing12: TMenuItem
-            Caption = 'Info Mutasi Subkon Finishing'
+            Caption = 'Info Mutasi Jasa Washing'
             GroupIndex = 3
           end
         end
-        object WasteFinishingOUT1: TMenuItem
-          Caption = 'Waste Finishing'
-          GroupIndex = 2
-        end
         object erimaHasilFinishing11: TMenuItem
           Caption = 'Hasil Finishing [Barang Jadi]'
+          GroupIndex = 2
+        end
+        object WasteFinishingOUT1: TMenuItem
+          Caption = 'Waste Finishing'
           GroupIndex = 2
         end
         object LoadingBarangJadiOUT1: TMenuItem
@@ -664,6 +665,7 @@ object MainFrm: TMainFrm
         object PemasukanWaste1: TMenuItem
           Caption = 'Pemasukan Waste [IN]'
           GroupIndex = 2
+          OnClick = PemasukanWaste1Click
         end
         object PenyelesaianWasteOUT1: TMenuItem
           Caption = 'Penyelesaian Waste [OUT]'
@@ -933,5 +935,11 @@ object MainFrm: TMainFrm
   object SmartQuery1: TSmartQuery
     Left = 192
     Top = 88
+  end
+  object Timer1: TTimer
+    Interval = 180000
+    OnTimer = Timer1Timer
+    Left = 336
+    Top = 72
   end
 end

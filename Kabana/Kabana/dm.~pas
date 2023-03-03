@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, Variants, DAScript, OraScript, DB, Wwdatsrc, Ora, ImgList,
   Controls, MyKonversi, ExtDlgs, MemDS, DBAccess, Dialogs, OdacVcl, Graphics, Forms,
   Wwintl, OraSmart, IdBaseComponent, IdComponent, IdTCPConnection,
-  IdTCPClient, IdHTTP, UseMD5;
+  IdTCPClient, IdHTTP, UseMD5, Sockets;
 
 type
   TDMFrm = class(TDataModule)
@@ -338,6 +338,7 @@ type
     qRekananSubkonJENIS: TStringField;
     qRekananSubkonKD_AREA: TStringField;
     qRekananSubkonISPOST: TStringField;
+    TcpClient1: TTcpClient;
     procedure KlikTopPanel(pnama_form : String);
     procedure pLogin;
     procedure pLogin2;

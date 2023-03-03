@@ -183,6 +183,7 @@ type
     N24: TMenuItem;
     N25: TMenuItem;
     N26: TMenuItem;
+    Timer1: TTimer;
     procedure Proc_HapusMenu;
     procedure Proc_Aktifkan_Menu;
     procedure FormCreate(Sender: TObject);
@@ -279,6 +280,9 @@ type
     procedure LoadingHasilSewingOUT1Click(Sender: TObject);
     procedure erimaHasilSewingIN1Click(Sender: TObject);
     procedure InfoWIPSewing21Click(Sender: TObject);
+    procedure PemasukanWaste1Click(Sender: TObject);
+    procedure PengirimanIN1Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
 
   private
     { Private declarations }
@@ -310,7 +314,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
   JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting,
   TerimaHslCutting, HasilSewing, InfoWIPSewing1, TFSewing, TerimaHslSewing,
-  InfoWIPSewing2;
+  InfoWIPSewing2, PemasukanWaste, JasaWashing;
 
 {$R *.dfm}
 
@@ -412,15 +416,17 @@ end;
 procedure TMainFrm.FormCreate(Sender: TObject);
 begin
   Caption:=cAppName;
-//  Proc_HapusMenu;
+  //  Proc_HapusMenu;
   if MDIChildCount>1 then
     ShowMessage('Tutup dulu semua Form !')
-    else
-    begin
-      DMFrm.pLogin;
-        if DMFrm.vDivisi<>'SYS' then
-           Proc_Aktifkan_Menu;
-    end;
+  else
+  begin
+    DMFrm.pLogin;
+    if DMFrm.vDivisi<>'SYS' then Proc_Aktifkan_Menu;
+  end;
+
+  // for auto reload app
+  Timer1.Enabled := True;
 end;
 
 procedure TMainFrm.Logout1Click(Sender: TObject);
@@ -2619,8 +2625,8 @@ begin
 end;
 
 procedure TMainFrm.InfoWIPSewing21Click(Sender: TObject);
-begin   {
-  if InfoWIPSewing2Frm=nil then InfoWIPSewing1Frm:=TInfoWIPSewing2Frm.Create(Application);
+begin
+  if InfoWIPSewing2Frm=nil then InfoWIPSewing2Frm:=TInfoWIPSewing2Frm.Create(Application);
   InfoWIPSewing2Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
   InfoWIPSewing2Frm.pTop.Caption:='     '+StringReplace(InfoWIPSewing2Frm.TabSheet6.Caption,'&','',[rfReplaceAll]);
   if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
@@ -2639,7 +2645,67 @@ begin   {
      InfoWIPSewing2Frm.vCanPrint:=False;
      InfoWIPSewing2Frm.vCanExport:=False;
   end;
-  InfoWIPSewing2Frm.Show;     }
+  InfoWIPSewing2Frm.Show;
+end;
+
+procedure TMainFrm.PemasukanWaste1Click(Sender: TObject);
+begin
+  if PemasukanWasteFrm=nil then PemasukanWasteFrm:=TPemasukanWasteFrm.Create(Application);
+  PemasukanWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  PemasukanWasteFrm.pTop.Caption:=' '+UpperCase(TerimaBBFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     PemasukanWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     PemasukanWasteFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     PemasukanWasteFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     PemasukanWasteFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     PemasukanWasteFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     PemasukanWasteFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     PemasukanWasteFrm.vCanAdd:=False;
+     PemasukanWasteFrm.vCanEdit:=False;
+     PemasukanWasteFrm.vCanDel:=False;
+     PemasukanWasteFrm.vCanPrint:=False;
+     PemasukanWasteFrm.vCanExport:=False;
+     PemasukanWasteFrm.vCanUnPost:=False;
+  end;
+  PemasukanWasteFrm.Show;
+end;
+
+procedure TMainFrm.PengirimanIN1Click(Sender: TObject);
+begin
+  if JasaWashingFrm=nil then JasaWashingFrm:=TJasaWashingFrm.Create(Application);
+  JasaWashingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  JasaWashingFrm.pTop.Caption:=' '+UpperCase(JasaWashingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     JasaWashingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     JasaWashingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     JasaWashingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     JasaWashingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     JasaWashingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     JasaWashingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     JasaWashingFrm.vCanAdd:=False;
+     JasaWashingFrm.vCanEdit:=False;
+     JasaWashingFrm.vCanDel:=False;
+     JasaWashingFrm.vCanPrint:=False;
+     JasaWashingFrm.vCanExport:=False;
+     JasaWashingFrm.vCanUnPost:=False;
+  end;
+  JasaWashingFrm.Show;
+end;
+
+procedure TMainFrm.Timer1Timer(Sender: TObject);
+begin
+  // auto reload every 3 minutes
+  SmartQuery1.Close;
+  SmartQuery1.SQL.Text:='select sysdate from dual';
+  SmartQuery1.Open;
 end;
 
 end.

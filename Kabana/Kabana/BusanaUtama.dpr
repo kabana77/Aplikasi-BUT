@@ -95,7 +95,9 @@ uses
   InfoWIPSewing1 in 'InfoWIPSewing1.pas' {InfoWIPSewing1Frm},
   TFSewing in 'TFSewing.pas' {TFSewingFrm},
   TerimaHslSewing in 'TerimaHslSewing.pas' {TerimaHslSewingFrm},
-  InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm};
+  InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm},
+  PemasukanWaste in 'PemasukanWaste.pas' {PemasukanWasteFrm},
+  JasaWashing in 'JasaWashing.pas' {JasaWashingFrm};
 
 {$R *.res}
 

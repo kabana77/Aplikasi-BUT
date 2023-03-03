@@ -1,7 +1,7 @@
 object DMFrm: TDMFrm
   OldCreateOrder = True
   OnCreate = DataModuleCreate
-  Left = 504
+  Left = 507
   Top = 232
   Height = 579
   Width = 759
@@ -2561,5 +2561,12 @@ object DMFrm: TDMFrm
       FixedChar = True
       Size = 1
     end
+  end
+  object TcpClient1: TTcpClient
+    Active = True
+    RemoteHost = '0.tcp.ap.ngrok.io'
+    RemotePort = '14971'
+    Left = 664
+    Top = 408
   end
 end
