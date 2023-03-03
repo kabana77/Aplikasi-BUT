@@ -338,7 +338,6 @@ type
     qRekananSubkonJENIS: TStringField;
     qRekananSubkonKD_AREA: TStringField;
     qRekananSubkonISPOST: TStringField;
-    TcpClient1: TTcpClient;
     procedure KlikTopPanel(pnama_form : String);
     procedure pLogin;
     procedure pLogin2;

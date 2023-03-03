@@ -2562,11 +2562,4 @@ object DMFrm: TDMFrm
       Size = 1
     end
   end
-  object TcpClient1: TTcpClient
-    Active = True
-    RemoteHost = '0.tcp.ap.ngrok.io'
-    RemotePort = '14971'
-    Left = 664
-    Top = 408
-  end
 end
