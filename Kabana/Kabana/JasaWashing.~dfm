@@ -4819,20 +4819,6 @@ object JasaWashingFrm: TJasaWashingFrm
             ParentFont = False
             Transparent = True
           end
-          object Label4: TLabel
-            Left = 560
-            Top = 74
-            Width = 49
-            Height = 13
-            Caption = 'Jenis Jasa'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
           object DBMemo1: TDBMemo
             Left = 96
             Top = 61
@@ -4972,26 +4958,6 @@ object JasaWashingFrm: TJasaWashingFrm
             OnCloseUp = wwDBLookupComboDlg1CloseUp
             OnEnter = wwDBLookupComboDlg1Enter
           end
-          object wwDBComboBoxX: TwwDBComboBox
-            Left = 624
-            Top = 73
-            Width = 121
-            Height = 19
-            ShowButton = True
-            Style = csDropDown
-            MapList = True
-            AllowClearKey = False
-            DataField = 'JENIS_JASA'
-            DataSource = dsqBMaster
-            DropDownCount = 8
-            ItemHeight = 0
-            Items.Strings = (
-              'BORDIR'#9'BORDIR'
-              'PRINTING'#9'PRINTING')
-            Sorted = False
-            TabOrder = 6
-            UnboundDataType = wwDefault
-          end
         end
         object pMaster2: TPanel
           Left = 1051
@@ -5011,7 +4977,7 @@ object JasaWashingFrm: TJasaWashingFrm
           object Label19: TLabel
             Left = 0
             Top = 479
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'

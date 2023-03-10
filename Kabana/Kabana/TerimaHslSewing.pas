@@ -441,14 +441,6 @@ type
     qBDetailSAT_A: TStringField;
     qBDetailSAT_T: TStringField;
     qBDetailSAT_D: TStringField;
-    qB1TGL: TDateTimeField;
-    qB1NO_REFF2: TStringField;
-    qB1KETERANGAN: TStringField;
-    qB1ISPOST: TStringField;
-    qB1OPR_INSERT: TStringField;
-    qB1TGL_INSERT: TDateTimeField;
-    qB1OPR_APPROVE: TStringField;
-    qB1TGL_APPROVE: TDateTimeField;
     qBMasterKD_FORM: TStringField;
     qBMasterNO_REG_OS: TFloatField;
     qBMasterTGL: TDateTimeField;
@@ -468,17 +460,25 @@ type
     QRLabel215: TQRLabel;
     QRLabel4: TQRLabel;
     QRLabel7: TQRLabel;
-    qB1KETERANGAN2: TStringField;
-    qB1NO_BUKTI: TStringField;
-    qB1NO_REG_OS: TFloatField;
-    qB1KD_ITEM: TStringField;
-    qB1SAT_D: TStringField;
-    qB1QTY_D: TFloatField;
     QRDBText5: TQRDBText;
     QRLabel18: TQRLabel;
     QRLabel21: TQRLabel;
     qBMasterNO_BOM: TFloatField;
     qBDetailNO_BOM: TFloatField;
+    qB1NO_REG_OS: TFloatField;
+    qB1NO_BUKTI: TStringField;
+    qB1NO_REFF2: TStringField;
+    qB1TGL: TDateTimeField;
+    qB1ISPOST: TStringField;
+    qB1OPR_INSERT: TStringField;
+    qB1TGL_INSERT: TDateTimeField;
+    qB1OPR_APPROVE: TStringField;
+    qB1TGL_APPROVE: TDateTimeField;
+    qB1KD_ITEM: TStringField;
+    qB1KETERANGAN: TStringField;
+    qB1SAT_D: TStringField;
+    qB1QTY_D: TFloatField;
+    qB1KETERANGAN2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1132,7 +1132,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
-  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
 
   tsInputD2.TabVisible:=false;
   TabSheet4.TabVisible:=false;
@@ -1261,14 +1261,14 @@ end;
 
 procedure TTerimaHslSewingFrm.lcdItemEnter(Sender: TObject);
 begin
-  qItem.Open;
+  //qItem.Open;
 end;
 
 procedure TTerimaHslSewingFrm.lcdItemUserButton1Click(Sender: TObject;
   LookupTable: TDataSet);
 begin
-  qItem.Close;
-  qItem.Open;
+  //qItem.Close;
+  //qItem.Open;
 end;
 
 procedure TTerimaHslSewingFrm.qBDetailKD_ITEMChange(Sender: TField);
@@ -1685,15 +1685,16 @@ procedure TTerimaHslSewingFrm.lcdItemUserButton2Click(Sender: TObject;
 var
   vmyfilter : String;
 begin
+
   if InputQuery('Filter','Keyword : ',vmyfilter) then
   begin
       qItem.Close;
-      qItem.SQL.Clear;
+      {qItem.SQL.Clear;
       qItem.SQL.Add(vsql_item+' where');
       qItem.SQL.Add('kd_item like ''%'+vmyfilter+'%'' or');
       qItem.SQL.Add('nama_item like ''%'+vmyfilter+'%'' or');
       qItem.SQL.Add('nama_prinsipal like ''%'+vmyfilter+'%'' or');
-      qItem.SQL.Add('xsize like ''%'+vmyfilter+'%''');
+      qItem.SQL.Add('xsize like ''%'+vmyfilter+'%''');  }
       qItem.Open;
   end;
 end;
@@ -1758,7 +1759,7 @@ end;
 
 procedure TTerimaHslSewingFrm.qItemBeforeOpen(DataSet: TDataSet);
 begin
-  qItem.ParamByName('pno_reg_d2').AsFloat:=FloatField1.AsFloat;
+//  qItem.ParamByName('pno_reg_d2').AsFloat:=FloatField1.AsFloat;
 end;
 
 procedure TTerimaHslSewingFrm.lcdBOMUserButton1Click(Sender: TObject;

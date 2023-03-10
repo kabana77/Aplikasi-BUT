@@ -448,8 +448,6 @@ type
     qB1QTY_D: TFloatField;
     qB1KETERANGAN2: TStringField;
     qB1NAMA_PRINSIPAL: TStringField;
-    Label4: TLabel;
-    wwDBComboBoxX: TwwDBComboBox;
     qBMasterJENIS_JASA: TStringField;
     QRDBText5: TQRDBText;
     QRDBText14: TQRDBText;
@@ -1135,6 +1133,7 @@ begin
   qBMasterISPOST.AsString:='0';
   qBMasterOPR_INSERT.AsString:=DMFrm.qDateTimeVUSER.AsString;
   qBMasterTGL_INSERT.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+  qBMasterJENIS_JASA.AsString:='WASHING';
   qBomD.Close;
 end;
 

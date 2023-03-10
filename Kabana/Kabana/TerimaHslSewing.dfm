@@ -5543,61 +5543,62 @@ object TerimaHslSewingFrm: TTerimaHslSewingFrm
       'on a.no_reg_os = b.no_reg_os')
     ReadOnly = True
     Left = 1083
-    object qB1TGL: TDateTimeField
-      FieldName = 'TGL'
-      Required = True
-    end
-    object qB1NO_REFF2: TStringField
-      FieldName = 'NO_REFF2'
-      Required = True
-      Size = 15
-    end
-    object qB1KETERANGAN: TStringField
-      FieldName = 'KETERANGAN'
-      Required = True
-      Size = 128
-    end
-    object qB1ISPOST: TStringField
-      FieldName = 'ISPOST'
-      Required = True
-      FixedChar = True
-      Size = 1
-    end
-    object qB1OPR_INSERT: TStringField
-      FieldName = 'OPR_INSERT'
-      Required = True
-      Size = 50
-    end
-    object qB1TGL_INSERT: TDateTimeField
-      FieldName = 'TGL_INSERT'
-      Required = True
-    end
-    object qB1OPR_APPROVE: TStringField
-      FieldName = 'OPR_APPROVE'
-      Size = 50
-    end
-    object qB1TGL_APPROVE: TDateTimeField
-      FieldName = 'TGL_APPROVE'
-    end
-    object qB1KETERANGAN2: TStringField
-      FieldName = 'KETERANGAN2'
+    object qB1NO_REG_OS: TFloatField
+      FieldName = 'NO_REG_OS'
       ReadOnly = True
-      Size = 225
+      Required = True
     end
     object qB1NO_BUKTI: TStringField
       FieldName = 'NO_BUKTI'
       ReadOnly = True
       Size = 15
     end
-    object qB1NO_REG_OS: TFloatField
-      FieldName = 'NO_REG_OS'
+    object qB1NO_REFF2: TStringField
+      FieldName = 'NO_REFF2'
+      ReadOnly = True
+      Size = 15
+    end
+    object qB1TGL: TDateTimeField
+      FieldName = 'TGL'
       ReadOnly = True
       Required = True
+    end
+    object qB1ISPOST: TStringField
+      FieldName = 'ISPOST'
+      ReadOnly = True
+      Required = True
+      FixedChar = True
+      Size = 1
+    end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      ReadOnly = True
+      Required = True
+      Size = 50
+    end
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+      ReadOnly = True
+      Required = True
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      ReadOnly = True
+      Size = 50
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+      ReadOnly = True
     end
     object qB1KD_ITEM: TStringField
       FieldName = 'KD_ITEM'
       ReadOnly = True
       Size = 12
+    end
+    object qB1KETERANGAN: TStringField
+      FieldName = 'KETERANGAN'
+      ReadOnly = True
+      Size = 255
     end
     object qB1SAT_D: TStringField
       FieldName = 'SAT_D'
@@ -5607,7 +5608,11 @@ object TerimaHslSewingFrm: TTerimaHslSewingFrm
     object qB1QTY_D: TFloatField
       FieldName = 'QTY_D'
       ReadOnly = True
-      DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qB1KETERANGAN2: TStringField
+      FieldName = 'KETERANGAN2'
+      ReadOnly = True
+      Size = 225
     end
   end
   object dsqB1: TwwDataSource

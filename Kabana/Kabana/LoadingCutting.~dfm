@@ -1,5 +1,5 @@
 object LoadingCuttingFrm: TLoadingCuttingFrm
-  Left = 432
+  Left = 433
   Top = 191
   Width = 1330
   Height = 656

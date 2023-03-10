@@ -283,6 +283,8 @@ type
     procedure PemasukanWaste1Click(Sender: TObject);
     procedure PengirimanIN1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
+    procedure PenerimaanIN1Click(Sender: TObject);
+    procedure InfoMutasiFinishing12Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -314,7 +316,8 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
   JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting,
   TerimaHslCutting, HasilSewing, InfoWIPSewing1, TFSewing, TerimaHslSewing,
-  InfoWIPSewing2, PemasukanWaste, JasaWashing;
+  InfoWIPSewing2, PemasukanWaste, JasaWashing, TerimaJasaWashing,
+  InfoWIPWashingSubkon;
 
 {$R *.dfm}
 
@@ -2424,7 +2427,7 @@ procedure TMainFrm.Penerimaan1Click(Sender: TObject);
 begin
   if TerimaJasaBordirFrm=nil then TerimaJasaBordirFrm:=TTerimaJasaBordirFrm.Create(Application);
   TerimaJasaBordirFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
-  TerimaJasaBordirFrm.pTop.Caption:=' '+UpperCase(TerimaBBFrm.Caption);
+  TerimaJasaBordirFrm.pTop.Caption:=' '+UpperCase(TerimaJasaBordirFrm.Caption);
   if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
   begin
      TerimaJasaBordirFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
@@ -2706,6 +2709,56 @@ begin
   SmartQuery1.Close;
   SmartQuery1.SQL.Text:='select sysdate from dual';
   SmartQuery1.Open;
+end;
+
+procedure TMainFrm.PenerimaanIN1Click(Sender: TObject);
+begin
+ if TerimaJasaWashingFrm=nil then TerimaJasaWashingFrm:=TTerimaJasaWashingFrm.Create(Application);
+  TerimaJasaWashingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  TerimaJasaWashingFrm.pTop.Caption:=' '+UpperCase(TerimaJasaWashingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     TerimaJasaWashingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     TerimaJasaWashingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     TerimaJasaWashingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     TerimaJasaWashingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     TerimaJasaWashingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     TerimaJasaWashingFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     TerimaJasaWashingFrm.vCanAdd:=False;
+     TerimaJasaWashingFrm.vCanEdit:=False;
+     TerimaJasaWashingFrm.vCanDel:=False;
+     TerimaJasaWashingFrm.vCanPrint:=False;
+     TerimaJasaWashingFrm.vCanExport:=False;
+     TerimaJasaWashingFrm.vCanUnPost:=False;
+  end;
+  TerimaJasaWashingFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiFinishing12Click(Sender: TObject);
+begin
+  if InfoWIPWashingSubkonFrm=nil then InfoWIPWashingSubkonFrm:=TInfoWIPWashingSubkonFrm.Create(Application);
+  InfoWIPWashingSubkonFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPWashingSubkonFrm.pTop.Caption:='     '+StringReplace(InfoWIPWashingSubkonFrm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPWashingSubkonFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPWashingSubkonFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPWashingSubkonFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPWashingSubkonFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPWashingSubkonFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPWashingSubkonFrm.vCanAdd:=False;
+     InfoWIPWashingSubkonFrm.vCanEdit:=False;
+     InfoWIPWashingSubkonFrm.vCanDel:=False;
+     InfoWIPWashingSubkonFrm.vCanPrint:=False;
+     InfoWIPWashingSubkonFrm.vCanExport:=False;
+  end;
+  InfoWIPWashingSubkonFrm.Show;
 end;
 
 end.

@@ -3116,7 +3116,7 @@ object TerimaJasaBordirFrm: TTerimaJasaBordirFrm
               AutoStretch = False
               Color = clWhite
               DataSet = qBMaster
-              DataField = 'ID_PRINSIPAL'
+              DataField = 'NAMA_PRINSIPAL'
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
               Font.Height = -13

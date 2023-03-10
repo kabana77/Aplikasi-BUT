@@ -1,5 +1,5 @@
 object TerimaHslCuttingFrm: TTerimaHslCuttingFrm
-  Left = 244
+  Left = 246
   Top = 133
   Width = 1382
   Height = 784

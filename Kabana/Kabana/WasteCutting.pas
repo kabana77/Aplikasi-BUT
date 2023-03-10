@@ -1115,7 +1115,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
-  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
 
   tsInputD2.TabVisible:=false;
   TabSheet4.TabVisible:=false;

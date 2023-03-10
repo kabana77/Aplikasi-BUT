@@ -1,5 +1,5 @@
 object WasteCuttingFrm: TWasteCuttingFrm
-  Left = 235
+  Left = 236
   Top = 153
   Width = 1382
   Height = 784

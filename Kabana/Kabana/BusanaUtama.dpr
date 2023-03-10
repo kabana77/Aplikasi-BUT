@@ -97,7 +97,9 @@ uses
   TerimaHslSewing in 'TerimaHslSewing.pas' {TerimaHslSewingFrm},
   InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm},
   PemasukanWaste in 'PemasukanWaste.pas' {PemasukanWasteFrm},
-  JasaWashing in 'JasaWashing.pas' {JasaWashingFrm};
+  JasaWashing in 'JasaWashing.pas' {JasaWashingFrm},
+  TerimaJasaWashing in 'TerimaJasaWashing.pas' {TerimaJasaWashingFrm},
+  InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm};
 
 {$R *.res}
 

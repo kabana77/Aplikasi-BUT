@@ -1,5 +1,5 @@
 object HasilSewingFrm: THasilSewingFrm
-  Left = 315
+  Left = 317
   Top = 128
   Width = 1382
   Height = 784
