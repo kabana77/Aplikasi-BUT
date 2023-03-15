@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 337
-  Top = 225
+  Left = 533
+  Top = 207
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -639,25 +639,24 @@ object MainFrm: TMainFrm
         object erimaHasilFinishing11: TMenuItem
           Caption = 'Hasil Finishing [Barang Jadi]'
           GroupIndex = 2
+          OnClick = erimaHasilFinishing11Click
         end
         object WasteFinishingOUT1: TMenuItem
           Caption = 'Waste Finishing'
           GroupIndex = 2
+          OnClick = WasteFinishingOUT1Click
         end
         object LoadingBarangJadiOUT1: TMenuItem
           Caption = 'Loading Barang Jadi'
           GroupIndex = 2
+          OnClick = LoadingBarangJadiOUT1Click
         end
         object N24: TMenuItem
           Caption = '-'
           GroupIndex = 2
         end
         object InfoMutasiFinishing11: TMenuItem
-          Caption = 'Info Finishing 1'
-          GroupIndex = 2
-        end
-        object InfoFinishing21: TMenuItem
-          Caption = 'Info Finishing 2'
+          Caption = 'Info WIP Finishing'
           GroupIndex = 2
         end
       end

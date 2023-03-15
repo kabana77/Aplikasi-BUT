@@ -8689,7 +8689,7 @@ object BOMFrm: TBOMFrm
       'order by b.nama_prinsipal, a.nama_item'
       ') A'
       'LEFT JOIN PIB B ON A.NO_PIB=B.NO_REG_OS'
-      'WHERE substr(a.kd_item, 1,2) in ('#39'12'#39', '#39'17'#39', '#39'18'#39', '#39'14'#39')'
+      'WHERE substr(a.kd_item, 1,2) in ('#39'12'#39', '#39'17'#39', '#39'18'#39', '#39'14'#39', '#39'11'#39')'
       ''
       
         '/*select a.*, b.nama_prinsipal from daftar_item a, daftar_prinsi' +

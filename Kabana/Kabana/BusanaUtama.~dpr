@@ -98,7 +98,11 @@ uses
   InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm},
   PemasukanWaste in 'PemasukanWaste.pas' {PemasukanWasteFrm},
   JasaWashing in 'JasaWashing.pas' {JasaWashingFrm},
-  TerimaJasaWashing in 'TerimaJasaWashing.pas' {TerimaJasaWashingFrm};
+  TerimaJasaWashing in 'TerimaJasaWashing.pas' {TerimaJasaWashingFrm},
+  InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm},
+  HasilFinishing in 'HasilFinishing.pas' {HasilFinishingFrm},
+  WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
+  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm};
 
 {$R *.res}
 
@@ -108,5 +112,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
+  Application.CreateForm(TLoadingHslFinishingFrm, LoadingHslFinishingFrm);
   Application.Run;
 end.

@@ -99,7 +99,10 @@ uses
   PemasukanWaste in 'PemasukanWaste.pas' {PemasukanWasteFrm},
   JasaWashing in 'JasaWashing.pas' {JasaWashingFrm},
   TerimaJasaWashing in 'TerimaJasaWashing.pas' {TerimaJasaWashingFrm},
-  InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm};
+  InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm},
+  HasilFinishing in 'HasilFinishing.pas' {HasilFinishingFrm},
+  WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
+  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm};
 
 {$R *.res}
 
