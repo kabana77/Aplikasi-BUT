@@ -102,7 +102,8 @@ uses
   InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm},
   HasilFinishing in 'HasilFinishing.pas' {HasilFinishingFrm},
   WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
-  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm};
+  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm},
+  InfoWIPFinishing in 'InfoWIPFinishing.pas' {InfoWIPFinishingFrm};
 
 {$R *.res}
 

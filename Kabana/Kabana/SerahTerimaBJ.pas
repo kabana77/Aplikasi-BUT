@@ -984,6 +984,76 @@ type
     qJurnalKREDIT: TFloatField;
     qBMasterTGL_APPROVE: TDateTimeField;
     qBMasterOPR_APPROVE: TStringField;
+    DBText3: TDBText;
+    DBEdit1: TDBEdit;
+    Label4: TLabel;
+    qBMasterALAMAT: TStringField;
+    qBom2: TSmartQuery;
+    dsqBom2: TwwDataSource;
+    qBom2NO_REG_D: TFloatField;
+    qBom2NO_REG_OS: TFloatField;
+    qBom2STYLE: TStringField;
+    qBom2ITEM: TStringField;
+    qBom2KELOMPOK: TStringField;
+    qBom2COLOR: TStringField;
+    qBom2SATUAN: TStringField;
+    qBom2XXS: TFloatField;
+    qBom2XS: TFloatField;
+    qBom2S: TFloatField;
+    qBom2M: TFloatField;
+    qBom2L: TFloatField;
+    qBom2XL: TFloatField;
+    qBom2X0: TFloatField;
+    qBom2X1: TFloatField;
+    qBom2X2: TFloatField;
+    qBom2X3: TFloatField;
+    qBom2TOT_QTY: TFloatField;
+    qBom2KETERANGAN: TStringField;
+    qBom2SIZE01: TFloatField;
+    qBom2SIZE02: TFloatField;
+    qBom2SIZE03: TFloatField;
+    qBom2SIZE04: TFloatField;
+    qBom2SIZE05: TFloatField;
+    qBom2SIZE06: TFloatField;
+    qBom2SIZE07: TFloatField;
+    qBom2SIZE08: TFloatField;
+    qBom2SIZE09: TFloatField;
+    qBom2SIZE10: TFloatField;
+    qBom2SIZE11: TFloatField;
+    qBom2SIZE12: TFloatField;
+    qBom2SIZE13: TFloatField;
+    qBom2SIZE14: TFloatField;
+    qBom2SIZE15: TFloatField;
+    qBom2LXXS: TStringField;
+    qBom2LXS: TStringField;
+    qBom2LS: TStringField;
+    qBom2LM: TStringField;
+    qBom2LL: TStringField;
+    qBom2LXL: TStringField;
+    qBom2LX0: TStringField;
+    qBom2LX1: TStringField;
+    qBom2LX2: TStringField;
+    qBom2LX3: TStringField;
+    qBom2LSIZE01: TStringField;
+    qBom2LSIZE02: TStringField;
+    qBom2LSIZE03: TStringField;
+    qBom2LSIZE04: TStringField;
+    qBom2LSIZE05: TStringField;
+    qBom2LSIZE06: TStringField;
+    qBom2LSIZE07: TStringField;
+    qBom2LSIZE08: TStringField;
+    qBom2LSIZE09: TStringField;
+    qBom2LSIZE10: TStringField;
+    qBom2LSIZE11: TStringField;
+    qBom2LSIZE12: TStringField;
+    qBom2LSIZE13: TStringField;
+    qBom2LSIZE14: TStringField;
+    qBom2LSIZE15: TStringField;
+    qBom2HRG: TFloatField;
+    qBom2MU: TStringField;
+    qBom2KURS: TFloatField;
+    qBom2NO_REFF: TStringField;
+    qBom2NO_REFF2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -3580,14 +3650,43 @@ end;
 procedure TSerahTerimaBJFrm.lcdBOMUserButton1Click(Sender: TObject;
   LookupTable: TDataSet);
 begin
+  if qBMasterALAMAT.AsString = '' then
+  begin
+    ShowMessage('Nomor load belum diisi!');
+    Abort;
+  end
+  else
+  begin
+    qBom2.Close;
+    qBom2.ParamByName('no_load').AsString:=qBMasterALAMAT.AsString;
+    qBom2.Open;
+  end;
+
+  {
   DMFrm.BOM.Close;
   DMFrm.BOM.Open;
+  }
 end;
 
 procedure TSerahTerimaBJFrm.lcdBOMEnter(Sender: TObject);
 begin
+
+  if qBMasterALAMAT.AsString = '' then
+  begin
+    ShowMessage('Nomor load belum diisi!');
+    Abort;
+  end
+  else
+  begin
+    qBom2.Close;
+    qBom2.ParamByName('no_load').AsString:=qBMasterALAMAT.AsString;
+    qBom2.Open;
+  end;
+
+  {
   DMFrm.BOM.Close;
   DMFrm.BOM.Open;
+  }
 end;
 
 procedure TSerahTerimaBJFrm.lcdBOMCloseUp(Sender: TObject; LookupTable,

@@ -287,6 +287,7 @@ type
     procedure erimaHasilFinishing11Click(Sender: TObject);
     procedure WasteFinishingOUT1Click(Sender: TObject);
     procedure LoadingBarangJadiOUT1Click(Sender: TObject);
+    procedure InfoMutasiFinishing11Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -320,7 +321,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   TerimaHslCutting, HasilSewing, InfoWIPSewing1, TFSewing, TerimaHslSewing,
   InfoWIPSewing2, PemasukanWaste, JasaWashing, TerimaJasaWashing,
   InfoWIPWashingSubkon, HasilFinishing, WasteFinishing,
-  LoadingHslFinishing;
+  LoadingHslFinishing, InfoWIPFinishing;
 
 {$R *.dfm}
 
@@ -2840,6 +2841,30 @@ begin
      LoadingHslFinishingFrm.vCanUnPost:=False;
   end;
   LoadingHslFinishingFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiFinishing11Click(Sender: TObject);
+begin
+if InfoWIPFinishingFrm=nil then InfoWIPFinishingFrm:=TInfoWIPFinishingFrm.Create(Application);
+   InfoWIPFinishingFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+   InfoWIPFinishingFrm.pTop.Caption:=' '+UpperCase(InfoWIPFinishingFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPFinishingFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPFinishingFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPFinishingFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPFinishingFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPFinishingFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPFinishingFrm.vCanAdd:=False;
+     InfoWIPFinishingFrm.vCanEdit:=False;
+     InfoWIPFinishingFrm.vCanDel:=False;
+     InfoWIPFinishingFrm.vCanPrint:=False;
+     InfoWIPFinishingFrm.vCanExport:=False;
+  end;
+  InfoWIPFinishingFrm.Show;
 end;
 
 end.

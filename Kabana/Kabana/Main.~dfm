@@ -1,6 +1,6 @@
 object MainFrm: TMainFrm
-  Left = 533
-  Top = 207
+  Left = 499
+  Top = 236
   Width = 800
   Height = 366
   Caption = 'MainFrm'
@@ -658,6 +658,7 @@ object MainFrm: TMainFrm
         object InfoMutasiFinishing11: TMenuItem
           Caption = 'Info WIP Finishing'
           GroupIndex = 2
+          OnClick = InfoMutasiFinishing11Click
         end
       end
       object WasteProduksi1: TMenuItem

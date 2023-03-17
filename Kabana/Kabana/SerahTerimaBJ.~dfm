@@ -1,8 +1,8 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 223
+  Left = 224
   Top = 154
   Width = 1356
-  Height = 692
+  Height = 689
   Caption = 'Serah Terima Barang Jadi'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 653
+    Height = 650
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -35,7 +35,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 40
     Top = 0
     Width = 1260
-    Height = 653
+    Height = 650
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -77,7 +77,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 624
+      Top = 621
       Width = 1260
       Height = 29
       Align = alBottom
@@ -292,8 +292,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       Left = 0
       Top = 50
       Width = 1260
-      Height = 574
-      ActivePage = TabSheet1
+      Height = 571
+      ActivePage = tsInput
       Align = alClient
       TabOrder = 2
       object TabSheet1: TTabSheet
@@ -2217,7 +2217,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Left = 0
           Top = 33
           Width = 1252
-          Height = 513
+          Height = 510
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -4549,8 +4549,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             Transparent = True
           end
           object DBText19: TDBText
-            Left = 968
-            Top = 42
+            Left = 967
+            Top = -1
             Width = 91
             Height = 24
             AutoSize = True
@@ -4566,10 +4566,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object Label16: TLabel
             Left = 912
-            Top = 48
-            Width = 46
+            Top = 6
+            Width = 44
             Height = 13
-            Caption = 'No. Order'
+            Caption = 'No. Bukti'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -4580,7 +4580,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object Label17: TLabel
             Left = 912
-            Top = 70
+            Top = 44
             Width = 39
             Height = 13
             Caption = 'Tanggal'
@@ -4607,12 +4607,12 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             Transparent = True
           end
           object Label34: TLabel
-            Left = 930
-            Top = 3
-            Width = 43
+            Left = 615
+            Top = 14
+            Width = 88
             Height = 13
             Cursor = crHandPoint
-            Caption = 'UnPOST'
+            Caption = 'Approve Canceled'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Height = -11
@@ -4689,10 +4689,40 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             Height = 13
             Caption = 'Hasil -->'
           end
+          object DBText3: TDBText
+            Left = 967
+            Top = 18
+            Width = 50
+            Height = 13
+            AutoSize = True
+            DataField = 'NO_REG_OS'
+            DataSource = dsqBMaster
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlue
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            Transparent = True
+          end
+          object Label4: TLabel
+            Left = 912
+            Top = 75
+            Width = 44
+            Height = 13
+            Caption = 'No. Load'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
           object DBMemo1: TDBMemo
             Left = 200
             Top = 16
-            Width = 702
+            Width = 377
             Height = 41
             DataField = 'KETERANGAN'
             DataSource = dsqBMaster
@@ -4705,8 +4735,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             TabOrder = 2
           end
           object wwCheckBox1: TwwCheckBox
-            Left = 912
-            Top = 16
+            Left = 597
+            Top = 27
             Width = 81
             Height = 17
             DisableThemes = False
@@ -4716,7 +4746,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             DisplayValueChecked = '1'
             DisplayValueUnchecked = '0'
             NullAndBlankState = cbUnchecked
-            Caption = 'Posted'
+            Caption = 'Approved'
             DataField = 'ISPOST'
             DataSource = dsqBMaster
             Font.Charset = DEFAULT_CHARSET
@@ -4774,7 +4804,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object VTgl: TwwDBDateTimePicker
             Left = 968
-            Top = 71
+            Top = 39
             Width = 121
             Height = 25
             BorderStyle = bsNone
@@ -4801,7 +4831,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object BitBtn2: TBitBtn
             Left = 968
-            Top = 120
+            Top = 124
             Width = 57
             Height = 22
             Caption = '&Add'
@@ -4840,7 +4870,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               'TOT_QTY'#9'6'#9'TOT_QTY'#9'F')
             DataField = 'NO_REFF'
             DataSource = dsqBMaster
-            LookupTable = DMFrm.BOM
+            LookupTable = qBom2
             LookupField = 'NO_REG_D'
             TabOrder = 1
             AutoDropDown = False
@@ -5007,7 +5037,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object GroupBox1: TGroupBox
             Left = 200
-            Top = 72
+            Top = 67
             Width = 689
             Height = 89
             Caption = ' Finished goods '
@@ -5069,12 +5099,21 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               PaintOptions.ActiveRecordColor = 16777175
             end
           end
+          object DBEdit1: TDBEdit
+            Left = 968
+            Top = 72
+            Width = 120
+            Height = 19
+            DataField = 'ALAMAT'
+            DataSource = dsqBMaster
+            TabOrder = 9
+          end
         end
         object pMaster2: TPanel
           Left = 1067
           Top = 257
           Width = 185
-          Height = 289
+          Height = 286
           Align = alRight
           BevelOuter = bvNone
           Color = 15395583
@@ -5087,8 +5126,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           TabOrder = 1
           object Label19: TLabel
             Left = 0
-            Top = 235
-            Width = 78
+            Top = 232
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -5116,7 +5155,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           end
           object DBMemo2: TDBMemo
             Left = 0
-            Top = 248
+            Top = 245
             Width = 185
             Height = 41
             TabStop = False
@@ -5144,7 +5183,6 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             DataSource = dsqBMaster
             Frame.Enabled = True
             Frame.NonFocusBorders = []
-            ReadOnly = True
             TabOrder = 1
             UnboundDataType = wwDefault
             WantReturns = False
@@ -5155,8 +5193,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Left = 0
           Top = 257
           Width = 1067
-          Height = 289
-          ActivePage = tsInputD3
+          Height = 286
+          ActivePage = tsInputD
           Align = alClient
           TabOrder = 2
           object tsInputD3: TTabSheet
@@ -5167,7 +5205,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Left = 0
               Top = 0
               Width = 1059
-              Height = 261
+              Height = 258
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5237,7 +5275,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Left = 0
               Top = 0
               Width = 1059
-              Height = 261
+              Height = 258
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'KD_ITEM;CustomEdit;lcdItem;F'
@@ -5416,7 +5454,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               Left = 0
               Top = 49
               Width = 1059
-              Height = 212
+              Height = 209
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
                 'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
@@ -12439,7 +12477,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 1300
     Top = 0
     Width = 40
-    Height = 653
+    Height = 650
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -13352,6 +13390,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       FieldName = 'OPR_APPROVE'
       Size = 50
     end
+    object qBMasterALAMAT: TStringField
+      FieldName = 'ALAMAT'
+      Size = 255
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
@@ -14090,7 +14132,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object dsqB3: TwwDataSource
     DataSet = qB3
     Left = 1035
-    Top = 264
+    Top = 272
   end
   object qB5: TSmartQuery
     Session = DMFrm.OS
@@ -14135,8 +14177,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     ReadOnly = True
     BeforeOpen = qB5BeforeOpen
     OnCalcFields = qB5CalcFields
-    Left = 1115
-    Top = 240
+    Left = 1091
+    Top = 232
     ParamData = <
       item
         DataType = ftDateTime
@@ -14250,7 +14292,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object dsqB5: TwwDataSource
     DataSet = qB5
     Left = 1115
-    Top = 264
+    Top = 280
   end
   object qB6: TSmartQuery
     Session = DMFrm.OS
@@ -14410,7 +14452,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object dsqB6: TwwDataSource
     DataSet = qB6
     Left = 1171
-    Top = 264
+    Top = 288
   end
   object qLookNoSeri: TSmartQuery
     Session = DMFrm.OS
@@ -14752,8 +14794,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1091
-    Top = 120
+    Left = 1139
+    Top = 112
   end
   object qBom: TOraQuery
     Session = DMFrm.OS
@@ -14899,7 +14941,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     BeforeOpen = qBDetail9BeforeOpen
     Left = 971
-    Top = 176
+    Top = 200
     ParamData = <
       item
         DataType = ftFloat
@@ -15250,5 +15292,301 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       ReadOnly = True
       DisplayFormat = '#,#;(#,#);-'
     end
+  end
+  object qBom2: TSmartQuery
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'select a.* from'
+      '('
+      ' select a.*, b.no_reff, c.no_reff as no_reff2 from bom_d a'
+      ' left join bom b on a.no_reg_os=b.no_reg_os and b.ispost='#39'1'#39
+      ' left join kontrak c on b.no_reff=c.no_reg_os'
+      ') a,'
+      '('
+      ' select distinct to_number(substr(b.kd_item,1,6)) as no_bom'
+      ' from'
+      '  wip_finishing a,'
+      '  wip_finishing_d b'
+      
+        ' where a.no_bukti=:no_load and a.ispost='#39'1'#39' and a.no_reg_os=b.no' +
+        '_reg_os'
+      ') b'
+      'where a.no_reg_d=b.no_bom')
+    ReadOnly = True
+    Left = 1139
+    Top = 368
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'no_load'
+      end>
+    object qBom2NO_REG_D: TFloatField
+      FieldName = 'NO_REG_D'
+      Required = True
+    end
+    object qBom2NO_REG_OS: TFloatField
+      FieldName = 'NO_REG_OS'
+      Required = True
+    end
+    object qBom2STYLE: TStringField
+      FieldName = 'STYLE'
+      Required = True
+      Size = 128
+    end
+    object qBom2ITEM: TStringField
+      FieldName = 'ITEM'
+      Required = True
+      Size = 50
+    end
+    object qBom2KELOMPOK: TStringField
+      FieldName = 'KELOMPOK'
+      Required = True
+      Size = 50
+    end
+    object qBom2COLOR: TStringField
+      FieldName = 'COLOR'
+      Required = True
+      Size = 50
+    end
+    object qBom2SATUAN: TStringField
+      FieldName = 'SATUAN'
+      Required = True
+      Size = 12
+    end
+    object qBom2XXS: TFloatField
+      FieldName = 'XXS'
+      Required = True
+    end
+    object qBom2XS: TFloatField
+      FieldName = 'XS'
+      Required = True
+    end
+    object qBom2S: TFloatField
+      FieldName = 'S'
+      Required = True
+    end
+    object qBom2M: TFloatField
+      FieldName = 'M'
+      Required = True
+    end
+    object qBom2L: TFloatField
+      FieldName = 'L'
+      Required = True
+    end
+    object qBom2XL: TFloatField
+      FieldName = 'XL'
+      Required = True
+    end
+    object qBom2X0: TFloatField
+      FieldName = 'X0'
+      Required = True
+    end
+    object qBom2X1: TFloatField
+      FieldName = 'X1'
+      Required = True
+    end
+    object qBom2X2: TFloatField
+      FieldName = 'X2'
+      Required = True
+    end
+    object qBom2X3: TFloatField
+      FieldName = 'X3'
+      Required = True
+    end
+    object qBom2TOT_QTY: TFloatField
+      FieldName = 'TOT_QTY'
+      Required = True
+    end
+    object qBom2KETERANGAN: TStringField
+      FieldName = 'KETERANGAN'
+      Size = 255
+    end
+    object qBom2SIZE01: TFloatField
+      FieldName = 'SIZE01'
+      Required = True
+    end
+    object qBom2SIZE02: TFloatField
+      FieldName = 'SIZE02'
+      Required = True
+    end
+    object qBom2SIZE03: TFloatField
+      FieldName = 'SIZE03'
+      Required = True
+    end
+    object qBom2SIZE04: TFloatField
+      FieldName = 'SIZE04'
+      Required = True
+    end
+    object qBom2SIZE05: TFloatField
+      FieldName = 'SIZE05'
+      Required = True
+    end
+    object qBom2SIZE06: TFloatField
+      FieldName = 'SIZE06'
+      Required = True
+    end
+    object qBom2SIZE07: TFloatField
+      FieldName = 'SIZE07'
+      Required = True
+    end
+    object qBom2SIZE08: TFloatField
+      FieldName = 'SIZE08'
+      Required = True
+    end
+    object qBom2SIZE09: TFloatField
+      FieldName = 'SIZE09'
+      Required = True
+    end
+    object qBom2SIZE10: TFloatField
+      FieldName = 'SIZE10'
+      Required = True
+    end
+    object qBom2SIZE11: TFloatField
+      FieldName = 'SIZE11'
+      Required = True
+    end
+    object qBom2SIZE12: TFloatField
+      FieldName = 'SIZE12'
+      Required = True
+    end
+    object qBom2SIZE13: TFloatField
+      FieldName = 'SIZE13'
+      Required = True
+    end
+    object qBom2SIZE14: TFloatField
+      FieldName = 'SIZE14'
+      Required = True
+    end
+    object qBom2SIZE15: TFloatField
+      FieldName = 'SIZE15'
+      Required = True
+    end
+    object qBom2LXXS: TStringField
+      FieldName = 'LXXS'
+      Size = 50
+    end
+    object qBom2LXS: TStringField
+      FieldName = 'LXS'
+      Size = 50
+    end
+    object qBom2LS: TStringField
+      FieldName = 'LS'
+      Size = 50
+    end
+    object qBom2LM: TStringField
+      FieldName = 'LM'
+      Size = 50
+    end
+    object qBom2LL: TStringField
+      FieldName = 'LL'
+      Size = 50
+    end
+    object qBom2LXL: TStringField
+      FieldName = 'LXL'
+      Size = 50
+    end
+    object qBom2LX0: TStringField
+      FieldName = 'LX0'
+      Size = 50
+    end
+    object qBom2LX1: TStringField
+      FieldName = 'LX1'
+      Size = 50
+    end
+    object qBom2LX2: TStringField
+      FieldName = 'LX2'
+      Size = 50
+    end
+    object qBom2LX3: TStringField
+      FieldName = 'LX3'
+      Size = 50
+    end
+    object qBom2LSIZE01: TStringField
+      FieldName = 'LSIZE01'
+      Size = 50
+    end
+    object qBom2LSIZE02: TStringField
+      FieldName = 'LSIZE02'
+      Size = 50
+    end
+    object qBom2LSIZE03: TStringField
+      FieldName = 'LSIZE03'
+      Size = 50
+    end
+    object qBom2LSIZE04: TStringField
+      FieldName = 'LSIZE04'
+      Size = 50
+    end
+    object qBom2LSIZE05: TStringField
+      FieldName = 'LSIZE05'
+      Size = 50
+    end
+    object qBom2LSIZE06: TStringField
+      FieldName = 'LSIZE06'
+      Size = 50
+    end
+    object qBom2LSIZE07: TStringField
+      FieldName = 'LSIZE07'
+      Size = 50
+    end
+    object qBom2LSIZE08: TStringField
+      FieldName = 'LSIZE08'
+      Size = 50
+    end
+    object qBom2LSIZE09: TStringField
+      FieldName = 'LSIZE09'
+      Size = 50
+    end
+    object qBom2LSIZE10: TStringField
+      FieldName = 'LSIZE10'
+      Size = 50
+    end
+    object qBom2LSIZE11: TStringField
+      FieldName = 'LSIZE11'
+      Size = 50
+    end
+    object qBom2LSIZE12: TStringField
+      FieldName = 'LSIZE12'
+      Size = 50
+    end
+    object qBom2LSIZE13: TStringField
+      FieldName = 'LSIZE13'
+      Size = 50
+    end
+    object qBom2LSIZE14: TStringField
+      FieldName = 'LSIZE14'
+      Size = 50
+    end
+    object qBom2LSIZE15: TStringField
+      FieldName = 'LSIZE15'
+      Size = 50
+    end
+    object qBom2HRG: TFloatField
+      FieldName = 'HRG'
+      Required = True
+    end
+    object qBom2MU: TStringField
+      FieldName = 'MU'
+      Required = True
+      Size = 3
+    end
+    object qBom2KURS: TFloatField
+      FieldName = 'KURS'
+      Required = True
+    end
+    object qBom2NO_REFF: TStringField
+      FieldName = 'NO_REFF'
+      ReadOnly = True
+    end
+    object qBom2NO_REFF2: TStringField
+      FieldName = 'NO_REFF2'
+      ReadOnly = True
+      Size = 50
+    end
+  end
+  object dsqBom2: TwwDataSource
+    DataSet = qBom2
+    Left = 1187
+    Top = 368
   end
 end

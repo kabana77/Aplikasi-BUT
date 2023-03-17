@@ -102,7 +102,8 @@ uses
   InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm},
   HasilFinishing in 'HasilFinishing.pas' {HasilFinishingFrm},
   WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
-  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm};
+  LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm},
+  InfoWIPFinishing in 'InfoWIPFinishing.pas' {InfoWIPFinishingFrm};
 
 {$R *.res}
 
@@ -112,6 +113,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TLoadingHslFinishingFrm, LoadingHslFinishingFrm);
+  Application.CreateForm(TInfoWIPFinishingFrm, InfoWIPFinishingFrm);
   Application.Run;
 end.
