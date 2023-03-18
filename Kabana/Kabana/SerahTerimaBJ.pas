@@ -49,11 +49,6 @@ type
     qBXSUB_TOTAL: TFloatField;
     tsInput: TTabSheet;
     pMaster: TPanel;
-    pMaster2: TPanel;
-    PageControl2: TPageControl;
-    tsInputD: TTabSheet;
-    dbGridD: TwwDBGrid;
-    wwIButton1: TwwIButton;
     qBDetail: TSmartQuery;
     dsqBDetail: TwwDataSource;
     qBDetailNO_REG_D: TFloatField;
@@ -81,15 +76,11 @@ type
     qBDetailSUB_TOTAL: TFloatField;
     qBDetailKG_TOT: TFloatField;
     DBMemo1: TDBMemo;
-    DBMemo2: TDBMemo;
     Label14: TLabel;
     DBText19: TDBText;
     Label16: TLabel;
     Label17: TLabel;
     Label18: TLabel;
-    Label19: TLabel;
-    dbe1: TwwDBEdit;
-    Label21: TLabel;
     qSlsman: TOraQuery;
     qSlsmanID_SLSMAN: TStringField;
     qSlsmanSLSMAN: TStringField;
@@ -101,7 +92,6 @@ type
     qPrinsipalKREDIT_LIMIT: TFloatField;
     qPrinsipalTOP: TFloatField;
     qPrinsipalMAX_FAKTUR: TFloatField;
-    wwCheckBox1: TwwCheckBox;
     qBMaster: TSmartQuery;
     dsqBMaster: TwwDataSource;
     qBMasterNO_REG_OS: TFloatField;
@@ -143,16 +133,10 @@ type
     qBDetailXQTY_D: TFloatField;
     qBDetailXSUB_TOTAL: TFloatField;
     qBDetailXKG_TOT: TFloatField;
-    Label34: TLabel;
     procUnpost: TOraStoredProc;
     qBDetailTGL: TDateTimeField;
     qBDetailKD_DEPO: TStringField;
     qBDetailKD_LOKASI: TStringField;
-    tsInputD2: TTabSheet;
-    Panel1: TPanel;
-    Label35: TLabel;
-    dtTGL: TwwDBDateTimePicker;
-    Button1: TButton;
     qStokSales: TOraQuery;
     qStokSalesKD_ITEM: TStringField;
     qStokSalesNAMA_ITEM: TStringField;
@@ -175,11 +159,6 @@ type
     qStokSalesQTY_X: TFloatField;
     qStokSalesQTY_Y: TFloatField;
     dsqStokSales: TwwDataSource;
-    dbGridD2: TwwDBGrid;
-    wwIButton2: TwwIButton;
-    lcdLokasiX: TwwDBLookupCombo;
-    Label36: TLabel;
-    DBText22: TDBText;
     qBDetailMODE_CALC: TStringField;
     qBDetailLABEL_HARGA: TFloatField;
     qBDetailLABEL_JUMLAH: TStringField;
@@ -814,7 +793,6 @@ type
     qBDetail9LSIZE14: TStringField;
     qBDetail9LSIZE15: TStringField;
     wwDBGrid1: TwwDBGrid;
-    Label3: TLabel;
     wwDBGrid2: TwwDBGrid;
     qBDetail2: TSmartQuery;
     qBDetail2NO_REG_BUKTI: TFloatField;
@@ -950,11 +928,8 @@ type
     qB1STYLE: TStringField;
     qB1ITEM: TStringField;
     qB1COLOR: TStringField;
-    tsInputD3: TTabSheet;
     qBDetail3: TSmartQuery;
     dsqBDetail3: TwwDataSource;
-    wwDBGrid4: TwwDBGrid;
-    wwIButton5: TwwIButton;
     qBDetail3NO_REG_D: TFloatField;
     qBDetail3NO_REG_OS: TFloatField;
     qBDetail3NO_REG_OS_REFF: TStringField;
@@ -962,9 +937,6 @@ type
     proc_ImpData1: TOraStoredProc;
     proc_ImpData2: TOraStoredProc;
     qBDetail3JENIS: TStringField;
-    TabSheet4: TTabSheet;
-    wwDBGrid5: TwwDBGrid;
-    wwIButton8: TwwIButton;
     dsqBDetail4: TwwDataSource;
     qBDetail4: TSmartQuery;
     qBDetail4NO_REG_OS: TFloatField;
@@ -973,9 +945,6 @@ type
     qBDetail4SAT_D: TStringField;
     qBDetail4QTY_D: TFloatField;
     qBDetail4KG_D: TFloatField;
-    TabSheet7: TTabSheet;
-    dbGridJurnal: TwwDBGrid;
-    wwIButton9: TwwIButton;
     dsqJurnal: TwwDataSource;
     qJurnal: TSmartQuery;
     qJurnalKD_PERK: TStringField;
@@ -1054,6 +1023,17 @@ type
     qBom2KURS: TFloatField;
     qBom2NO_REFF: TStringField;
     qBom2NO_REFF2: TStringField;
+    Panel1: TPanel;
+    GroupBox2: TGroupBox;
+    qBMasterISPOST2: TStringField;
+    DBEdit2: TDBEdit;
+    Label34: TLabel;
+    wwCheckBox1: TwwCheckBox;
+    Label3: TLabel;
+    wwCheckBox2: TwwCheckBox;
+    procUnpost2: TOraStoredProc;
+    qBMasterTGL_APPROVE2: TDateTimeField;
+    qBMasterOPR_APPROVE2: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1200,6 +1180,8 @@ type
     procedure tsInputD3Show(Sender: TObject);
     procedure TabSheet4Show(Sender: TObject);
     procedure TabSheet7Show(Sender: TObject);
+    procedure wwCheckBox2Click(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1227,7 +1209,7 @@ type
     procedure Proc_Refresh6;
   public
     { Public declarations }
-    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost : Boolean;
+    vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanUnPost2 : Boolean;
   end;
 
 var
@@ -1771,7 +1753,7 @@ var
   vNField     : Integer;
   vTop        : String;
 begin
-//  vtop:='';                                                     //GANTI
+{//  vtop:='';                                                     //GANTI
   vNField:=dbGridD2.Selected.Count-1;                            //Ganti
   vfilter:=vfilterStokSales;                                            //Ganti
   vsql_org:=vsql_orgStokSales;                                          //Ganti
@@ -1861,7 +1843,7 @@ begin
   qStokSales.Open;                                        //Ganti
   dbGridD2.GroupFieldName:=vFieldName[0];           //Ganti
   qStokSales.EnableControls;                              //Ganti
-  dbGridD2.SetFocus;                                //Ganti
+  dbGridD2.SetFocus;                                //Ganti    }
 end;
 
 procedure TSerahTerimaBJFrm.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -1941,6 +1923,7 @@ begin
           end;
       end;
    1 :  begin
+          {
           with dbGridD do                                                //Ganti
           begin
               if DataSource.DataSet.RecordCount>0 then
@@ -1962,7 +1945,7 @@ begin
               end
               else
                 ShowMessage('Tabel kosong !');
-          end;
+          end;}
       end;
    2 :  begin
           with dbGrid2 do                                                //Ganti
@@ -2207,7 +2190,7 @@ begin
   TabSheet3.TabVisible:=false;
   TabSheet5.TabVisible:=false;
   TabSheet6.TabVisible:=false;
-  tsInputD2.TabVisible:=false;
+  //tsInputD2.TabVisible:=false;
 end;
 
 procedure TSerahTerimaBJFrm.tbFilterClick(Sender: TObject);
@@ -2217,6 +2200,7 @@ var
 begin
   if PageControl1.ActivePage=tsInput then
   begin
+    {
     if PageControl2.ActivePage=tsInputD then
     begin
      vbukti:=FloatToStr(vno_reg);
@@ -2250,7 +2234,7 @@ begin
              vfield_col:=FilterFrm.dbcField.Items[vfield_idx];
              Proc_RefreshStokSales;
           end;
-    end;
+    end;}
   end
   else
   begin
@@ -2590,7 +2574,8 @@ begin
   qBom.EnableControls;
   qItem.Close;                                           //GANTI
   dbNavigator.DataSource:=dsqBMaster;
-  if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
+  if vCanUnPost then wwCheckBox1.Enabled:=True else begin wwCheckBox1.Enabled:=False; DBEdit2.ReadOnly:=true end; 
+  if vCanUnPost2 then wwCheckBox2.Enabled:=True else wwCheckBox2.Enabled:=False;
 end;
 
 procedure TSerahTerimaBJFrm.qBMasterNewRecord(DataSet: TDataSet);
@@ -2628,9 +2613,9 @@ begin
       Abort;
   end
   else
-  if (qBMasterISPOST.AsString='1') or (vispost_old='1') then
+  if ((qBMasterISPOST.AsString='1') or (qBMasterISPOST2.AsString='1')) or (vispost_old='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS ! wkwkwk');
+      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-HAPUS !');
       Abort;
   end;
 end;
@@ -2646,7 +2631,7 @@ begin
   else
   if (qBMasterISPOST.AsString='1') then
   begin
-      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT ! wkwkwk');
+      ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-EDIT !');
       Abort;
   end;
 end;
@@ -2715,9 +2700,9 @@ begin
   begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
       Abort;
-  end
+  end; {
   else
-      dbGridD.SetActiveField('KD_ITEM');
+      dbGridD.SetActiveField('KD_ITEM');}
 end;
 
 procedure TSerahTerimaBJFrm.lcdItemEnter(Sender: TObject);
@@ -2761,17 +2746,19 @@ begin
   if vModeInput then
   begin
     if qBMaster.State<>dsEdit then qBMaster.Edit;
-    dbe1.ReadOnly:=False;
+    //dbe1.ReadOnly:=False;
     qBMasterSUB_TOTAL.AsFloat:=qBDetailXSUB_TOTAL.AsFloat;
-    dbe1.ReadOnly:=True;
+    //dbe1.ReadOnly:=True;
     vModeInput:=False;
   end;
   pLeft2.Caption:=FormatFloat('#,#;0',qBDetailXNDATA.AsInteger);
+  {
   dbGridD.ColumnByName('QTY_A').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXQTY_A.AsFloat);
   dbGridD.ColumnByName('QTY_T').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXQTY_T.AsFloat);
   dbGridD.ColumnByName('QTY_D').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXQTY_D.AsFloat);
   dbGridD.ColumnByName('SUB_TOTAL').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXSUB_TOTAL.AsFloat);
   dbGridD.ColumnByName('KG_TOT').FooterValue:=FormatFloat('0.0,0;(0.0,0);-',qBDetailXKG_TOT.AsFloat);
+  }
 end;
 
 procedure TSerahTerimaBJFrm.qBDetailXBeforeOpen(DataSet: TDataSet);
@@ -2831,6 +2818,7 @@ procedure TSerahTerimaBJFrm.tsInputD2Show(Sender: TObject);
 var
   i : integer;
 begin
+  {
   dtTGL.Date:=DMFrm.qDateTimeVTGL_BUKTI.AsDateTime;
   DMFrm.qLokasi.Open;
   lcdLokasiX.Text:=DMFrm.qLokasiKD_LOKASI.AsString;
@@ -2850,6 +2838,7 @@ begin
              QFields2.Items.Add(Columns[i].FieldName);
   end;
   dbNavigator.DataSource:=dsqStokSales;
+  }
 end;
 
 procedure TSerahTerimaBJFrm.Button1Click(Sender: TObject);
@@ -2876,9 +2865,9 @@ end;
 
 procedure TSerahTerimaBJFrm.qStokSalesBeforeOpen(DataSet: TDataSet);
 begin
-  qStokSales.ParamByName('pkd_depo').AsString:=DMFrm.qDepoDefaultKD_DEPO.AsString;
+  {qStokSales.ParamByName('pkd_depo').AsString:=DMFrm.qDepoDefaultKD_DEPO.AsString;
   qStokSales.ParamByName('pkd_lokasi').AsString:=DMFrm.qLokasiKD_LOKASI.AsString;
-  qStokSales.ParamByName('ptgl').AsDateTime:=dtTGL.Date;
+  qStokSales.ParamByName('ptgl').AsDateTime:=dtTGL.Date;}
 end;
 
 procedure TSerahTerimaBJFrm.dbGridD2TitleButtonClick(Sender: TObject;
@@ -3836,9 +3825,9 @@ begin
   begin
       ShowMessage('Maaf, data sudah di-POSTING, tidak bisa di-TAMBAH !');
       Abort;
-  end
+  end; {
   else
-      wwDBGrid4.SetActiveField('NO_REG_OS_REFF');
+      wwDBGrid4.SetActiveField('NO_REG_OS_REFF');}
 end;
 
 procedure TSerahTerimaBJFrm.tsInputD3Show(Sender: TObject);
@@ -3868,8 +3857,43 @@ begin
       vkredit:=vkredit+qJurnalKREDIT.AsFloat;
       qJurnal.Next;
   end;
-  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
-  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
+//  dbGridJurnal.ColumnByName('DEBET').FooterValue:=FormatFloat('#,#;(#,#);-',vdebet);
+//  dbGridJurnal.ColumnByName('KREDIT').FooterValue:=FormatFloat('#,#;(#,#);-',vkredit);
+end;
+
+procedure TSerahTerimaBJFrm.wwCheckBox2Click(Sender: TObject);
+begin
+  if (qBMaster.State=dsEdit) and (qBMasterISPOST2.AsString='0') then
+  begin
+      if wwCheckBox2.Checked then
+      begin
+          qBMasterISPOST2.AsString:='1';
+          qBMasterTGL_APPROVE2.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
+          qBMasterOPR_APPROVE2.AsString:=DMFrm.qDateTimeVUSER.AsString;
+          qBMaster.Post;
+      end;
+  end;
+end;
+
+procedure TSerahTerimaBJFrm.Label3Click(Sender: TObject);
+begin
+  if vCanUnPost2 then
+  begin
+    DMFrm.vcatatan:='';
+    if InputQuery('Catatan','Alasan Unpost : ',DMFrm.vcatatan) then
+    begin
+     //vno_reg:=qBMasterNO_REG_OS.AsFloat;
+     procUnpost2.Close;
+     procUnpost2.ParamByName('pno_reg').AsFloat:=qBMasterNO_REG_OS.AsFloat;
+     procUnpost2.ParamByName('pkd_form').AsString:=Name;
+     procUnpost2.ParamByName('pcatatan').AsString:=DMFrm.vcatatan;
+     procUnpost2.ExecProc;
+     qBMaster.Close;
+     qBMaster.Open;
+    end;
+  end
+  else
+    ShowMessage('Maaf, anda tidak punya hak UNPOST bukti ini !');
 end;
 
 end.

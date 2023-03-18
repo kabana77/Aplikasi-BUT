@@ -1980,6 +1980,7 @@ begin
      SerahTerimaBJFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
      SerahTerimaBJFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
      SerahTerimaBJFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+     SerahTerimaBJFrm.vCanUnPost2:=(DMFrm.qMenuUserISUNPOST2.AsString='+');
 //     SerahTerimaBJFrm.vCanCancel:=(DMFrm.qMenuUserISREAD.AsString='+');
   end
   else
@@ -1990,6 +1991,7 @@ begin
      SerahTerimaBJFrm.vCanPrint:=False;
      SerahTerimaBJFrm.vCanExport:=False;
      SerahTerimaBJFrm.vCanUnPost:=False;
+     SerahTerimaBJFrm.vCanUnPost2:=False;
 //     SerahTerimaBJFrm.vCanCancel:=False;
   end;
   SerahTerimaBJFrm.Show;

@@ -1,8 +1,8 @@
 object SerahTerimaBJFrm: TSerahTerimaBJFrm
-  Left = 224
-  Top = 154
-  Width = 1356
-  Height = 689
+  Left = 192
+  Top = 155
+  Width = 1386
+  Height = 734
   Caption = 'Serah Terima Barang Jadi'
   Color = clWindow
   Ctl3D = False
@@ -25,7 +25,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Left = 0
     Top = 0
     Width = 40
-    Height = 650
+    Height = 695
     Align = alLeft
     BevelOuter = bvNone
     Color = 23296
@@ -34,8 +34,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1260
-    Height = 650
+    Width = 1290
+    Height = 695
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
@@ -58,7 +58,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1260
+      Width = 1290
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -77,8 +77,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
     object pBottom: TPanel
       Left = 0
-      Top = 621
-      Width = 1260
+      Top = 666
+      Width = 1290
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 791
+        Width = 821
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         end
       end
       object pRight2: TPanel
-        Left = 1213
+        Left = 1243
         Top = 1
         Width = 46
         Height = 27
@@ -291,8 +291,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1260
-      Height = 571
+      Width = 1290
+      Height = 616
       ActivePage = TabSheet1
       Align = alClient
       TabOrder = 2
@@ -2197,7 +2197,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1252
+          Width = 1282
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2216,8 +2216,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1252
-          Height = 510
+          Width = 1282
+          Height = 555
           DittoAttributes.ShortCutDittoRecord = 16429
           ControlType.Strings = (
             'ISPOST;CheckBox;1;0'
@@ -4522,9 +4522,9 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1252
-          Height = 257
-          Align = alTop
+          Width = 1282
+          Height = 588
+          Align = alClient
           BevelOuter = bvNone
           Color = 14671871
           Font.Charset = DEFAULT_CHARSET
@@ -4534,363 +4534,18 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          object Label14: TLabel
-            Left = 200
-            Top = -1
-            Width = 55
-            Height = 13
-            Caption = 'Keterangan'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object DBText19: TDBText
-            Left = 967
-            Top = -1
-            Width = 91
-            Height = 24
-            AutoSize = True
-            DataField = 'NO_REG_OS'
-            DataSource = dsqBMaster
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clRed
-            Font.Height = -19
-            Font.Name = 'MS Sans Serif'
-            Font.Style = [fsBold]
-            ParentFont = False
-            Transparent = True
-          end
-          object Label16: TLabel
-            Left = 912
-            Top = 6
-            Width = 44
-            Height = 13
-            Caption = 'No. Bukti'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object Label17: TLabel
-            Left = 912
-            Top = 44
-            Width = 39
-            Height = 13
-            Caption = 'Tanggal'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object Label18: TLabel
-            Left = 912
-            Top = 102
-            Width = 44
-            Height = 13
-            Caption = 'No. BOM'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object Label34: TLabel
-            Left = 615
-            Top = 14
-            Width = 88
-            Height = 13
-            Cursor = crHandPoint
-            Caption = 'Approve Canceled'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = [fsUnderline]
-            ParentFont = False
-            Transparent = True
-            OnClick = Label34Click
-          end
-          object Label2: TLabel
-            Left = 16
-            Top = 0
-            Width = 54
-            Height = 13
-            Caption = 'Lokasi Asal'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object DBText2: TDBText
-            Left = 16
-            Top = 37
-            Width = 65
-            Height = 19
-            AutoSize = True
-            DataField = 'NAMA_LOKASI'
-            DataSource = dsqBMaster
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlue
-            Font.Height = -16
-            Font.Name = 'Arial Narrow'
-            Font.Style = [fsBold]
-            ParentFont = False
-            Transparent = True
-          end
-          object Label1: TLabel
-            Left = 16
-            Top = 64
-            Width = 67
-            Height = 13
-            Caption = 'Lokasi Tujuan'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object DBText1: TDBText
-            Left = 16
-            Top = 101
-            Width = 65
-            Height = 19
-            AutoSize = True
-            DataField = 'NAMA_LOKASI2'
-            DataSource = dsqBMaster
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlue
-            Font.Height = -16
-            Font.Name = 'Arial Narrow'
-            Font.Style = [fsBold]
-            ParentFont = False
-            Transparent = True
-          end
-          object Label3: TLabel
-            Left = 327
-            Top = 232
-            Width = 48
-            Height = 13
-            Caption = 'Hasil -->'
-          end
-          object DBText3: TDBText
-            Left = 967
-            Top = 18
-            Width = 50
-            Height = 13
-            AutoSize = True
-            DataField = 'NO_REG_OS'
-            DataSource = dsqBMaster
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlue
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = [fsBold]
-            ParentFont = False
-            Transparent = True
-          end
-          object Label4: TLabel
-            Left = 912
-            Top = 75
-            Width = 44
-            Height = 13
-            Caption = 'No. Load'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object DBMemo1: TDBMemo
-            Left = 200
-            Top = 16
-            Width = 377
-            Height = 41
-            DataField = 'KETERANGAN'
-            DataSource = dsqBMaster
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Height = -13
-            Font.Name = 'Times New Roman'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 2
-          end
-          object wwCheckBox1: TwwCheckBox
-            Left = 597
-            Top = 27
-            Width = 81
-            Height = 17
-            DisableThemes = False
-            AlwaysTransparent = False
-            ValueChecked = '1'
-            ValueUnchecked = '0'
-            DisplayValueChecked = '1'
-            DisplayValueUnchecked = '0'
-            NullAndBlankState = cbUnchecked
-            Caption = 'Approved'
-            DataField = 'ISPOST'
-            DataSource = dsqBMaster
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 3
-            OnClick = wwCheckBox1Click
-          end
-          object wwDBLookupCombo2: TwwDBLookupCombo
-            Left = 16
-            Top = 16
-            Width = 57
-            Height = 19
-            DropDownAlignment = taLeftJustify
-            Selected.Strings = (
-              'KD_LOKASI'#9'6'#9'KODE'#9'F'
-              'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F')
-            DataField = 'KD_LOKASI'
-            DataSource = dsqBMaster
-            LookupTable = DMFrm.qLokasi
-            LookupField = 'KD_LOKASI'
-            Options = [loColLines, loRowLines, loTitles]
-            Enabled = False
-            TabOrder = 0
-            AutoDropDown = False
-            ShowButton = True
-            PreciseEditRegion = False
-            AllowClearKey = False
-            OnEnter = lcLokasiEnter
-          end
-          object wwDBLookupCombo1: TwwDBLookupCombo
-            Left = 16
-            Top = 80
-            Width = 57
-            Height = 19
-            DropDownAlignment = taLeftJustify
-            Selected.Strings = (
-              'KD_LOKASI'#9'6'#9'KODE'#9'F'
-              'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F')
-            DataField = 'KD_LOKASI2'
-            DataSource = dsqBMaster
-            LookupTable = DMFrm.qLokasi
-            LookupField = 'KD_LOKASI'
-            Options = [loColLines, loRowLines, loTitles]
-            Enabled = False
-            TabOrder = 4
-            AutoDropDown = False
-            ShowButton = True
-            PreciseEditRegion = False
-            AllowClearKey = False
-            OnEnter = lcLokasiEnter
-          end
-          object VTgl: TwwDBDateTimePicker
-            Left = 968
-            Top = 39
-            Width = 121
-            Height = 25
-            BorderStyle = bsNone
-            CalendarAttributes.Font.Charset = DEFAULT_CHARSET
-            CalendarAttributes.Font.Color = clWindowText
-            CalendarAttributes.Font.Height = -11
-            CalendarAttributes.Font.Name = 'MS Sans Serif'
-            CalendarAttributes.Font.Style = []
-            CalendarAttributes.PopupYearOptions.NumberColumns = 1
-            CalendarAttributes.PopupYearOptions.StartYear = 2010
-            Color = clGreen
-            DataField = 'TGL'
-            DataSource = dsqBMaster
-            Epoch = 1950
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clWhite
-            Font.Height = -16
-            Font.Name = 'Calibri'
-            Font.Style = [fsBold]
-            ParentFont = False
-            ShowButton = True
-            TabOrder = 5
-            DisplayFormat = 'dd mmm yyyy'
-          end
-          object BitBtn2: TBitBtn
-            Left = 968
-            Top = 124
-            Width = 57
-            Height = 22
-            Caption = '&Add'
-            TabOrder = 6
-            OnClick = BitBtn2Click
-          end
-          object lcdBOM: TwwDBLookupComboDlg
-            Left = 968
-            Top = 99
-            Width = 121
-            Height = 19
-            GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
-            GridColor = clWhite
-            GridTitleAlignment = taLeftJustify
-            Caption = 'Lookup'
-            MaxWidth = 0
-            MaxHeight = 209
-            UserButton1Caption = '&Refresh'
-            OnUserButton1Click = lcdBOMUserButton1Click
-            Selected.Strings = (
-              'NO_REG_D'#9'7'#9'NO_BOM'#9'F'
-              'STYLE'#9'16'#9'STYLE'#9'F'
-              'ITEM'#9'20'#9'ITEM'#9'F'
-              'COLOR'#9'8'#9'COLOR'#9'F'
-              'SATUAN'#9'6'#9'SATUAN'#9'F'
-              'XXS'#9'4'#9'XXS'#9'F'
-              'XS'#9'4'#9'XS'#9'F'
-              'S'#9'4'#9'S'#9'F'
-              'M'#9'4'#9'M'#9'F'
-              'L'#9'4'#9'L'#9'F'
-              'XL'#9'4'#9'XL'#9'F'
-              'X0'#9'4'#9'X0'#9'F'
-              'X1'#9'4'#9'X1'#9'F'
-              'X2'#9'4'#9'X2'#9'F'
-              'X3'#9'4'#9'X3'#9'F'
-              'TOT_QTY'#9'6'#9'TOT_QTY'#9'F')
-            DataField = 'NO_REFF'
-            DataSource = dsqBMaster
-            LookupTable = qBom2
-            LookupField = 'NO_REG_D'
-            TabOrder = 1
-            AutoDropDown = False
-            ShowButton = True
-            AllowClearKey = False
-            OnCloseUp = lcdBOMCloseUp
-            OnEnter = lcdBOMEnter
-          end
           object Panel2: TPanel
             Left = 0
-            Top = 160
-            Width = 1252
-            Height = 97
-            Align = alBottom
+            Top = 289
+            Width = 1282
+            Height = 299
+            Align = alClient
             Caption = 'Panel2'
-            TabOrder = 7
+            TabOrder = 0
             object wwDBGrid1: TwwDBGrid
               Left = 1
               Top = 1
-              Width = 1250
+              Width = 1280
               Height = 73
               TabStop = False
               DittoAttributes.ShortCutDittoRecord = 16429
@@ -4965,8 +4620,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
             object wwDBGrid2: TwwDBGrid
               Left = 1
               Top = 74
-              Width = 1250
-              Height = 22
+              Width = 1280
+              Height = 224
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
                 'ISHADIAH;CheckBox;1;0')
@@ -5007,7 +4662,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               ShowVertScrollBar = False
               EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
               Align = alClient
-              Color = clWhite
+              Color = clYellow
               DataSource = dsqBMaster
               Font.Charset = ANSI_CHARSET
               Font.Color = clWindowText
@@ -5035,622 +4690,483 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
               PaintOptions.ActiveRecordColor = 16777175
             end
           end
-          object GroupBox1: TGroupBox
-            Left = 200
-            Top = 67
-            Width = 689
-            Height = 89
-            Caption = ' Finished goods '
-            TabOrder = 8
-            object wwDBGrid3: TwwDBGrid
-              Left = 1
-              Top = 14
-              Width = 687
-              Height = 73
-              TabStop = False
-              DittoAttributes.ShortCutDittoRecord = 16429
-              ControlType.Strings = (
-                'ISHADIAH;CheckBox;1;0')
-              Selected.Strings = (
-                'NO_REG_D'#9'10'#9'BOM'#9'F'
-                'STYLE'#9'12'#9'STYLE'#9'F'
-                'ITEM'#9'25'#9'ITEM'#9'F'
-                'COLOR'#9'12'#9'COLOR'#9'F'
-                'KELOMPOK'#9'15'#9'KELOMPOK'#9'F'
-                'SATUAN'#9'4'#9'SAT'#9'F'
-                'KETERANGAN'#9'20'#9'KET'#9'F')
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = False
-              ShowVertScrollBar = False
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alTop
-              Color = clWhite
-              DataSource = dsqBomD
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
-              Font.Name = 'Arial Narrow'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab]
-              Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-              ParentFont = False
-              ReadOnly = True
-              RowHeightPercent = 112
-              TabOrder = 0
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = ANSI_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
-              TitleLines = 3
-              TitleButtons = False
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              OnColWidthChanged = wwDBGrid1ColWidthChanged
-              OnUpdateFooter = dbGridDUpdateFooter
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = 16777175
-            end
-          end
-          object DBEdit1: TDBEdit
-            Left = 968
-            Top = 72
-            Width = 120
-            Height = 19
-            DataField = 'ALAMAT'
-            DataSource = dsqBMaster
-            TabOrder = 9
-          end
-        end
-        object pMaster2: TPanel
-          Left = 1067
-          Top = 257
-          Width = 185
-          Height = 286
-          Align = alRight
-          BevelOuter = bvNone
-          Color = 15395583
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'MS Sans Serif'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 1
-          object Label19: TLabel
+          object Panel1: TPanel
             Left = 0
-            Top = 232
-            Width = 185
-            Height = 13
-            Align = alBottom
-            Caption = ' Catatan Internal'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object Label21: TLabel
-            Left = 8
-            Top = 19
-            Width = 46
-            Height = 13
-            Caption = 'Sub Total'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = []
-            ParentFont = False
-            Transparent = True
-          end
-          object DBMemo2: TDBMemo
-            Left = 0
-            Top = 245
-            Width = 185
-            Height = 41
-            TabStop = False
-            Align = alBottom
-            Color = 13041663
-            DataField = 'CATATAN'
-            DataSource = dsqBMaster
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Height = -11
-            Font.Name = 'Times New Roman'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 0
-          end
-          object dbe1: TwwDBEdit
-            Left = 88
-            Top = 16
-            Width = 89
-            Height = 19
-            TabStop = False
-            BorderStyle = bsNone
-            Color = 14737632
-            DataField = 'SUB_TOTAL'
-            DataSource = dsqBMaster
-            Frame.Enabled = True
-            Frame.NonFocusBorders = []
+            Top = 0
+            Width = 1282
+            Height = 289
+            Align = alTop
+            Color = clGradientInactiveCaption
             TabOrder = 1
-            UnboundDataType = wwDefault
-            WantReturns = False
-            WordWrap = False
-          end
-        end
-        object PageControl2: TPageControl
-          Left = 0
-          Top = 257
-          Width = 1067
-          Height = 286
-          ActivePage = tsInputD
-          Align = alClient
-          TabOrder = 2
-          object tsInputD3: TTabSheet
-            Caption = 'Bukti Pemakaian Bahan'
-            ImageIndex = 2
-            OnShow = tsInputD3Show
-            object wwDBGrid4: TwwDBGrid
-              Left = 0
-              Top = 0
-              Width = 1059
-              Height = 258
-              DittoAttributes.ShortCutDittoRecord = 16429
-              ControlType.Strings = (
-                'KD_ITEM;CustomEdit;lcdItem;F'
-                'ISHADIAH;CheckBox;1;0'
-                'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
-              Selected.Strings = (
-                'NO_REG_OS_REFF'#9'20'#9'Nomor Bukti'#9'F'
-                'JENIS'#9'20'#9'Keterangan'#9'F')
-              IniAttributes.Enabled = True
-              IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = True
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alClient
-              Color = clWhite
-              DataSource = dsqBDetail3
+            object DBText1: TDBText
+              Left = 16
+              Top = 101
+              Width = 65
+              Height = 19
+              AutoSize = True
+              DataField = 'NAMA_LOKASI2'
+              DataSource = dsqBMaster
               Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
+              Font.Color = clBlue
+              Font.Height = -16
               Font.Name = 'Arial Narrow'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              Font.Style = [fsBold]
               ParentFont = False
-              RowHeightPercent = 112
+              Transparent = True
+            end
+            object DBText19: TDBText
+              Left = 496
+              Top = 5
+              Width = 91
+              Height = 24
+              AutoSize = True
+              DataField = 'NO_REG_OS'
+              DataSource = dsqBMaster
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clRed
+              Font.Height = -19
+              Font.Name = 'MS Sans Serif'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = True
+            end
+            object DBText2: TDBText
+              Left = 16
+              Top = 37
+              Width = 65
+              Height = 19
+              AutoSize = True
+              DataField = 'NAMA_LOKASI'
+              DataSource = dsqBMaster
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clBlue
+              Font.Height = -16
+              Font.Name = 'Arial Narrow'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = True
+            end
+            object DBText3: TDBText
+              Left = 496
+              Top = 24
+              Width = 50
+              Height = 13
+              AutoSize = True
+              DataField = 'NO_REG_OS'
+              DataSource = dsqBMaster
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlue
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = [fsBold]
+              ParentFont = False
+              Transparent = True
+            end
+            object Label1: TLabel
+              Left = 16
+              Top = 64
+              Width = 67
+              Height = 13
+              Caption = 'Lokasi Tujuan'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label14: TLabel
+              Left = 16
+              Top = 128
+              Width = 55
+              Height = 13
+              Caption = 'Keterangan'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label16: TLabel
+              Left = 439
+              Top = 12
+              Width = 44
+              Height = 13
+              Caption = 'No. Bukti'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label17: TLabel
+              Left = 439
+              Top = 50
+              Width = 39
+              Height = 13
+              Caption = 'Tanggal'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label18: TLabel
+              Left = 439
+              Top = 108
+              Width = 44
+              Height = 13
+              Caption = 'No. BOM'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label2: TLabel
+              Left = 16
+              Top = 0
+              Width = 54
+              Height = 13
+              Caption = 'Lokasi Asal'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label4: TLabel
+              Left = 439
+              Top = 81
+              Width = 44
+              Height = 13
+              Caption = 'No. Load'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = []
+              ParentFont = False
+              Transparent = True
+            end
+            object Label3: TLabel
+              Left = 292
+              Top = 18
+              Width = 84
+              Height = 13
+              Cursor = crHandPoint
+              Caption = 'Review Canceled'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Sans Serif'
+              Font.Style = [fsUnderline]
+              ParentFont = False
+              Transparent = True
+              OnClick = Label3Click
+            end
+            object GroupBox1: TGroupBox
+              Left = 1
+              Top = 194
+              Width = 640
+              Height = 89
+              Caption = ' Finished goods '
               TabOrder = 0
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = ANSI_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
-              TitleLines = 3
-              TitleButtons = False
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              OnEnter = wwDBGrid4Enter
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = 16777175
-              object wwIButton5: TwwIButton
-                Left = 0
-                Top = 0
-                Width = 17
-                Height = 41
-                AllowAllUp = True
-                Caption = '@'
-                OnClick = wwDBGrid1IButtonClick
+              object wwDBGrid3: TwwDBGrid
+                Left = 1
+                Top = 14
+                Width = 638
+                Height = 73
+                TabStop = False
+                DittoAttributes.ShortCutDittoRecord = 16429
+                ControlType.Strings = (
+                  'ISHADIAH;CheckBox;1;0')
+                Selected.Strings = (
+                  'NO_REG_D'#9'10'#9'BOM'#9'F'
+                  'STYLE'#9'12'#9'STYLE'#9'F'
+                  'ITEM'#9'25'#9'ITEM'#9'F'
+                  'COLOR'#9'12'#9'COLOR'#9'F'
+                  'KELOMPOK'#9'15'#9'KELOMPOK'#9'F'
+                  'SATUAN'#9'4'#9'SAT'#9'F'
+                  'KETERANGAN'#9'20'#9'KET'#9'F')
+                IniAttributes.FileName = 'KUWUNG'
+                IniAttributes.Delimiter = ';;'
+                IniAttributes.CheckNewFields = True
+                ExportOptions.ExportType = wwgetSYLK
+                TitleColor = clBtnFace
+                FixedCols = 0
+                ShowHorzScrollBar = False
+                ShowVertScrollBar = False
+                EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
+                Align = alTop
+                Color = clWhite
+                DataSource = dsqBomD
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clWindowText
+                Font.Height = -11
+                Font.Name = 'Arial Narrow'
+                Font.Style = []
+                KeyOptions = [dgEnterToTab]
+                Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+                ParentFont = False
+                ReadOnly = True
+                RowHeightPercent = 112
+                TabOrder = 0
+                TitleAlignment = taLeftJustify
+                TitleFont.Charset = ANSI_CHARSET
+                TitleFont.Color = clWindowText
+                TitleFont.Height = -11
+                TitleFont.Name = 'Arial Narrow'
+                TitleFont.Style = []
+                TitleLines = 3
+                TitleButtons = False
+                UseTFields = False
+                LineColors.ShadowColor = clSilver
+                OnCalcCellColors = dbGrid1CalcCellColors
+                OnColWidthChanged = wwDBGrid1ColWidthChanged
+                OnUpdateFooter = dbGridDUpdateFooter
+                FooterCellColor = clGradientInactiveCaption
+                PaintOptions.ActiveRecordColor = 16777175
               end
             end
-          end
-          object tsInputD: TTabSheet
-            Caption = 'Detail Item Terpakai'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'MS Sans Serif'
-            Font.Style = [fsBold]
-            ParentFont = False
-            OnShow = tsInputDShow
-            object dbGridD: TwwDBGrid
-              Left = 0
-              Top = 0
-              Width = 1059
-              Height = 258
-              DittoAttributes.ShortCutDittoRecord = 16429
-              ControlType.Strings = (
-                'KD_ITEM;CustomEdit;lcdItem;F'
-                'ISHADIAH;CheckBox;1;0'
-                'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
+            object lcdBOM: TwwDBLookupComboDlg
+              Left = 496
+              Top = 105
+              Width = 121
+              Height = 19
+              GridOptions = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgPerfectRowFit]
+              GridColor = clWhite
+              GridTitleAlignment = taLeftJustify
+              Caption = 'Lookup'
+              MaxWidth = 0
+              MaxHeight = 209
+              UserButton1Caption = '&Refresh'
+              OnUserButton1Click = lcdBOMUserButton1Click
               Selected.Strings = (
-                'KD_ITEM'#9'11'#9'KODE'#9'F'
-                'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
-                'NO_SERIAL'#9'10'#9'SIZE'#9'F'
-                'SAT_D'#9'7'#9'SATUAN'#9'T'
-                'QTY_D'#9'8'#9'DIPAKAI'#9'F'
-                'KETERANGAN2'#9'77'#9'KETERANGAN'#9'T')
-              IniAttributes.Enabled = True
-              IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = True
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alClient
-              Color = clWhite
-              DataSource = dsqBDetail
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
-              Font.Name = 'Arial Narrow'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-              ParentFont = False
-              RowHeightPercent = 112
-              TabOrder = 0
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = ANSI_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
-              TitleLines = 3
-              TitleButtons = False
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              OnEnter = dbGridDEnter
-              OnUpdateFooter = dbGridDUpdateFooter
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = 16777175
-              object wwIButton1: TwwIButton
-                Left = 0
-                Top = 0
-                Width = 17
-                Height = 41
-                AllowAllUp = True
-                Caption = '@'
-                OnClick = wwDBGrid1IButtonClick
-              end
+                'NO_REG_D'#9'7'#9'NO_BOM'#9'F'
+                'STYLE'#9'16'#9'STYLE'#9'F'
+                'ITEM'#9'20'#9'ITEM'#9'F'
+                'COLOR'#9'8'#9'COLOR'#9'F'
+                'SATUAN'#9'6'#9'SATUAN'#9'F'
+                'XXS'#9'4'#9'XXS'#9'F'
+                'XS'#9'4'#9'XS'#9'F'
+                'S'#9'4'#9'S'#9'F'
+                'M'#9'4'#9'M'#9'F'
+                'L'#9'4'#9'L'#9'F'
+                'XL'#9'4'#9'XL'#9'F'
+                'X0'#9'4'#9'X0'#9'F'
+                'X1'#9'4'#9'X1'#9'F'
+                'X2'#9'4'#9'X2'#9'F'
+                'X3'#9'4'#9'X3'#9'F'
+                'TOT_QTY'#9'6'#9'TOT_QTY'#9'F')
+              DataField = 'NO_REFF'
+              DataSource = dsqBMaster
+              LookupTable = qBom2
+              LookupField = 'NO_REG_D'
+              TabOrder = 1
+              AutoDropDown = False
+              ShowButton = True
+              AllowClearKey = False
+              OnCloseUp = lcdBOMCloseUp
+              OnEnter = lcdBOMEnter
             end
-          end
-          object tsInputD2: TTabSheet
-            Caption = 'Info Stok'
-            ImageIndex = 1
-            OnShow = tsInputD2Show
-            object Panel1: TPanel
-              Left = 0
-              Top = 0
-              Width = 1059
-              Height = 49
-              Align = alTop
-              BevelOuter = bvNone
-              TabOrder = 0
-              object Label35: TLabel
-                Left = 8
-                Top = 12
-                Width = 81
-                Height = 28
-                AutoSize = False
-                Caption = 'Sampai Dengan Tanggal'
-                Transparent = True
-                WordWrap = True
-              end
-              object Label36: TLabel
-                Left = 240
-                Top = -1
-                Width = 31
+            object BitBtn2: TBitBtn
+              Left = 498
+              Top = 130
+              Width = 57
+              Height = 22
+              Caption = '&Add'
+              TabOrder = 2
+              OnClick = BitBtn2Click
+            end
+            object DBEdit1: TDBEdit
+              Left = 497
+              Top = 78
+              Width = 120
+              Height = 19
+              DataField = 'ALAMAT'
+              DataSource = dsqBMaster
+              TabOrder = 3
+            end
+            object DBMemo1: TDBMemo
+              Left = 16
+              Top = 144
+              Width = 377
+              Height = 41
+              DataField = 'KETERANGAN'
+              DataSource = dsqBMaster
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clBlack
+              Font.Height = -13
+              Font.Name = 'Times New Roman'
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 4
+            end
+            object VTgl: TwwDBDateTimePicker
+              Left = 496
+              Top = 45
+              Width = 121
+              Height = 25
+              BorderStyle = bsNone
+              CalendarAttributes.Font.Charset = DEFAULT_CHARSET
+              CalendarAttributes.Font.Color = clWindowText
+              CalendarAttributes.Font.Height = -11
+              CalendarAttributes.Font.Name = 'MS Sans Serif'
+              CalendarAttributes.Font.Style = []
+              CalendarAttributes.PopupYearOptions.NumberColumns = 1
+              CalendarAttributes.PopupYearOptions.StartYear = 2010
+              Color = clGreen
+              DataField = 'TGL'
+              DataSource = dsqBMaster
+              Epoch = 1950
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWhite
+              Font.Height = -16
+              Font.Name = 'Calibri'
+              Font.Style = [fsBold]
+              ParentFont = False
+              ShowButton = True
+              TabOrder = 5
+              DisplayFormat = 'dd mmm yyyy'
+            end
+            object wwDBLookupCombo2: TwwDBLookupCombo
+              Left = 16
+              Top = 16
+              Width = 57
+              Height = 19
+              DropDownAlignment = taLeftJustify
+              Selected.Strings = (
+                'KD_LOKASI'#9'6'#9'KODE'#9'F'
+                'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F')
+              DataField = 'KD_LOKASI'
+              DataSource = dsqBMaster
+              LookupTable = DMFrm.qLokasi
+              LookupField = 'KD_LOKASI'
+              Options = [loColLines, loRowLines, loTitles]
+              Enabled = False
+              TabOrder = 6
+              AutoDropDown = False
+              ShowButton = True
+              PreciseEditRegion = False
+              AllowClearKey = False
+              OnEnter = lcLokasiEnter
+            end
+            object wwDBLookupCombo1: TwwDBLookupCombo
+              Left = 16
+              Top = 80
+              Width = 57
+              Height = 19
+              DropDownAlignment = taLeftJustify
+              Selected.Strings = (
+                'KD_LOKASI'#9'6'#9'KODE'#9'F'
+                'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F')
+              DataField = 'KD_LOKASI2'
+              DataSource = dsqBMaster
+              LookupTable = DMFrm.qLokasi
+              LookupField = 'KD_LOKASI'
+              Options = [loColLines, loRowLines, loTitles]
+              Enabled = False
+              TabOrder = 7
+              AutoDropDown = False
+              ShowButton = True
+              PreciseEditRegion = False
+              AllowClearKey = False
+              OnEnter = lcLokasiEnter
+            end
+            object GroupBox2: TGroupBox
+              Left = 148
+              Top = 60
+              Width = 246
+              Height = 59
+              Caption = ' Nilai Persediaan '
+              Color = clYellow
+              ParentColor = False
+              TabOrder = 8
+              object Label34: TLabel
+                Left = 143
+                Top = 15
+                Width = 88
                 Height = 13
-                Caption = 'Lokasi'
+                Cursor = crHandPoint
+                Caption = 'Approve Canceled'
                 Font.Charset = DEFAULT_CHARSET
                 Font.Color = clBlack
                 Font.Height = -11
                 Font.Name = 'MS Sans Serif'
-                Font.Style = []
+                Font.Style = [fsUnderline]
                 ParentFont = False
                 Transparent = True
+                OnClick = Label34Click
               end
-              object DBText22: TDBText
-                Left = 304
-                Top = 16
-                Width = 74
+              object DBEdit2: TDBEdit
+                Left = 7
+                Top = 27
+                Width = 120
                 Height = 19
-                AutoSize = True
-                DataField = 'NAMA_LOKASI'
-                DataSource = DMFrm.dsqLokasi
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clBlue
-                Font.Height = -16
-                Font.Name = 'Arial Narrow'
-                Font.Style = [fsBold]
-                ParentFont = False
-                Transparent = True
-              end
-              object dtTGL: TwwDBDateTimePicker
-                Left = 104
-                Top = 14
-                Width = 129
-                Height = 27
-                AutoSize = False
-                BorderStyle = bsNone
-                CalendarAttributes.Font.Charset = DEFAULT_CHARSET
-                CalendarAttributes.Font.Color = clWindowText
-                CalendarAttributes.Font.Height = -11
-                CalendarAttributes.Font.Name = 'MS Sans Serif'
-                CalendarAttributes.Font.Style = []
-                CalendarAttributes.PopupYearOptions.StartYear = 2016
-                Date = 42685.000000000000000000
-                Epoch = 1950
-                ButtonEffects.Flat = True
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -19
-                Font.Name = 'Arial'
-                Font.Style = []
-                ParentFont = False
-                ShowButton = True
+                DataField = 'SUB_TOTAL'
+                DataSource = dsqBMaster
                 TabOrder = 0
-                DisplayFormat = 'dd mmm yyyy'
               end
-              object Button1: TButton
-                Left = 376
-                Top = 14
-                Width = 49
-                Height = 25
-                Caption = '&Ok'
-                TabOrder = 1
-                OnClick = Button1Click
-              end
-              object lcdLokasiX: TwwDBLookupCombo
-                Left = 240
-                Top = 14
-                Width = 57
-                Height = 25
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -16
-                Font.Name = 'Arial'
+              object wwCheckBox1: TwwCheckBox
+                Left = 139
+                Top = 28
+                Width = 81
+                Height = 17
+                DisableThemes = False
+                AlwaysTransparent = False
+                ValueChecked = '1'
+                ValueUnchecked = '0'
+                DisplayValueChecked = '1'
+                DisplayValueUnchecked = '0'
+                NullAndBlankState = cbUnchecked
+                Caption = 'Approved'
+                DataField = 'ISPOST'
+                DataSource = dsqBMaster
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = clBlack
+                Font.Height = -11
+                Font.Name = 'MS Sans Serif'
                 Font.Style = [fsBold]
-                DropDownAlignment = taLeftJustify
-                Selected.Strings = (
-                  'KD_LOKASI'#9'6'#9'KODE'#9'F'
-                  'NAMA_LOKASI'#9'20'#9'NAMA_LOKASI'#9'F')
-                LookupTable = DMFrm.qLokasi
-                LookupField = 'KD_LOKASI'
-                Options = [loColLines, loRowLines, loTitles]
                 ParentFont = False
-                TabOrder = 2
-                AutoDropDown = False
-                ShowButton = True
-                PreciseEditRegion = False
-                AllowClearKey = False
-                OnEnter = lcLokasiEnter
+                TabOrder = 1
+                OnClick = wwCheckBox1Click
               end
             end
-            object dbGridD2: TwwDBGrid
-              Left = 0
-              Top = 49
-              Width = 1059
-              Height = 209
-              DittoAttributes.ShortCutDittoRecord = 16429
-              Selected.Strings = (
-                'ID_PRINSIPAL'#9'5'#9'PRIN~SIPAL'#9'F'
-                'NAMA_ITEM'#9'36'#9'NAMA_ITEM'#9'F'
-                'KD_ITEM'#9'7'#9'KODE'#9'F'
-                'KD_KEL'#9'6'#9'KD_KEL'#9#9
-                'BRAND'#9'18'#9'BRAND'#9'F'
-                'KELOMPOK'#9'27'#9'KELOMPOK'#9'F'
-                'BKP'#9'3'#9'BKP'#9#9
-                'SAT_A'#9'5'#9'A'#9'F'#9'SATUAN'
-                'SAT_T'#9'5'#9'T'#9'F'#9'SATUAN'
-                'SAT_D'#9'5'#9'D'#9'F'#9'SATUAN'
-                'RA'#9'2'#9'A'#9'F'#9'RASIO'
-                'RT'#9'2'#9'T'#9'F'#9'RASIO'
-                'RD'#9'2'#9'D'#9'F'#9'RASIO'
-                'QTY_A'#9'5'#9'A'#9'F'#9'JUMLAH'
-                'QTY_T'#9'5'#9'T'#9'F'#9'JUMLAH'
-                'QTY_D'#9'6'#9'D'#9'F'#9'JUMLAH')
-              IniAttributes.Enabled = True
-              IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = True
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alClient
-              Color = clWhite
-              DataSource = dsqStokSales
+            object wwCheckBox2: TwwCheckBox
+              Left = 288
+              Top = 31
+              Width = 81
+              Height = 17
+              DisableThemes = False
+              AlwaysTransparent = False
+              ValueChecked = '1'
+              ValueUnchecked = '0'
+              DisplayValueChecked = '1'
+              DisplayValueUnchecked = '0'
+              NullAndBlankState = cbUnchecked
+              Caption = 'Reviewed'
+              DataField = 'ISPOST2'
+              DataSource = dsqBMaster
               Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
+              Font.Color = clBlack
               Font.Height = -11
               Font.Name = 'MS Sans Serif'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
+              Font.Style = [fsBold]
               ParentFont = False
-              RowHeightPercent = 112
-              TabOrder = 1
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = DEFAULT_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'MS Sans Serif'
-              TitleFont.Style = []
-              TitleLines = 3
-              TitleButtons = True
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              OnTitleButtonClick = dbGridD2TitleButtonClick
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = clGrayText
-              object wwIButton2: TwwIButton
-                Left = 0
-                Top = 0
-                Width = 17
-                Height = 41
-                AllowAllUp = True
-                Caption = '@'
-                OnClick = wwDBGrid1IButtonClick
-              end
-            end
-          end
-          object TabSheet4: TTabSheet
-            Caption = 'Detail Item Waste'
-            ImageIndex = 3
-            OnShow = TabSheet4Show
-            object wwDBGrid5: TwwDBGrid
-              Left = 0
-              Top = 0
-              Width = 1059
-              Height = 261
-              DittoAttributes.ShortCutDittoRecord = 16429
-              ControlType.Strings = (
-                'KD_ITEM;CustomEdit;lcdItem;F'
-                'ISHADIAH;CheckBox;1;0'
-                'NO_SERIAL;CustomEdit;wwDBComboBox1;F')
-              Selected.Strings = (
-                'KD_ITEM'#9'12'#9'KODE'#9'F'
-                'KETERANGAN'#9'30'#9'NAMA BARANG/BAHAN'#9'F'
-                'SAT_D'#9'12'#9'SATUAN'#9'F'
-                'QTY_D'#9'10'#9'QTY~WASTE'#9'F')
-              IniAttributes.Enabled = True
-              IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = True
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alClient
-              Color = clWhite
-              DataSource = dsqBDetail4
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
-              Font.Name = 'Arial Narrow'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-              ParentFont = False
-              RowHeightPercent = 112
-              TabOrder = 0
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = ANSI_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
-              TitleLines = 3
-              TitleButtons = False
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = 16777175
-              object wwIButton8: TwwIButton
-                Left = 0
-                Top = 0
-                Width = 17
-                Height = 41
-                AllowAllUp = True
-                Caption = '@'
-                OnClick = wwDBGrid1IButtonClick
-              end
-            end
-          end
-          object TabSheet7: TTabSheet
-            Caption = 'tsJurnal'
-            ImageIndex = 4
-            OnShow = TabSheet7Show
-            object dbGridJurnal: TwwDBGrid
-              Left = 0
-              Top = 0
-              Width = 1059
-              Height = 261
-              DittoAttributes.ShortCutDittoRecord = 16429
-              ControlType.Strings = (
-                'ISPOST;CheckBox;1;0'
-                'ISBATAL;CheckBox;1;0'
-                'ISHADIAH;CheckBox;1;0')
-              Selected.Strings = (
-                'KD_PERK'#9'15'#9'KD_PERK'#9'F'
-                'NAMA_PERKIRAAN'#9'79'#9'NAMA_PERKIRAAN'#9'F'
-                'DEBET'#9'15'#9'DEBET'#9'F'
-                'KREDIT'#9'15'#9'KREDIT'#9'F')
-              IniAttributes.Enabled = True
-              IniAttributes.SaveToRegistry = True
-              IniAttributes.FileName = 'KUWUNG'
-              IniAttributes.Delimiter = ';;'
-              IniAttributes.CheckNewFields = True
-              ExportOptions.ExportType = wwgetSYLK
-              TitleColor = clBtnFace
-              FixedCols = 0
-              ShowHorzScrollBar = True
-              EditControlOptions = [ecoCheckboxSingleClick, ecoSearchOwnerForm]
-              Align = alClient
-              Color = clWhite
-              DataSource = dsqJurnal
-              Font.Charset = ANSI_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -11
-              Font.Name = 'Arial Narrow'
-              Font.Style = []
-              KeyOptions = [dgEnterToTab, dgAllowDelete, dgAllowInsert]
-              Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgWordWrap, dgShowFooter, dgTrailingEllipsis, dgFixedResizable, dgFixedEditable, dgRowResize, dgDblClickColSizing]
-              ParentFont = False
-              RowHeightPercent = 112
-              TabOrder = 0
-              TitleAlignment = taLeftJustify
-              TitleFont.Charset = ANSI_CHARSET
-              TitleFont.Color = clWindowText
-              TitleFont.Height = -11
-              TitleFont.Name = 'Arial Narrow'
-              TitleFont.Style = []
-              TitleLines = 4
-              TitleButtons = True
-              UseTFields = False
-              LineColors.ShadowColor = clSilver
-              OnCalcCellColors = dbGrid1CalcCellColors
-              FooterCellColor = clGradientInactiveCaption
-              PaintOptions.ActiveRecordColor = 16777175
-              object wwIButton9: TwwIButton
-                Left = 0
-                Top = 0
-                Width = 17
-                Height = 41
-                AllowAllUp = True
-                Caption = '@'
-                OnClick = wwDBGrid1IButtonClick
-              end
+              TabOrder = 9
+              OnClick = wwCheckBox2Click
             end
           end
         end
@@ -12474,10 +11990,10 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     end
   end
   object pRight: TPanel
-    Left = 1300
+    Left = 1330
     Top = 0
     Width = 40
-    Height = 650
+    Height = 695
     Align = alRight
     BevelOuter = bvNone
     Color = 23296
@@ -12800,8 +12316,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     AfterScroll = qBDetailAfterScroll
     OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
-    Left = 835
-    Top = 192
+    Left = 883
+    Top = 104
     ParamData = <
       item
         DataType = ftFloat
@@ -12984,8 +12500,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBDetail: TwwDataSource
     DataSet = qBDetail
-    Left = 771
-    Top = 192
+    Left = 819
+    Top = 104
   end
   object qSlsman: TOraQuery
     Session = DMFrm.OS
@@ -12998,7 +12514,7 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'order by nik')
     BeforeOpen = qSlsmanBeforeOpen
     Left = 744
-    Top = 336
+    Top = 360
     ParamData = <
       item
         DataType = ftString
@@ -13051,8 +12567,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from vdaftar_prinsipal')
-    Left = 817
-    Top = 328
+    Left = 785
+    Top = 360
     object qPrinsipalID_PRINSIPAL: TStringField
       DisplayWidth = 6
       FieldName = 'ID_PRINSIPAL'
@@ -13162,8 +12678,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     BeforePost = qBMasterBeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 892
-    Top = 120
+    Left = 940
+    Top = 32
     ParamData = <
       item
         DataType = ftFloat
@@ -13394,19 +12910,31 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       FieldName = 'ALAMAT'
       Size = 255
     end
+    object qBMasterISPOST2: TStringField
+      FieldName = 'ISPOST2'
+      FixedChar = True
+      Size = 1
+    end
+    object qBMasterTGL_APPROVE2: TDateTimeField
+      FieldName = 'TGL_APPROVE2'
+    end
+    object qBMasterOPR_APPROVE2: TStringField
+      FieldName = 'OPR_APPROVE2'
+      Size = 50
+    end
   end
   object dsqBMaster: TwwDataSource
     DataSet = qBMaster
-    Left = 843
-    Top = 136
+    Left = 891
+    Top = 48
   end
   object qItem: TOraQuery
     Session = DMFrm.OS
     SQL.Strings = (
       'select * from vbom_bahan where no_reg_d2=:pno_reg_d2')
     BeforeOpen = qItemBeforeOpen
-    Left = 856
-    Top = 339
+    Left = 824
+    Top = 363
     ParamData = <
       item
         DataType = ftFloat
@@ -14516,8 +14044,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'begin'
       '  PROC_AMBIL_BOM(:PNO_REG_OS, :PNO_REG_OS_PO);'
       'end;')
-    Left = 944
-    Top = 259
+    Left = 928
+    Top = 219
     ParamData = <
       item
         DataType = ftFloat
@@ -15062,8 +14590,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'where no_reg_bukti=:no_reg_os')
     RefreshOptions = [roAfterInsert, roAfterUpdate]
     BeforeOpen = qBDetail2BeforeOpen
-    Left = 891
-    Top = 192
+    Left = 939
+    Top = 104
     ParamData = <
       item
         DataType = ftFloat
@@ -15118,8 +14646,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     BeforePost = qBDetail3BeforePost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBDetail3NewRecord
-    Left = 835
-    Top = 248
+    Left = 867
+    Top = 168
     ParamData = <
       item
         DataType = ftFloat
@@ -15148,8 +14676,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBDetail3: TwwDataSource
     DataSet = qBDetail3
-    Left = 771
-    Top = 248
+    Left = 803
+    Top = 168
   end
   object proc_ImpData1: TOraStoredProc
     StoredProcName = 'PROC_PINDAH_LOKASI_D1'
@@ -15158,8 +14686,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'begin'
       '  PROC_PINDAH_LOKASI_D1(:PNO_REG_OS, :PNO_REFF);'
       'end;')
-    Left = 936
-    Top = 315
+    Left = 968
+    Top = 275
     ParamData = <
       item
         DataType = ftFloat
@@ -15202,8 +14730,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
   end
   object dsqBDetail4: TwwDataSource
     DataSet = qBDetail4
-    Left = 763
-    Top = 288
+    Left = 795
+    Top = 208
   end
   object qBDetail4: TSmartQuery
     Session = DMFrm.OS
@@ -15216,8 +14744,8 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
       'group by no_reg_os, kd_item, keterangan, sat_d')
     DetailFields = 'NO_REG_OS'
     RefreshOptions = [roAfterInsert, roAfterUpdate]
-    Left = 835
-    Top = 288
+    Left = 867
+    Top = 208
     ParamData = <
       item
         DataType = ftFloat
@@ -15588,5 +15116,32 @@ object SerahTerimaBJFrm: TSerahTerimaBJFrm
     DataSet = qBom2
     Left = 1187
     Top = 368
+  end
+  object procUnpost2: TOraStoredProc
+    StoredProcName = 'PROC_UNPOST_OS2'
+    Session = DMFrm.OS
+    SQL.Strings = (
+      'begin'
+      '  PROC_UNPOST_OS2(:PNO_REG, :PKD_FORM, :PCATATAN);'
+      'end;')
+    Left = 776
+    Top = 435
+    ParamData = <
+      item
+        DataType = ftFloat
+        Name = 'PNO_REG'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PKD_FORM'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PCATATAN'
+        ParamType = ptInput
+      end>
+    CommandStoredProcName = 'PROC_UNPOST_OS2:0'
   end
 end
