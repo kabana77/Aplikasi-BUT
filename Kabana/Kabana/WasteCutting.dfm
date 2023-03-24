@@ -5063,11 +5063,9 @@ object WasteCuttingFrm: TWasteCuttingFrm
               Selected.Strings = (
                 'KD_ITEM'#9'11'#9'KODE'#9'T'
                 'KETERANGAN'#9'59'#9'NAMA BARANG/ BAHAN'#9'T'
-                'SAT_T'#9'12'#9'SATUAN~DASAR'#9'T'
-                'QTY_D'#9'12'#9'JUMLAH'#9'F'#9'WASTE'
-                'SAT_D'#9'8'#9'SATUAN'#9'F'#9'WASTE'
-                'RD'#9'10'#9'RASIO~TERHADAP~SAT DASAR'#9'F'
-                'QTY_X'#9'10'#9'KONVERSI KE~SAT DASAR'#9'T'
+                'QTY_T'#9'10'#9'KG'#9'F'#9'WASTE'
+                'RD'#9'10'#9'RASIO'#9'F'#9'WASTE'
+                'QTY_D'#9'12'#9'YARD'#9'T'#9'WASTE'
                 'KETERANGAN2'#9'20'#9'KETERANGAN'#9'F')
               IniAttributes.Enabled = True
               IniAttributes.SaveToRegistry = True
@@ -5523,7 +5521,6 @@ object WasteCuttingFrm: TWasteCuttingFrm
     BeforePost = qBDetailBeforePost
     BeforeDelete = qBMasterBeforeDelete
     AfterScroll = qBDetailAfterScroll
-    OnCalcFields = qBDetailCalcFields
     OnNewRecord = qBDetailNewRecord
     Left = 1211
     Top = 128
@@ -5556,6 +5553,7 @@ object WasteCuttingFrm: TWasteCuttingFrm
     end
     object qBDetailQTY_T: TFloatField
       FieldName = 'QTY_T'
+      OnChange = qBDetailQTY_TChange
       DisplayFormat = '0.0,0;(0.0,0);-'
     end
     object qBDetailQTY_D: TFloatField
@@ -5571,7 +5569,7 @@ object WasteCuttingFrm: TWasteCuttingFrm
     end
     object qBDetailRD: TFloatField
       FieldName = 'RD'
-      OnChange = qBDetailQTY_DChange
+      OnChange = qBDetailQTY_TChange
     end
     object qBDetailHRG_A: TFloatField
       FieldName = 'HRG_A'

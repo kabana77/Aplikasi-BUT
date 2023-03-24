@@ -545,6 +545,7 @@ type
     procedure lcdItemCloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
     procedure qBDetailQTY_DChange(Sender: TField);
+    procedure qBDetailQTY_TChange(Sender: TField);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1407,7 +1408,7 @@ procedure TWasteCuttingFrm.qBDetailCalcFields(DataSet: TDataSet);
 var
   vjumlah : String;
 begin
-
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
 end;
 
 procedure TWasteCuttingFrm.DetailBand2BeforePrint(Sender: TQRCustomBand;
@@ -1868,13 +1869,18 @@ procedure TWasteCuttingFrm.lcdItemCloseUp(Sender: TObject; LookupTable,
   FillTable: TDataSet; modified: Boolean);
 begin
   qBDetailKETERANGAN.AsString:=qItemKETERANGAN.AsString;
-  qBDetailSAT_T.AsString:=qItemSAT_D.AsString;
+  qBDetailSAT_D.AsString:=qItemSAT_D.AsString;
   qBDetailRD.AsFloat:=1;
 end;
 
 procedure TWasteCuttingFrm.qBDetailQTY_DChange(Sender: TField);
 begin
   qBDetailQTY_X.AsFloat:=qBDetailQTY_D.AsFloat*qBDetailRD.AsFloat;
+end;
+
+procedure TWasteCuttingFrm.qBDetailQTY_TChange(Sender: TField);
+begin
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
 end;
 
 end.

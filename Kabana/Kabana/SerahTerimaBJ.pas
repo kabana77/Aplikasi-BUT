@@ -3877,6 +3877,12 @@ end;
 
 procedure TSerahTerimaBJFrm.Label3Click(Sender: TObject);
 begin
+  if (qBMasterISPOST.AsString='1') then
+  begin
+    ShowMessage('Data sudah diapprove!');
+    Abort;
+  end;
+
   if vCanUnPost2 then
   begin
     DMFrm.vcatatan:='';

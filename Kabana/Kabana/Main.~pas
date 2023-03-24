@@ -169,7 +169,6 @@ type
     erimaHasilFinishing11: TMenuItem;
     LoadingBarangJadiOUT1: TMenuItem;
     WasteCutting1: TMenuItem;
-    WasteSewing1: TMenuItem;
     WasteFinishingOUT1: TMenuItem;
     WasteProduksi1: TMenuItem;
     PemasukanWaste1: TMenuItem;
@@ -183,6 +182,7 @@ type
     N25: TMenuItem;
     N26: TMenuItem;
     Timer1: TTimer;
+    InfoWIPFinishing21: TMenuItem;
     procedure Proc_HapusMenu;
     procedure Proc_Aktifkan_Menu;
     procedure FormCreate(Sender: TObject);
@@ -288,6 +288,7 @@ type
     procedure WasteFinishingOUT1Click(Sender: TObject);
     procedure LoadingBarangJadiOUT1Click(Sender: TObject);
     procedure InfoMutasiFinishing11Click(Sender: TObject);
+    procedure InfoWIPFinishing21Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -321,7 +322,7 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   TerimaHslCutting, HasilSewing, InfoWIPSewing1, TFSewing, TerimaHslSewing,
   InfoWIPSewing2, PemasukanWaste, JasaWashing, TerimaJasaWashing,
   InfoWIPWashingSubkon, HasilFinishing, WasteFinishing,
-  LoadingHslFinishing, InfoWIPFinishing;
+  LoadingHslFinishing, InfoWIPFinishing, InfoWIPFinishing2;
 
 {$R *.dfm}
 
@@ -2867,6 +2868,30 @@ if InfoWIPFinishingFrm=nil then InfoWIPFinishingFrm:=TInfoWIPFinishingFrm.Create
      InfoWIPFinishingFrm.vCanExport:=False;
   end;
   InfoWIPFinishingFrm.Show;
+end;
+
+procedure TMainFrm.InfoWIPFinishing21Click(Sender: TObject);
+begin
+  if InfoWIPFinishing2Frm=nil then InfoWIPFinishing2Frm:=TInfoWIPFinishing2Frm.Create(Application);
+  InfoWIPFinishing2Frm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  InfoWIPFinishing2Frm.pTop.Caption:='     '+StringReplace(InfoWIPFinishing2Frm.TabSheet6.Caption,'&','',[rfReplaceAll]);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoWIPFinishing2Frm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoWIPFinishing2Frm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoWIPFinishing2Frm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoWIPFinishing2Frm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoWIPFinishing2Frm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoWIPFinishing2Frm.vCanAdd:=False;
+     InfoWIPFinishing2Frm.vCanEdit:=False;
+     InfoWIPFinishing2Frm.vCanDel:=False;
+     InfoWIPFinishing2Frm.vCanPrint:=False;
+     InfoWIPFinishing2Frm.vCanExport:=False;
+  end;
+  InfoWIPFinishing2Frm.Show;
 end;
 
 end.

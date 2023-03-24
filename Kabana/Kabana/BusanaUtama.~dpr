@@ -103,7 +103,8 @@ uses
   HasilFinishing in 'HasilFinishing.pas' {HasilFinishingFrm},
   WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
   LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm},
-  InfoWIPFinishing in 'InfoWIPFinishing.pas' {InfoWIPFinishingFrm};
+  InfoWIPFinishing in 'InfoWIPFinishing.pas' {InfoWIPFinishingFrm},
+  InfoWIPFinishing2 in 'InfoWIPFinishing2.pas' {InfoWIPFinishing2Frm};
 
 {$R *.res}
 
@@ -113,6 +114,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TInfoWIPFinishingFrm, InfoWIPFinishingFrm);
+  Application.CreateForm(TInfoWIPFinishing2Frm, InfoWIPFinishing2Frm);
   Application.Run;
 end.

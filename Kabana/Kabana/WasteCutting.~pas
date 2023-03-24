@@ -1115,7 +1115,7 @@ begin
   dbNavigator.DataSource:=dsqBMaster;
   if vCanUnPost then wwCheckBox1.Enabled:=True else wwCheckBox1.Enabled:=False;
 
-  DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
+  //DMFrm.qLokasi.SQL.Text:=DMFrm.qLokasi.SQL.Text+' where kd_lokasi in (''61'', ''62'', ''63'')';
 
   tsInputD2.TabVisible:=false;
   TabSheet4.TabVisible:=false;
@@ -1407,7 +1407,7 @@ procedure TWasteCuttingFrm.qBDetailCalcFields(DataSet: TDataSet);
 var
   vjumlah : String;
 begin
-
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
 end;
 
 procedure TWasteCuttingFrm.DetailBand2BeforePrint(Sender: TQRCustomBand;
@@ -1868,7 +1868,7 @@ procedure TWasteCuttingFrm.lcdItemCloseUp(Sender: TObject; LookupTable,
   FillTable: TDataSet; modified: Boolean);
 begin
   qBDetailKETERANGAN.AsString:=qItemKETERANGAN.AsString;
-  qBDetailSAT_T.AsString:=qItemSAT_D.AsString;
+  qBDetailSAT_D.AsString:=qItemSAT_D.AsString;
   qBDetailRD.AsFloat:=1;
 end;
 
