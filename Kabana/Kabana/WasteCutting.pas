@@ -453,6 +453,7 @@ type
     qBMasterSTATUS: TStringField;
     dbeReff: TwwDBEdit;
     Label3: TLabel;
+    qB1QTY_T: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

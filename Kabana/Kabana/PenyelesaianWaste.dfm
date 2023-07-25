@@ -1,5 +1,5 @@
 object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
-  Left = 245
+  Left = 255
   Top = 173
   Width = 1290
   Height = 679
@@ -4013,7 +4013,7 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
           object Label19: TLabel
             Left = 0
             Top = 318
-            Width = 78
+            Width = 185
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -11378,7 +11378,7 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
   end
   object qBX: TOraQuery
     Session = DMFrm.OS
-    Left = 752
+    Left = 744
     Top = 336
     object qBXNDATA: TFloatField
       FieldName = 'NDATA'
@@ -11892,8 +11892,8 @@ object PenyelesaianWasteFrm: TPenyelesaianWasteFrm
       'select * from vkartu_stok_waste_realtime'
       ''
       '/*select * from vdaftar_item_aktif*/')
-    Left = 856
-    Top = 339
+    Left = 872
+    Top = 299
     object qItemKD_ITEM: TStringField
       DisplayLabel = 'KODE'
       DisplayWidth = 12

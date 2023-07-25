@@ -1734,13 +1734,6 @@ begin
   vno_reg:=qBMasterNO_REG_OS.AsFloat;
   if (qBMaster.State=dsBrowse) and (qBMasterNO_REG_OS.AsFloat>0) and (qBMasterISPOST.AsString='0') then
   begin
-    {
-    qBomD.Close;
-    qBomD.ParamByName('no_reg_d').AsString:=qBMasterNO_REFF.AsString;
-    qBomD.Open;
-    qBom.Close;
-    qBom.Open;  }
-
     proc_ImpData.Close;
     proc_ImpData.ParamByName('pno_reg_os').AsFloat:=qBMasterNO_REG_OS.AsFloat;
     proc_ImpData.ParamByName('pno_bukti').AsString:=dbeReff.EditText;

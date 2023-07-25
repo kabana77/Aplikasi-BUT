@@ -453,6 +453,7 @@ type
     qBMasterSTATUS: TStringField;
     dbeReff: TwwDBEdit;
     Label3: TLabel;
+    qB1QTY_T: TFloatField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -545,6 +546,7 @@ type
     procedure lcdItemCloseUp(Sender: TObject; LookupTable,
       FillTable: TDataSet; modified: Boolean);
     procedure qBDetailQTY_DChange(Sender: TField);
+    procedure qBDetailQTY_TChange(Sender: TField);
   private
     { Private declarations }
     vfield_idx, vfield_idx_tgl : word;
@@ -1875,6 +1877,11 @@ end;
 procedure TWasteCuttingFrm.qBDetailQTY_DChange(Sender: TField);
 begin
   qBDetailQTY_X.AsFloat:=qBDetailQTY_D.AsFloat*qBDetailRD.AsFloat;
+end;
+
+procedure TWasteCuttingFrm.qBDetailQTY_TChange(Sender: TField);
+begin
+  qBDetailQTY_D.AsFloat:=qBDetailQTY_T.AsFloat*qBDetailRD.AsFloat;
 end;
 
 end.

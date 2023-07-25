@@ -1,7 +1,7 @@
 object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
-  Left = 223
+  Left = 226
   Top = 140
-  Width = 1134
+  Width = 1432
   Height = 723
   Caption = 'SerahTerimaWasteFrm'
   Color = clWindow
@@ -34,7 +34,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   object pCenter: TPanel
     Left = 40
     Top = 0
-    Width = 1038
+    Width = 1336
     Height = 684
     Align = alClient
     BevelOuter = bvNone
@@ -58,7 +58,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object pTop: TPanel
       Left = 0
       Top = 0
-      Width = 1038
+      Width = 1336
       Height = 50
       Cursor = crHandPoint
       Align = alTop
@@ -78,7 +78,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object pBottom: TPanel
       Left = 0
       Top = 655
-      Width = 1038
+      Width = 1336
       Height = 29
       Align = alBottom
       BevelInner = bvLowered
@@ -227,7 +227,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       object MyToolBar: TToolBar
         Left = 422
         Top = 1
-        Width = 569
+        Width = 867
         Height = 27
         Align = alClient
         ButtonWidth = 41
@@ -278,7 +278,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         end
       end
       object pRight2: TPanel
-        Left = 991
+        Left = 1289
         Top = 1
         Width = 46
         Height = 27
@@ -291,7 +291,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object PageControl1: TPageControl
       Left = 0
       Top = 50
-      Width = 1038
+      Width = 1336
       Height = 605
       ActivePage = TabSheet1
       Align = alClient
@@ -2197,7 +2197,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object pTop1: TPanel
           Left = 0
           Top = 0
-          Width = 1030
+          Width = 1328
           Height = 33
           Align = alTop
           Alignment = taLeftJustify
@@ -2216,7 +2216,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object dbGrid1: TwwDBGrid
           Left = 0
           Top = 33
-          Width = 1030
+          Width = 1328
           Height = 544
           DittoAttributes.ShortCutDittoRecord = 16429
           Selected.Strings = (
@@ -2230,7 +2230,11 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             'KD_ITEM'#9'9'#9'Kode'#9'F'#9'BAHAN BAKU'
             'KETERANGAN'#9'27'#9'Nama Barang/ Bahan'#9'F'#9'BAHAN BAKU'
             'SAT_D'#9'10'#9'Satuan'#9'F'#9'BAHAN BAKU'
-            'QTY_D'#9'6'#9'Jumlah'#9'F'#9'BAHAN BAKU')
+            'QTY_D'#9'6'#9'Jumlah'#9'F'#9'BAHAN BAKU'
+            'OPR_INSERT'#9'18'#9'OPR'#9'F'#9'LOG INPUT'
+            'TGL_INSERT'#9'18'#9'TGL'#9'F'#9'LOG INPUT'
+            'OPR_APPROVE'#9'18'#9'OPR'#9'F'#9'LOG APPROVE'
+            'TGL_APPROVE'#9'18'#9'TGL'#9'F'#9'LOG APPROVE')
           IniAttributes.Enabled = True
           IniAttributes.SaveToRegistry = True
           IniAttributes.FileName = 'KUWUNG'
@@ -4247,7 +4251,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object pMaster: TPanel
           Left = 0
           Top = 0
-          Width = 1030
+          Width = 1328
           Height = 251
           Align = alTop
           BevelOuter = bvNone
@@ -4570,7 +4574,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           object Panel2: TPanel
             Left = 0
             Top = 154
-            Width = 1030
+            Width = 1328
             Height = 97
             Align = alBottom
             Caption = 'Panel2'
@@ -4578,7 +4582,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object wwDBGrid1: TwwDBGrid
               Left = 1
               Top = 1
-              Width = 1028
+              Width = 1326
               Height = 73
               TabStop = False
               DittoAttributes.ShortCutDittoRecord = 16429
@@ -4653,7 +4657,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object wwDBGrid2: TwwDBGrid
               Left = 1
               Top = 74
-              Width = 1028
+              Width = 1326
               Height = 22
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -4789,7 +4793,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           end
         end
         object pMaster2: TPanel
-          Left = 845
+          Left = 1143
           Top = 251
           Width = 185
           Height = 326
@@ -4806,7 +4810,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
           object Label19: TLabel
             Left = 0
             Top = 272
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -4872,7 +4876,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
         object PageControl2: TPageControl
           Left = 0
           Top = 251
-          Width = 845
+          Width = 1143
           Height = 326
           ActivePage = tsInputD
           Align = alClient
@@ -4910,7 +4914,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object dbGridD: TwwDBGrid
               Left = 0
               Top = 0
-              Width = 837
+              Width = 1135
               Height = 298
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -5012,7 +5016,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object Panel1: TPanel
               Left = 0
               Top = 0
-              Width = 837
+              Width = 1135
               Height = 49
               Align = alTop
               BevelOuter = bvNone
@@ -5121,7 +5125,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object dbGridD2: TwwDBGrid
               Left = 0
               Top = 49
-              Width = 837
+              Width = 1135
               Height = 249
               DittoAttributes.ShortCutDittoRecord = 16429
               Selected.Strings = (
@@ -12076,7 +12080,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     end
   end
   object pRight: TPanel
-    Left = 1078
+    Left = 1376
     Top = 0
     Width = 40
     Height = 684
@@ -12258,6 +12262,22 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     object qB1KETERANGAN2: TStringField
       FieldName = 'KETERANGAN2'
       Size = 255
+    end
+    object qB1TGL_INSERT: TDateTimeField
+      FieldName = 'TGL_INSERT'
+      Required = True
+    end
+    object qB1TGL_APPROVE: TDateTimeField
+      FieldName = 'TGL_APPROVE'
+    end
+    object qB1OPR_INSERT: TStringField
+      FieldName = 'OPR_INSERT'
+      Required = True
+      Size = 50
+    end
+    object qB1OPR_APPROVE: TStringField
+      FieldName = 'OPR_APPROVE'
+      Size = 50
     end
   end
   object dsqB1: TwwDataSource
@@ -13068,8 +13088,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       'from pindah_lokasi_d'
       'where no_reg_os=:pno_reg_os')
     BeforeOpen = qBDetailXBeforeOpen
-    Left = 1168
-    Top = 168
+    Left = 1152
+    Top = 184
     ParamData = <
       item
         DataType = ftFloat
@@ -14300,7 +14320,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1155
+    Left = 1227
     Top = 128
   end
   object qBom: TOraQuery
@@ -14310,8 +14330,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     MasterSource = dsqBomD
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
-    Left = 1208
-    Top = 171
+    Left = 1240
+    Top = 179
     ParamData = <
       item
         DataType = ftUnknown

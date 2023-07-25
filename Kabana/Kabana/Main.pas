@@ -279,7 +279,6 @@ type
     procedure LoadingHasilSewingOUT1Click(Sender: TObject);
     procedure erimaHasilSewingIN1Click(Sender: TObject);
     procedure InfoWIPSewing21Click(Sender: TObject);
-    procedure PemasukanWaste1Click(Sender: TObject);
     procedure PengirimanIN1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure PenerimaanIN1Click(Sender: TObject);
@@ -289,6 +288,9 @@ type
     procedure LoadingBarangJadiOUT1Click(Sender: TObject);
     procedure InfoMutasiFinishing11Click(Sender: TObject);
     procedure InfoWIPFinishing21Click(Sender: TObject);
+    procedure PemasukanWaste1Click(Sender: TObject);
+    procedure PenyelesaianWasteOUT1Click(Sender: TObject);
+    procedure InfoMutasiWaste1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -320,9 +322,10 @@ uses dm, About, MyChild, MyWeb, DaftarMenu, DaftarKonstanta,
   HasilCutting, InfoWIPCutting1, LoadingCutting, InfoWIPCutting2,
   JasaBordir, TerimaJasaBordir, InfoWIPCuttingSubkon, WasteCutting,
   TerimaHslCutting, HasilSewing, InfoWIPSewing1, TFSewing, TerimaHslSewing,
-  InfoWIPSewing2, PemasukanWaste, JasaWashing, TerimaJasaWashing,
+  InfoWIPSewing2, JasaWashing, TerimaJasaWashing,
   InfoWIPWashingSubkon, HasilFinishing, WasteFinishing,
-  LoadingHslFinishing, InfoWIPFinishing, InfoWIPFinishing2;
+  LoadingHslFinishing, InfoWIPFinishing, InfoWIPFinishing2, TerimaWaste,
+  InfoMutasiStokWaste;
 
 {$R *.dfm}
 
@@ -2177,8 +2180,8 @@ end;
 procedure TMainFrm.PenyelesaianWaste1Click(Sender: TObject);
 begin
   if PenyelesaianWasteFrm=nil then PenyelesaianWasteFrm:=TPenyelesaianWasteFrm.Create(Application);
-  PenyelesaianWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
-  PenyelesaianWasteFrm.pTop.Caption:=' '+UpperCase(PenyelesaianWasteFrm.Caption);
+    PenyelesaianWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+    PenyelesaianWasteFrm.pTop.Caption:=' '+UpperCase(PenyelesaianWasteFrm.Caption);
   if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
   begin
      PenyelesaianWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
@@ -2658,32 +2661,6 @@ begin
   InfoWIPSewing2Frm.Show;
 end;
 
-procedure TMainFrm.PemasukanWaste1Click(Sender: TObject);
-begin
-  if PemasukanWasteFrm=nil then PemasukanWasteFrm:=TPemasukanWasteFrm.Create(Application);
-  PemasukanWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
-  PemasukanWasteFrm.pTop.Caption:=' '+UpperCase(TerimaBBFrm.Caption);
-  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
-  begin
-     PemasukanWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
-     PemasukanWasteFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
-     PemasukanWasteFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
-     PemasukanWasteFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
-     PemasukanWasteFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
-     PemasukanWasteFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
-  end
-  else
-  begin
-     PemasukanWasteFrm.vCanAdd:=False;
-     PemasukanWasteFrm.vCanEdit:=False;
-     PemasukanWasteFrm.vCanDel:=False;
-     PemasukanWasteFrm.vCanPrint:=False;
-     PemasukanWasteFrm.vCanExport:=False;
-     PemasukanWasteFrm.vCanUnPost:=False;
-  end;
-  PemasukanWasteFrm.Show;
-end;
-
 procedure TMainFrm.PengirimanIN1Click(Sender: TObject);
 begin
   if JasaWashingFrm=nil then JasaWashingFrm:=TJasaWashingFrm.Create(Application);
@@ -2892,6 +2869,84 @@ begin
      InfoWIPFinishing2Frm.vCanExport:=False;
   end;
   InfoWIPFinishing2Frm.Show;
+end;
+
+procedure TMainFrm.PemasukanWaste1Click(Sender: TObject);
+begin
+  if TerimaWasteFrm=nil then TerimaWasteFrm:=TTerimaWasteFrm.Create(Application);
+  TerimaWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+  TerimaWasteFrm.pTop.Caption:=' '+UpperCase(TerimaWasteFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     TerimaWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     TerimaWasteFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     TerimaWasteFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     TerimaWasteFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     TerimaWasteFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     TerimaWasteFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     TerimaWasteFrm.vCanAdd:=False;
+     TerimaWasteFrm.vCanEdit:=False;
+     TerimaWasteFrm.vCanDel:=False;
+     TerimaWasteFrm.vCanPrint:=False;
+     TerimaWasteFrm.vCanExport:=False;
+     TerimaWasteFrm.vCanUnPost:=False;
+  end;
+  TerimaWasteFrm.Show;
+end;
+
+procedure TMainFrm.PenyelesaianWasteOUT1Click(Sender: TObject);
+begin
+if PenyelesaianWasteFrm=nil then PenyelesaianWasteFrm:=TPenyelesaianWasteFrm.Create(Application);
+    PenyelesaianWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+    PenyelesaianWasteFrm.pTop.Caption:=' '+UpperCase(PenyelesaianWasteFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     PenyelesaianWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     PenyelesaianWasteFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     PenyelesaianWasteFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     PenyelesaianWasteFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     PenyelesaianWasteFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+     PenyelesaianWasteFrm.vCanUnPost:=(DMFrm.qMenuUserISUNPOST.AsString='+');
+  end
+  else
+  begin
+     PenyelesaianWasteFrm.vCanAdd:=False;
+     PenyelesaianWasteFrm.vCanEdit:=False;
+     PenyelesaianWasteFrm.vCanDel:=False;
+     PenyelesaianWasteFrm.vCanPrint:=False;
+     PenyelesaianWasteFrm.vCanExport:=False;
+     PenyelesaianWasteFrm.vCanUnPost:=False;
+  end;
+  PenyelesaianWasteFrm.Show;
+end;
+
+procedure TMainFrm.InfoMutasiWaste1Click(Sender: TObject);
+begin
+  if InfoMutasiStokWasteFrm=nil then InfoMutasiStokWasteFrm:=TInfoMutasiStokWasteFrm.Create(Application);
+     InfoMutasiStokWasteFrm.Caption:=StringReplace((Sender as TMenuItem).Caption,'&','',[rfReplaceAll]);
+     InfoMutasiStokWasteFrm.pTop.Caption:=' '+UpperCase(InfoMutasiStokWasteFrm.Caption);
+  if DMFrm.qMenuUser.Locate('NAMA_MENU',(Sender as TMenuItem).Name,[loPartialKey]) then
+  begin
+     InfoMutasiStokWasteFrm.vCanAdd:=(DMFrm.qMenuUserISADD.AsString='+');
+     InfoMutasiStokWasteFrm.vCanEdit:=(DMFrm.qMenuUserISEDIT.AsString='+');
+     InfoMutasiStokWasteFrm.vCanDel:=(DMFrm.qMenuUserISDEL.AsString='+');
+     InfoMutasiStokWasteFrm.vCanPrint:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokWasteFrm.vCanPrint2:=(DMFrm.qMenuUserISPRINT.AsString='+');
+     InfoMutasiStokWasteFrm.vCanExport:=(DMFrm.qMenuUserISEXPORT.AsString='+');
+  end
+  else
+  begin
+     InfoMutasiStokWasteFrm.vCanAdd:=False;
+     InfoMutasiStokWasteFrm.vCanEdit:=False;
+     InfoMutasiStokWasteFrm.vCanDel:=False;
+     InfoMutasiStokWasteFrm.vCanPrint:=False;
+     InfoMutasiStokWasteFrm.vCanPrint2:=False;
+     InfoMutasiStokWasteFrm.vCanExport:=False;
+  end;
+  InfoMutasiStokWasteFrm.Show;
 end;
 
 end.

@@ -96,7 +96,6 @@ uses
   TFSewing in 'TFSewing.pas' {TFSewingFrm},
   TerimaHslSewing in 'TerimaHslSewing.pas' {TerimaHslSewingFrm},
   InfoWIPSewing2 in 'InfoWIPSewing2.pas' {InfoWIPSewing2Frm},
-  PemasukanWaste in 'PemasukanWaste.pas' {PemasukanWasteFrm},
   JasaWashing in 'JasaWashing.pas' {JasaWashingFrm},
   TerimaJasaWashing in 'TerimaJasaWashing.pas' {TerimaJasaWashingFrm},
   InfoWIPWashingSubkon in 'InfoWIPWashingSubkon.pas' {InfoWIPWashingSubkonFrm},
@@ -104,7 +103,9 @@ uses
   WasteFinishing in 'WasteFinishing.pas' {WasteFinishingFrm},
   LoadingHslFinishing in 'LoadingHslFinishing.pas' {LoadingHslFinishingFrm},
   InfoWIPFinishing in 'InfoWIPFinishing.pas' {InfoWIPFinishingFrm},
-  InfoWIPFinishing2 in 'InfoWIPFinishing2.pas' {InfoWIPFinishing2Frm};
+  InfoWIPFinishing2 in 'InfoWIPFinishing2.pas' {InfoWIPFinishing2Frm},
+  TerimaWaste in 'TerimaWaste.pas' {TerimaWasteFrm},
+  InfoMutasiStokWaste in 'InfoMutasiStokWaste.pas' {InfoMutasiStokWasteFrm};
 
 {$R *.res}
 
@@ -114,6 +115,6 @@ begin
   Application.CreateForm(TMainFrm, MainFrm);
   Application.CreateForm(TMyWebFrm, MyWebFrm);
   Application.CreateForm(TFilterFrm, FilterFrm);
-  Application.CreateForm(TInfoWIPFinishing2Frm, InfoWIPFinishing2Frm);
+  Application.CreateForm(TInfoMutasiStokWasteFrm, InfoMutasiStokWasteFrm);
   Application.Run;
 end.

@@ -831,12 +831,11 @@ procedure TInfoMutasiStokBBFrm.tbRefreshClick(Sender: TObject);
 begin
   case PageControl1.TabIndex of
   0 : begin
-        qB1.SQL.Clear;
-        qB1.SQL.Add('select * from (select * from vkartu_stok_mutasi_bb_nilai');
-
-        //qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal)');
-        qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal and substr(kd_item, 1, 2) in (''10'', ''11'', ''12'', ''13'', ''14'', ''15'', ''16'', ''17'', ''18'') )');
-
+        {qB1.SQL.Clear;
+        qB1.SQL.Add('select * from (select * from vkartu_stok_mutasi_waste_nilai)');
+        qB1.SQL.Add('where nama_prinsipal like :pnama_prinsipal and kd_item in (select distinct kd_item from wip_cutting_d) )');}
+         qB1.Close;
+         qB1.Open;
       end;
   1 : begin
          qB2.Close;

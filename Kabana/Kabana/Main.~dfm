@@ -1,5 +1,5 @@
 object MainFrm: TMainFrm
-  Left = 504
+  Left = 543
   Top = 236
   Width = 800
   Height = 366
@@ -673,6 +673,7 @@ object MainFrm: TMainFrm
         object PenyelesaianWasteOUT1: TMenuItem
           Caption = 'Penyelesaian Waste [OUT]'
           GroupIndex = 2
+          OnClick = PenyelesaianWasteOUT1Click
         end
         object N26: TMenuItem
           Caption = '-'
@@ -681,6 +682,7 @@ object MainFrm: TMainFrm
         object InfoMutasiWaste1: TMenuItem
           Caption = 'Info Mutasi Waste'
           GroupIndex = 2
+          OnClick = InfoMutasiWaste1Click
         end
       end
     end

@@ -943,6 +943,7 @@ type
     QRDBText2: TQRDBText;
     qBMasterSTATUS: TStringField;
     QRDBText5: TQRDBText;
+    qB1NO_BUKTI: TStringField;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);

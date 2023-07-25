@@ -1,5 +1,5 @@
 object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
-  Left = 223
+  Left = 227
   Top = 140
   Width = 1432
   Height = 723
@@ -4582,7 +4582,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object wwDBGrid1: TwwDBGrid
               Left = 1
               Top = 1
-              Width = 1028
+              Width = 1326
               Height = 73
               TabStop = False
               DittoAttributes.ShortCutDittoRecord = 16429
@@ -4657,7 +4657,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
             object wwDBGrid2: TwwDBGrid
               Left = 1
               Top = 74
-              Width = 1028
+              Width = 1326
               Height = 22
               DittoAttributes.ShortCutDittoRecord = 16429
               ControlType.Strings = (
@@ -13088,8 +13088,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
       'from pindah_lokasi_d'
       'where no_reg_os=:pno_reg_os')
     BeforeOpen = qBDetailXBeforeOpen
-    Left = 1168
-    Top = 168
+    Left = 1152
+    Top = 184
     ParamData = <
       item
         DataType = ftFloat
@@ -14320,7 +14320,7 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
   end
   object dsqBomD: TwwDataSource
     DataSet = qBomD
-    Left = 1155
+    Left = 1227
     Top = 128
   end
   object qBom: TOraQuery
@@ -14330,8 +14330,8 @@ object SerahTerimaWasteFrm: TSerahTerimaWasteFrm
     MasterSource = dsqBomD
     MasterFields = 'NO_REG_D'
     DetailFields = 'NO_BOM'
-    Left = 1208
-    Top = 171
+    Left = 1240
+    Top = 179
     ParamData = <
       item
         DataType = ftUnknown

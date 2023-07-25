@@ -1,5 +1,5 @@
 object TerimaBBFrm: TTerimaBBFrm
-  Left = 238
+  Left = 243
   Top = 133
   Width = 1382
   Height = 784

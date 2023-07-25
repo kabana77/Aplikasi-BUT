@@ -1,5 +1,5 @@
 object POFrm: TPOFrm
-  Left = 349
+  Left = 351
   Top = 198
   Width = 1290
   Height = 679
@@ -20428,7 +20428,7 @@ object POFrm: TPOFrm
     AfterPost = qBMasterAfterPost
     BeforeDelete = qBMasterBeforeDelete
     OnNewRecord = qBMasterNewRecord
-    Left = 916
+    Left = 908
     Top = 8
     ParamData = <
       item

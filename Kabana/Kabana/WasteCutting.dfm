@@ -1,5 +1,5 @@
 object WasteCuttingFrm: TWasteCuttingFrm
-  Left = 236
+  Left = 239
   Top = 153
   Width = 1382
   Height = 784
@@ -2230,6 +2230,7 @@ object WasteCuttingFrm: TWasteCuttingFrm
             'KETERANGAN'#9'30'#9'NAMA BARANG/BAHAN'#9'F'#9'MATERIAL'
             'SAT_D'#9'12'#9'SATUAN'#9'F'#9'MATERIAL'
             'QTY_D'#9'10'#9'JUMLAH'#9'F'#9'MATERIAL'
+            'QTY_T'#9'10'#9'KG'#9'F'#9'MATERIAL'
             'KETERANGAN2'#9'75'#9'KETERANGAN'#9'F'#9'MATERIAL'
             'OPR_INSERT'#9'12'#9'OPR'#9'F'#9'PREPARE BY'
             'TGL_INSERT'#9'20'#9'TGL'#9'F'#9'PREPARE BY'
@@ -5424,6 +5425,7 @@ object WasteCuttingFrm: TWasteCuttingFrm
       'b.kd_item,'
       'b.keterangan,'
       'b.sat_d,'
+      'b.qty_t,'
       'b.qty_d,'
       'b.keterangan2'
       'from (select * from wip_cutting where kd_form='#39'209'#39') a'
@@ -5496,6 +5498,10 @@ object WasteCuttingFrm: TWasteCuttingFrm
       FieldName = 'QTY_D'
       ReadOnly = True
       DisplayFormat = '0.0,0;(0.0,0);-'
+    end
+    object qB1QTY_T: TFloatField
+      FieldName = 'QTY_T'
+      ReadOnly = True
     end
   end
   object dsqB1: TwwDataSource

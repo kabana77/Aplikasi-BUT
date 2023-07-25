@@ -674,6 +674,18 @@ type
     QRDBText60: TQRDBText;
     qBMasterTGL_APPROVE: TDateTimeField;
     qBMasterOPR_APPROVE: TStringField;
+    Label12: TLabel;
+    wwDBEdit4: TwwDBEdit;
+    qBMasterUM: TFloatField;
+    QRLabel54: TQRLabel;
+    QRLabel55: TQRLabel;
+    QRLSubTotal: TQRLabel;
+    QRShape26: TQRShape;
+    QRLUM: TQRLabel;
+    QRLabel58: TQRLabel;
+    QRLDP: TQRLabel;
+    QRShape35: TQRShape;
+    QRShape63: TQRShape;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -763,7 +775,7 @@ type
   public
     { Public declarations }
     vCanADD, vCanEdit, vCanDel, vCanPrint, vCanExport, vCanUnPost, vCanCancel : Boolean;
-    vdpp, vppn, vtotal : Real;
+    vdpp, vppn, vsubtotal, vdp, vtotal : Real;
   end;
 
 var
@@ -1507,6 +1519,7 @@ begin
           qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
           qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
         end;
+        qBMasterSUB_TOTAL.AsFloat:=qBDetailXNILAI_TAGIHAN.AsFloat-qBMasterUM.AsFloat;
       end;
   end;
 end;
@@ -1522,7 +1535,7 @@ begin
   qBDetailX.Close;
   qBDetailX.Open;
   pLeft2.Caption:=FormatFloat('#,#;0',qBDetailXNDATA.AsInteger);
-  dbGridD.ColumnByName('nilai_tagihan').FooterValue:=FormatFloat('#,#;(#,#);-',qBDetailXnilai_tagihan.AsFloat);
+  dbGridD.ColumnByName('nilai_tagihan').FooterValue:=FormatFloat('0.0,0;(0.0,0);',qBDetailXnilai_tagihan.AsFloat);
   dbGridD.ColumnByName('sisa_tagihan').FooterValue:=FormatFloat('0.0,0;(0.0,0);',qBDetailXsisa_tagihan.AsFloat);
 end;
 
@@ -1829,7 +1842,9 @@ begin
   begin
     vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat;
     vppn:=0;
-    vtotal:=vdpp+vppn;
+    vsubtotal:=vdpp+vppn;
+    vdp:=qBMasterUM.AsFloat;
+    vtotal:=(vdpp+vppn)-vdp;
   end
   else
   begin
@@ -1837,18 +1852,24 @@ begin
     begin
       vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat/1.11;
       vppn:=vdpp*0.11;
-      vtotal:=vdpp+vppn;
+      vsubtotal:=vdpp+vppn;
+      vdp:=qBMasterUM.AsFloat;
+      vtotal:=(vdpp+vppn)-vdp;
     end
     else
     begin
       vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat;
       vppn:=vdpp*0.11;
-      vtotal:=vdpp+vppn;
+      vsubtotal:=vdpp+vppn;
+      vdp:=qBMasterUM.AsFloat;
+      vtotal:=(vdpp+vppn)-vdp;
     end;
   end;
 
   QRLDPP.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vdpp);
   QRLPPN.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vppn);
+  QRLSubTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vsubtotal);
+  QRLDP.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vdp);
   QRLTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vtotal);
 
   if qBMasterMU.AsString = 'IDR' then

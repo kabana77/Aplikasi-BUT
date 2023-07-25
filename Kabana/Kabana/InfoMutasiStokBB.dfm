@@ -1,5 +1,5 @@
 object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
-  Left = 356
+  Left = 358
   Top = 211
   Width = 1198
   Height = 600
@@ -6721,16 +6721,14 @@ object InfoMutasiStokBBFrm: TInfoMutasiStokBBFrm
   object qB1: TSmartQuery
     Session = DMFrm.OS
     SQL.Strings = (
-      'select * from ('
-      ' select * from vkartu_stok_mutasi_bb_nilai'
+      '/*select * from ('
+      ' select * from vkartu_stok_mutasi_waste_nilai'
       ' where nama_prinsipal like :pnama_prinsipal and'
-      
-        ' substr(kd_item, 1, 2) in ('#39'10'#39', '#39'11'#39', '#39'12'#39', '#39'13'#39', '#39'14'#39', '#39'15'#39', '#39 +
-        '16'#39', '#39'17'#39', '#39'18'#39')'
-      ')'
+      ' kd_item in (select distinct kd_item from wip_cutting_d)'
+      ')*/'
       ''
-      '/*select * from (select * from vkartu_stok_mutasi_bb_nilai'
-      'where nama_prinsipal like :pnama_prinsipal)*/')
+      'select * from (select * from vkartu_stok_mutasi_bb_nilai'
+      'where nama_prinsipal like :pnama_prinsipal)')
     ReadOnly = True
     BeforeOpen = qB1BeforeOpen
     OnCalcFields = qB1CalcFields

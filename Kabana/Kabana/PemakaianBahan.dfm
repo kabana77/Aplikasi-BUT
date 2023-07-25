@@ -2223,6 +2223,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
             'ISPOST;CheckBox;1;0'
             'ISBATAL;CheckBox;1;0')
           Selected.Strings = (
+            'NO_BUKTI'#9'15'#9'NO_BUKTI'#9'F'
             'NO_REG_OS'#9'12'#9'NO. BUKTI'#9'F'
             'TGL'#9'11'#9'TGL'#9'F'
             'ISPOST'#9'5'#9'POST'#9'F'
@@ -5296,7 +5297,7 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
           object Label19: TLabel
             Left = 0
             Top = 319
-            Width = 185
+            Width = 78
             Height = 13
             Align = alBottom
             Caption = ' Catatan Internal'
@@ -12747,6 +12748,11 @@ object PemakaianBahanFrm: TPemakaianBahanFrm
     end
     object qB1TGL_APPROVE: TDateTimeField
       FieldName = 'TGL_APPROVE'
+    end
+    object qB1NO_BUKTI: TStringField
+      FieldName = 'NO_BUKTI'
+      ReadOnly = True
+      Size = 15
     end
   end
   object dsqB1: TwwDataSource
