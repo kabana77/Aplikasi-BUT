@@ -1,5 +1,5 @@
 object DTFrm: TDTFrm
-  Left = 261
+  Left = 265
   Top = 161
   Width = 1334
   Height = 762
@@ -7915,37 +7915,6 @@ object DTFrm: TDTFrm
                   WordWrap = True
                   FontSize = 10
                 end
-                object QRLabel47: TQRLabel
-                  Left = 294
-                  Top = 2
-                  Width = 159
-                  Height = 25
-                  Frame.Color = clBlack
-                  Frame.DrawTop = False
-                  Frame.DrawBottom = False
-                  Frame.DrawLeft = False
-                  Frame.DrawRight = False
-                  Size.Values = (
-                    66.145833333333330000
-                    777.875000000000000000
-                    5.291666666666667000
-                    420.687500000000000000)
-                  Alignment = taCenter
-                  AlignToBand = True
-                  AutoSize = True
-                  AutoStretch = False
-                  Caption = 'SALES INVOICE'
-                  Color = clWhite
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -21
-                  Font.Name = 'Arial Narrow'
-                  Font.Style = [fsBold]
-                  ParentFont = False
-                  Transparent = False
-                  WordWrap = True
-                  FontSize = 16
-                end
                 object QRDBText58: TQRDBText
                   Left = 8
                   Top = 74
@@ -8292,6 +8261,37 @@ object DTFrm: TDTFrm
                   Transparent = False
                   WordWrap = True
                   FontSize = 10
+                end
+                object QRLabel47: TQRLabel
+                  Left = 294
+                  Top = 2
+                  Width = 159
+                  Height = 25
+                  Frame.Color = clBlack
+                  Frame.DrawTop = False
+                  Frame.DrawBottom = False
+                  Frame.DrawLeft = False
+                  Frame.DrawRight = False
+                  Size.Values = (
+                    66.145833333333330000
+                    777.875000000000000000
+                    5.291666666666667000
+                    420.687500000000000000)
+                  Alignment = taCenter
+                  AlignToBand = True
+                  AutoSize = True
+                  AutoStretch = False
+                  Caption = 'SALES INVOICE'
+                  Color = clWhite
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clWindowText
+                  Font.Height = -21
+                  Font.Name = 'Arial Narrow'
+                  Font.Style = [fsBold]
+                  ParentFont = False
+                  Transparent = False
+                  WordWrap = True
+                  FontSize = 16
                 end
               end
               object ColumnHeaderBand2: TQRBand
@@ -8914,7 +8914,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel61: TQRLabel
                   Left = 604
-                  Top = 21
+                  Top = 42
                   Width = 26
                   Height = 16
                   Frame.Color = clBlack
@@ -8925,7 +8925,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1598.083333333333000000
-                    55.562500000000000000
+                    111.125000000000000000
                     68.791666666666670000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -8945,7 +8945,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel62: TQRLabel
                   Left = 635
-                  Top = 21
+                  Top = 42
                   Width = 4
                   Height = 16
                   Frame.Color = clBlack
@@ -8956,7 +8956,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1680.104166666667000000
-                    55.562500000000000000
+                    111.125000000000000000
                     10.583333333333330000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -8976,7 +8976,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel65: TQRLabel
                   Left = 537
-                  Top = 91
+                  Top = 77
                   Width = 93
                   Height = 19
                   Frame.Color = clBlack
@@ -8987,7 +8987,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     50.270833333333330000
                     1420.812500000000000000
-                    240.770833333333300000
+                    203.729166666666700000
                     246.062500000000000000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9007,7 +9007,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel66: TQRLabel
                   Left = 635
-                  Top = 91
+                  Top = 77
                   Width = 5
                   Height = 19
                   Frame.Color = clBlack
@@ -9018,7 +9018,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     50.270833333333330000
                     1680.104166666667000000
-                    240.770833333333300000
+                    203.729166666666700000
                     13.229166666666670000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -9038,7 +9038,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel67: TQRLabel
                   Left = 605
-                  Top = 38
+                  Top = 59
                   Width = 26
                   Height = 16
                   Frame.Color = clBlack
@@ -9049,7 +9049,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1600.729166666667000000
-                    100.541666666666700000
+                    156.104166666666700000
                     68.791666666666670000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9292,7 +9292,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLDPP: TQRLabel
                   Left = 719
-                  Top = 21
+                  Top = 42
                   Width = 26
                   Height = 16
                   Frame.Color = clBlack
@@ -9303,7 +9303,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1902.354166666667000000
-                    55.562500000000000000
+                    111.125000000000000000
                     68.791666666666670000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9323,7 +9323,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLPPN: TQRLabel
                   Left = 720
-                  Top = 38
+                  Top = 59
                   Width = 26
                   Height = 16
                   Frame.Color = clBlack
@@ -9334,7 +9334,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1905.000000000000000000
-                    100.541666666666700000
+                    156.104166666666700000
                     68.791666666666670000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9354,7 +9354,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLTotal: TQRLabel
                   Left = 652
-                  Top = 91
+                  Top = 77
                   Width = 93
                   Height = 19
                   Frame.Color = clBlack
@@ -9365,7 +9365,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     50.270833333333330000
                     1725.083333333333000000
-                    240.770833333333300000
+                    203.729166666666700000
                     246.062500000000000000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9385,7 +9385,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel68: TQRLabel
                   Left = 635
-                  Top = 38
+                  Top = 59
                   Width = 4
                   Height = 16
                   Frame.Color = clBlack
@@ -9396,7 +9396,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1680.104166666667000000
-                    100.541666666666700000
+                    156.104166666666700000
                     10.583333333333330000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -9852,119 +9852,9 @@ object DTFrm: TDTFrm
                   WordWrap = True
                   FontSize = 10
                 end
-                object QRLabel54: TQRLabel
-                  Left = 578
-                  Top = 55
-                  Width = 53
-                  Height = 16
-                  Frame.Color = clBlack
-                  Frame.DrawTop = False
-                  Frame.DrawBottom = False
-                  Frame.DrawLeft = False
-                  Frame.DrawRight = False
-                  Size.Values = (
-                    42.333333333333330000
-                    1529.291666666667000000
-                    145.520833333333300000
-                    140.229166666666700000)
-                  Alignment = taRightJustify
-                  AlignToBand = False
-                  AutoSize = True
-                  AutoStretch = False
-                  Caption = 'Sub Total'
-                  Color = clWhite
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -12
-                  Font.Name = 'Arial'
-                  Font.Style = []
-                  ParentFont = False
-                  Transparent = False
-                  WordWrap = True
-                  FontSize = 9
-                end
-                object QRLabel55: TQRLabel
-                  Left = 635
-                  Top = 55
-                  Width = 4
-                  Height = 16
-                  Frame.Color = clBlack
-                  Frame.DrawTop = False
-                  Frame.DrawBottom = False
-                  Frame.DrawLeft = False
-                  Frame.DrawRight = False
-                  Size.Values = (
-                    42.333333333333330000
-                    1680.104166666667000000
-                    145.520833333333300000
-                    10.583333333333330000)
-                  Alignment = taLeftJustify
-                  AlignToBand = False
-                  AutoSize = True
-                  AutoStretch = False
-                  Caption = ':'
-                  Color = clWhite
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -12
-                  Font.Name = 'Arial'
-                  Font.Style = []
-                  ParentFont = False
-                  Transparent = False
-                  WordWrap = True
-                  FontSize = 9
-                end
-                object QRLSubTotal: TQRLabel
-                  Left = 696
-                  Top = 55
-                  Width = 50
-                  Height = 16
-                  Frame.Color = clBlack
-                  Frame.DrawTop = False
-                  Frame.DrawBottom = False
-                  Frame.DrawLeft = False
-                  Frame.DrawRight = False
-                  Size.Values = (
-                    42.333333333333330000
-                    1841.500000000000000000
-                    145.520833333333300000
-                    132.291666666666700000)
-                  Alignment = taRightJustify
-                  AlignToBand = False
-                  AutoSize = True
-                  AutoStretch = False
-                  Caption = 'SubTotal'
-                  Color = clWhite
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -12
-                  Font.Name = 'Arial'
-                  Font.Style = []
-                  ParentFont = False
-                  Transparent = False
-                  WordWrap = True
-                  FontSize = 9
-                end
-                object QRShape26: TQRShape
-                  Left = 577
-                  Top = 54
-                  Width = 171
-                  Height = 1
-                  Frame.Color = clBlack
-                  Frame.DrawTop = False
-                  Frame.DrawBottom = False
-                  Frame.DrawLeft = False
-                  Frame.DrawRight = False
-                  Size.Values = (
-                    2.645833333333333000
-                    1526.645833333333000000
-                    142.875000000000000000
-                    452.437500000000000000)
-                  Shape = qrsRectangle
-                end
                 object QRLUM: TQRLabel
                   Left = 613
-                  Top = 72
+                  Top = 24
                   Width = 18
                   Height = 16
                   Frame.Color = clBlack
@@ -9975,7 +9865,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1621.895833333333000000
-                    190.500000000000000000
+                    63.500000000000000000
                     47.625000000000000000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -9995,7 +9885,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLabel58: TQRLabel
                   Left = 635
-                  Top = 72
+                  Top = 24
                   Width = 4
                   Height = 16
                   Frame.Color = clBlack
@@ -10006,7 +9896,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1680.104166666667000000
-                    190.500000000000000000
+                    63.500000000000000000
                     10.583333333333330000)
                   Alignment = taLeftJustify
                   AlignToBand = False
@@ -10026,7 +9916,7 @@ object DTFrm: TDTFrm
                 end
                 object QRLDP: TQRLabel
                   Left = 728
-                  Top = 72
+                  Top = 24
                   Width = 18
                   Height = 16
                   Frame.Color = clBlack
@@ -10037,7 +9927,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     42.333333333333330000
                     1926.166666666667000000
-                    190.500000000000000000
+                    63.500000000000000000
                     47.625000000000000000)
                   Alignment = taRightJustify
                   AlignToBand = False
@@ -10057,7 +9947,7 @@ object DTFrm: TDTFrm
                 end
                 object QRShape35: TQRShape
                   Left = 577
-                  Top = 89
+                  Top = 75
                   Width = 171
                   Height = 1
                   Frame.Color = clBlack
@@ -10068,13 +9958,13 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     2.645833333333333000
                     1526.645833333333000000
-                    235.479166666666700000
+                    198.437500000000000000
                     452.437500000000000000)
                   Shape = qrsRectangle
                 end
                 object QRShape63: TQRShape
                   Left = 577
-                  Top = 91
+                  Top = 77
                   Width = 171
                   Height = 1
                   Frame.Color = clBlack
@@ -10085,7 +9975,7 @@ object DTFrm: TDTFrm
                   Size.Values = (
                     2.645833333333333000
                     1526.645833333333000000
-                    240.770833333333300000
+                    203.729166666666700000
                     452.437500000000000000)
                   Shape = qrsRectangle
                 end

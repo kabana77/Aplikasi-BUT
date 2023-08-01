@@ -419,7 +419,6 @@ type
     QRLabel27000: TQRLabel;
     QRLabel45: TQRLabel;
     QRLabel46: TQRLabel;
-    QRLabel47: TQRLabel;
     QRDBText58: TQRDBText;
     QRLabel52: TQRLabel;
     QRLabel53: TQRLabel;
@@ -677,15 +676,12 @@ type
     Label12: TLabel;
     wwDBEdit4: TwwDBEdit;
     qBMasterUM: TFloatField;
-    QRLabel54: TQRLabel;
-    QRLabel55: TQRLabel;
-    QRLSubTotal: TQRLabel;
-    QRShape26: TQRShape;
     QRLUM: TQRLabel;
     QRLabel58: TQRLabel;
     QRLDP: TQRLabel;
     QRShape35: TQRShape;
     QRShape63: TQRShape;
+    QRLabel47: TQRLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tbExportClick(Sender: TObject);
     procedure tbRefreshClick(Sender: TObject);
@@ -1519,7 +1515,33 @@ begin
           qBMasterTGL_APPROVE.AsDateTime:=DMFrm.qDateTimeVDATETIME.AsDateTime;
           qBMasterOPR_APPROVE.AsString:=DMFrm.qDateTimeVUSER.AsString;
         end;
-        qBMasterSUB_TOTAL.AsFloat:=qBDetailXNILAI_TAGIHAN.AsFloat-qBMasterUM.AsFloat;
+
+        if qBMasterTAX.AsString='NON' then
+        begin
+          vdp:=qBMasterUM.AsFloat;
+          vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp;
+          vppn:=0;
+          vtotal:=vdpp+vppn;
+        end
+        else
+        begin
+          if qBMasterTAX.AsString='INC' then
+          begin
+            vdp:=qBMasterUM.AsFloat;
+            vdpp:=(qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp)/1.11;
+            vppn:=vdpp*0.11;
+            vtotal:=vdpp+vppn;
+          end
+          else
+          begin
+            vdp:=qBMasterUM.AsFloat;
+            vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp;
+            vppn:=vdpp*0.11;
+            vtotal:=vdpp+vppn;
+          end;
+        end;
+
+        qBMasterSUB_TOTAL.AsFloat:=vtotal;
       end;
   end;
 end;
@@ -1840,35 +1862,31 @@ begin
 
   if qBMasterTAX.AsString='NON' then
   begin
-    vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat;
-    vppn:=0;
-    vsubtotal:=vdpp+vppn;
     vdp:=qBMasterUM.AsFloat;
-    vtotal:=(vdpp+vppn)-vdp;
+    vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp;
+    vppn:=0;
+    vtotal:=vdpp+vppn;
   end
   else
   begin
     if qBMasterTAX.AsString='INC' then
     begin
-      vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat/1.11;
-      vppn:=vdpp*0.11;
-      vsubtotal:=vdpp+vppn;
       vdp:=qBMasterUM.AsFloat;
-      vtotal:=(vdpp+vppn)-vdp;
+      vdpp:=(qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp)/1.11;
+      vppn:=vdpp*0.11;
+      vtotal:=vdpp+vppn;
     end
     else
     begin
-      vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat;
-      vppn:=vdpp*0.11;
-      vsubtotal:=vdpp+vppn;
       vdp:=qBMasterUM.AsFloat;
-      vtotal:=(vdpp+vppn)-vdp;
+      vdpp:=qBDetailXSJSUB_TOTAL_GROSS.AsFloat-vdp;
+      vppn:=vdpp*0.11;
+      vtotal:=vdpp+vppn;
     end;
   end;
 
   QRLDPP.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vdpp);
   QRLPPN.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vppn);
-  QRLSubTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vsubtotal);
   QRLDP.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vdp);
   QRLTotal.Caption:=FormatFloat('#,#0.00;(#,#0.00);',vtotal);
 
